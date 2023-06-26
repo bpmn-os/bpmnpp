@@ -14,6 +14,8 @@ class SequenceFlow;
 class Model;
 
 /**
+ * @brief Represents a node in a BPMN process.
+ *
  * The `Node` class encapsulates the information and relationships associated with a node in a BPMN process.
  * It can represent both a BPMN process itself or a flow node within a process. The class provides
  * functionalities to access the underlying XML element, the parent node, child nodes, start

@@ -13,7 +13,9 @@ class Node;
 class SequenceFlow;
 
 /**
- * Represents a BPMN model.
+ * @brief Represents a BPMN model with all its processes.
+ *
+ * The `Model` class encapsulates all processes with their nodes and sequence flows of a BPMN model.
  */
 class Model {
 protected:
