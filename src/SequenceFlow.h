@@ -37,7 +37,7 @@ public:
    * Returns true if the cast is successful, indicating that the element
    * is of type T. Otherwise, returns false.
    */
-  template<typename T> bool implements() {
+  template<typename T> bool represents() {
     return ( dynamic_cast<T*>(this) != nullptr );
   }
   /**
