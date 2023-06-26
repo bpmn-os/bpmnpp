@@ -11,33 +11,34 @@ using namespace std;
 using namespace BPMN;
 //namespace xml = XML::bpmn; // use alias to shorten declarations
 
-class ResourceAwareNode : public Node {
+// Optionally extend the model
+class CustomNode : public Node {
 public:
-	ResourceAwareNode(XML::bpmn::tProcess& process) : Node(process) { x = 42; };
-  ResourceAwareNode(XML::bpmn::tFlowNode& flowNode, Node* parentNode) : Node(flowNode,parentNode) { x = 23;};
+	CustomNode(XML::bpmn::tProcess& process) : Node(process) { x = 42; };
+  CustomNode(XML::bpmn::tFlowNode& flowNode, Node* parentNode) : Node(flowNode,parentNode) { x = 23;};
   int x;
 };
 
-class ResourceAwareSequenceFlow : public SequenceFlow {
+class CustomSequenceFlow : public SequenceFlow {
 public:
-	ResourceAwareSequenceFlow(XML::bpmn::tSequenceFlow& sequenceFlow, Node* scope) : SequenceFlow(sequenceFlow,scope) { y = 317; };
+	CustomSequenceFlow(XML::bpmn::tSequenceFlow& sequenceFlow, Node* scope) : SequenceFlow(sequenceFlow,scope) { y = 317; };
   int y;
 };
 
-class ResourceAwareModel : public Model {
+class CustomModel : public Model {
 public:
-	ResourceAwareModel(const std::string& filename)  { Model::readBPMNFile(filename); };
+	CustomModel(const std::string& filename)  { Model::readBPMNFile(filename); };
   std::unique_ptr<Node> createRootNode(XML::bpmn::tProcess& process) override {
-//cout << "ResourceAwareModel:createRootNode" << endl;
-    return std::make_unique<ResourceAwareNode>(process);
+//cout << "CustomModel:createRootNode" << endl;
+    return std::make_unique<CustomNode>(process);
   };
   std::unique_ptr<Node> createChildNode(XML::bpmn::tFlowNode& flowNode, Node* parentNode) override {
-//cout << "ResourceAwareModel:createChildNode" << endl;
-    return std::make_unique<ResourceAwareNode>(flowNode,parentNode);
+//cout << "CustomModel:createChildNode" << endl;
+    return std::make_unique<CustomNode>(flowNode,parentNode);
   };
   std::unique_ptr<SequenceFlow> createSequenceFlow(XML::bpmn::tSequenceFlow& sequenceFlow, Node* scope) override {
-//cout << "ResourceAwareModel:createSequenceFlow" << endl;
-    return std::make_unique<ResourceAwareSequenceFlow>(sequenceFlow,scope);
+//cout << "CustomModel:createSequenceFlow" << endl;
+    return std::make_unique<CustomSequenceFlow>(sequenceFlow,scope);
   };
 };
 
@@ -48,13 +49,13 @@ int main(int argc, char **argv) {
     return 0;
   }
 
-//  Model model(argv[1]);
-  ResourceAwareModel model(argv[1]);
+//  Model model(argv[1]); // Use basic model
+  CustomModel model(argv[1]); // Use extended model
 
   cout << "Number of processes: " << model.processes.size() << endl;
   for ( auto& processNode : model.processes ) {
-//    if ( processNode->represents<ResourceAwareNode>() ) cout << "ResourceAwareNode" << endl;
-//    cout << processNode->as<ResourceAwareNode>()->x << endl;
+//    if ( processNode->represents<CustomNode>() ) cout << "CustomNode" << endl;
+//    cout << processNode->as<CustomNode>()->x << endl;
 
     XML::bpmn::tProcess& process = *processNode->get<XML::bpmn::tProcess>();
 
@@ -77,7 +78,7 @@ int main(int argc, char **argv) {
     cout << "." << endl;
 
     for ( auto& childNode : processNode->childNodes ) {
-//    cout << childNode->as<ResourceAwareNode>()->x << endl;
+//    cout << childNode->as<CustomNode>()->x << endl;
       cout << "  - " << childNode->get<>()->className;
       if ( childNode->id.size() ) {
         cout << " with id '" << (string)childNode->id << "'";
@@ -88,11 +89,11 @@ int main(int argc, char **argv) {
       cout << " has " << childNode->childNodes.size() << " child node(s)";  
       cout << ", " << childNode->incoming.size() << " incoming and " << childNode->outgoing.size() << " outgoing arc(s)." << endl;
       for ( auto& incoming : childNode->incoming ) {
-//        cout << incoming->as<ResourceAwareSequenceFlow>()->y << endl;
+//        cout << incoming->as<CustomSequenceFlow>()->y << endl;
         cout << "    - from node " << (std::string)incoming->source->id << endl;
       }
       for ( auto& outgoing : childNode->outgoing ) {
-//        cout << outgoing->as<ResourceAwareSequenceFlow>()->y << endl;
+//        cout << outgoing->as<CustomSequenceFlow>()->y << endl;
         cout << "    - to node " << (std::string)outgoing->target->id << endl;
       }
     }
