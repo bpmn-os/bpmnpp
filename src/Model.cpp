@@ -30,6 +30,10 @@ std::unique_ptr<Node> Model::createChildNode(XML::bpmn::tFlowNode& flowNode, Nod
   return std::make_unique<Node>(flowNode,parentNode);
 }
 
+std::unique_ptr<Node> Model::createBoundaryEvent(XML::bpmn::tBoundaryEvent& boundaryEvent, Node* parentNode) {
+  return std::make_unique<BoundaryEvent>(boundaryEvent,parentNode);
+}
+
 std::unique_ptr<SequenceFlow> Model::createSequenceFlow(XML::bpmn::tSequenceFlow& sequenceFlow, Node* scope) {
   return std::make_unique<SequenceFlow>(SequenceFlow(sequenceFlow,scope));
 }
@@ -37,8 +41,18 @@ std::unique_ptr<SequenceFlow> Model::createSequenceFlow(XML::bpmn::tSequenceFlow
 void Model::createChildNodes(Node* scope) {
   // add child nodes
   for (XML::bpmn::tFlowNode& flowNode: scope->get<>()->getChildren<XML::bpmn::tFlowNode>() ) {
-    scope->childNodes.push_back(createChildNode(flowNode,scope));
+    if ( !flowNode.is<XML::bpmn::tBoundaryEvent>() ) {
+      scope->childNodes.push_back(createChildNode(flowNode,scope));
+    }
   }
+  // add boundary events
+  for (XML::bpmn::tFlowNode& flowNode: scope->get<>()->getChildren<XML::bpmn::tFlowNode>() ) {
+    if ( auto boundaryEvent = flowNode.is<XML::bpmn::tBoundaryEvent>(); boundaryEvent ) {
+std::cout << "BoundarEvent: " << boundaryEvent << std::endl;
+      scope->childNodes.push_back(createBoundaryEvent(*boundaryEvent,scope));
+    }
+  }
+  // recurse
   for ( auto& childNode: scope->childNodes ) {
     createChildNodes(childNode.get());
   }

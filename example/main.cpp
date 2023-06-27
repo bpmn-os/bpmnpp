@@ -86,8 +86,13 @@ int main(int argc, char **argv) {
       else {
         cout << " without id";
       }
-      cout << " has " << childNode->childNodes.size() << " child node(s)";  
-      cout << ", " << childNode->incoming.size() << " incoming and " << childNode->outgoing.size() << " outgoing arc(s)." << endl;
+      if ( auto boundaryEvent = childNode->represents<BoundaryEvent>() ) {
+        cout << " is attached to " << boundaryEvent->attachedTo.id << "." << endl;
+      }
+      else {
+        cout << " has " << childNode->childNodes.size() << " child node(s)"; 
+        cout << ", " << childNode->incoming.size() << " incoming and " << childNode->outgoing.size() << " outgoing arc(s)." << endl;
+      }
       for ( auto& incoming : childNode->incoming ) {
 //        cout << incoming->as<CustomSequenceFlow>()->y << endl;
         cout << "    - from node " << (std::string)incoming->source->id << endl;
