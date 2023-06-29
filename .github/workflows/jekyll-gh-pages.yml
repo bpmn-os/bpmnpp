@@ -36,13 +36,15 @@ jobs:
           mkdir build
           cd build
           cmake ..
+          cd ../src/xml/bpmn
+          grep -l "xsd/BPMNDI.xsd" *.h | xargs rm
+          grep -l "xsd/DI.xsd" *.h | xargs rm
+          grep -l "xsd/DC.xsd" *.h | xargs rm
+          cd ../../../build
           make docs
-          cd ..
-          rm docs/html/*.md5
-          rm docs/html/*.map
-          grep -l "xsd/BPMNDI.xsd" * | xargs rm
-          grep -l "xsd/DI.xsd" * | xargs rm
-          grep -l "xsd/DC.xsd" * | xargs rm
+          cd ../docs/html
+          rm *.md5
+          rm *.map
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
