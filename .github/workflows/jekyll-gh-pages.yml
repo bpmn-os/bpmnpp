@@ -1,0 +1,30 @@
+name: Deploy Docs
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Doxygen
+        run: |
+          sudo apt-get install -y doxygen
+
+      - name: Generate Doxygen Docs
+        run: |
+          doxygen .
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/html
