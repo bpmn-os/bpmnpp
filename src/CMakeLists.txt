@@ -10,7 +10,56 @@ list(PREPEND bpmn_SOURCES
 list(APPEND bpmn_SOURCES
   SequenceFlow.cpp
   Node.cpp
+  Scope.cpp
+  FlowNode.cpp
+  Process.cpp
+  Activity.cpp
+  SubProcess.cpp
+  Task.cpp
+  UntypedTask.cpp
+  BusinessRuleTask.cpp
+  ManualTask.cpp
+  ReceiveTask.cpp
+  ScriptTask.cpp
+  SendTask.cpp
+  UserTask.cpp
+  CallActivity.cpp
+  AdHocSubProcess.cpp
+  Transaction.cpp
+  Event.cpp
+  CatchEvent.cpp
+  UntypedStartEvent.cpp
+  CompensateStartEvent.cpp
+  ErrorStartEvent.cpp
+  EscalationStartEvent.cpp
+  ConditionalCatchEvent.cpp
+  MessageCatchEvent.cpp
+  SignalCatchEvent.cpp
+  TimerCatchEvent.cpp
+  ThrowEvent.cpp
+  UntypedEndEvent.cpp
+  CancelEndEvent.cpp
+  CompensateThrowEvent.cpp
+  ErrorEndEvent.cpp
+  EscalationThrowEvent.cpp
+  MessageThrowEvent.cpp
+  SignalThrowEvent.cpp
+  TerminateEvent.cpp
   BoundaryEvent.cpp
+  CancelBoundaryEvent.cpp
+  CompensateBoundaryEvent.cpp
+  ConditionalBoundaryEvent.cpp
+  ErrorBoundaryEvent.cpp
+  EscalationBoundaryEvent.cpp
+  MessageBoundaryEvent.cpp
+  SignalBoundaryEvent.cpp
+  TimerBoundaryEvent.cpp
+  Gateway.cpp
+  ParallelGateway.cpp
+  ExclusiveGateway.cpp
+  InclusiveGateway.cpp
+  ComplexGateway.cpp
+  EventBasedGateway.cpp
   Model.cpp
 )
 
@@ -21,6 +70,55 @@ list(PREPEND bpmn_HEADERS
 list(APPEND bpmn_HEADERS
   SequenceFlow.h
   Node.h
+  Scope.h
+  FlowNode.h
+  Process.h
+  Activity.h
+  SubProcess.h
+  Task.h
+  UntypedTask.h
+  BusinessRuleTask.h
+  ManualTask.h
+  ReceiveTask.h
+  ScriptTask.h
+  SendTask.h
+  UserTask.h
+  CallActivity.h
+  AdHocSubProcess.h
+  Transaction.h
+  Event.h
+  CatchEvent.h
+  UntypedStartEvent.h
+  CompensateStartEvent.h
+  ErrorStartEvent.h
+  EscalationStartEvent.h
+  ConditionalCatchEvent.h
+  MessageCatchEvent.h
+  SignalCatchEvent.h
+  TimerCatchEvent.h
+  ThrowEvent.h
+  UntypedEndEvent.h
+  CancelEndEvent.h
+  CompensateThrowEvent.h
+  ErrorEndEvent.h
+  EscalationThrowEvent.h
+  MessageThrowEvent.h
+  SignalThrowEvent.h
+  TerminateEvent.h
   BoundaryEvent.h
+  CancelBoundaryEvent.h
+  CompensateBoundaryEvent.h
+  ConditionalBoundaryEvent.h
+  ErrorBoundaryEvent.h
+  EscalationBoundaryEvent.h
+  MessageBoundaryEvent.h
+  SignalBoundaryEvent.h
+  TimerBoundaryEvent.h
+  Gateway.h
+  ParallelGateway.h
+  ExclusiveGateway.h
+  InclusiveGateway.h
+  ComplexGateway.h
+  EventBasedGateway.h
   Model.h
 )

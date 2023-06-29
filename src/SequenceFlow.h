@@ -2,11 +2,11 @@
 #define BPMN_SequenceFlow_H
 
 #include "xml/bpmn/tSequenceFlow.h"
-#include "Node.h"
 
 namespace BPMN {
 
-class Node;
+class Scope;
+class FlowNode;
 
 /**
  * @brief Represents a sequence flow in a BPMN process.
@@ -18,7 +18,7 @@ class Node;
 class SequenceFlow {
 public:
   //// Constructs a `SequenceFlow` object based on a `tSequenceFlow` element and the parent scope.
-	SequenceFlow(XML::bpmn::tSequenceFlow& sequenceFlow, Node* scope);
+	SequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope);
 
   virtual ~SequenceFlow() = default;
 
@@ -28,9 +28,9 @@ public:
   /// Id of sequence flow
   std::string id;
   /// Reference to the source node of the sequence flow.
-  Node* source;
+  FlowNode* source;
   /// Reference to the target node of the sequence flow.
-  Node* target;
+  FlowNode* target;
 
   /**
    * Check if the sequence flow can be downcasted to a derived class T.
@@ -55,7 +55,7 @@ public:
 
 protected:
   XML::bpmn::tSequenceFlow* sequenceFlow;
-  Node* getNode(std::string id, Node* scope);
+  FlowNode* getNode(std::string id, Scope* scope);
 };
 
 } // namespace BPMN

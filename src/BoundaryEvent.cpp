@@ -1,19 +1,21 @@
 #include "BoundaryEvent.h"
-#include "xml/bpmn/tActivity.h"
 
 using namespace BPMN;
 
-BoundaryEvent::BoundaryEvent(XML::bpmn::tBoundaryEvent& boundaryEvent, Node* parentNode)
-  : Node(boundaryEvent,parentNode)
+BoundaryEvent::BoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent)
+  : CatchEvent(boundaryEvent,parent)
+  , Node(boundaryEvent,parent)
   , attachedTo(resolveReference())
 {
 }
 
-Node& BoundaryEvent::resolveReference() {
+Activity* BoundaryEvent::resolveReference() {
   const std::string& reference = element->get<XML::bpmn::tBoundaryEvent>()->attachedToRef;
-  for ( auto& sibling : parentNode->childNodes ) {
+  for ( auto& sibling : parent->childNodes ) {
     if ( sibling->id == reference ) {
-      return *sibling;
+      Activity* activity = sibling->as<Activity>();
+      activity->boundaryEvents.push_back(this);
+      return activity;
     }
   }
   throw std::runtime_error("BoundaryEvent: cannot resolve reference");

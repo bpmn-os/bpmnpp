@@ -1,5 +1,6 @@
 #include <iostream>
 #include <sstream>
+#include <typeinfo>
 
 #include <xercesc/parsers/XercesDOMParser.hpp>
 #include <xercesc/dom/DOMElement.hpp>
@@ -11,6 +12,7 @@ using namespace std;
 using namespace BPMN;
 //namespace xml = XML::bpmn; // use alias to shorten declarations
 
+/*
 // Optionally extend the model
 class CustomNode : public Node {
 public:
@@ -41,7 +43,7 @@ public:
     return std::make_unique<CustomSequenceFlow>(sequenceFlow,scope);
   };
 };
-
+*/
 
 int main(int argc, char **argv) {
   if ( argc != 2 ) {
@@ -49,13 +51,38 @@ int main(int argc, char **argv) {
     return 0;
   }
 
-//  Model model(argv[1]); // Use basic model
-  CustomModel model(argv[1]); // Use extended model
+  Model model(argv[1]); // Use basic model
+//  CustomModel model(argv[1]); // Use extended model
+
+  
 
   cout << "Number of processes: " << model.processes.size() << endl;
   for ( auto& processNode : model.processes ) {
 //    if ( processNode->represents<CustomNode>() ) cout << "CustomNode" << endl;
 //    cout << processNode->as<CustomNode>()->x << endl;
+
+//cout << "Type name: " << typeid(*processNode->element).name() << endl;
+auto t = typeid(XML::bpmn::process).name();
+auto& tid = typeid(XML::bpmn::process);
+
+/*
+for (unsigned int i = 0; i < 1e8; i++) {
+//  XML::bpmn::tProcess* casted = static_cast<XML::bpmn::tProcess*>(processNode->element); // O3: 0.017 sec
+//  XML::bpmn::tProcess* casted = dynamic_cast<XML::bpmn::tProcess*>(processNode->element); // O3: 0.017 sec
+  XML::bpmn::tProcess* casted = processNode->is<XML::bpmn::tProcess>(); // O3: 0.017 sec
+}
+
+for (unsigned int i = 0; i < 1e9; i++) {
+//  if ( typeid(*processNode->element).name() == t ) {} // O3: 0.3 sec
+//  if ( char c = processNode->id[0]; c == 'P' || c == 'p' ) {} // O3: 0.017 sec
+//  if ( processNode->is<XML::bpmn::tProcess>() ) {} // O3: 18 sec
+//  if ( dynamic_cast<XML::bpmn::tProcess*>(processNode->element) ) {} // O3: 17 sec
+//  if ( typeid(*processNode->element) == typeid(XML::bpmn::process) ) {} // 1.7 sec, O3: 0.564 sec
+  if ( typeid(*processNode->element) == tid ) {} // 3.5 sec, O3: 0.564 sec
+  else cout << "-";
+}
+exit(1);
+*/
 
     XML::bpmn::tProcess& process = *processNode->get<XML::bpmn::tProcess>();
 
@@ -87,11 +114,14 @@ int main(int argc, char **argv) {
         cout << " without id";
       }
       if ( auto boundaryEvent = childNode->represents<BoundaryEvent>() ) {
-        cout << " is attached to " << boundaryEvent->attachedTo.id << "." << endl;
+        cout << " is attached to " << boundaryEvent->attachedTo->id << "." << endl;
       }
       else {
-        cout << " has " << childNode->childNodes.size() << " child node(s)"; 
-        cout << ", " << childNode->incoming.size() << " incoming and " << childNode->outgoing.size() << " outgoing arc(s)." << endl;
+        cout << " has ";
+        if ( auto scope = childNode->represents<Scope>() ) {
+          cout << " has " << scope->childNodes.size() << " child node(s), ";  
+        }
+        cout << childNode->incoming.size() << " incoming and " << childNode->outgoing.size() << " outgoing arc(s)." << endl;
       }
       for ( auto& incoming : childNode->incoming ) {
 //        cout << incoming->as<CustomSequenceFlow>()->y << endl;

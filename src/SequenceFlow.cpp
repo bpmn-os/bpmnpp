@@ -1,16 +1,18 @@
 #include "SequenceFlow.h"
+#include "FlowNode.h"
+#include "Scope.h"
 
 using namespace BPMN;
 
-SequenceFlow::SequenceFlow(XML::bpmn::tSequenceFlow& sequenceFlow, Node* scope) : sequenceFlow(&sequenceFlow), source(getNode(sequenceFlow.sourceRef,scope)), target(getNode(sequenceFlow.targetRef,scope))
+SequenceFlow::SequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope) : sequenceFlow(sequenceFlow), source(getNode(sequenceFlow->sourceRef,scope)), target(getNode(sequenceFlow->targetRef,scope))
 {
-  id = sequenceFlow.id.has_value() ? (std::string)sequenceFlow.id->get() : "";
+  id = sequenceFlow->id.has_value() ? (std::string)sequenceFlow->id->get() : "";
 }
 
-Node* SequenceFlow::getNode(std::string id, Node* scope) {
-  for ( auto& node : scope->childNodes ) {
-    if ( node->get()->id.has_value() && id == (std::string)node->get()->id->get() ) {
-      return node.get();
+FlowNode* SequenceFlow::getNode(std::string id, Scope* scope) {
+  for ( auto& flowNode : scope->childNodes ) {
+    if ( flowNode->get()->id.has_value() && id == (std::string)flowNode->get()->id->get() ) {
+      return flowNode.get();
     }
   }
   throw std::runtime_error("SequenceFlow: cannot find node");

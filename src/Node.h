@@ -1,17 +1,16 @@
 #ifndef BPMN_Node_H
 #define BPMN_Node_H
 
-#include "xml/bpmn/tProcess.h"
-#include "xml/bpmn/tFlowNode.h"
-#include "SequenceFlow.h"
+#include "xml/bpmn/tBaseElement.h"
 #include <memory>
 #include <vector>
 #include <optional>
 
 namespace BPMN {
 
-class SequenceFlow;
 class Model;
+class Scope;
+class FlowNode;
 
 /**
  * @brief Represents a node in a BPMN process.
@@ -24,39 +23,16 @@ class Model;
 class Node {
   friend class Model;
 public:
-  /// Constructs a `Node` object representing a BPMN process.
-	Node(XML::bpmn::tProcess& process);
-
-  /// Constructs a `Node` object representing a BPMN flow node within a parent node.
-  Node(XML::bpmn::tFlowNode& flowNode, Node* parentNode);
+  /// Constructs a `Node` object representing a BPMN process or flow node within a parent node.
+  Node(XML::bpmn::tBaseElement* element, Scope* parent = nullptr);
 
   virtual ~Node() = default;
 
   /// Reference to the parent node of flow nodes or nullopt for processes.
-  Node* parentNode;
+  Scope* parent;
 
   /// Id of process or flow node.
   std::string id;
-
-  /// Vector containing all flow nodes within the scope of the nodes.
-  std::vector< std::unique_ptr<Node> > childNodes;
-
-  /// Vector containing all flow nodes that may start execution of the current scope.
-  std::vector< Node* > startNodes;
-
-  /// Vector containing all sequence flows within the scope of the node.
-  std::vector< std::unique_ptr<SequenceFlow> > sequenceFlows;
-
-  /// Vector containing all incoming sequence flows of the node.
-  std::vector< SequenceFlow* > incoming;
-
-  /// Vector containing all outgoing sequence flows of the node.
-  std::vector< SequenceFlow* > outgoing;
-
-  /// Method that determines whether the node is a start node of its parent, i.e.,
-  /// a flow node without incoming sequence flows which is not a  copmensation activity
-  // and not an event-subprocess. 
-  bool isStartNode();
 
   /// Returns a pointer of type T of the element.
   template<typename T> T* is() {
@@ -95,7 +71,6 @@ public:
     return ptr; 
   };
 
-protected:
   XML::bpmn::tBaseElement* element;
 };
 

@@ -2,20 +2,24 @@
 #define BPMN_BoundaryEvent_H
 
 #include "xml/bpmn/tBoundaryEvent.h"
-#include "Node.h"
+#include "Scope.h"
+#include "CatchEvent.h"
+#include "Activity.h"
 
 namespace BPMN {
+
+class Activity;
 
 /**
  * @brief Represents a boundary event attached to an activity in a BPMN process.
  */
-class BoundaryEvent : public Node {
+class BoundaryEvent : virtual public CatchEvent {
   friend class Model;
 public:
-  BoundaryEvent(XML::bpmn::tBoundaryEvent& boundaryEvent, Node* parentNode);
-  Node& attachedTo;
+  BoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent);
+  Activity* attachedTo;
 protected:
-  Node& resolveReference();
+  Activity* resolveReference();
 };
 
 } // namespace BPMN
