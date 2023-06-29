@@ -41,8 +41,7 @@ jobs:
           rm docs/html/*.md5
           rm docs/html/*.map
       - name: Deploy to GitHub Pages
-        uses: DenverCoder1/doxygen-github-pages-action@v1
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: docs/html
+          publish_dir: ./docs/html
