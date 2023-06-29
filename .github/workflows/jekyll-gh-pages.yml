@@ -22,7 +22,15 @@ jobs:
       - name: Set up Xerces-c
         run: |
           sudo apt install libxerces-c-dev
-
+      - name: Set up schematicpp
+        run: |
+          git clone https://github.com/rajgoel/schematicpp.git
+          cd schematicpp
+          mkdir build
+          cd build
+          cmake ..
+          make
+          make install
       - name: Build Project
         run: |
           mkdir build
