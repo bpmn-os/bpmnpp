@@ -1,0 +1,10 @@
+<map id="XML::bpmn::adHocSubProcess" name="XML::bpmn::adHocSubProcess">
+<area shape="rect" id="node1" title=" " alt="" coords="8,528,227,555"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tAdHocSubProcess.html" title=" " alt="" coords="5,453,229,480"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tSubProcess.html" title=" " alt="" coords="26,379,209,405"/>
+<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tActivity.html" title=" " alt="" coords="38,304,197,331"/>
+<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1tFlowNode.html" title=" " alt="" coords="31,229,204,256"/>
+<area shape="rect" id="node6" href="$classXML_1_1bpmn_1_1tFlowElement.html" title=" " alt="" coords="21,155,214,181"/>
+<area shape="rect" id="node7" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="20,80,215,107"/>
+<area shape="rect" id="node8" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="53,5,181,32"/>
+</map>

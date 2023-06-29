@@ -1,0 +1,15 @@
+<map id="BPMN::BoundaryEvent" name="BPMN::BoundaryEvent">
+<area shape="rect" id="node1" title="Represents a boundary event attached to an activity in a BPMN process." alt="" coords="684,217,852,244"/>
+<area shape="rect" id="node6" href="$classBPMN_1_1CancelBoundaryEvent.html" title=" " alt="" coords="907,5,1119,32"/>
+<area shape="rect" id="node7" href="$classBPMN_1_1CompensateBoundaryEvent.html" title=" " alt="" coords="907,57,1120,98"/>
+<area shape="rect" id="node8" href="$classBPMN_1_1ConditionalBoundaryEvent.html" title=" " alt="" coords="911,122,1116,163"/>
+<area shape="rect" id="node9" href="$classBPMN_1_1ErrorBoundaryEvent.html" title=" " alt="" coords="914,188,1113,215"/>
+<area shape="rect" id="node10" href="$classBPMN_1_1EscalationBoundaryEvent.html" title=" " alt="" coords="914,239,1113,281"/>
+<area shape="rect" id="node11" href="$classBPMN_1_1MessageBoundaryEvent.html" title=" " alt="" coords="900,305,1127,332"/>
+<area shape="rect" id="node12" href="$classBPMN_1_1SignalBoundaryEvent.html" title=" " alt="" coords="909,356,1117,383"/>
+<area shape="rect" id="node13" href="$classBPMN_1_1TimerBoundaryEvent.html" title=" " alt="" coords="910,407,1117,433"/>
+<area shape="rect" id="node2" href="$classBPMN_1_1CatchEvent.html" title=" " alt="" coords="493,217,636,244"/>
+<area shape="rect" id="node3" href="$classBPMN_1_1Event.html" title=" " alt="" coords="339,217,445,244"/>
+<area shape="rect" id="node4" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="156,217,291,244"/>
+<area shape="rect" id="node5" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="5,217,108,244"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="XML::bpmn::linkEventDefinition" name="XML::bpmn::linkEventDefinition">
+<area shape="rect" id="node1" title=" " alt="" coords="9,379,236,405"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tLinkEventDefinition.html" title=" " alt="" coords="5,304,240,331"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tEventDefinition.html" title=" " alt="" coords="19,229,227,256"/>
+<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tRootElement.html" title=" " alt="" coords="27,155,219,181"/>
+<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="25,80,220,107"/>
+<area shape="rect" id="node6" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="59,5,187,32"/>
+</map>

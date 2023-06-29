@@ -1,0 +1,10 @@
+<map id="XML::bpmn::tDataAssociation" name="XML::bpmn::tDataAssociation">
+<area shape="rect" id="node1" title=" " alt="" coords="424,56,639,83"/>
+<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1dataAssociation.html" title=" " alt="" coords="713,5,919,32"/>
+<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1tDataInputAssociation.html" title=" " alt="" coords="693,56,939,83"/>
+<area shape="rect" id="node7" href="$classXML_1_1bpmn_1_1tDataOutputAssociation.html" title=" " alt="" coords="687,107,945,133"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="181,56,376,83"/>
+<area shape="rect" id="node3" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="5,56,133,83"/>
+<area shape="rect" id="node6" href="$classXML_1_1bpmn_1_1dataInputAssociation.html" title=" " alt="" coords="999,56,1239,83"/>
+<area shape="rect" id="node8" href="$classXML_1_1bpmn_1_1dataOutputAssociation.html" title=" " alt="" coords="993,107,1244,133"/>
+</map>

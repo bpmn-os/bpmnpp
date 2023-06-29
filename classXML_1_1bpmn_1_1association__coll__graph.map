@@ -1,0 +1,17 @@
+<map id="XML::bpmn::association" name="XML::bpmn::association">
+<area shape="rect" id="node1" title=" " alt="" coords="421,856,598,883"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tAssociation.html" title=" " alt="" coords="791,780,974,807"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tArtifact.html" title=" " alt="" coords="726,704,882,731"/>
+<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="535,615,729,641"/>
+<area shape="rect" id="node5" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="163,503,291,530"/>
+<area shape="rect" id="node6" title=" " alt="" coords="672,385,851,411"/>
+<area shape="rect" id="node7" href="$structXML_1_1Attribute.html" title=" " alt="" coords="704,229,819,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="31,96,118,123"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,5,144,47"/>
+<area shape="rect" id="node10" title=" " alt="" coords="91,377,269,419"/>
+<area shape="rect" id="node11" title=" " alt="" coords="91,229,309,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="293,377,445,419"/>
+<area shape="rect" id="node13" title=" " alt="" coords="342,229,381,256"/>
+<area shape="rect" id="node14" title=" " alt="" coords="407,229,446,256"/>
+<area shape="rect" id="node15" title=" " alt="" coords="399,496,713,537"/>
+</map>

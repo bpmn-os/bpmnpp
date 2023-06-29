@@ -1,0 +1,6 @@
+<map id="XML::bpmn::conversationNode" name="XML::bpmn::conversationNode">
+<area shape="rect" id="node1" title=" " alt="" coords="9,229,230,256"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tConversationNode.html" title=" " alt="" coords="5,155,233,181"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="22,80,217,107"/>
+<area shape="rect" id="node4" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="55,5,183,32"/>
+</map>

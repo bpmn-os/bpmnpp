@@ -1,0 +1,8 @@
+<map id="XML::bpmn::tErrorEventDefinition" name="XML::bpmn::tErrorEventDefinition">
+<area shape="rect" id="node1" title=" " alt="" coords="5,304,244,331"/>
+<area shape="rect" id="node6" href="$classXML_1_1bpmn_1_1errorEventDefinition.html" title=" " alt="" coords="7,379,242,405"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tEventDefinition.html" title=" " alt="" coords="21,229,229,256"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tRootElement.html" title=" " alt="" coords="29,155,221,181"/>
+<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="27,80,222,107"/>
+<area shape="rect" id="node5" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="61,5,189,32"/>
+</map>

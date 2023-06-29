@@ -1,0 +1,10 @@
+<map id="XML::bpmn::intermediateThrowEvent" name="XML::bpmn::intermediateThrowEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,543,232,584"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tIntermediateThrowEvent.html" title=" " alt="" coords="23,453,215,495"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tThrowEvent.html" title=" " alt="" coords="26,379,211,405"/>
+<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tEvent.html" title=" " alt="" coords="46,304,191,331"/>
+<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1tFlowNode.html" title=" " alt="" coords="32,229,205,256"/>
+<area shape="rect" id="node6" href="$classXML_1_1bpmn_1_1tFlowElement.html" title=" " alt="" coords="22,155,215,181"/>
+<area shape="rect" id="node7" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="21,80,216,107"/>
+<area shape="rect" id="node8" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="55,5,183,32"/>
+</map>

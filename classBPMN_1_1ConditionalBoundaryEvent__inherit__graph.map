@@ -1,0 +1,8 @@
+<map id="BPMN::ConditionalBoundaryEvent" name="BPMN::ConditionalBoundaryEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,379,211,420"/>
+<area shape="rect" id="node2" href="$classBPMN_1_1BoundaryEvent.html" title="Represents a boundary event attached to an activity in a BPMN process." alt="" coords="85,304,253,331"/>
+<area shape="rect" id="node3" href="$classBPMN_1_1CatchEvent.html" title=" " alt="" coords="37,229,179,256"/>
+<area shape="rect" id="node4" href="$classBPMN_1_1Event.html" title=" " alt="" coords="55,155,161,181"/>
+<area shape="rect" id="node5" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="41,80,175,107"/>
+<area shape="rect" id="node6" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="57,5,159,32"/>
+</map>

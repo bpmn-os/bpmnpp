@@ -1,0 +1,7 @@
+<map id="BPMN::ManualTask" name="BPMN::ManualTask">
+<area shape="rect" id="node1" title=" " alt="" coords="5,304,152,331"/>
+<area shape="rect" id="node2" href="$classBPMN_1_1Task.html" title=" " alt="" coords="29,229,128,256"/>
+<area shape="rect" id="node3" href="$classBPMN_1_1Activity.html" title=" " alt="" coords="19,155,138,181"/>
+<area shape="rect" id="node4" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="11,80,146,107"/>
+<area shape="rect" id="node5" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="27,5,130,32"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="XML::bpmn::tItemDefinition" name="XML::bpmn::tItemDefinition">
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,207,256"/>
+<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1itemDefinition.html" title=" " alt="" coords="8,304,204,331"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tRootElement.html" title=" " alt="" coords="10,155,202,181"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="9,80,203,107"/>
+<area shape="rect" id="node4" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="42,5,170,32"/>
+</map>

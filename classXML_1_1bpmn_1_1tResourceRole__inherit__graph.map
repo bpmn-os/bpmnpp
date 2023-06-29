@@ -1,0 +1,12 @@
+<map id="XML::bpmn::tResourceRole" name="XML::bpmn::tResourceRole">
+<area shape="rect" id="node1" title=" " alt="" coords="103,155,301,181"/>
+<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1resourceRole.html" title=" " alt="" coords="5,229,193,256"/>
+<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1tPerformer.html" title=" " alt="" coords="218,229,391,256"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="105,80,299,107"/>
+<area shape="rect" id="node3" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="138,5,266,32"/>
+<area shape="rect" id="node6" href="$classXML_1_1bpmn_1_1performer.html" title=" " alt="" coords="111,304,279,331"/>
+<area shape="rect" id="node7" href="$classXML_1_1bpmn_1_1tHumanPerformer.html" title=" " alt="" coords="304,304,524,331"/>
+<area shape="rect" id="node8" href="$classXML_1_1bpmn_1_1humanPerformer.html" title=" " alt="" coords="190,379,403,405"/>
+<area shape="rect" id="node9" href="$classXML_1_1bpmn_1_1tPotentialOwner.html" title=" " alt="" coords="427,379,635,405"/>
+<area shape="rect" id="node10" href="$classXML_1_1bpmn_1_1potentialOwner.html" title=" " alt="" coords="430,453,633,480"/>
+</map>

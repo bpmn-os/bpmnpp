@@ -1,0 +1,15 @@
+<map id="XML::bpmn::tRendering" name="XML::bpmn::tRendering">
+<area shape="rect" id="node1" title=" " alt="" coords="5,676,180,703"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="225,600,419,627"/>
+<area shape="rect" id="node3" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="574,503,702,530"/>
+<area shape="rect" id="node4" title=" " alt="" coords="87,385,266,411"/>
+<area shape="rect" id="node5" href="$structXML_1_1Attribute.html" title=" " alt="" coords="170,229,285,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="443,96,529,123"/>
+<area shape="rect" id="node7" title=" " alt="" coords="417,5,555,47"/>
+<area shape="rect" id="node8" title=" " alt="" coords="347,377,526,419"/>
+<area shape="rect" id="node9" title=" " alt="" coords="321,229,539,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="555,377,707,419"/>
+<area shape="rect" id="node11" title=" " alt="" coords="564,229,603,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="629,229,668,256"/>
+<area shape="rect" id="node13" title=" " alt="" coords="236,496,549,537"/>
+</map>

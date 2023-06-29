@@ -1,0 +1,15 @@
+<map id="XML::bpmn::baseElementWithMixedContent" name="XML::bpmn::baseElementWithMixedContent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,691,224,732"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tBaseElementWithMixedContent.html" title=" " alt="" coords="232,600,456,641"/>
+<area shape="rect" id="node3" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="596,503,724,530"/>
+<area shape="rect" id="node4" title=" " alt="" coords="109,385,288,411"/>
+<area shape="rect" id="node5" href="$structXML_1_1Attribute.html" title=" " alt="" coords="192,229,307,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="465,96,551,123"/>
+<area shape="rect" id="node7" title=" " alt="" coords="439,5,577,47"/>
+<area shape="rect" id="node8" title=" " alt="" coords="369,377,548,419"/>
+<area shape="rect" id="node9" title=" " alt="" coords="343,229,561,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="577,377,729,419"/>
+<area shape="rect" id="node11" title=" " alt="" coords="586,229,625,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="651,229,690,256"/>
+<area shape="rect" id="node13" title=" " alt="" coords="258,496,571,537"/>
+</map>

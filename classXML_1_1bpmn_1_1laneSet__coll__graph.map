@@ -1,0 +1,17 @@
+<map id="XML::bpmn::laneSet" name="XML::bpmn::laneSet">
+<area shape="rect" id="node1" title=" " alt="" coords="662,780,814,807"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tLaneSet.html" title=" " alt="" coords="539,704,699,731"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="218,607,413,634"/>
+<area shape="rect" id="node4" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="343,503,471,530"/>
+<area shape="rect" id="node5" title=" " alt="" coords="630,385,809,411"/>
+<area shape="rect" id="node6" href="$structXML_1_1Attribute.html" title=" " alt="" coords="646,229,761,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="192,96,279,123"/>
+<area shape="rect" id="node8" title=" " alt="" coords="166,5,305,47"/>
+<area shape="rect" id="node9" title=" " alt="" coords="251,377,430,419"/>
+<area shape="rect" id="node10" title=" " alt="" coords="251,229,470,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="454,377,606,419"/>
+<area shape="rect" id="node12" title=" " alt="" coords="503,229,541,256"/>
+<area shape="rect" id="node13" title=" " alt="" coords="568,229,607,256"/>
+<area shape="rect" id="node14" title=" " alt="" coords="5,496,319,537"/>
+<area shape="rect" id="node15" title=" " alt="" coords="437,600,681,641"/>
+</map>

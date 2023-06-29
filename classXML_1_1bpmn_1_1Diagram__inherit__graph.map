@@ -1,0 +1,5 @@
+<map id="XML::bpmn::Diagram" name="XML::bpmn::Diagram">
+<area shape="rect" id="node1" title=" " alt="" coords="25,80,184,107"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1BPMNDiagram.html" title=" " alt="" coords="5,155,204,181"/>
+<area shape="rect" id="node2" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="41,5,169,32"/>
+</map>

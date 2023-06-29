@@ -1,0 +1,8 @@
+<map id="BPMN::ErrorBoundaryEvent" name="BPMN::ErrorBoundaryEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,379,204,405"/>
+<area shape="rect" id="node2" href="$classBPMN_1_1BoundaryEvent.html" title="Represents a boundary event attached to an activity in a BPMN process." alt="" coords="82,304,250,331"/>
+<area shape="rect" id="node3" href="$classBPMN_1_1CatchEvent.html" title=" " alt="" coords="33,229,176,256"/>
+<area shape="rect" id="node4" href="$classBPMN_1_1Event.html" title=" " alt="" coords="51,155,158,181"/>
+<area shape="rect" id="node5" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="37,80,172,107"/>
+<area shape="rect" id="node6" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="53,5,156,32"/>
+</map>

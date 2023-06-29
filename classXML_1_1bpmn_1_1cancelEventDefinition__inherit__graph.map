@@ -1,0 +1,8 @@
+<map id="XML::bpmn::cancelEventDefinition" name="XML::bpmn::cancelEventDefinition">
+<area shape="rect" id="node1" title=" " alt="" coords="9,379,254,405"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tCancelEventDefinition.html" title=" " alt="" coords="5,304,257,331"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tEventDefinition.html" title=" " alt="" coords="27,229,235,256"/>
+<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tRootElement.html" title=" " alt="" coords="35,155,227,181"/>
+<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="34,80,229,107"/>
+<area shape="rect" id="node6" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="67,5,195,32"/>
+</map>

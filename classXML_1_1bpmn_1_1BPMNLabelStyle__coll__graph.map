@@ -1,0 +1,15 @@
+<map id="XML::bpmn::BPMNLabelStyle" name="XML::bpmn::BPMNLabelStyle">
+<area shape="rect" id="node1" title=" " alt="" coords="5,675,216,701"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1Style.html" title=" " alt="" coords="43,585,179,612"/>
+<area shape="rect" id="node3" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="269,496,397,523"/>
+<area shape="rect" id="node13" href="$classXML_1_1bpmn_1_1Font.html" title=" " alt="" coords="203,585,333,612"/>
+<area shape="rect" id="node4" title=" " alt="" coords="99,385,277,411"/>
+<area shape="rect" id="node5" href="$structXML_1_1Attribute.html" title=" " alt="" coords="159,229,273,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="225,96,311,123"/>
+<area shape="rect" id="node7" title=" " alt="" coords="199,5,337,47"/>
+<area shape="rect" id="node8" title=" " alt="" coords="357,377,536,419"/>
+<area shape="rect" id="node9" title=" " alt="" coords="357,229,576,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="560,377,712,419"/>
+<area shape="rect" id="node11" title=" " alt="" coords="609,229,647,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="674,229,713,256"/>
+</map>

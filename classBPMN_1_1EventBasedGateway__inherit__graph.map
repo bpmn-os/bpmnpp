@@ -1,0 +1,6 @@
+<map id="BPMN::EventBasedGateway" name="BPMN::EventBasedGateway">
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,209,256"/>
+<area shape="rect" id="node2" href="$classBPMN_1_1Gateway.html" title=" " alt="" coords="44,155,171,181"/>
+<area shape="rect" id="node3" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="40,80,175,107"/>
+<area shape="rect" id="node4" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="56,5,159,32"/>
+</map>

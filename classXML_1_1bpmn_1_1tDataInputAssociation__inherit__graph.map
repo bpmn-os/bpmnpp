@@ -1,0 +1,7 @@
+<map id="XML::bpmn::tDataInputAssociation" name="XML::bpmn::tDataInputAssociation">
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,252,256"/>
+<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1dataInputAssociation.html" title=" " alt="" coords="9,304,249,331"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tDataAssociation.html" title=" " alt="" coords="21,155,236,181"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="31,80,226,107"/>
+<area shape="rect" id="node4" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="65,5,193,32"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="BPMN::Task" name="BPMN::Task">
+<area shape="rect" id="node1" title=" " alt="" coords="505,157,604,184"/>
+<area shape="rect" id="node5" href="$classBPMN_1_1BusinessRuleTask.html" title=" " alt="" coords="652,5,837,32"/>
+<area shape="rect" id="node6" href="$classBPMN_1_1ManualTask.html" title=" " alt="" coords="671,56,818,83"/>
+<area shape="rect" id="node7" href="$classBPMN_1_1ReceiveTask.html" title=" " alt="" coords="669,107,820,133"/>
+<area shape="rect" id="node8" href="$classBPMN_1_1ScriptTask.html" title=" " alt="" coords="677,157,812,184"/>
+<area shape="rect" id="node9" href="$classBPMN_1_1SendTask.html" title=" " alt="" coords="679,208,810,235"/>
+<area shape="rect" id="node10" href="$classBPMN_1_1UntypedTask.html" title=" " alt="" coords="668,259,821,285"/>
+<area shape="rect" id="node11" href="$classBPMN_1_1UserTask.html" title=" " alt="" coords="681,309,809,336"/>
+<area shape="rect" id="node2" href="$classBPMN_1_1Activity.html" title=" " alt="" coords="339,157,457,184"/>
+<area shape="rect" id="node3" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="156,157,291,184"/>
+<area shape="rect" id="node4" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="5,157,108,184"/>
+</map>

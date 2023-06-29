@@ -1,0 +1,6 @@
+<map id="XML::bpmn::assignment" name="XML::bpmn::assignment">
+<area shape="rect" id="node1" title=" " alt="" coords="13,229,192,256"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tAssignment.html" title=" " alt="" coords="10,155,195,181"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="5,80,200,107"/>
+<area shape="rect" id="node4" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="39,5,167,32"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="XML::bpmn::tImport" name="XML::bpmn::tImport">
+<area shape="rect" id="node1" title=" " alt="" coords="40,587,190,613"/>
+<area shape="rect" id="node2" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="254,511,382,537"/>
+<area shape="rect" id="node3" title=" " alt="" coords="26,385,204,411"/>
+<area shape="rect" id="node4" href="$structXML_1_1Attribute.html" title=" " alt="" coords="58,229,172,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="325,96,412,123"/>
+<area shape="rect" id="node6" title=" " alt="" coords="299,5,438,47"/>
+<area shape="rect" id="node7" title=" " alt="" coords="228,377,407,419"/>
+<area shape="rect" id="node8" title=" " alt="" coords="196,229,415,256"/>
+<area shape="rect" id="node9" title=" " alt="" coords="431,377,583,419"/>
+<area shape="rect" id="node10" title=" " alt="" coords="536,229,574,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="440,229,478,256"/>
+</map>

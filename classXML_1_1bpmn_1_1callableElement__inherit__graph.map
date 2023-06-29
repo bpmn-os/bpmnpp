@@ -1,0 +1,7 @@
+<map id="XML::bpmn::callableElement" name="XML::bpmn::callableElement">
+<area shape="rect" id="node1" title=" " alt="" coords="9,304,217,331"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tCallableElement.html" title=" " alt="" coords="5,229,220,256"/>
+<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tRootElement.html" title=" " alt="" coords="17,155,209,181"/>
+<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="15,80,210,107"/>
+<area shape="rect" id="node5" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="49,5,177,32"/>
+</map>

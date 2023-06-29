@@ -1,0 +1,6 @@
+<map id="XML::bpmn::tInputOutputSpecification" name="XML::bpmn::tInputOutputSpecification">
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,273,181"/>
+<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1ioSpecification.html" title=" " alt="" coords="40,229,239,256"/>
+<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="42,80,237,107"/>
+<area shape="rect" id="node3" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="75,5,203,32"/>
+</map>
