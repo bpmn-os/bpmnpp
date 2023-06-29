@@ -1,0 +1,32 @@
+digraph "XML::bpmn::DiagramElement"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="XML::bpmn::DiagramElement",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="XML::XMLObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1XMLObject.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="XML::bpmn::Edge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1Edge.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="XML::bpmn::LabeledEdge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1LabeledEdge.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="XML::bpmn::BPMNEdge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1BPMNEdge.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="XML::bpmn::Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1Node.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="XML::bpmn::Label",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1Label.html",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="XML::bpmn::BPMNLabel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1BPMNLabel.html",tooltip=" "];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="XML::bpmn::Plane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1Plane.html",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="XML::bpmn::BPMNPlane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1BPMNPlane.html",tooltip=" "];
+  Node6 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="XML::bpmn::Shape",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1Shape.html",tooltip=" "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="XML::bpmn::LabeledShape",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1LabeledShape.html",tooltip=" "];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="XML::bpmn::BPMNShape",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1BPMNShape.html",tooltip=" "];
+}

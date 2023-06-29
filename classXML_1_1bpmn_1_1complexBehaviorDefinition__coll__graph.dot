@@ -1,0 +1,49 @@
+digraph "XML::bpmn::complexBehaviorDefinition"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="XML::bpmn::complexBehavior\lDefinition",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="XML::bpmn::tComplexBehavior\lDefinition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1tComplexBehaviorDefinition.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="XML::bpmn::tBaseElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1tBaseElement.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="XML::XMLObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1XMLObject.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" attributes\ndefaults" ,fontname="Helvetica"];
+  Node5 [label="std::vector\< Attribute \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="Helvetica"];
+  Node6 [label="XML::Attribute",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structXML_1_1Attribute.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" name\nprefix\nvalue\nxmlns" ,fontname="Helvetica"];
+  Node7 [label="std::string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="std::basic_string\<\l Char \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" className\nelementName\nprefix\ntextContent\nxmlns" ,fontname="Helvetica"];
+  Node9 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" children" ,fontname="Helvetica"];
+  Node9 [label="std::vector\< std::unique\l_ptr\< XMLObject \> \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="Helvetica"];
+  Node10 [label="std::unique_ptr\< XMLObject \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" factory" ,fontname="Helvetica"];
+  Node11 [label="std::unordered_map\l\< K, T \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" keys" ,fontname="Helvetica"];
+  Node12 [label="K",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="Helvetica"];
+  Node13 [label="T",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" documentation" ,fontname="Helvetica"];
+  Node14 [label="std::vector\< std::reference\l_wrapper\< XML::bpmn::tDocumentation \> \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" defaults" ,fontname="Helvetica"];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" defaults" ,fontname="Helvetica"];
+  Node15 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" condition" ,fontname="Helvetica"];
+  Node15 [label="XML::bpmn::tFormalExpression",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1tFormalExpression.html",tooltip=" "];
+  Node16 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="XML::bpmn::tExpression",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1tExpression.html",tooltip=" "];
+  Node17 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="XML::bpmn::tBaseElementWith\lMixedContent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1tBaseElementWithMixedContent.html",tooltip=" "];
+  Node4 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node17 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" documentation" ,fontname="Helvetica"];
+  Node5 -> Node17 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" defaults" ,fontname="Helvetica"];
+  Node5 -> Node16 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" defaults" ,fontname="Helvetica"];
+  Node5 -> Node15 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" defaults" ,fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" defaults" ,fontname="Helvetica"];
+}

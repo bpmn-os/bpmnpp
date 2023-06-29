@@ -1,0 +1,32 @@
+digraph "BPMN::BoundaryEvent"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="BPMN::BoundaryEvent",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Represents a boundary event attached to an activity in a BPMN process."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BPMN::CatchEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1CatchEvent.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BPMN::Event",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1Event.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BPMN::FlowNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1FlowNode.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="BPMN::Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1Node.html",tooltip="Represents a node in a BPMN process."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="BPMN::CancelBoundaryEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1CancelBoundaryEvent.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="BPMN::CompensateBoundary\lEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1CompensateBoundaryEvent.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="BPMN::ConditionalBoundary\lEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1ConditionalBoundaryEvent.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="BPMN::ErrorBoundaryEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1ErrorBoundaryEvent.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="BPMN::EscalationBoundary\lEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1EscalationBoundaryEvent.html",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="BPMN::MessageBoundaryEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1MessageBoundaryEvent.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="BPMN::SignalBoundaryEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1SignalBoundaryEvent.html",tooltip=" "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="BPMN::TimerBoundaryEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBPMN_1_1TimerBoundaryEvent.html",tooltip=" "];
+}

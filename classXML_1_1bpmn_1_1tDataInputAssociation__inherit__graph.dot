@@ -1,0 +1,15 @@
+digraph "XML::bpmn::tDataInputAssociation"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="XML::bpmn::tDataInputAssociation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="XML::bpmn::tDataAssociation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1tDataAssociation.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="XML::bpmn::tBaseElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1tBaseElement.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="XML::XMLObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1XMLObject.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="XML::bpmn::dataInputAssociation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classXML_1_1bpmn_1_1dataInputAssociation.html",tooltip=" "];
+}
