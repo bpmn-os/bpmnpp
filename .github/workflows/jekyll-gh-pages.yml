@@ -38,6 +38,7 @@ jobs:
           cmake ..
           make
           make docs
+          cd ..
           rm docs/html/*.md5
           rm docs/html/*.map
       - name: Deploy to GitHub Pages
