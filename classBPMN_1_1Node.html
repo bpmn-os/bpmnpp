@@ -77,103 +77,70 @@ $(function() {
 <p>Represents a node in a BPMN process.  
  <a href="classBPMN_1_1Node.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="bpmn_09_09_8h_source.html">bpmn++.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Node_8h_source.html">Node.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for BPMN::Node:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBPMN_1_1Node__inherit__graph.png" border="0" usemap="#aBPMN_1_1Node_inherit__map" alt="Inheritance graph"/></div>
 <map name="aBPMN_1_1Node_inherit__map" id="aBPMN_1_1Node_inherit__map">
-<area shape="rect" title="Represents a node in a BPMN process." alt="" coords="5,505,108,532"/>
-<area shape="rect" href="classBPMN_1_1FlowNode.html" title=" " alt="" coords="156,531,291,557"/>
-<area shape="rect" href="classBPMN_1_1Scope.html" title=" " alt="" coords="169,176,277,203"/>
-<area shape="rect" href="classBPMN_1_1Activity.html" title=" " alt="" coords="343,252,461,279"/>
-<area shape="rect" href="classBPMN_1_1Event.html" title=" " alt="" coords="349,867,455,893"/>
-<area shape="rect" href="classBPMN_1_1Gateway.html" title=" " alt="" coords="339,1525,465,1552"/>
-<area shape="rect" href="classBPMN_1_1CallActivity.html" title=" " alt="" coords="543,208,687,235"/>
-<area shape="rect" href="classBPMN_1_1SubProcess.html" title=" " alt="" coords="544,63,687,89"/>
-<area shape="rect" href="classBPMN_1_1Task.html" title=" " alt="" coords="566,259,665,285"/>
-<area shape="rect" href="classBPMN_1_1AdHocSubProcess.html" title=" " alt="" coords="787,5,972,32"/>
-<area shape="rect" href="classBPMN_1_1Transaction.html" title=" " alt="" coords="808,56,951,83"/>
-<area shape="rect" href="classBPMN_1_1BusinessRuleTask.html" title=" " alt="" coords="787,107,972,133"/>
-<area shape="rect" href="classBPMN_1_1ManualTask.html" title=" " alt="" coords="806,157,953,184"/>
-<area shape="rect" href="classBPMN_1_1ReceiveTask.html" title=" " alt="" coords="804,208,955,235"/>
-<area shape="rect" href="classBPMN_1_1ScriptTask.html" title=" " alt="" coords="812,259,947,285"/>
-<area shape="rect" href="classBPMN_1_1SendTask.html" title=" " alt="" coords="814,309,945,336"/>
-<area shape="rect" href="classBPMN_1_1UntypedTask.html" title=" " alt="" coords="803,360,956,387"/>
-<area shape="rect" href="classBPMN_1_1UserTask.html" title=" " alt="" coords="815,411,943,437"/>
-<area shape="rect" href="classBPMN_1_1CatchEvent.html" title=" " alt="" coords="544,867,687,893"/>
-<area shape="rect" href="classBPMN_1_1ThrowEvent.html" title=" " alt="" coords="542,1399,689,1425"/>
-<area shape="rect" href="classBPMN_1_1BoundaryEvent.html" title="Represents a boundary event attached to an activity in a BPMN process." alt="" coords="795,664,963,691"/>
-<area shape="rect" href="classBPMN_1_1CancelBoundaryEvent.html" title=" " alt="" coords="1049,463,1261,489"/>
-<area shape="rect" href="classBPMN_1_1CompensateBoundaryEvent.html" title=" " alt="" coords="1048,514,1261,555"/>
-<area shape="rect" href="classBPMN_1_1ConditionalBoundaryEvent.html" title=" " alt="" coords="1052,579,1257,621"/>
-<area shape="rect" href="classBPMN_1_1ErrorBoundaryEvent.html" title=" " alt="" coords="1055,645,1254,672"/>
-<area shape="rect" href="classBPMN_1_1EscalationBoundaryEvent.html" title=" " alt="" coords="1055,697,1254,738"/>
-<area shape="rect" href="classBPMN_1_1MessageBoundaryEvent.html" title=" " alt="" coords="1041,764,1268,791"/>
-<area shape="rect" href="classBPMN_1_1SignalBoundaryEvent.html" title=" " alt="" coords="1051,816,1259,843"/>
-<area shape="rect" href="classBPMN_1_1TimerBoundaryEvent.html" title=" " alt="" coords="1051,867,1258,893"/>
-<area shape="rect" href="classBPMN_1_1CompensateStartEvent.html" title=" " alt="" coords="770,917,989,944"/>
-<area shape="rect" href="classBPMN_1_1ConditionalCatchEvent.html" title=" " alt="" coords="771,968,988,995"/>
-<area shape="rect" href="classBPMN_1_1ErrorStartEvent.html" title=" " alt="" coords="795,1019,963,1045"/>
-<area shape="rect" href="classBPMN_1_1EscalationStartEvent.html" title=" " alt="" coords="777,1069,981,1096"/>
-<area shape="rect" href="classBPMN_1_1MessageCatchEvent.html" title=" " alt="" coords="779,1120,980,1147"/>
-<area shape="rect" href="classBPMN_1_1SignalCatchEvent.html" title=" " alt="" coords="788,1171,971,1197"/>
-<area shape="rect" href="classBPMN_1_1TimerCatchEvent.html" title=" " alt="" coords="789,1221,970,1248"/>
-<area shape="rect" href="classBPMN_1_1UntypedStartEvent.html" title=" " alt="" coords="783,1272,975,1299"/>
-<area shape="rect" href="classBPMN_1_1CancelEndEvent.html" title=" " alt="" coords="792,1323,967,1349"/>
-<area shape="rect" href="classBPMN_1_1CompensateThrowEvent.html" title=" " alt="" coords="765,1373,993,1400"/>
-<area shape="rect" href="classBPMN_1_1ErrorEndEvent.html" title=" " alt="" coords="799,1424,960,1451"/>
-<area shape="rect" href="classBPMN_1_1EscalationThrowEvent.html" title=" " alt="" coords="773,1475,986,1501"/>
-<area shape="rect" href="classBPMN_1_1MessageThrowEvent.html" title=" " alt="" coords="777,1525,981,1552"/>
-<area shape="rect" href="classBPMN_1_1SignalThrowEvent.html" title=" " alt="" coords="786,1576,973,1603"/>
-<area shape="rect" href="classBPMN_1_1ComplexGateway.html" title=" " alt="" coords="523,1449,708,1476"/>
-<area shape="rect" href="classBPMN_1_1EventBasedGateway.html" title=" " alt="" coords="513,1500,717,1527"/>
-<area shape="rect" href="classBPMN_1_1ExclusiveGateway.html" title=" " alt="" coords="521,1551,710,1577"/>
-<area shape="rect" href="classBPMN_1_1InclusiveGateway.html" title=" " alt="" coords="523,1601,708,1628"/>
-<area shape="rect" href="classBPMN_1_1ParallelGateway.html" title=" " alt="" coords="528,1652,703,1679"/>
-<area shape="rect" href="classBPMN_1_1Process.html" title=" " alt="" coords="343,176,461,203"/>
+<area shape="rect" title="Represents a node in a BPMN process." alt="" coords="812,5,928,185"/>
+<area shape="rect" href="classBPMN_1_1FlowNode.html" title=" " alt="" coords="940,233,1075,355"/>
+<area shape="rect" href="classBPMN_1_1Scope.html" title=" " alt="" coords="721,241,859,347"/>
+<area shape="rect" href="classBPMN_1_1Activity.html" title=" " alt="" coords="905,403,1048,495"/>
+<area shape="rect" href="classBPMN_1_1Event.html" title=" " alt="" coords="2089,410,2195,487"/>
+<area shape="rect" href="classBPMN_1_1Gateway.html" title=" " alt="" coords="4819,410,4945,487"/>
+<area shape="rect" href="classBPMN_1_1CallActivity.html" title=" " alt="" coords="787,543,931,620"/>
+<area shape="rect" href="classBPMN_1_1SubProcess.html" title=" " alt="" coords="417,543,560,620"/>
+<area shape="rect" href="classBPMN_1_1Task.html" title=" " alt="" coords="955,543,1054,620"/>
+<area shape="rect" href="classBPMN_1_1AdHocSubProcess.html" title=" " alt="" coords="5,675,191,753"/>
+<area shape="rect" href="classBPMN_1_1Transaction.html" title=" " alt="" coords="215,675,357,753"/>
+<area shape="rect" href="classBPMN_1_1BusinessRuleTask.html" title=" " alt="" coords="381,675,567,753"/>
+<area shape="rect" href="classBPMN_1_1ManualTask.html" title=" " alt="" coords="591,675,738,753"/>
+<area shape="rect" href="classBPMN_1_1ReceiveTask.html" title=" " alt="" coords="763,675,913,753"/>
+<area shape="rect" href="classBPMN_1_1ScriptTask.html" title=" " alt="" coords="937,675,1072,753"/>
+<area shape="rect" href="classBPMN_1_1SendTask.html" title=" " alt="" coords="1097,675,1227,753"/>
+<area shape="rect" href="classBPMN_1_1UntypedTask.html" title=" " alt="" coords="1252,675,1405,753"/>
+<area shape="rect" href="classBPMN_1_1UserTask.html" title=" " alt="" coords="1430,675,1558,753"/>
+<area shape="rect" href="classBPMN_1_1CatchEvent.html" title=" " alt="" coords="2071,543,2213,620"/>
+<area shape="rect" href="classBPMN_1_1ThrowEvent.html" title=" " alt="" coords="4289,543,4435,620"/>
+<area shape="rect" href="classBPMN_1_1BoundaryEvent.html" title="Represents a boundary event attached to an activity in a BPMN process." alt="" coords="1785,668,1953,760"/>
+<area shape="rect" href="classBPMN_1_1CancelBoundaryEvent.html" title=" " alt="" coords="921,815,1133,893"/>
+<area shape="rect" href="classBPMN_1_1CompensateBoundaryEvent.html" title=" " alt="" coords="1157,808,1385,900"/>
+<area shape="rect" href="classBPMN_1_1ConditionalBoundaryEvent.html" title=" " alt="" coords="1409,808,1629,900"/>
+<area shape="rect" href="classBPMN_1_1ErrorBoundaryEvent.html" title=" " alt="" coords="1653,815,1852,893"/>
+<area shape="rect" href="classBPMN_1_1EscalationBoundaryEvent.html" title=" " alt="" coords="1877,808,2090,900"/>
+<area shape="rect" href="classBPMN_1_1MessageBoundaryEvent.html" title=" " alt="" coords="2114,815,2341,893"/>
+<area shape="rect" href="classBPMN_1_1SignalBoundaryEvent.html" title=" " alt="" coords="2365,815,2573,893"/>
+<area shape="rect" href="classBPMN_1_1TimerBoundaryEvent.html" title=" " alt="" coords="2597,815,2804,893"/>
+<area shape="rect" href="classBPMN_1_1CompensateStartEvent.html" title=" " alt="" coords="2179,675,2398,753"/>
+<area shape="rect" href="classBPMN_1_1ConditionalCatchEvent.html" title=" " alt="" coords="2423,675,2640,753"/>
+<area shape="rect" href="classBPMN_1_1ErrorStartEvent.html" title=" " alt="" coords="2665,675,2833,753"/>
+<area shape="rect" href="classBPMN_1_1EscalationStartEvent.html" title=" " alt="" coords="2857,675,3061,753"/>
+<area shape="rect" href="classBPMN_1_1MessageCatchEvent.html" title=" " alt="" coords="3085,675,3287,753"/>
+<area shape="rect" href="classBPMN_1_1SignalCatchEvent.html" title=" " alt="" coords="3311,675,3493,753"/>
+<area shape="rect" href="classBPMN_1_1TimerCatchEvent.html" title=" " alt="" coords="3518,675,3699,753"/>
+<area shape="rect" href="classBPMN_1_1UntypedStartEvent.html" title=" " alt="" coords="3723,675,3915,753"/>
+<area shape="rect" href="classBPMN_1_1CancelEndEvent.html" title=" " alt="" coords="3940,675,4115,753"/>
+<area shape="rect" href="classBPMN_1_1CompensateThrowEvent.html" title=" " alt="" coords="4139,675,4367,753"/>
+<area shape="rect" href="classBPMN_1_1ErrorEndEvent.html" title=" " alt="" coords="4391,675,4552,753"/>
+<area shape="rect" href="classBPMN_1_1EscalationThrowEvent.html" title=" " alt="" coords="4577,675,4790,753"/>
+<area shape="rect" href="classBPMN_1_1MessageThrowEvent.html" title=" " alt="" coords="4815,675,5019,753"/>
+<area shape="rect" href="classBPMN_1_1SignalThrowEvent.html" title=" " alt="" coords="5043,675,5230,753"/>
+<area shape="rect" href="classBPMN_1_1ComplexGateway.html" title=" " alt="" coords="4460,543,4645,620"/>
+<area shape="rect" href="classBPMN_1_1EventBasedGateway.html" title=" " alt="" coords="4669,543,4873,620"/>
+<area shape="rect" href="classBPMN_1_1ExclusiveGateway.html" title=" " alt="" coords="4898,543,5087,620"/>
+<area shape="rect" href="classBPMN_1_1InclusiveGateway.html" title=" " alt="" coords="5112,543,5297,620"/>
+<area shape="rect" href="classBPMN_1_1ParallelGateway.html" title=" " alt="" coords="5321,543,5496,620"/>
+<area shape="rect" href="classBPMN_1_1Process.html" title=" " alt="" coords="731,410,849,487"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for BPMN::Node:</div>
-<div class="dyncontent">
-<div class="center"><img src="classBPMN_1_1Node__coll__graph.png" border="0" usemap="#aBPMN_1_1Node_coll__map" alt="Collaboration graph"/></div>
-<map name="aBPMN_1_1Node_coll__map" id="aBPMN_1_1Node_coll__map">
-<area shape="rect" title="Represents a node in a BPMN process." alt="" coords="1935,176,2037,203"/>
-<area shape="rect" href="classBPMN_1_1Scope.html" title=" " alt="" coords="3137,116,3245,143"/>
-<area shape="rect" href="classBPMN_1_1FlowNode.html" title=" " alt="" coords="2461,535,2595,561"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="1507,321,1702,348"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tFlowElement.html" title=" " alt="" coords="1889,491,2083,517"/>
-<area shape="rect" href="classXML_1_1XMLObject.html" title=" " alt="" coords="1117,209,1245,236"/>
-<area shape="rect" title=" " alt="" coords="729,380,908,407"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tSequenceFlow.html" title=" " alt="" coords="2132,440,2335,467"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tFlowNode.html" title=" " alt="" coords="2147,551,2320,577"/>
-<area shape="rect" href="structXML_1_1Attribute.html" title=" " alt="" coords="421,383,536,409"/>
-<area shape="rect" title=" " alt="" coords="193,344,280,371"/>
-<area shape="rect" href="classBPMN_1_1SequenceFlow.html" title="Represents a sequence flow in a BPMN process." alt="" coords="2763,523,2926,549"/>
-<area shape="rect" title=" " alt="" coords="5,337,144,378"/>
-<area shape="rect" title=" " alt="" coords="729,115,908,157"/>
-<area shape="rect" title=" " alt="" coords="369,104,588,131"/>
-<area shape="rect" title=" " alt="" coords="743,193,895,234"/>
-<area shape="rect" title=" " alt="" coords="459,205,498,232"/>
-<area shape="rect" title=" " alt="" coords="459,155,498,181"/>
-<area shape="rect" title=" " alt="" coords="1024,311,1337,353"/>
-<area shape="rect" title=" " alt="" coords="2743,109,2947,150"/>
-<area shape="rect" title=" " alt="" coords="2441,109,2615,150"/>
-<area shape="rect" title=" " alt="" coords="2768,342,2921,383"/>
-<area shape="rect" title=" " alt="" coords="3115,554,3268,595"/>
-<area shape="rect" title=" " alt="" coords="1488,546,1721,587"/>
-<area shape="rect" title=" " alt="" coords="2728,43,2961,85"/>
-<area shape="rect" title=" " alt="" coords="2441,43,2615,85"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2ed6a5751e6f29c4a30fa8b474ec82a5"><td class="memItemLeft" align="right" valign="top"><a id="a2ed6a5751e6f29c4a30fa8b474ec82a5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a2ed6a5751e6f29c4a30fa8b474ec82a5">Node</a> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1Node.html#aef608256772a7c69963a59842062c379">parent</a>=nullptr)</td></tr>
-<tr class="memdesc:a2ed6a5751e6f29c4a30fa8b474ec82a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code><a class="el" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process.">Node</a></code> object representing a BPMN process or flow node within a parent node. <br /></td></tr>
-<tr class="separator:a2ed6a5751e6f29c4a30fa8b474ec82a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922414d03381cc1dc3dfebd1b155f8b5"><td class="memItemLeft" align="right" valign="top"><a id="a922414d03381cc1dc3dfebd1b155f8b5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a922414d03381cc1dc3dfebd1b155f8b5">Node</a> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1Node.html#aef608256772a7c69963a59842062c379">parent</a>=nullptr)</td></tr>
+<tr class="memdesc:a922414d03381cc1dc3dfebd1b155f8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code><a class="el" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process.">Node</a></code> object representing a BPMN process or flow node within a parent node. <br /></td></tr>
+<tr class="separator:a922414d03381cc1dc3dfebd1b155f8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49efebc9ad4a5b8d0bfd0371e28eeb05"><td class="memTemplParams" colspan="2"><a id="a49efebc9ad4a5b8d0bfd0371e28eeb05"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a49efebc9ad4a5b8d0bfd0371e28eeb05"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a49efebc9ad4a5b8d0bfd0371e28eeb05">is</a> ()</td></tr>
