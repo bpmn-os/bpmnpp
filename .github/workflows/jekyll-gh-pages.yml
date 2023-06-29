@@ -31,7 +31,7 @@ jobs:
           cmake ..
           make
           make install
-      - name: Build Project
+      - name: Generate Docs
         run: |
           mkdir build
           cd build
