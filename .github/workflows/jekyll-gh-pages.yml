@@ -37,9 +37,7 @@ jobs:
           cd build
           cmake ..
           cd ../src/xml/bpmn
-          grep -l "xsd/BPMNDI.xsd" *.h | xargs rm
-          grep -l "xsd/DI.xsd" *.h | xargs rm
-          grep -l "xsd/DC.xsd" *.h | xargs rm
+          find . -type f -regex '\./[a-z][^A-Z]*' -delete
           cd ../../../build
           make docs
           cd ../docs/html
