@@ -5,7 +5,7 @@ PROJECT_NAME      = bpmn++
 OUTPUT_DIRECTORY  = docs
 
 # Input sources
-INPUT             = lib/bpmn++.h README.md
+INPUT             = src/ src/xml/ src/xml/bpmn/ README.md
 
 USE_MDFILE_AS_MAINPAGE = README.md
 
@@ -17,4 +17,8 @@ SHOW_FILES            = NO
 GENERATE_LATEX        = NO
 QUIET                 = YES
 WARN_IF_UNDOCUMENTED  = NO
-
+UML_LOOK              = YES
+COLLABORATION_GRAPH   = NO
+INCLUDE_GRAPH         = NO
+INCLUDED_BY_GRAPH     = NO
+SHOW_NAMESPACES       = NO
