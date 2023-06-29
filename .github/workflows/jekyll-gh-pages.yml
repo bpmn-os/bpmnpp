@@ -1,0 +1,47 @@
+name: Deploy Docs
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Doxygen
+        run: |
+          sudo apt-get install graphviz
+          sudo apt-get install -y doxygen
+      - name: Set up Xerces-c
+        run: |
+          sudo apt install libxerces-c-dev
+      - name: Set up schematicpp
+        run: |
+          git clone https://github.com/rajgoel/schematicpp.git
+          cd schematicpp
+          mkdir build
+          cd build
+          cmake ..
+          make
+          make install
+      - name: Generate Docs
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          make docs
+          cd ..
+          rm docs/html/*.md5
+          rm docs/html/*.map
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/html
