@@ -29,13 +29,13 @@ jobs:
           mkdir build
           cd build
           cmake ..
+          make
           make install
       - name: Build Project
         run: |
           mkdir build
           cd build
           cmake ..
-          make
           make docs
           cd ..
           rm docs/html/*.md5
