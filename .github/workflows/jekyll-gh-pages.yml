@@ -38,8 +38,11 @@ jobs:
           cmake ..
           make
           make docs
+          rm docs/html/*.md5
+          rm docs/html/*.map
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: DenverCoder1/doxygen-github-pages-action@v1
         with:
-          personal_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./docs/html
+          github_token: ${{ secrets.GH_TOKEN }}
+          branch: gh-pages
+          folder: docs/html
