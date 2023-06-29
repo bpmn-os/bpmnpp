@@ -1,11 +1,19 @@
 var searchData=
 [
-  ['baseelement_13',['baseElement',['../classXML_1_1bpmn_1_1baseElement.html',1,'XML::bpmn']]],
-  ['baseelementwithmixedcontent_14',['baseElementWithMixedContent',['../classXML_1_1bpmn_1_1baseElementWithMixedContent.html',1,'XML::bpmn']]],
-  ['behavior_15',['behavior',['../classXML_1_1bpmn_1_1tMultiInstanceLoopCharacteristics.html#ad2f7fd9a1c12ff75c6c578673731c716',1,'XML::bpmn::tMultiInstanceLoopCharacteristics']]],
-  ['boundaryevent_16',['BoundaryEvent',['../classBPMN_1_1BoundaryEvent.html',1,'BPMN']]],
-  ['boundaryevent_17',['boundaryEvent',['../classXML_1_1bpmn_1_1boundaryEvent.html',1,'XML::bpmn']]],
-  ['bpmn_2b_2b_18',['bpmn++',['../index.html',1,'']]],
-  ['businessruletask_19',['BusinessRuleTask',['../classBPMN_1_1BusinessRuleTask.html',1,'BPMN']]],
-  ['businessruletask_20',['businessRuleTask',['../classXML_1_1bpmn_1_1businessRuleTask.html',1,'XML::bpmn']]]
+  ['baseelement_8',['baseElement',['../classXML_1_1bpmn_1_1baseElement.html',1,'XML::bpmn']]],
+  ['baseelementwithmixedcontent_9',['baseElementWithMixedContent',['../classXML_1_1bpmn_1_1baseElementWithMixedContent.html',1,'XML::bpmn']]],
+  ['behavior_10',['behavior',['../classXML_1_1bpmn_1_1tMultiInstanceLoopCharacteristics.html#ad2f7fd9a1c12ff75c6c578673731c716',1,'XML::bpmn::tMultiInstanceLoopCharacteristics']]],
+  ['boundaryevent_11',['BoundaryEvent',['../classBPMN_1_1BoundaryEvent.html',1,'BPMN']]],
+  ['boundaryevent_12',['boundaryEvent',['../classXML_1_1bpmn_1_1boundaryEvent.html',1,'XML::bpmn']]],
+  ['bounds_13',['Bounds',['../classXML_1_1bpmn_1_1Bounds.html',1,'XML::bpmn']]],
+  ['bpmn_2b_2b_14',['bpmn++',['../index.html',1,'']]],
+  ['bpmndiagram_15',['BPMNDiagram',['../classXML_1_1bpmn_1_1BPMNDiagram.html',1,'XML::bpmn']]],
+  ['bpmnedge_16',['BPMNEdge',['../classXML_1_1bpmn_1_1BPMNEdge.html',1,'XML::bpmn']]],
+  ['bpmnelement_17',['bpmnElement',['../classXML_1_1bpmn_1_1BPMNEdge.html#a8cc9f8cb5598115cf9ddc72db11ec060',1,'XML::bpmn::BPMNEdge::bpmnElement()'],['../classXML_1_1bpmn_1_1BPMNPlane.html#a6ddace6173f3c1b92c4acbc275b2587a',1,'XML::bpmn::BPMNPlane::bpmnElement()'],['../classXML_1_1bpmn_1_1BPMNShape.html#a31ebe1cdac5cbe9c08b1bc9138d02266',1,'XML::bpmn::BPMNShape::bpmnElement()']]],
+  ['bpmnlabel_18',['BPMNLabel',['../classXML_1_1bpmn_1_1BPMNLabel.html',1,'XML::bpmn']]],
+  ['bpmnlabelstyle_19',['BPMNLabelStyle',['../classXML_1_1bpmn_1_1BPMNLabelStyle.html',1,'XML::bpmn']]],
+  ['bpmnplane_20',['BPMNPlane',['../classXML_1_1bpmn_1_1BPMNPlane.html',1,'XML::bpmn']]],
+  ['bpmnshape_21',['BPMNShape',['../classXML_1_1bpmn_1_1BPMNShape.html',1,'XML::bpmn']]],
+  ['businessruletask_22',['BusinessRuleTask',['../classBPMN_1_1BusinessRuleTask.html',1,'BPMN']]],
+  ['businessruletask_23',['businessRuleTask',['../classXML_1_1bpmn_1_1businessRuleTask.html',1,'XML::bpmn']]]
 ];
