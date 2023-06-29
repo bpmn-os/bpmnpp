@@ -1,8 +1,0 @@
-<map id="BPMN::CancelBoundaryEvent" name="BPMN::CancelBoundaryEvent">
-<area shape="rect" id="node1" title=" " alt="" coords="5,379,217,405"/>
-<area shape="rect" id="node2" href="$classBPMN_1_1BoundaryEvent.html" title="Represents a boundary event attached to an activity in a BPMN process." alt="" coords="89,304,257,331"/>
-<area shape="rect" id="node3" href="$classBPMN_1_1CatchEvent.html" title=" " alt="" coords="40,229,183,256"/>
-<area shape="rect" id="node4" href="$classBPMN_1_1Event.html" title=" " alt="" coords="58,155,165,181"/>
-<area shape="rect" id="node5" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="44,80,179,107"/>
-<area shape="rect" id="node6" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="60,5,163,32"/>
-</map>

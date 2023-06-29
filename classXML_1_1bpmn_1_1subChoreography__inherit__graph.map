@@ -1,9 +1,0 @@
-<map id="XML::bpmn::subChoreography" name="XML::bpmn::subChoreography">
-<area shape="rect" id="node1" title=" " alt="" coords="8,468,225,495"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tSubChoreography.html" title=" " alt="" coords="5,393,228,420"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tChoreographyActivity.html" title=" " alt="" coords="17,304,216,345"/>
-<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tFlowNode.html" title=" " alt="" coords="30,229,203,256"/>
-<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1tFlowElement.html" title=" " alt="" coords="20,155,213,181"/>
-<area shape="rect" id="node6" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="19,80,214,107"/>
-<area shape="rect" id="node7" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="53,5,181,32"/>
-</map>

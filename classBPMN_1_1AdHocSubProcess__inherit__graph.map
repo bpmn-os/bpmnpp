@@ -1,8 +1,0 @@
-<map id="BPMN::AdHocSubProcess" name="BPMN::AdHocSubProcess">
-<area shape="rect" id="node1" title=" " alt="" coords="40,304,225,331"/>
-<area shape="rect" id="node2" href="$classBPMN_1_1SubProcess.html" title=" " alt="" coords="61,229,204,256"/>
-<area shape="rect" id="node3" href="$classBPMN_1_1Activity.html" title=" " alt="" coords="5,155,124,181"/>
-<area shape="rect" id="node4" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="13,80,148,107"/>
-<area shape="rect" id="node5" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="81,5,184,32"/>
-<area shape="rect" id="node6" href="$classBPMN_1_1Scope.html" title=" " alt="" coords="148,155,256,181"/>
-</map>

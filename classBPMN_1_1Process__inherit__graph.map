@@ -1,5 +1,0 @@
-<map id="BPMN::Process" name="BPMN::Process">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,124,181"/>
-<area shape="rect" id="node2" href="$classBPMN_1_1Scope.html" title=" " alt="" coords="11,80,119,107"/>
-<area shape="rect" id="node3" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="13,5,116,32"/>
-</map>

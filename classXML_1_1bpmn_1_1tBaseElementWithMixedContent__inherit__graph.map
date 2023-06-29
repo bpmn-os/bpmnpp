@@ -1,9 +1,0 @@
-<map id="XML::bpmn::tBaseElementWithMixedContent" name="XML::bpmn::tBaseElementWithMixedContent">
-<area shape="rect" id="node1" title=" " alt="" coords="113,80,337,121"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1baseElementWithMixedContent.html" title=" " alt="" coords="5,169,224,211"/>
-<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tExpression.html" title=" " alt="" coords="248,177,427,203"/>
-<area shape="rect" id="node2" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="161,5,289,32"/>
-<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1expression.html" title=" " alt="" coords="138,259,313,285"/>
-<area shape="rect" id="node6" href="$classXML_1_1bpmn_1_1tFormalExpression.html" title=" " alt="" coords="337,259,561,285"/>
-<area shape="rect" id="node7" href="$classXML_1_1bpmn_1_1formalExpression.html" title=" " alt="" coords="341,333,558,360"/>
-</map>

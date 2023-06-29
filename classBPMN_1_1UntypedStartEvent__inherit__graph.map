@@ -1,7 +1,0 @@
-<map id="BPMN::UntypedStartEvent" name="BPMN::UntypedStartEvent">
-<area shape="rect" id="node1" title=" " alt="" coords="5,304,197,331"/>
-<area shape="rect" id="node2" href="$classBPMN_1_1CatchEvent.html" title=" " alt="" coords="30,229,173,256"/>
-<area shape="rect" id="node3" href="$classBPMN_1_1Event.html" title=" " alt="" coords="48,155,155,181"/>
-<area shape="rect" id="node4" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="34,80,169,107"/>
-<area shape="rect" id="node5" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="50,5,153,32"/>
-</map>

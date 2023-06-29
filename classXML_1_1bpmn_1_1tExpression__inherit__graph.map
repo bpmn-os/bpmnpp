@@ -1,8 +1,0 @@
-<map id="XML::bpmn::tExpression" name="XML::bpmn::tExpression">
-<area shape="rect" id="node1" title=" " alt="" coords="115,169,294,196"/>
-<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1expression.html" title=" " alt="" coords="5,244,180,271"/>
-<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1tFormalExpression.html" title=" " alt="" coords="205,244,429,271"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tBaseElementWithMixedContent.html" title=" " alt="" coords="93,80,317,121"/>
-<area shape="rect" id="node3" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="141,5,269,32"/>
-<area shape="rect" id="node6" href="$classXML_1_1bpmn_1_1formalExpression.html" title=" " alt="" coords="208,319,425,345"/>
-</map>

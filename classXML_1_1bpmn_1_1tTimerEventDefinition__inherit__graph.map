@@ -1,8 +1,0 @@
-<map id="XML::bpmn::tTimerEventDefinition" name="XML::bpmn::tTimerEventDefinition">
-<area shape="rect" id="node1" title=" " alt="" coords="5,304,252,331"/>
-<area shape="rect" id="node6" href="$classXML_1_1bpmn_1_1timerEventDefinition.html" title=" " alt="" coords="9,379,248,405"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tEventDefinition.html" title=" " alt="" coords="25,229,233,256"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tRootElement.html" title=" " alt="" coords="33,155,225,181"/>
-<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="31,80,226,107"/>
-<area shape="rect" id="node5" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="65,5,193,32"/>
-</map>

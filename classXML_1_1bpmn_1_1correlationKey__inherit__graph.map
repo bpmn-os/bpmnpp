@@ -1,6 +1,0 @@
-<map id="XML::bpmn::correlationKey" name="XML::bpmn::correlationKey">
-<area shape="rect" id="node1" title=" " alt="" coords="9,229,206,256"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tCorrelationKey.html" title=" " alt="" coords="5,155,209,181"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="10,80,205,107"/>
-<area shape="rect" id="node4" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="43,5,171,32"/>
-</map>

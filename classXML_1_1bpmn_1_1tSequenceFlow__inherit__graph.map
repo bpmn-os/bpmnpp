@@ -1,7 +1,0 @@
-<map id="XML::bpmn::tSequenceFlow" name="XML::bpmn::tSequenceFlow">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,208,256"/>
-<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1sequenceFlow.html" title=" " alt="" coords="9,304,205,331"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tFlowElement.html" title=" " alt="" coords="10,155,203,181"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="9,80,204,107"/>
-<area shape="rect" id="node4" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="43,5,171,32"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="BPMN::CallActivity" name="BPMN::CallActivity">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,149,256"/>
-<area shape="rect" id="node2" href="$classBPMN_1_1Activity.html" title=" " alt="" coords="18,155,137,181"/>
-<area shape="rect" id="node3" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="10,80,145,107"/>
-<area shape="rect" id="node4" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="26,5,129,32"/>
-</map>

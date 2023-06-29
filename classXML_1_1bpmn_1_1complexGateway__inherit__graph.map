@@ -1,9 +1,0 @@
-<map id="XML::bpmn::complexGateway" name="XML::bpmn::complexGateway">
-<area shape="rect" id="node1" title=" " alt="" coords="9,453,226,480"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tComplexGateway.html" title=" " alt="" coords="5,379,229,405"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tGateway.html" title=" " alt="" coords="34,304,201,331"/>
-<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tFlowNode.html" title=" " alt="" coords="31,229,204,256"/>
-<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1tFlowElement.html" title=" " alt="" coords="21,155,214,181"/>
-<area shape="rect" id="node6" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="20,80,215,107"/>
-<area shape="rect" id="node7" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="53,5,181,32"/>
-</map>

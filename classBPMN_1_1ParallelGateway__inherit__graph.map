@@ -1,6 +1,0 @@
-<map id="BPMN::ParallelGateway" name="BPMN::ParallelGateway">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,180,256"/>
-<area shape="rect" id="node2" href="$classBPMN_1_1Gateway.html" title=" " alt="" coords="29,155,156,181"/>
-<area shape="rect" id="node3" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="25,80,160,107"/>
-<area shape="rect" id="node4" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="41,5,144,32"/>
-</map>

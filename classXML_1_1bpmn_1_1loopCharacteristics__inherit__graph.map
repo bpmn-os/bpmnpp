@@ -1,6 +1,0 @@
-<map id="XML::bpmn::loopCharacteristics" name="XML::bpmn::loopCharacteristics">
-<area shape="rect" id="node1" title=" " alt="" coords="9,229,237,256"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tLoopCharacteristics.html" title=" " alt="" coords="5,155,241,181"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="26,80,221,107"/>
-<area shape="rect" id="node4" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="59,5,187,32"/>
-</map>

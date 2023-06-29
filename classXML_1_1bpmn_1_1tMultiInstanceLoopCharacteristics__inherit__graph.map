@@ -1,7 +1,0 @@
-<map id="XML::bpmn::tMultiInstanceLoopCharacteristics" name="XML::bpmn::tMultiInstanceLoopCharacteristics">
-<area shape="rect" id="node1" title=" " alt="" coords="25,229,221,271"/>
-<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1multiInstanceLoopCharacteristics.html" title=" " alt="" coords="27,319,219,360"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tLoopCharacteristics.html" title=" " alt="" coords="5,155,241,181"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="26,80,221,107"/>
-<area shape="rect" id="node4" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="59,5,187,32"/>
-</map>

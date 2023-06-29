@@ -1,7 +1,0 @@
-<map id="XML::bpmn::tDataStoreReference" name="XML::bpmn::tDataStoreReference">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,244,256"/>
-<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1dataStoreReference.html" title=" " alt="" coords="9,304,241,331"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tFlowElement.html" title=" " alt="" coords="28,155,221,181"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="27,80,222,107"/>
-<area shape="rect" id="node4" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="61,5,189,32"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="XML::bpmn::messageFlow" name="XML::bpmn::messageFlow">
-<area shape="rect" id="node1" title=" " alt="" coords="7,229,201,256"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tMessageFlow.html" title=" " alt="" coords="5,155,203,181"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="7,80,201,107"/>
-<area shape="rect" id="node4" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="40,5,168,32"/>
-</map>

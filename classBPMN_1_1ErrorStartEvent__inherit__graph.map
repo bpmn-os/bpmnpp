@@ -1,7 +1,0 @@
-<map id="BPMN::ErrorStartEvent" name="BPMN::ErrorStartEvent">
-<area shape="rect" id="node1" title=" " alt="" coords="5,304,173,331"/>
-<area shape="rect" id="node2" href="$classBPMN_1_1CatchEvent.html" title=" " alt="" coords="18,229,161,256"/>
-<area shape="rect" id="node3" href="$classBPMN_1_1Event.html" title=" " alt="" coords="36,155,143,181"/>
-<area shape="rect" id="node4" href="$classBPMN_1_1FlowNode.html" title=" " alt="" coords="22,80,157,107"/>
-<area shape="rect" id="node5" href="$classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="38,5,141,32"/>
-</map>

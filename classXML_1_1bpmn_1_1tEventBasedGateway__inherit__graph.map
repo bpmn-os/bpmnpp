@@ -1,9 +1,0 @@
-<map id="XML::bpmn::tEventBasedGateway" name="XML::bpmn::tEventBasedGateway">
-<area shape="rect" id="node1" title=" " alt="" coords="5,379,248,405"/>
-<area shape="rect" id="node7" href="$classXML_1_1bpmn_1_1eventBasedGateway.html" title=" " alt="" coords="7,453,246,480"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tGateway.html" title=" " alt="" coords="43,304,210,331"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tFlowNode.html" title=" " alt="" coords="40,229,213,256"/>
-<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tFlowElement.html" title=" " alt="" coords="30,155,223,181"/>
-<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="29,80,224,107"/>
-<area shape="rect" id="node6" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="63,5,191,32"/>
-</map>

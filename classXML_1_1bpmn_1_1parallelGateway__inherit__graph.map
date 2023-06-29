@@ -1,9 +1,0 @@
-<map id="XML::bpmn::parallelGateway" name="XML::bpmn::parallelGateway">
-<area shape="rect" id="node1" title=" " alt="" coords="7,453,218,480"/>
-<area shape="rect" id="node2" href="$classXML_1_1bpmn_1_1tParallelGateway.html" title=" " alt="" coords="5,379,220,405"/>
-<area shape="rect" id="node3" href="$classXML_1_1bpmn_1_1tGateway.html" title=" " alt="" coords="29,304,196,331"/>
-<area shape="rect" id="node4" href="$classXML_1_1bpmn_1_1tFlowNode.html" title=" " alt="" coords="26,229,199,256"/>
-<area shape="rect" id="node5" href="$classXML_1_1bpmn_1_1tFlowElement.html" title=" " alt="" coords="16,155,209,181"/>
-<area shape="rect" id="node6" href="$classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="15,80,210,107"/>
-<area shape="rect" id="node7" href="$classXML_1_1XMLObject.html" title=" " alt="" coords="49,5,177,32"/>
-</map>
