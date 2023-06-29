@@ -40,6 +40,9 @@ jobs:
           cd ..
           rm docs/html/*.md5
           rm docs/html/*.map
+          grep -l "xsd/BPMNDI.xsd" * | xargs rm
+          grep -l "xsd/DI.xsd" * | xargs rm
+          grep -l "xsd/DC.xsd" * | xargs rm
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
