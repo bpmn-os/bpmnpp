@@ -4,7 +4,7 @@ using namespace BPMN;
 
 Activity::Activity(XML::bpmn::tActivity* activity, Scope* parent)
   : FlowNode(activity,parent)
-  , Node(activity,parent)
+  , Node(activity)
   , element(activity)
 {
 }

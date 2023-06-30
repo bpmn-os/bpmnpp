@@ -4,7 +4,7 @@ using namespace BPMN;
 
 Gateway::Gateway(XML::bpmn::tGateway* gateway, Scope* parent)
   : FlowNode(gateway,parent)
-  , Node(gateway,parent)
+  , Node(gateway)
   , element(gateway)
 {
 }

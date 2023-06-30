@@ -5,8 +5,9 @@
 using namespace BPMN;
 
 FlowNode::FlowNode(XML::bpmn::tFlowNode* flowNode, Scope* parent)
-  : Node(flowNode,parent)
+  : Node(flowNode)
   , element(flowNode)
+  , parent(parent)
 {
 }
 

@@ -12,10 +12,19 @@ namespace BPMN {
 
 class SequenceFlow;
 
+/**
+ * @brief Represents a flow node in a BPMN process.
+ *
+ * The `FlowNode` class encapsulates the information and relationships associated with a node in a BPMN process.
+ * The class provides  allows to access the parent scope as well as incoming and outgoing sequence flows.
+ */
 class FlowNode : virtual public Node {
   friend class Model;
 public:
   FlowNode(XML::bpmn::tFlowNode* flowNode, Scope* parent);
+
+  /// Reference to the parent node.
+  Scope* parent;
 
   /// Method that determines whether the node is a start node of its parent, i.e.,
   /// a flow node without incoming sequence flows which is not a copmensation activity

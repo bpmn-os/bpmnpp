@@ -4,7 +4,7 @@ using namespace BPMN;
 
 MessageCatchEvent::MessageCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent)
   : CatchEvent(catchEvent,parent)
-  , Node(catchEvent,parent)
+  , Node(catchEvent)
   , element(catchEvent)
 {
 }

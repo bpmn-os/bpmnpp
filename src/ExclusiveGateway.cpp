@@ -4,7 +4,7 @@ using namespace BPMN;
 
 ExclusiveGateway::ExclusiveGateway(XML::bpmn::tExclusiveGateway* exclusiveGateway, Scope* parent)
   : Gateway(exclusiveGateway,parent)
-  , Node(exclusiveGateway,parent)
+  , Node(exclusiveGateway)
   , element(exclusiveGateway)
 {
 }

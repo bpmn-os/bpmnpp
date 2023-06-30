@@ -4,7 +4,7 @@ using namespace BPMN;
 
 CallActivity::CallActivity(XML::bpmn::tCallActivity* callActivity, Scope* parent)
   : Activity(callActivity,parent)
-  , Node(callActivity,parent)
+  , Node(callActivity)
   , element(callActivity)
 {
 }

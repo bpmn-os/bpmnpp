@@ -4,7 +4,7 @@ using namespace BPMN;
 
 BoundaryEvent::BoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent)
   : CatchEvent(boundaryEvent,parent)
-  , Node(boundaryEvent,parent)
+  , Node(boundaryEvent)
   , attachedTo(resolveReference())
 {
 }
