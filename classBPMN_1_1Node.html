@@ -83,9 +83,9 @@ Inheritance diagram for BPMN::Node:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBPMN_1_1Node__inherit__graph.png" border="0" usemap="#aBPMN_1_1Node_inherit__map" alt="Inheritance graph"/></div>
 <map name="aBPMN_1_1Node_inherit__map" id="aBPMN_1_1Node_inherit__map">
-<area shape="rect" title="Represents a node in a BPMN process." alt="" coords="789,5,951,200"/>
-<area shape="rect" href="classBPMN_1_1FlowNode.html" title=" " alt="" coords="940,248,1075,369"/>
-<area shape="rect" href="classBPMN_1_1Scope.html" title=" " alt="" coords="721,255,859,362"/>
+<area shape="rect" title="Represents a node in a BPMN process." alt="" coords="789,5,951,185"/>
+<area shape="rect" href="classBPMN_1_1FlowNode.html" title="Represents a flow node in a BPMN process." alt="" coords="940,233,1075,369"/>
+<area shape="rect" href="classBPMN_1_1Scope.html" title="Represents a node with a scope in a BPMN process." alt="" coords="721,248,859,355"/>
 <area shape="rect" href="classBPMN_1_1Activity.html" title=" " alt="" coords="905,417,1048,509"/>
 <area shape="rect" href="classBPMN_1_1Event.html" title=" " alt="" coords="2089,425,2195,502"/>
 <area shape="rect" href="classBPMN_1_1Gateway.html" title=" " alt="" coords="4819,425,4945,502"/>
@@ -137,10 +137,10 @@ Inheritance diagram for BPMN::Node:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a922414d03381cc1dc3dfebd1b155f8b5"><td class="memItemLeft" align="right" valign="top"><a id="a922414d03381cc1dc3dfebd1b155f8b5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a922414d03381cc1dc3dfebd1b155f8b5">Node</a> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1Node.html#aef608256772a7c69963a59842062c379">parent</a>=nullptr)</td></tr>
-<tr class="memdesc:a922414d03381cc1dc3dfebd1b155f8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code><a class="el" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process.">Node</a></code> object representing a BPMN process or flow node within a parent node. <br /></td></tr>
-<tr class="separator:a922414d03381cc1dc3dfebd1b155f8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526a91b865ed7188099ade8f7002895f"><td class="memItemLeft" align="right" valign="top"><a id="a526a91b865ed7188099ade8f7002895f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a526a91b865ed7188099ade8f7002895f">Node</a> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element)</td></tr>
+<tr class="memdesc:a526a91b865ed7188099ade8f7002895f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code><a class="el" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process.">Node</a></code> object representing a BPMN process or flow node. <br /></td></tr>
+<tr class="separator:a526a91b865ed7188099ade8f7002895f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49efebc9ad4a5b8d0bfd0371e28eeb05"><td class="memTemplParams" colspan="2"><a id="a49efebc9ad4a5b8d0bfd0371e28eeb05"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a49efebc9ad4a5b8d0bfd0371e28eeb05"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a49efebc9ad4a5b8d0bfd0371e28eeb05">is</a> ()</td></tr>
@@ -160,10 +160,6 @@ template&lt;typename T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aef608256772a7c69963a59842062c379"><td class="memItemLeft" align="right" valign="top"><a id="aef608256772a7c69963a59842062c379"></a>
-<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#aef608256772a7c69963a59842062c379">parent</a></td></tr>
-<tr class="memdesc:aef608256772a7c69963a59842062c379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the parent node of flow nodes or nullopt for processes. <br /></td></tr>
-<tr class="separator:aef608256772a7c69963a59842062c379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97f9cc067ccba15103ea405da891e8ff"><td class="memItemLeft" align="right" valign="top"><a id="a97f9cc067ccba15103ea405da891e8ff"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">id</a></td></tr>
 <tr class="memdesc:a97f9cc067ccba15103ea405da891e8ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of process or flow node. <br /></td></tr>
@@ -183,7 +179,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Model</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a node in a BPMN process. </p>
-<p>The <code><a class="el" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process.">Node</a></code> class encapsulates the information and relationships associated with a node in a BPMN process. It can represent both a BPMN process itself or a flow node within a process. The class provides functionalities to access the underlying XML element, the parent node, child nodes, start nodes, and sequence flows associated with the current node. </p>
+<p>The <code><a class="el" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process.">Node</a></code> class encapsulates the information and relationships associated with a node in a BPMN process. It can represent both a BPMN process itself or a flow node within a process. The class allows to access the underlying XML element. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a305cca302fb9555b98663fe276e37db7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a305cca302fb9555b98663fe276e37db7">&#9670;&nbsp;</a></span>as()</h2>
