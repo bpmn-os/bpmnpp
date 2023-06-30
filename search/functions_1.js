@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['createfromfile_705',['createFromFile',['../classXML_1_1XMLObject.html#a2ecff3cd0f4b0bc7c022e17e1d8889ac',1,'XML::XMLObject']]],
-  ['createfromstream_706',['createFromStream',['../classXML_1_1XMLObject.html#abb072f8fc710d7e0961ddcd28fe1cfd7',1,'XML::XMLObject']]],
-  ['createfromstring_707',['createFromString',['../classXML_1_1XMLObject.html#a35909eb1b2efd37dc23d700fbd03c7d9',1,'XML::XMLObject']]]
+  ['bind_707',['bind',['../classBPMN_1_1Model.html#ad1cdc6974a04a37e2bbc51d1fe48bf7a',1,'BPMN::Model']]]
 ];
