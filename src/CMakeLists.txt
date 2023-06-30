@@ -8,6 +8,7 @@ list(PREPEND bpmn_SOURCES
 )
 
 list(APPEND bpmn_SOURCES
+  ExtensionElements.cpp
   SequenceFlow.cpp
   Node.cpp
   Scope.cpp
@@ -68,6 +69,7 @@ list(PREPEND bpmn_HEADERS
 )
 
 list(APPEND bpmn_HEADERS
+  ExtensionElements.h
   SequenceFlow.h
   Node.h
   Scope.h

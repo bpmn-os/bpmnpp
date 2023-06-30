@@ -5,6 +5,7 @@
 #include <memory>
 #include <vector>
 #include <optional>
+#include "ExtensionElements.h"
 
 namespace BPMN {
 
@@ -70,6 +71,8 @@ public:
     }
     return ptr; 
   };
+
+  std::unique_ptr<ExtensionElements> extensionElements;
 
   XML::bpmn::tBaseElement* element;
 };
