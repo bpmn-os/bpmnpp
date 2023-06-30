@@ -76,47 +76,49 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;optional&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>BPMN {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>Model;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>Scope;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>FlowNode;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;ExtensionElements.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>BPMN {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>Model;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>Scope;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>FlowNode;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBPMN_1_1Node.html">Node</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classBPMN_1_1Model.html">Model</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classBPMN_1_1Node.html#a922414d03381cc1dc3dfebd1b155f8b5">Node</a>(<a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a>* element, <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* <a class="code" href="classBPMN_1_1Node.html#aef608256772a7c69963a59842062c379">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classBPMN_1_1Node.html#a526a91b865ed7188099ade8f7002895f">Node</a>(<a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a>* element);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classBPMN_1_1Node.html">Node</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#aef608256772a7c69963a59842062c379">   32</a></span>&#160;  <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* <a class="code" href="classBPMN_1_1Node.html#aef608256772a7c69963a59842062c379">parent</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">   35</a></span>&#160;  std::string <a class="code" href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">id</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a49efebc9ad4a5b8d0bfd0371e28eeb05">   38</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; T* <a class="code" href="classBPMN_1_1Node.html#a49efebc9ad4a5b8d0bfd0371e28eeb05">is</a>() {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(element);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">   48</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T = XML::bpmn::tBaseElement&gt; T* <a class="code" href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">get</a>() {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    T* ptr = <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(element); </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> ( ptr == <span class="keyword">nullptr</span> ) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Node: Illegal element cast&quot;</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> ptr; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  };</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">   57</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; T* <a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>() {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a305cca302fb9555b98663fe276e37db7">   66</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; T* <a class="code" href="classBPMN_1_1Node.html#a305cca302fb9555b98663fe276e37db7">as</a>() {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    T* ptr = <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(<span class="keyword">this</span>); </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> ( ptr == <span class="keyword">nullptr</span> ) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Node: Illegal downcast&quot;</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> ptr; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  };</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">   33</a></span>&#160;  std::string <a class="code" href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">id</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a49efebc9ad4a5b8d0bfd0371e28eeb05">   36</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; T* <a class="code" href="classBPMN_1_1Node.html#a49efebc9ad4a5b8d0bfd0371e28eeb05">is</a>() {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(element);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">   46</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T = XML::bpmn::tBaseElement&gt; T* <a class="code" href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">get</a>() {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    T* ptr = <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(element); </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span> ( ptr == <span class="keyword">nullptr</span> ) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Node: Illegal cast of element &#39;&quot;</span> + (element-&gt;<a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html#ac810520ed433d1778a6341156b290800">id</a>.has_value() ? (std::string)element-&gt;<a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html#ac810520ed433d1778a6341156b290800">id</a>-&gt;get() : <span class="stringliteral">&quot;&quot;</span>) + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> ptr; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">   55</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; T* <a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>() {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a305cca302fb9555b98663fe276e37db7">   64</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; T* <a class="code" href="classBPMN_1_1Node.html#a305cca302fb9555b98663fe276e37db7">as</a>() {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    T* ptr = <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(<span class="keyword">this</span>); </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> ( ptr == <span class="keyword">nullptr</span> ) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Node: Illegal cast of node &#39;&quot;</span> + this-&gt;<span class="keywordtype">id</span> + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> ptr; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  };</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::unique_ptr&lt;ExtensionElements&gt; extensionElements;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a>* element;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
@@ -126,15 +128,14 @@ $(function() {
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BPMN_Node_H</span></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html"><div class="ttname"><a href="classBPMN_1_1Model.html">BPMN::Model</a></div><div class="ttdoc">Represents a BPMN model with all its processes.</div><div class="ttdef"><b>Definition:</b> Model.h:68</div></div>
 <div class="ttc" id="aclassBPMN_1_1Node_html"><div class="ttname"><a href="classBPMN_1_1Node.html">BPMN::Node</a></div><div class="ttdoc">Represents a node in a BPMN process.</div><div class="ttdef"><b>Definition:</b> Node.h:23</div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html_a2d0aeb88f3169d78526c5827d37da06d"><div class="ttname"><a href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">BPMN::Node::get</a></div><div class="ttdeci">T * get()</div><div class="ttdef"><b>Definition:</b> Node.h:48</div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html_a305cca302fb9555b98663fe276e37db7"><div class="ttname"><a href="classBPMN_1_1Node.html#a305cca302fb9555b98663fe276e37db7">BPMN::Node::as</a></div><div class="ttdeci">T * as()</div><div class="ttdef"><b>Definition:</b> Node.h:66</div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html_a49efebc9ad4a5b8d0bfd0371e28eeb05"><div class="ttname"><a href="classBPMN_1_1Node.html#a49efebc9ad4a5b8d0bfd0371e28eeb05">BPMN::Node::is</a></div><div class="ttdeci">T * is()</div><div class="ttdoc">Returns a pointer of type T of the element.</div><div class="ttdef"><b>Definition:</b> Node.h:38</div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html_a8970b9f701e23a2b8afa6cad79d54519"><div class="ttname"><a href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">BPMN::Node::represents</a></div><div class="ttdeci">T * represents()</div><div class="ttdoc">Returns a pointer of type T of the node.</div><div class="ttdef"><b>Definition:</b> Node.h:57</div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html_a922414d03381cc1dc3dfebd1b155f8b5"><div class="ttname"><a href="classBPMN_1_1Node.html#a922414d03381cc1dc3dfebd1b155f8b5">BPMN::Node::Node</a></div><div class="ttdeci">Node(XML::bpmn::tBaseElement *element, Scope *parent=nullptr)</div><div class="ttdoc">Constructs a Node object representing a BPMN process or flow node within a parent node.</div><div class="ttdef"><b>Definition:</b> Node.cpp:6</div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html_a97f9cc067ccba15103ea405da891e8ff"><div class="ttname"><a href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">BPMN::Node::id</a></div><div class="ttdeci">std::string id</div><div class="ttdoc">Id of process or flow node.</div><div class="ttdef"><b>Definition:</b> Node.h:35</div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html_aef608256772a7c69963a59842062c379"><div class="ttname"><a href="classBPMN_1_1Node.html#aef608256772a7c69963a59842062c379">BPMN::Node::parent</a></div><div class="ttdeci">Scope * parent</div><div class="ttdoc">Reference to the parent node of flow nodes or nullopt for processes.</div><div class="ttdef"><b>Definition:</b> Node.h:32</div></div>
-<div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdef"><b>Definition:</b> Scope.h:13</div></div>
+<div class="ttc" id="aclassBPMN_1_1Node_html_a2d0aeb88f3169d78526c5827d37da06d"><div class="ttname"><a href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">BPMN::Node::get</a></div><div class="ttdeci">T * get()</div><div class="ttdef"><b>Definition:</b> Node.h:46</div></div>
+<div class="ttc" id="aclassBPMN_1_1Node_html_a305cca302fb9555b98663fe276e37db7"><div class="ttname"><a href="classBPMN_1_1Node.html#a305cca302fb9555b98663fe276e37db7">BPMN::Node::as</a></div><div class="ttdeci">T * as()</div><div class="ttdef"><b>Definition:</b> Node.h:64</div></div>
+<div class="ttc" id="aclassBPMN_1_1Node_html_a49efebc9ad4a5b8d0bfd0371e28eeb05"><div class="ttname"><a href="classBPMN_1_1Node.html#a49efebc9ad4a5b8d0bfd0371e28eeb05">BPMN::Node::is</a></div><div class="ttdeci">T * is()</div><div class="ttdoc">Returns a pointer of type T of the element.</div><div class="ttdef"><b>Definition:</b> Node.h:36</div></div>
+<div class="ttc" id="aclassBPMN_1_1Node_html_a526a91b865ed7188099ade8f7002895f"><div class="ttname"><a href="classBPMN_1_1Node.html#a526a91b865ed7188099ade8f7002895f">BPMN::Node::Node</a></div><div class="ttdeci">Node(XML::bpmn::tBaseElement *element)</div><div class="ttdoc">Constructs a Node object representing a BPMN process or flow node.</div><div class="ttdef"><b>Definition:</b> Node.cpp:6</div></div>
+<div class="ttc" id="aclassBPMN_1_1Node_html_a8970b9f701e23a2b8afa6cad79d54519"><div class="ttname"><a href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">BPMN::Node::represents</a></div><div class="ttdeci">T * represents()</div><div class="ttdoc">Returns a pointer of type T of the node.</div><div class="ttdef"><b>Definition:</b> Node.h:55</div></div>
+<div class="ttc" id="aclassBPMN_1_1Node_html_a97f9cc067ccba15103ea405da891e8ff"><div class="ttname"><a href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">BPMN::Node::id</a></div><div class="ttdeci">std::string id</div><div class="ttdoc">Id of process or flow node.</div><div class="ttdef"><b>Definition:</b> Node.h:33</div></div>
 <div class="ttc" id="aclassXML_1_1bpmn_1_1tBaseElement_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a></div><div class="ttdef"><b>Definition:</b> tBaseElement.h:28</div></div>
+<div class="ttc" id="aclassXML_1_1bpmn_1_1tBaseElement_html_ac810520ed433d1778a6341156b290800"><div class="ttname"><a href="classXML_1_1bpmn_1_1tBaseElement.html#ac810520ed433d1778a6341156b290800">XML::bpmn::tBaseElement::id</a></div><div class="ttdeci">std::optional&lt; std::reference_wrapper&lt; Attribute &gt; &gt; id</div><div class="ttdoc">Attribute value can be expected to be of type 'std::string'.</div><div class="ttdef"><b>Definition:</b> tBaseElement.h:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

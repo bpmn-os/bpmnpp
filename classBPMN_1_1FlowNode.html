@@ -73,75 +73,80 @@ $(function() {
 <div class="title">BPMN::FlowNode Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a flow node in a BPMN process.  
+ <a href="classBPMN_1_1FlowNode.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FlowNode_8h_source.html">FlowNode.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for BPMN::FlowNode:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBPMN_1_1FlowNode__inherit__graph.png" border="0" usemap="#aBPMN_1_1FlowNode_inherit__map" alt="Inheritance graph"/></div>
 <map name="aBPMN_1_1FlowNode_inherit__map" id="aBPMN_1_1FlowNode_inherit__map">
-<area shape="rect" title=" " alt="" coords="3219,233,3353,355"/>
-<area shape="rect" href="classBPMN_1_1Activity.html" title=" " alt="" coords="587,403,729,495"/>
-<area shape="rect" href="classBPMN_1_1Event.html" title=" " alt="" coords="3233,410,3339,487"/>
-<area shape="rect" href="classBPMN_1_1Gateway.html" title=" " alt="" coords="5000,410,5127,487"/>
-<area shape="rect" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="3228,5,3344,185"/>
-<area shape="rect" href="classBPMN_1_1CallActivity.html" title=" " alt="" coords="211,543,355,620"/>
-<area shape="rect" href="classBPMN_1_1SubProcess.html" title=" " alt="" coords="380,543,523,620"/>
-<area shape="rect" href="classBPMN_1_1Task.html" title=" " alt="" coords="815,543,914,620"/>
-<area shape="rect" href="classBPMN_1_1AdHocSubProcess.html" title=" " alt="" coords="172,675,357,753"/>
-<area shape="rect" href="classBPMN_1_1Transaction.html" title=" " alt="" coords="5,675,148,753"/>
-<area shape="rect" href="classBPMN_1_1BusinessRuleTask.html" title=" " alt="" coords="1201,675,1387,753"/>
-<area shape="rect" href="classBPMN_1_1ManualTask.html" title=" " alt="" coords="1411,675,1558,753"/>
-<area shape="rect" href="classBPMN_1_1ReceiveTask.html" title=" " alt="" coords="381,675,532,753"/>
-<area shape="rect" href="classBPMN_1_1ScriptTask.html" title=" " alt="" coords="556,675,691,753"/>
-<area shape="rect" href="classBPMN_1_1SendTask.html" title=" " alt="" coords="715,675,846,753"/>
-<area shape="rect" href="classBPMN_1_1UntypedTask.html" title=" " alt="" coords="871,675,1024,753"/>
-<area shape="rect" href="classBPMN_1_1UserTask.html" title=" " alt="" coords="1049,675,1177,753"/>
-<area shape="rect" href="classBPMN_1_1CatchEvent.html" title=" " alt="" coords="2144,543,2287,620"/>
-<area shape="rect" href="classBPMN_1_1ThrowEvent.html" title=" " alt="" coords="4470,543,4617,620"/>
-<area shape="rect" href="classBPMN_1_1BoundaryEvent.html" title="Represents a boundary event attached to an activity in a BPMN process." alt="" coords="1785,668,1953,760"/>
-<area shape="rect" href="classBPMN_1_1CancelBoundaryEvent.html" title=" " alt="" coords="921,815,1133,893"/>
-<area shape="rect" href="classBPMN_1_1CompensateBoundaryEvent.html" title=" " alt="" coords="1157,808,1385,900"/>
-<area shape="rect" href="classBPMN_1_1ConditionalBoundaryEvent.html" title=" " alt="" coords="1409,808,1629,900"/>
-<area shape="rect" href="classBPMN_1_1ErrorBoundaryEvent.html" title=" " alt="" coords="1653,815,1852,893"/>
-<area shape="rect" href="classBPMN_1_1EscalationBoundaryEvent.html" title=" " alt="" coords="1877,808,2090,900"/>
-<area shape="rect" href="classBPMN_1_1MessageBoundaryEvent.html" title=" " alt="" coords="2114,815,2341,893"/>
-<area shape="rect" href="classBPMN_1_1SignalBoundaryEvent.html" title=" " alt="" coords="2365,815,2573,893"/>
-<area shape="rect" href="classBPMN_1_1TimerBoundaryEvent.html" title=" " alt="" coords="2597,815,2804,893"/>
-<area shape="rect" href="classBPMN_1_1CompensateStartEvent.html" title=" " alt="" coords="2179,675,2398,753"/>
-<area shape="rect" href="classBPMN_1_1ConditionalCatchEvent.html" title=" " alt="" coords="2423,675,2640,753"/>
-<area shape="rect" href="classBPMN_1_1ErrorStartEvent.html" title=" " alt="" coords="2665,675,2833,753"/>
-<area shape="rect" href="classBPMN_1_1EscalationStartEvent.html" title=" " alt="" coords="2857,675,3061,753"/>
-<area shape="rect" href="classBPMN_1_1MessageCatchEvent.html" title=" " alt="" coords="3085,675,3287,753"/>
-<area shape="rect" href="classBPMN_1_1SignalCatchEvent.html" title=" " alt="" coords="3311,675,3493,753"/>
-<area shape="rect" href="classBPMN_1_1TimerCatchEvent.html" title=" " alt="" coords="3518,675,3699,753"/>
-<area shape="rect" href="classBPMN_1_1UntypedStartEvent.html" title=" " alt="" coords="3723,675,3915,753"/>
-<area shape="rect" href="classBPMN_1_1CancelEndEvent.html" title=" " alt="" coords="4344,675,4519,753"/>
-<area shape="rect" href="classBPMN_1_1CompensateThrowEvent.html" title=" " alt="" coords="4543,675,4771,753"/>
-<area shape="rect" href="classBPMN_1_1ErrorEndEvent.html" title=" " alt="" coords="4795,675,4956,753"/>
-<area shape="rect" href="classBPMN_1_1EscalationThrowEvent.html" title=" " alt="" coords="4981,675,5194,753"/>
-<area shape="rect" href="classBPMN_1_1MessageThrowEvent.html" title=" " alt="" coords="5219,675,5423,753"/>
-<area shape="rect" href="classBPMN_1_1SignalThrowEvent.html" title=" " alt="" coords="5447,675,5634,753"/>
-<area shape="rect" href="classBPMN_1_1TerminateEvent.html" title=" " alt="" coords="3939,675,4110,753"/>
-<area shape="rect" href="classBPMN_1_1UntypedEndEvent.html" title=" " alt="" coords="4135,675,4320,753"/>
-<area shape="rect" href="classBPMN_1_1ComplexGateway.html" title=" " alt="" coords="4641,543,4827,620"/>
-<area shape="rect" href="classBPMN_1_1EventBasedGateway.html" title=" " alt="" coords="4851,543,5055,620"/>
-<area shape="rect" href="classBPMN_1_1ExclusiveGateway.html" title=" " alt="" coords="5079,543,5269,620"/>
-<area shape="rect" href="classBPMN_1_1InclusiveGateway.html" title=" " alt="" coords="5293,543,5479,620"/>
-<area shape="rect" href="classBPMN_1_1ParallelGateway.html" title=" " alt="" coords="5503,543,5677,620"/>
+<area shape="rect" title="Represents a flow node in a BPMN process." alt="" coords="3219,233,3353,369"/>
+<area shape="rect" href="classBPMN_1_1Activity.html" title=" " alt="" coords="587,417,729,509"/>
+<area shape="rect" href="classBPMN_1_1Event.html" title=" " alt="" coords="3233,425,3339,502"/>
+<area shape="rect" href="classBPMN_1_1Gateway.html" title=" " alt="" coords="5000,425,5127,502"/>
+<area shape="rect" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="3205,5,3367,185"/>
+<area shape="rect" href="classBPMN_1_1CallActivity.html" title=" " alt="" coords="211,557,355,635"/>
+<area shape="rect" href="classBPMN_1_1SubProcess.html" title=" " alt="" coords="380,557,523,635"/>
+<area shape="rect" href="classBPMN_1_1Task.html" title=" " alt="" coords="815,557,914,635"/>
+<area shape="rect" href="classBPMN_1_1AdHocSubProcess.html" title=" " alt="" coords="172,690,357,767"/>
+<area shape="rect" href="classBPMN_1_1Transaction.html" title=" " alt="" coords="5,690,148,767"/>
+<area shape="rect" href="classBPMN_1_1BusinessRuleTask.html" title=" " alt="" coords="1201,690,1387,767"/>
+<area shape="rect" href="classBPMN_1_1ManualTask.html" title=" " alt="" coords="1411,690,1558,767"/>
+<area shape="rect" href="classBPMN_1_1ReceiveTask.html" title=" " alt="" coords="381,690,532,767"/>
+<area shape="rect" href="classBPMN_1_1ScriptTask.html" title=" " alt="" coords="556,690,691,767"/>
+<area shape="rect" href="classBPMN_1_1SendTask.html" title=" " alt="" coords="715,690,846,767"/>
+<area shape="rect" href="classBPMN_1_1UntypedTask.html" title=" " alt="" coords="871,690,1024,767"/>
+<area shape="rect" href="classBPMN_1_1UserTask.html" title=" " alt="" coords="1049,690,1177,767"/>
+<area shape="rect" href="classBPMN_1_1CatchEvent.html" title=" " alt="" coords="2144,557,2287,635"/>
+<area shape="rect" href="classBPMN_1_1ThrowEvent.html" title=" " alt="" coords="4470,557,4617,635"/>
+<area shape="rect" href="classBPMN_1_1BoundaryEvent.html" title="Represents a boundary event attached to an activity in a BPMN process." alt="" coords="1785,683,1953,775"/>
+<area shape="rect" href="classBPMN_1_1CancelBoundaryEvent.html" title=" " alt="" coords="921,830,1133,907"/>
+<area shape="rect" href="classBPMN_1_1CompensateBoundaryEvent.html" title=" " alt="" coords="1157,823,1385,915"/>
+<area shape="rect" href="classBPMN_1_1ConditionalBoundaryEvent.html" title=" " alt="" coords="1409,823,1629,915"/>
+<area shape="rect" href="classBPMN_1_1ErrorBoundaryEvent.html" title=" " alt="" coords="1653,830,1852,907"/>
+<area shape="rect" href="classBPMN_1_1EscalationBoundaryEvent.html" title=" " alt="" coords="1877,823,2090,915"/>
+<area shape="rect" href="classBPMN_1_1MessageBoundaryEvent.html" title=" " alt="" coords="2114,830,2341,907"/>
+<area shape="rect" href="classBPMN_1_1SignalBoundaryEvent.html" title=" " alt="" coords="2365,830,2573,907"/>
+<area shape="rect" href="classBPMN_1_1TimerBoundaryEvent.html" title=" " alt="" coords="2597,830,2804,907"/>
+<area shape="rect" href="classBPMN_1_1CompensateStartEvent.html" title=" " alt="" coords="2179,690,2398,767"/>
+<area shape="rect" href="classBPMN_1_1ConditionalCatchEvent.html" title=" " alt="" coords="2423,690,2640,767"/>
+<area shape="rect" href="classBPMN_1_1ErrorStartEvent.html" title=" " alt="" coords="2665,690,2833,767"/>
+<area shape="rect" href="classBPMN_1_1EscalationStartEvent.html" title=" " alt="" coords="2857,690,3061,767"/>
+<area shape="rect" href="classBPMN_1_1MessageCatchEvent.html" title=" " alt="" coords="3085,690,3287,767"/>
+<area shape="rect" href="classBPMN_1_1SignalCatchEvent.html" title=" " alt="" coords="3311,690,3493,767"/>
+<area shape="rect" href="classBPMN_1_1TimerCatchEvent.html" title=" " alt="" coords="3518,690,3699,767"/>
+<area shape="rect" href="classBPMN_1_1UntypedStartEvent.html" title=" " alt="" coords="3723,690,3915,767"/>
+<area shape="rect" href="classBPMN_1_1CancelEndEvent.html" title=" " alt="" coords="4344,690,4519,767"/>
+<area shape="rect" href="classBPMN_1_1CompensateThrowEvent.html" title=" " alt="" coords="4543,690,4771,767"/>
+<area shape="rect" href="classBPMN_1_1ErrorEndEvent.html" title=" " alt="" coords="4795,690,4956,767"/>
+<area shape="rect" href="classBPMN_1_1EscalationThrowEvent.html" title=" " alt="" coords="4981,690,5194,767"/>
+<area shape="rect" href="classBPMN_1_1MessageThrowEvent.html" title=" " alt="" coords="5219,690,5423,767"/>
+<area shape="rect" href="classBPMN_1_1SignalThrowEvent.html" title=" " alt="" coords="5447,690,5634,767"/>
+<area shape="rect" href="classBPMN_1_1TerminateEvent.html" title=" " alt="" coords="3939,690,4110,767"/>
+<area shape="rect" href="classBPMN_1_1UntypedEndEvent.html" title=" " alt="" coords="4135,690,4320,767"/>
+<area shape="rect" href="classBPMN_1_1ComplexGateway.html" title=" " alt="" coords="4641,557,4827,635"/>
+<area shape="rect" href="classBPMN_1_1EventBasedGateway.html" title=" " alt="" coords="4851,557,5055,635"/>
+<area shape="rect" href="classBPMN_1_1ExclusiveGateway.html" title=" " alt="" coords="5079,557,5269,635"/>
+<area shape="rect" href="classBPMN_1_1InclusiveGateway.html" title=" " alt="" coords="5293,557,5479,635"/>
+<area shape="rect" href="classBPMN_1_1ParallelGateway.html" title=" " alt="" coords="5503,557,5677,635"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c34bf3db8fa13aa594c1515ee74c10b"><td class="memItemLeft" align="right" valign="top"><a id="a9c34bf3db8fa13aa594c1515ee74c10b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FlowNode</b> (<a class="el" href="classXML_1_1bpmn_1_1tFlowNode.html">XML::bpmn::tFlowNode</a> *flowNode, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1Node.html#aef608256772a7c69963a59842062c379">parent</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FlowNode</b> (<a class="el" href="classXML_1_1bpmn_1_1tFlowNode.html">XML::bpmn::tFlowNode</a> *flowNode, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1FlowNode.html#aa60f46092f1155164fbe6bef939a11c2">parent</a>)</td></tr>
 <tr class="separator:a9c34bf3db8fa13aa594c1515ee74c10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a5206ff4cc332bad260a25196b1306"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1FlowNode.html#a54a5206ff4cc332bad260a25196b1306">isStartNode</a> ()</td></tr>
 <tr class="separator:a54a5206ff4cc332bad260a25196b1306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classBPMN_1_1Node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBPMN_1_1Node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBPMN_1_1Node.html">BPMN::Node</a></td></tr>
-<tr class="memitem:a922414d03381cc1dc3dfebd1b155f8b5 inherit pub_methods_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="a922414d03381cc1dc3dfebd1b155f8b5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a922414d03381cc1dc3dfebd1b155f8b5">Node</a> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1Node.html#aef608256772a7c69963a59842062c379">parent</a>=nullptr)</td></tr>
-<tr class="memdesc:a922414d03381cc1dc3dfebd1b155f8b5 inherit pub_methods_classBPMN_1_1Node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code><a class="el" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process.">Node</a></code> object representing a BPMN process or flow node within a parent node. <br /></td></tr>
-<tr class="separator:a922414d03381cc1dc3dfebd1b155f8b5 inherit pub_methods_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526a91b865ed7188099ade8f7002895f inherit pub_methods_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="a526a91b865ed7188099ade8f7002895f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a526a91b865ed7188099ade8f7002895f">Node</a> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element)</td></tr>
+<tr class="memdesc:a526a91b865ed7188099ade8f7002895f inherit pub_methods_classBPMN_1_1Node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code><a class="el" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process.">Node</a></code> object representing a BPMN process or flow node. <br /></td></tr>
+<tr class="separator:a526a91b865ed7188099ade8f7002895f inherit pub_methods_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49efebc9ad4a5b8d0bfd0371e28eeb05 inherit pub_methods_classBPMN_1_1Node"><td class="memTemplParams" colspan="2"><a id="a49efebc9ad4a5b8d0bfd0371e28eeb05"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a49efebc9ad4a5b8d0bfd0371e28eeb05 inherit pub_methods_classBPMN_1_1Node"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a49efebc9ad4a5b8d0bfd0371e28eeb05">is</a> ()</td></tr>
@@ -161,6 +166,10 @@ template&lt;typename T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:aa60f46092f1155164fbe6bef939a11c2"><td class="memItemLeft" align="right" valign="top"><a id="aa60f46092f1155164fbe6bef939a11c2"></a>
+<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1FlowNode.html#aa60f46092f1155164fbe6bef939a11c2">parent</a></td></tr>
+<tr class="memdesc:aa60f46092f1155164fbe6bef939a11c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the parent node. <br /></td></tr>
+<tr class="separator:aa60f46092f1155164fbe6bef939a11c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2562b130f4e345ed67d6bc6424fc465d"><td class="memItemLeft" align="right" valign="top"><a id="a2562b130f4e345ed67d6bc6424fc465d"></a>
 std::vector&lt; <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1FlowNode.html#a2562b130f4e345ed67d6bc6424fc465d">incoming</a></td></tr>
 <tr class="memdesc:a2562b130f4e345ed67d6bc6424fc465d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all incoming sequence flows of the node. <br /></td></tr>
@@ -173,14 +182,13 @@ std::vector&lt; <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow
 <a class="el" href="classXML_1_1bpmn_1_1tFlowNode.html">XML::bpmn::tFlowNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>element</b></td></tr>
 <tr class="separator:a3d29a8f5f1a401f23d17c3e331662283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classBPMN_1_1Node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classBPMN_1_1Node')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="classBPMN_1_1Node.html">BPMN::Node</a></td></tr>
-<tr class="memitem:aef608256772a7c69963a59842062c379 inherit pub_attribs_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="aef608256772a7c69963a59842062c379"></a>
-<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#aef608256772a7c69963a59842062c379">parent</a></td></tr>
-<tr class="memdesc:aef608256772a7c69963a59842062c379 inherit pub_attribs_classBPMN_1_1Node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the parent node of flow nodes or nullopt for processes. <br /></td></tr>
-<tr class="separator:aef608256772a7c69963a59842062c379 inherit pub_attribs_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97f9cc067ccba15103ea405da891e8ff inherit pub_attribs_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="a97f9cc067ccba15103ea405da891e8ff"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">id</a></td></tr>
 <tr class="memdesc:a97f9cc067ccba15103ea405da891e8ff inherit pub_attribs_classBPMN_1_1Node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of process or flow node. <br /></td></tr>
 <tr class="separator:a97f9cc067ccba15103ea405da891e8ff inherit pub_attribs_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe775e296f19ee7adb70c5379030409 inherit pub_attribs_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="adbe775e296f19ee7adb70c5379030409"></a>
+std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>extensionElements</b></td></tr>
+<tr class="separator:adbe775e296f19ee7adb70c5379030409 inherit pub_attribs_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c8771042ad15e4a3f9467fa84c2e595 inherit pub_attribs_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="a8c8771042ad15e4a3f9467fa84c2e595"></a>
 <a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>element</b></td></tr>
 <tr class="separator:a8c8771042ad15e4a3f9467fa84c2e595 inherit pub_attribs_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,7 +199,10 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Model</b></td></tr>
 <tr class="separator:a2bf2a0e9b454c55aa5dcb5aa4698697b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a flow node in a BPMN process. </p>
+<p>The <code><a class="el" href="classBPMN_1_1FlowNode.html" title="Represents a flow node in a BPMN process.">FlowNode</a></code> class encapsulates the information and relationships associated with a node in a BPMN process. The class provides allows to access the parent scope as well as incoming and outgoing sequence flows. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a54a5206ff4cc332bad260a25196b1306"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54a5206ff4cc332bad260a25196b1306">&#9670;&nbsp;</a></span>isStartNode()</h2>
 
