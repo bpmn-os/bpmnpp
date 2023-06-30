@@ -25,6 +25,5 @@ var searchData=
   ['exporter_102',['exporter',['../classXML_1_1bpmn_1_1tDefinitions.html#a0533a59324017b84baf94af7602db80d',1,'XML::bpmn::tDefinitions']]],
   ['exporterversion_103',['exporterVersion',['../classXML_1_1bpmn_1_1tDefinitions.html#ad9ea28e5f187eb11c4865b3f4360b82c',1,'XML::bpmn::tDefinitions']]],
   ['expressionlanguage_104',['expressionLanguage',['../classXML_1_1bpmn_1_1tDefinitions.html#af48fd29c8999e46580cf9c5d065b3605',1,'XML::bpmn::tDefinitions']]],
-  ['extensionelements_105',['ExtensionElements',['../classBPMN_1_1ExtensionElements.html',1,'BPMN']]],
-  ['extensionelements_106',['extensionElements',['../classXML_1_1bpmn_1_1extensionElements.html',1,'XML::bpmn']]]
+  ['extensionelements_105',['extensionElements',['../classXML_1_1bpmn_1_1extensionElements.html',1,'XML::bpmn']]]
 ];

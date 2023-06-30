@@ -68,7 +68,8 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">BPMN::SequenceFlow Class Reference</div>  </div>
 </div><!--header-->
@@ -108,18 +109,18 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1SequenceFlow.html#a2ef1034b218c120a91a7fc677db93d10">target</a></td></tr>
 <tr class="memdesc:a2ef1034b218c120a91a7fc677db93d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the target node of the sequence flow. <br /></td></tr>
 <tr class="separator:a2ef1034b218c120a91a7fc677db93d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc734970ab849da48abf1ff7a0d99369"><td class="memItemLeft" align="right" valign="top"><a id="acc734970ab849da48abf1ff7a0d99369"></a>
-std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>extensionElements</b></td></tr>
-<tr class="separator:acc734970ab849da48abf1ff7a0d99369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c7e676d39e74b258eaba3746c1d37dc"><td class="memItemLeft" align="right" valign="top"><a id="a4c7e676d39e74b258eaba3746c1d37dc"></a>
-<a class="el" href="classXML_1_1bpmn_1_1tSequenceFlow.html">XML::bpmn::tSequenceFlow</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sequenceFlow</b></td></tr>
-<tr class="separator:a4c7e676d39e74b258eaba3746c1d37dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a296449906da6c30aa2abc27c10c707cc"><td class="memItemLeft" align="right" valign="top"><a id="a296449906da6c30aa2abc27c10c707cc"></a>
-<a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>findNode</b> (std::string <a class="el" href="classBPMN_1_1SequenceFlow.html#aebb0beecf4244e7bbccfa52e403dd604">id</a>, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
-<tr class="separator:a296449906da6c30aa2abc27c10c707cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97fff86a20a7eaf03df9140d14ca9049"><td class="memItemLeft" align="right" valign="top"><a id="a97fff86a20a7eaf03df9140d14ca9049"></a>
+<a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getNode</b> (std::string <a class="el" href="classBPMN_1_1SequenceFlow.html#aebb0beecf4244e7bbccfa52e403dd604">id</a>, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
+<tr class="separator:a97fff86a20a7eaf03df9140d14ca9049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a4c7e676d39e74b258eaba3746c1d37dc"><td class="memItemLeft" align="right" valign="top"><a id="a4c7e676d39e74b258eaba3746c1d37dc"></a>
+<a class="el" href="classXML_1_1bpmn_1_1tSequenceFlow.html">XML::bpmn::tSequenceFlow</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sequenceFlow</b></td></tr>
+<tr class="separator:a4c7e676d39e74b258eaba3746c1d37dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a sequence flow in a BPMN process. </p>
