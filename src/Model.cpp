@@ -421,7 +421,7 @@ std::unique_ptr<SequenceFlow> Model::createSequenceFlow(XML::bpmn::tSequenceFlow
 
 void Model::createChildNodes(Scope* scope) {
   // add child nodes (except boundary events and link events)
-  for (XML::bpmn::tFlowNode& flowNode : scope->get<>()->getChildren<XML::bpmn::tFlowNode>() ) {
+  for (XML::bpmn::tFlowNode& flowNode : scope->element->getChildren<XML::bpmn::tFlowNode>() ) {
     if ( flowNode.is<XML::bpmn::tEvent>() &&
          flowNode.getChildren<XML::bpmn::tLinkEventDefinition>().size()
     ) {
@@ -433,7 +433,7 @@ void Model::createChildNodes(Scope* scope) {
     }
   }
   // add boundary events
-  for (XML::bpmn::tFlowNode& flowNode: scope->get<>()->getChildren<XML::bpmn::tFlowNode>() ) {
+  for (XML::bpmn::tFlowNode& flowNode: scope->element->getChildren<XML::bpmn::tFlowNode>() ) {
     if ( auto boundaryEvent = flowNode.is<XML::bpmn::tBoundaryEvent>(); boundaryEvent ) {
       scope->childNodes.push_back(createBoundaryEvent(boundaryEvent,scope));
     }
@@ -448,7 +448,7 @@ void Model::createChildNodes(Scope* scope) {
 
 void Model::createSequenceFlows(Scope* scope) {
   // add sequence flows within scope of the node
-  for (XML::bpmn::tSequenceFlow& sequenceFlow: scope->get<>()->getChildren<XML::bpmn::tSequenceFlow>() ) {
+  for (XML::bpmn::tSequenceFlow& sequenceFlow: scope->element->getChildren<XML::bpmn::tSequenceFlow>() ) {
     scope->sequenceFlows.push_back(createSequenceFlow(&sequenceFlow,scope));
   }
   // recurse

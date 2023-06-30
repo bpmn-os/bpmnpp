@@ -46,7 +46,7 @@ public:
   template<typename T = XML::bpmn::tBaseElement> T* get() {
     T* ptr = dynamic_cast<T*>(element); 
     if ( ptr == nullptr ) {
-      throw std::runtime_error("Node: Illegal element cast");
+      throw std::runtime_error("Node: Illegal cast of element '" + (element->id.has_value() ? (std::string)element->id->get() : "") + "'");
     }
     return ptr; 
   };
@@ -64,7 +64,7 @@ public:
   template<typename T> T* as() {
     T* ptr = dynamic_cast<T*>(this); 
     if ( ptr == nullptr ) {
-      throw std::runtime_error("Node: Illegal downcast");
+      throw std::runtime_error("Node: Illegal cast of node '" + this->id + "'");
     }
     return ptr; 
   };
