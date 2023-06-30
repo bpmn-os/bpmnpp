@@ -2,6 +2,7 @@
 #define BPMN_SequenceFlow_H
 
 #include "xml/bpmn/tSequenceFlow.h"
+#include "ExtensionElements.h"
 
 namespace BPMN {
 
@@ -53,9 +54,12 @@ public:
     return ptr; 
   };
 
-protected:
+  std::unique_ptr<ExtensionElements> extensionElements;
+
   XML::bpmn::tSequenceFlow* sequenceFlow;
-  FlowNode* getNode(std::string id, Scope* scope);
+
+protected:
+  FlowNode* findNode(std::string id, Scope* scope);
 };
 
 } // namespace BPMN

@@ -416,7 +416,7 @@ std::unique_ptr<FlowNode> Model::createComplexGateway(XML::bpmn::tComplexGateway
 }
 
 std::unique_ptr<SequenceFlow> Model::createSequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope) {
-  return std::make_unique<SequenceFlow>(SequenceFlow(sequenceFlow,scope));
+  return std::make_unique<SequenceFlow>(sequenceFlow,scope);
 }
 
 void Model::createChildNodes(Scope* scope) {
