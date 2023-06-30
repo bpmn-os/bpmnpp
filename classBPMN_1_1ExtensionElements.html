@@ -80,9 +80,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeeaf8622225c1410fee8dbfab62c79df"><td class="memItemLeft" align="right" valign="top"><a id="aeeaf8622225c1410fee8dbfab62c79df"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ExtensionElements</b> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *baseElement)</td></tr>
-<tr class="separator:aeeaf8622225c1410fee8dbfab62c79df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f1c4e728e23114a530a411ff8eb59b"><td class="memItemLeft" align="right" valign="top"><a id="a40f1c4e728e23114a530a411ff8eb59b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ExtensionElements</b> (<a class="el" href="classXML_1_1bpmn_1_1tExtensionElements.html">XML::bpmn::tExtensionElements</a> *extensionElements)</td></tr>
+<tr class="separator:a40f1c4e728e23114a530a411ff8eb59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb81c77c31fff2f98ab52fdf0e0080f1"><td class="memTemplParams" colspan="2"><a id="adb81c77c31fff2f98ab52fdf0e0080f1"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:adb81c77c31fff2f98ab52fdf0e0080f1"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1ExtensionElements.html#adb81c77c31fff2f98ab52fdf0e0080f1">represents</a> ()</td></tr>
@@ -91,11 +91,6 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a8115563d45f53b6aa14a04611875be16"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a8115563d45f53b6aa14a04611875be16"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1ExtensionElements.html#a8115563d45f53b6aa14a04611875be16">as</a> ()</td></tr>
 <tr class="separator:a8115563d45f53b6aa14a04611875be16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e87fcf7e66ebb5734c5d3fe724bfbe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXML_1_1bpmn_1_1tExtensionElements.html">XML::bpmn::tExtensionElements</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1ExtensionElements.html#a3e87fcf7e66ebb5734c5d3fe724bfbe2">getExtensionElements</a> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *baseElement)</td></tr>
-<tr class="separator:a3e87fcf7e66ebb5734c5d3fe724bfbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a489a66978ef865c9727e31db3de95ad4"><td class="memTemplParams" colspan="2">template&lt;class C , class T &gt; </td></tr>
-<tr class="memitem:a489a66978ef865c9727e31db3de95ad4"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::reference_wrapper&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1ExtensionElements.html#a489a66978ef865c9727e31db3de95ad4">get</a> ()</td></tr>
-<tr class="separator:a489a66978ef865c9727e31db3de95ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -131,53 +126,6 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Attempt to downcast the <a class="el" href="classBPMN_1_1ExtensionElements.html" title="Represents a virtual class that can be overwritten to provide direct access to specific extension ele...">ExtensionElements</a> to a derived class T. If the cast fails, throws a std::runtime_error with an error message indicating an illegal cast operation. </p>
-
-</div>
-</div>
-<a id="a489a66978ef865c9727e31db3de95ad4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a489a66978ef865c9727e31db3de95ad4">&#9670;&nbsp;</a></span>get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class C , class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::reference_wrapper&lt;T&gt; &gt; BPMN::ExtensionElements::get </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns a vector of elements of type T embedded within a container of type T. </p>
-
-</div>
-</div>
-<a id="a3e87fcf7e66ebb5734c5d3fe724bfbe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e87fcf7e66ebb5734c5d3fe724bfbe2">&#9670;&nbsp;</a></span>getExtensionElements()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classXML_1_1bpmn_1_1tExtensionElements.html">XML::bpmn::tExtensionElements</a> * ExtensionElements::getExtensionElements </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *&#160;</td>
-          <td class="paramname"><em>baseElement</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns a the extension elements if they are given or a nullptr otherwise. </p>
 
 </div>
 </div>
