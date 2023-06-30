@@ -138,6 +138,14 @@ protected:
   virtual void createChildNodes(Scope* scope);
   virtual void createSequenceFlows(Scope* scope);
   virtual void createReferences(FlowNode* flowNode);
+
+  /// Binds the extension element to the given node
+  template< typename T>
+  static std::unique_ptr<T> bind(std::unique_ptr<T>&& node, std::unique_ptr<ExtensionElements>&& extensionElements) {
+    node->extensionElements = std::move(extensionElements);
+    return std::move(node);
+  }
+
 };
 
 } // namespace BPMN
