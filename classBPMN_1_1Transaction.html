@@ -78,12 +78,12 @@ Inheritance diagram for BPMN::Transaction:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBPMN_1_1Transaction__inherit__graph.png" border="0" usemap="#aBPMN_1_1Transaction_inherit__map" alt="Inheritance graph"/></div>
 <map name="aBPMN_1_1Transaction_inherit__map" id="aBPMN_1_1Transaction_inherit__map">
-<area shape="rect" title=" " alt="" coords="87,697,229,775"/>
-<area shape="rect" href="classBPMN_1_1SubProcess.html" title=" " alt="" coords="87,572,229,649"/>
-<area shape="rect" href="classBPMN_1_1Activity.html" title=" " alt="" coords="5,425,148,517"/>
-<area shape="rect" href="classBPMN_1_1FlowNode.html" title="Represents a flow node in a BPMN process." alt="" coords="39,233,173,369"/>
-<area shape="rect" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="77,5,239,185"/>
-<area shape="rect" href="classBPMN_1_1Scope.html" title="Represents a node with a scope in a BPMN process." alt="" coords="172,417,309,524"/>
+<area shape="rect" title=" " alt="" coords="93,712,236,789"/>
+<area shape="rect" href="classBPMN_1_1SubProcess.html" title=" " alt="" coords="93,587,236,664"/>
+<area shape="rect" href="classBPMN_1_1Activity.html" title=" " alt="" coords="5,432,148,524"/>
+<area shape="rect" href="classBPMN_1_1FlowNode.html" title="Represents a flow node in a BPMN process." alt="" coords="45,233,180,369"/>
+<area shape="rect" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="83,5,246,185"/>
+<area shape="rect" href="classBPMN_1_1Scope.html" title="Represents a node with a scope in a BPMN process." alt="" coords="173,417,335,539"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -176,10 +176,14 @@ std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">Ext
 <a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>element</b></td></tr>
 <tr class="separator:a8c8771042ad15e4a3f9467fa84c2e595 inherit pub_attribs_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classBPMN_1_1Scope"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classBPMN_1_1Scope')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="classBPMN_1_1Scope.html">BPMN::Scope</a></td></tr>
-<tr class="memitem:a6207d6fd431203e0bb3931c675c1ae6a inherit pub_attribs_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="a6207d6fd431203e0bb3931c675c1ae6a"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#a6207d6fd431203e0bb3931c675c1ae6a">childNodes</a></td></tr>
-<tr class="memdesc:a6207d6fd431203e0bb3931c675c1ae6a inherit pub_attribs_classBPMN_1_1Scope"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all flow nodes within the scope of the nodes. <br /></td></tr>
-<tr class="separator:a6207d6fd431203e0bb3931c675c1ae6a inherit pub_attribs_classBPMN_1_1Scope"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae984cbb7d6c605fb77870048c3985d30 inherit pub_attribs_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="ae984cbb7d6c605fb77870048c3985d30"></a>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#ae984cbb7d6c605fb77870048c3985d30">flowNodes</a></td></tr>
+<tr class="memdesc:ae984cbb7d6c605fb77870048c3985d30 inherit pub_attribs_classBPMN_1_1Scope"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all flow nodes within the scope of the nodes. <br /></td></tr>
+<tr class="separator:ae984cbb7d6c605fb77870048c3985d30 inherit pub_attribs_classBPMN_1_1Scope"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64373d91a829bd18c3b36095d5a06be5 inherit pub_attribs_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="a64373d91a829bd18c3b36095d5a06be5"></a>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#a64373d91a829bd18c3b36095d5a06be5">eventSubProcesses</a></td></tr>
+<tr class="memdesc:a64373d91a829bd18c3b36095d5a06be5 inherit pub_attribs_classBPMN_1_1Scope"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all flow nodes within the scope of the nodes. <br /></td></tr>
+<tr class="separator:a64373d91a829bd18c3b36095d5a06be5 inherit pub_attribs_classBPMN_1_1Scope"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2abb85eda0980c258f206c36bc6f2c7e inherit pub_attribs_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="a2abb85eda0980c258f206c36bc6f2c7e"></a>
 std::vector&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#a2abb85eda0980c258f206c36bc6f2c7e">startNodes</a></td></tr>
 <tr class="memdesc:a2abb85eda0980c258f206c36bc6f2c7e inherit pub_attribs_classBPMN_1_1Scope"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all flow nodes that may start execution of the scope. <br /></td></tr>

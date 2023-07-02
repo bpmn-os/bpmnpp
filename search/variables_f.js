@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['waitforcompletion_826',['waitForCompletion',['../classXML_1_1bpmn_1_1tCompensateEventDefinition.html#a86a2ad2147acbfe93f5464ade8cd852f',1,'XML::bpmn::tCompensateEventDefinition']]]
+  ['value_831',['value',['../classXML_1_1bpmn_1_1tCategoryValue.html#af960ea23b49da73667f50791dcdde6fc',1,'XML::bpmn::tCategoryValue']]]
 ];

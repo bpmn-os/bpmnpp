@@ -83,12 +83,13 @@ Inheritance diagram for BPMN::Scope:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBPMN_1_1Scope__inherit__graph.png" border="0" usemap="#aBPMN_1_1Scope_inherit__map" alt="Inheritance graph"/></div>
 <map name="aBPMN_1_1Scope_inherit__map" id="aBPMN_1_1Scope_inherit__map">
-<area shape="rect" title="Represents a node with a scope in a BPMN process." alt="" coords="73,233,211,340"/>
-<area shape="rect" href="classBPMN_1_1Process.html" title=" " alt="" coords="5,388,124,465"/>
-<area shape="rect" href="classBPMN_1_1SubProcess.html" title=" " alt="" coords="148,388,291,465"/>
-<area shape="rect" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="61,5,223,185"/>
-<area shape="rect" href="classBPMN_1_1AdHocSubProcess.html" title=" " alt="" coords="33,513,219,591"/>
-<area shape="rect" href="classBPMN_1_1Transaction.html" title=" " alt="" coords="243,513,385,591"/>
+<area shape="rect" title="Represents a node with a scope in a BPMN process." alt="" coords="187,233,350,355"/>
+<area shape="rect" href="classBPMN_1_1EventSubProcess.html" title=" " alt="" coords="5,403,185,524"/>
+<area shape="rect" href="classBPMN_1_1Process.html" title=" " alt="" coords="209,425,328,502"/>
+<area shape="rect" href="classBPMN_1_1SubProcess.html" title=" " alt="" coords="352,425,495,502"/>
+<area shape="rect" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="187,5,350,185"/>
+<area shape="rect" href="classBPMN_1_1AdHocSubProcess.html" title=" " alt="" coords="236,572,421,649"/>
+<area shape="rect" href="classBPMN_1_1Transaction.html" title=" " alt="" coords="445,572,588,649"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -121,10 +122,14 @@ template&lt;typename T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a6207d6fd431203e0bb3931c675c1ae6a"><td class="memItemLeft" align="right" valign="top"><a id="a6207d6fd431203e0bb3931c675c1ae6a"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#a6207d6fd431203e0bb3931c675c1ae6a">childNodes</a></td></tr>
-<tr class="memdesc:a6207d6fd431203e0bb3931c675c1ae6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all flow nodes within the scope of the nodes. <br /></td></tr>
-<tr class="separator:a6207d6fd431203e0bb3931c675c1ae6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae984cbb7d6c605fb77870048c3985d30"><td class="memItemLeft" align="right" valign="top"><a id="ae984cbb7d6c605fb77870048c3985d30"></a>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#ae984cbb7d6c605fb77870048c3985d30">flowNodes</a></td></tr>
+<tr class="memdesc:ae984cbb7d6c605fb77870048c3985d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all flow nodes within the scope of the nodes. <br /></td></tr>
+<tr class="separator:ae984cbb7d6c605fb77870048c3985d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64373d91a829bd18c3b36095d5a06be5"><td class="memItemLeft" align="right" valign="top"><a id="a64373d91a829bd18c3b36095d5a06be5"></a>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#a64373d91a829bd18c3b36095d5a06be5">eventSubProcesses</a></td></tr>
+<tr class="memdesc:a64373d91a829bd18c3b36095d5a06be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all flow nodes within the scope of the nodes. <br /></td></tr>
+<tr class="separator:a64373d91a829bd18c3b36095d5a06be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2abb85eda0980c258f206c36bc6f2c7e"><td class="memItemLeft" align="right" valign="top"><a id="a2abb85eda0980c258f206c36bc6f2c7e"></a>
 std::vector&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#a2abb85eda0980c258f206c36bc6f2c7e">startNodes</a></td></tr>
 <tr class="memdesc:a2abb85eda0980c258f206c36bc6f2c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all flow nodes that may start execution of the scope. <br /></td></tr>
@@ -153,7 +158,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Model</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a node with a scope in a BPMN process. </p>
-<p>The <code><a class="el" href="classBPMN_1_1Scope.html" title="Represents a node with a scope in a BPMN process.">Scope</a></code> class provides functionalities to access child nodes, start nodes, and sequence flows associated with the scope. </p>
+<p>The <code><a class="el" href="classBPMN_1_1Scope.html" title="Represents a node with a scope in a BPMN process.">Scope</a></code> class provides functionalities to access child nodes, event subprocesses, start nodes, and sequence flows associated with the scope. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

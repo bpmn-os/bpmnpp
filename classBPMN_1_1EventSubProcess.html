@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bpmn++: BPMN::Process Class Reference</title>
+<title>bpmn++: BPMN::EventSubProcess Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>BPMN</b></li><li class="navelem"><a class="el" href="classBPMN_1_1Process.html">Process</a></li>  </ul>
+<li class="navelem"><b>BPMN</b></li><li class="navelem"><a class="el" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,25 +70,25 @@ $(function() {
 <a href="#pub-attribs">Data Fields</a> &#124;
 <a href="#friends">Friends</a>  </div>
   <div class="headertitle">
-<div class="title">BPMN::Process Class Reference</div>  </div>
+<div class="title">BPMN::EventSubProcess Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for BPMN::Process:</div>
+Inheritance diagram for BPMN::EventSubProcess:</div>
 <div class="dyncontent">
-<div class="center"><img src="classBPMN_1_1Process__inherit__graph.png" border="0" usemap="#aBPMN_1_1Process_inherit__map" alt="Inheritance graph"/></div>
-<map name="aBPMN_1_1Process_inherit__map" id="aBPMN_1_1Process_inherit__map">
-<area shape="rect" title=" " alt="" coords="27,403,146,480"/>
-<area shape="rect" href="classBPMN_1_1Scope.html" title="Represents a node with a scope in a BPMN process." alt="" coords="5,233,168,355"/>
-<area shape="rect" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="5,5,168,185"/>
+<div class="center"><img src="classBPMN_1_1EventSubProcess__inherit__graph.png" border="0" usemap="#aBPMN_1_1EventSubProcess_inherit__map" alt="Inheritance graph"/></div>
+<map name="aBPMN_1_1EventSubProcess_inherit__map" id="aBPMN_1_1EventSubProcess_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,403,185,524"/>
+<area shape="rect" href="classBPMN_1_1Scope.html" title="Represents a node with a scope in a BPMN process." alt="" coords="14,233,177,355"/>
+<area shape="rect" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="14,5,177,185"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7dd778f729e02e142881d9f5f295bae5"><td class="memItemLeft" align="right" valign="top"><a id="a7dd778f729e02e142881d9f5f295bae5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Process</b> (<a class="el" href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a> *process)</td></tr>
-<tr class="separator:a7dd778f729e02e142881d9f5f295bae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae128cc7c23f29cbfb388703cda7691d9"><td class="memItemLeft" align="right" valign="top"><a id="ae128cc7c23f29cbfb388703cda7691d9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventSubProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *subProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1EventSubProcess.html#ad7208f9641e4f8b64952f6e68304a821">parent</a>)</td></tr>
+<tr class="separator:ae128cc7c23f29cbfb388703cda7691d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classBPMN_1_1Scope"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBPMN_1_1Scope')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBPMN_1_1Scope.html">BPMN::Scope</a></td></tr>
 <tr class="memitem:a9fec57f59b4f426b9b9ff47d44ad254a inherit pub_methods_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="a9fec57f59b4f426b9b9ff47d44ad254a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Scope</b> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element)</td></tr>
@@ -117,9 +117,21 @@ template&lt;typename T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ac9abdb8b7e01a6e0bb9c9af7e5b16229"><td class="memItemLeft" align="right" valign="top"><a id="ac9abdb8b7e01a6e0bb9c9af7e5b16229"></a>
-<a class="el" href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>element</b></td></tr>
-<tr class="separator:ac9abdb8b7e01a6e0bb9c9af7e5b16229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7208f9641e4f8b64952f6e68304a821"><td class="memItemLeft" align="right" valign="top"><a id="ad7208f9641e4f8b64952f6e68304a821"></a>
+<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1EventSubProcess.html#ad7208f9641e4f8b64952f6e68304a821">parent</a></td></tr>
+<tr class="memdesc:ad7208f9641e4f8b64952f6e68304a821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the parent node. <br /></td></tr>
+<tr class="separator:ad7208f9641e4f8b64952f6e68304a821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ca24c11ddeb43817da7e97f97478a69"><td class="memItemLeft" align="right" valign="top"><a id="a5ca24c11ddeb43817da7e97f97478a69"></a>
+<a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>element</b></td></tr>
+<tr class="separator:a5ca24c11ddeb43817da7e97f97478a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad326fcb36ed1093deb56275835ac42a2"><td class="memItemLeft" align="right" valign="top"><a id="ad326fcb36ed1093deb56275835ac42a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1EventSubProcess.html#ad326fcb36ed1093deb56275835ac42a2">isInterrupting</a></td></tr>
+<tr class="memdesc:ad326fcb36ed1093deb56275835ac42a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event subprocess is interrupting if all its start nodes are interrupting. <br /></td></tr>
+<tr class="separator:ad326fcb36ed1093deb56275835ac42a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d07480820b0c25f27c6c6698fb2697"><td class="memItemLeft" align="right" valign="top"><a id="ac6d07480820b0c25f27c6c6698fb2697"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1EventSubProcess.html#ac6d07480820b0c25f27c6c6698fb2697">isNonInterrupting</a></td></tr>
+<tr class="memdesc:ac6d07480820b0c25f27c6c6698fb2697"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event subprocess is non-interrupting if all its start nodes are non-interrupting. <br /></td></tr>
+<tr class="separator:ac6d07480820b0c25f27c6c6698fb2697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classBPMN_1_1Scope"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classBPMN_1_1Scope')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="classBPMN_1_1Scope.html">BPMN::Scope</a></td></tr>
 <tr class="memitem:ae984cbb7d6c605fb77870048c3985d30 inherit pub_attribs_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="ae984cbb7d6c605fb77870048c3985d30"></a>
 std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#ae984cbb7d6c605fb77870048c3985d30">flowNodes</a></td></tr>
