@@ -6,7 +6,6 @@
 #include <optional>
 #include "xml/bpmn/tFlowNode.h"
 #include "Node.h"
-#include "SequenceFlow.h"
 
 namespace BPMN {
 

@@ -10,7 +10,7 @@ SequenceFlow::SequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope)
 }
 
 FlowNode* SequenceFlow::findNode(std::string id, Scope* scope) {
-  for ( auto& flowNode : scope->childNodes ) {
+  for ( auto& flowNode : scope->flowNodes ) {
     if ( flowNode->get()->id.has_value() && id == (std::string)flowNode->get()->id->get() ) {
       return flowNode.get();
     }

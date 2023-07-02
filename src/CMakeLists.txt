@@ -9,11 +9,12 @@ list(PREPEND bpmn_SOURCES
 
 list(APPEND bpmn_SOURCES
   ExtensionElements.cpp
-  SequenceFlow.cpp
   Node.cpp
   Scope.cpp
-  FlowNode.cpp
   Process.cpp
+  EventSubProcess.cpp
+  SequenceFlow.cpp
+  FlowNode.cpp
   Activity.cpp
   SubProcess.cpp
   Task.cpp
@@ -70,11 +71,12 @@ list(PREPEND bpmn_HEADERS
 
 list(APPEND bpmn_HEADERS
   ExtensionElements.h
-  SequenceFlow.h
   Node.h
   Scope.h
-  FlowNode.h
   Process.h
+  EventSubProcess.h
+  SequenceFlow.h
+  FlowNode.h
   Activity.h
   SubProcess.h
   Task.h

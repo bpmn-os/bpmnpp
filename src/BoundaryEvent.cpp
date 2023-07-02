@@ -11,7 +11,7 @@ BoundaryEvent::BoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* pa
 
 Activity* BoundaryEvent::resolveReference() {
   const std::string& reference = element->get<XML::bpmn::tBoundaryEvent>()->attachedToRef;
-  for ( auto& sibling : parent->childNodes ) {
+  for ( auto& sibling : parent->flowNodes ) {
     if ( sibling->id == reference ) {
       Activity* activity = sibling->as<Activity>();
       activity->boundaryEvents.push_back(this);

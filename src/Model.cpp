@@ -29,8 +29,8 @@ void Model::readBPMNFile(const std::string& filename)
   for ( auto& process : processes ) {
     createChildNodes(process.get());
     createSequenceFlows(process.get());
-    for ( auto& childNode: process->childNodes ) {
-      createReferences(childNode.get());
+    for ( auto& flowNode: process->flowNodes ) {
+      createReferences(flowNode.get());
     }
   }
 
@@ -38,6 +38,10 @@ void Model::readBPMNFile(const std::string& filename)
 
 std::unique_ptr<Process> Model::createProcess(XML::bpmn::tProcess* process) {
   return std::make_unique<Process>(process);
+}
+
+std::unique_ptr<EventSubProcess> Model::createEventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent) {
+  return std::make_unique<EventSubProcess>(subProcess,parent);
 }
 
 std::unique_ptr<FlowNode> Model::createFlowNode(XML::bpmn::tFlowNode* flowNode, Scope* parent) {
@@ -79,7 +83,7 @@ std::unique_ptr<FlowNode> Model::createSubProcess(XML::bpmn::tSubProcess* subPro
     return createAdHocSubProcess(adHocSubProcess,parent);
   }
   else if ( auto transaction = subProcess->is<XML::bpmn::tTransaction>(); transaction ) {
-    return createSubProcess(transaction,parent);
+    return createTransaction(transaction,parent);
   }
   return std::make_unique<SubProcess>(subProcess,parent);
 }
@@ -427,22 +431,31 @@ void Model::createChildNodes(Scope* scope) {
     ) {
       throw std::runtime_error("Model: Link events are not yet supported");
     }
+    if ( auto subProcess = flowNode.is<XML::bpmn::tSubProcess>();
+         subProcess->triggeredByEvent.has_value() &&
+         (bool)subProcess->triggeredByEvent->get()
+    ) {
+      scope->eventSubProcesses.push_back(createEventSubProcess(subProcess,scope));
+    }
     else if ( !flowNode.is<XML::bpmn::tBoundaryEvent>() ) {
       // create node according to element type
-      scope->childNodes.push_back(createFlowNode(&flowNode,scope));
+      scope->flowNodes.push_back(createFlowNode(&flowNode,scope));
     }
   }
   // add boundary events
   for (XML::bpmn::tFlowNode& flowNode: scope->element->getChildren<XML::bpmn::tFlowNode>() ) {
     if ( auto boundaryEvent = flowNode.is<XML::bpmn::tBoundaryEvent>(); boundaryEvent ) {
-      scope->childNodes.push_back(createBoundaryEvent(boundaryEvent,scope));
+      scope->flowNodes.push_back(createBoundaryEvent(boundaryEvent,scope));
     }
   }
   // recurse
-  for ( auto& childNode: scope->childNodes ) {
-    if ( auto scope = childNode->represents<Scope>(); scope ) {
+  for ( auto& flowNode: scope->flowNodes ) {
+    if ( auto scope = flowNode->represents<Scope>(); scope ) {
       createChildNodes(scope);
     }
+  }
+  for ( auto& eventSubProcess: scope->eventSubProcesses ) {
+    createChildNodes(eventSubProcess->as<Scope>());
   }
 }
 
@@ -452,10 +465,13 @@ void Model::createSequenceFlows(Scope* scope) {
     scope->sequenceFlows.push_back(createSequenceFlow(&sequenceFlow,scope));
   }
   // recurse
-  for ( auto& childNode: scope->childNodes ) {
-    if ( auto scope = childNode->represents<Scope>(); scope ) {
+  for ( auto& flowNode: scope->flowNodes ) {
+    if ( auto scope = flowNode->represents<Scope>(); scope ) {
       createSequenceFlows(scope);
     }
+  }
+  for ( auto& eventSubProcess: scope->eventSubProcesses ) {
+    createSequenceFlows(eventSubProcess->as<Scope>());
   }
 }
 
@@ -488,8 +504,8 @@ void Model::createReferences(FlowNode* flowNode) {
   }
   // recurse
   if ( auto scope = flowNode->represents<Scope>(); scope ) {
-    for ( auto& childNode: scope->childNodes ) {
-      createReferences(childNode.get());
+    for ( auto& flowNode: scope->flowNodes ) {
+      createReferences(flowNode.get());
     }
   }
 }
