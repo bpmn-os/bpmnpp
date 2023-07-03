@@ -431,7 +431,9 @@ void Model::createChildNodes(Scope* scope) {
     ) {
       throw std::runtime_error("Model: Link events are not yet supported");
     }
+
     if ( auto subProcess = flowNode.is<XML::bpmn::tSubProcess>();
+         subProcess &&
          subProcess->triggeredByEvent.has_value() &&
          (bool)subProcess->triggeredByEvent->get()
     ) {
