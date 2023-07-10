@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 UserTask::UserTask(XML::bpmn::tUserTask* userTask, Scope* parent)
-  : Task(userTask,parent)
-  , Node(userTask)
+  : Node(userTask)
+  , Task(userTask,parent)
   , element(userTask)
 {
 }

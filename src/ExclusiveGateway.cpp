@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 ExclusiveGateway::ExclusiveGateway(XML::bpmn::tExclusiveGateway* exclusiveGateway, Scope* parent)
-  : Gateway(exclusiveGateway,parent)
-  , Node(exclusiveGateway)
+  : Node(exclusiveGateway)
+  , Gateway(exclusiveGateway,parent)
   , element(exclusiveGateway)
 {
 }

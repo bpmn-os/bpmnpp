@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 InclusiveGateway::InclusiveGateway(XML::bpmn::tInclusiveGateway* inclusiveGateway, Scope* parent)
-  : Gateway(inclusiveGateway,parent)
-  , Node(inclusiveGateway)
+  : Node(inclusiveGateway)
+  , Gateway(inclusiveGateway,parent)
   , element(inclusiveGateway)
 {
 }

@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 SendTask::SendTask(XML::bpmn::tSendTask* sendTask, Scope* parent)
-  : Task(sendTask,parent)
-  , Node(sendTask)
+  : Node(sendTask)
+  , Task(sendTask,parent)
   , element(sendTask)
 {
 }

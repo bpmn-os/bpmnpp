@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 EventBasedGateway::EventBasedGateway(XML::bpmn::tEventBasedGateway* eventBasedGateway, Scope* parent)
-  : Gateway(eventBasedGateway,parent)
-  , Node(eventBasedGateway)
+  : Node(eventBasedGateway)
+  , Gateway(eventBasedGateway,parent)
   , element(eventBasedGateway)
 {
 }

@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 UntypedTask::UntypedTask(XML::bpmn::tTask* task, Scope* parent)
-  : Task(task,parent)
-  , Node(task)
+  : Node(task)
+  , Task(task,parent)
   , element(task)
 {
 }

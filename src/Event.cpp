@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 Event::Event(XML::bpmn::tEvent* event, Scope* parent)
-  : FlowNode(event,parent)
-  , Node(event)
+  : Node(event)
+  , FlowNode(event,parent)
   , element(event)
 {
 }

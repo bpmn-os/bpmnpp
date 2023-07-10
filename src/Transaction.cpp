@@ -7,8 +7,8 @@
 using namespace BPMN;
 
 Transaction::Transaction(XML::bpmn::tTransaction* transaction, Scope* parent)
-  : SubProcess(transaction,parent)
-  , Node(transaction)
+  : Node(transaction)
+  , SubProcess(transaction,parent)
   , element(transaction)
 {
 }

@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 BoundaryEvent::BoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent)
-  : CatchEvent(boundaryEvent,parent)
-  , Node(boundaryEvent)
+  : Node(boundaryEvent)
+  , CatchEvent(boundaryEvent,parent)
   , attachedTo(resolveReference())
 {
 }

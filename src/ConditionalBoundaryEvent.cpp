@@ -3,9 +3,9 @@
 using namespace BPMN;
 
 ConditionalBoundaryEvent::ConditionalBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent)
-  : BoundaryEvent(boundaryEvent,parent)
-  , Node(boundaryEvent)
+  : Node(boundaryEvent)
   , CatchEvent(boundaryEvent,parent)
+  , BoundaryEvent(boundaryEvent,parent)
   , element(boundaryEvent)
 {
 }

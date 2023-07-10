@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 ComplexGateway::ComplexGateway(XML::bpmn::tComplexGateway* complexGateway, Scope* parent)
-  : Gateway(complexGateway,parent)
-  , Node(complexGateway)
+  : Node(complexGateway)
+  , Gateway(complexGateway,parent)
   , element(complexGateway)
 {
 }

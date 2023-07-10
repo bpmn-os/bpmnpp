@@ -7,9 +7,9 @@
 using namespace BPMN;
 
 SubProcess::SubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent)
-  : Activity(subProcess,parent)
+  : Node(subProcess)
+  , Activity(subProcess,parent)
   , Scope(subProcess)
-  , Node(subProcess)
   , element(subProcess)
 {
   if ( startNodes.size() > 1 ) {

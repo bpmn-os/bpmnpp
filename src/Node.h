@@ -49,7 +49,7 @@ public:
       throw std::runtime_error("Node: Illegal cast of element '" + (element->id.has_value() ? (std::string)element->id->get() : "") + "'");
     }
     return ptr; 
-  };
+  }
 
   /// Returns a pointer of type T of the node.
   template<typename T> T* represents() {
@@ -67,11 +67,11 @@ public:
       throw std::runtime_error("Node: Illegal cast of node '" + this->id + "'");
     }
     return ptr; 
-  };
-
-  std::unique_ptr<ExtensionElements> extensionElements;
+  }
 
   XML::bpmn::tBaseElement* element;
+
+  std::unique_ptr<ExtensionElements> extensionElements;
 };
 
 } // namespace BPMN

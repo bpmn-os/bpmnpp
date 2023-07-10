@@ -13,9 +13,8 @@ namespace BPMN {
 class SubProcess : public Activity, public Scope {
   friend class Model;
 public:
-  SubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent);
-
   XML::bpmn::tSubProcess* element;
+  SubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent);
 protected:
 };
 

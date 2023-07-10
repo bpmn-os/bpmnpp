@@ -26,6 +26,8 @@ public:
   //// Overloaded arrow operator to provide access to the underlying `tSequenceFlow` element.
   XML::bpmn::tSequenceFlow* get() { return sequenceFlow; };
 
+  XML::bpmn::tSequenceFlow* sequenceFlow;
+
   /// Id of sequence flow
   std::string id;
   /// Reference to the source node of the sequence flow.
@@ -52,12 +54,10 @@ public:
       throw std::runtime_error("SequenceFlow: Illegal downcast");
     }
     return ptr; 
-  };
+  }
+
 
   std::unique_ptr<ExtensionElements> extensionElements;
-
-  XML::bpmn::tSequenceFlow* sequenceFlow;
-
 protected:
   FlowNode* findNode(std::string id, Scope* scope);
 };

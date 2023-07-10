@@ -20,6 +20,7 @@ class SequenceFlow;
 class FlowNode : virtual public Node {
   friend class Model;
 public:
+  XML::bpmn::tFlowNode* element;
   FlowNode(XML::bpmn::tFlowNode* flowNode, Scope* parent);
 
   /// Reference to the parent node.
@@ -36,7 +37,6 @@ public:
   /// Vector containing all outgoing sequence flows of the node.
   std::vector< SequenceFlow* > outgoing;
 
-  XML::bpmn::tFlowNode* element;
 protected:
 };
 

@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 Task::Task(XML::bpmn::tTask* task, Scope* parent)
-  : Activity(task,parent)
-  , Node(task)
+  : Node(task)
+  , Activity(task,parent)
   , element(task)
 {
 }

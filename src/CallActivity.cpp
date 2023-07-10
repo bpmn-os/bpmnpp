@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 CallActivity::CallActivity(XML::bpmn::tCallActivity* callActivity, Scope* parent)
-  : Activity(callActivity,parent)
-  , Node(callActivity)
+  : Node(callActivity)
+  , Activity(callActivity,parent)
   , element(callActivity)
 {
 }

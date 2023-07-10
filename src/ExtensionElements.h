@@ -31,7 +31,7 @@ public:
       throw std::runtime_error("ExtensionElements: Illegal downcast");
     }
     return ptr; 
-  };
+  }
 
   /**
    * Returns a the extension elements if they are given or a nullptr otherwise.
@@ -48,7 +48,7 @@ public:
       }
     }
     return std::vector< std::reference_wrapper<T> >(); 
-  };
+  }
 
   XML::bpmn::tExtensionElements* element;
 

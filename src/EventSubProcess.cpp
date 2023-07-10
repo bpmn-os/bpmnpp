@@ -9,8 +9,8 @@
 using namespace BPMN;
 
 EventSubProcess::EventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent)
-  : Scope(subProcess)
-  , Node(subProcess)
+  : Node(subProcess)
+  , Scope(subProcess)
   , parent(parent)
   , element(subProcess)
 {

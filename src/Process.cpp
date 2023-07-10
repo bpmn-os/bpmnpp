@@ -7,8 +7,8 @@
 using namespace BPMN;
 
 Process::Process(XML::bpmn::tProcess* process)
-  : Scope(process)
-  , Node(process)
+  : Node(process)
+  , Scope(process)
   , element(process)
 {
 }

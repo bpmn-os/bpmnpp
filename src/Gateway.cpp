@@ -3,8 +3,8 @@
 using namespace BPMN;
 
 Gateway::Gateway(XML::bpmn::tGateway* gateway, Scope* parent)
-  : FlowNode(gateway,parent)
-  , Node(gateway)
+  : Node(gateway)
+  , FlowNode(gateway,parent)
   , element(gateway)
 {
 }
