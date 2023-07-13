@@ -48,12 +48,25 @@ public:
     if ( ptr == nullptr ) {
       throw std::runtime_error("Node: Illegal cast of element '" + (element->id.has_value() ? (std::string)element->id->get() : "") + "'");
     }
-    return ptr; 
+    return ptr;
+  }
+
+  template<typename T = XML::bpmn::tBaseElement> const T* get() const {
+    const T* ptr = dynamic_cast<const T*>(element);
+    if ( ptr == nullptr ) {
+      throw std::runtime_error("Node: Illegal cast of element '" + (element->id.has_value() ? (std::string)element->id->get() : "") + "'");
+    }
+    return ptr;
   }
 
   /// Returns a pointer of type T of the node.
   template<typename T> T* represents() {
     return dynamic_cast<T*>(this);
+  }
+
+  /// Returns a pointer of type T of the node.
+  template<typename T> const T* represents() const {
+    return dynamic_cast<const T*>(this);
   }
 
   /**
@@ -62,11 +75,19 @@ public:
    * indicating an illegal cast operation.
    */
   template<typename T> T* as() {
-    T* ptr = dynamic_cast<T*>(this); 
+    T* ptr = dynamic_cast<T*>(this);
     if ( ptr == nullptr ) {
       throw std::runtime_error("Node: Illegal cast of node '" + this->id + "'");
     }
-    return ptr; 
+    return ptr;
+  }
+
+  template<typename T> const T* as() const {
+    const T* ptr = dynamic_cast<const T*>(this);
+    if ( ptr == nullptr ) {
+      throw std::runtime_error("Node: Illegal cast of node '" + this->id + "'");
+    }
+    return ptr;
   }
 
   XML::bpmn::tBaseElement* element;
