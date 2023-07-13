@@ -20,6 +20,11 @@ public:
     return dynamic_cast<T*>(this);
   }
 
+  /// Returns a pointer of type T of the ExtensionElements.
+  template<typename T> const T* represents() const {
+    return dynamic_cast<const T*>(this);
+  }
+
   /**
    * Attempt to downcast the ExtensionElements to a derived class T.
    * If the cast fails, throws a std::runtime_error with an error message
@@ -28,9 +33,22 @@ public:
   template<typename T> T* as() {
     T* ptr = dynamic_cast<T*>(this); 
     if ( ptr == nullptr ) {
-      throw std::runtime_error("ExtensionElements: Illegal downcast");
+      throw std::runtime_error("ExtensionElements: Illegal cast");
     }
     return ptr; 
+  }
+
+  /**
+   * Attempt to downcast the ExtensionElements to a derived class T.
+   * If the cast fails, throws a std::runtime_error with an error message
+   * indicating an illegal cast operation.
+   */
+  template<typename T> const T* as() const {
+    const T* ptr = dynamic_cast<const T*>(this);
+    if ( ptr == nullptr ) {
+      throw std::runtime_error("ExtensionElements: Illegal cast");
+    }
+    return ptr;
   }
 
   /**

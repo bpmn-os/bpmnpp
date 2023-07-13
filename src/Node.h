@@ -82,6 +82,11 @@ public:
     return ptr;
   }
 
+  /**
+   * Attempt to downcast the node to a derived class T.
+   * If the cast fails, throws a std::runtime_error with an error message
+   * indicating an illegal cast operation.
+   */
   template<typename T> const T* as() const {
     const T* ptr = dynamic_cast<const T*>(this);
     if ( ptr == nullptr ) {
