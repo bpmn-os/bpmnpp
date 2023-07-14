@@ -37,6 +37,10 @@ public:
     return dynamic_cast<T*>(element);
   }
 
+  template<typename T> const T* is() const {
+    return dynamic_cast<const T*>(element);
+  }
+
   /**
    * Attempt to cast the element to the specified type T.
    * If the cast is successful, returns a pointer to the casted object.
