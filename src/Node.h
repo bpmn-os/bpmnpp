@@ -5,6 +5,7 @@
 #include <memory>
 #include <vector>
 #include <optional>
+#include <functional>
 #include "ExtensionElements.h"
 
 namespace BPMN {
@@ -98,6 +99,34 @@ public:
     }
     return ptr;
   }
+
+  /**
+   * Returns the first node found matching a given condition.
+   *
+   * @return A pointer to a node matching condition, or nullptr if no such node exists
+   */
+  Node* find(std::function<bool(Node*)> condition);
+
+  /**
+   * Returns the first node found matching a given condition.
+   *
+   * @return A pointer to a node matching condition, or nullptr if no such node exists
+   */
+  const Node* find(std::function<bool(const Node*)> condition) const;
+
+  /**
+   * Returns all nodes matching a given condition.
+   *
+   * @return A vector of pointers to nodes matching condition
+   */
+  std::vector< Node* > find_all(std::function<bool(Node*)> condition);
+
+  /**
+   * Returns all nodes matching a given condition.
+   *
+   * @return A vector of pointers to nodes matching condition
+   */
+  std::vector< const Node* > find_all(std::function<bool(const Node*)> condition) const;
 
   XML::bpmn::tBaseElement* element;
 

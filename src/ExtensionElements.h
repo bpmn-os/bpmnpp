@@ -61,7 +61,7 @@ public:
    **/
   template<class C, class T> std::vector< std::reference_wrapper<T> > get() {
     if ( element ) {
-      if ( auto container = element->template getOptionalChild<C>() ) {
+      if ( auto container = element->template getOptionalChild<C>(); container.has_value() ) {
         return container->get().template getChildren<T>();
       }
     }

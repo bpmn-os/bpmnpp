@@ -86,6 +86,13 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_library(${CMAKE_PROJECT_NAME} STATIC ${bpmn_SOURCES})
 
+# Delete xml directory when running `make clean`
+set_property(
+  TARGET ${PROJECT_NAME}
+  APPEND
+  PROPERTY ADDITIONAL_CLEAN_FILES "${XML_DIR}"
+)
+
 target_compile_options(${CMAKE_PROJECT_NAME}
   PRIVATE
   -O3

@@ -29,8 +29,8 @@ void Model::readBPMNFile(const std::string& filename)
   for ( auto& process : processes ) {
     createChildNodes(process.get());
     createSequenceFlows(process.get());
-    for ( auto& flowNode: process->flowNodes ) {
-      createReferences(flowNode.get());
+    for ( auto flowNode: process->flowNodes ) {
+      createReferences(flowNode);
     }
   }
 
@@ -437,43 +437,37 @@ void Model::createChildNodes(Scope* scope) {
          subProcess->triggeredByEvent.has_value() &&
          (bool)subProcess->triggeredByEvent->get()
     ) {
-      scope->eventSubProcesses.push_back(createEventSubProcess(subProcess,scope));
+      scope->add(createEventSubProcess(subProcess,scope));
     }
     else if ( !flowNode.is<XML::bpmn::tBoundaryEvent>() ) {
       // create node according to element type
-      scope->flowNodes.push_back(createFlowNode(&flowNode,scope));
+      scope->add(createFlowNode(&flowNode,scope));
     }
   }
   // add boundary events
   for (XML::bpmn::tFlowNode& flowNode: scope->element->getChildren<XML::bpmn::tFlowNode>() ) {
     if ( auto boundaryEvent = flowNode.is<XML::bpmn::tBoundaryEvent>(); boundaryEvent ) {
-      scope->flowNodes.push_back(createBoundaryEvent(boundaryEvent,scope));
+      scope->add(createBoundaryEvent(boundaryEvent,scope));
     }
   }
   // recurse
-  for ( auto& flowNode: scope->flowNodes ) {
-    if ( auto scope = flowNode->represents<Scope>(); scope ) {
-      createChildNodes(scope);
+  for ( auto& childNode: scope->childNodes ) {
+    if ( auto scope = childNode->represents<Scope>(); scope ) {
+      createSequenceFlows(scope);
     }
-  }
-  for ( auto& eventSubProcess: scope->eventSubProcesses ) {
-    createChildNodes(eventSubProcess->as<Scope>());
   }
 }
 
 void Model::createSequenceFlows(Scope* scope) {
   // add sequence flows within scope of the node
   for (XML::bpmn::tSequenceFlow& sequenceFlow: scope->element->getChildren<XML::bpmn::tSequenceFlow>() ) {
-    scope->sequenceFlows.push_back(createSequenceFlow(&sequenceFlow,scope));
+    scope->add(createSequenceFlow(&sequenceFlow,scope));
   }
   // recurse
-  for ( auto& flowNode: scope->flowNodes ) {
-    if ( auto scope = flowNode->represents<Scope>(); scope ) {
+  for ( auto& childNode: scope->childNodes ) {
+    if ( auto scope = childNode->represents<Scope>(); scope ) {
       createSequenceFlows(scope);
     }
-  }
-  for ( auto& eventSubProcess: scope->eventSubProcesses ) {
-    createSequenceFlows(eventSubProcess->as<Scope>());
   }
 }
 
@@ -506,8 +500,8 @@ void Model::createReferences(FlowNode* flowNode) {
   }
   // recurse
   if ( auto scope = flowNode->represents<Scope>(); scope ) {
-    for ( auto& flowNode: scope->flowNodes ) {
-      createReferences(flowNode.get());
+    for ( auto flowNode: scope->flowNodes ) {
+      createReferences(flowNode);
     }
   }
 }

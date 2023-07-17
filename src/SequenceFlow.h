@@ -56,7 +56,6 @@ public:
     return ptr; 
   }
 
-
   std::unique_ptr<ExtensionElements> extensionElements;
 protected:
   FlowNode* findNode(std::string id, Scope* scope);
