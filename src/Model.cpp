@@ -491,7 +491,7 @@ void Model::createReferences(FlowNode* flowNode) {
     // link outgoing sequence flows
     for ( auto& outflow : flowNode->element->outgoing ) {
       for (auto& sequenceFlow : flowNode->parent->sequenceFlows ) {
-        if ( sequenceFlow->get()->id.has_value() && outflow.get().textContent == (std::string)sequenceFlow->get()->id->get() ) {
+        if ( sequenceFlow->get()->id.has_value() && outflow.get().textContent == sequenceFlow->get()->id->get().value ) {
           flowNode->outgoing.push_back(sequenceFlow.get());
           break;
         }
