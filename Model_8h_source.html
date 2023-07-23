@@ -213,13 +213,36 @@ $(function() {
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">return</span> std::move(node);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  }</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;};</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;} <span class="comment">// namespace BPMN</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BPMN_Model_H</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classBPMN_1_1Model.html#a93a899a7f8f40d2ff99cdd7d428b55e4">  153</a></span>&#160;  <span class="keyword">static</span> std::unique_ptr&lt;T&gt; <a class="code" href="classBPMN_1_1Model.html#a93a899a7f8f40d2ff99cdd7d428b55e4">bind</a>(std::unique_ptr&lt;T&gt;&amp; node, std::unique_ptr&lt;ExtensionElements&gt;&amp; extensionElements) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    node-&gt;extensionElements = std::move(extensionElements);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">return</span> std::move(node);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classBPMN_1_1Model.html#ac76e0354135da60cb6034e0de1fbd2f0">  160</a></span>&#160;  <span class="keyword">static</span> std::unique_ptr&lt;T&gt; <a class="code" href="classBPMN_1_1Model.html#ac76e0354135da60cb6034e0de1fbd2f0">bind</a>(std::unique_ptr&lt;T&gt;&amp; node, std::unique_ptr&lt;ExtensionElements&gt;&amp;&amp; extensionElements) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    node-&gt;extensionElements = std::move(extensionElements);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">return</span> std::move(node);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classBPMN_1_1Model.html#aaee63af147a02b20ad2488b6cd298cd9">  167</a></span>&#160;  <span class="keyword">static</span> std::unique_ptr&lt;T&gt; <a class="code" href="classBPMN_1_1Model.html#aaee63af147a02b20ad2488b6cd298cd9">bind</a>(std::unique_ptr&lt;T&gt;&amp;&amp; node, std::unique_ptr&lt;ExtensionElements&gt;&amp; extensionElements) {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    node-&gt;extensionElements = std::move(extensionElements);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">return</span> std::move(node);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;};</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;} <span class="comment">// namespace BPMN</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BPMN_Model_H</span></div>
 <div class="ttc" id="aclassBPMN_1_1FlowNode_html"><div class="ttname"><a href="classBPMN_1_1FlowNode.html">BPMN::FlowNode</a></div><div class="ttdoc">Represents a flow node in a BPMN process.</div><div class="ttdef"><b>Definition:</b> FlowNode.h:20</div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html"><div class="ttname"><a href="classBPMN_1_1Model.html">BPMN::Model</a></div><div class="ttdoc">Represents a BPMN model with all its processes.</div><div class="ttdef"><b>Definition:</b> Model.h:69</div></div>
+<div class="ttc" id="aclassBPMN_1_1Model_html_a93a899a7f8f40d2ff99cdd7d428b55e4"><div class="ttname"><a href="classBPMN_1_1Model.html#a93a899a7f8f40d2ff99cdd7d428b55e4">BPMN::Model::bind</a></div><div class="ttdeci">static std::unique_ptr&lt; T &gt; bind(std::unique_ptr&lt; T &gt; &amp;node, std::unique_ptr&lt; ExtensionElements &gt; &amp;extensionElements)</div><div class="ttdoc">Binds the extension element to the given node.</div><div class="ttdef"><b>Definition:</b> Model.h:153</div></div>
+<div class="ttc" id="aclassBPMN_1_1Model_html_aaee63af147a02b20ad2488b6cd298cd9"><div class="ttname"><a href="classBPMN_1_1Model.html#aaee63af147a02b20ad2488b6cd298cd9">BPMN::Model::bind</a></div><div class="ttdeci">static std::unique_ptr&lt; T &gt; bind(std::unique_ptr&lt; T &gt; &amp;&amp;node, std::unique_ptr&lt; ExtensionElements &gt; &amp;extensionElements)</div><div class="ttdoc">Binds the extension element to the given node.</div><div class="ttdef"><b>Definition:</b> Model.h:167</div></div>
+<div class="ttc" id="aclassBPMN_1_1Model_html_ac76e0354135da60cb6034e0de1fbd2f0"><div class="ttname"><a href="classBPMN_1_1Model.html#ac76e0354135da60cb6034e0de1fbd2f0">BPMN::Model::bind</a></div><div class="ttdeci">static std::unique_ptr&lt; T &gt; bind(std::unique_ptr&lt; T &gt; &amp;node, std::unique_ptr&lt; ExtensionElements &gt; &amp;&amp;extensionElements)</div><div class="ttdoc">Binds the extension element to the given node.</div><div class="ttdef"><b>Definition:</b> Model.h:160</div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_ad1cdc6974a04a37e2bbc51d1fe48bf7a"><div class="ttname"><a href="classBPMN_1_1Model.html#ad1cdc6974a04a37e2bbc51d1fe48bf7a">BPMN::Model::bind</a></div><div class="ttdeci">static std::unique_ptr&lt; T &gt; bind(std::unique_ptr&lt; T &gt; &amp;&amp;node, std::unique_ptr&lt; ExtensionElements &gt; &amp;&amp;extensionElements)</div><div class="ttdoc">Binds the extension element to the given node.</div><div class="ttdef"><b>Definition:</b> Model.h:146</div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Represents a node with a scope in a BPMN process.</div><div class="ttdef"><b>Definition:</b> Scope.h:22</div></div>
 <div class="ttc" id="aclassXML_1_1bpmn_1_1tActivity_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tActivity.html">XML::bpmn::tActivity</a></div><div class="ttdef"><b>Definition:</b> tActivity.h:53</div></div>
