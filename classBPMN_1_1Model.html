@@ -88,12 +88,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a161464a851d7825e3ba1150e8dc2bbb4"><td class="memItemLeft" align="right" valign="top"><a id="a161464a851d7825e3ba1150e8dc2bbb4"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1Process.html">Process</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>processes</b></td></tr>
-<tr class="separator:a161464a851d7825e3ba1150e8dc2bbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a726b3195cc0868077a0c2333ddacc0a6"><td class="memItemLeft" align="right" valign="top"><a id="a726b3195cc0868077a0c2333ddacc0a6"></a>
 std::vector&lt; std::unique_ptr&lt; <a class="el" href="classXML_1_1XMLObject.html">XML::XMLObject</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>roots</b></td></tr>
 <tr class="separator:a726b3195cc0868077a0c2333ddacc0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a161464a851d7825e3ba1150e8dc2bbb4"><td class="memItemLeft" align="right" valign="top"><a id="a161464a851d7825e3ba1150e8dc2bbb4"></a>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1Process.html">Process</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>processes</b></td></tr>
+<tr class="separator:a161464a851d7825e3ba1150e8dc2bbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbd982974a432552f51a2caf34db480"><td class="memItemLeft" align="right" valign="top"><a id="a6fbd982974a432552f51a2caf34db480"></a>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>messageFlows</b></td></tr>
+<tr class="separator:a6fbd982974a432552f51a2caf34db480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -253,6 +256,9 @@ virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">Flow
 <tr class="memitem:ac8e9b7a2bf70f36a490a00e872cbb908"><td class="memItemLeft" align="right" valign="top"><a id="ac8e9b7a2bf70f36a490a00e872cbb908"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSequenceFlow</b> (<a class="el" href="classXML_1_1bpmn_1_1tSequenceFlow.html">XML::bpmn::tSequenceFlow</a> *sequenceFlow, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
 <tr class="separator:ac8e9b7a2bf70f36a490a00e872cbb908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c371b22a314b3bf93ea2a311445402d"><td class="memItemLeft" align="right" valign="top"><a id="a2c371b22a314b3bf93ea2a311445402d"></a>
+virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageFlow</b> (<a class="el" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a> *messageFlow)</td></tr>
+<tr class="separator:a2c371b22a314b3bf93ea2a311445402d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a662567a1f6b77245adfee40a82cb457b"><td class="memItemLeft" align="right" valign="top"><a id="a662567a1f6b77245adfee40a82cb457b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createChildNodes</b> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
 <tr class="separator:a662567a1f6b77245adfee40a82cb457b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,6 +268,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createSequenc
 <tr class="memitem:acb99225100bcc242a8683d9db35bd1b6"><td class="memItemLeft" align="right" valign="top"><a id="acb99225100bcc242a8683d9db35bd1b6"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createReferences</b> (<a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> *flowNode)</td></tr>
 <tr class="separator:acb99225100bcc242a8683d9db35bd1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b035b0ba64e65d6889e93557efcf26"><td class="memItemLeft" align="right" valign="top"><a id="ab7b035b0ba64e65d6889e93557efcf26"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageFlows</b> ()</td></tr>
+<tr class="separator:ab7b035b0ba64e65d6889e93557efcf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
