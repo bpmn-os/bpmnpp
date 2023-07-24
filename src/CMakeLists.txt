@@ -62,6 +62,7 @@ list(APPEND bpmn_SOURCES
   InclusiveGateway.cpp
   ComplexGateway.cpp
   EventBasedGateway.cpp
+  MessageFlow.cpp
   Model.cpp
 )
 
@@ -124,5 +125,6 @@ list(APPEND bpmn_HEADERS
   InclusiveGateway.h
   ComplexGateway.h
   EventBasedGateway.h
+  MessageFlow.h
   Model.h
 )

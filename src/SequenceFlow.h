@@ -23,10 +23,7 @@ public:
 
   virtual ~SequenceFlow() = default;
 
-  //// Overloaded arrow operator to provide access to the underlying `tSequenceFlow` element.
-  XML::bpmn::tSequenceFlow* get() { return sequenceFlow; };
-
-  XML::bpmn::tSequenceFlow* sequenceFlow;
+  XML::bpmn::tSequenceFlow* element;
 
   /// Id of sequence flow
   std::string id;
@@ -58,7 +55,7 @@ public:
 
   std::unique_ptr<ExtensionElements> extensionElements;
 protected:
-  FlowNode* findNode(std::string id, Scope* scope);
+  FlowNode* findNode(std::string& id, Scope* scope);
 };
 
 } // namespace BPMN

@@ -9,6 +9,8 @@
 #include "xml/bpmn/tSignalEventDefinition.h"
 #include "xml/bpmn/tTimerEventDefinition.h"
 #include "xml/bpmn/tTerminateEventDefinition.h"
+#include "xml/bpmn/tCollaboration.h"
+#include "xml/bpmn/tParticipant.h"
 
 
 using namespace BPMN;
@@ -34,6 +36,7 @@ void Model::readBPMNFile(const std::string& filename)
     }
   }
 
+  createMessageFlows();
 }
 
 std::unique_ptr<Process> Model::createProcess(XML::bpmn::tProcess* process) {
@@ -423,6 +426,10 @@ std::unique_ptr<SequenceFlow> Model::createSequenceFlow(XML::bpmn::tSequenceFlow
   return std::make_unique<SequenceFlow>(sequenceFlow,scope);
 }
 
+std::unique_ptr<MessageFlow> Model::createMessageFlow(XML::bpmn::tMessageFlow* messageFlow) {
+  return std::make_unique<MessageFlow>(messageFlow);
+}
+
 void Model::createChildNodes(Scope* scope) {
   // add child nodes (except boundary events and link events)
   for (XML::bpmn::tFlowNode& flowNode : scope->element->getChildren<XML::bpmn::tFlowNode>() ) {
@@ -491,7 +498,7 @@ void Model::createReferences(FlowNode* flowNode) {
     // link outgoing sequence flows
     for ( auto& outflow : flowNode->element->outgoing ) {
       for (auto& sequenceFlow : flowNode->parent->sequenceFlows ) {
-        if ( sequenceFlow->get()->id.has_value() && outflow.get().textContent == sequenceFlow->get()->id->get().value ) {
+        if ( sequenceFlow->element->id.has_value() && outflow.get().textContent == sequenceFlow->element->id->get().value ) {
           flowNode->outgoing.push_back(sequenceFlow.get());
           break;
         }
@@ -504,5 +511,31 @@ void Model::createReferences(FlowNode* flowNode) {
       createReferences(flowNode);
     }
   }
+}
+
+void Model::createMessageFlows() {
+  // initialize map to resolve reference to participants
+  std::unordered_map<std::string,std::string> participantMap;
+
+  for ( auto& root : roots ) {
+    if ( const auto& collaboration = root->getOptionalChild<XML::bpmn::tCollaboration>(); collaboration.has_value() ) {
+ 
+      // add participants to map
+      for ( const XML::bpmn::tParticipant& participant : collaboration->get().getChildren<XML::bpmn::tParticipant>() ) {
+        participantMap[participant.id->get().value] = participant.processRef->get().value;
+      }
+
+      // create message flow objects
+      for ( XML::bpmn::tMessageFlow& messageFlow : collaboration->get().getChildren<XML::bpmn::tMessageFlow>() ) {
+        messageFlows.push_back(createMessageFlow(&messageFlow));
+      }
+    }
+  }
+
+  // create references
+  for (auto& messageFlow : messageFlows ) {
+    messageFlow->initializeParticipants(processes,participantMap);
+  }
+
 }
 

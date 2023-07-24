@@ -50,6 +50,7 @@
 #include "SignalBoundaryEvent.h"
 #include "TimerBoundaryEvent.h"
 #include "SequenceFlow.h"
+#include "MessageFlow.h"
 #include <memory>
 #include <vector>
 #include <string>
@@ -59,6 +60,7 @@ namespace BPMN {
 
 class Node;
 class SequenceFlow;
+class MessageFlow;
 
 
 /**
@@ -72,8 +74,9 @@ protected:
 public:
 	Model(const std::string& filename);
   virtual ~Model() = default;
-  std::vector< std::unique_ptr<Process> > processes;
   std::vector<std::unique_ptr<XML::XMLObject> > roots;
+  std::vector< std::unique_ptr<Process> > processes;
+  std::vector< std::unique_ptr<MessageFlow> > messageFlows;
 protected:
   virtual void readBPMNFile(const std::string& filename);
   virtual std::unique_ptr<Process> createProcess(XML::bpmn::tProcess* process);
@@ -137,9 +140,11 @@ protected:
   virtual std::unique_ptr<FlowNode> createComplexGateway(XML::bpmn::tComplexGateway* complexGateway, Scope* parent);
 
   virtual std::unique_ptr<SequenceFlow> createSequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope);
+  virtual std::unique_ptr<MessageFlow> createMessageFlow(XML::bpmn::tMessageFlow* messageFlow);
   virtual void createChildNodes(Scope* scope);
   virtual void createSequenceFlows(Scope* scope);
   virtual void createReferences(FlowNode* flowNode);
+  virtual void createMessageFlows();
 
   /// Binds the extension element to the given node
   template< typename T>
