@@ -1,7 +1,7 @@
 #include "SequenceFlow.h"
 #include "FlowNode.h"
 #include "Scope.h"
-
+#include <iostream>
 using namespace BPMN;
 
 SequenceFlow::SequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope)
@@ -12,12 +12,13 @@ SequenceFlow::SequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope)
   id = sequenceFlow->id.has_value() ? (std::string)sequenceFlow->id->get() : "";
 }
 
-FlowNode* SequenceFlow::findNode(std::string& id, Scope* scope) {
+FlowNode* SequenceFlow::findNode(std::string& nodeId, Scope* scope) {
   for ( auto& flowNode : scope->flowNodes ) {
-    if ( flowNode->get<>()->id.has_value() && id == flowNode->get<>()->id->get().value ) {
+    if ( flowNode->get<>()->id.has_value() && nodeId == flowNode->get<>()->id->get().value ) {
       return flowNode;
     }
   }
-  throw std::runtime_error("SequenceFlow: cannot find node");
+
+  throw std::runtime_error("SequenceFlow: cannot find node '" + nodeId + "' within scope '" + scope->id + "'" );
 }
 

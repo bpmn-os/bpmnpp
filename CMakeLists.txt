@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.26.4)
 
 project(bpmn++)
 
+# Set the C++ standard
+set(CMAKE_CXX_STANDARD 20)
+
+add_subdirectory(tests)
+
 # Check dependencies
 find_library(XERCES_LIB xerces-c)
 if(NOT XERCES_LIB)
@@ -80,9 +85,6 @@ if (DOXYGEN_FOUND AND DOCUMENTATION)
     VERBATIM
   )
 endif()
-
-# Set the C++ standard
-set(CMAKE_CXX_STANDARD 20)
 
 add_library(${CMAKE_PROJECT_NAME} STATIC ${bpmn_SOURCES})
 

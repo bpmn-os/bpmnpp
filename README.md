@@ -35,6 +35,13 @@ After library the program, it can be installed by
 ~/bpmnpp/build$ sudo make install
 ```
 
+## Run tests
+Tests can be run by
+
+```
+~/bpmnpp/build$ make tests
+```
+
 ## Example
 
 An example using the library can be found in `example` folder.

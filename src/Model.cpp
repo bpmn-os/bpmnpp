@@ -459,8 +459,9 @@ void Model::createChildNodes(Scope* scope) {
   }
   // recurse
   for ( auto& childNode: scope->childNodes ) {
-    if ( auto scope = childNode->represents<Scope>(); scope ) {
-      createSequenceFlows(scope);
+    if ( auto childScope = childNode->represents<Scope>(); childScope ) {
+      createChildNodes(childScope);
+      createSequenceFlows(childScope);
     }
   }
 }
@@ -522,7 +523,9 @@ void Model::createMessageFlows() {
  
       // add participants to map
       for ( const XML::bpmn::tParticipant& participant : collaboration->get().getChildren<XML::bpmn::tParticipant>() ) {
-        participantMap[participant.id->get().value] = participant.processRef->get().value;
+        if ( participant.processRef.has_value() ) {
+          participantMap[participant.id->get().value] = participant.processRef->get().value;
+        }
       }
 
       // create message flow objects
