@@ -216,9 +216,9 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a17a0a2ba5b8fa538910a5ebefb6fd353 inherit pub_attribs_classXML_1_1bpmn_1_1tResourceRole"><td class="memItemLeft" align="right" valign="top"><a id="a17a0a2ba5b8fa538910a5ebefb6fd353"></a>
 std::optional&lt; std::reference_wrapper&lt; <a class="el" href="classXML_1_1bpmn_1_1tResourceAssignmentExpression.html">tResourceAssignmentExpression</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resourceAssignmentExpression</b></td></tr>
 <tr class="separator:a17a0a2ba5b8fa538910a5ebefb6fd353 inherit pub_attribs_classXML_1_1bpmn_1_1tResourceRole"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a335f57ead4abbf87e4ab96658fe7bb60 inherit pub_attribs_classXML_1_1bpmn_1_1tResourceRole"><td class="memItemLeft" align="right" valign="top"><a id="a335f57ead4abbf87e4ab96658fe7bb60"></a>
-std::optional&lt; std::reference_wrapper&lt; <a class="el" href="classXML_1_1XMLObject.html">XMLObject</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resourceRef</b></td></tr>
-<tr class="separator:a335f57ead4abbf87e4ab96658fe7bb60 inherit pub_attribs_classXML_1_1bpmn_1_1tResourceRole"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d281197be925f997313f8e92e2175d9 inherit pub_attribs_classXML_1_1bpmn_1_1tResourceRole"><td class="memItemLeft" align="right" valign="top"><a id="a0d281197be925f997313f8e92e2175d9"></a>
+std::vector&lt; std::reference_wrapper&lt; <a class="el" href="classXML_1_1XMLObject.html">XMLObject</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resourceRef</b></td></tr>
+<tr class="separator:a0d281197be925f997313f8e92e2175d9 inherit pub_attribs_classXML_1_1bpmn_1_1tResourceRole"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92cfdd7c810f1fd3462a565f45cbd87f inherit pub_attribs_classXML_1_1bpmn_1_1tResourceRole"><td class="memItemLeft" align="right" valign="top"><a id="a92cfdd7c810f1fd3462a565f45cbd87f"></a>
 std::vector&lt; std::reference_wrapper&lt; <a class="el" href="classXML_1_1bpmn_1_1tResourceParameterBinding.html">tResourceParameterBinding</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resourceParameterBinding</b></td></tr>
 <tr class="separator:a92cfdd7c810f1fd3462a565f45cbd87f inherit pub_attribs_classXML_1_1bpmn_1_1tResourceRole"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +274,7 @@ static Factory&#160;</td><td class="memItemRight" valign="bottom"><b>factory</b>
 <div class="textblock"><p>Element name: <a class="el" href="classXML_1_1bpmn_1_1potentialOwner.html">potentialOwner</a> XML Schema: xsd/Semantic.xsd XML Namespace: <a href="http://www.omg.org/spec/BPMN/20100524/MODEL">http://www.omg.org/spec/BPMN/20100524/MODEL</a></p>
 <p>Members:</p><ul>
 <li><a class="el" href="classXML_1_1bpmn_1_1resourceAssignmentExpression.html">resourceAssignmentExpression</a> : <a class="el" href="classXML_1_1bpmn_1_1tResourceAssignmentExpression.html">tResourceAssignmentExpression</a> [0..1] (from: <a class="el" href="classXML_1_1bpmn_1_1tResourceRole.html">tResourceRole</a>)</li>
-<li>resourceRef : QName [0..1] (from: <a class="el" href="classXML_1_1bpmn_1_1tResourceRole.html">tResourceRole</a>)</li>
+<li>resourceRef : QName [0..*] (from: <a class="el" href="classXML_1_1bpmn_1_1tResourceRole.html">tResourceRole</a>)</li>
 <li><a class="el" href="classXML_1_1bpmn_1_1resourceParameterBinding.html">resourceParameterBinding</a> : <a class="el" href="classXML_1_1bpmn_1_1tResourceParameterBinding.html">tResourceParameterBinding</a> [0..*] (from: <a class="el" href="classXML_1_1bpmn_1_1tResourceRole.html">tResourceRole</a>)</li>
 <li>name : string [0..1] (from: <a class="el" href="classXML_1_1bpmn_1_1tResourceRole.html">tResourceRole</a>)</li>
 <li>documentation : <a class="el" href="classXML_1_1bpmn_1_1tDocumentation.html">tDocumentation</a> [0..*] (from: <a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">tBaseElement</a>)</li>
