@@ -78,21 +78,22 @@ Inheritance diagram for BPMN::EventSubProcess:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBPMN_1_1EventSubProcess__inherit__graph.png" border="0" usemap="#aBPMN_1_1EventSubProcess_inherit__map" alt="Inheritance graph"/></div>
 <map name="aBPMN_1_1EventSubProcess_inherit__map" id="aBPMN_1_1EventSubProcess_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,564,185,685"/>
-<area shape="rect" href="classBPMN_1_1Scope.html" title="Represents a node with a scope in a BPMN process." alt="" coords="14,351,177,516"/>
-<area shape="rect" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="14,5,177,303"/>
+<area shape="rect" title=" " alt="" coords="70,564,250,671"/>
+<area shape="rect" href="classBPMN_1_1ChildNode.html" title="Represents a node in a BPMN process that has a parent." alt="" coords="5,395,141,472"/>
+<area shape="rect" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="79,5,241,303"/>
+<area shape="rect" href="classBPMN_1_1Scope.html" title="Represents a node with a scope in a BPMN process." alt="" coords="165,351,328,516"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae128cc7c23f29cbfb388703cda7691d9"><td class="memItemLeft" align="right" valign="top"><a id="ae128cc7c23f29cbfb388703cda7691d9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>EventSubProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *subProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1EventSubProcess.html#ad7208f9641e4f8b64952f6e68304a821">parent</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventSubProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *subProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>)</td></tr>
 <tr class="separator:ae128cc7c23f29cbfb388703cda7691d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classBPMN_1_1Scope"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBPMN_1_1Scope')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBPMN_1_1Scope.html">BPMN::Scope</a></td></tr>
-<tr class="memitem:a9fec57f59b4f426b9b9ff47d44ad254a inherit pub_methods_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="a9fec57f59b4f426b9b9ff47d44ad254a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Scope</b> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element)</td></tr>
-<tr class="separator:a9fec57f59b4f426b9b9ff47d44ad254a inherit pub_methods_classBPMN_1_1Scope"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classBPMN_1_1ChildNode"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBPMN_1_1ChildNode')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBPMN_1_1ChildNode.html">BPMN::ChildNode</a></td></tr>
+<tr class="memitem:a4561fe741d3e0e5c9863aaafda17fff0 inherit pub_methods_classBPMN_1_1ChildNode"><td class="memItemLeft" align="right" valign="top"><a id="a4561fe741d3e0e5c9863aaafda17fff0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ChildNode</b> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>)</td></tr>
+<tr class="separator:a4561fe741d3e0e5c9863aaafda17fff0 inherit pub_methods_classBPMN_1_1ChildNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classBPMN_1_1Node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBPMN_1_1Node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBPMN_1_1Node.html">BPMN::Node</a></td></tr>
 <tr class="memitem:a526a91b865ed7188099ade8f7002895f inherit pub_methods_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="a526a91b865ed7188099ade8f7002895f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a526a91b865ed7188099ade8f7002895f">Node</a> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element)</td></tr>
@@ -138,13 +139,13 @@ template&lt;typename T &gt; </td></tr>
 <tr class="separator:a67a65fac206811c9cabf625f5740d68f inherit pub_methods_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a703f6eeccc0b1fe9a10591980c832522 inherit pub_methods_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classBPMN_1_1Node.html">Node</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a703f6eeccc0b1fe9a10591980c832522">find_all</a> (std::function&lt; bool(const <a class="el" href="classBPMN_1_1Node.html">Node</a> *)&gt; condition) const</td></tr>
 <tr class="separator:a703f6eeccc0b1fe9a10591980c832522 inherit pub_methods_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classBPMN_1_1Scope"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBPMN_1_1Scope')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBPMN_1_1Scope.html">BPMN::Scope</a></td></tr>
+<tr class="memitem:a9fec57f59b4f426b9b9ff47d44ad254a inherit pub_methods_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="a9fec57f59b4f426b9b9ff47d44ad254a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Scope</b> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element)</td></tr>
+<tr class="separator:a9fec57f59b4f426b9b9ff47d44ad254a inherit pub_methods_classBPMN_1_1Scope"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ad7208f9641e4f8b64952f6e68304a821"><td class="memItemLeft" align="right" valign="top"><a id="ad7208f9641e4f8b64952f6e68304a821"></a>
-<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1EventSubProcess.html#ad7208f9641e4f8b64952f6e68304a821">parent</a></td></tr>
-<tr class="memdesc:ad7208f9641e4f8b64952f6e68304a821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the parent node. <br /></td></tr>
-<tr class="separator:ad7208f9641e4f8b64952f6e68304a821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca24c11ddeb43817da7e97f97478a69"><td class="memItemLeft" align="right" valign="top"><a id="a5ca24c11ddeb43817da7e97f97478a69"></a>
 <a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>element</b></td></tr>
 <tr class="separator:a5ca24c11ddeb43817da7e97f97478a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +157,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1EventSubProcess.html#ac6d07480820b0c25f27c6c6698fb2697">isNonInterrupting</a></td></tr>
 <tr class="memdesc:ac6d07480820b0c25f27c6c6698fb2697"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event subprocess is non-interrupting if all its start nodes are non-interrupting. <br /></td></tr>
 <tr class="separator:ac6d07480820b0c25f27c6c6698fb2697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classBPMN_1_1ChildNode"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classBPMN_1_1ChildNode')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="classBPMN_1_1ChildNode.html">BPMN::ChildNode</a></td></tr>
+<tr class="memitem:a3febaa340abab73947f6a43af200c46a inherit pub_attribs_classBPMN_1_1ChildNode"><td class="memItemLeft" align="right" valign="top"><a id="a3febaa340abab73947f6a43af200c46a"></a>
+<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a></td></tr>
+<tr class="memdesc:a3febaa340abab73947f6a43af200c46a inherit pub_attribs_classBPMN_1_1ChildNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the parent node. <br /></td></tr>
+<tr class="separator:a3febaa340abab73947f6a43af200c46a inherit pub_attribs_classBPMN_1_1ChildNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classBPMN_1_1Node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classBPMN_1_1Node')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="classBPMN_1_1Node.html">BPMN::Node</a></td></tr>
+<tr class="memitem:a97f9cc067ccba15103ea405da891e8ff inherit pub_attribs_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="a97f9cc067ccba15103ea405da891e8ff"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">id</a></td></tr>
+<tr class="memdesc:a97f9cc067ccba15103ea405da891e8ff inherit pub_attribs_classBPMN_1_1Node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of process or flow node. <br /></td></tr>
+<tr class="separator:a97f9cc067ccba15103ea405da891e8ff inherit pub_attribs_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8771042ad15e4a3f9467fa84c2e595 inherit pub_attribs_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="a8c8771042ad15e4a3f9467fa84c2e595"></a>
+<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>element</b></td></tr>
+<tr class="separator:a8c8771042ad15e4a3f9467fa84c2e595 inherit pub_attribs_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe775e296f19ee7adb70c5379030409 inherit pub_attribs_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="adbe775e296f19ee7adb70c5379030409"></a>
+std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>extensionElements</b></td></tr>
+<tr class="separator:adbe775e296f19ee7adb70c5379030409 inherit pub_attribs_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classBPMN_1_1Scope"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classBPMN_1_1Scope')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="classBPMN_1_1Scope.html">BPMN::Scope</a></td></tr>
 <tr class="memitem:afdae519aaff2f7e4a7e04cc72b9d3725 inherit pub_attribs_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="afdae519aaff2f7e4a7e04cc72b9d3725"></a>
 std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1Node.html">Node</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725">childNodes</a></td></tr>
@@ -177,17 +194,6 @@ std::vector&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> * &
 std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#acb6f3ff661f73277942735399abc6708">sequenceFlows</a></td></tr>
 <tr class="memdesc:acb6f3ff661f73277942735399abc6708 inherit pub_attribs_classBPMN_1_1Scope"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all sequence flows within the scope. <br /></td></tr>
 <tr class="separator:acb6f3ff661f73277942735399abc6708 inherit pub_attribs_classBPMN_1_1Scope"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classBPMN_1_1Node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classBPMN_1_1Node')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="classBPMN_1_1Node.html">BPMN::Node</a></td></tr>
-<tr class="memitem:a97f9cc067ccba15103ea405da891e8ff inherit pub_attribs_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="a97f9cc067ccba15103ea405da891e8ff"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">id</a></td></tr>
-<tr class="memdesc:a97f9cc067ccba15103ea405da891e8ff inherit pub_attribs_classBPMN_1_1Node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of process or flow node. <br /></td></tr>
-<tr class="separator:a97f9cc067ccba15103ea405da891e8ff inherit pub_attribs_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c8771042ad15e4a3f9467fa84c2e595 inherit pub_attribs_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="a8c8771042ad15e4a3f9467fa84c2e595"></a>
-<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>element</b></td></tr>
-<tr class="separator:a8c8771042ad15e4a3f9467fa84c2e595 inherit pub_attribs_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbe775e296f19ee7adb70c5379030409 inherit pub_attribs_classBPMN_1_1Node"><td class="memItemLeft" align="right" valign="top"><a id="adbe775e296f19ee7adb70c5379030409"></a>
-std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>extensionElements</b></td></tr>
-<tr class="separator:adbe775e296f19ee7adb70c5379030409 inherit pub_attribs_classBPMN_1_1Node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
