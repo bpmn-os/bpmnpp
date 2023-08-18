@@ -5,17 +5,15 @@
 #include <vector>
 #include <optional>
 #include "xml/bpmn/tSubProcess.h"
+#include "ChildNode.h"
 #include "Scope.h"
 
 namespace BPMN {
 
-class EventSubProcess : public Scope {
+class EventSubProcess : public ChildNode, public Scope  {
   friend class Model;
 public:
   EventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent);
-
-  /// Reference to the parent node.
-  Scope* parent;
 
   XML::bpmn::tSubProcess* element;
 

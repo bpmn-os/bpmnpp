@@ -10,8 +10,8 @@ using namespace BPMN;
 
 EventSubProcess::EventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent)
   : Node(subProcess)
+  , ChildNode(subProcess,parent)
   , Scope(subProcess)
-  , parent(parent)
   , element(subProcess)
 {
   isInterrupting = true;

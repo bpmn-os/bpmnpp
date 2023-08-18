@@ -11,6 +11,7 @@ list(APPEND bpmn_SOURCES
   ExtensionElements.cpp
   Node.cpp
   Scope.cpp
+  ChildNode.cpp
   Process.cpp
   EventSubProcess.cpp
   SequenceFlow.cpp
@@ -74,6 +75,7 @@ list(APPEND bpmn_HEADERS
   ExtensionElements.h
   Node.h
   Scope.h
+  ChildNode.h
   Process.h
   EventSubProcess.h
   SequenceFlow.h
