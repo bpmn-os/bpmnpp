@@ -112,7 +112,7 @@ $(function() {
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classXML_1_1bpmn_1_1tCollaboration.html#a4b560100d15478de145b9c20c539a495">   68</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> Attributes <a class="code" href="classXML_1_1bpmn_1_1tCollaboration.html#a4b560100d15478de145b9c20c539a495">defaults</a> = {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        { .xmlns = <span class="stringliteral">&quot;http://www.omg.org/spec/BPMN/20100524/MODEL&quot;</span>, .prefix = <span class="stringliteral">&quot;&quot;</span> , .name = <span class="stringliteral">&quot;isClosed&quot;</span>, .value = <span class="stringliteral">&quot;false&quot;</span>}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        { .xmlns = <span class="stringliteral">&quot;http://www.omg.org/spec/BPMN/20100524/MODEL&quot;</span>, .prefix = <span class="stringliteral">&quot;&quot;</span> , .name = <span class="stringliteral">&quot;isClosed&quot;</span>, .value = <a class="code" href="structXML_1_1Value.html">Value</a>(std::string(<span class="stringliteral">&quot;false&quot;</span>))}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    std::vector&lt; std::reference_wrapper&lt;tParticipant&gt; &gt; participant;</div>
@@ -132,7 +132,7 @@ $(function() {
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace XML::bpmn</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// XML_bpmn_tCollaboration_H</span></div>
-<div class="ttc" id="aclassXML_1_1XMLObject_html"><div class="ttname"><a href="classXML_1_1XMLObject.html">XML::XMLObject</a></div><div class="ttdef"><b>Definition:</b> XMLObject.h:89</div></div>
+<div class="ttc" id="aclassXML_1_1XMLObject_html"><div class="ttname"><a href="classXML_1_1XMLObject.html">XML::XMLObject</a></div><div class="ttdef"><b>Definition:</b> XMLObject.h:102</div></div>
 <div class="ttc" id="aclassXML_1_1bpmn_1_1conversationAssociation_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1conversationAssociation.html">XML::bpmn::conversationAssociation</a></div><div class="ttdef"><b>Definition:</b> conversationAssociation.h:26</div></div>
 <div class="ttc" id="aclassXML_1_1bpmn_1_1conversationLink_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1conversationLink.html">XML::bpmn::conversationLink</a></div><div class="ttdef"><b>Definition:</b> conversationLink.h:27</div></div>
 <div class="ttc" id="aclassXML_1_1bpmn_1_1conversationNode_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1conversationNode.html">XML::bpmn::conversationNode</a></div><div class="ttdef"><b>Definition:</b> conversationNode.h:28</div></div>
@@ -145,6 +145,7 @@ $(function() {
 <div class="ttc" id="aclassXML_1_1bpmn_1_1tCollaboration_html_a73fd31e2c064965e5ae636ac3fa704a8"><div class="ttname"><a href="classXML_1_1bpmn_1_1tCollaboration.html#a73fd31e2c064965e5ae636ac3fa704a8">XML::bpmn::tCollaboration::name</a></div><div class="ttdeci">std::optional&lt; std::reference_wrapper&lt; Attribute &gt; &gt; name</div><div class="ttdoc">Attribute value can be expected to be of type 'std::string'.</div><div class="ttdef"><b>Definition:</b> tCollaboration.h:82</div></div>
 <div class="ttc" id="aclassXML_1_1bpmn_1_1tCollaboration_html_ae467c87985e0d862c54f197bebd5e0b8"><div class="ttname"><a href="classXML_1_1bpmn_1_1tCollaboration.html#ae467c87985e0d862c54f197bebd5e0b8">XML::bpmn::tCollaboration::isClosed</a></div><div class="ttdeci">std::optional&lt; std::reference_wrapper&lt; Attribute &gt; &gt; isClosed</div><div class="ttdoc">Attribute value can be expected to be of type 'bool'.</div><div class="ttdef"><b>Definition:</b> tCollaboration.h:83</div></div>
 <div class="ttc" id="aclassXML_1_1bpmn_1_1tRootElement_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tRootElement.html">XML::bpmn::tRootElement</a></div><div class="ttdef"><b>Definition:</b> tRootElement.h:24</div></div>
+<div class="ttc" id="astructXML_1_1Value_html"><div class="ttname"><a href="structXML_1_1Value.html">XML::Value</a></div><div class="ttdef"><b>Definition:</b> XMLObject.h:43</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

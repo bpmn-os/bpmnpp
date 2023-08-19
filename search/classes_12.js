@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xmlobject_715',['XMLObject',['../classXML_1_1XMLObject.html',1,'XML']]]
+  ['value_716',['Value',['../structXML_1_1Value.html',1,'XML']]]
 ];
