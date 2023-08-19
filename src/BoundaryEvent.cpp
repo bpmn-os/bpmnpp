@@ -10,7 +10,7 @@ BoundaryEvent::BoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* pa
 }
 
 Activity* BoundaryEvent::resolveReference() {
-  const std::string& reference = element->get<XML::bpmn::tBoundaryEvent>()->attachedToRef;
+  const std::string& reference = element->get<XML::bpmn::tBoundaryEvent>()->attachedToRef.value;
   for ( auto& sibling : parent->flowNodes ) {
     if ( sibling->id == reference ) {
       Activity* activity = sibling->as<Activity>();
@@ -18,6 +18,6 @@ Activity* BoundaryEvent::resolveReference() {
       return activity;
     }
   }
-  throw std::runtime_error("BoundaryEvent: cannot resolve reference");
+  throw std::runtime_error("BoundaryEvent: cannot resolve reference '" + reference + "' for boundary event '" + id + "'");
 }
 

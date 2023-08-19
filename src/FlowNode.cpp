@@ -15,10 +15,10 @@ bool FlowNode::isStartNode() {
   return incoming.empty()
          && !( is<XML::bpmn::tActivity>() 
               && get<XML::bpmn::tActivity>()->isForCompensation.has_value() 
-              && get<XML::bpmn::tActivity>()->isForCompensation->get() ) 
+              && get<XML::bpmn::tActivity>()->isForCompensation->get().value ) 
          && !( is<XML::bpmn::tSubProcess>() 
               && get<XML::bpmn::tSubProcess>()->triggeredByEvent.has_value() 
-              && get<XML::bpmn::tSubProcess>()->triggeredByEvent->get() ) 
+              && get<XML::bpmn::tSubProcess>()->triggeredByEvent->get().value ) 
          ;
 }
 

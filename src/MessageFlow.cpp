@@ -11,18 +11,18 @@ MessageFlow::MessageFlow(XML::bpmn::tMessageFlow* messageFlow)
   , source( {nullptr,nullptr} )
   , target( {nullptr,nullptr} )
 {
-  id = messageFlow->id.has_value() ? (std::string)messageFlow->id->get() : "";
+  id = messageFlow->id.has_value() ? (std::string)messageFlow->id->get().value : "";
 }
 
 void MessageFlow::initializeParticipants(std::vector< std::unique_ptr<Process> >& processes, std::unordered_map<std::string,std::string>& participantMap) {
   // find source
   if ( participantMap.contains(element->sourceRef.value) ) {
     for (auto& process : processes ) {
-      if ( process->id == participantMap[element->sourceRef.value] ) {
+      if ( process->id == participantMap[element->sourceRef.value.value] ) {
         source = { process.get(), nullptr };
         break;
       }
-      FlowNode* flowNode = findRecursive(element->sourceRef.value, process->as<Scope>());
+      FlowNode* flowNode = findRecursive(element->sourceRef.value.value, process->as<Scope>());
       if ( flowNode ) {
         source = { process.get(), flowNode };
         break;
@@ -36,11 +36,11 @@ void MessageFlow::initializeParticipants(std::vector< std::unique_ptr<Process> >
   // find target
   if ( participantMap.contains(element->targetRef.value) ) {
     for (auto& process : processes ) {
-      if ( process->id == participantMap[element->targetRef.value] ) {
+      if ( process->id == participantMap[element->targetRef.value.value] ) {
         target = { process.get(), nullptr };
         break;
       }
-      FlowNode* flowNode = findRecursive(element->targetRef.value, process->as<Scope>());
+      FlowNode* flowNode = findRecursive(element->targetRef.value.value, process->as<Scope>());
       if ( flowNode ) {
         target = { process.get(), flowNode };
         break;
@@ -55,7 +55,7 @@ void MessageFlow::initializeParticipants(std::vector< std::unique_ptr<Process> >
 
 FlowNode* MessageFlow::findRecursive(std::string& id, Scope* scope) {
   for ( auto& childNode : scope->childNodes ) {
-    if ( childNode->get<>()->id.has_value() && id == childNode->get<>()->id->get().value ) {
+    if ( childNode->get<>()->id.has_value() && id == childNode->get<>()->id->get().value.value ) {
       return childNode->as<FlowNode>();
     }
     if ( auto childScope = childNode->represents<Scope>(); childScope ) {

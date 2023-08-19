@@ -7,7 +7,7 @@ Node::Node(XML::bpmn::tBaseElement* element)
   : element(element)
   , extensionElements(std::make_unique<ExtensionElements>(element))
 {
-  id = element->id.has_value() ? (std::string)element->id->get() : "";
+  id = element->id.has_value() ? (std::string)element->id->get().value : "";
 }
 
 Node* Node::find(std::function<bool(Node*)> condition) {

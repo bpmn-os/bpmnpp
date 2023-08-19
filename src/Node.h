@@ -13,7 +13,6 @@ namespace BPMN {
 class Model;
 class Scope;
 class FlowNode;
-
 /**
  * @brief Represents a node in a BPMN process.
  *
@@ -51,7 +50,7 @@ public:
   template<typename T = XML::bpmn::tBaseElement> T* get() {
     T* ptr = dynamic_cast<T*>(element); 
     if ( ptr == nullptr ) {
-      throw std::runtime_error("Node: Illegal cast of element '" + (element->id.has_value() ? (std::string)element->id->get() : "") + "'");
+      throw std::runtime_error("Node: Illegal cast of element '" + (element->id.has_value() ? (std::string)element->id->get().value : "") + "'");
     }
     return ptr;
   }
@@ -59,7 +58,7 @@ public:
   template<typename T = XML::bpmn::tBaseElement> const T* get() const {
     const T* ptr = dynamic_cast<const T*>(element);
     if ( ptr == nullptr ) {
-      throw std::runtime_error("Node: Illegal cast of element '" + (element->id.has_value() ? (std::string)element->id->get() : "") + "'");
+      throw std::runtime_error("Node: Illegal cast of element '" + (element->id.has_value() ? (std::string)element->id->get().value : "") + "'");
     }
     return ptr;
   }

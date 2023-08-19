@@ -12,7 +12,6 @@
 #include "xml/bpmn/tCollaboration.h"
 #include "xml/bpmn/tParticipant.h"
 
-
 using namespace BPMN;
 
 Model::Model(const std::string& filename)
@@ -433,7 +432,7 @@ std::unique_ptr<MessageFlow> Model::createMessageFlow(XML::bpmn::tMessageFlow* m
 void Model::createChildNodes(Scope* scope) {
   // add child nodes (except boundary events and link events)
   for (XML::bpmn::tFlowNode& flowNode : scope->element->getChildren<XML::bpmn::tFlowNode>() ) {
-    if ( flowNode.is<XML::bpmn::tEvent>() &&
+     if ( flowNode.is<XML::bpmn::tEvent>() &&
          flowNode.getChildren<XML::bpmn::tLinkEventDefinition>().size()
     ) {
       throw std::runtime_error("Model: Link events are not yet supported");
@@ -442,7 +441,7 @@ void Model::createChildNodes(Scope* scope) {
     if ( auto subProcess = flowNode.is<XML::bpmn::tSubProcess>();
          subProcess &&
          subProcess->triggeredByEvent.has_value() &&
-         (bool)subProcess->triggeredByEvent->get()
+         (bool)subProcess->triggeredByEvent->get().value
     ) {
       scope->add(createEventSubProcess(subProcess,scope));
     }
@@ -499,7 +498,7 @@ void Model::createReferences(FlowNode* flowNode) {
     // link outgoing sequence flows
     for ( auto& outflow : flowNode->element->outgoing ) {
       for (auto& sequenceFlow : flowNode->parent->sequenceFlows ) {
-        if ( sequenceFlow->element->id.has_value() && outflow.get().textContent == sequenceFlow->element->id->get().value ) {
+        if ( sequenceFlow->element->id.has_value() && outflow.get().textContent == sequenceFlow->element->id->get().value.value ) {
           flowNode->outgoing.push_back(sequenceFlow.get());
           break;
         }
