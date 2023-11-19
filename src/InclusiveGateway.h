@@ -6,6 +6,7 @@
 #include <optional>
 #include "xml/bpmn/tInclusiveGateway.h"
 #include "Gateway.h"
+#include "SequenceFlow.h"
 
 namespace BPMN {
 
@@ -15,6 +16,7 @@ public:
   InclusiveGateway(XML::bpmn::tInclusiveGateway* inclusiveGateway, Scope* parent);
 
   XML::bpmn::tInclusiveGateway* element;
+  SequenceFlow* defaultFlow;
 protected:
 };
 

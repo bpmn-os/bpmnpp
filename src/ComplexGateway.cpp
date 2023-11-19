@@ -6,6 +6,7 @@ ComplexGateway::ComplexGateway(XML::bpmn::tComplexGateway* complexGateway, Scope
   : Node(complexGateway)
   , Gateway(complexGateway,parent)
   , element(complexGateway)
+  , defaultFlow(nullptr)
 {
 }
 

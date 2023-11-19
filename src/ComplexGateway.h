@@ -6,6 +6,7 @@
 #include <optional>
 #include "xml/bpmn/tComplexGateway.h"
 #include "Gateway.h"
+#include "SequenceFlow.h"
 
 namespace BPMN {
 
@@ -15,6 +16,7 @@ public:
   ComplexGateway(XML::bpmn::tComplexGateway* complexGateway, Scope* parent);
 
   XML::bpmn::tComplexGateway* element;
+  SequenceFlow* defaultFlow;
 protected:
 };
 

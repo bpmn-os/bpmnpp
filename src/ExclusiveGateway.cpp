@@ -6,6 +6,7 @@ ExclusiveGateway::ExclusiveGateway(XML::bpmn::tExclusiveGateway* exclusiveGatewa
   : Node(exclusiveGateway)
   , Gateway(exclusiveGateway,parent)
   , element(exclusiveGateway)
+  , defaultFlow(nullptr)
 {
 }
 

@@ -498,8 +498,25 @@ void Model::createReferences(FlowNode* flowNode) {
     // link outgoing sequence flows
     for ( auto& outflow : flowNode->element->outgoing ) {
       for (auto& sequenceFlow : flowNode->parent->sequenceFlows ) {
-        if ( sequenceFlow->element->id.has_value() && outflow.get().textContent == sequenceFlow->element->id->get().value.value ) {
+        if ( sequenceFlow->element->id.has_value() && outflow.get().textContent == sequenceFlow->id ) {
           flowNode->outgoing.push_back(sequenceFlow.get());
+
+          // link optional default flow for gateways
+          if ( auto id = flowNode->element->getOptionalAttributeByName("default");
+               flowNode->represents<Gateway>() &&
+               id.has_value() &&
+               id.value().get().value.value == sequenceFlow->id
+          ) {
+            if ( auto exclusiveGateway = flowNode->represents<ExclusiveGateway>(); exclusiveGateway ) {
+              exclusiveGateway->defaultFlow = sequenceFlow.get();
+            }
+            else if ( auto inclusiveGateway = flowNode->represents<InclusiveGateway>(); inclusiveGateway ) {
+              inclusiveGateway->defaultFlow = sequenceFlow.get();
+            }
+            else if ( auto complexGateway = flowNode->represents<ComplexGateway>(); complexGateway ) {
+              complexGateway->defaultFlow = sequenceFlow.get();
+            }
+          }
           break;
         }
       }

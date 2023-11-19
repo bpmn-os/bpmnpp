@@ -6,6 +6,7 @@ InclusiveGateway::InclusiveGateway(XML::bpmn::tInclusiveGateway* inclusiveGatewa
   : Node(inclusiveGateway)
   , Gateway(inclusiveGateway,parent)
   , element(inclusiveGateway)
+  , defaultFlow(nullptr)
 {
 }
 
