@@ -5,6 +5,7 @@ using namespace BPMN;
 BoundaryEvent::BoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent)
   : Node(boundaryEvent)
   , CatchEvent(boundaryEvent,parent)
+  , isInterrupting(element->get<XML::bpmn::tBoundaryEvent>()->cancelActivity.has_value() ? (bool)element->get<XML::bpmn::tBoundaryEvent>()->cancelActivity.value().get().value : true)
   , attachedTo(resolveReference())
 {
 }

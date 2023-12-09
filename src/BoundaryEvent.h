@@ -17,6 +17,7 @@ class BoundaryEvent : virtual public CatchEvent {
   friend class Model;
 public:
   BoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent);
+  bool isInterrupting;
   Activity* attachedTo;
 protected:
   Activity* resolveReference();
