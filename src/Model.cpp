@@ -30,9 +30,7 @@ void Model::readBPMNFile(const std::string& filename)
   for ( auto& process : processes ) {
     createChildNodes(process.get());
     createSequenceFlows(process.get());
-    for ( auto flowNode: process->flowNodes ) {
-      createReferences(flowNode);
-    }
+    createNestedReferences(process.get());
   }
 
   createMessageFlows();
@@ -478,6 +476,15 @@ void Model::createSequenceFlows(Scope* scope) {
   }
 }
 
+void Model::createNestedReferences(Scope* scope) {
+  for ( auto flowNode: scope->flowNodes ) {
+    createReferences(flowNode);
+  }
+  for ( auto eventSubProcess: scope->eventSubProcesses ) {
+    createNestedReferences(eventSubProcess);
+  }
+}
+
 void Model::createReferences(FlowNode* flowNode) {
   if ( flowNode->parent ) {
     // link incoming sequence flows
@@ -524,9 +531,7 @@ void Model::createReferences(FlowNode* flowNode) {
   }
   // recurse
   if ( auto scope = flowNode->represents<Scope>(); scope ) {
-    for ( auto flowNode: scope->flowNodes ) {
-      createReferences(flowNode);
-    }
+    createNestedReferences(scope);
   }
 }
 
