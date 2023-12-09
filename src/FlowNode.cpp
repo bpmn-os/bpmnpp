@@ -11,14 +11,18 @@ FlowNode::FlowNode(XML::bpmn::tFlowNode* flowNode, Scope* parent)
 {
 }
 
-bool FlowNode::isStartNode() {
+bool FlowNode::isStartNode() const {
   return incoming.empty()
-         && !( is<XML::bpmn::tActivity>() 
-              && get<XML::bpmn::tActivity>()->isForCompensation.has_value() 
-              && get<XML::bpmn::tActivity>()->isForCompensation->get().value ) 
-         && !( is<XML::bpmn::tSubProcess>() 
-              && get<XML::bpmn::tSubProcess>()->triggeredByEvent.has_value() 
-              && get<XML::bpmn::tSubProcess>()->triggeredByEvent->get().value ) 
+         && !(
+           is<XML::bpmn::tActivity>()
+           && get<XML::bpmn::tActivity>()->isForCompensation.has_value()
+           && get<XML::bpmn::tActivity>()->isForCompensation->get().value
+         )
+         && !(
+           is<XML::bpmn::tSubProcess>()
+           && get<XML::bpmn::tSubProcess>()->triggeredByEvent.has_value()
+           && get<XML::bpmn::tSubProcess>()->triggeredByEvent->get().value
+         )
          ;
 }
 
