@@ -90,6 +90,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae128cc7c23f29cbfb388703cda7691d9"><td class="memItemLeft" align="right" valign="top"><a id="ae128cc7c23f29cbfb388703cda7691d9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EventSubProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *subProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>)</td></tr>
 <tr class="separator:ae128cc7c23f29cbfb388703cda7691d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c694dc00081bfb6c8d5838b2a1ba71"><td class="memItemLeft" align="right" valign="top"><a id="a33c694dc00081bfb6c8d5838b2a1ba71"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1EventSubProcess.html#a33c694dc00081bfb6c8d5838b2a1ba71">isInterrupting</a> () const</td></tr>
+<tr class="memdesc:a33c694dc00081bfb6c8d5838b2a1ba71"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event subprocess is interrupting if all its start nodes are interrupting. <br /></td></tr>
+<tr class="separator:a33c694dc00081bfb6c8d5838b2a1ba71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea5794175b868d66069e51d165b3cde"><td class="memItemLeft" align="right" valign="top"><a id="a2ea5794175b868d66069e51d165b3cde"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1EventSubProcess.html#a2ea5794175b868d66069e51d165b3cde">isNonInterrupting</a> () const</td></tr>
+<tr class="memdesc:a2ea5794175b868d66069e51d165b3cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event subprocess is non-interrupting if all its start nodes are non-interrupting. <br /></td></tr>
+<tr class="separator:a2ea5794175b868d66069e51d165b3cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classBPMN_1_1ChildNode"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBPMN_1_1ChildNode')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBPMN_1_1ChildNode.html">BPMN::ChildNode</a></td></tr>
 <tr class="memitem:a4561fe741d3e0e5c9863aaafda17fff0 inherit pub_methods_classBPMN_1_1ChildNode"><td class="memItemLeft" align="right" valign="top"><a id="a4561fe741d3e0e5c9863aaafda17fff0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ChildNode</b> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>)</td></tr>
@@ -149,14 +157,6 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a5ca24c11ddeb43817da7e97f97478a69"><td class="memItemLeft" align="right" valign="top"><a id="a5ca24c11ddeb43817da7e97f97478a69"></a>
 <a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>element</b></td></tr>
 <tr class="separator:a5ca24c11ddeb43817da7e97f97478a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad326fcb36ed1093deb56275835ac42a2"><td class="memItemLeft" align="right" valign="top"><a id="ad326fcb36ed1093deb56275835ac42a2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1EventSubProcess.html#ad326fcb36ed1093deb56275835ac42a2">isInterrupting</a></td></tr>
-<tr class="memdesc:ad326fcb36ed1093deb56275835ac42a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event subprocess is interrupting if all its start nodes are interrupting. <br /></td></tr>
-<tr class="separator:ad326fcb36ed1093deb56275835ac42a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6d07480820b0c25f27c6c6698fb2697"><td class="memItemLeft" align="right" valign="top"><a id="ac6d07480820b0c25f27c6c6698fb2697"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1EventSubProcess.html#ac6d07480820b0c25f27c6c6698fb2697">isNonInterrupting</a></td></tr>
-<tr class="memdesc:ac6d07480820b0c25f27c6c6698fb2697"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event subprocess is non-interrupting if all its start nodes are non-interrupting. <br /></td></tr>
-<tr class="separator:ac6d07480820b0c25f27c6c6698fb2697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classBPMN_1_1ChildNode"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classBPMN_1_1ChildNode')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="classBPMN_1_1ChildNode.html">BPMN::ChildNode</a></td></tr>
 <tr class="memitem:a3febaa340abab73947f6a43af200c46a inherit pub_attribs_classBPMN_1_1ChildNode"><td class="memItemLeft" align="right" valign="top"><a id="a3febaa340abab73947f6a43af200c46a"></a>
 <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a></td></tr>
