@@ -18,9 +18,9 @@ public:
   XML::bpmn::tSubProcess* element;
 
   /// An event subprocess is interrupting if all its start nodes are interrupting
-  bool isInterrupting;
+  bool isInterrupting() const;
   /// An event subprocess is non-interrupting if all its start nodes are non-interrupting
-  bool isNonInterrupting;
+  bool isNonInterrupting() const;
 
 protected:
 };
