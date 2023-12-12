@@ -5,6 +5,7 @@
 #include "FlowNode.h"
 #include "EventSubProcess.h"
 #include "SequenceFlow.h"
+#include "TypedStartEvent.h"
 
 using namespace BPMN;
 
@@ -14,39 +15,12 @@ EventSubProcess::EventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* pare
   , Scope(subProcess)
   , element(subProcess)
 {
-}
-
-bool EventSubProcess::isInterrupting() const {
-  for ( auto startNode : startNodes ) {
-    if ( auto startEvent = startNode->element->is<XML::bpmn::tStartEvent>(); startEvent ) { 
-      if ( startEvent->getChildren<XML::bpmn::tEventDefinition>().empty() ) {
-        throw std::runtime_error("EventSubProcess: no event definition provided for " + startNode->id);
-      }
-      if ( !startEvent->isInterrupting->get().value ) {
-        return false;
-      }
-    }
-    else {
-      throw std::runtime_error("EventSubProcess: implicit start provided for " + id);
+  if ( startEvents.size() > 1 ) {
+    throw std::runtime_error("EventSubProcess: more than one start node provided for " + id);
+  }
+  for ( auto startEvent : startEvents ) {
+    if ( !startEvent->represents<TypedStartEvent>() ) {
+      throw std::runtime_error("EventSubProcess: no event definition provided for " + startEvent->id);
     }
   }
-  return true;
 }
-
-bool EventSubProcess::isNonInterrupting() const {
-  for ( auto startNode : startNodes ) {
-    if ( auto startEvent = startNode->element->is<XML::bpmn::tStartEvent>(); startEvent ) { 
-      if ( startEvent->getChildren<XML::bpmn::tEventDefinition>().empty() ) {
-        throw std::runtime_error("EventSubProcess: no event definition provided for " + startNode->id);
-      }
-      if ( startEvent->isInterrupting->get().value ) {
-        return false;
-      }
-    }
-    else {
-      throw std::runtime_error("EventSubProcess: implicit start provided for " + id);
-    }
-  }
-  return true;
-}
-

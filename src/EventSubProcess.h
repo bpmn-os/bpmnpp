@@ -16,13 +16,6 @@ public:
   EventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent);
 
   XML::bpmn::tSubProcess* element;
-
-  /// An event subprocess is interrupting if all its start nodes are interrupting
-  bool isInterrupting() const;
-  /// An event subprocess is non-interrupting if all its start nodes are non-interrupting
-  bool isNonInterrupting() const;
-
-protected:
 };
 
 } // namespace BPMN

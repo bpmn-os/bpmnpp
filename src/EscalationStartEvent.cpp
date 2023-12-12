@@ -2,10 +2,11 @@
 
 using namespace BPMN;
 
-EscalationStartEvent::EscalationStartEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent)
-  : Node(catchEvent)
-  , CatchEvent(catchEvent,parent)
-  , element(catchEvent)
+EscalationStartEvent::EscalationStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent)
+  : Node(startEvent)
+  , CatchEvent(startEvent,parent)
+  , TypedStartEvent(startEvent,parent)
+  , element(startEvent)
 {
 }
 

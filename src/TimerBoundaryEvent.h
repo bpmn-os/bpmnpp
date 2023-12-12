@@ -5,11 +5,12 @@
 #include <vector>
 #include <optional>
 #include "xml/bpmn/tBoundaryEvent.h"
+#include "TimerCatchEvent.h"
 #include "BoundaryEvent.h"
 
 namespace BPMN {
 
-class TimerBoundaryEvent : virtual public BoundaryEvent, virtual public CatchEvent {
+class TimerBoundaryEvent : public TimerCatchEvent, public BoundaryEvent {
   friend class Model;
 public:
   TimerBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent);

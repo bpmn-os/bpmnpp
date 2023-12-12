@@ -31,14 +31,19 @@ list(APPEND bpmn_SOURCES
   Transaction.cpp
   Event.cpp
   CatchEvent.cpp
-  UntypedStartEvent.cpp
-  CompensateStartEvent.cpp
-  ErrorStartEvent.cpp
-  EscalationStartEvent.cpp
   ConditionalCatchEvent.cpp
   MessageCatchEvent.cpp
   SignalCatchEvent.cpp
   TimerCatchEvent.cpp
+  UntypedStartEvent.cpp
+  TypedStartEvent.cpp
+  CompensateStartEvent.cpp
+  ErrorStartEvent.cpp
+  EscalationStartEvent.cpp
+  ConditionalStartEvent.cpp
+  MessageStartEvent.cpp
+  SignalStartEvent.cpp
+  TimerStartEvent.cpp
   ThrowEvent.cpp
   UntypedEndEvent.cpp
   CancelEndEvent.cpp
@@ -95,14 +100,19 @@ list(APPEND bpmn_HEADERS
   Transaction.h
   Event.h
   CatchEvent.h
-  UntypedStartEvent.h
-  CompensateStartEvent.h
-  ErrorStartEvent.h
-  EscalationStartEvent.h
   ConditionalCatchEvent.h
   MessageCatchEvent.h
   SignalCatchEvent.h
   TimerCatchEvent.h
+  UntypedStartEvent.h
+  TypedStartEvent.h
+  CompensateStartEvent.h
+  ErrorStartEvent.h
+  EscalationStartEvent.h
+  ConditionalStartEvent.h
+  MessageStartEvent.h
+  SignalStartEvent.h
+  TimerStartEvent.h
   ThrowEvent.h
   UntypedEndEvent.h
   CancelEndEvent.h

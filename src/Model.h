@@ -32,14 +32,19 @@
 #include "TerminateEvent.h"
 #include "UntypedEndEvent.h"
 #include "CatchEvent.h"
-#include "CompensateStartEvent.h"
 #include "ConditionalCatchEvent.h"
-#include "ErrorStartEvent.h"
-#include "EscalationStartEvent.h"
 #include "MessageCatchEvent.h"
 #include "SignalCatchEvent.h"
 #include "TimerCatchEvent.h"
 #include "UntypedStartEvent.h"
+#include "TypedStartEvent.h"
+#include "CompensateStartEvent.h"
+#include "ErrorStartEvent.h"
+#include "EscalationStartEvent.h"
+#include "ConditionalStartEvent.h"
+#include "MessageStartEvent.h"
+#include "SignalStartEvent.h"
+#include "TimerStartEvent.h"
 #include "BoundaryEvent.h"
 #include "CancelBoundaryEvent.h"
 #include "CompensateBoundaryEvent.h"
@@ -113,13 +118,22 @@ protected:
   virtual std::unique_ptr<FlowNode> createTimerBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent);
 
   virtual std::unique_ptr<FlowNode> createCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
-  virtual std::unique_ptr<FlowNode> createCompensateStartEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
+
   virtual std::unique_ptr<FlowNode> createConditionalCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
-  virtual std::unique_ptr<FlowNode> createErrorStartEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
-  virtual std::unique_ptr<FlowNode> createEscalationStartEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
   virtual std::unique_ptr<FlowNode> createMessageCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
   virtual std::unique_ptr<FlowNode> createSignalCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
   virtual std::unique_ptr<FlowNode> createTimerCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
+
+  virtual std::unique_ptr<FlowNode> createTypedStartEvent(XML::bpmn::tStartEvent* startEvent, XML::bpmn::tEventDefinition& eventDefinition, Scope* parent);
+
+  virtual std::unique_ptr<FlowNode> createCompensateStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
+  virtual std::unique_ptr<FlowNode> createErrorStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
+  virtual std::unique_ptr<FlowNode> createEscalationStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
+  virtual std::unique_ptr<FlowNode> createConditionalStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
+  virtual std::unique_ptr<FlowNode> createMessageStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
+  virtual std::unique_ptr<FlowNode> createSignalStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
+  virtual std::unique_ptr<FlowNode> createTimerStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
+
   virtual std::unique_ptr<FlowNode> createUntypedStartEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
 
   virtual std::unique_ptr<FlowNode> createThrowEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent);

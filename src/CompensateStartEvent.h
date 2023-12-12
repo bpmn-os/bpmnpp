@@ -4,17 +4,17 @@
 #include <memory>
 #include <vector>
 #include <optional>
-#include "xml/bpmn/tCatchEvent.h"
-#include "CatchEvent.h"
+#include "xml/bpmn/tStartEvent.h"
+#include "TypedStartEvent.h"
 
 namespace BPMN {
 
-class CompensateStartEvent : virtual public CatchEvent {
+class CompensateStartEvent : public TypedStartEvent {
   friend class Model;
 public:
-  CompensateStartEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
+  CompensateStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
 
-  XML::bpmn::tCatchEvent* element;
+  XML::bpmn::tStartEvent* element;
 protected:
 };
 

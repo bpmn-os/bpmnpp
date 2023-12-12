@@ -58,7 +58,7 @@ std::unique_ptr<FlowNode> Model::createFlowNode(XML::bpmn::tFlowNode* flowNode, 
     throw std::logic_error("Model: Flow node is neither activity, event, nor gateway");
   }
 
-  return std::make_unique<FlowNode>(flowNode,parent);
+  return nullptr;
 }
 
 std::unique_ptr<FlowNode> Model::createActivity(XML::bpmn::tActivity* activity, Scope* parent) {
@@ -75,7 +75,7 @@ std::unique_ptr<FlowNode> Model::createActivity(XML::bpmn::tActivity* activity, 
     throw std::logic_error("Model: Activity is neither subProcess, callActivity, nor task");
   }
 
-  return std::make_unique<Activity>(activity,parent);
+  return nullptr;
 }
 
 std::unique_ptr<FlowNode> Model::createSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent) {
@@ -165,7 +165,7 @@ std::unique_ptr<FlowNode> Model::createEvent(XML::bpmn::tEvent* event, Scope* pa
     throw std::logic_error("Model: Event is neither boundary, catch, nor throw event");
   }
 
-  return std::make_unique<Event>(event,parent);
+  return nullptr;
 }
 
 std::unique_ptr<FlowNode> Model::createBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent) {
@@ -204,7 +204,7 @@ std::unique_ptr<FlowNode> Model::createBoundaryEvent(XML::bpmn::tBoundaryEvent* 
   
   throw std::logic_error("Model: Failed determining event definition for boundary event");
 
-  return std::make_unique<BoundaryEvent>(boundaryEvent,parent);
+  return nullptr;
 }
 
 std::unique_ptr<FlowNode> Model::createCancelBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent) {
@@ -248,17 +248,12 @@ std::unique_ptr<FlowNode> Model::createCatchEvent(XML::bpmn::tCatchEvent* catchE
     throw std::runtime_error("Model: Multiple event definitions are not yet supported");
   }
 
-  if ( eventDefinitions[0].get().is<XML::bpmn::tCompensateEventDefinition>() ) {
-    return createCompensateStartEvent(catchEvent,parent);
+  if ( auto startEvent = catchEvent->is<XML::bpmn::tStartEvent>(); startEvent ) {
+    return createTypedStartEvent(startEvent,eventDefinitions[0].get(),parent);
   }
-  else if ( eventDefinitions[0].get().is<XML::bpmn::tConditionalEventDefinition>() ) {
+
+  if ( eventDefinitions[0].get().is<XML::bpmn::tConditionalEventDefinition>() ) {
     return createConditionalCatchEvent(catchEvent,parent);
-  }
-  else if ( eventDefinitions[0].get().is<XML::bpmn::tErrorEventDefinition>() ) {
-    return createErrorStartEvent(catchEvent,parent);
-  }
-  else if ( eventDefinitions[0].get().is<XML::bpmn::tEscalationEventDefinition>() ) {
-    return createEscalationStartEvent(catchEvent,parent);
   }
   else if ( eventDefinitions[0].get().is<XML::bpmn::tMessageEventDefinition>() ) {
     return createMessageCatchEvent(catchEvent,parent);
@@ -272,24 +267,13 @@ std::unique_ptr<FlowNode> Model::createCatchEvent(XML::bpmn::tCatchEvent* catchE
 
   throw std::logic_error("Model: Failed determining event definition for catching event");
 
-  return createCatchEvent(catchEvent,parent);
-}
-
-std::unique_ptr<FlowNode> Model::createCompensateStartEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent) {
-  return std::make_unique<CompensateStartEvent>(catchEvent,parent);
+  return nullptr;
 }
 
 std::unique_ptr<FlowNode> Model::createConditionalCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent) {
   return std::make_unique<ConditionalCatchEvent>(catchEvent,parent);
 }
 
-std::unique_ptr<FlowNode> Model::createErrorStartEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent) {
-  return std::make_unique<ErrorStartEvent>(catchEvent,parent);
-}
-
-std::unique_ptr<FlowNode> Model::createEscalationStartEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent) {
-  return std::make_unique<EscalationStartEvent>(catchEvent,parent);
-}
 
 std::unique_ptr<FlowNode> Model::createMessageCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent) {
   return std::make_unique<MessageCatchEvent>(catchEvent,parent);
@@ -301,6 +285,62 @@ std::unique_ptr<FlowNode> Model::createSignalCatchEvent(XML::bpmn::tCatchEvent* 
 
 std::unique_ptr<FlowNode> Model::createTimerCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent) {
   return std::make_unique<TimerCatchEvent>(catchEvent,parent);
+}
+
+std::unique_ptr<FlowNode> Model::createTypedStartEvent(XML::bpmn::tStartEvent* startEvent, XML::bpmn::tEventDefinition& eventDefinition, Scope* parent) {
+  if ( eventDefinition.is<XML::bpmn::tCompensateEventDefinition>() ) {
+    return createCompensateStartEvent(startEvent,parent);
+  }
+  else if ( eventDefinition.is<XML::bpmn::tErrorEventDefinition>() ) {
+    return createErrorStartEvent(startEvent,parent);
+  }
+  else if ( eventDefinition.is<XML::bpmn::tEscalationEventDefinition>() ) {
+    return createEscalationStartEvent(startEvent,parent);
+  }
+  else if ( eventDefinition.is<XML::bpmn::tConditionalEventDefinition>() ) {
+    return createConditionalStartEvent(startEvent,parent);
+  }
+  else if ( eventDefinition.is<XML::bpmn::tMessageEventDefinition>() ) {
+    return createMessageStartEvent(startEvent,parent);
+  }
+  else if ( eventDefinition.is<XML::bpmn::tSignalEventDefinition>() ) {
+    return createSignalStartEvent(startEvent,parent);
+  }
+  else if ( eventDefinition.is<XML::bpmn::tTimerEventDefinition>() ) {
+    return createTimerStartEvent(startEvent,parent);
+  }
+
+  throw std::logic_error("Model: Failed determining event definition for typed start event");
+
+  return nullptr;
+}
+
+std::unique_ptr<FlowNode> Model::createCompensateStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent) {
+  return std::make_unique<CompensateStartEvent>(startEvent,parent);
+}
+
+std::unique_ptr<FlowNode> Model::createErrorStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent) {
+  return std::make_unique<ErrorStartEvent>(startEvent,parent);
+}
+
+std::unique_ptr<FlowNode> Model::createEscalationStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent) {
+  return std::make_unique<EscalationStartEvent>(startEvent,parent);
+}
+
+std::unique_ptr<FlowNode> Model::createConditionalStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent) {
+  return std::make_unique<ConditionalStartEvent>(startEvent,parent);
+}
+
+std::unique_ptr<FlowNode> Model::createMessageStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent) {
+  return std::make_unique<MessageStartEvent>(startEvent,parent);
+}
+
+std::unique_ptr<FlowNode> Model::createSignalStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent) {
+  return std::make_unique<SignalStartEvent>(startEvent,parent);
+}
+
+std::unique_ptr<FlowNode> Model::createTimerStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent) {
+  return std::make_unique<TimerStartEvent>(startEvent,parent);
 }
 
 std::unique_ptr<FlowNode> Model::createUntypedStartEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent) {
@@ -340,7 +380,7 @@ std::unique_ptr<FlowNode> Model::createThrowEvent(XML::bpmn::tThrowEvent* throwE
 
   throw std::logic_error("Model: Failed determining event definition for throwing event");
 
-  return createThrowEvent(throwEvent,parent);
+  return nullptr;
 }
 
 std::unique_ptr<FlowNode> Model::createCancelEndEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent) {
@@ -396,7 +436,7 @@ std::unique_ptr<FlowNode> Model::createGateway(XML::bpmn::tGateway* gateway, Sco
     throw std::logic_error("Model: Gateway is neither parallel, exclusive, inclusive, complex, nor event-based gateway");
   }
 
-  return std::make_unique<Gateway>(gateway,parent);
+  return nullptr;
 }
 
 std::unique_ptr<FlowNode> Model::createParallelGateway(XML::bpmn::tParallelGateway* parallelGateway, Scope* parent) {
@@ -498,8 +538,8 @@ void Model::createReferences(FlowNode* flowNode) {
     }
    
     // add to start nodes of parent if required 
-    if ( flowNode->isStartNode() ) {
-      flowNode->parent->startNodes.push_back(flowNode);
+    if ( flowNode->represents<UntypedStartEvent>() || flowNode->represents<TypedStartEvent>() ) {
+      flowNode->parent->startEvents.push_back(flowNode);
     }
 
     // link outgoing sequence flows

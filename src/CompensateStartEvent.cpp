@@ -2,10 +2,11 @@
 
 using namespace BPMN;
 
-CompensateStartEvent::CompensateStartEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent)
-  : Node(catchEvent)
-  , CatchEvent(catchEvent,parent)
-  , element(catchEvent)
+CompensateStartEvent::CompensateStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent)
+  : Node(startEvent)
+  , CatchEvent(startEvent,parent)
+  , TypedStartEvent(startEvent,parent)
+  , element(startEvent)
 {
 }
 
