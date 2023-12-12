@@ -78,7 +78,7 @@ Inheritance diagram for BPMN::EventSubProcess:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBPMN_1_1EventSubProcess__inherit__graph.png" border="0" usemap="#aBPMN_1_1EventSubProcess_inherit__map" alt="Inheritance graph"/></div>
 <map name="aBPMN_1_1EventSubProcess_inherit__map" id="aBPMN_1_1EventSubProcess_inherit__map">
-<area shape="rect" title=" " alt="" coords="70,564,250,671"/>
+<area shape="rect" title=" " alt="" coords="70,564,250,641"/>
 <area shape="rect" href="classBPMN_1_1ChildNode.html" title="Represents a node in a BPMN process that has a parent." alt="" coords="5,395,141,472"/>
 <area shape="rect" href="classBPMN_1_1Node.html" title="Represents a node in a BPMN process." alt="" coords="79,5,241,303"/>
 <area shape="rect" href="classBPMN_1_1Scope.html" title="Represents a node with a scope in a BPMN process." alt="" coords="165,351,328,516"/>
@@ -90,14 +90,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae128cc7c23f29cbfb388703cda7691d9"><td class="memItemLeft" align="right" valign="top"><a id="ae128cc7c23f29cbfb388703cda7691d9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EventSubProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *subProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>)</td></tr>
 <tr class="separator:ae128cc7c23f29cbfb388703cda7691d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c694dc00081bfb6c8d5838b2a1ba71"><td class="memItemLeft" align="right" valign="top"><a id="a33c694dc00081bfb6c8d5838b2a1ba71"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1EventSubProcess.html#a33c694dc00081bfb6c8d5838b2a1ba71">isInterrupting</a> () const</td></tr>
-<tr class="memdesc:a33c694dc00081bfb6c8d5838b2a1ba71"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event subprocess is interrupting if all its start nodes are interrupting. <br /></td></tr>
-<tr class="separator:a33c694dc00081bfb6c8d5838b2a1ba71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ea5794175b868d66069e51d165b3cde"><td class="memItemLeft" align="right" valign="top"><a id="a2ea5794175b868d66069e51d165b3cde"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1EventSubProcess.html#a2ea5794175b868d66069e51d165b3cde">isNonInterrupting</a> () const</td></tr>
-<tr class="memdesc:a2ea5794175b868d66069e51d165b3cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event subprocess is non-interrupting if all its start nodes are non-interrupting. <br /></td></tr>
-<tr class="separator:a2ea5794175b868d66069e51d165b3cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classBPMN_1_1ChildNode"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBPMN_1_1ChildNode')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBPMN_1_1ChildNode.html">BPMN::ChildNode</a></td></tr>
 <tr class="memitem:a4561fe741d3e0e5c9863aaafda17fff0 inherit pub_methods_classBPMN_1_1ChildNode"><td class="memItemLeft" align="right" valign="top"><a id="a4561fe741d3e0e5c9863aaafda17fff0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ChildNode</b> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *element, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *<a class="el" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>)</td></tr>
@@ -186,10 +178,10 @@ std::vector&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> * &
 std::vector&lt; <a class="el" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#a68eb5f3fe79c3a91dd8c2af821fdbade">eventSubProcesses</a></td></tr>
 <tr class="memdesc:a68eb5f3fe79c3a91dd8c2af821fdbade inherit pub_attribs_classBPMN_1_1Scope"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing pointers to all event subprocesses within the scope of the nodes. <br /></td></tr>
 <tr class="separator:a68eb5f3fe79c3a91dd8c2af821fdbade inherit pub_attribs_classBPMN_1_1Scope"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2abb85eda0980c258f206c36bc6f2c7e inherit pub_attribs_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="a2abb85eda0980c258f206c36bc6f2c7e"></a>
-std::vector&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#a2abb85eda0980c258f206c36bc6f2c7e">startNodes</a></td></tr>
-<tr class="memdesc:a2abb85eda0980c258f206c36bc6f2c7e inherit pub_attribs_classBPMN_1_1Scope"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all flow nodes that may start execution of the scope. <br /></td></tr>
-<tr class="separator:a2abb85eda0980c258f206c36bc6f2c7e inherit pub_attribs_classBPMN_1_1Scope"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805ac53ffb184502882be82a7a2b0e28 inherit pub_attribs_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="a805ac53ffb184502882be82a7a2b0e28"></a>
+std::vector&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#a805ac53ffb184502882be82a7a2b0e28">startEvents</a></td></tr>
+<tr class="memdesc:a805ac53ffb184502882be82a7a2b0e28 inherit pub_attribs_classBPMN_1_1Scope"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all flow nodes that may start execution of the scope. <br /></td></tr>
+<tr class="separator:a805ac53ffb184502882be82a7a2b0e28 inherit pub_attribs_classBPMN_1_1Scope"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb6f3ff661f73277942735399abc6708 inherit pub_attribs_classBPMN_1_1Scope"><td class="memItemLeft" align="right" valign="top"><a id="acb6f3ff661f73277942735399abc6708"></a>
 std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Scope.html#acb6f3ff661f73277942735399abc6708">sequenceFlows</a></td></tr>
 <tr class="memdesc:acb6f3ff661f73277942735399abc6708 inherit pub_attribs_classBPMN_1_1Scope"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing all sequence flows within the scope. <br /></td></tr>
