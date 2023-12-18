@@ -598,7 +598,28 @@ void Model::createMessageFlows() {
 
   // create references
   for (auto& messageFlow : messageFlows ) {
-    messageFlow->initializeParticipants(processes,participantMap);
+    messageFlow->initialize(processes,participantMap);
+
+    auto& [sourceProcess,sourceFlowNode] = messageFlow->source;
+    if ( sourceFlowNode ) {
+      sourceFlowNode->sending.push_back(messageFlow.get());
+    }
+    else if ( sourceProcess ) {
+      sourceProcess->sending.push_back(messageFlow.get());
+    }
+    else {
+      // nothing to do for message from empty collapsed participant
+    }
+    auto& [targetProcess,targetFlowNode] = messageFlow->target;
+    if ( targetFlowNode ) {
+      targetFlowNode->receiving.push_back(messageFlow.get());
+    }
+    else if ( targetProcess ) {
+      targetProcess->receiving.push_back(messageFlow.get());
+    }
+    else {
+      // nothing to do for message to empty collapsed participant
+    }
   }
 
 }

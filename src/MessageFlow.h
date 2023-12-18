@@ -58,7 +58,7 @@ public:
   std::unique_ptr<ExtensionElements> extensionElements;
 protected:
   friend class Model;
-  void initializeParticipants(std::vector< std::unique_ptr<Process> >& processes, std::unordered_map<std::string,std::string>& participantMap);
+  void initialize(std::vector< std::unique_ptr<Process> >& processes, std::unordered_map<std::string,std::string>& participantMap);
   FlowNode* findRecursive(std::string& id, Scope* scope);
 };
 

@@ -14,9 +14,10 @@ MessageFlow::MessageFlow(XML::bpmn::tMessageFlow* messageFlow)
   id = messageFlow->id.has_value() ? (std::string)messageFlow->id->get().value : "";
 }
 
-void MessageFlow::initializeParticipants(std::vector< std::unique_ptr<Process> >& processes, std::unordered_map<std::string,std::string>& participantMap) {
+void MessageFlow::initialize(std::vector< std::unique_ptr<Process> >& processes, std::unordered_map<std::string,std::string>& participantMap) {
   // find source
-  if ( participantMap.contains(element->sourceRef.value) ) {
+  if ( participantMap.contains(element->sourceRef.value.value) ) {
+    // source is provided by participant reference
     for (auto& process : processes ) {
       if ( process->id == participantMap[element->sourceRef.value.value] ) {
         source = { process.get(), nullptr };
@@ -32,9 +33,19 @@ void MessageFlow::initializeParticipants(std::vector< std::unique_ptr<Process> >
       throw std::runtime_error("MessageFlow: cannot find source of '" + id +"'");
     }
   }
+  else {
+    // source is provided by node reference (or empty collapsed participant)
+    for (auto& process : processes ) {
+      FlowNode* flowNode = findRecursive(element->sourceRef.value.value, process->as<Scope>());
+      if ( flowNode ) {
+        source = { process.get(), flowNode };
+        break;
+      }
+    }
+  }
 
   // find target
-  if ( participantMap.contains(element->targetRef.value) ) {
+  if ( participantMap.contains(element->targetRef.value.value) ) {
     for (auto& process : processes ) {
       if ( process->id == participantMap[element->targetRef.value.value] ) {
         target = { process.get(), nullptr };
@@ -49,6 +60,16 @@ void MessageFlow::initializeParticipants(std::vector< std::unique_ptr<Process> >
     }
     if ( !target.first ) {
       throw std::runtime_error("MessageFlow: cannot find target of '" + id +"'");
+    }
+  }
+  else {
+    // target is provided by node reference (or empty collapsed participant)
+    for (auto& process : processes ) {
+      FlowNode* flowNode = findRecursive(element->targetRef.value.value, process->as<Scope>());
+      if ( flowNode ) {
+        target = { process.get(), flowNode };
+        break;
+      }
     }
   }
 }

@@ -12,7 +12,8 @@ namespace BPMN {
 
 class Model;
 class Scope;
-class FlowNode;
+
+class MessageFlow;
 /**
  * @brief Represents a node in a BPMN process.
  *
@@ -31,6 +32,12 @@ public:
 
   /// Id of process or flow node.
   std::string id;
+
+  /// Vector containing all message flows going in to the node.
+  std::vector< MessageFlow* > receiving;
+
+  /// Vector containing all message flows going out of the node.
+  std::vector< MessageFlow* > sending;
 
   /// Returns a pointer of type T of the element.
   template<typename T> T* is() {
