@@ -1,20 +1,58 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
 <title>bpmn++: XML::bpmn::tFlowElement Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/bpmn-os/bpmnpp" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -45,6 +83,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classXML_1_1bpmn_1_1tFlowElement.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +114,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>XML</b></li><li class="navelem"><b>bpmn</b></li><li class="navelem"><a class="el" href="classXML_1_1bpmn_1_1tFlowElement.html">tFlowElement</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a> &#124;
@@ -79,58 +129,8 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for XML::bpmn::tFlowElement:</div>
 <div class="dyncontent">
-<div class="center"><img src="classXML_1_1bpmn_1_1tFlowElement__inherit__graph.png" border="0" usemap="#aXML_1_1bpmn_1_1tFlowElement_inherit__map" alt="Inheritance graph"/></div>
-<map name="aXML_1_1bpmn_1_1tFlowElement_inherit__map" id="aXML_1_1bpmn_1_1tFlowElement_inherit__map">
-<area shape="rect" title=" " alt="" coords="1691,637,1885,773"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1flowElement.html" title=" " alt="" coords="1117,851,1301,928"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tDataObject.html" title=" " alt="" coords="1325,829,1507,950"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tDataObjectReference.html" title=" " alt="" coords="1531,829,1778,950"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tDataStoreReference.html" title=" " alt="" coords="1802,829,2041,950"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tFlowNode.html" title=" " alt="" coords="2353,836,2527,943"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tSequenceFlow.html" title=" " alt="" coords="3367,821,3569,957"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tBaseElement.html" title=" " alt="" coords="1691,468,1885,589"/>
-<area shape="rect" href="classXML_1_1XMLObject.html" title=" " alt="" coords="1704,5,1872,420"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1dataObject.html" title=" " alt="" coords="1329,1079,1503,1156"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1dataObjectReference.html" title=" " alt="" coords="1531,1079,1771,1156"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1dataStoreReference.html" title=" " alt="" coords="1795,1079,2027,1156"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1flowNode.html" title=" " alt="" coords="2051,1079,2215,1156"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tActivity.html" title=" " alt="" coords="2239,1005,2425,1229"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tChoreographyActivity.html" title=" " alt="" coords="2449,1042,2647,1193"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tEvent.html" title=" " alt="" coords="3078,1071,3223,1163"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tGateway.html" title=" " alt="" coords="3763,1071,3930,1163"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tCallActivity.html" title=" " alt="" coords="114,1314,297,1406"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tSubProcess.html" title=" " alt="" coords="543,1292,726,1428"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tTask.html" title=" " alt="" coords="1650,1321,1787,1399"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1callActivity.html" title=" " alt="" coords="5,1520,181,1597"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1subProcess.html" title=" " alt="" coords="205,1520,381,1597"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tAdHocSubProcess.html" title=" " alt="" coords="405,1498,629,1619"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tTransaction.html" title=" " alt="" coords="654,1513,837,1605"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tBusinessRuleTask.html" title=" " alt="" coords="861,1513,1085,1605"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tManualTask.html" title=" " alt="" coords="1110,1520,1295,1597"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tReceiveTask.html" title=" " alt="" coords="1320,1491,1509,1627"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tScriptTask.html" title=" " alt="" coords="1534,1505,1709,1612"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tSendTask.html" title=" " alt="" coords="1733,1498,1902,1619"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tServiceTask.html" title=" " alt="" coords="1926,1505,2111,1612"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tUserTask.html" title=" " alt="" coords="2135,1505,2302,1612"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1choreographyActivity.html" title=" " alt="" coords="2044,1321,2287,1399"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tCallChoreography.html" title=" " alt="" coords="2311,1307,2535,1413"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tChoreographyTask.html" title=" " alt="" coords="2559,1314,2787,1406"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tSubChoreography.html" title=" " alt="" coords="2811,1307,3034,1413"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1callChoreography.html" title=" " alt="" coords="2326,1520,2543,1597"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1choreographyTask.html" title=" " alt="" coords="2568,1520,2789,1597"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1subChoreography.html" title=" " alt="" coords="2814,1520,3031,1597"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tCatchEvent.html" title=" " alt="" coords="3058,1277,3243,1443"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tThrowEvent.html" title=" " alt="" coords="3267,1285,3453,1435"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1catchEvent.html" title=" " alt="" coords="3055,1520,3230,1597"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tBoundaryEvent.html" title=" " alt="" coords="3254,1505,3461,1612"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tIntermediateCatchEvent.html" title=" " alt="" coords="3485,1513,3696,1605"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tComplexGateway.html" title=" " alt="" coords="3477,1307,3701,1413"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tEventBasedGateway.html" title=" " alt="" coords="3725,1307,3968,1413"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tExclusiveGateway.html" title=" " alt="" coords="3993,1314,4221,1406"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tInclusiveGateway.html" title=" " alt="" coords="4245,1314,4469,1406"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1tParallelGateway.html" title=" " alt="" coords="4494,1321,4709,1399"/>
-<area shape="rect" href="classXML_1_1bpmn_1_1sequenceFlow.html" title=" " alt="" coords="3954,1079,4150,1156"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classXML_1_1bpmn_1_1tFlowElement__inherit__graph.svg" width="4715" height="1632"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -334,9 +334,13 @@ static Factory&#160;</td><td class="memItemRight" valign="bottom"><b>factory</b>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>XML</b></li><li class="navelem"><b>bpmn</b></li><li class="navelem"><a class="el" href="classXML_1_1bpmn_1_1tFlowElement.html">tFlowElement</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,0 +1,28 @@
+var classXML_1_1XMLObject =
+[
+    [ "~XMLObject", "classXML_1_1XMLObject.html#ad6f32e93c4bef6da3da7bc90072cb9c6", null ],
+    [ "XMLObject", "classXML_1_1XMLObject.html#a9eeeb5b43166e0659421a10baa61bf5e", null ],
+    [ "find", "classXML_1_1XMLObject.html#a31a06f0577b385182938470cae6dddae", null ],
+    [ "find", "classXML_1_1XMLObject.html#ac5684225eda56253c08007840680573e", null ],
+    [ "get", "classXML_1_1XMLObject.html#adf76f25d8d09d9e46b6594f8e51f14fa", null ],
+    [ "get", "classXML_1_1XMLObject.html#a83b334f9c7ad89bb7037da74d1036880", null ],
+    [ "getChildren", "classXML_1_1XMLObject.html#aded470ce68062e69e42e21d30051b1e5", null ],
+    [ "getChildrenByName", "classXML_1_1XMLObject.html#a946284a7beaaed9c0dea579332483557", null ],
+    [ "getOptionalAttributeByName", "classXML_1_1XMLObject.html#a3fc94bd28094f4d322688e139a03bb51", null ],
+    [ "getOptionalChild", "classXML_1_1XMLObject.html#a14ef0edfa6f4e86da91f0318b1bc4b36", null ],
+    [ "getOptionalChildByName", "classXML_1_1XMLObject.html#ad065b37d2b9c9f80b12859ef095346ce", null ],
+    [ "getRequiredAttributeByName", "classXML_1_1XMLObject.html#ae736cef7b116fa6d8b11cbd6a7a91920", null ],
+    [ "getRequiredChild", "classXML_1_1XMLObject.html#a7d18c043f0ce52365e396079ae5f416d", null ],
+    [ "getRequiredChildByName", "classXML_1_1XMLObject.html#a7d60abe07b087277cf3a6b574634c4c3", null ],
+    [ "is", "classXML_1_1XMLObject.html#a8d034248e892049be10a03a9688db512", null ],
+    [ "is", "classXML_1_1XMLObject.html#a5a39ab78e7da44bf728dd119521e79e7", null ],
+    [ "stringify", "classXML_1_1XMLObject.html#a8fd43b17e150338b0779d60e9a3b539a", null ],
+    [ "createInstance", "classXML_1_1XMLObject.html#a5684a1b48411576472e68678dc91440c", null ],
+    [ "attributes", "classXML_1_1XMLObject.html#a24a823ec385d33dd597a023c42f77f2d", null ],
+    [ "children", "classXML_1_1XMLObject.html#a6e4f85f50dd67982c98e15f481b8129f", null ],
+    [ "className", "classXML_1_1XMLObject.html#a4fa433549d33292e3c9fb4e529213007", null ],
+    [ "elementName", "classXML_1_1XMLObject.html#a49451be4ab171d5ae34808e29e48587a", null ],
+    [ "prefix", "classXML_1_1XMLObject.html#a729ed5d15f68706a06e5395b9fe3f1bb", null ],
+    [ "textContent", "classXML_1_1XMLObject.html#a8e6255f48d2d25b063cdcbe0cbe37799", null ],
+    [ "xmlns", "classXML_1_1XMLObject.html#af0a70ae87cf85fab6baf7fc724dd59fd", null ]
+];
