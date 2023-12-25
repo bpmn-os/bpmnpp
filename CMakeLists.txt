@@ -91,14 +91,9 @@ if (DOCUMENTATION)
         CONFIGURE_COMMAND ""
   )
 
-#  file(READ doxygen-awesome/doxygen-custom/header.html TEXT)
-#  string(REPLACE "https://github.com/jothepro/doxygen-awesome-css" "https://github.com/bpmn-os/bpmnpp" TEXT "${TEXT}")
-#  file(WRITE doxygen-awesome/doxygen-custom/header.html "${TEXT}")
-
   # Add Doxygen target
   add_custom_target(docs
     COMMAND bash -c [[sed -i 's|https://github.com/jothepro/doxygen-awesome-css|https://github.com/bpmn-os/bpmnpp|g' doxygen-awesome/doxygen-custom/header.html]]
-#    COMMAND bash "sed -i 's/https:\/\/github.com\/jothepro\/doxygen-awesome-css/https:\/\/github.com\/bpmn-os\/bpmnpp/g' doxygen-awesome/doxygen-custom/header.html"
     COMMAND doxygen ${PROJECT_SOURCE_DIR}/Doxyfile
     WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
     COMMENT "Generating Doxygen documentation (this may take a while)"
