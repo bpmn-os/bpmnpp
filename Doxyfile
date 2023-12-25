@@ -14,6 +14,7 @@ MARKDOWN_SUPPORT      = YES
 BUILTIN_STL_SUPPORT   = YES
 SHOW_USED_FILES       = NO
 SHOW_FILES            = NO
+GENERATE_HTML         = YES
 GENERATE_LATEX        = NO
 QUIET                 = YES
 WARN_IF_UNDOCUMENTED  = NO
@@ -22,3 +23,28 @@ COLLABORATION_GRAPH   = NO
 INCLUDE_GRAPH         = NO
 INCLUDED_BY_GRAPH     = NO
 SHOW_NAMESPACES       = NO
+
+HAVE_DOT              = YES
+DOT_IMAGE_FORMAT      = svg
+DOT_TRANSPARENT       = YES
+
+GENERATE_TREEVIEW     = YES
+DISABLE_INDEX         = NO
+FULL_SIDEBAR          = NO
+
+HTML_HEADER           = doxygen-awesome/doxygen-custom/header.html
+HTML_FOOTER           =
+HTML_STYLESHEET       =
+
+HTML_EXTRA_STYLESHEET = doxygen-awesome/doxygen-awesome.css \
+                        doxygen-awesome/doxygen-custom/custom.css \
+                        doxygen-awesome/doxygen-awesome-sidebar-only.css \
+                        doxygen-awesome/doxygen-awesome-sidebar-only-darkmode-toggle.css \
+                        doxygen-awesome/doxygen-custom/custom-alternative.css
+
+HTML_EXTRA_FILES      = doxygen-awesome/doxygen-awesome-darkmode-toggle.js \
+                        doxygen-awesome/doxygen-awesome-fragment-copy-button.js \
+                        doxygen-awesome/doxygen-awesome-paragraph-link.js \
+                        doxygen-awesome/doxygen-custom/toggle-alternative-theme.js \
+                        doxygen-awesome/doxygen-awesome-interactive-toc.js \
+                        doxygen-awesome/doxygen-awesome-tabs.js

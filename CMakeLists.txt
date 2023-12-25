@@ -74,9 +74,27 @@ foreach(HEADER ${bpmn_HEADERS})
 endforeach()
 
 # Generate the documentation
-find_program(DOXYGEN_FOUND "doxygen")
 set(DOCUMENTATION ON CACHE BOOL "Create documentation")
-if (DOXYGEN_FOUND AND DOCUMENTATION)
+if (DOCUMENTATION)
+  find_program(DOXYGEN_FOUND "doxygen")
+  if (NOT DOXYGEN_FOUND)
+    message(FATAL_ERROR "doxygen not found.\nTo install run: sudo apt install doxygen")
+  endif()
+  include(ExternalProject)
+
+  ExternalProject_Add(doxygen-awesome
+        GIT_REPOSITORY https://github.com/jothepro/doxygen-awesome-css.git
+        GIT_TAG v2.3.1
+        SOURCE_DIR ${PROJECT_SOURCE_DIR}/doxygen-awesome
+        BUILD_COMMAND ""
+        INSTALL_COMMAND ""
+        CONFIGURE_COMMAND ""
+  )
+
+  file(READ doxygen-awesome/doxygen-custom/header.html TEXT)
+  string(REPLACE "https://github.com/jothepro/doxygen-awesome-css" "https://github.com/bpmn-os/bpmnpp" TEXT "${TEXT}")
+  file(WRITE doxygen-awesome/doxygen-custom/header.html "${TEXT}")
+
   # Add Doxygen target
   add_custom_target(docs
     COMMAND doxygen ${PROJECT_SOURCE_DIR}/Doxyfile
@@ -84,6 +102,7 @@ if (DOXYGEN_FOUND AND DOCUMENTATION)
     COMMENT "Generating Doxygen documentation (this may take a while)"
     VERBATIM
   )
+  add_dependencies(docs doxygen-awesome)
 endif()
 
 add_library(${CMAKE_PROJECT_NAME} STATIC ${bpmn_SOURCES})
