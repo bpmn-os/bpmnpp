@@ -41,19 +41,23 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519",
-"classXML_1_1bpmn_1_1dataStoreReference.html#a278a58902ae6f633b43492becfd549e3",
-"classXML_1_1bpmn_1_1tCallConversation.html",
-"classXML_1_1bpmn_1_1tError.html#ae003029f8100d341b95276769029a046",
-"classXML_1_1bpmn_1_1tMultiInstanceLoopCharacteristics.html#ad2f7fd9a1c12ff75c6c578673731c716",
-"classXML_1_1bpmn_1_1terminateEventDefinition.html#a2365fc68f09b3c0844edc08bfa6e5fc6"
+"Activity_8h_source.html",
+"classBPMN_1_1Model.html#a0b1387c31a14ae7ef14bf6b53535931a",
+"classXML_1_1bpmn_1_1cancelEventDefinition.html",
+"classXML_1_1bpmn_1_1subConversation.html#a278a58902ae6f633b43492becfd549e3",
+"classXML_1_1bpmn_1_1tDataObjectReference.html#a37106415259a5d8a848969b6a8771100",
+"classXML_1_1bpmn_1_1tIntermediateCatchEvent.html#a759e7c725d4bf33783b347d9f2c37d16",
+"classXML_1_1bpmn_1_1tServiceTask.html",
+"tArtifact_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
