@@ -1,6 +1,6 @@
 var classXML_1_1bpmn_1_1tCollaboration =
 [
-    [ "tCollaboration", "classXML_1_1bpmn_1_1tCollaboration.html#aec81e8f7cbade9d7feb9e61c693e81a8", null ],
+    [ "tCollaboration", "classXML_1_1bpmn_1_1tCollaboration.html#adcfe7ff0506c2f54003ffbd20bfa2761", null ],
     [ "XML::createInstance", "classXML_1_1bpmn_1_1tCollaboration.html#a278a58902ae6f633b43492becfd549e3", null ],
     [ "artifact", "classXML_1_1bpmn_1_1tCollaboration.html#a50fd88c6fdb9ce94861046ff6a2bedb6", null ],
     [ "choreographyRef", "classXML_1_1bpmn_1_1tCollaboration.html#a46b54faccdc1d6e4401bf2d85355aa15", null ],

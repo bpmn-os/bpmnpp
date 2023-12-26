@@ -1,13 +1,7 @@
 var hierarchy =
 [
     [ "XML::Attribute", "structXML_1_1Attribute.html", null ],
-    [ "xercesc::BinInputStream", null, [
-      [ "XML::IStreamInputSource::IStreamBinInputStream", "classXML_1_1IStreamInputSource_1_1IStreamBinInputStream.html", null ]
-    ] ],
     [ "BPMN::ExtensionElements", "classBPMN_1_1ExtensionElements.html", null ],
-    [ "xercesc::InputSource", null, [
-      [ "XML::IStreamInputSource", "classXML_1_1IStreamInputSource.html", null ]
-    ] ],
     [ "BPMN::MessageFlow", "classBPMN_1_1MessageFlow.html", null ],
     [ "BPMN::Model", "classBPMN_1_1Model.html", null ],
     [ "BPMN::Node", "classBPMN_1_1Node.html", [

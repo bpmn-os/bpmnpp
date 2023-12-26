@@ -119,9 +119,10 @@ $(document).ready(function(){initNavTree('classBPMN_1_1Model.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a>  </div>
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="classBPMN_1_1Model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">BPMN::Model Class Reference</div>  </div>
 </div><!--header-->
@@ -134,12 +135,12 @@ $(document).ready(function(){initNavTree('classBPMN_1_1Model.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a98de84e61b1e4a6101b3cba93888d841"><td class="memItemLeft" align="right" valign="top"><a id="a98de84e61b1e4a6101b3cba93888d841"></a>
+<tr class="memitem:a0da49caf0b4707529416f83ce8b5e668"><td class="memItemLeft" align="right" valign="top"><a id="a0da49caf0b4707529416f83ce8b5e668"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Model</b> (const std::string &amp;filename)</td></tr>
-<tr class="separator:a98de84e61b1e4a6101b3cba93888d841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0da49caf0b4707529416f83ce8b5e668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
+Public Attributes</h2></td></tr>
 <tr class="memitem:a726b3195cc0868077a0c2333ddacc0a6"><td class="memItemLeft" align="right" valign="top"><a id="a726b3195cc0868077a0c2333ddacc0a6"></a>
 std::vector&lt; std::unique_ptr&lt; <a class="el" href="classXML_1_1XMLObject.html">XML::XMLObject</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>roots</b></td></tr>
 <tr class="separator:a726b3195cc0868077a0c2333ddacc0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,195 +153,195 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1MessageFlow
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a87a1b1319155d7425905a793dcf3085b"><td class="memItemLeft" align="right" valign="top"><a id="a87a1b1319155d7425905a793dcf3085b"></a>
+<tr class="memitem:a25fae54229e1ba94b6469843f45b8382"><td class="memItemLeft" align="right" valign="top"><a id="a25fae54229e1ba94b6469843f45b8382"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>readBPMNFile</b> (const std::string &amp;filename)</td></tr>
-<tr class="separator:a87a1b1319155d7425905a793dcf3085b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69c1d6fad5b2e6dd9abe6e8819ce8bbb"><td class="memItemLeft" align="right" valign="top"><a id="a69c1d6fad5b2e6dd9abe6e8819ce8bbb"></a>
+<tr class="separator:a25fae54229e1ba94b6469843f45b8382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8b402258d1edaa15d863db516f413d"><td class="memItemLeft" align="right" valign="top"><a id="aab8b402258d1edaa15d863db516f413d"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1Process.html">Process</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a> *process)</td></tr>
-<tr class="separator:a69c1d6fad5b2e6dd9abe6e8819ce8bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ba683c2fc244ae0e4c46dce9b3a822b"><td class="memItemLeft" align="right" valign="top"><a id="a1ba683c2fc244ae0e4c46dce9b3a822b"></a>
+<tr class="separator:aab8b402258d1edaa15d863db516f413d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c42367166d98b25c2e9430f6eb94ca8"><td class="memItemLeft" align="right" valign="top"><a id="a1c42367166d98b25c2e9430f6eb94ca8"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEventSubProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *subProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a1ba683c2fc244ae0e4c46dce9b3a822b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a491687f47c404ddf097e2afd0f3b0cbe"><td class="memItemLeft" align="right" valign="top"><a id="a491687f47c404ddf097e2afd0f3b0cbe"></a>
+<tr class="separator:a1c42367166d98b25c2e9430f6eb94ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ee97c67888c75c126e7b99354fe77c"><td class="memItemLeft" align="right" valign="top"><a id="ab5ee97c67888c75c126e7b99354fe77c"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createFlowNode</b> (<a class="el" href="classXML_1_1bpmn_1_1tFlowNode.html">XML::bpmn::tFlowNode</a> *flowNode, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a491687f47c404ddf097e2afd0f3b0cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a901bc56ea971f667b0d51917ba68d791"><td class="memItemLeft" align="right" valign="top"><a id="a901bc56ea971f667b0d51917ba68d791"></a>
+<tr class="separator:ab5ee97c67888c75c126e7b99354fe77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a00947628b0cc9c7bb75cec31ef923"><td class="memItemLeft" align="right" valign="top"><a id="a04a00947628b0cc9c7bb75cec31ef923"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createActivity</b> (<a class="el" href="classXML_1_1bpmn_1_1tActivity.html">XML::bpmn::tActivity</a> *activity, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a901bc56ea971f667b0d51917ba68d791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9466c2c85bf67a5ed044ed0ca40492b6"><td class="memItemLeft" align="right" valign="top"><a id="a9466c2c85bf67a5ed044ed0ca40492b6"></a>
+<tr class="separator:a04a00947628b0cc9c7bb75cec31ef923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accaf1b55a7412041f8fd4b5adc85e034"><td class="memItemLeft" align="right" valign="top"><a id="accaf1b55a7412041f8fd4b5adc85e034"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSubProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *subProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a9466c2c85bf67a5ed044ed0ca40492b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73cc7cd19755291f3b87c369ffc7f0da"><td class="memItemLeft" align="right" valign="top"><a id="a73cc7cd19755291f3b87c369ffc7f0da"></a>
+<tr class="separator:accaf1b55a7412041f8fd4b5adc85e034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b869af684027f12265c7fc1801b88b"><td class="memItemLeft" align="right" valign="top"><a id="a47b869af684027f12265c7fc1801b88b"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCallActivity</b> (<a class="el" href="classXML_1_1bpmn_1_1tCallActivity.html">XML::bpmn::tCallActivity</a> *callActivity, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a73cc7cd19755291f3b87c369ffc7f0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d3036111779f7640e2b5b4f0456355"><td class="memItemLeft" align="right" valign="top"><a id="a15d3036111779f7640e2b5b4f0456355"></a>
+<tr class="separator:a47b869af684027f12265c7fc1801b88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1fc0f4bcb1b2d81df54cf3dca262574"><td class="memItemLeft" align="right" valign="top"><a id="ac1fc0f4bcb1b2d81df54cf3dca262574"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createAdHocSubProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tAdHocSubProcess.html">XML::bpmn::tAdHocSubProcess</a> *adHocSubProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a15d3036111779f7640e2b5b4f0456355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f09a56e3624930b8d4123ca1444fbb8"><td class="memItemLeft" align="right" valign="top"><a id="a5f09a56e3624930b8d4123ca1444fbb8"></a>
+<tr class="separator:ac1fc0f4bcb1b2d81df54cf3dca262574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b30b71fa4de8d2ced6bd54d5925cf38"><td class="memItemLeft" align="right" valign="top"><a id="a3b30b71fa4de8d2ced6bd54d5925cf38"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTransaction</b> (<a class="el" href="classXML_1_1bpmn_1_1tTransaction.html">XML::bpmn::tTransaction</a> *transaction, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a5f09a56e3624930b8d4123ca1444fbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0687836eb6c7fab3be4442de2e1400d"><td class="memItemLeft" align="right" valign="top"><a id="af0687836eb6c7fab3be4442de2e1400d"></a>
+<tr class="separator:a3b30b71fa4de8d2ced6bd54d5925cf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d49681072b2b2f066ea77554e6d2e0"><td class="memItemLeft" align="right" valign="top"><a id="a71d49681072b2b2f066ea77554e6d2e0"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tTask.html">XML::bpmn::tTask</a> *task, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:af0687836eb6c7fab3be4442de2e1400d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a8b6b7a700c974acb31de8f4366213"><td class="memItemLeft" align="right" valign="top"><a id="a16a8b6b7a700c974acb31de8f4366213"></a>
+<tr class="separator:a71d49681072b2b2f066ea77554e6d2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65628701616025a25357572d1bc3ae5a"><td class="memItemLeft" align="right" valign="top"><a id="a65628701616025a25357572d1bc3ae5a"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createUntypedTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tTask.html">XML::bpmn::tTask</a> *task, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a16a8b6b7a700c974acb31de8f4366213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa32f65b3430f36d61753c74af53821"><td class="memItemLeft" align="right" valign="top"><a id="aaaa32f65b3430f36d61753c74af53821"></a>
+<tr class="separator:a65628701616025a25357572d1bc3ae5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addbc176cdc781c6b52b011b96101f057"><td class="memItemLeft" align="right" valign="top"><a id="addbc176cdc781c6b52b011b96101f057"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSendTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tSendTask.html">XML::bpmn::tSendTask</a> *sendTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:aaaa32f65b3430f36d61753c74af53821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9604933647764008e50043c2adf654b"><td class="memItemLeft" align="right" valign="top"><a id="ac9604933647764008e50043c2adf654b"></a>
+<tr class="separator:addbc176cdc781c6b52b011b96101f057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ccc3062225edc8d9de23d573b5287a"><td class="memItemLeft" align="right" valign="top"><a id="a88ccc3062225edc8d9de23d573b5287a"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createReceiveTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tReceiveTask.html">XML::bpmn::tReceiveTask</a> *receiveTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:ac9604933647764008e50043c2adf654b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74d5b23140f809b74f3b59d629734985"><td class="memItemLeft" align="right" valign="top"><a id="a74d5b23140f809b74f3b59d629734985"></a>
+<tr class="separator:a88ccc3062225edc8d9de23d573b5287a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eeeed43ce81f072ad0146db6268a001"><td class="memItemLeft" align="right" valign="top"><a id="a0eeeed43ce81f072ad0146db6268a001"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createUserTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tUserTask.html">XML::bpmn::tUserTask</a> *userTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a74d5b23140f809b74f3b59d629734985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a615fbcee2b1d71ddab1526edff377c55"><td class="memItemLeft" align="right" valign="top"><a id="a615fbcee2b1d71ddab1526edff377c55"></a>
+<tr class="separator:a0eeeed43ce81f072ad0146db6268a001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31ec25fdeff0712fb39f5491086ddb9"><td class="memItemLeft" align="right" valign="top"><a id="aa31ec25fdeff0712fb39f5491086ddb9"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createManualTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tManualTask.html">XML::bpmn::tManualTask</a> *manualTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a615fbcee2b1d71ddab1526edff377c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba8021af9dcc8ac379f9496e1da88316"><td class="memItemLeft" align="right" valign="top"><a id="aba8021af9dcc8ac379f9496e1da88316"></a>
+<tr class="separator:aa31ec25fdeff0712fb39f5491086ddb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4c822ad840065b9f64ea99aabf01b7"><td class="memItemLeft" align="right" valign="top"><a id="a2c4c822ad840065b9f64ea99aabf01b7"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createScriptTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tScriptTask.html">XML::bpmn::tScriptTask</a> *scriptTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:aba8021af9dcc8ac379f9496e1da88316"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad40d9aedd71c70d984b4b1c7fbe984cc"><td class="memItemLeft" align="right" valign="top"><a id="ad40d9aedd71c70d984b4b1c7fbe984cc"></a>
+<tr class="separator:a2c4c822ad840065b9f64ea99aabf01b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719076668e3d600237cff29e06482d26"><td class="memItemLeft" align="right" valign="top"><a id="a719076668e3d600237cff29e06482d26"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createBusinessRuleTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tBusinessRuleTask.html">XML::bpmn::tBusinessRuleTask</a> *businessRuleTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:ad40d9aedd71c70d984b4b1c7fbe984cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3ec2d9d6feb82afbd7d2cfdf5d03295"><td class="memItemLeft" align="right" valign="top"><a id="ac3ec2d9d6feb82afbd7d2cfdf5d03295"></a>
+<tr class="separator:a719076668e3d600237cff29e06482d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1387c31a14ae7ef14bf6b53535931a"><td class="memItemLeft" align="right" valign="top"><a id="a0b1387c31a14ae7ef14bf6b53535931a"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tEvent.html">XML::bpmn::tEvent</a> *event, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:ac3ec2d9d6feb82afbd7d2cfdf5d03295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4e14157a14d95cb9cfca7ef65dc282d"><td class="memItemLeft" align="right" valign="top"><a id="ad4e14157a14d95cb9cfca7ef65dc282d"></a>
+<tr class="separator:a0b1387c31a14ae7ef14bf6b53535931a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf81be630146b0d903233c2e4ecbcbd"><td class="memItemLeft" align="right" valign="top"><a id="adcf81be630146b0d903233c2e4ecbcbd"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:ad4e14157a14d95cb9cfca7ef65dc282d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae80ef3d8b479d29b452f639de52bdc53"><td class="memItemLeft" align="right" valign="top"><a id="ae80ef3d8b479d29b452f639de52bdc53"></a>
+<tr class="separator:adcf81be630146b0d903233c2e4ecbcbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac68eaedb3694f35d61931a360991736"><td class="memItemLeft" align="right" valign="top"><a id="aac68eaedb3694f35d61931a360991736"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCancelBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:ae80ef3d8b479d29b452f639de52bdc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace4e687a8b7bc520484d97588a52bd9"><td class="memItemLeft" align="right" valign="top"><a id="aace4e687a8b7bc520484d97588a52bd9"></a>
+<tr class="separator:aac68eaedb3694f35d61931a360991736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb61c8310367ee166494569632456d9a"><td class="memItemLeft" align="right" valign="top"><a id="adb61c8310367ee166494569632456d9a"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCompensateBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:aace4e687a8b7bc520484d97588a52bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a800cf54f27eb9a983636bc570aa2e456"><td class="memItemLeft" align="right" valign="top"><a id="a800cf54f27eb9a983636bc570aa2e456"></a>
+<tr class="separator:adb61c8310367ee166494569632456d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb93ea475d4883ad33aeafe6b81173c"><td class="memItemLeft" align="right" valign="top"><a id="a2eb93ea475d4883ad33aeafe6b81173c"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createConditionalBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a800cf54f27eb9a983636bc570aa2e456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a846a81c8d8f7ea6246425f19a25ab369"><td class="memItemLeft" align="right" valign="top"><a id="a846a81c8d8f7ea6246425f19a25ab369"></a>
+<tr class="separator:a2eb93ea475d4883ad33aeafe6b81173c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9aae549ae34fb8eda3a58f26aff904"><td class="memItemLeft" align="right" valign="top"><a id="aca9aae549ae34fb8eda3a58f26aff904"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createErrorBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a846a81c8d8f7ea6246425f19a25ab369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43e9bbd74748b94c27ca01c740ef11f6"><td class="memItemLeft" align="right" valign="top"><a id="a43e9bbd74748b94c27ca01c740ef11f6"></a>
+<tr class="separator:aca9aae549ae34fb8eda3a58f26aff904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2347531b86b86b592fd04890220ae846"><td class="memItemLeft" align="right" valign="top"><a id="a2347531b86b86b592fd04890220ae846"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEscalationBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a43e9bbd74748b94c27ca01c740ef11f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cf32f688e2cfccf23c251c0e070bf34"><td class="memItemLeft" align="right" valign="top"><a id="a6cf32f688e2cfccf23c251c0e070bf34"></a>
+<tr class="separator:a2347531b86b86b592fd04890220ae846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764e35aa2577e40af37ce7a7214f604e"><td class="memItemLeft" align="right" valign="top"><a id="a764e35aa2577e40af37ce7a7214f604e"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a6cf32f688e2cfccf23c251c0e070bf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a839bcdc0dc04937a99bac96daac0357f"><td class="memItemLeft" align="right" valign="top"><a id="a839bcdc0dc04937a99bac96daac0357f"></a>
+<tr class="separator:a764e35aa2577e40af37ce7a7214f604e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb24e8612caa69d17d2d3653f0e486fc"><td class="memItemLeft" align="right" valign="top"><a id="afb24e8612caa69d17d2d3653f0e486fc"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSignalBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a839bcdc0dc04937a99bac96daac0357f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeeb04cda95250f338c31224ec178334"><td class="memItemLeft" align="right" valign="top"><a id="adeeb04cda95250f338c31224ec178334"></a>
+<tr class="separator:afb24e8612caa69d17d2d3653f0e486fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe75f82fec090de4899ee226c43266fe"><td class="memItemLeft" align="right" valign="top"><a id="afe75f82fec090de4899ee226c43266fe"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTimerBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:adeeb04cda95250f338c31224ec178334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a691f2d8ac0a33a810b0fe6d4424e41ab"><td class="memItemLeft" align="right" valign="top"><a id="a691f2d8ac0a33a810b0fe6d4424e41ab"></a>
+<tr class="separator:afe75f82fec090de4899ee226c43266fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a946c0c884abda9eee11cc5c8c7340b3d"><td class="memItemLeft" align="right" valign="top"><a id="a946c0c884abda9eee11cc5c8c7340b3d"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCatchEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a691f2d8ac0a33a810b0fe6d4424e41ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d20b00595d29e1105f121ed2811ff1"><td class="memItemLeft" align="right" valign="top"><a id="ad8d20b00595d29e1105f121ed2811ff1"></a>
+<tr class="separator:a946c0c884abda9eee11cc5c8c7340b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8253dc7d191a536ba1e481d1fbffd338"><td class="memItemLeft" align="right" valign="top"><a id="a8253dc7d191a536ba1e481d1fbffd338"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createConditionalCatchEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:ad8d20b00595d29e1105f121ed2811ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cfcf3feff3f4a77151fb4ce6627e69d"><td class="memItemLeft" align="right" valign="top"><a id="a8cfcf3feff3f4a77151fb4ce6627e69d"></a>
+<tr class="separator:a8253dc7d191a536ba1e481d1fbffd338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85706ecde038a88d28b437c31f3a8b6"><td class="memItemLeft" align="right" valign="top"><a id="ae85706ecde038a88d28b437c31f3a8b6"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageCatchEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a8cfcf3feff3f4a77151fb4ce6627e69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc9c11248a249021a7cc0c14e83ec8cc"><td class="memItemLeft" align="right" valign="top"><a id="abc9c11248a249021a7cc0c14e83ec8cc"></a>
+<tr class="separator:ae85706ecde038a88d28b437c31f3a8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ef4e27755e84774da9a2b69ed9146d"><td class="memItemLeft" align="right" valign="top"><a id="a43ef4e27755e84774da9a2b69ed9146d"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSignalCatchEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:abc9c11248a249021a7cc0c14e83ec8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3be74a48e2f26244b7c5cbcfa5981990"><td class="memItemLeft" align="right" valign="top"><a id="a3be74a48e2f26244b7c5cbcfa5981990"></a>
+<tr class="separator:a43ef4e27755e84774da9a2b69ed9146d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fb9dc1363e4c5963187cb09671394d"><td class="memItemLeft" align="right" valign="top"><a id="a46fb9dc1363e4c5963187cb09671394d"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTimerCatchEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a3be74a48e2f26244b7c5cbcfa5981990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a794ae3b72997855f4b876b3f60c4dde7"><td class="memItemLeft" align="right" valign="top"><a id="a794ae3b72997855f4b876b3f60c4dde7"></a>
+<tr class="separator:a46fb9dc1363e4c5963187cb09671394d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a443c6a2b1fc0386164e71f01075a216d"><td class="memItemLeft" align="right" valign="top"><a id="a443c6a2b1fc0386164e71f01075a216d"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTypedStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classXML_1_1bpmn_1_1tEventDefinition.html">XML::bpmn::tEventDefinition</a> &amp;eventDefinition, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a794ae3b72997855f4b876b3f60c4dde7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e7b4b1986ff8350d48bb6df0057f47c"><td class="memItemLeft" align="right" valign="top"><a id="a5e7b4b1986ff8350d48bb6df0057f47c"></a>
+<tr class="separator:a443c6a2b1fc0386164e71f01075a216d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970f2f2ab07710f0f6b77d70d08b4e5b"><td class="memItemLeft" align="right" valign="top"><a id="a970f2f2ab07710f0f6b77d70d08b4e5b"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCompensateStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a5e7b4b1986ff8350d48bb6df0057f47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa06875453f8df3146d198b18440f6bc4"><td class="memItemLeft" align="right" valign="top"><a id="aa06875453f8df3146d198b18440f6bc4"></a>
+<tr class="separator:a970f2f2ab07710f0f6b77d70d08b4e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad002ff5252b98c0647bcb1565ba3f326"><td class="memItemLeft" align="right" valign="top"><a id="ad002ff5252b98c0647bcb1565ba3f326"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createErrorStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:aa06875453f8df3146d198b18440f6bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03e16238b6e29c2245138e0df5aaa4ea"><td class="memItemLeft" align="right" valign="top"><a id="a03e16238b6e29c2245138e0df5aaa4ea"></a>
+<tr class="separator:ad002ff5252b98c0647bcb1565ba3f326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181ea31ff9e724f0b5d3f2f11d475916"><td class="memItemLeft" align="right" valign="top"><a id="a181ea31ff9e724f0b5d3f2f11d475916"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEscalationStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a03e16238b6e29c2245138e0df5aaa4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af864ef6e952c47391aad376a3e92760e"><td class="memItemLeft" align="right" valign="top"><a id="af864ef6e952c47391aad376a3e92760e"></a>
+<tr class="separator:a181ea31ff9e724f0b5d3f2f11d475916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217af2acb9ee038677e5225b35ab7e0c"><td class="memItemLeft" align="right" valign="top"><a id="a217af2acb9ee038677e5225b35ab7e0c"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createConditionalStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:af864ef6e952c47391aad376a3e92760e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81f14eb1a28bb566e043e95bb5625520"><td class="memItemLeft" align="right" valign="top"><a id="a81f14eb1a28bb566e043e95bb5625520"></a>
+<tr class="separator:a217af2acb9ee038677e5225b35ab7e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2642644d7a21b3caf3159e091e2eb859"><td class="memItemLeft" align="right" valign="top"><a id="a2642644d7a21b3caf3159e091e2eb859"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a81f14eb1a28bb566e043e95bb5625520"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5f11a8f6de7c1d2818f388c8113298f"><td class="memItemLeft" align="right" valign="top"><a id="ad5f11a8f6de7c1d2818f388c8113298f"></a>
+<tr class="separator:a2642644d7a21b3caf3159e091e2eb859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4979ee22d65f23f82602e00cd4b39f14"><td class="memItemLeft" align="right" valign="top"><a id="a4979ee22d65f23f82602e00cd4b39f14"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSignalStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:ad5f11a8f6de7c1d2818f388c8113298f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15e1bfa0e2d6a8fdfc15917f07f3144d"><td class="memItemLeft" align="right" valign="top"><a id="a15e1bfa0e2d6a8fdfc15917f07f3144d"></a>
+<tr class="separator:a4979ee22d65f23f82602e00cd4b39f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4198e06c60b32cc5eb51c87e3976884d"><td class="memItemLeft" align="right" valign="top"><a id="a4198e06c60b32cc5eb51c87e3976884d"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTimerStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a15e1bfa0e2d6a8fdfc15917f07f3144d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a154298512200951cd32c17babd5fd11b"><td class="memItemLeft" align="right" valign="top"><a id="a154298512200951cd32c17babd5fd11b"></a>
+<tr class="separator:a4198e06c60b32cc5eb51c87e3976884d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98467f6da47ef52bdde98c4570c2207"><td class="memItemLeft" align="right" valign="top"><a id="ad98467f6da47ef52bdde98c4570c2207"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createUntypedStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a154298512200951cd32c17babd5fd11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cdda7ac506b0b119a65e2b413cce652"><td class="memItemLeft" align="right" valign="top"><a id="a9cdda7ac506b0b119a65e2b413cce652"></a>
+<tr class="separator:ad98467f6da47ef52bdde98c4570c2207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd27af4181cbc874fe7b99ea3ff9ccb"><td class="memItemLeft" align="right" valign="top"><a id="afdd27af4181cbc874fe7b99ea3ff9ccb"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createThrowEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a9cdda7ac506b0b119a65e2b413cce652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac82cf60e05fa3665237732ac0f242cd0"><td class="memItemLeft" align="right" valign="top"><a id="ac82cf60e05fa3665237732ac0f242cd0"></a>
+<tr class="separator:afdd27af4181cbc874fe7b99ea3ff9ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68aece0036ac2d50630922fafb8e8d6f"><td class="memItemLeft" align="right" valign="top"><a id="a68aece0036ac2d50630922fafb8e8d6f"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCancelEndEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:ac82cf60e05fa3665237732ac0f242cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab58353bf796762d2c4408f85c1660235"><td class="memItemLeft" align="right" valign="top"><a id="ab58353bf796762d2c4408f85c1660235"></a>
+<tr class="separator:a68aece0036ac2d50630922fafb8e8d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4432b0d4b986ac0d80f45035990000"><td class="memItemLeft" align="right" valign="top"><a id="aab4432b0d4b986ac0d80f45035990000"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCompensateThrowEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:ab58353bf796762d2c4408f85c1660235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7debf9dae7ee1adf10677fcce5ce0d50"><td class="memItemLeft" align="right" valign="top"><a id="a7debf9dae7ee1adf10677fcce5ce0d50"></a>
+<tr class="separator:aab4432b0d4b986ac0d80f45035990000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190e19acf42a3181118ae84ef06fe7d5"><td class="memItemLeft" align="right" valign="top"><a id="a190e19acf42a3181118ae84ef06fe7d5"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createErrorEndEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a7debf9dae7ee1adf10677fcce5ce0d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addb7bc33b2ab052f55793c5987ec36d4"><td class="memItemLeft" align="right" valign="top"><a id="addb7bc33b2ab052f55793c5987ec36d4"></a>
+<tr class="separator:a190e19acf42a3181118ae84ef06fe7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69026ad235997cb5b071ccbcbac6ae31"><td class="memItemLeft" align="right" valign="top"><a id="a69026ad235997cb5b071ccbcbac6ae31"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEscalationThrowEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:addb7bc33b2ab052f55793c5987ec36d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f28dd0ec2ac55922e215186ecf46a19"><td class="memItemLeft" align="right" valign="top"><a id="a8f28dd0ec2ac55922e215186ecf46a19"></a>
+<tr class="separator:a69026ad235997cb5b071ccbcbac6ae31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d884f00aea4d69cd23af560238704b5"><td class="memItemLeft" align="right" valign="top"><a id="a8d884f00aea4d69cd23af560238704b5"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageThrowEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a8f28dd0ec2ac55922e215186ecf46a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59393a65c63050a4a7645fbe827cfbcb"><td class="memItemLeft" align="right" valign="top"><a id="a59393a65c63050a4a7645fbe827cfbcb"></a>
+<tr class="separator:a8d884f00aea4d69cd23af560238704b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1674744107046b9e9d21c3a6b863e26"><td class="memItemLeft" align="right" valign="top"><a id="ac1674744107046b9e9d21c3a6b863e26"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSignalThrowEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a59393a65c63050a4a7645fbe827cfbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20e18b41af2f7b62cc2e409fb8c8d377"><td class="memItemLeft" align="right" valign="top"><a id="a20e18b41af2f7b62cc2e409fb8c8d377"></a>
+<tr class="separator:ac1674744107046b9e9d21c3a6b863e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add35c74c94ee9b1c59d84e8a4e6425ee"><td class="memItemLeft" align="right" valign="top"><a id="add35c74c94ee9b1c59d84e8a4e6425ee"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTerminateEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a20e18b41af2f7b62cc2e409fb8c8d377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a485f0d4453e8d9a0a03959030e120b99"><td class="memItemLeft" align="right" valign="top"><a id="a485f0d4453e8d9a0a03959030e120b99"></a>
+<tr class="separator:add35c74c94ee9b1c59d84e8a4e6425ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126b7c77949c93622a8e59752b374667"><td class="memItemLeft" align="right" valign="top"><a id="a126b7c77949c93622a8e59752b374667"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createUntypedEndEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a485f0d4453e8d9a0a03959030e120b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7158b244166017e2f8788775ac8442d5"><td class="memItemLeft" align="right" valign="top"><a id="a7158b244166017e2f8788775ac8442d5"></a>
+<tr class="separator:a126b7c77949c93622a8e59752b374667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac825a7f61b4c0e848ab514f111c0612a"><td class="memItemLeft" align="right" valign="top"><a id="ac825a7f61b4c0e848ab514f111c0612a"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tGateway.html">XML::bpmn::tGateway</a> *gateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a7158b244166017e2f8788775ac8442d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e792df269cacbfd5cb71c81545ef85f"><td class="memItemLeft" align="right" valign="top"><a id="a1e792df269cacbfd5cb71c81545ef85f"></a>
+<tr class="separator:ac825a7f61b4c0e848ab514f111c0612a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c36174538c523cf5fa725044785ef7"><td class="memItemLeft" align="right" valign="top"><a id="aa1c36174538c523cf5fa725044785ef7"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createParallelGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tParallelGateway.html">XML::bpmn::tParallelGateway</a> *parallelGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a1e792df269cacbfd5cb71c81545ef85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd88165f04aee1ecd1fc5e93205befc"><td class="memItemLeft" align="right" valign="top"><a id="a9bd88165f04aee1ecd1fc5e93205befc"></a>
+<tr class="separator:aa1c36174538c523cf5fa725044785ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaffffd612c4070ce0164d39aed81f584"><td class="memItemLeft" align="right" valign="top"><a id="aaffffd612c4070ce0164d39aed81f584"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createExclusiveGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tExclusiveGateway.html">XML::bpmn::tExclusiveGateway</a> *exclusiveGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a9bd88165f04aee1ecd1fc5e93205befc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09e536a6eb7c10cb4f4cfaa6c87b8704"><td class="memItemLeft" align="right" valign="top"><a id="a09e536a6eb7c10cb4f4cfaa6c87b8704"></a>
+<tr class="separator:aaffffd612c4070ce0164d39aed81f584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b8c5c62ba608f0e48ef34398b0d734"><td class="memItemLeft" align="right" valign="top"><a id="ab1b8c5c62ba608f0e48ef34398b0d734"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createInclusiveGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tInclusiveGateway.html">XML::bpmn::tInclusiveGateway</a> *inclusiveGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a09e536a6eb7c10cb4f4cfaa6c87b8704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ccb9942694a288a86bb7501d349fc9c"><td class="memItemLeft" align="right" valign="top"><a id="a5ccb9942694a288a86bb7501d349fc9c"></a>
+<tr class="separator:ab1b8c5c62ba608f0e48ef34398b0d734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2873f459104f5ed031dc553acdabd011"><td class="memItemLeft" align="right" valign="top"><a id="a2873f459104f5ed031dc553acdabd011"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEventBasedGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tEventBasedGateway.html">XML::bpmn::tEventBasedGateway</a> *eventBasedGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a5ccb9942694a288a86bb7501d349fc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace502efa4ef47cf6b88dfcee5d7d0bf7"><td class="memItemLeft" align="right" valign="top"><a id="ace502efa4ef47cf6b88dfcee5d7d0bf7"></a>
+<tr class="separator:a2873f459104f5ed031dc553acdabd011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595a18e7785e752e721fa1329cbe1bf1"><td class="memItemLeft" align="right" valign="top"><a id="a595a18e7785e752e721fa1329cbe1bf1"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createComplexGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tComplexGateway.html">XML::bpmn::tComplexGateway</a> *complexGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:ace502efa4ef47cf6b88dfcee5d7d0bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e9b7a2bf70f36a490a00e872cbb908"><td class="memItemLeft" align="right" valign="top"><a id="ac8e9b7a2bf70f36a490a00e872cbb908"></a>
+<tr class="separator:a595a18e7785e752e721fa1329cbe1bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8d9c2855e29dd174be213ea73c99a2"><td class="memItemLeft" align="right" valign="top"><a id="adc8d9c2855e29dd174be213ea73c99a2"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSequenceFlow</b> (<a class="el" href="classXML_1_1bpmn_1_1tSequenceFlow.html">XML::bpmn::tSequenceFlow</a> *sequenceFlow, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
-<tr class="separator:ac8e9b7a2bf70f36a490a00e872cbb908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c371b22a314b3bf93ea2a311445402d"><td class="memItemLeft" align="right" valign="top"><a id="a2c371b22a314b3bf93ea2a311445402d"></a>
+<tr class="separator:adc8d9c2855e29dd174be213ea73c99a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02944da46d1f61bac4fbb219aa7ff9c9"><td class="memItemLeft" align="right" valign="top"><a id="a02944da46d1f61bac4fbb219aa7ff9c9"></a>
 virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageFlow</b> (<a class="el" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a> *messageFlow)</td></tr>
-<tr class="separator:a2c371b22a314b3bf93ea2a311445402d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a662567a1f6b77245adfee40a82cb457b"><td class="memItemLeft" align="right" valign="top"><a id="a662567a1f6b77245adfee40a82cb457b"></a>
+<tr class="separator:a02944da46d1f61bac4fbb219aa7ff9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378462ed0739810acc6656db81758833"><td class="memItemLeft" align="right" valign="top"><a id="a378462ed0739810acc6656db81758833"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createChildNodes</b> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
-<tr class="separator:a662567a1f6b77245adfee40a82cb457b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c9dc51bcddb77e8171f497c499d4c8"><td class="memItemLeft" align="right" valign="top"><a id="a11c9dc51bcddb77e8171f497c499d4c8"></a>
+<tr class="separator:a378462ed0739810acc6656db81758833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32fcb5277d9733f97d70bf58111b8eea"><td class="memItemLeft" align="right" valign="top"><a id="a32fcb5277d9733f97d70bf58111b8eea"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createSequenceFlows</b> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
-<tr class="separator:a11c9dc51bcddb77e8171f497c499d4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f32c7a06030f00db9b3273faeeea9f3"><td class="memItemLeft" align="right" valign="top"><a id="a5f32c7a06030f00db9b3273faeeea9f3"></a>
+<tr class="separator:a32fcb5277d9733f97d70bf58111b8eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e97e806458d39f5fbd6d4de0a9aa23c"><td class="memItemLeft" align="right" valign="top"><a id="a0e97e806458d39f5fbd6d4de0a9aa23c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createNestedReferences</b> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
-<tr class="separator:a5f32c7a06030f00db9b3273faeeea9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb99225100bcc242a8683d9db35bd1b6"><td class="memItemLeft" align="right" valign="top"><a id="acb99225100bcc242a8683d9db35bd1b6"></a>
+<tr class="separator:a0e97e806458d39f5fbd6d4de0a9aa23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5565a1911f0d02652cc4fc4e61780fe"><td class="memItemLeft" align="right" valign="top"><a id="af5565a1911f0d02652cc4fc4e61780fe"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createReferences</b> (<a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> *flowNode)</td></tr>
-<tr class="separator:acb99225100bcc242a8683d9db35bd1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7b035b0ba64e65d6889e93557efcf26"><td class="memItemLeft" align="right" valign="top"><a id="ab7b035b0ba64e65d6889e93557efcf26"></a>
+<tr class="separator:af5565a1911f0d02652cc4fc4e61780fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab26bc7294f6b95ac41e025fc0e65fb3"><td class="memItemLeft" align="right" valign="top"><a id="aab26bc7294f6b95ac41e025fc0e65fb3"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageFlows</b> ()</td></tr>
-<tr class="separator:ab7b035b0ba64e65d6889e93557efcf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aab26bc7294f6b95ac41e025fc0e65fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>

@@ -124,41 +124,37 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="md_README"></a> </p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 A BPMN parser library, written in C++.</h1>
+<p>This library provides a parser library for BPMN 2.0 allowing easy access to all elements and children (no getters or setters).</p>
 <ul>
 <li><b>Download:</b> <a href="https://github.com/bpmn-os/bpmnpp">https://github.com/bpmn-os/bpmnpp</a></li>
 <li><b>Documentation:</b> <a href="https://bpmn-os.github.io/bpmnpp">https://bpmn-os.github.io/bpmnpp</a></li>
 </ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
-Purpose/goals</h1>
-<p>The purpose of this library is to provide a parser library for BPMN 2.0 allowing easy access to all elements and children (no getters or setters).</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
 Dependencies</h1>
 <p>bpmn++ requires Xerces-C++ 3.2.x. On Ubuntu Linux Xerces can be installed by </p><div class="fragment"><div class="line">sudo apt install libxerces-c-dev</div>
 </div><!-- fragment --><p>Furthermore, <code>schematic++</code> must be available for the build process. You can obtain <code>schematic++</code> from <a href="https://github.com/rajgoel/schematicpp">https://github.com/rajgoel/schematicpp</a>.</p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Build the library</h1>
-<p>The library is built like a typical CMake project. A normal build will look something like this (output omitted):</p>
-<div class="fragment"><div class="line">~/bpmnpp$ mkdir build</div>
-<div class="line">~/bpmnpp$ cd build</div>
-<div class="line">~/bpmnpp/build$ cmake ..</div>
-<div class="line">~/bpmnpp/build$ make</div>
+<p>The library is built like a typical CMake project. A normal build from within the project folder will look something like this (output omitted):</p>
+<div class="fragment"><div class="line">mkdir build</div>
+<div class="line">cd build</div>
+<div class="line">cmake ..</div>
+<div class="line">make</div>
 </div><!-- fragment --><p>This creates a single header file <code>lib/bpmn++.h</code> and a library <code>lib/libbpmn++.a</code>.</p>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Install the library</h1>
 <p>After library the program, it can be installed by</p>
-<div class="fragment"><div class="line">~/bpmnpp/build$ sudo make install</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
+<div class="fragment"><div class="line">sudo make install</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
 Run tests</h1>
 <p>Tests can be run by</p>
-<div class="fragment"><div class="line">~/bpmnpp/build$ make tests</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
+<div class="fragment"><div class="line">make tests</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
 Example</h1>
 <p>An example using the library can be found in <code>example</code> folder.</p>
 <p>After successful installation of the library, you can build the example by</p>
-<div class="fragment"><div class="line">cd ~/bpmnpp/example</div>
-<div class="line">g++ -std=c++20 main.cpp -lbpmn++ -lxerces-c -o bpmn++</div>
-</div><!-- fragment --><p>You can run the example by </p><div class="fragment"><div class="line">cd ~/bpmnpp/example</div>
-<div class="line">./bpmn++ diagram.bpmn</div>
+<div class="fragment"><div class="line">g++ -std=c++20 main.cpp -lbpmn++ -lxerces-c -o bpmn++</div>
+</div><!-- fragment --><p>You can run the example by </p><div class="fragment"><div class="line">./bpmn++ diagram.bpmn</div>
 </div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

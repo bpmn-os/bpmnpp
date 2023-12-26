@@ -26,17 +26,16 @@ var NAVTREE =
 [
   [ "bpmn++", "index.html", [
     [ "A BPMN parser library, written in C++.", "index.html#autotoc_md1", null ],
-    [ "Purpose/goals", "index.html#autotoc_md2", null ],
-    [ "Dependencies", "index.html#autotoc_md3", null ],
-    [ "Build the library", "index.html#autotoc_md4", null ],
-    [ "Install the library", "index.html#autotoc_md5", null ],
-    [ "Run tests", "index.html#autotoc_md6", null ],
-    [ "Example", "index.html#autotoc_md7", null ],
-    [ "Data Structures", "annotated.html", [
-      [ "Data Structures", "annotated.html", "annotated_dup" ],
-      [ "Data Structure Index", "classes.html", null ],
+    [ "Dependencies", "index.html#autotoc_md2", null ],
+    [ "Build the library", "index.html#autotoc_md3", null ],
+    [ "Install the library", "index.html#autotoc_md4", null ],
+    [ "Run tests", "index.html#autotoc_md5", null ],
+    [ "Example", "index.html#autotoc_md6", null ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Data Fields", "functions.html", [
+      [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
@@ -50,11 +49,11 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519",
-"classXML_1_1bpmn_1_1dataOutputAssociation.html#a278a58902ae6f633b43492becfd549e3",
-"classXML_1_1bpmn_1_1tCallActivity.html",
-"classXML_1_1bpmn_1_1tEndEvent.html#af33e3ed5289316c0b2a6654ae22b10b5",
-"classXML_1_1bpmn_1_1tMultiInstanceLoopCharacteristics.html#a0483dfdcb8de6e475610f6c279b8e438",
-"classXML_1_1bpmn_1_1tTransaction.html#a278a58902ae6f633b43492becfd549e3"
+"classXML_1_1bpmn_1_1dataStoreReference.html#a278a58902ae6f633b43492becfd549e3",
+"classXML_1_1bpmn_1_1tCallConversation.html",
+"classXML_1_1bpmn_1_1tError.html#ae003029f8100d341b95276769029a046",
+"classXML_1_1bpmn_1_1tMultiInstanceLoopCharacteristics.html#ad2f7fd9a1c12ff75c6c578673731c716",
+"classXML_1_1bpmn_1_1terminateEventDefinition.html#a2365fc68f09b3c0844edc08bfa6e5fc6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

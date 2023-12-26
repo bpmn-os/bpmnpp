@@ -1,6 +1,6 @@
 var classXML_1_1bpmn_1_1tDefinitions =
 [
-    [ "tDefinitions", "classXML_1_1bpmn_1_1tDefinitions.html#a9a19b475326878985aab6d500bb106b9", null ],
+    [ "tDefinitions", "classXML_1_1bpmn_1_1tDefinitions.html#a335731ff7253235d22b2cf5daa96a916", null ],
     [ "XML::createInstance", "classXML_1_1bpmn_1_1tDefinitions.html#a278a58902ae6f633b43492becfd549e3", null ],
     [ "bpmndi_BPMNDiagram", "classXML_1_1bpmn_1_1tDefinitions.html#abf04fe38ab48d503c4f276e7f2a1e480", null ],
     [ "exporter", "classXML_1_1bpmn_1_1tDefinitions.html#a0533a59324017b84baf94af7602db80d", null ],

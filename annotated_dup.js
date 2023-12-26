@@ -301,7 +301,6 @@ var annotated_dup =
         [ "tUserTask", "classXML_1_1bpmn_1_1tUserTask.html", "classXML_1_1bpmn_1_1tUserTask" ],
         [ "userTask", "classXML_1_1bpmn_1_1userTask.html", "classXML_1_1bpmn_1_1userTask" ]
       ] ],
-      [ "IStreamInputSource", "classXML_1_1IStreamInputSource.html", "classXML_1_1IStreamInputSource" ],
       [ "Value", "structXML_1_1Value.html", "structXML_1_1Value" ],
       [ "Attribute", "structXML_1_1Attribute.html", "structXML_1_1Attribute" ],
       [ "XMLObject", "classXML_1_1XMLObject.html", "classXML_1_1XMLObject" ]

@@ -45,8 +45,8 @@ var searchData=
   ['correlationpropertyref_59',['correlationPropertyRef',['../classXML_1_1bpmn_1_1tCorrelationPropertyBinding.html#acc0f35224378ab55140aa62326b67186',1,'XML::bpmn::tCorrelationPropertyBinding']]],
   ['correlationpropertyretrievalexpression_60',['correlationPropertyRetrievalExpression',['../classXML_1_1bpmn_1_1correlationPropertyRetrievalExpression.html',1,'XML::bpmn']]],
   ['correlationsubscription_61',['correlationSubscription',['../classXML_1_1bpmn_1_1correlationSubscription.html',1,'XML::bpmn']]],
-  ['createfromfile_62',['createFromFile',['../classXML_1_1XMLObject.html#a2ecff3cd0f4b0bc7c022e17e1d8889ac',1,'XML::XMLObject']]],
-  ['createfromstream_63',['createFromStream',['../classXML_1_1XMLObject.html#abb072f8fc710d7e0961ddcd28fe1cfd7',1,'XML::XMLObject']]],
-  ['createfromstring_64',['createFromString',['../classXML_1_1XMLObject.html#a35909eb1b2efd37dc23d700fbd03c7d9',1,'XML::XMLObject']]],
+  ['createfromfile_62',['createFromFile',['../classXML_1_1XMLObject.html#af3bd02d21efaa2df34b045df8092b5f7',1,'XML::XMLObject']]],
+  ['createfromstream_63',['createFromStream',['../classXML_1_1XMLObject.html#a62bc75287a17e17d7d70f6454a8a3a76',1,'XML::XMLObject']]],
+  ['createfromstring_64',['createFromString',['../classXML_1_1XMLObject.html#a9f1074aa6a26fb403aed26b80cb3689c',1,'XML::XMLObject']]],
   ['createinstance_65',['createInstance',['../classXML_1_1XMLObject.html#a5684a1b48411576472e68678dc91440c',1,'XML::XMLObject']]]
 ];
