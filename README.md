@@ -1,7 +1,9 @@
 # bpmn++
 
 ## A BPMN parser library, written in C++.
-https://github.com/bpmn-os/bpmnpp
+
+- **Download:** https://github.com/bpmn-os/bpmnpp
+- **Documentation:** https://bpmn-os.github.io/bpmnpp 
 
 ## Purpose/goals
 The purpose of this library is to provide a parser library for BPMN 2.0 allowing easy access to all elements and children (no getters or setters).

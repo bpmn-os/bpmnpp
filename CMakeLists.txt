@@ -85,7 +85,7 @@ if (DOCUMENTATION)
   ExternalProject_Add(doxygen-awesome
         GIT_REPOSITORY https://github.com/jothepro/doxygen-awesome-css.git
         GIT_TAG v2.3.1
-        SOURCE_DIR ${PROJECT_SOURCE_DIR}/doxygen-awesome
+        SOURCE_DIR ${CMAKE_BINARY_DIR}/doxygen-awesome
         BUILD_COMMAND ""
         INSTALL_COMMAND ""
         CONFIGURE_COMMAND ""
@@ -93,8 +93,9 @@ if (DOCUMENTATION)
 
   # Add Doxygen target
   add_custom_target(docs
-    COMMAND bash -c [[sed -i 's|https://github.com/jothepro/doxygen-awesome-css|https://github.com/bpmn-os/bpmnpp|g' doxygen-awesome/doxygen-custom/header.html]]
-    COMMAND doxygen ${PROJECT_SOURCE_DIR}/Doxyfile
+    COMMAND bash -c "sed -i 's|https://github.com/jothepro/doxygen-awesome-css|https://github.com/bpmn-os/bpmnpp|g' ${CMAKE_BINARY_DIR}/doxygen-awesome/doxygen-custom/header.html"
+    COMMAND bash -c "echo '</body></html>' > ${CMAKE_BINARY_DIR}/doxygen-awesome/doxygen-custom/footer.html"
+    COMMAND ${CMAKE_COMMAND} -E env "DOXYGEN_AWESOME_DIR=${CMAKE_BINARY_DIR}/doxygen-awesome" doxygen ${PROJECT_SOURCE_DIR}/Doxyfile
     WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
     COMMENT "Generating Doxygen documentation (this may take a while)"
     VERBATIM
