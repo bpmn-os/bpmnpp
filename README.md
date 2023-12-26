@@ -2,11 +2,10 @@
 
 ## A BPMN parser library, written in C++.
 
+This library provides a parser library for BPMN 2.0 allowing easy access to all elements and children (no getters or setters).
+
 - **Download:** https://github.com/bpmn-os/bpmnpp
 - **Documentation:** https://bpmn-os.github.io/bpmnpp 
-
-## Purpose/goals
-The purpose of this library is to provide a parser library for BPMN 2.0 allowing easy access to all elements and children (no getters or setters).
 
 ## Dependencies
 
@@ -19,14 +18,14 @@ Furthermore, `schematic++` must be available for the build process. You can obta
 
 ## Build the library
 
-The library is built like a typical CMake project. A normal build will look something like this (output omitted):
+The library is built like a typical CMake project. A normal build from within the project folder will look something like this (output omitted):
 
 ```sh
- ~/bpmnpp$ mkdir build
- ~/bpmnpp$ cd build
- ~/bpmnpp/build$ cmake ..
- ~/bpmnpp/build$ make
- ```
+mkdir build
+cd build
+cmake ..
+make
+```
 
 This creates a single header file `lib/bpmn++.h` and a library `lib/libbpmn++.a`.
 
@@ -34,14 +33,14 @@ This creates a single header file `lib/bpmn++.h` and a library `lib/libbpmn++.a`
 After library the program, it can be installed by
 
 ```
-~/bpmnpp/build$ sudo make install
+sudo make install
 ```
 
 ## Run tests
 Tests can be run by
 
 ```
-~/bpmnpp/build$ make tests
+make tests
 ```
 
 ## Example
@@ -51,12 +50,10 @@ An example using the library can be found in `example` folder.
 After successful installation of the library, you can build the example by
 
 ```sh
-cd ~/bpmnpp/example
 g++ -std=c++20 main.cpp -lbpmn++ -lxerces-c -o bpmn++
 ```
 
 You can run the example by
 ```sh
-cd ~/bpmnpp/example
 ./bpmn++ diagram.bpmn
 ```
