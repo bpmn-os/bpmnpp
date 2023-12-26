@@ -2,6 +2,9 @@
 
 # Project information
 PROJECT_NAME      = bpmn++
+PROJECT_LOGO      = bpmn++.svg
+PROJECT_BRIEF     = "A BPMN parser library, written in C++"
+
 OUTPUT_DIRECTORY  = docs
 
 # Input sources
@@ -27,6 +30,7 @@ SHOW_NAMESPACES       = NO
 HAVE_DOT              = YES
 DOT_IMAGE_FORMAT      = svg
 DOT_TRANSPARENT       = YES
+
 
 GENERATE_TREEVIEW     = YES
 DISABLE_INDEX         = NO
