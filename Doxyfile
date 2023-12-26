@@ -9,7 +9,6 @@ OUTPUT_DIRECTORY  = docs
 
 # Input sources
 INPUT             = src/ src/xml/ src/xml/bpmn/ README.md
-FILE_PATTERNS     = *.h
 
 USE_MDFILE_AS_MAINPAGE = README.md
 
@@ -17,6 +16,9 @@ MARKDOWN_SUPPORT      = YES
 BUILTIN_STL_SUPPORT   = YES
 SHOW_USED_FILES       = YES
 SHOW_FILES            = YES
+SHOW_NAMESPACES       = NO
+EXTRACT_LOCAL_CLASSES  = NO
+EXTRACT_LOCAL_METHODS  = NO
 GENERATE_HTML         = YES
 GENERATE_LATEX        = NO
 QUIET                 = YES
@@ -25,7 +27,6 @@ UML_LOOK              = YES
 COLLABORATION_GRAPH   = NO
 INCLUDE_GRAPH         = NO
 INCLUDED_BY_GRAPH     = NO
-SHOW_NAMESPACES       = NO
 
 HAVE_DOT              = YES
 DOT_IMAGE_FORMAT      = svg
