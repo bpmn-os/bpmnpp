@@ -80,6 +80,10 @@ if (DOCUMENTATION)
   if (NOT DOXYGEN_FOUND)
     message(FATAL_ERROR "doxygen not found.\nTo install run: sudo apt install doxygen")
   endif()
+  find_program(DOT_FOUND "dot")
+  if (NOT DOT_FOUND)
+    message(FATAL_ERROR "dot not found.\nTo install run: sudo apt install graphviz")
+  endif()
   include(ExternalProject)
 
   ExternalProject_Add(doxygen-awesome
