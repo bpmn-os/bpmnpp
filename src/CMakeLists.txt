@@ -35,6 +35,7 @@ list(APPEND bpmn_SOURCES
   MessageCatchEvent.cpp
   SignalCatchEvent.cpp
   TimerCatchEvent.cpp
+  LinkTargetEvent.cpp
   UntypedStartEvent.cpp
   TypedStartEvent.cpp
   CompensateStartEvent.cpp
@@ -53,6 +54,7 @@ list(APPEND bpmn_SOURCES
   MessageThrowEvent.cpp
   SignalThrowEvent.cpp
   TerminateEvent.cpp
+  LinkSourceEvent.cpp
   BoundaryEvent.cpp
   CancelBoundaryEvent.cpp
   CompensateBoundaryEvent.cpp
@@ -104,6 +106,7 @@ list(APPEND bpmn_HEADERS
   MessageCatchEvent.h
   SignalCatchEvent.h
   TimerCatchEvent.h
+  LinkTargetEvent.h
   UntypedStartEvent.h
   TypedStartEvent.h
   CompensateStartEvent.h
@@ -122,6 +125,7 @@ list(APPEND bpmn_HEADERS
   MessageThrowEvent.h
   SignalThrowEvent.h
   TerminateEvent.h
+  LinkSourceEvent.h
   BoundaryEvent.h
   CancelBoundaryEvent.h
   CompensateBoundaryEvent.h

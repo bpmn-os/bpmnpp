@@ -34,6 +34,9 @@ void Model::readBPMNFile(const std::string& filename)
   }
 
   createMessageFlows();
+  for ( auto& process : processes ) {
+    createLinks(process.get());
+  }
 }
 
 std::unique_ptr<Process> Model::createProcess(XML::bpmn::tProcess* process) {
@@ -264,6 +267,9 @@ std::unique_ptr<FlowNode> Model::createCatchEvent(XML::bpmn::tCatchEvent* catchE
   else if ( eventDefinitions[0].get().is<XML::bpmn::tTimerEventDefinition>() ) {
     return createTimerCatchEvent(catchEvent,parent);
   }
+  else if ( eventDefinitions[0].get().is<XML::bpmn::tLinkEventDefinition>() ) {
+    return createLinkTargetEvent(catchEvent,parent);
+  }
 
   throw std::logic_error("Model: Failed determining event definition for catching event");
 
@@ -285,6 +291,10 @@ std::unique_ptr<FlowNode> Model::createSignalCatchEvent(XML::bpmn::tCatchEvent* 
 
 std::unique_ptr<FlowNode> Model::createTimerCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent) {
   return std::make_unique<TimerCatchEvent>(catchEvent,parent);
+}
+
+std::unique_ptr<FlowNode> Model::createLinkTargetEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent) {
+  return std::make_unique<LinkTargetEvent>(catchEvent,parent);
 }
 
 std::unique_ptr<FlowNode> Model::createTypedStartEvent(XML::bpmn::tStartEvent* startEvent, XML::bpmn::tEventDefinition& eventDefinition, Scope* parent) {
@@ -377,6 +387,9 @@ std::unique_ptr<FlowNode> Model::createThrowEvent(XML::bpmn::tThrowEvent* throwE
   else if ( eventDefinitions[0].get().is<XML::bpmn::tTerminateEventDefinition>() ) {
     return createTerminateEvent(throwEvent,parent);
   }
+  else if ( eventDefinitions[0].get().is<XML::bpmn::tLinkEventDefinition>() ) {
+    return createLinkSourceEvent(throwEvent,parent);
+  }
 
   throw std::logic_error("Model: Failed determining event definition for throwing event");
 
@@ -409,6 +422,10 @@ std::unique_ptr<FlowNode> Model::createSignalThrowEvent(XML::bpmn::tThrowEvent* 
 
 std::unique_ptr<FlowNode> Model::createTerminateEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent) {
   return std::make_unique<TerminateEvent>(throwEvent,parent);
+}
+
+std::unique_ptr<FlowNode> Model::createLinkSourceEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent) {
+  return std::make_unique<LinkSourceEvent>(throwEvent,parent);
 }
 
 std::unique_ptr<FlowNode> Model::createUntypedEndEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent) {
@@ -470,12 +487,6 @@ std::unique_ptr<MessageFlow> Model::createMessageFlow(XML::bpmn::tMessageFlow* m
 void Model::createChildNodes(Scope* scope) {
   // add child nodes (except boundary events and link events)
   for (XML::bpmn::tFlowNode& flowNode : scope->element->getChildren<XML::bpmn::tFlowNode>() ) {
-     if ( flowNode.is<XML::bpmn::tEvent>() &&
-         flowNode.getChildren<XML::bpmn::tLinkEventDefinition>().size()
-    ) {
-      throw std::runtime_error("Model: Link events are not yet supported");
-    }
-
     if ( auto subProcess = flowNode.is<XML::bpmn::tSubProcess>();
          subProcess &&
          subProcess->triggeredByEvent.has_value() &&
@@ -624,3 +635,40 @@ void Model::createMessageFlows() {
 
 }
 
+void Model::createLinks(Scope* scope) {
+  std::vector<LinkSourceEvent*> linkSources;
+  std::vector<LinkTargetEvent*> linkTargets;
+
+  for ( auto& childNode: scope->childNodes ) {
+    if ( auto linkSource = childNode->represents<LinkSourceEvent>(); linkSource ) {
+      linkSources.push_back(linkSource);
+    }
+    if ( auto linkTarget = childNode->represents<LinkTargetEvent>(); linkTarget ) {
+      linkTargets.push_back(linkTarget);
+    }
+
+    // recurse
+    if ( auto childScope = childNode->represents<Scope>(); childScope ) {
+      createLinks(childScope);
+    }
+  }
+
+  if ( linkSources.size() != linkTargets.size() ) {
+    throw std::runtime_error("Model: Number of sources and targets of link events does not match");
+  }
+  for ( auto linkSource: linkSources ) {
+    for ( auto linkTarget: linkTargets ) {
+      if ( linkSource->name == linkTarget->name ) {
+        if ( linkSource->target || linkTarget->source ) {
+          throw std::runtime_error("Model: Link event has multiple matches");
+        }
+        linkSource->target = linkTarget;
+        linkTarget->source = linkSource;
+      }
+    }
+    if ( !linkSource->target ) {
+      throw std::runtime_error("Model: Link events have no unique matching");
+    }
+  }
+
+}

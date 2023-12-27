@@ -9,4 +9,7 @@ FlowNode::FlowNode(XML::bpmn::tFlowNode* flowNode, Scope* parent)
   , ChildNode(flowNode,parent)
   , element(flowNode)
 {
+  if ( flowNode->name.has_value() ) {
+    name = flowNode->name.value().get().value;
+  }
 }

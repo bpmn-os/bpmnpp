@@ -30,12 +30,14 @@
 #include "MessageThrowEvent.h"
 #include "SignalThrowEvent.h"
 #include "TerminateEvent.h"
+#include "LinkSourceEvent.h"
 #include "UntypedEndEvent.h"
 #include "CatchEvent.h"
 #include "ConditionalCatchEvent.h"
 #include "MessageCatchEvent.h"
 #include "SignalCatchEvent.h"
 #include "TimerCatchEvent.h"
+#include "LinkTargetEvent.h"
 #include "UntypedStartEvent.h"
 #include "TypedStartEvent.h"
 #include "CompensateStartEvent.h"
@@ -123,6 +125,7 @@ protected:
   virtual std::unique_ptr<FlowNode> createMessageCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
   virtual std::unique_ptr<FlowNode> createSignalCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
   virtual std::unique_ptr<FlowNode> createTimerCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
+  virtual std::unique_ptr<FlowNode> createLinkTargetEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
 
   virtual std::unique_ptr<FlowNode> createTypedStartEvent(XML::bpmn::tStartEvent* startEvent, XML::bpmn::tEventDefinition& eventDefinition, Scope* parent);
 
@@ -144,6 +147,7 @@ protected:
   virtual std::unique_ptr<FlowNode> createMessageThrowEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent);
   virtual std::unique_ptr<FlowNode> createSignalThrowEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent);
   virtual std::unique_ptr<FlowNode> createTerminateEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent);
+  virtual std::unique_ptr<FlowNode> createLinkSourceEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent);
   virtual std::unique_ptr<FlowNode> createUntypedEndEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent);
   virtual std::unique_ptr<FlowNode> createGateway(XML::bpmn::tGateway* gateway, Scope* parent);
 
@@ -160,6 +164,7 @@ protected:
   virtual void createNestedReferences(Scope* scope);
   virtual void createReferences(FlowNode* flowNode);
   virtual void createMessageFlows();
+  virtual void createLinks(Scope* scope);
 
   /// Binds the extension element to the given node
   template< typename T>

@@ -23,6 +23,8 @@ public:
   XML::bpmn::tFlowNode* element;
   FlowNode(XML::bpmn::tFlowNode* flowNode, Scope* parent);
 
+  std::optional<std::string> name;
+  
   /// Vector containing all incoming sequence flows of the node.
   std::vector< SequenceFlow* > incoming;
 
