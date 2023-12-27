@@ -64,22 +64,23 @@
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="classBPMN_1_1FlowNode.html" target="_top" xlink:title="Represents a flow node in a BPMN process.">
-<polygon fill="none" stroke="black" points="0,-315.5 0,-394.5 101,-394.5 101,-315.5 0,-315.5"/>
-<text text-anchor="middle" x="50.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::FlowNode</text>
-<polyline fill="none" stroke="black" points="0,-375.5 101,-375.5 "/>
-<text text-anchor="start" x="8" y="-363.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
-<text text-anchor="start" x="8" y="-352.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ incoming</text>
-<text text-anchor="start" x="8" y="-341.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ outgoing</text>
-<polyline fill="none" stroke="black" points="0,-334.5 101,-334.5 "/>
-<text text-anchor="start" x="8" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FlowNode()</text>
+<polygon fill="none" stroke="black" points="0,-310 0,-400 101,-400 101,-310 0,-310"/>
+<text text-anchor="middle" x="50.5" y="-388" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::FlowNode</text>
+<polyline fill="none" stroke="black" points="0,-381 101,-381 "/>
+<text text-anchor="start" x="8" y="-369" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="start" x="8" y="-358" font-family="Helvetica,sans-Serif" font-size="10.00">+ name</text>
+<text text-anchor="start" x="8" y="-347" font-family="Helvetica,sans-Serif" font-size="10.00">+ incoming</text>
+<text text-anchor="start" x="8" y="-336" font-family="Helvetica,sans-Serif" font-size="10.00">+ outgoing</text>
+<polyline fill="none" stroke="black" points="0,-329 101,-329 "/>
+<text text-anchor="start" x="8" y="-317" font-family="Helvetica,sans-Serif" font-size="10.00">+ FlowNode()</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge">
 <title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M59.45,-305.32C62.44,-289.1 65.69,-271.4 68.41,-256.64"/>
-<polygon fill="none" stroke="midnightblue" points="56,-304.73 57.64,-315.2 62.89,-306 56,-304.73"/>
+<path fill="none" stroke="midnightblue" d="M60.45,-299.89C63.13,-285.32 65.95,-269.98 68.36,-256.91"/>
+<polygon fill="none" stroke="midnightblue" points="56.99,-299.35 58.63,-309.82 63.88,-300.62 56.99,-299.35"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
@@ -97,7 +98,7 @@
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge4" class="edge">
 <title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M67.91,-443.06C64.84,-427.7 61.3,-409.99 58.21,-394.57"/>
+<path fill="none" stroke="midnightblue" d="M67.96,-443.32C65.26,-429.79 62.18,-414.4 59.37,-400.36"/>
 <polygon fill="none" stroke="midnightblue" points="64.56,-444.14 69.95,-453.26 71.42,-442.77 64.56,-444.14"/>
 </g>
 <!-- Node6 -->

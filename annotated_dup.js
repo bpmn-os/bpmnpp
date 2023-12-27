@@ -31,6 +31,8 @@ var annotated_dup =
       [ "FlowNode", "classBPMN_1_1FlowNode.html", "classBPMN_1_1FlowNode" ],
       [ "Gateway", "classBPMN_1_1Gateway.html", "classBPMN_1_1Gateway" ],
       [ "InclusiveGateway", "classBPMN_1_1InclusiveGateway.html", "classBPMN_1_1InclusiveGateway" ],
+      [ "LinkSourceEvent", "classBPMN_1_1LinkSourceEvent.html", "classBPMN_1_1LinkSourceEvent" ],
+      [ "LinkTargetEvent", "classBPMN_1_1LinkTargetEvent.html", "classBPMN_1_1LinkTargetEvent" ],
       [ "ManualTask", "classBPMN_1_1ManualTask.html", "classBPMN_1_1ManualTask" ],
       [ "MessageBoundaryEvent", "classBPMN_1_1MessageBoundaryEvent.html", "classBPMN_1_1MessageBoundaryEvent" ],
       [ "MessageCatchEvent", "classBPMN_1_1MessageCatchEvent.html", "classBPMN_1_1MessageCatchEvent" ],

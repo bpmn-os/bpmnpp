@@ -44,6 +44,7 @@ var hierarchy =
               ] ],
               [ "BPMN::ErrorBoundaryEvent", "classBPMN_1_1ErrorBoundaryEvent.html", null ],
               [ "BPMN::EscalationBoundaryEvent", "classBPMN_1_1EscalationBoundaryEvent.html", null ],
+              [ "BPMN::LinkTargetEvent", "classBPMN_1_1LinkTargetEvent.html", null ],
               [ "BPMN::MessageCatchEvent", "classBPMN_1_1MessageCatchEvent.html", [
                 [ "BPMN::MessageBoundaryEvent", "classBPMN_1_1MessageBoundaryEvent.html", null ],
                 [ "BPMN::MessageStartEvent", "classBPMN_1_1MessageStartEvent.html", null ]
@@ -72,6 +73,7 @@ var hierarchy =
               [ "BPMN::CompensateThrowEvent", "classBPMN_1_1CompensateThrowEvent.html", null ],
               [ "BPMN::ErrorEndEvent", "classBPMN_1_1ErrorEndEvent.html", null ],
               [ "BPMN::EscalationThrowEvent", "classBPMN_1_1EscalationThrowEvent.html", null ],
+              [ "BPMN::LinkSourceEvent", "classBPMN_1_1LinkSourceEvent.html", null ],
               [ "BPMN::MessageThrowEvent", "classBPMN_1_1MessageThrowEvent.html", null ],
               [ "BPMN::SignalThrowEvent", "classBPMN_1_1SignalThrowEvent.html", null ],
               [ "BPMN::TerminateEvent", "classBPMN_1_1TerminateEvent.html", null ],

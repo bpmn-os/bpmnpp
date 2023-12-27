@@ -50,14 +50,15 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"Activity_8h_source.html",
-"classBPMN_1_1Model.html#a11c9dc51bcddb77e8171f497c499d4c8",
-"classXML_1_1bpmn_1_1cancelEventDefinition.html",
-"classXML_1_1bpmn_1_1subConversation.html#a278a58902ae6f633b43492becfd549e3",
-"classXML_1_1bpmn_1_1tDataObjectReference.html#a3471f2beb35445fc5d4860611dce5b3b",
-"classXML_1_1bpmn_1_1tIntermediateCatchEvent.html#a5fec1bd0f773801e7a7018c7dca606ac",
-"classXML_1_1bpmn_1_1tServiceTask.html",
-"tArtifact_8h_source.html"
+"Activity_8cpp_source.html",
+"classBPMN_1_1ErrorBoundaryEvent.html#adfe9144343e417b23df90ce180b23437",
+"classBPMN_1_1SignalCatchEvent.html#a2bf2a0e9b454c55aa5dcb5aa4698697b",
+"classXML_1_1bpmn_1_1globalUserTask.html#abdb4f311da681141b7b744d5aae14e93",
+"classXML_1_1bpmn_1_1tCollaboration.html#a51af260e16ed1847bf4a5eaeef33c95a",
+"classXML_1_1bpmn_1_1tExtensionElements.html#a7cd8a16a455c029c79cef8d536b3607c",
+"classXML_1_1bpmn_1_1tPartnerRole.html#a278a58902ae6f633b43492becfd549e3",
+"dataStoreReference_8cpp_source.html",
+"tConversationLink_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
