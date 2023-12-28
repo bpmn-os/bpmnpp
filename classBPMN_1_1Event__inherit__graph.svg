@@ -263,7 +263,7 @@
 <polyline fill="none" stroke="black" points="208,-165.5 338,-165.5 "/>
 <text text-anchor="start" x="216" y="-153.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
 <text text-anchor="start" x="216" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ linkName</text>
-<text text-anchor="start" x="216" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ source</text>
+<text text-anchor="start" x="216" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sources</text>
 <polyline fill="none" stroke="black" points="208,-124.5 338,-124.5 "/>
 <text text-anchor="start" x="216" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LinkTargetEvent()</text>
 </a>
