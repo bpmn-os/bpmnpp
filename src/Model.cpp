@@ -653,21 +653,18 @@ void Model::createLinks(Scope* scope) {
     }
   }
 
-  if ( linkSources.size() != linkTargets.size() ) {
-    throw std::runtime_error("Model: Number of sources and targets of link events does not match");
-  }
   for ( auto linkSource: linkSources ) {
     for ( auto linkTarget: linkTargets ) {
       if ( linkSource->name == linkTarget->name ) {
-        if ( linkSource->target || linkTarget->source ) {
-          throw std::runtime_error("Model: Link event has multiple matches");
+        if ( linkSource->target ) {
+          throw std::runtime_error("Model: Link event has multiple targets");
         }
         linkSource->target = linkTarget;
-        linkTarget->source = linkSource;
+        linkTarget->sources.push_back(linkSource);
       }
     }
     if ( !linkSource->target ) {
-      throw std::runtime_error("Model: Link events have no unique matching");
+      throw std::runtime_error("Model: Link event has no target");
     }
   }
 

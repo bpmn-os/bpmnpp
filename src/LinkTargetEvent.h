@@ -15,7 +15,7 @@ public:
   LinkTargetEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
   XML::bpmn::tCatchEvent* element;
   std::string linkName;
-  FlowNode* source; 
+  std::vector<FlowNode*> sources;
 protected:
 };
 
