@@ -13,7 +13,7 @@ class EventSubProcess;
 class SequenceFlow;
 
 /**
- * @brief Represents a node with a scope in a BPMN process.
+ * @brief Base class for BPMN elements that may contain a ChildNode elements.
  *
  * The `Scope` class provides functionalities to access child nodes,
  * event subprocesses, start nodes, and sequence flows associated 

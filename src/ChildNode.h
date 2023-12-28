@@ -11,7 +11,7 @@ namespace BPMN {
 class SequenceFlow;
 
 /**
- * @brief Represents a node in a BPMN process that has a parent.
+ * @brief Base class for BPMN elements within a Scope.
  */
 class ChildNode : virtual public Node {
   friend class Model;

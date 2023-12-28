@@ -11,7 +11,7 @@ namespace BPMN {
 class Activity;
 
 /**
- * @brief Represents a boundary event attached to an activity in a BPMN process.
+ * @brief Base class for all boundary events attached to an Activity.
  */
 class BoundaryEvent : virtual public CatchEvent {
   friend class Model;

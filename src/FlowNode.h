@@ -12,7 +12,7 @@ namespace BPMN {
 class SequenceFlow;
 
 /**
- * @brief Represents a flow node in a BPMN process.
+ * @brief Base class for BPMN elements that may contain incoming and outgoing SequenceFlow elements.
  *
  * The `FlowNode` class encapsulates the information and relationships associated with a node in a BPMN process.
  * The class provides  allows to access the parent scope as well as incoming and outgoing sequence flows.

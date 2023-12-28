@@ -10,8 +10,6 @@ class Scope;
 class FlowNode;
 
 /**
- * @brief Represents a sequence flow in a BPMN process.
- *
  * The `SequenceFlow` class encapsulates the information and relationships associated with a sequence flow
  * in a BPMN process. The class provides access to the underlying `tSequenceFlow` element and the source 
  * and target node.

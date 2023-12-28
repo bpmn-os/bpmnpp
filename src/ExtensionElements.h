@@ -8,7 +8,7 @@
 namespace BPMN {
 
 /**
- * @brief Represents a virtual class that can be overwritten to provide direct access to specific extension elements.
+ * @brief Base class for extension elements that may be provided for a BPMN element.
  */
 class ExtensionElements {
 public:

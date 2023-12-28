@@ -15,7 +15,7 @@ class Scope;
 
 class MessageFlow;
 /**
- * @brief Represents a node in a BPMN process.
+ * @brief Base class for all elements in a BPMN model.
  *
  * The `Node` class encapsulates the information and relationships associated with a node in a BPMN process.
  * It can represent both a BPMN process itself or a flow node within a process. The class allows to access

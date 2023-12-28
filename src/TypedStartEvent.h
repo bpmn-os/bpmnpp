@@ -10,7 +10,7 @@ namespace BPMN {
 class Activity;
 
 /**
- * @brief Represents a start event with an event definition.
+ * @brief Base class for all start events with an event definition.
  */
 class TypedStartEvent : virtual public CatchEvent {
   friend class Model;

@@ -12,15 +12,13 @@ class Scope;
 class FlowNode;
 
 /**
- * @brief Represents a message flow in a BPMN process.
- *
  * The `MessageFlow` class encapsulates the information and relationships associated with a message flow
  * in a BPMN process. The class provides access to the underlying `tMessageFlow` element and the source 
  * and target node.
  */
 class MessageFlow {
 public:
-  //// Constructs a `MessageFlow` object based on a `tMessageFlow` element.
+  /// Constructs a `MessageFlow` object based on a `tMessageFlow` element.
 	MessageFlow(XML::bpmn::tMessageFlow* messageFlow);
 
   virtual ~MessageFlow() = default;
