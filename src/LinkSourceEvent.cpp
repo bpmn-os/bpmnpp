@@ -10,9 +10,7 @@ LinkSourceEvent::LinkSourceEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* pare
   , linkName (element->getRequiredChild<XML::bpmn::tLinkEventDefinition>().name.value)
   , target(nullptr)
 {
-  // use node name as fallback
   if ( linkName.empty() && name.has_value() ) {
     linkName = name.value();
   }
 }
-

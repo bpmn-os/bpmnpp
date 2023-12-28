@@ -9,6 +9,9 @@
 
 namespace BPMN {
 
+/**
+ * @attention Multiple event definitions are not yet supported.
+ **/
 class Event : public FlowNode {
   friend class Model;
 public:

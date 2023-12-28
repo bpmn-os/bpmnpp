@@ -9,6 +9,10 @@
 
 namespace BPMN {
 
+/**
+ * @attention If no `linkName` is given, it is set to `name` attribute if this is given.
+ * The target is determined based on the `linkName`.
+ */
 class LinkSourceEvent : public ThrowEvent {
   friend class Model;
 public:
