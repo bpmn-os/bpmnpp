@@ -86,7 +86,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classXML_1_1XMLObject.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classXML_1_1XMLObject.html" target="_top" xlink:title="A class representing a node in an XML&#45;tree.">
 <polygon fill="none" stroke="black" points="10,-431.5 10,-741.5 136,-741.5 136,-431.5 10,-431.5"/>
 <text text-anchor="middle" x="73" y="-729.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::XMLObject</text>
 <polyline fill="none" stroke="black" points="10,-722.5 136,-722.5 "/>
