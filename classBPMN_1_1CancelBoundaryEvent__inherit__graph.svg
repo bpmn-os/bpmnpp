@@ -24,7 +24,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classBPMN_1_1BoundaryEvent.html" target="_top" xlink:title="Represents a boundary event attached to an activity in a BPMN process.">
+<g id="a_node2"><a xlink:href="classBPMN_1_1BoundaryEvent.html" target="_top" xlink:title="Base class for all boundary events attached to an Activity.">
 <polygon fill="none" stroke="black" points="62.5,-94.5 62.5,-173.5 188.5,-173.5 188.5,-94.5 62.5,-94.5"/>
 <text text-anchor="middle" x="125.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::BoundaryEvent</text>
 <polyline fill="none" stroke="black" points="62.5,-154.5 188.5,-154.5 "/>
@@ -89,7 +89,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classBPMN_1_1FlowNode.html" target="_top" xlink:title="Represents a flow node in a BPMN process.">
+<g id="a_node5"><a xlink:href="classBPMN_1_1FlowNode.html" target="_top" xlink:title="Base class for BPMN elements that may contain incoming and outgoing SequenceFlow elements.">
 <polygon fill="none" stroke="black" points="29,-398.5 29,-488.5 130,-488.5 130,-398.5 29,-398.5"/>
 <text text-anchor="middle" x="79.5" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::FlowNode</text>
 <polyline fill="none" stroke="black" points="29,-469.5 130,-469.5 "/>
@@ -111,7 +111,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classBPMN_1_1ChildNode.html" target="_top" xlink:title="Represents a node in a BPMN process that has a parent.">
+<g id="a_node6"><a xlink:href="classBPMN_1_1ChildNode.html" target="_top" xlink:title="Base class for BPMN elements within a Scope.">
 <polygon fill="none" stroke="black" points="28.5,-525.5 28.5,-582.5 130.5,-582.5 130.5,-525.5 28.5,-525.5"/>
 <text text-anchor="middle" x="79.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::ChildNode</text>
 <polyline fill="none" stroke="black" points="28.5,-563.5 130.5,-563.5 "/>
@@ -130,7 +130,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classBPMN_1_1Node.html" target="_top" xlink:title="Represents a node in a BPMN process.">
+<g id="a_node7"><a xlink:href="classBPMN_1_1Node.html" target="_top" xlink:title="Base class for all elements in a BPMN model.">
 <polygon fill="none" stroke="black" points="18.5,-619.5 18.5,-863.5 140.5,-863.5 140.5,-619.5 18.5,-619.5"/>
 <text text-anchor="middle" x="79.5" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::Node</text>
 <polyline fill="none" stroke="black" points="18.5,-844.5 140.5,-844.5 "/>

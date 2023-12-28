@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classBPMN_1_1ExtensionElements.html" target="_top" xlink:title="Represents a virtual class that can be overwritten to provide direct access to specific extension ele...">
+<g id="a_node1"><a xlink:href="classBPMN_1_1ExtensionElements.html" target="_top" xlink:title="Base class for extension elements that may be provided for a BPMN element.">
 <polygon fill="none" stroke="black" points="0,-0.5 0,-19.5 146,-19.5 146,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="73" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::ExtensionElements</text>
 </a>

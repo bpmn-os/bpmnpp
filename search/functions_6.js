@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['node_746',['Node',['../classBPMN_1_1Node.html#a526a91b865ed7188099ade8f7002895f',1,'BPMN::Node']]]
+  ['messageflow_746',['MessageFlow',['../classBPMN_1_1MessageFlow.html#a76d2b693b39602fe3d179efccb1d85d7',1,'BPMN::MessageFlow']]]
 ];
