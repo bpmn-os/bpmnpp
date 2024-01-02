@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('XMLObject_8cpp_source.html',''); initR
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">if</span> (!document) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    parser.reset(); <span class="comment">// delete unique_ptr to parser before calling Terminate</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    xercesc::XMLPlatformUtils::Terminate();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to parse XML&quot;</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to load and parse XML-file&quot;</span>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  xercesc::DOMElement* rootElement = document-&gt;getDocumentElement();</div>
