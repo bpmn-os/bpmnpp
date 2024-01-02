@@ -18,6 +18,7 @@ public:
   Activity(XML::bpmn::tActivity* activity, Scope* parent);
 
   std::vector< BoundaryEvent* > boundaryEvents;
+  Node* compensatedBy; ///< Pointer to compensation activity or compensation event sub-process
   XML::bpmn::tActivity* element;
 protected:
 };

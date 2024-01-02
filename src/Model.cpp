@@ -11,6 +11,7 @@
 #include "xml/bpmn/tTerminateEventDefinition.h"
 #include "xml/bpmn/tCollaboration.h"
 #include "xml/bpmn/tParticipant.h"
+#include "xml/bpmn/tAssociation.h"
 
 using namespace BPMN;
 
@@ -485,7 +486,7 @@ std::unique_ptr<MessageFlow> Model::createMessageFlow(XML::bpmn::tMessageFlow* m
 }
 
 void Model::createChildNodes(Scope* scope) {
-  // add child nodes (except boundary events and link events)
+  // add flow nodes (except boundary events)
   for (XML::bpmn::tFlowNode& flowNode : scope->element->getChildren<XML::bpmn::tFlowNode>() ) {
     if ( auto subProcess = flowNode.is<XML::bpmn::tSubProcess>();
          subProcess &&
@@ -529,14 +530,14 @@ void Model::createSequenceFlows(Scope* scope) {
 
 void Model::createNestedReferences(Scope* scope) {
   for ( auto flowNode: scope->flowNodes ) {
-    createReferences(flowNode);
+    createFlowReferences(flowNode);
   }
   for ( auto eventSubProcess: scope->eventSubProcesses ) {
     createNestedReferences(eventSubProcess);
   }
 }
 
-void Model::createReferences(FlowNode* flowNode) {
+void Model::createFlowReferences(FlowNode* flowNode) {
   if ( flowNode->parent ) {
     // link incoming sequence flows
     for ( auto& inflow : flowNode->element->incoming ) {
@@ -584,6 +585,105 @@ void Model::createReferences(FlowNode* flowNode) {
   if ( auto scope = flowNode->represents<Scope>(); scope ) {
     createNestedReferences(scope);
   }
+}
+
+void Model::createCompensations(Scope* scope) {
+  std::unordered_map< std::string, Activity*> compensationActivityMap;
+  std::unordered_map< std::string, Activity*> compensatedActivityMap;
+  std::unordered_map< std::string, CompensateBoundaryEvent*> compensateBoundaryEventMap;
+  std::vector<CompensateThrowEvent*> compensateThrowEvents;
+
+  for ( auto compensationActivity : scope->compensationActivities ) {
+    compensationActivityMap[compensationActivity->id] = compensationActivity;
+  }
+
+  for ( auto& childNode: scope->childNodes ) {
+    if ( auto compensateBoundaryEvent = childNode->represents<CompensateBoundaryEvent>(); compensateBoundaryEvent ) {
+      // add activity with compensate event attached to the boundary
+      auto activity = compensateBoundaryEvent->attachedTo->as<Activity>();
+      compensatedActivityMap[activity->id] = activity;
+      compensateBoundaryEventMap[compensateBoundaryEvent->id] = compensateBoundaryEvent;
+    }
+    else if ( auto subprocess = childNode->represents<SubProcess>();
+      // add subprocess with compensation event subprocess
+      subprocess &&
+      subprocess->compensationEventSubProcess
+    ) {
+      compensatedActivityMap[subprocess->id] = subprocess;
+    }
+    else if ( auto compensateThrowEvent = childNode->represents<CompensateThrowEvent>(); compensateThrowEvent ) {
+      compensateThrowEvents.push_back(compensateThrowEvent);
+    }
+  }
+
+  // determine compensation activity for each activity with a compensate event attached to the boundary
+  for (XML::bpmn::tAssociation& association: scope->element->getChildren<XML::bpmn::tAssociation>() ) {
+    auto it1 = compensateBoundaryEventMap.find(association.sourceRef.value);
+    auto it2 = compensationActivityMap.find(association.targetRef.value);
+    if ( it1 != compensateBoundaryEventMap.end() && it2 != compensationActivityMap.end() ) {
+      it1->second->attachedTo->compensatedBy = it2->second;
+    }
+  }
+
+  // determine activity to be compensated for compensate throw event
+  for ( auto compensateThrowEvent : compensateThrowEvents ) {
+    auto& eventDefinition = compensateThrowEvent->element->getChildren<XML::bpmn::tCompensateEventDefinition>()[0].get();
+
+    std::string activityRef;
+
+		// try to get activityRef from event definition
+    if ( eventDefinition.activityRef.has_value() ) {
+      activityRef = eventDefinition.activityRef.value().get().value.value;
+    }
+
+    if ( activityRef.empty() && compensateThrowEvent->name.has_value() ) {
+      // use node name as fallback
+      activityRef = compensateThrowEvent->name.value();
+    }
+
+    if ( !activityRef.empty() ) {
+      auto it = compensatedActivityMap.find(activityRef);
+      if ( it == compensatedActivityMap.end() ) {
+        throw std::runtime_error("Model: Cannot find activity to be compensated");
+      }
+      compensateThrowEvent->activity = it->second;
+    }
+  }
+}
+
+void Model::createLinks(Scope* scope) {
+  std::vector<LinkSourceEvent*> linkSources;
+  std::vector<LinkTargetEvent*> linkTargets;
+
+  for ( auto& childNode: scope->childNodes ) {
+    if ( auto linkSource = childNode->represents<LinkSourceEvent>(); linkSource ) {
+      linkSources.push_back(linkSource);
+    }
+    if ( auto linkTarget = childNode->represents<LinkTargetEvent>(); linkTarget ) {
+      linkTargets.push_back(linkTarget);
+    }
+
+    // recurse
+    if ( auto childScope = childNode->represents<Scope>(); childScope ) {
+      createLinks(childScope);
+    }
+  }
+
+  for ( auto linkSource: linkSources ) {
+    for ( auto linkTarget: linkTargets ) {
+      if ( linkSource->name == linkTarget->name ) {
+        if ( linkSource->target ) {
+          throw std::runtime_error("Model: Link event has multiple targets");
+        }
+        linkSource->target = linkTarget;
+        linkTarget->sources.push_back(linkSource);
+      }
+    }
+    if ( !linkSource->target ) {
+      throw std::runtime_error("Model: Link event has no target");
+    }
+  }
+
 }
 
 void Model::createMessageFlows() {
@@ -635,37 +735,4 @@ void Model::createMessageFlows() {
 
 }
 
-void Model::createLinks(Scope* scope) {
-  std::vector<LinkSourceEvent*> linkSources;
-  std::vector<LinkTargetEvent*> linkTargets;
 
-  for ( auto& childNode: scope->childNodes ) {
-    if ( auto linkSource = childNode->represents<LinkSourceEvent>(); linkSource ) {
-      linkSources.push_back(linkSource);
-    }
-    if ( auto linkTarget = childNode->represents<LinkTargetEvent>(); linkTarget ) {
-      linkTargets.push_back(linkTarget);
-    }
-
-    // recurse
-    if ( auto childScope = childNode->represents<Scope>(); childScope ) {
-      createLinks(childScope);
-    }
-  }
-
-  for ( auto linkSource: linkSources ) {
-    for ( auto linkTarget: linkTargets ) {
-      if ( linkSource->name == linkTarget->name ) {
-        if ( linkSource->target ) {
-          throw std::runtime_error("Model: Link event has multiple targets");
-        }
-        linkSource->target = linkTarget;
-        linkTarget->sources.push_back(linkSource);
-      }
-    }
-    if ( !linkSource->target ) {
-      throw std::runtime_error("Model: Link event has no target");
-    }
-  }
-
-}

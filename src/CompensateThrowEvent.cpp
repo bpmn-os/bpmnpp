@@ -5,6 +5,7 @@ using namespace BPMN;
 CompensateThrowEvent::CompensateThrowEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent)
   : Node(throwEvent)
   , ThrowEvent(throwEvent,parent)
+  , activity(nullptr)
   , element(throwEvent)
 {
 }

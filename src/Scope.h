@@ -9,6 +9,7 @@
 namespace BPMN {
 
 class FlowNode;
+class Activity;
 class EventSubProcess;
 class SequenceFlow;
 
@@ -38,6 +39,12 @@ public:
 
   /// Vector containing all sequence flows within the scope.
   std::vector< std::unique_ptr<SequenceFlow> > sequenceFlows;
+
+  /// Vector containing pointers to all compensation activities within the scope.
+  std::vector< Activity* > compensationActivities;
+
+  /// Pointer to compensation  event subprocess of the scope.
+  EventSubProcess* compensationEventSubProcess;
 
 protected:
   void add(std::unique_ptr<Node> node);

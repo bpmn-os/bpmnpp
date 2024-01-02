@@ -162,9 +162,10 @@ protected:
   virtual void createChildNodes(Scope* scope);
   virtual void createSequenceFlows(Scope* scope);
   virtual void createNestedReferences(Scope* scope);
-  virtual void createReferences(FlowNode* flowNode);
-  virtual void createMessageFlows();
+  virtual void createFlowReferences(FlowNode* flowNode);
+  virtual void createCompensations(Scope* scope);
   virtual void createLinks(Scope* scope);
+  virtual void createMessageFlows();
 
   /// Binds the extension element to the given node
   template< typename T>
