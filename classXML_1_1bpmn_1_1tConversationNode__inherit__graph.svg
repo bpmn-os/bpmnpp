@@ -84,10 +84,10 @@
 <path fill="none" stroke="midnightblue" d="M392.51,-201.8C402,-188.15 411.69,-174.23 419.75,-162.66"/>
 <polygon fill="none" stroke="midnightblue" points="389.47,-200.03 386.63,-210.24 395.22,-204.03 389.47,-200.03"/>
 </g>
-<!-- Node9 -->
-<g id="node9" class="node">
-<title>Node9</title>
-<g id="a_node9"><a xlink:href="classXML_1_1bpmn_1_1tSubConversation.html" target="_top" xlink:title=" ">
+<!-- Node8 -->
+<g id="node8" class="node">
+<title>Node8</title>
+<g id="a_node8"><a xlink:href="classXML_1_1bpmn_1_1tSubConversation.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="530,-100 530,-168 694,-168 694,-100 530,-100"/>
 <text text-anchor="middle" x="612" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tSubConversation</text>
 <polyline fill="none" stroke="black" points="530,-149 694,-149 "/>
@@ -98,9 +98,9 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node9 -->
-<g id="edge8" class="edge">
-<title>Node1&#45;&gt;Node9</title>
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge7" class="edge">
+<title>Node1&#45;&gt;Node8</title>
 <path fill="none" stroke="midnightblue" d="M447.17,-214.25C478.94,-198.97 513.71,-182.26 543.09,-168.13"/>
 <polygon fill="none" stroke="midnightblue" points="445.35,-211.24 437.85,-218.72 448.38,-217.55 445.35,-211.24"/>
 </g>
@@ -187,29 +187,10 @@
 <path fill="none" stroke="midnightblue" d="M266,-84.16C266,-75.04 266,-65.81 266,-57.61"/>
 <polygon fill="none" stroke="midnightblue" points="262.5,-84.35 266,-94.35 269.5,-84.35 262.5,-84.35"/>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node">
-<title>Node8</title>
-<g id="a_node8"><a xlink:href="classXML_1_1bpmn_1_1conversation.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="369,-0.5 369,-57.5 509,-57.5 509,-0.5 369,-0.5"/>
-<text text-anchor="middle" x="439" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::conversation</text>
-<polyline fill="none" stroke="black" points="369,-38.5 509,-38.5 "/>
-<text text-anchor="start" x="377" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
-<polyline fill="none" stroke="black" points="369,-19.5 509,-19.5 "/>
-<text text-anchor="start" x="377" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># conversation()</text>
-</a>
-</g>
-</g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge7" class="edge">
-<title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M439,-95.29C439,-82.84 439,-69.23 439,-57.68"/>
-<polygon fill="none" stroke="midnightblue" points="435.5,-95.4 439,-105.4 442.5,-95.4 435.5,-95.4"/>
-</g>
-<!-- Node10 -->
-<g id="node10" class="node">
-<title>Node10</title>
-<g id="a_node10"><a xlink:href="classXML_1_1bpmn_1_1subConversation.html" target="_top" xlink:title=" ">
+<!-- Node9 -->
+<g id="node9" class="node">
+<title>Node9</title>
+<g id="a_node9"><a xlink:href="classXML_1_1bpmn_1_1subConversation.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="532.5,-0.5 532.5,-57.5 691.5,-57.5 691.5,-0.5 532.5,-0.5"/>
 <text text-anchor="middle" x="612" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::subConversation</text>
 <polyline fill="none" stroke="black" points="532.5,-38.5 691.5,-38.5 "/>
@@ -219,9 +200,9 @@
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node10 -->
-<g id="edge9" class="edge">
-<title>Node9&#45;&gt;Node10</title>
+<!-- Node8&#45;&gt;Node9 -->
+<g id="edge8" class="edge">
+<title>Node8&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M612,-89.65C612,-78.79 612,-67.43 612,-57.58"/>
 <polygon fill="none" stroke="midnightblue" points="608.5,-89.84 612,-99.84 615.5,-89.84 608.5,-89.84"/>
 </g>

@@ -1,28 +1,8 @@
 var dir_c3bd96c94368a872efdf37d4fe45f81a =
 [
-    [ "activity.cpp", "activity_8cpp.html", null ],
-    [ "activity.h", "activity_8h.html", [
-      [ "activity", "classXML_1_1bpmn_1_1activity.html", "classXML_1_1bpmn_1_1activity" ]
-    ] ],
     [ "adHocSubProcess.cpp", "adHocSubProcess_8cpp.html", null ],
     [ "adHocSubProcess.h", "adHocSubProcess_8h.html", [
       [ "adHocSubProcess", "classXML_1_1bpmn_1_1adHocSubProcess.html", "classXML_1_1bpmn_1_1adHocSubProcess" ]
-    ] ],
-    [ "artifact.cpp", "artifact_8cpp.html", null ],
-    [ "artifact.h", "artifact_8h.html", [
-      [ "artifact", "classXML_1_1bpmn_1_1artifact.html", "classXML_1_1bpmn_1_1artifact" ]
-    ] ],
-    [ "assignment.cpp", "assignment_8cpp.html", null ],
-    [ "assignment.h", "assignment_8h.html", [
-      [ "assignment", "classXML_1_1bpmn_1_1assignment.html", "classXML_1_1bpmn_1_1assignment" ]
-    ] ],
-    [ "association.cpp", "association_8cpp.html", null ],
-    [ "association.h", "association_8h.html", [
-      [ "association", "classXML_1_1bpmn_1_1association.html", "classXML_1_1bpmn_1_1association" ]
-    ] ],
-    [ "auditing.cpp", "auditing_8cpp.html", null ],
-    [ "auditing.h", "auditing_8h.html", [
-      [ "auditing", "classXML_1_1bpmn_1_1auditing.html", "classXML_1_1bpmn_1_1auditing" ]
     ] ],
     [ "baseElement.cpp", "baseElement_8cpp.html", null ],
     [ "baseElement.h", "baseElement_8h.html", [
@@ -37,33 +17,12 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
       [ "boundaryEvent", "classXML_1_1bpmn_1_1boundaryEvent.html", "classXML_1_1bpmn_1_1boundaryEvent" ]
     ] ],
     [ "Bounds.cpp", "Bounds_8cpp.html", null ],
-    [ "Bounds.h", "Bounds_8h.html", [
-      [ "Bounds", "classXML_1_1bpmn_1_1Bounds.html", "classXML_1_1bpmn_1_1Bounds" ]
-    ] ],
     [ "BPMNDiagram.cpp", "BPMNDiagram_8cpp.html", null ],
-    [ "BPMNDiagram.h", "BPMNDiagram_8h.html", [
-      [ "BPMNDiagram", "classXML_1_1bpmn_1_1BPMNDiagram.html", "classXML_1_1bpmn_1_1BPMNDiagram" ]
-    ] ],
     [ "BPMNEdge.cpp", "BPMNEdge_8cpp.html", null ],
-    [ "BPMNEdge.h", "BPMNEdge_8h.html", [
-      [ "BPMNEdge", "classXML_1_1bpmn_1_1BPMNEdge.html", "classXML_1_1bpmn_1_1BPMNEdge" ]
-    ] ],
     [ "BPMNLabel.cpp", "BPMNLabel_8cpp.html", null ],
-    [ "BPMNLabel.h", "BPMNLabel_8h.html", [
-      [ "BPMNLabel", "classXML_1_1bpmn_1_1BPMNLabel.html", "classXML_1_1bpmn_1_1BPMNLabel" ]
-    ] ],
     [ "BPMNLabelStyle.cpp", "BPMNLabelStyle_8cpp.html", null ],
-    [ "BPMNLabelStyle.h", "BPMNLabelStyle_8h.html", [
-      [ "BPMNLabelStyle", "classXML_1_1bpmn_1_1BPMNLabelStyle.html", "classXML_1_1bpmn_1_1BPMNLabelStyle" ]
-    ] ],
     [ "BPMNPlane.cpp", "BPMNPlane_8cpp.html", null ],
-    [ "BPMNPlane.h", "BPMNPlane_8h.html", [
-      [ "BPMNPlane", "classXML_1_1bpmn_1_1BPMNPlane.html", "classXML_1_1bpmn_1_1BPMNPlane" ]
-    ] ],
     [ "BPMNShape.cpp", "BPMNShape_8cpp.html", null ],
-    [ "BPMNShape.h", "BPMNShape_8h.html", [
-      [ "BPMNShape", "classXML_1_1bpmn_1_1BPMNShape.html", "classXML_1_1bpmn_1_1BPMNShape" ]
-    ] ],
     [ "businessRuleTask.cpp", "businessRuleTask_8cpp.html", null ],
     [ "businessRuleTask.h", "businessRuleTask_8h.html", [
       [ "businessRuleTask", "classXML_1_1bpmn_1_1businessRuleTask.html", "classXML_1_1bpmn_1_1businessRuleTask" ]
@@ -92,17 +51,9 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "catchEvent.h", "catchEvent_8h.html", [
       [ "catchEvent", "classXML_1_1bpmn_1_1catchEvent.html", "classXML_1_1bpmn_1_1catchEvent" ]
     ] ],
-    [ "category.cpp", "category_8cpp.html", null ],
-    [ "category.h", "category_8h.html", [
-      [ "category", "classXML_1_1bpmn_1_1category.html", "classXML_1_1bpmn_1_1category" ]
-    ] ],
     [ "categoryValue.cpp", "categoryValue_8cpp.html", null ],
     [ "categoryValue.h", "categoryValue_8h.html", [
       [ "categoryValue", "classXML_1_1bpmn_1_1categoryValue.html", "classXML_1_1bpmn_1_1categoryValue" ]
-    ] ],
-    [ "choreography.cpp", "choreography_8cpp.html", null ],
-    [ "choreography.h", "choreography_8h.html", [
-      [ "choreography", "classXML_1_1bpmn_1_1choreography.html", "classXML_1_1bpmn_1_1choreography" ]
     ] ],
     [ "choreographyActivity.cpp", "choreographyActivity_8cpp.html", null ],
     [ "choreographyActivity.h", "choreographyActivity_8h.html", [
@@ -111,10 +62,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "choreographyTask.cpp", "choreographyTask_8cpp.html", null ],
     [ "choreographyTask.h", "choreographyTask_8h.html", [
       [ "choreographyTask", "classXML_1_1bpmn_1_1choreographyTask.html", "classXML_1_1bpmn_1_1choreographyTask" ]
-    ] ],
-    [ "collaboration.cpp", "collaboration_8cpp.html", null ],
-    [ "collaboration.h", "collaboration_8h.html", [
-      [ "collaboration", "classXML_1_1bpmn_1_1collaboration.html", "classXML_1_1bpmn_1_1collaboration" ]
     ] ],
     [ "compensateEventDefinition.cpp", "compensateEventDefinition_8cpp.html", null ],
     [ "compensateEventDefinition.h", "compensateEventDefinition_8h.html", [
@@ -131,10 +78,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "conditionalEventDefinition.cpp", "conditionalEventDefinition_8cpp.html", null ],
     [ "conditionalEventDefinition.h", "conditionalEventDefinition_8h.html", [
       [ "conditionalEventDefinition", "classXML_1_1bpmn_1_1conditionalEventDefinition.html", "classXML_1_1bpmn_1_1conditionalEventDefinition" ]
-    ] ],
-    [ "conversation.cpp", "conversation_8cpp.html", null ],
-    [ "conversation.h", "conversation_8h.html", [
-      [ "conversation", "classXML_1_1bpmn_1_1conversation.html", "classXML_1_1bpmn_1_1conversation" ]
     ] ],
     [ "conversationAssociation.cpp", "conversationAssociation_8cpp.html", null ],
     [ "conversationAssociation.h", "conversationAssociation_8h.html", [
@@ -208,30 +151,10 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "dataStoreReference.h", "dataStoreReference_8h.html", [
       [ "dataStoreReference", "classXML_1_1bpmn_1_1dataStoreReference.html", "classXML_1_1bpmn_1_1dataStoreReference" ]
     ] ],
-    [ "definitions.cpp", "definitions_8cpp.html", null ],
-    [ "definitions.h", "definitions_8h.html", [
-      [ "definitions", "classXML_1_1bpmn_1_1definitions.html", "classXML_1_1bpmn_1_1definitions" ]
-    ] ],
     [ "Diagram.cpp", "Diagram_8cpp.html", null ],
-    [ "Diagram.h", "Diagram_8h.html", [
-      [ "Diagram", "classXML_1_1bpmn_1_1Diagram.html", "classXML_1_1bpmn_1_1Diagram" ]
-    ] ],
     [ "DiagramElement.cpp", "DiagramElement_8cpp.html", null ],
-    [ "DiagramElement.h", "DiagramElement_8h.html", [
-      [ "DiagramElement", "classXML_1_1bpmn_1_1DiagramElement.html", "classXML_1_1bpmn_1_1DiagramElement" ]
-    ] ],
     [ "DiagramElement_extension.cpp", "DiagramElement__extension_8cpp.html", null ],
-    [ "DiagramElement_extension.h", "DiagramElement__extension_8h.html", [
-      [ "DiagramElement_extension", "classXML_1_1bpmn_1_1DiagramElement__extension.html", "classXML_1_1bpmn_1_1DiagramElement__extension" ]
-    ] ],
-    [ "documentation.cpp", "documentation_8cpp.html", null ],
-    [ "documentation.h", "documentation_8h.html", [
-      [ "documentation", "classXML_1_1bpmn_1_1documentation.html", "classXML_1_1bpmn_1_1documentation" ]
-    ] ],
     [ "Edge.cpp", "Edge_8cpp.html", null ],
-    [ "Edge.h", "Edge_8h.html", [
-      [ "Edge", "classXML_1_1bpmn_1_1Edge.html", "classXML_1_1bpmn_1_1Edge" ]
-    ] ],
     [ "endEvent.cpp", "endEvent_8cpp.html", null ],
     [ "endEvent.h", "endEvent_8h.html", [
       [ "endEvent", "classXML_1_1bpmn_1_1endEvent.html", "classXML_1_1bpmn_1_1endEvent" ]
@@ -240,25 +163,13 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "endPoint.h", "endPoint_8h.html", [
       [ "endPoint", "classXML_1_1bpmn_1_1endPoint.html", "classXML_1_1bpmn_1_1endPoint" ]
     ] ],
-    [ "error.cpp", "error_8cpp.html", null ],
-    [ "error.h", "error_8h.html", [
-      [ "error", "classXML_1_1bpmn_1_1error.html", "classXML_1_1bpmn_1_1error" ]
-    ] ],
     [ "errorEventDefinition.cpp", "errorEventDefinition_8cpp.html", null ],
     [ "errorEventDefinition.h", "errorEventDefinition_8h.html", [
       [ "errorEventDefinition", "classXML_1_1bpmn_1_1errorEventDefinition.html", "classXML_1_1bpmn_1_1errorEventDefinition" ]
     ] ],
-    [ "escalation.cpp", "escalation_8cpp.html", null ],
-    [ "escalation.h", "escalation_8h.html", [
-      [ "escalation", "classXML_1_1bpmn_1_1escalation.html", "classXML_1_1bpmn_1_1escalation" ]
-    ] ],
     [ "escalationEventDefinition.cpp", "escalationEventDefinition_8cpp.html", null ],
     [ "escalationEventDefinition.h", "escalationEventDefinition_8h.html", [
       [ "escalationEventDefinition", "classXML_1_1bpmn_1_1escalationEventDefinition.html", "classXML_1_1bpmn_1_1escalationEventDefinition" ]
-    ] ],
-    [ "event.cpp", "event_8cpp.html", null ],
-    [ "event.h", "event_8h.html", [
-      [ "event", "classXML_1_1bpmn_1_1event.html", "classXML_1_1bpmn_1_1event" ]
     ] ],
     [ "eventBasedGateway.cpp", "eventBasedGateway_8cpp.html", null ],
     [ "eventBasedGateway.h", "eventBasedGateway_8h.html", [
@@ -271,14 +182,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "exclusiveGateway.cpp", "exclusiveGateway_8cpp.html", null ],
     [ "exclusiveGateway.h", "exclusiveGateway_8h.html", [
       [ "exclusiveGateway", "classXML_1_1bpmn_1_1exclusiveGateway.html", "classXML_1_1bpmn_1_1exclusiveGateway" ]
-    ] ],
-    [ "expression.cpp", "expression_8cpp.html", null ],
-    [ "expression.h", "expression_8h.html", [
-      [ "expression", "classXML_1_1bpmn_1_1expression.html", "classXML_1_1bpmn_1_1expression" ]
-    ] ],
-    [ "extension.cpp", "extension_8cpp.html", null ],
-    [ "extension.h", "extension_8h.html", [
-      [ "extension", "classXML_1_1bpmn_1_1extension.html", "classXML_1_1bpmn_1_1extension" ]
     ] ],
     [ "extensionElements.cpp", "extensionElements_8cpp.html", null ],
     [ "extensionElements.h", "extensionElements_8h.html", [
@@ -293,16 +196,9 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
       [ "flowNode", "classXML_1_1bpmn_1_1flowNode.html", "classXML_1_1bpmn_1_1flowNode" ]
     ] ],
     [ "Font.cpp", "Font_8cpp.html", null ],
-    [ "Font.h", "Font_8h.html", [
-      [ "Font", "classXML_1_1bpmn_1_1Font.html", "classXML_1_1bpmn_1_1Font" ]
-    ] ],
     [ "formalExpression.cpp", "formalExpression_8cpp.html", null ],
     [ "formalExpression.h", "formalExpression_8h.html", [
       [ "formalExpression", "classXML_1_1bpmn_1_1formalExpression.html", "classXML_1_1bpmn_1_1formalExpression" ]
-    ] ],
-    [ "gateway.cpp", "gateway_8cpp.html", null ],
-    [ "gateway.h", "gateway_8h.html", [
-      [ "gateway", "classXML_1_1bpmn_1_1gateway.html", "classXML_1_1bpmn_1_1gateway" ]
     ] ],
     [ "globalBusinessRuleTask.cpp", "globalBusinessRuleTask_8cpp.html", null ],
     [ "globalBusinessRuleTask.h", "globalBusinessRuleTask_8h.html", [
@@ -332,10 +228,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "globalUserTask.h", "globalUserTask_8h.html", [
       [ "globalUserTask", "classXML_1_1bpmn_1_1globalUserTask.html", "classXML_1_1bpmn_1_1globalUserTask" ]
     ] ],
-    [ "group.cpp", "group_8cpp.html", null ],
-    [ "group.h", "group_8h.html", [
-      [ "group", "classXML_1_1bpmn_1_1group.html", "classXML_1_1bpmn_1_1group" ]
-    ] ],
     [ "humanPerformer.cpp", "humanPerformer_8cpp.html", null ],
     [ "humanPerformer.h", "humanPerformer_8h.html", [
       [ "humanPerformer", "classXML_1_1bpmn_1_1humanPerformer.html", "classXML_1_1bpmn_1_1humanPerformer" ]
@@ -344,10 +236,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "implicitThrowEvent.h", "implicitThrowEvent_8h.html", [
       [ "implicitThrowEvent", "classXML_1_1bpmn_1_1implicitThrowEvent.html", "classXML_1_1bpmn_1_1implicitThrowEvent" ]
     ] ],
-    [ "import.cpp", "import_8cpp.html", null ],
-    [ "import.h", "import_8h.html", [
-      [ "import", "classXML_1_1bpmn_1_1import.html", "classXML_1_1bpmn_1_1import" ]
-    ] ],
     [ "inclusiveGateway.cpp", "inclusiveGateway_8cpp.html", null ],
     [ "inclusiveGateway.h", "inclusiveGateway_8h.html", [
       [ "inclusiveGateway", "classXML_1_1bpmn_1_1inclusiveGateway.html", "classXML_1_1bpmn_1_1inclusiveGateway" ]
@@ -355,10 +243,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "inputSet.cpp", "inputSet_8cpp.html", null ],
     [ "inputSet.h", "inputSet_8h.html", [
       [ "inputSet", "classXML_1_1bpmn_1_1inputSet.html", "classXML_1_1bpmn_1_1inputSet" ]
-    ] ],
-    [ "interface.cpp", "interface_8cpp.html", null ],
-    [ "interface.h", "interface_8h.html", [
-      [ "interface", "classXML_1_1bpmn_1_1interface.html", "classXML_1_1bpmn_1_1interface" ]
     ] ],
     [ "intermediateCatchEvent.cpp", "intermediateCatchEvent_8cpp.html", null ],
     [ "intermediateCatchEvent.h", "intermediateCatchEvent_8h.html", [
@@ -381,21 +265,8 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
       [ "itemDefinition", "classXML_1_1bpmn_1_1itemDefinition.html", "classXML_1_1bpmn_1_1itemDefinition" ]
     ] ],
     [ "Label.cpp", "Label_8cpp.html", null ],
-    [ "Label.h", "Label_8h.html", [
-      [ "Label", "classXML_1_1bpmn_1_1Label.html", "classXML_1_1bpmn_1_1Label" ]
-    ] ],
     [ "LabeledEdge.cpp", "LabeledEdge_8cpp.html", null ],
-    [ "LabeledEdge.h", "LabeledEdge_8h.html", [
-      [ "LabeledEdge", "classXML_1_1bpmn_1_1LabeledEdge.html", "classXML_1_1bpmn_1_1LabeledEdge" ]
-    ] ],
     [ "LabeledShape.cpp", "LabeledShape_8cpp.html", null ],
-    [ "LabeledShape.h", "LabeledShape_8h.html", [
-      [ "LabeledShape", "classXML_1_1bpmn_1_1LabeledShape.html", "classXML_1_1bpmn_1_1LabeledShape" ]
-    ] ],
-    [ "lane.cpp", "lane_8cpp.html", null ],
-    [ "lane.h", "lane_8h.html", [
-      [ "lane", "classXML_1_1bpmn_1_1lane.html", "classXML_1_1bpmn_1_1lane" ]
-    ] ],
     [ "laneSet.cpp", "laneSet_8cpp.html", null ],
     [ "laneSet.h", "laneSet_8h.html", [
       [ "laneSet", "classXML_1_1bpmn_1_1laneSet.html", "classXML_1_1bpmn_1_1laneSet" ]
@@ -412,10 +283,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "manualTask.h", "manualTask_8h.html", [
       [ "manualTask", "classXML_1_1bpmn_1_1manualTask.html", "classXML_1_1bpmn_1_1manualTask" ]
     ] ],
-    [ "message.cpp", "message_8cpp.html", null ],
-    [ "message.h", "message_8h.html", [
-      [ "message", "classXML_1_1bpmn_1_1message.html", "classXML_1_1bpmn_1_1message" ]
-    ] ],
     [ "messageEventDefinition.cpp", "messageEventDefinition_8cpp.html", null ],
     [ "messageEventDefinition.h", "messageEventDefinition_8h.html", [
       [ "messageEventDefinition", "classXML_1_1bpmn_1_1messageEventDefinition.html", "classXML_1_1bpmn_1_1messageEventDefinition" ]
@@ -429,22 +296,11 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
       [ "messageFlowAssociation", "classXML_1_1bpmn_1_1messageFlowAssociation.html", "classXML_1_1bpmn_1_1messageFlowAssociation" ]
     ] ],
     [ "MessageVisibleKind.h", "MessageVisibleKind_8h.html", "MessageVisibleKind_8h" ],
-    [ "monitoring.cpp", "monitoring_8cpp.html", null ],
-    [ "monitoring.h", "monitoring_8h.html", [
-      [ "monitoring", "classXML_1_1bpmn_1_1monitoring.html", "classXML_1_1bpmn_1_1monitoring" ]
-    ] ],
     [ "multiInstanceLoopCharacteristics.cpp", "multiInstanceLoopCharacteristics_8cpp.html", null ],
     [ "multiInstanceLoopCharacteristics.h", "multiInstanceLoopCharacteristics_8h.html", [
       [ "multiInstanceLoopCharacteristics", "classXML_1_1bpmn_1_1multiInstanceLoopCharacteristics.html", "classXML_1_1bpmn_1_1multiInstanceLoopCharacteristics" ]
     ] ],
     [ "Node.cpp", "xml_2bpmn_2Node_8cpp.html", null ],
-    [ "Node.h", "xml_2bpmn_2Node_8h.html", [
-      [ "Node", "classXML_1_1bpmn_1_1Node.html", "classXML_1_1bpmn_1_1Node" ]
-    ] ],
-    [ "operation.cpp", "operation_8cpp.html", null ],
-    [ "operation.h", "operation_8h.html", [
-      [ "operation", "classXML_1_1bpmn_1_1operation.html", "classXML_1_1bpmn_1_1operation" ]
-    ] ],
     [ "outputSet.cpp", "outputSet_8cpp.html", null ],
     [ "outputSet.h", "outputSet_8h.html", [
       [ "outputSet", "classXML_1_1bpmn_1_1outputSet.html", "classXML_1_1bpmn_1_1outputSet" ]
@@ -452,10 +308,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "parallelGateway.cpp", "parallelGateway_8cpp.html", null ],
     [ "parallelGateway.h", "parallelGateway_8h.html", [
       [ "parallelGateway", "classXML_1_1bpmn_1_1parallelGateway.html", "classXML_1_1bpmn_1_1parallelGateway" ]
-    ] ],
-    [ "participant.cpp", "participant_8cpp.html", null ],
-    [ "participant.h", "participant_8h.html", [
-      [ "participant", "classXML_1_1bpmn_1_1participant.html", "classXML_1_1bpmn_1_1participant" ]
     ] ],
     [ "participantAssociation.cpp", "participantAssociation_8cpp.html", null ],
     [ "participantAssociation.h", "participantAssociation_8h.html", [
@@ -474,45 +326,15 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "partnerRole.h", "partnerRole_8h.html", [
       [ "partnerRole", "classXML_1_1bpmn_1_1partnerRole.html", "classXML_1_1bpmn_1_1partnerRole" ]
     ] ],
-    [ "performer.cpp", "performer_8cpp.html", null ],
-    [ "performer.h", "performer_8h.html", [
-      [ "performer", "classXML_1_1bpmn_1_1performer.html", "classXML_1_1bpmn_1_1performer" ]
-    ] ],
     [ "Plane.cpp", "Plane_8cpp.html", null ],
-    [ "Plane.h", "Plane_8h.html", [
-      [ "Plane", "classXML_1_1bpmn_1_1Plane.html", "classXML_1_1bpmn_1_1Plane" ]
-    ] ],
     [ "Point.cpp", "Point_8cpp.html", null ],
-    [ "Point.h", "Point_8h.html", [
-      [ "Point", "classXML_1_1bpmn_1_1Point.html", "classXML_1_1bpmn_1_1Point" ]
-    ] ],
     [ "potentialOwner.cpp", "potentialOwner_8cpp.html", null ],
     [ "potentialOwner.h", "potentialOwner_8h.html", [
       [ "potentialOwner", "classXML_1_1bpmn_1_1potentialOwner.html", "classXML_1_1bpmn_1_1potentialOwner" ]
     ] ],
-    [ "process.cpp", "process_8cpp.html", null ],
-    [ "process.h", "process_8h.html", [
-      [ "process", "classXML_1_1bpmn_1_1process.html", "classXML_1_1bpmn_1_1process" ]
-    ] ],
-    [ "property.cpp", "property_8cpp.html", null ],
-    [ "property.h", "property_8h.html", [
-      [ "property", "classXML_1_1bpmn_1_1property.html", "classXML_1_1bpmn_1_1property" ]
-    ] ],
     [ "receiveTask.cpp", "receiveTask_8cpp.html", null ],
     [ "receiveTask.h", "receiveTask_8h.html", [
       [ "receiveTask", "classXML_1_1bpmn_1_1receiveTask.html", "classXML_1_1bpmn_1_1receiveTask" ]
-    ] ],
-    [ "relationship.cpp", "relationship_8cpp.html", null ],
-    [ "relationship.h", "relationship_8h.html", [
-      [ "relationship", "classXML_1_1bpmn_1_1relationship.html", "classXML_1_1bpmn_1_1relationship" ]
-    ] ],
-    [ "rendering.cpp", "rendering_8cpp.html", null ],
-    [ "rendering.h", "rendering_8h.html", [
-      [ "rendering", "classXML_1_1bpmn_1_1rendering.html", "classXML_1_1bpmn_1_1rendering" ]
-    ] ],
-    [ "resource.cpp", "resource_8cpp.html", null ],
-    [ "resource.h", "resource_8h.html", [
-      [ "resource", "classXML_1_1bpmn_1_1resource.html", "classXML_1_1bpmn_1_1resource" ]
     ] ],
     [ "resourceAssignmentExpression.cpp", "resourceAssignmentExpression_8cpp.html", null ],
     [ "resourceAssignmentExpression.h", "resourceAssignmentExpression_8h.html", [
@@ -534,10 +356,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "rootElement.h", "rootElement_8h.html", [
       [ "rootElement", "classXML_1_1bpmn_1_1rootElement.html", "classXML_1_1bpmn_1_1rootElement" ]
     ] ],
-    [ "script.cpp", "script_8cpp.html", null ],
-    [ "script.h", "script_8h.html", [
-      [ "script", "classXML_1_1bpmn_1_1script.html", "classXML_1_1bpmn_1_1script" ]
-    ] ],
     [ "scriptTask.cpp", "scriptTask_8cpp.html", null ],
     [ "scriptTask.h", "scriptTask_8h.html", [
       [ "scriptTask", "classXML_1_1bpmn_1_1scriptTask.html", "classXML_1_1bpmn_1_1scriptTask" ]
@@ -555,13 +373,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
       [ "serviceTask", "classXML_1_1bpmn_1_1serviceTask.html", "classXML_1_1bpmn_1_1serviceTask" ]
     ] ],
     [ "Shape.cpp", "Shape_8cpp.html", null ],
-    [ "Shape.h", "Shape_8h.html", [
-      [ "Shape", "classXML_1_1bpmn_1_1Shape.html", "classXML_1_1bpmn_1_1Shape" ]
-    ] ],
-    [ "signal.cpp", "signal_8cpp.html", null ],
-    [ "signal.h", "signal_8h.html", [
-      [ "signal", "classXML_1_1bpmn_1_1signal.html", "classXML_1_1bpmn_1_1signal" ]
-    ] ],
     [ "signalEventDefinition.cpp", "signalEventDefinition_8cpp.html", null ],
     [ "signalEventDefinition.h", "signalEventDefinition_8h.html", [
       [ "signalEventDefinition", "classXML_1_1bpmn_1_1signalEventDefinition.html", "classXML_1_1bpmn_1_1signalEventDefinition" ]
@@ -575,9 +386,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
       [ "startEvent", "classXML_1_1bpmn_1_1startEvent.html", "classXML_1_1bpmn_1_1startEvent" ]
     ] ],
     [ "Style.cpp", "Style_8cpp.html", null ],
-    [ "Style.h", "Style_8h.html", [
-      [ "Style", "classXML_1_1bpmn_1_1Style.html", "classXML_1_1bpmn_1_1Style" ]
-    ] ],
     [ "subChoreography.cpp", "subChoreography_8cpp.html", null ],
     [ "subChoreography.h", "subChoreography_8h.html", [
       [ "subChoreography", "classXML_1_1bpmn_1_1subChoreography.html", "classXML_1_1bpmn_1_1subChoreography" ]
@@ -602,10 +410,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "tArtifact.cpp", "tArtifact_8cpp.html", null ],
     [ "tArtifact.h", "tArtifact_8h.html", [
       [ "tArtifact", "classXML_1_1bpmn_1_1tArtifact.html", "classXML_1_1bpmn_1_1tArtifact" ]
-    ] ],
-    [ "task.cpp", "task_8cpp.html", null ],
-    [ "task.h", "task_8h.html", [
-      [ "task", "classXML_1_1bpmn_1_1task.html", "classXML_1_1bpmn_1_1task" ]
     ] ],
     [ "tAssignment.cpp", "tAssignment_8cpp.html", null ],
     [ "tAssignment.h", "tAssignment_8h.html", [
@@ -834,10 +638,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "tExpression.h", "tExpression_8h.html", [
       [ "tExpression", "classXML_1_1bpmn_1_1tExpression.html", "classXML_1_1bpmn_1_1tExpression" ]
     ] ],
-    [ "text.cpp", "text_8cpp.html", null ],
-    [ "text.h", "text_8h.html", [
-      [ "text", "classXML_1_1bpmn_1_1text.html", "classXML_1_1bpmn_1_1text" ]
-    ] ],
     [ "textAnnotation.cpp", "textAnnotation_8cpp.html", null ],
     [ "textAnnotation.h", "textAnnotation_8h.html", [
       [ "textAnnotation", "classXML_1_1bpmn_1_1textAnnotation.html", "classXML_1_1bpmn_1_1textAnnotation" ]
@@ -1046,10 +846,6 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "tProperty.cpp", "tProperty_8cpp.html", null ],
     [ "tProperty.h", "tProperty_8h.html", [
       [ "tProperty", "classXML_1_1bpmn_1_1tProperty.html", "classXML_1_1bpmn_1_1tProperty" ]
-    ] ],
-    [ "transaction.cpp", "transaction_8cpp.html", null ],
-    [ "transaction.h", "transaction_8h.html", [
-      [ "transaction", "classXML_1_1bpmn_1_1transaction.html", "classXML_1_1bpmn_1_1transaction" ]
     ] ],
     [ "tReceiveTask.cpp", "tReceiveTask_8cpp.html", null ],
     [ "tReceiveTask.h", "tReceiveTask_8h.html", [

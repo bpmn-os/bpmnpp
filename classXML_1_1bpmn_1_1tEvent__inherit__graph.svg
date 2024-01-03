@@ -12,39 +12,20 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="347,-381.5 347,-449.5 456,-449.5 456,-381.5 347,-381.5"/>
-<text text-anchor="middle" x="401.5" y="-437.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tEvent</text>
-<polyline fill="none" stroke="black" points="347,-430.5 456,-430.5 "/>
-<text text-anchor="start" x="355" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ property</text>
-<text text-anchor="start" x="355" y="-407.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
-<polyline fill="none" stroke="black" points="347,-400.5 456,-400.5 "/>
-<text text-anchor="start" x="355" y="-388.5" font-family="Helvetica,sans-Serif" font-size="10.00"># tEvent()</text>
+<polygon fill="#bfbfbf" stroke="black" points="580,-381.5 580,-449.5 689,-449.5 689,-381.5 580,-381.5"/>
+<text text-anchor="middle" x="634.5" y="-437.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tEvent</text>
+<polyline fill="none" stroke="black" points="580,-430.5 689,-430.5 "/>
+<text text-anchor="start" x="588" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ property</text>
+<text text-anchor="start" x="588" y="-407.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
+<polyline fill="none" stroke="black" points="580,-400.5 689,-400.5 "/>
+<text text-anchor="start" x="588" y="-388.5" font-family="Helvetica,sans-Serif" font-size="10.00"># tEvent()</text>
 </a>
 </g>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classXML_1_1bpmn_1_1event.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="209,-254.5 209,-311.5 314,-311.5 314,-254.5 209,-254.5"/>
-<text text-anchor="middle" x="261.5" y="-299.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::event</text>
-<polyline fill="none" stroke="black" points="209,-292.5 314,-292.5 "/>
-<text text-anchor="start" x="217" y="-280.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
-<polyline fill="none" stroke="black" points="209,-273.5 314,-273.5 "/>
-<text text-anchor="start" x="217" y="-261.5" font-family="Helvetica,sans-Serif" font-size="10.00"># event()</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
-<title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M355.13,-374.58C344.3,-365.02 332.9,-354.76 322.5,-345 311.14,-334.34 298.94,-322.28 288.46,-311.71"/>
-<polygon fill="none" stroke="midnightblue" points="353.06,-377.43 362.89,-381.4 357.69,-372.17 353.06,-377.43"/>
-</g>
-<!-- Node7 -->
-<g id="node7" class="node">
-<title>Node7</title>
-<g id="a_node7"><a xlink:href="classXML_1_1bpmn_1_1tCatchEvent.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="classXML_1_1bpmn_1_1tCatchEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="332,-221.5 332,-344.5 471,-344.5 471,-221.5 332,-221.5"/>
 <text text-anchor="middle" x="401.5" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tCatchEvent</text>
 <polyline fill="none" stroke="black" points="332,-325.5 471,-325.5 "/>
@@ -60,16 +41,16 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge6" class="edge">
-<title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M401.5,-371.17C401.5,-362.65 401.5,-353.57 401.5,-344.61"/>
-<polygon fill="none" stroke="midnightblue" points="398,-371.23 401.5,-381.23 405,-371.23 398,-371.23"/>
+<!-- Node1&#45;&gt;Node6 -->
+<g id="edge5" class="edge">
+<title>Node1&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M570.93,-378.89C540.07,-361.61 502.91,-340.8 471.27,-323.08"/>
+<polygon fill="none" stroke="midnightblue" points="569.44,-382.07 579.87,-383.9 572.86,-375.96 569.44,-382.07"/>
 </g>
-<!-- Node15 -->
-<g id="node15" class="node">
-<title>Node15</title>
-<g id="a_node15"><a xlink:href="classXML_1_1bpmn_1_1tThrowEvent.html" target="_top" xlink:title=" ">
+<!-- Node14 -->
+<g id="node14" class="node">
+<title>Node14</title>
+<g id="a_node14"><a xlink:href="classXML_1_1bpmn_1_1tThrowEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="799,-227 799,-339 938,-339 938,-227 799,-227"/>
 <text text-anchor="middle" x="868.5" y="-327" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tThrowEvent</text>
 <polyline fill="none" stroke="black" points="799,-320 938,-320 "/>
@@ -84,124 +65,124 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node15 -->
-<g id="edge14" class="edge">
-<title>Node1&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M466.25,-396.41C553.75,-371.96 709.1,-328.54 798.99,-303.42"/>
-<polygon fill="none" stroke="midnightblue" points="465.13,-393.08 456.44,-399.15 467.02,-399.83 465.13,-393.08"/>
+<!-- Node1&#45;&gt;Node14 -->
+<g id="edge13" class="edge">
+<title>Node1&#45;&gt;Node14</title>
+<path fill="none" stroke="midnightblue" d="M698.09,-379.04C729.22,-361.68 766.77,-340.73 798.7,-322.93"/>
+<polygon fill="none" stroke="midnightblue" points="696.1,-376.14 689.07,-384.07 699.51,-382.25 696.1,-376.14"/>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="classXML_1_1bpmn_1_1tFlowNode.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="336.5,-486.5 336.5,-565.5 466.5,-565.5 466.5,-486.5 336.5,-486.5"/>
-<text text-anchor="middle" x="401.5" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tFlowNode</text>
-<polyline fill="none" stroke="black" points="336.5,-546.5 466.5,-546.5 "/>
-<text text-anchor="start" x="344.5" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ incoming</text>
-<text text-anchor="start" x="344.5" y="-523.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ outgoing</text>
-<text text-anchor="start" x="344.5" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
-<polyline fill="none" stroke="black" points="336.5,-505.5 466.5,-505.5 "/>
-<text text-anchor="start" x="344.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00"># tFlowNode()</text>
+<polygon fill="none" stroke="black" points="569.5,-486.5 569.5,-565.5 699.5,-565.5 699.5,-486.5 569.5,-486.5"/>
+<text text-anchor="middle" x="634.5" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tFlowNode</text>
+<polyline fill="none" stroke="black" points="569.5,-546.5 699.5,-546.5 "/>
+<text text-anchor="start" x="577.5" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ incoming</text>
+<text text-anchor="start" x="577.5" y="-523.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ outgoing</text>
+<text text-anchor="start" x="577.5" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
+<polyline fill="none" stroke="black" points="569.5,-505.5 699.5,-505.5 "/>
+<text text-anchor="start" x="577.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00"># tFlowNode()</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M401.5,-476.35C401.5,-467.28 401.5,-458 401.5,-449.54"/>
-<polygon fill="none" stroke="midnightblue" points="398,-476.44 401.5,-486.44 405,-476.44 398,-476.44"/>
+<path fill="none" stroke="midnightblue" d="M634.5,-476.35C634.5,-467.28 634.5,-458 634.5,-449.54"/>
+<polygon fill="none" stroke="midnightblue" points="631,-476.44 634.5,-486.44 638,-476.44 631,-476.44"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="classXML_1_1bpmn_1_1tFlowElement.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="329,-602.5 329,-703.5 474,-703.5 474,-602.5 329,-602.5"/>
-<text text-anchor="middle" x="401.5" y="-691.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tFlowElement</text>
-<polyline fill="none" stroke="black" points="329,-684.5 474,-684.5 "/>
-<text text-anchor="start" x="337" y="-672.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ auditing</text>
-<text text-anchor="start" x="337" y="-661.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ monitoring</text>
-<text text-anchor="start" x="337" y="-650.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ categoryValueRef</text>
-<text text-anchor="start" x="337" y="-639.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ name</text>
-<text text-anchor="start" x="337" y="-628.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
-<polyline fill="none" stroke="black" points="329,-621.5 474,-621.5 "/>
-<text text-anchor="start" x="337" y="-609.5" font-family="Helvetica,sans-Serif" font-size="10.00"># tFlowElement()</text>
+<polygon fill="none" stroke="black" points="562,-602.5 562,-703.5 707,-703.5 707,-602.5 562,-602.5"/>
+<text text-anchor="middle" x="634.5" y="-691.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tFlowElement</text>
+<polyline fill="none" stroke="black" points="562,-684.5 707,-684.5 "/>
+<text text-anchor="start" x="570" y="-672.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ auditing</text>
+<text text-anchor="start" x="570" y="-661.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ monitoring</text>
+<text text-anchor="start" x="570" y="-650.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ categoryValueRef</text>
+<text text-anchor="start" x="570" y="-639.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ name</text>
+<text text-anchor="start" x="570" y="-628.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
+<polyline fill="none" stroke="black" points="562,-621.5 707,-621.5 "/>
+<text text-anchor="start" x="570" y="-609.5" font-family="Helvetica,sans-Serif" font-size="10.00"># tFlowElement()</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M401.5,-592.19C401.5,-583.22 401.5,-574.18 401.5,-565.81"/>
-<polygon fill="none" stroke="midnightblue" points="398,-592.24 401.5,-602.24 405,-592.24 398,-592.24"/>
+<path fill="none" stroke="midnightblue" d="M634.5,-592.19C634.5,-583.22 634.5,-574.18 634.5,-565.81"/>
+<polygon fill="none" stroke="midnightblue" points="631,-592.24 634.5,-602.24 638,-592.24 631,-592.24"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="classXML_1_1bpmn_1_1tBaseElement.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="328.5,-740.5 328.5,-830.5 474.5,-830.5 474.5,-740.5 328.5,-740.5"/>
-<text text-anchor="middle" x="401.5" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tBaseElement</text>
-<polyline fill="none" stroke="black" points="328.5,-811.5 474.5,-811.5 "/>
-<text text-anchor="start" x="336.5" y="-799.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ documentation</text>
-<text text-anchor="start" x="336.5" y="-788.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ extensionElements</text>
-<text text-anchor="start" x="336.5" y="-777.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ id</text>
-<text text-anchor="start" x="336.5" y="-766.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
-<polyline fill="none" stroke="black" points="328.5,-759.5 474.5,-759.5 "/>
-<text text-anchor="start" x="336.5" y="-747.5" font-family="Helvetica,sans-Serif" font-size="10.00"># tBaseElement()</text>
+<polygon fill="none" stroke="black" points="561.5,-740.5 561.5,-830.5 707.5,-830.5 707.5,-740.5 561.5,-740.5"/>
+<text text-anchor="middle" x="634.5" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tBaseElement</text>
+<polyline fill="none" stroke="black" points="561.5,-811.5 707.5,-811.5 "/>
+<text text-anchor="start" x="569.5" y="-799.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ documentation</text>
+<text text-anchor="start" x="569.5" y="-788.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ extensionElements</text>
+<text text-anchor="start" x="569.5" y="-777.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ id</text>
+<text text-anchor="start" x="569.5" y="-766.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
+<polyline fill="none" stroke="black" points="561.5,-759.5 707.5,-759.5 "/>
+<text text-anchor="start" x="569.5" y="-747.5" font-family="Helvetica,sans-Serif" font-size="10.00"># tBaseElement()</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge">
 <title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M401.5,-730.13C401.5,-721.31 401.5,-712.22 401.5,-703.52"/>
-<polygon fill="none" stroke="midnightblue" points="398,-730.32 401.5,-740.32 405,-730.32 398,-730.32"/>
+<path fill="none" stroke="midnightblue" d="M634.5,-730.13C634.5,-721.31 634.5,-712.22 634.5,-703.52"/>
+<polygon fill="none" stroke="midnightblue" points="631,-730.32 634.5,-740.32 638,-730.32 631,-730.32"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="classXML_1_1XMLObject.html" target="_top" xlink:title="A class representing a node in an XML&#45;tree.">
-<polygon fill="none" stroke="black" points="338.5,-867.5 338.5,-1177.5 464.5,-1177.5 464.5,-867.5 338.5,-867.5"/>
-<text text-anchor="middle" x="401.5" y="-1165.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::XMLObject</text>
-<polyline fill="none" stroke="black" points="338.5,-1158.5 464.5,-1158.5 "/>
-<text text-anchor="start" x="346.5" y="-1146.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ xmlns</text>
-<text text-anchor="start" x="346.5" y="-1135.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ className</text>
-<text text-anchor="start" x="346.5" y="-1124.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ prefix</text>
-<text text-anchor="start" x="346.5" y="-1113.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ elementName</text>
-<text text-anchor="start" x="346.5" y="-1102.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ textContent</text>
-<text text-anchor="start" x="346.5" y="-1091.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ children</text>
-<text text-anchor="start" x="346.5" y="-1080.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ attributes</text>
-<text text-anchor="start" x="346.5" y="-1069.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
-<text text-anchor="start" x="346.5" y="-1058.5" font-family="Helvetica,sans-Serif" font-size="10.00"># factory</text>
-<polyline fill="none" stroke="black" points="338.5,-1051.5 464.5,-1051.5 "/>
-<text text-anchor="start" x="346.5" y="-1039.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~XMLObject()</text>
-<text text-anchor="start" x="346.5" y="-1028.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ is()</text>
-<text text-anchor="start" x="346.5" y="-1017.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ is()</text>
-<text text-anchor="start" x="346.5" y="-1006.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ get()</text>
-<text text-anchor="start" x="346.5" y="-995.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ get()</text>
-<text text-anchor="start" x="346.5" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ find()</text>
-<text text-anchor="start" x="346.5" y="-973.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ find()</text>
-<text text-anchor="start" x="346.5" y="-962.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ stringify()</text>
-<text text-anchor="start" x="346.5" y="-951.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRequiredChild()</text>
-<text text-anchor="start" x="346.5" y="-940.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getOptionalChild()</text>
-<text text-anchor="start" x="346.5" y="-929.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 6 more...</text>
-<text text-anchor="start" x="346.5" y="-918.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createFromStream()</text>
-<text text-anchor="start" x="346.5" y="-907.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createFromString()</text>
-<text text-anchor="start" x="346.5" y="-896.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createFromFile()</text>
-<text text-anchor="start" x="346.5" y="-885.5" font-family="Helvetica,sans-Serif" font-size="10.00"># XMLObject()</text>
-<text text-anchor="start" x="346.5" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00"># createObject()</text>
+<polygon fill="none" stroke="black" points="571.5,-867.5 571.5,-1177.5 697.5,-1177.5 697.5,-867.5 571.5,-867.5"/>
+<text text-anchor="middle" x="634.5" y="-1165.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::XMLObject</text>
+<polyline fill="none" stroke="black" points="571.5,-1158.5 697.5,-1158.5 "/>
+<text text-anchor="start" x="579.5" y="-1146.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ xmlns</text>
+<text text-anchor="start" x="579.5" y="-1135.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ className</text>
+<text text-anchor="start" x="579.5" y="-1124.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ prefix</text>
+<text text-anchor="start" x="579.5" y="-1113.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ elementName</text>
+<text text-anchor="start" x="579.5" y="-1102.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ textContent</text>
+<text text-anchor="start" x="579.5" y="-1091.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ children</text>
+<text text-anchor="start" x="579.5" y="-1080.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ attributes</text>
+<text text-anchor="start" x="579.5" y="-1069.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
+<text text-anchor="start" x="579.5" y="-1058.5" font-family="Helvetica,sans-Serif" font-size="10.00"># factory</text>
+<polyline fill="none" stroke="black" points="571.5,-1051.5 697.5,-1051.5 "/>
+<text text-anchor="start" x="579.5" y="-1039.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~XMLObject()</text>
+<text text-anchor="start" x="579.5" y="-1028.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ is()</text>
+<text text-anchor="start" x="579.5" y="-1017.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ is()</text>
+<text text-anchor="start" x="579.5" y="-1006.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ get()</text>
+<text text-anchor="start" x="579.5" y="-995.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ get()</text>
+<text text-anchor="start" x="579.5" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ find()</text>
+<text text-anchor="start" x="579.5" y="-973.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ find()</text>
+<text text-anchor="start" x="579.5" y="-962.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ stringify()</text>
+<text text-anchor="start" x="579.5" y="-951.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRequiredChild()</text>
+<text text-anchor="start" x="579.5" y="-940.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getOptionalChild()</text>
+<text text-anchor="start" x="579.5" y="-929.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 6 more...</text>
+<text text-anchor="start" x="579.5" y="-918.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createFromStream()</text>
+<text text-anchor="start" x="579.5" y="-907.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createFromString()</text>
+<text text-anchor="start" x="579.5" y="-896.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createFromFile()</text>
+<text text-anchor="start" x="579.5" y="-885.5" font-family="Helvetica,sans-Serif" font-size="10.00"># XMLObject()</text>
+<text text-anchor="start" x="579.5" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00"># createObject()</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge4" class="edge">
 <title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M401.5,-857.35C401.5,-847.89 401.5,-838.91 401.5,-830.72"/>
-<polygon fill="none" stroke="midnightblue" points="398,-857.37 401.5,-867.37 405,-857.37 398,-857.37"/>
+<path fill="none" stroke="midnightblue" d="M634.5,-857.35C634.5,-847.89 634.5,-838.91 634.5,-830.72"/>
+<polygon fill="none" stroke="midnightblue" points="631,-857.37 634.5,-867.37 638,-857.37 631,-857.37"/>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node">
-<title>Node8</title>
-<g id="a_node8"><a xlink:href="classXML_1_1bpmn_1_1catchEvent.html" target="_top" xlink:title=" ">
+<!-- Node7 -->
+<g id="node7" class="node">
+<title>Node7</title>
+<g id="a_node7"><a xlink:href="classXML_1_1bpmn_1_1catchEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="0,-116.5 0,-173.5 131,-173.5 131,-116.5 0,-116.5"/>
 <text text-anchor="middle" x="65.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::catchEvent</text>
 <polyline fill="none" stroke="black" points="0,-154.5 131,-154.5 "/>
@@ -211,16 +192,16 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge7" class="edge">
-<title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M322.8,-221.13C322.7,-221.09 322.6,-221.04 322.5,-221 247.01,-186.76 217.66,-212.62 139.5,-185 130.74,-181.9 121.73,-177.92 113.15,-173.68"/>
-<polygon fill="none" stroke="midnightblue" points="321.41,-224.35 331.92,-225.71 324.55,-218.1 321.41,-224.35"/>
+<!-- Node6&#45;&gt;Node7 -->
+<g id="edge6" class="edge">
+<title>Node6&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M322.24,-255.68C269.71,-237.51 199.65,-211.85 139.5,-185 131.68,-181.51 123.53,-177.55 115.62,-173.54"/>
+<polygon fill="none" stroke="midnightblue" points="321.24,-259.04 331.84,-258.99 323.52,-252.42 321.24,-259.04"/>
 </g>
-<!-- Node9 -->
-<g id="node9" class="node">
-<title>Node9</title>
-<g id="a_node9"><a xlink:href="classXML_1_1bpmn_1_1tBoundaryEvent.html" target="_top" xlink:title=" ">
+<!-- Node8 -->
+<g id="node8" class="node">
+<title>Node8</title>
+<g id="a_node8"><a xlink:href="classXML_1_1bpmn_1_1tBoundaryEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="149,-105.5 149,-184.5 304,-184.5 304,-105.5 149,-105.5"/>
 <text text-anchor="middle" x="226.5" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tBoundaryEvent</text>
 <polyline fill="none" stroke="black" points="149,-165.5 304,-165.5 "/>
@@ -232,16 +213,16 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node9 -->
-<g id="edge8" class="edge">
-<title>Node7&#45;&gt;Node9</title>
+<!-- Node6&#45;&gt;Node8 -->
+<g id="edge7" class="edge">
+<title>Node6&#45;&gt;Node8</title>
 <path fill="none" stroke="midnightblue" d="M323.93,-221.72C307.75,-209.14 291.11,-196.21 276.26,-184.67"/>
 <polygon fill="none" stroke="midnightblue" points="321.79,-224.49 331.83,-227.86 326.08,-218.96 321.79,-224.49"/>
 </g>
-<!-- Node11 -->
-<g id="node11" class="node">
-<title>Node11</title>
-<g id="a_node11"><a xlink:href="classXML_1_1bpmn_1_1tIntermediateCatchEvent.html" target="_top" xlink:title=" ">
+<!-- Node10 -->
+<g id="node10" class="node">
+<title>Node10</title>
+<g id="a_node10"><a xlink:href="classXML_1_1bpmn_1_1tIntermediateCatchEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="322.5,-111 322.5,-179 480.5,-179 480.5,-111 322.5,-111"/>
 <text text-anchor="start" x="330.5" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tIntermediate</text>
 <text text-anchor="middle" x="401.5" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00">CatchEvent</text>
@@ -252,16 +233,16 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node11 -->
-<g id="edge10" class="edge">
-<title>Node7&#45;&gt;Node11</title>
+<!-- Node6&#45;&gt;Node10 -->
+<g id="edge9" class="edge">
+<title>Node6&#45;&gt;Node10</title>
 <path fill="none" stroke="midnightblue" d="M401.5,-210.98C401.5,-199.89 401.5,-188.9 401.5,-179.21"/>
 <polygon fill="none" stroke="midnightblue" points="398,-211.16 401.5,-221.16 405,-211.16 398,-211.16"/>
 </g>
-<!-- Node13 -->
-<g id="node13" class="node">
-<title>Node13</title>
-<g id="a_node13"><a xlink:href="classXML_1_1bpmn_1_1tStartEvent.html" target="_top" xlink:title=" ">
+<!-- Node12 -->
+<g id="node12" class="node">
+<title>Node12</title>
+<g id="a_node12"><a xlink:href="classXML_1_1bpmn_1_1tStartEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="498.5,-111 498.5,-179 630.5,-179 630.5,-111 498.5,-111"/>
 <text text-anchor="middle" x="564.5" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tStartEvent</text>
 <polyline fill="none" stroke="black" points="498.5,-160 630.5,-160 "/>
@@ -272,16 +253,16 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node13 -->
-<g id="edge12" class="edge">
-<title>Node7&#45;&gt;Node13</title>
+<!-- Node6&#45;&gt;Node12 -->
+<g id="edge11" class="edge">
+<title>Node6&#45;&gt;Node12</title>
 <path fill="none" stroke="midnightblue" d="M478.88,-217.44C494.77,-204.18 510.88,-190.74 524.77,-179.15"/>
 <polygon fill="none" stroke="midnightblue" points="476.54,-214.84 471.1,-223.93 481.02,-220.21 476.54,-214.84"/>
 </g>
-<!-- Node10 -->
-<g id="node10" class="node">
-<title>Node10</title>
-<g id="a_node10"><a xlink:href="classXML_1_1bpmn_1_1boundaryEvent.html" target="_top" xlink:title=" ">
+<!-- Node9 -->
+<g id="node9" class="node">
+<title>Node9</title>
+<g id="a_node9"><a xlink:href="classXML_1_1bpmn_1_1boundaryEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="148,-6 148,-63 299,-63 299,-6 148,-6"/>
 <text text-anchor="middle" x="223.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::boundaryEvent</text>
 <polyline fill="none" stroke="black" points="148,-44 299,-44 "/>
@@ -291,16 +272,16 @@
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node10 -->
-<g id="edge9" class="edge">
-<title>Node9&#45;&gt;Node10</title>
+<!-- Node8&#45;&gt;Node9 -->
+<g id="edge8" class="edge">
+<title>Node8&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M225.16,-95.39C224.85,-84.3 224.53,-72.88 224.26,-63.03"/>
 <polygon fill="none" stroke="midnightblue" points="221.66,-95.54 225.43,-105.44 228.66,-95.35 221.66,-95.54"/>
 </g>
-<!-- Node12 -->
-<g id="node12" class="node">
-<title>Node12</title>
-<g id="a_node12"><a xlink:href="classXML_1_1bpmn_1_1intermediateCatchEvent.html" target="_top" xlink:title=" ">
+<!-- Node11 -->
+<g id="node11" class="node">
+<title>Node11</title>
+<g id="a_node11"><a xlink:href="classXML_1_1bpmn_1_1intermediateCatchEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="317.5,-0.5 317.5,-68.5 485.5,-68.5 485.5,-0.5 317.5,-0.5"/>
 <text text-anchor="start" x="325.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::intermediateCatch</text>
 <text text-anchor="middle" x="401.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Event</text>
@@ -311,16 +292,16 @@
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node12 -->
-<g id="edge11" class="edge">
-<title>Node11&#45;&gt;Node12</title>
+<!-- Node10&#45;&gt;Node11 -->
+<g id="edge10" class="edge">
+<title>Node10&#45;&gt;Node11</title>
 <path fill="none" stroke="midnightblue" d="M401.5,-100.54C401.5,-89.97 401.5,-78.83 401.5,-68.81"/>
 <polygon fill="none" stroke="midnightblue" points="398,-100.86 401.5,-110.86 405,-100.86 398,-100.86"/>
 </g>
-<!-- Node14 -->
-<g id="node14" class="node">
-<title>Node14</title>
-<g id="a_node14"><a xlink:href="classXML_1_1bpmn_1_1startEvent.html" target="_top" xlink:title=" ">
+<!-- Node13 -->
+<g id="node13" class="node">
+<title>Node13</title>
+<g id="a_node13"><a xlink:href="classXML_1_1bpmn_1_1startEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="503.5,-6 503.5,-63 631.5,-63 631.5,-6 503.5,-6"/>
 <text text-anchor="middle" x="567.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::startEvent</text>
 <polyline fill="none" stroke="black" points="503.5,-44 631.5,-44 "/>
@@ -330,16 +311,16 @@
 </a>
 </g>
 </g>
-<!-- Node13&#45;&gt;Node14 -->
-<g id="edge13" class="edge">
-<title>Node13&#45;&gt;Node14</title>
+<!-- Node12&#45;&gt;Node13 -->
+<g id="edge12" class="edge">
+<title>Node12&#45;&gt;Node13</title>
 <path fill="none" stroke="midnightblue" d="M565.7,-100.56C566.05,-88.01 566.42,-74.65 566.73,-63.33"/>
 <polygon fill="none" stroke="midnightblue" points="562.19,-100.76 565.42,-110.86 569.19,-100.96 562.19,-100.76"/>
 </g>
-<!-- Node16 -->
-<g id="node16" class="node">
-<title>Node16</title>
-<g id="a_node16"><a xlink:href="classXML_1_1bpmn_1_1tEndEvent.html" target="_top" xlink:title=" ">
+<!-- Node15 -->
+<g id="node15" class="node">
+<title>Node15</title>
+<g id="a_node15"><a xlink:href="classXML_1_1bpmn_1_1tEndEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="649,-116.5 649,-173.5 776,-173.5 776,-116.5 649,-116.5"/>
 <text text-anchor="middle" x="712.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tEndEvent</text>
 <polyline fill="none" stroke="black" points="649,-154.5 776,-154.5 "/>
@@ -349,16 +330,16 @@
 </a>
 </g>
 </g>
-<!-- Node15&#45;&gt;Node16 -->
-<g id="edge15" class="edge">
-<title>Node15&#45;&gt;Node16</title>
+<!-- Node14&#45;&gt;Node15 -->
+<g id="edge14" class="edge">
+<title>Node14&#45;&gt;Node15</title>
 <path fill="none" stroke="midnightblue" d="M797.15,-219.8C778.61,-203.64 759.57,-187.04 744.26,-173.69"/>
 <polygon fill="none" stroke="midnightblue" points="795.21,-222.75 805.05,-226.68 799.81,-217.47 795.21,-222.75"/>
 </g>
-<!-- Node18 -->
-<g id="node18" class="node">
-<title>Node18</title>
-<g id="a_node18"><a xlink:href="classXML_1_1bpmn_1_1tImplicitThrowEvent.html" target="_top" xlink:title=" ">
+<!-- Node17 -->
+<g id="node17" class="node">
+<title>Node17</title>
+<g id="a_node17"><a xlink:href="classXML_1_1bpmn_1_1tImplicitThrowEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="794.5,-111 794.5,-179 942.5,-179 942.5,-111 794.5,-111"/>
 <text text-anchor="start" x="802.5" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tImplicitThrow</text>
 <text text-anchor="middle" x="868.5" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00">Event</text>
@@ -369,16 +350,16 @@
 </a>
 </g>
 </g>
-<!-- Node15&#45;&gt;Node18 -->
-<g id="edge17" class="edge">
-<title>Node15&#45;&gt;Node18</title>
+<!-- Node14&#45;&gt;Node17 -->
+<g id="edge16" class="edge">
+<title>Node14&#45;&gt;Node17</title>
 <path fill="none" stroke="midnightblue" d="M868.5,-216.35C868.5,-203.39 868.5,-190.31 868.5,-179.01"/>
 <polygon fill="none" stroke="midnightblue" points="865,-216.68 868.5,-226.68 872,-216.68 865,-216.68"/>
 </g>
-<!-- Node20 -->
-<g id="node20" class="node">
-<title>Node20</title>
-<g id="a_node20"><a xlink:href="classXML_1_1bpmn_1_1tIntermediateThrowEvent.html" target="_top" xlink:title=" ">
+<!-- Node19 -->
+<g id="node19" class="node">
+<title>Node19</title>
+<g id="a_node19"><a xlink:href="classXML_1_1bpmn_1_1tIntermediateThrowEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="960.5,-111 960.5,-179 1120.5,-179 1120.5,-111 960.5,-111"/>
 <text text-anchor="start" x="968.5" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::tIntermediate</text>
 <text text-anchor="middle" x="1040.5" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00">ThrowEvent</text>
@@ -389,16 +370,16 @@
 </a>
 </g>
 </g>
-<!-- Node15&#45;&gt;Node20 -->
-<g id="edge19" class="edge">
-<title>Node15&#45;&gt;Node20</title>
+<!-- Node14&#45;&gt;Node19 -->
+<g id="edge18" class="edge">
+<title>Node14&#45;&gt;Node19</title>
 <path fill="none" stroke="midnightblue" d="M946.67,-220.19C964.63,-205.99 983.04,-191.43 998.75,-179.01"/>
 <polygon fill="none" stroke="midnightblue" points="944.13,-217.74 938.46,-226.68 948.47,-223.23 944.13,-217.74"/>
 </g>
-<!-- Node22 -->
-<g id="node22" class="node">
-<title>Node22</title>
-<g id="a_node22"><a xlink:href="classXML_1_1bpmn_1_1throwEvent.html" target="_top" xlink:title=" ">
+<!-- Node21 -->
+<g id="node21" class="node">
+<title>Node21</title>
+<g id="a_node21"><a xlink:href="classXML_1_1bpmn_1_1throwEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="1139,-116.5 1139,-173.5 1272,-173.5 1272,-116.5 1139,-116.5"/>
 <text text-anchor="middle" x="1205.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::throwEvent</text>
 <polyline fill="none" stroke="black" points="1139,-154.5 1272,-154.5 "/>
@@ -408,16 +389,16 @@
 </a>
 </g>
 </g>
-<!-- Node15&#45;&gt;Node22 -->
-<g id="edge21" class="edge">
-<title>Node15&#45;&gt;Node22</title>
+<!-- Node14&#45;&gt;Node21 -->
+<g id="edge20" class="edge">
+<title>Node14&#45;&gt;Node21</title>
 <path fill="none" stroke="midnightblue" d="M947.63,-255.34C999.89,-237.06 1069.53,-211.42 1129.5,-185 1137.37,-181.53 1145.58,-177.63 1153.56,-173.68"/>
 <polygon fill="none" stroke="midnightblue" points="946.37,-252.07 938.08,-258.66 948.67,-258.68 946.37,-252.07"/>
 </g>
-<!-- Node17 -->
-<g id="node17" class="node">
-<title>Node17</title>
-<g id="a_node17"><a xlink:href="classXML_1_1bpmn_1_1endEvent.html" target="_top" xlink:title=" ">
+<!-- Node16 -->
+<g id="node16" class="node">
+<title>Node16</title>
+<g id="a_node16"><a xlink:href="classXML_1_1bpmn_1_1endEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="651,-6 651,-63 774,-63 774,-6 651,-6"/>
 <text text-anchor="middle" x="712.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::endEvent</text>
 <polyline fill="none" stroke="black" points="651,-44 774,-44 "/>
@@ -427,16 +408,16 @@
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node17 -->
-<g id="edge16" class="edge">
-<title>Node16&#45;&gt;Node17</title>
+<!-- Node15&#45;&gt;Node16 -->
+<g id="edge15" class="edge">
+<title>Node15&#45;&gt;Node16</title>
 <path fill="none" stroke="midnightblue" d="M712.5,-105.94C712.5,-91.83 712.5,-76.11 712.5,-63.11"/>
 <polygon fill="none" stroke="midnightblue" points="709,-106.34 712.5,-116.34 716,-106.34 709,-106.34"/>
 </g>
-<!-- Node19 -->
-<g id="node19" class="node">
-<title>Node19</title>
-<g id="a_node19"><a xlink:href="classXML_1_1bpmn_1_1implicitThrowEvent.html" target="_top" xlink:title=" ">
+<!-- Node18 -->
+<g id="node18" class="node">
+<title>Node18</title>
+<g id="a_node18"><a xlink:href="classXML_1_1bpmn_1_1implicitThrowEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="794.5,-0.5 794.5,-68.5 938.5,-68.5 938.5,-0.5 794.5,-0.5"/>
 <text text-anchor="start" x="802.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::implicitThrow</text>
 <text text-anchor="middle" x="866.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Event</text>
@@ -447,16 +428,16 @@
 </a>
 </g>
 </g>
-<!-- Node18&#45;&gt;Node19 -->
-<g id="edge18" class="edge">
-<title>Node18&#45;&gt;Node19</title>
+<!-- Node17&#45;&gt;Node18 -->
+<g id="edge17" class="edge">
+<title>Node17&#45;&gt;Node18</title>
 <path fill="none" stroke="midnightblue" d="M867.7,-100.54C867.5,-89.97 867.3,-78.83 867.11,-68.81"/>
 <polygon fill="none" stroke="midnightblue" points="864.21,-100.92 867.89,-110.86 871.2,-100.79 864.21,-100.92"/>
 </g>
-<!-- Node21 -->
-<g id="node21" class="node">
-<title>Node21</title>
-<g id="a_node21"><a xlink:href="classXML_1_1bpmn_1_1intermediateThrowEvent.html" target="_top" xlink:title=" ">
+<!-- Node20 -->
+<g id="node20" class="node">
+<title>Node20</title>
+<g id="a_node20"><a xlink:href="classXML_1_1bpmn_1_1intermediateThrowEvent.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="956.5,-0.5 956.5,-68.5 1126.5,-68.5 1126.5,-0.5 956.5,-0.5"/>
 <text text-anchor="start" x="964.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::intermediateThrow</text>
 <text text-anchor="middle" x="1041.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Event</text>
@@ -467,9 +448,9 @@
 </a>
 </g>
 </g>
-<!-- Node20&#45;&gt;Node21 -->
-<g id="edge20" class="edge">
-<title>Node20&#45;&gt;Node21</title>
+<!-- Node19&#45;&gt;Node20 -->
+<g id="edge19" class="edge">
+<title>Node19&#45;&gt;Node20</title>
 <path fill="none" stroke="midnightblue" d="M1040.9,-100.54C1041,-89.97 1041.1,-78.83 1041.19,-68.81"/>
 <polygon fill="none" stroke="midnightblue" points="1037.4,-100.83 1040.81,-110.86 1044.4,-100.89 1037.4,-100.83"/>
 </g>

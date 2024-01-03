@@ -242,24 +242,5 @@
 <path fill="none" stroke="midnightblue" d="M234,-84.35C234,-75.07 234,-65.79 234,-57.59"/>
 <polygon fill="none" stroke="midnightblue" points="230.5,-84.37 234,-94.37 237.5,-84.37 230.5,-84.37"/>
 </g>
-<!-- Node11 -->
-<g id="node11" class="node">
-<title>Node11</title>
-<g id="a_node11"><a xlink:href="classXML_1_1bpmn_1_1transaction.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="339,-0.5 339,-57.5 471,-57.5 471,-0.5 339,-0.5"/>
-<text text-anchor="middle" x="405" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">XML::bpmn::transaction</text>
-<polyline fill="none" stroke="black" points="339,-38.5 471,-38.5 "/>
-<text text-anchor="start" x="347" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ defaults</text>
-<polyline fill="none" stroke="black" points="339,-19.5 471,-19.5 "/>
-<text text-anchor="start" x="347" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># transaction()</text>
-</a>
-</g>
-</g>
-<!-- Node10&#45;&gt;Node11 -->
-<g id="edge10" class="edge">
-<title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M405,-95.06C405,-82.51 405,-69.15 405,-57.83"/>
-<polygon fill="none" stroke="midnightblue" points="401.5,-95.36 405,-105.36 408.5,-95.36 401.5,-95.36"/>
-</g>
 </g>
 </svg>

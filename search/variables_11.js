@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['value_3217',['value',['../structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e',1,'XML::Value::value()'],['../structXML_1_1Attribute.html#a7abf90cbd522d84d2a180609494b1225',1,'XML::Attribute::value()'],['../classXML_1_1bpmn_1_1tCategoryValue.html#af960ea23b49da73667f50791dcdde6fc',1,'XML::bpmn::tCategoryValue::value()']]]
+  ['waitforcompletion_2840',['waitForCompletion',['../classXML_1_1bpmn_1_1tCompensateEventDefinition.html#a86a2ad2147acbfe93f5464ade8cd852f',1,'XML::bpmn::tCompensateEventDefinition']]],
+  ['whileexecutinginputrefs_2841',['whileExecutingInputRefs',['../classXML_1_1bpmn_1_1tInputSet.html#aea005f4a0dd722a9f89795b5fb4b7714',1,'XML::bpmn::tInputSet']]],
+  ['whileexecutingoutputrefs_2842',['whileExecutingOutputRefs',['../classXML_1_1bpmn_1_1tOutputSet.html#ab3ac9630cf3b92fc3664b4c7a4c540ec',1,'XML::bpmn::tOutputSet']]]
 ];

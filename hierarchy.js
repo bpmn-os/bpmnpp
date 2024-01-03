@@ -98,56 +98,17 @@ var hierarchy =
     [ "BPMN::SequenceFlow", "classBPMN_1_1SequenceFlow.html", null ],
     [ "XML::Value", "structXML_1_1Value.html", null ],
     [ "XML::XMLObject", "classXML_1_1XMLObject.html", [
-      [ "XML::bpmn::Bounds", "classXML_1_1bpmn_1_1Bounds.html", null ],
-      [ "XML::bpmn::Diagram", "classXML_1_1bpmn_1_1Diagram.html", [
-        [ "XML::bpmn::BPMNDiagram", "classXML_1_1bpmn_1_1BPMNDiagram.html", null ]
-      ] ],
-      [ "XML::bpmn::DiagramElement", "classXML_1_1bpmn_1_1DiagramElement.html", [
-        [ "XML::bpmn::Edge", "classXML_1_1bpmn_1_1Edge.html", [
-          [ "XML::bpmn::LabeledEdge", "classXML_1_1bpmn_1_1LabeledEdge.html", [
-            [ "XML::bpmn::BPMNEdge", "classXML_1_1bpmn_1_1BPMNEdge.html", null ]
-          ] ]
-        ] ],
-        [ "XML::bpmn::Node", "classXML_1_1bpmn_1_1Node.html", [
-          [ "XML::bpmn::Label", "classXML_1_1bpmn_1_1Label.html", [
-            [ "XML::bpmn::BPMNLabel", "classXML_1_1bpmn_1_1BPMNLabel.html", null ]
-          ] ],
-          [ "XML::bpmn::Plane", "classXML_1_1bpmn_1_1Plane.html", [
-            [ "XML::bpmn::BPMNPlane", "classXML_1_1bpmn_1_1BPMNPlane.html", null ]
-          ] ],
-          [ "XML::bpmn::Shape", "classXML_1_1bpmn_1_1Shape.html", [
-            [ "XML::bpmn::LabeledShape", "classXML_1_1bpmn_1_1LabeledShape.html", [
-              [ "XML::bpmn::BPMNShape", "classXML_1_1bpmn_1_1BPMNShape.html", null ]
-            ] ]
-          ] ]
-        ] ]
-      ] ],
-      [ "XML::bpmn::DiagramElement_extension", "classXML_1_1bpmn_1_1DiagramElement__extension.html", null ],
-      [ "XML::bpmn::Font", "classXML_1_1bpmn_1_1Font.html", null ],
-      [ "XML::bpmn::Point", "classXML_1_1bpmn_1_1Point.html", null ],
-      [ "XML::bpmn::Style", "classXML_1_1bpmn_1_1Style.html", [
-        [ "XML::bpmn::BPMNLabelStyle", "classXML_1_1bpmn_1_1BPMNLabelStyle.html", null ]
-      ] ],
       [ "XML::bpmn::tBaseElement", "classXML_1_1bpmn_1_1tBaseElement.html", [
         [ "XML::bpmn::baseElement", "classXML_1_1bpmn_1_1baseElement.html", null ],
         [ "XML::bpmn::tArtifact", "classXML_1_1bpmn_1_1tArtifact.html", [
-          [ "XML::bpmn::artifact", "classXML_1_1bpmn_1_1artifact.html", null ],
-          [ "XML::bpmn::tAssociation", "classXML_1_1bpmn_1_1tAssociation.html", [
-            [ "XML::bpmn::association", "classXML_1_1bpmn_1_1association.html", null ]
-          ] ],
-          [ "XML::bpmn::tGroup", "classXML_1_1bpmn_1_1tGroup.html", [
-            [ "XML::bpmn::group", "classXML_1_1bpmn_1_1group.html", null ]
-          ] ],
+          [ "XML::bpmn::tAssociation", "classXML_1_1bpmn_1_1tAssociation.html", null ],
+          [ "XML::bpmn::tGroup", "classXML_1_1bpmn_1_1tGroup.html", null ],
           [ "XML::bpmn::tTextAnnotation", "classXML_1_1bpmn_1_1tTextAnnotation.html", [
             [ "XML::bpmn::textAnnotation", "classXML_1_1bpmn_1_1textAnnotation.html", null ]
           ] ]
         ] ],
-        [ "XML::bpmn::tAssignment", "classXML_1_1bpmn_1_1tAssignment.html", [
-          [ "XML::bpmn::assignment", "classXML_1_1bpmn_1_1assignment.html", null ]
-        ] ],
-        [ "XML::bpmn::tAuditing", "classXML_1_1bpmn_1_1tAuditing.html", [
-          [ "XML::bpmn::auditing", "classXML_1_1bpmn_1_1auditing.html", null ]
-        ] ],
+        [ "XML::bpmn::tAssignment", "classXML_1_1bpmn_1_1tAssignment.html", null ],
+        [ "XML::bpmn::tAuditing", "classXML_1_1bpmn_1_1tAuditing.html", null ],
         [ "XML::bpmn::tCategoryValue", "classXML_1_1bpmn_1_1tCategoryValue.html", [
           [ "XML::bpmn::categoryValue", "classXML_1_1bpmn_1_1categoryValue.html", null ]
         ] ],
@@ -165,9 +126,7 @@ var hierarchy =
           [ "XML::bpmn::tCallConversation", "classXML_1_1bpmn_1_1tCallConversation.html", [
             [ "XML::bpmn::callConversation", "classXML_1_1bpmn_1_1callConversation.html", null ]
           ] ],
-          [ "XML::bpmn::tConversation", "classXML_1_1bpmn_1_1tConversation.html", [
-            [ "XML::bpmn::conversation", "classXML_1_1bpmn_1_1conversation.html", null ]
-          ] ],
+          [ "XML::bpmn::tConversation", "classXML_1_1bpmn_1_1tConversation.html", null ],
           [ "XML::bpmn::tSubConversation", "classXML_1_1bpmn_1_1tSubConversation.html", [
             [ "XML::bpmn::subConversation", "classXML_1_1bpmn_1_1subConversation.html", null ]
           ] ]
@@ -216,7 +175,6 @@ var hierarchy =
           [ "XML::bpmn::tFlowNode", "classXML_1_1bpmn_1_1tFlowNode.html", [
             [ "XML::bpmn::flowNode", "classXML_1_1bpmn_1_1flowNode.html", null ],
             [ "XML::bpmn::tActivity", "classXML_1_1bpmn_1_1tActivity.html", [
-              [ "XML::bpmn::activity", "classXML_1_1bpmn_1_1activity.html", null ],
               [ "XML::bpmn::tCallActivity", "classXML_1_1bpmn_1_1tCallActivity.html", [
                 [ "XML::bpmn::callActivity", "classXML_1_1bpmn_1_1callActivity.html", null ]
               ] ],
@@ -225,9 +183,7 @@ var hierarchy =
                 [ "XML::bpmn::tAdHocSubProcess", "classXML_1_1bpmn_1_1tAdHocSubProcess.html", [
                   [ "XML::bpmn::adHocSubProcess", "classXML_1_1bpmn_1_1adHocSubProcess.html", null ]
                 ] ],
-                [ "XML::bpmn::tTransaction", "classXML_1_1bpmn_1_1tTransaction.html", [
-                  [ "XML::bpmn::transaction", "classXML_1_1bpmn_1_1transaction.html", null ]
-                ] ]
+                [ "XML::bpmn::tTransaction", "classXML_1_1bpmn_1_1tTransaction.html", null ]
               ] ],
               [ "XML::bpmn::tTask", "classXML_1_1bpmn_1_1tTask.html", [
                 [ "XML::bpmn::tBusinessRuleTask", "classXML_1_1bpmn_1_1tBusinessRuleTask.html", [
@@ -250,8 +206,7 @@ var hierarchy =
                 ] ],
                 [ "XML::bpmn::tUserTask", "classXML_1_1bpmn_1_1tUserTask.html", [
                   [ "XML::bpmn::userTask", "classXML_1_1bpmn_1_1userTask.html", null ]
-                ] ],
-                [ "XML::bpmn::task", "classXML_1_1bpmn_1_1task.html", null ]
+                ] ]
               ] ]
             ] ],
             [ "XML::bpmn::tChoreographyActivity", "classXML_1_1bpmn_1_1tChoreographyActivity.html", [
@@ -267,7 +222,6 @@ var hierarchy =
               ] ]
             ] ],
             [ "XML::bpmn::tEvent", "classXML_1_1bpmn_1_1tEvent.html", [
-              [ "XML::bpmn::event", "classXML_1_1bpmn_1_1event.html", null ],
               [ "XML::bpmn::tCatchEvent", "classXML_1_1bpmn_1_1tCatchEvent.html", [
                 [ "XML::bpmn::catchEvent", "classXML_1_1bpmn_1_1catchEvent.html", null ],
                 [ "XML::bpmn::tBoundaryEvent", "classXML_1_1bpmn_1_1tBoundaryEvent.html", [
@@ -294,7 +248,6 @@ var hierarchy =
               ] ]
             ] ],
             [ "XML::bpmn::tGateway", "classXML_1_1bpmn_1_1tGateway.html", [
-              [ "XML::bpmn::gateway", "classXML_1_1bpmn_1_1gateway.html", null ],
               [ "XML::bpmn::tComplexGateway", "classXML_1_1bpmn_1_1tComplexGateway.html", [
                 [ "XML::bpmn::complexGateway", "classXML_1_1bpmn_1_1complexGateway.html", null ]
               ] ],
@@ -325,9 +278,7 @@ var hierarchy =
         [ "XML::bpmn::tInputSet", "classXML_1_1bpmn_1_1tInputSet.html", [
           [ "XML::bpmn::inputSet", "classXML_1_1bpmn_1_1inputSet.html", null ]
         ] ],
-        [ "XML::bpmn::tLane", "classXML_1_1bpmn_1_1tLane.html", [
-          [ "XML::bpmn::lane", "classXML_1_1bpmn_1_1lane.html", null ]
-        ] ],
+        [ "XML::bpmn::tLane", "classXML_1_1bpmn_1_1tLane.html", null ],
         [ "XML::bpmn::tLaneSet", "classXML_1_1bpmn_1_1tLaneSet.html", [
           [ "XML::bpmn::laneSet", "classXML_1_1bpmn_1_1laneSet.html", null ]
         ] ],
@@ -346,33 +297,21 @@ var hierarchy =
         [ "XML::bpmn::tMessageFlowAssociation", "classXML_1_1bpmn_1_1tMessageFlowAssociation.html", [
           [ "XML::bpmn::messageFlowAssociation", "classXML_1_1bpmn_1_1messageFlowAssociation.html", null ]
         ] ],
-        [ "XML::bpmn::tMonitoring", "classXML_1_1bpmn_1_1tMonitoring.html", [
-          [ "XML::bpmn::monitoring", "classXML_1_1bpmn_1_1monitoring.html", null ]
-        ] ],
-        [ "XML::bpmn::tOperation", "classXML_1_1bpmn_1_1tOperation.html", [
-          [ "XML::bpmn::operation", "classXML_1_1bpmn_1_1operation.html", null ]
-        ] ],
+        [ "XML::bpmn::tMonitoring", "classXML_1_1bpmn_1_1tMonitoring.html", null ],
+        [ "XML::bpmn::tOperation", "classXML_1_1bpmn_1_1tOperation.html", null ],
         [ "XML::bpmn::tOutputSet", "classXML_1_1bpmn_1_1tOutputSet.html", [
           [ "XML::bpmn::outputSet", "classXML_1_1bpmn_1_1outputSet.html", null ]
         ] ],
-        [ "XML::bpmn::tParticipant", "classXML_1_1bpmn_1_1tParticipant.html", [
-          [ "XML::bpmn::participant", "classXML_1_1bpmn_1_1participant.html", null ]
-        ] ],
+        [ "XML::bpmn::tParticipant", "classXML_1_1bpmn_1_1tParticipant.html", null ],
         [ "XML::bpmn::tParticipantAssociation", "classXML_1_1bpmn_1_1tParticipantAssociation.html", [
           [ "XML::bpmn::participantAssociation", "classXML_1_1bpmn_1_1participantAssociation.html", null ]
         ] ],
         [ "XML::bpmn::tParticipantMultiplicity", "classXML_1_1bpmn_1_1tParticipantMultiplicity.html", [
           [ "XML::bpmn::participantMultiplicity", "classXML_1_1bpmn_1_1participantMultiplicity.html", null ]
         ] ],
-        [ "XML::bpmn::tProperty", "classXML_1_1bpmn_1_1tProperty.html", [
-          [ "XML::bpmn::property", "classXML_1_1bpmn_1_1property.html", null ]
-        ] ],
-        [ "XML::bpmn::tRelationship", "classXML_1_1bpmn_1_1tRelationship.html", [
-          [ "XML::bpmn::relationship", "classXML_1_1bpmn_1_1relationship.html", null ]
-        ] ],
-        [ "XML::bpmn::tRendering", "classXML_1_1bpmn_1_1tRendering.html", [
-          [ "XML::bpmn::rendering", "classXML_1_1bpmn_1_1rendering.html", null ]
-        ] ],
+        [ "XML::bpmn::tProperty", "classXML_1_1bpmn_1_1tProperty.html", null ],
+        [ "XML::bpmn::tRelationship", "classXML_1_1bpmn_1_1tRelationship.html", null ],
+        [ "XML::bpmn::tRendering", "classXML_1_1bpmn_1_1tRendering.html", null ],
         [ "XML::bpmn::tResourceAssignmentExpression", "classXML_1_1bpmn_1_1tResourceAssignmentExpression.html", [
           [ "XML::bpmn::resourceAssignmentExpression", "classXML_1_1bpmn_1_1resourceAssignmentExpression.html", null ]
         ] ],
@@ -385,7 +324,6 @@ var hierarchy =
         [ "XML::bpmn::tResourceRole", "classXML_1_1bpmn_1_1tResourceRole.html", [
           [ "XML::bpmn::resourceRole", "classXML_1_1bpmn_1_1resourceRole.html", null ],
           [ "XML::bpmn::tPerformer", "classXML_1_1bpmn_1_1tPerformer.html", [
-            [ "XML::bpmn::performer", "classXML_1_1bpmn_1_1performer.html", null ],
             [ "XML::bpmn::tHumanPerformer", "classXML_1_1bpmn_1_1tHumanPerformer.html", [
               [ "XML::bpmn::humanPerformer", "classXML_1_1bpmn_1_1humanPerformer.html", null ],
               [ "XML::bpmn::tPotentialOwner", "classXML_1_1bpmn_1_1tPotentialOwner.html", [
@@ -413,17 +351,11 @@ var hierarchy =
                 [ "XML::bpmn::globalUserTask", "classXML_1_1bpmn_1_1globalUserTask.html", null ]
               ] ]
             ] ],
-            [ "XML::bpmn::tProcess", "classXML_1_1bpmn_1_1tProcess.html", [
-              [ "XML::bpmn::process", "classXML_1_1bpmn_1_1process.html", null ]
-            ] ]
+            [ "XML::bpmn::tProcess", "classXML_1_1bpmn_1_1tProcess.html", null ]
           ] ],
-          [ "XML::bpmn::tCategory", "classXML_1_1bpmn_1_1tCategory.html", [
-            [ "XML::bpmn::category", "classXML_1_1bpmn_1_1category.html", null ]
-          ] ],
+          [ "XML::bpmn::tCategory", "classXML_1_1bpmn_1_1tCategory.html", null ],
           [ "XML::bpmn::tCollaboration", "classXML_1_1bpmn_1_1tCollaboration.html", [
-            [ "XML::bpmn::collaboration", "classXML_1_1bpmn_1_1collaboration.html", null ],
             [ "XML::bpmn::tChoreography", "classXML_1_1bpmn_1_1tChoreography.html", [
-              [ "XML::bpmn::choreography", "classXML_1_1bpmn_1_1choreography.html", null ],
               [ "XML::bpmn::tGlobalChoreographyTask", "classXML_1_1bpmn_1_1tGlobalChoreographyTask.html", [
                 [ "XML::bpmn::globalChoreographyTask", "classXML_1_1bpmn_1_1globalChoreographyTask.html", null ]
               ] ]
@@ -441,12 +373,8 @@ var hierarchy =
           [ "XML::bpmn::tEndPoint", "classXML_1_1bpmn_1_1tEndPoint.html", [
             [ "XML::bpmn::endPoint", "classXML_1_1bpmn_1_1endPoint.html", null ]
           ] ],
-          [ "XML::bpmn::tError", "classXML_1_1bpmn_1_1tError.html", [
-            [ "XML::bpmn::error", "classXML_1_1bpmn_1_1error.html", null ]
-          ] ],
-          [ "XML::bpmn::tEscalation", "classXML_1_1bpmn_1_1tEscalation.html", [
-            [ "XML::bpmn::escalation", "classXML_1_1bpmn_1_1escalation.html", null ]
-          ] ],
+          [ "XML::bpmn::tError", "classXML_1_1bpmn_1_1tError.html", null ],
+          [ "XML::bpmn::tEscalation", "classXML_1_1bpmn_1_1tEscalation.html", null ],
           [ "XML::bpmn::tEventDefinition", "classXML_1_1bpmn_1_1tEventDefinition.html", [
             [ "XML::bpmn::eventDefinition", "classXML_1_1bpmn_1_1eventDefinition.html", null ],
             [ "XML::bpmn::tCancelEventDefinition", "classXML_1_1bpmn_1_1tCancelEventDefinition.html", [
@@ -480,58 +408,37 @@ var hierarchy =
               [ "XML::bpmn::timerEventDefinition", "classXML_1_1bpmn_1_1timerEventDefinition.html", null ]
             ] ]
           ] ],
-          [ "XML::bpmn::tInterface", "classXML_1_1bpmn_1_1tInterface.html", [
-            [ "XML::bpmn::interface", "classXML_1_1bpmn_1_1interface.html", null ]
-          ] ],
+          [ "XML::bpmn::tInterface", "classXML_1_1bpmn_1_1tInterface.html", null ],
           [ "XML::bpmn::tItemDefinition", "classXML_1_1bpmn_1_1tItemDefinition.html", [
             [ "XML::bpmn::itemDefinition", "classXML_1_1bpmn_1_1itemDefinition.html", null ]
           ] ],
-          [ "XML::bpmn::tMessage", "classXML_1_1bpmn_1_1tMessage.html", [
-            [ "XML::bpmn::message", "classXML_1_1bpmn_1_1message.html", null ]
-          ] ],
+          [ "XML::bpmn::tMessage", "classXML_1_1bpmn_1_1tMessage.html", null ],
           [ "XML::bpmn::tPartnerEntity", "classXML_1_1bpmn_1_1tPartnerEntity.html", [
             [ "XML::bpmn::partnerEntity", "classXML_1_1bpmn_1_1partnerEntity.html", null ]
           ] ],
           [ "XML::bpmn::tPartnerRole", "classXML_1_1bpmn_1_1tPartnerRole.html", [
             [ "XML::bpmn::partnerRole", "classXML_1_1bpmn_1_1partnerRole.html", null ]
           ] ],
-          [ "XML::bpmn::tResource", "classXML_1_1bpmn_1_1tResource.html", [
-            [ "XML::bpmn::resource", "classXML_1_1bpmn_1_1resource.html", null ]
-          ] ],
-          [ "XML::bpmn::tSignal", "classXML_1_1bpmn_1_1tSignal.html", [
-            [ "XML::bpmn::signal", "classXML_1_1bpmn_1_1signal.html", null ]
-          ] ]
+          [ "XML::bpmn::tResource", "classXML_1_1bpmn_1_1tResource.html", null ],
+          [ "XML::bpmn::tSignal", "classXML_1_1bpmn_1_1tSignal.html", null ]
         ] ]
       ] ],
       [ "XML::bpmn::tBaseElementWithMixedContent", "classXML_1_1bpmn_1_1tBaseElementWithMixedContent.html", [
         [ "XML::bpmn::baseElementWithMixedContent", "classXML_1_1bpmn_1_1baseElementWithMixedContent.html", null ],
         [ "XML::bpmn::tExpression", "classXML_1_1bpmn_1_1tExpression.html", [
-          [ "XML::bpmn::expression", "classXML_1_1bpmn_1_1expression.html", null ],
           [ "XML::bpmn::tFormalExpression", "classXML_1_1bpmn_1_1tFormalExpression.html", [
             [ "XML::bpmn::formalExpression", "classXML_1_1bpmn_1_1formalExpression.html", null ]
           ] ]
         ] ]
       ] ],
-      [ "XML::bpmn::tDefinitions", "classXML_1_1bpmn_1_1tDefinitions.html", [
-        [ "XML::bpmn::definitions", "classXML_1_1bpmn_1_1definitions.html", null ]
-      ] ],
-      [ "XML::bpmn::tDocumentation", "classXML_1_1bpmn_1_1tDocumentation.html", [
-        [ "XML::bpmn::documentation", "classXML_1_1bpmn_1_1documentation.html", null ]
-      ] ],
-      [ "XML::bpmn::tExtension", "classXML_1_1bpmn_1_1tExtension.html", [
-        [ "XML::bpmn::extension", "classXML_1_1bpmn_1_1extension.html", null ]
-      ] ],
+      [ "XML::bpmn::tDefinitions", "classXML_1_1bpmn_1_1tDefinitions.html", null ],
+      [ "XML::bpmn::tDocumentation", "classXML_1_1bpmn_1_1tDocumentation.html", null ],
+      [ "XML::bpmn::tExtension", "classXML_1_1bpmn_1_1tExtension.html", null ],
       [ "XML::bpmn::tExtensionElements", "classXML_1_1bpmn_1_1tExtensionElements.html", [
         [ "XML::bpmn::extensionElements", "classXML_1_1bpmn_1_1extensionElements.html", null ]
       ] ],
-      [ "XML::bpmn::tImport", "classXML_1_1bpmn_1_1tImport.html", [
-        [ "XML::bpmn::import", "classXML_1_1bpmn_1_1import.html", null ]
-      ] ],
-      [ "XML::bpmn::tScript", "classXML_1_1bpmn_1_1tScript.html", [
-        [ "XML::bpmn::script", "classXML_1_1bpmn_1_1script.html", null ]
-      ] ],
-      [ "XML::bpmn::tText", "classXML_1_1bpmn_1_1tText.html", [
-        [ "XML::bpmn::text", "classXML_1_1bpmn_1_1text.html", null ]
-      ] ]
+      [ "XML::bpmn::tImport", "classXML_1_1bpmn_1_1tImport.html", null ],
+      [ "XML::bpmn::tScript", "classXML_1_1bpmn_1_1tScript.html", null ],
+      [ "XML::bpmn::tText", "classXML_1_1bpmn_1_1tText.html", null ]
     ] ]
 ];
