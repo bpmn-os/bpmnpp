@@ -128,21 +128,18 @@ $(document).ready(function(){initNavTree('classBPMN_1_1MessageFlow.html',''); in
 </div><!--header-->
 <div class="contents">
 
+<p>The MessageFlow class encapsulates the information and relationships associated with a message flow in a BPMN process.  
+ <a href="classBPMN_1_1MessageFlow.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a76d2b693b39602fe3d179efccb1d85d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1MessageFlow.html#a76d2b693b39602fe3d179efccb1d85d7">MessageFlow</a> (<a class="el" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a> *messageFlow)</td></tr>
-<tr class="memdesc:a76d2b693b39602fe3d179efccb1d85d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code>MessageFlow</code> object based on a <code>tMessageFlow</code> element.  <a href="classBPMN_1_1MessageFlow.html#a76d2b693b39602fe3d179efccb1d85d7">More...</a><br /></td></tr>
+<tr class="memdesc:a76d2b693b39602fe3d179efccb1d85d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a MessageFlow object based on a <a class="el" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a> element.  <a href="classBPMN_1_1MessageFlow.html#a76d2b693b39602fe3d179efccb1d85d7">More...</a><br /></td></tr>
 <tr class="separator:a76d2b693b39602fe3d179efccb1d85d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2004e08c9e3eebc28b8a67e2c61646a9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1MessageFlow.html#a2004e08c9e3eebc28b8a67e2c61646a9">~MessageFlow</a> ()=default</td></tr>
 <tr class="separator:a2004e08c9e3eebc28b8a67e2c61646a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3849e74209400e229d7806965b55a57"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac3849e74209400e229d7806965b55a57"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1MessageFlow.html#ac3849e74209400e229d7806965b55a57">represents</a> ()</td></tr>
-<tr class="separator:ac3849e74209400e229d7806965b55a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad60d6a8c47f8eb5edd3b452cf4e1e53b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad60d6a8c47f8eb5edd3b452cf4e1e53b"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1MessageFlow.html#ad60d6a8c47f8eb5edd3b452cf4e1e53b">as</a> ()</td></tr>
-<tr class="separator:ad60d6a8c47f8eb5edd3b452cf4e1e53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -158,6 +155,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a2c1f3f0d9027149502d8219707df5528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the target node of the message flow.  <a href="classBPMN_1_1MessageFlow.html#a2c1f3f0d9027149502d8219707df5528">More...</a><br /></td></tr>
 <tr class="separator:a2c1f3f0d9027149502d8219707df5528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70601f7a01c862e55ab0fb6d1cd69636"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1MessageFlow.html#a70601f7a01c862e55ab0fb6d1cd69636">extensionElements</a></td></tr>
+<tr class="memdesc:a70601f7a01c862e55ab0fb6d1cd69636"><td class="mdescLeft">&#160;</td><td class="mdescRight">BPMN extension elements provided for the message flow.  <a href="classBPMN_1_1MessageFlow.html#a70601f7a01c862e55ab0fb6d1cd69636">More...</a><br /></td></tr>
 <tr class="separator:a70601f7a01c862e55ab0fb6d1cd69636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -173,9 +171,9 @@ Friends</h2></td></tr>
 <tr class="separator:a2bf2a0e9b454c55aa5dcb5aa4698697b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <code>MessageFlow</code> class encapsulates the information and relationships associated with a message flow in a BPMN process. The class provides access to the underlying <code>tMessageFlow</code> element and the source and target node. </p>
+<div class="textblock"><p>The class provides access to the underlying <a class="el" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a> element and the source and target node. </p>
 
-<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00019">19</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00021">21</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a76d2b693b39602fe3d179efccb1d85d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76d2b693b39602fe3d179efccb1d85d7">&#9670;&nbsp;</a></span>MessageFlow()</h2>
@@ -223,36 +221,6 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad60d6a8c47f8eb5edd3b452cf4e1e53b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad60d6a8c47f8eb5edd3b452cf4e1e53b">&#9670;&nbsp;</a></span>as()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T* BPMN::MessageFlow::as </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Attempt to downcast the message flow to a derived class T. If the cast fails, throws a std::runtime_error with an error message indicating an illegal cast operation. </p>
-
-<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00048">48</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
-
-</div>
-</div>
 <a id="afd3162eebac2e6ca60886a06aa2dd210"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd3162eebac2e6ca60886a06aa2dd210">&#9670;&nbsp;</a></span>findRecursive()</h2>
 
@@ -329,36 +297,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac3849e74209400e229d7806965b55a57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3849e74209400e229d7806965b55a57">&#9670;&nbsp;</a></span>represents()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool BPMN::MessageFlow::represents </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Check if the message flow can be downcasted to a derived class T. Returns true if the cast is successful, indicating that the element is of type T. Otherwise, returns false. </p>
-
-<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00040">40</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a id="a2bf2a0e9b454c55aa5dcb5aa4698697b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bf2a0e9b454c55aa5dcb5aa4698697b">&#9670;&nbsp;</a></span>Model</h2>
@@ -380,7 +318,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00058">58</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00040">40</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +335,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00026">26</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00028">28</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +351,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00056">56</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00038">38</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +367,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00029">29</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00031">31</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
 
 </div>
 </div>
@@ -445,7 +383,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00031">31</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00033">33</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +399,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00033">33</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MessageFlow_8h_source.html#l00035">35</a> of file <a class="el" href="MessageFlow_8h_source.html">MessageFlow.h</a>.</p>
 
 </div>
 </div>

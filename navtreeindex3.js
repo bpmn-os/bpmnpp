@@ -1,9 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classXML_1_1XMLObject.html#a4fa433549d33292e3c9fb4e529213007":[7,0,1,3,20],
-"classXML_1_1XMLObject.html#a5684a1b48411576472e68678dc91440c":[7,0,1,3,17],
-"classXML_1_1XMLObject.html#a5a39ab78e7da44bf728dd119521e79e7":[7,0,1,3,15],
-"classXML_1_1XMLObject.html#a6e4f85f50dd67982c98e15f481b8129f":[7,0,1,3,19],
 "classXML_1_1XMLObject.html#a729ed5d15f68706a06e5395b9fe3f1bb":[7,0,1,3,22],
 "classXML_1_1XMLObject.html#a7d18c043f0ce52365e396079ae5f416d":[7,0,1,3,12],
 "classXML_1_1XMLObject.html#a7d60abe07b087277cf3a6b574634c4c3":[7,0,1,3,13],
@@ -249,5 +245,9 @@ var NAVTREEINDEX3 =
 "classXML_1_1bpmn_1_1partnerEntity.html#a278a58902ae6f633b43492becfd549e3":[7,0,1,0,75,1],
 "classXML_1_1bpmn_1_1partnerEntity.html#a873661672c48e305fc9c4578f9b84bb1":[7,0,1,0,75,0],
 "classXML_1_1bpmn_1_1partnerRole.html":[7,0,1,0,76],
-"classXML_1_1bpmn_1_1partnerRole.html#a278a58902ae6f633b43492becfd549e3":[7,0,1,0,76,1]
+"classXML_1_1bpmn_1_1partnerRole.html#a278a58902ae6f633b43492becfd549e3":[7,0,1,0,76,1],
+"classXML_1_1bpmn_1_1partnerRole.html#af5acbf68ceec56f4a7b0a8376194207d":[7,0,1,0,76,0],
+"classXML_1_1bpmn_1_1potentialOwner.html":[7,0,1,0,77],
+"classXML_1_1bpmn_1_1potentialOwner.html#a01aff1adbeb7457cb3f2abe5ef5f2fdf":[7,0,1,0,77,0],
+"classXML_1_1bpmn_1_1potentialOwner.html#a278a58902ae6f633b43492becfd549e3":[7,0,1,0,77,1]
 };

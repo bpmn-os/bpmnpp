@@ -1,9 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classXML_1_1bpmn_1_1tResourceParameter.html#a341c8454985843b0ccdb0d781b30dabd":[7,0,1,0,209,4],
-"classXML_1_1bpmn_1_1tResourceParameter.html#a4a370bf32246fe7df65751f319da4ba4":[7,0,1,0,209,1],
-"classXML_1_1bpmn_1_1tResourceParameter.html#a674e49ec83dda1e91e314fa08b8b1466":[7,0,1,0,209,3],
-"classXML_1_1bpmn_1_1tResourceParameter.html#a9383d10c2cc0d11e69cca5a36c649b2b":[7,0,1,0,209,5],
 "classXML_1_1bpmn_1_1tResourceParameterBinding.html":[7,0,1,0,210],
 "classXML_1_1bpmn_1_1tResourceParameterBinding.html#a250cb8f3307c86e3321ee7f7b7e39e6b":[7,0,1,0,210,0],
 "classXML_1_1bpmn_1_1tResourceParameterBinding.html#a278a58902ae6f633b43492becfd549e3":[7,0,1,0,210,2],
@@ -249,5 +245,9 @@ var NAVTREEINDEX7 =
 "escalationEventDefinition_8h.html":[8,0,0,0,0,90],
 "escalationEventDefinition_8h_source.html":[8,0,0,0,0,90],
 "eventBasedGateway_8cpp.html":[8,0,0,0,0,91],
-"eventBasedGateway_8cpp_source.html":[8,0,0,0,0,91]
+"eventBasedGateway_8cpp_source.html":[8,0,0,0,0,91],
+"eventBasedGateway_8h.html":[8,0,0,0,0,92],
+"eventBasedGateway_8h_source.html":[8,0,0,0,0,92],
+"eventDefinition_8cpp.html":[8,0,0,0,0,93],
+"eventDefinition_8cpp_source.html":[8,0,0,0,0,93]
 };

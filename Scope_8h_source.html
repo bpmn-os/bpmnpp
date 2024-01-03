@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('Scope_8h_source.html',''); initResizab
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * @brief Base class for BPMN elements that may contain a ChildNode elements.</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * The `Scope` class provides functionalities to access child nodes,</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * The Scope class provides functionalities to access child nodes,</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * event subprocesses, start nodes, and sequence flows associated </span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * with the scope.</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> */</span></div>
@@ -148,25 +148,25 @@ $(document).ready(function(){initNavTree('Scope_8h_source.html',''); initResizab
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classBPMN_1_1Scope.html#a9fec57f59b4f426b9b9ff47d44ad254a">Scope</a>(<a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a>* <a class="code" href="classBPMN_1_1Node.html#a8c8771042ad15e4a3f9467fa84c2e595">element</a>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">  /// Vector containing all child nodes within the scope of the nodes.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">  /// @brief Vector containing all child nodes within the scope of the nodes.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725">   29</a></span>&#160;<span class="comment"></span>  std::vector&lt; std::unique_ptr&lt;Node&gt; &gt; <a class="code" href="classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725">childNodes</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  /// Vector containing pointers to all flow nodes within the scope of the nodes.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  /// @brief Vector containing pointers to all flow nodes within the scope of the nodes.</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classBPMN_1_1Scope.html#a6dfcdcc7e129b84bc4fc560e61437a81">   32</a></span>&#160;<span class="comment"></span>  std::vector&lt; FlowNode* &gt; <a class="code" href="classBPMN_1_1Scope.html#a6dfcdcc7e129b84bc4fc560e61437a81">flowNodes</a>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">  /// Vector containing pointers to all event subprocesses within the scope of the nodes.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">  /// @brief Vector containing pointers to all event subprocesses within the scope of the nodes.</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classBPMN_1_1Scope.html#a68eb5f3fe79c3a91dd8c2af821fdbade">   35</a></span>&#160;<span class="comment"></span>  std::vector&lt; EventSubProcess* &gt; <a class="code" href="classBPMN_1_1Scope.html#a68eb5f3fe79c3a91dd8c2af821fdbade">eventSubProcesses</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">  /// Vector containing all flow nodes that may start execution of the scope.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">  /// @brief Vector containing all flow nodes that may start execution of the scope.</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classBPMN_1_1Scope.html#a805ac53ffb184502882be82a7a2b0e28">   38</a></span>&#160;<span class="comment"></span>  std::vector&lt; FlowNode* &gt; <a class="code" href="classBPMN_1_1Scope.html#a805ac53ffb184502882be82a7a2b0e28">startEvents</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">  /// Vector containing all sequence flows within the scope.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">  /// @brief Vector containing all sequence flows within the scope.</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classBPMN_1_1Scope.html#acb6f3ff661f73277942735399abc6708">   41</a></span>&#160;<span class="comment"></span>  std::vector&lt; std::unique_ptr&lt;SequenceFlow&gt; &gt; <a class="code" href="classBPMN_1_1Scope.html#acb6f3ff661f73277942735399abc6708">sequenceFlows</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">  /// Vector containing pointers to all compensation activities within the scope.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">  /// @brief Vector containing pointers to all compensation activities within the scope.</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classBPMN_1_1Scope.html#a3283c9fa3043f504eeb36e574b569494">   44</a></span>&#160;<span class="comment"></span>  std::vector&lt; Activity* &gt; <a class="code" href="classBPMN_1_1Scope.html#a3283c9fa3043f504eeb36e574b569494">compensationActivities</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">  /// Pointer to compensation  event subprocess of the scope.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">  /// @brief Pointer to compensation  event subprocess of the scope.</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classBPMN_1_1Scope.html#a670457733de4055e05c7ddf1143e07d8">   47</a></span>&#160;<span class="comment"></span>  <a class="code" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a>* <a class="code" href="classBPMN_1_1Scope.html#a670457733de4055e05c7ddf1143e07d8">compensationEventSubProcess</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">protected</span>:</div>

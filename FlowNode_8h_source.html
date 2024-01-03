@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('FlowNode_8h_source.html',''); initResi
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @brief Base class for BPMN elements that may contain incoming and outgoing SequenceFlow elements.</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * The `FlowNode` class encapsulates the information and relationships associated with a node in a BPMN process.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * The FlowNode class encapsulates the information and relationships associated with a node in a BPMN process.</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * The class provides  allows to access the parent scope as well as incoming and outgoing sequence flows.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classBPMN_1_1FlowNode.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBPMN_1_1FlowNode.html">FlowNode</a> : <span class="keyword">public</span> <a class="code" href="classBPMN_1_1ChildNode.html">ChildNode</a> {</div>
@@ -148,10 +148,10 @@ $(document).ready(function(){initNavTree('FlowNode_8h_source.html',''); initResi
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">   26</a></span>&#160;  std::optional&lt;std::string&gt; <a class="code" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">name</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="comment"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">  /// Vector containing all incoming sequence flows of the node.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">  /// @brief Vector containing all incoming sequence flows of the node.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classBPMN_1_1FlowNode.html#a2562b130f4e345ed67d6bc6424fc465d">   29</a></span>&#160;<span class="comment"></span>  std::vector&lt; SequenceFlow* &gt; <a class="code" href="classBPMN_1_1FlowNode.html#a2562b130f4e345ed67d6bc6424fc465d">incoming</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  /// Vector containing all outgoing sequence flows of the node.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  /// @brief Vector containing all outgoing sequence flows of the node.</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classBPMN_1_1FlowNode.html#a5888d4465eb836f718cc4cfbcfbbb8a5">   32</a></span>&#160;<span class="comment"></span>  std::vector&lt; SequenceFlow* &gt; <a class="code" href="classBPMN_1_1FlowNode.html#a5888d4465eb836f718cc4cfbcfbbb8a5">outgoing</a>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">protected</span>:</div>
