@@ -1,5 +1,6 @@
 var namespaceXML =
 [
+    [ "bpmn", "namespaceXML_1_1bpmn.html", "namespaceXML_1_1bpmn" ],
     [ "Value", "structXML_1_1Value.html", "structXML_1_1Value" ],
     [ "Attribute", "structXML_1_1Attribute.html", "structXML_1_1Attribute" ],
     [ "XMLObject", "classXML_1_1XMLObject.html", "classXML_1_1XMLObject" ],

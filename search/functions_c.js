@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['readbpmnfile_1244',['readBPMNFile',['../classBPMN_1_1Model.html#a87a1b1319155d7425905a793dcf3085b',1,'BPMN::Model']]],
-  ['receivetask_1245',['ReceiveTask',['../classBPMN_1_1ReceiveTask.html#adc951e50e527348046591f5503a1da77',1,'BPMN::ReceiveTask']]],
-  ['represents_1246',['represents',['../classBPMN_1_1ExtensionElements.html#adb81c77c31fff2f98ab52fdf0e0080f1',1,'BPMN::ExtensionElements::represents()'],['../classBPMN_1_1ExtensionElements.html#a567973b2e2d1886d0c9369159d8cdc9a',1,'BPMN::ExtensionElements::represents() const'],['../classBPMN_1_1MessageFlow.html#ac3849e74209400e229d7806965b55a57',1,'BPMN::MessageFlow::represents()'],['../classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519',1,'BPMN::Node::represents()'],['../classBPMN_1_1Node.html#a1aac5e5feb52cfeb9beedf3ddb4f8771',1,'BPMN::Node::represents() const'],['../classBPMN_1_1SequenceFlow.html#a421b2e585adba7d0bb28c2ad983029c5',1,'BPMN::SequenceFlow::represents()']]],
-  ['resolvereference_1247',['resolveReference',['../classBPMN_1_1BoundaryEvent.html#a4d47462d4445bb16a84d4586ad63adb1',1,'BPMN::BoundaryEvent']]]
+  ['operation_2757',['operation',['../classXML_1_1bpmn_1_1operation.html#a56d832b10206b412782908a09fa01fad',1,'XML::bpmn::operation']]],
+  ['operator_20bool_2758',['operator bool',['../structXML_1_1Value.html#adbb93c1dd0766094e9bab9eaad2bc27f',1,'XML::Value']]],
+  ['operator_20double_2759',['operator double',['../structXML_1_1Value.html#a094d847c8f681338630fa0cab052bcd1',1,'XML::Value']]],
+  ['operator_20int_2760',['operator int',['../structXML_1_1Value.html#afb133adec4971960f6804e6af6fa1b6b',1,'XML::Value']]],
+  ['operator_3c_3c_2761',['operator&lt;&lt;',['../namespaceXML.html#a45367afdcd50efa1a3aa8a006fd2ec22',1,'XML::operator&lt;&lt;(std::ostream &amp;os, const XMLObject *obj)'],['../namespaceXML.html#a1e041eb83d7a478563932cb5b0803171',1,'XML::operator&lt;&lt;(std::ostream &amp;os, const XMLObject &amp;obj)']]],
+  ['operator_3d_2762',['operator=',['../structXML_1_1Value.html#adc4433f06b6f2561ae8f2fd5da72334f',1,'XML::Value::operator=(const std::string &amp;s)'],['../structXML_1_1Value.html#a66dcdd7258a81024895473f298633c4f',1,'XML::Value::operator=(bool b)'],['../structXML_1_1Value.html#a68babdc4431e14974ce43bd849442efc',1,'XML::Value::operator=(int i)'],['../structXML_1_1Value.html#a5c967d2662ca411abd748a13657658e6',1,'XML::Value::operator=(double d)']]],
+  ['outputset_2763',['outputSet',['../classXML_1_1bpmn_1_1outputSet.html#aea617ad1b95b44d668eb1907b5b9d87c',1,'XML::bpmn::outputSet']]],
+  ['string_2764',['string',['../structXML_1_1Value.html#a9b8db560c0ff452b7b1ada1360226c63',1,'XML::Value']]],
+  ['string_5fview_2765',['string_view',['../structXML_1_1Value.html#af6fce8d5508d3c9514972e81f1d0c986',1,'XML::Value']]]
 ];

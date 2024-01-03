@@ -1,14 +1,12 @@
 var searchData=
 [
-  ['gateway_1211',['Gateway',['../classBPMN_1_1Gateway.html#acba9c9b7ce8c97868491e00eb9dc2871',1,'BPMN::Gateway']]],
-  ['get_1212',['get',['../classBPMN_1_1ExtensionElements.html#a489a66978ef865c9727e31db3de95ad4',1,'BPMN::ExtensionElements::get()'],['../classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d',1,'BPMN::Node::get()'],['../classBPMN_1_1Node.html#a6fcc6ae655e621b67750ed50ebe373e8',1,'BPMN::Node::get() const'],['../classXML_1_1XMLObject.html#adf76f25d8d09d9e46b6594f8e51f14fa',1,'XML::XMLObject::get()'],['../classXML_1_1XMLObject.html#a83b334f9c7ad89bb7037da74d1036880',1,'XML::XMLObject::get() const']]],
-  ['getchildren_1213',['getChildren',['../classXML_1_1XMLObject.html#aded470ce68062e69e42e21d30051b1e5',1,'XML::XMLObject']]],
-  ['getchildrenbyname_1214',['getChildrenByName',['../classXML_1_1XMLObject.html#a946284a7beaaed9c0dea579332483557',1,'XML::XMLObject']]],
-  ['getextensionelements_1215',['getExtensionElements',['../classBPMN_1_1ExtensionElements.html#a3e87fcf7e66ebb5734c5d3fe724bfbe2',1,'BPMN::ExtensionElements']]],
-  ['getoptionalattributebyname_1216',['getOptionalAttributeByName',['../classXML_1_1XMLObject.html#a3fc94bd28094f4d322688e139a03bb51',1,'XML::XMLObject']]],
-  ['getoptionalchild_1217',['getOptionalChild',['../classXML_1_1XMLObject.html#a14ef0edfa6f4e86da91f0318b1bc4b36',1,'XML::XMLObject']]],
-  ['getoptionalchildbyname_1218',['getOptionalChildByName',['../classXML_1_1XMLObject.html#ad065b37d2b9c9f80b12859ef095346ce',1,'XML::XMLObject']]],
-  ['getrequiredattributebyname_1219',['getRequiredAttributeByName',['../classXML_1_1XMLObject.html#ae736cef7b116fa6d8b11cbd6a7a91920',1,'XML::XMLObject']]],
-  ['getrequiredchild_1220',['getRequiredChild',['../classXML_1_1XMLObject.html#a7d18c043f0ce52365e396079ae5f416d',1,'XML::XMLObject']]],
-  ['getrequiredchildbyname_1221',['getRequiredChildByName',['../classXML_1_1XMLObject.html#a7d60abe07b087277cf3a6b574634c4c3',1,'XML::XMLObject']]]
+  ['find_2690',['find',['../classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05',1,'BPMN::Node::find(std::function&lt; bool(Node *)&gt; condition)'],['../classBPMN_1_1Node.html#ac54d74cc190d2cce3073c73c3bb0c7bf',1,'BPMN::Node::find(std::function&lt; bool(const Node *)&gt; condition) const'],['../classXML_1_1XMLObject.html#a31a06f0577b385182938470cae6dddae',1,'XML::XMLObject::find()'],['../classXML_1_1XMLObject.html#ac5684225eda56253c08007840680573e',1,'XML::XMLObject::find() const']]],
+  ['find_5fall_2691',['find_all',['../classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f',1,'BPMN::Node::find_all(std::function&lt; bool(Node *)&gt; condition)'],['../classBPMN_1_1Node.html#a703f6eeccc0b1fe9a10591980c832522',1,'BPMN::Node::find_all(std::function&lt; bool(const Node *)&gt; condition) const']]],
+  ['findnode_2692',['findNode',['../classBPMN_1_1SequenceFlow.html#a6b2bcf88058b68481c1edc95d72eacdf',1,'BPMN::SequenceFlow']]],
+  ['findrecursive_2693',['findRecursive',['../classBPMN_1_1MessageFlow.html#afd3162eebac2e6ca60886a06aa2dd210',1,'BPMN::MessageFlow']]],
+  ['flowelement_2694',['flowElement',['../classXML_1_1bpmn_1_1flowElement.html#a4aad906d75988b4a3cd8ce177984b2f8',1,'XML::bpmn::flowElement']]],
+  ['flownode_2695',['flowNode',['../classXML_1_1bpmn_1_1flowNode.html#a1463952ec2b9bfcd5b1e3de2bc090ef6',1,'XML::bpmn::flowNode']]],
+  ['flownode_2696',['FlowNode',['../classBPMN_1_1FlowNode.html#a9c34bf3db8fa13aa594c1515ee74c10b',1,'BPMN::FlowNode']]],
+  ['font_2697',['Font',['../classXML_1_1bpmn_1_1Font.html#a6655af173b8e77ac50621371f66955c0',1,'XML::bpmn::Font']]],
+  ['formalexpression_2698',['formalExpression',['../classXML_1_1bpmn_1_1formalExpression.html#ab01e3b20c5d3d30007b897d3b34d0364',1,'XML::bpmn::formalExpression']]]
 ];

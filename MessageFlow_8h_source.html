@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('MessageFlow_8h_source.html',''); initR
 <a href="MessageFlow_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BPMN_MessageFlow_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BPMN_MessageFlow_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;xml/bpmn/tMessageFlow.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tMessageFlow_8h.html">xml/bpmn/tMessageFlow.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ExtensionElements_8h.html">ExtensionElements.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceBPMN.html">BPMN</a> {</div>
@@ -142,11 +142,11 @@ $(document).ready(function(){initNavTree('MessageFlow_8h_source.html',''); initR
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classBPMN_1_1MessageFlow.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">  /// Constructs a `MessageFlow` object based on a `tMessageFlow` element.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span>    <a class="code" href="classBPMN_1_1MessageFlow.html#a76d2b693b39602fe3d179efccb1d85d7">MessageFlow</a>(XML::bpmn::tMessageFlow* messageFlow);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span>    <a class="code" href="classBPMN_1_1MessageFlow.html#a76d2b693b39602fe3d179efccb1d85d7">MessageFlow</a>(<a class="code" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a>* messageFlow);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classBPMN_1_1MessageFlow.html#a2004e08c9e3eebc28b8a67e2c61646a9">   24</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classBPMN_1_1MessageFlow.html#a2004e08c9e3eebc28b8a67e2c61646a9">~MessageFlow</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classBPMN_1_1MessageFlow.html#a8304f8bf50183d86ed685f8cd3aa84ae">   26</a></span>&#160;  XML::bpmn::tMessageFlow* <a class="code" href="classBPMN_1_1MessageFlow.html#a8304f8bf50183d86ed685f8cd3aa84ae">element</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classBPMN_1_1MessageFlow.html#a8304f8bf50183d86ed685f8cd3aa84ae">   26</a></span>&#160;  <a class="code" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a>* <a class="code" href="classBPMN_1_1MessageFlow.html#a8304f8bf50183d86ed685f8cd3aa84ae">element</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">  /// Id of message flow</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classBPMN_1_1MessageFlow.html#a9a4300e1cbdcafd44ed7e02e18e84275">   29</a></span>&#160;<span class="comment"></span>  std::string <a class="code" href="classBPMN_1_1MessageFlow.html#a9a4300e1cbdcafd44ed7e02e18e84275">id</a>;<span class="comment"></span></div>
@@ -203,7 +203,9 @@ $(document).ready(function(){initNavTree('MessageFlow_8h_source.html',''); initR
 <div class="ttc" id="aclassBPMN_1_1MessageFlow_html_afd3162eebac2e6ca60886a06aa2dd210"><div class="ttname"><a href="classBPMN_1_1MessageFlow.html#afd3162eebac2e6ca60886a06aa2dd210">BPMN::MessageFlow::findRecursive</a></div><div class="ttdeci">FlowNode * findRecursive(std::string &amp;id, Scope *scope)</div><div class="ttdef"><b>Definition:</b> <a href="MessageFlow_8cpp_source.html#l00077">MessageFlow.cpp:77</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html"><div class="ttname"><a href="classBPMN_1_1Model.html">BPMN::Model</a></div><div class="ttdoc">Represents a BPMN model with all its processes and message flows.</div><div class="ttdef"><b>Definition:</b> <a href="Model_8h_source.html#l00153">Model.h:153</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Base class for BPMN elements that may contain a ChildNode elements.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00023">Scope.h:23</a></div></div>
+<div class="ttc" id="aclassXML_1_1bpmn_1_1tMessageFlow_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a></div><div class="ttdef"><b>Definition:</b> <a href="tMessageFlow_8h_source.html#l00032">tMessageFlow.h:32</a></div></div>
 <div class="ttc" id="anamespaceBPMN_html"><div class="ttname"><a href="namespaceBPMN.html">BPMN</a></div><div class="ttdoc">The BPMN namespace contains linked classes representing a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00011">Activity.h:11</a></div></div>
+<div class="ttc" id="atMessageFlow_8h_html"><div class="ttname"><a href="tMessageFlow_8h.html">tMessageFlow.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </body></html>

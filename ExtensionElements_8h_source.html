@@ -125,8 +125,8 @@ $(document).ready(function(){initNavTree('ExtensionElements_8h_source.html','');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BPMN_ExtensionElements_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;xml/bpmn/tBaseElement.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;xml/bpmn/tExtensionElements.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tBaseElement_8h.html">xml/bpmn/tBaseElement.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tExtensionElements_8h.html">xml/bpmn/tExtensionElements.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceBPMN.html">BPMN</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span> </div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('ExtensionElements_8h_source.html','');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classBPMN_1_1ExtensionElements.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="classBPMN_1_1ExtensionElements.html#aeeaf8622225c1410fee8dbfab62c79df">ExtensionElements</a>(XML::bpmn::tBaseElement* baseElement);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="classBPMN_1_1ExtensionElements.html#aeeaf8622225c1410fee8dbfab62c79df">ExtensionElements</a>(<a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a>* baseElement);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classBPMN_1_1ExtensionElements.html#ae560a965060bfbc817a6ca717f61f4c4">~ExtensionElements</a>();</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  /// Returns a pointer of type T of the ExtensionElements.</span></div>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('ExtensionElements_8h_source.html','');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">   * Returns a the extension elements if they are given or a nullptr otherwise.</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">   **/</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  XML::bpmn::tExtensionElements* <a class="code" href="classBPMN_1_1ExtensionElements.html#a3e87fcf7e66ebb5734c5d3fe724bfbe2">getExtensionElements</a>(XML::bpmn::tBaseElement* baseElement);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classXML_1_1bpmn_1_1tExtensionElements.html">XML::bpmn::tExtensionElements</a>* <a class="code" href="classBPMN_1_1ExtensionElements.html#a3e87fcf7e66ebb5734c5d3fe724bfbe2">getExtensionElements</a>(<a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a>* baseElement);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   * Returns a vector of elements of type T embedded within a container of type T.</span></div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('ExtensionElements_8h_source.html','');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> std::vector&lt; std::reference_wrapper&lt;T&gt; &gt;(); </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classBPMN_1_1ExtensionElements.html#aa50f154523b37259487a15a23bfb7c08">   71</a></span>&#160;  XML::bpmn::tExtensionElements* <a class="code" href="classBPMN_1_1ExtensionElements.html#aa50f154523b37259487a15a23bfb7c08">element</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classBPMN_1_1ExtensionElements.html#aa50f154523b37259487a15a23bfb7c08">   71</a></span>&#160;  <a class="code" href="classXML_1_1bpmn_1_1tExtensionElements.html">XML::bpmn::tExtensionElements</a>* <a class="code" href="classBPMN_1_1ExtensionElements.html#aa50f154523b37259487a15a23bfb7c08">element</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
@@ -208,7 +208,11 @@ $(document).ready(function(){initNavTree('ExtensionElements_8h_source.html','');
 <div class="ttc" id="aclassBPMN_1_1ExtensionElements_html_adb81c77c31fff2f98ab52fdf0e0080f1"><div class="ttname"><a href="classBPMN_1_1ExtensionElements.html#adb81c77c31fff2f98ab52fdf0e0080f1">BPMN::ExtensionElements::represents</a></div><div class="ttdeci">T * represents()</div><div class="ttdoc">Returns a pointer of type T of the ExtensionElements.</div><div class="ttdef"><b>Definition:</b> <a href="ExtensionElements_8h_source.html#l00019">ExtensionElements.h:19</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1ExtensionElements_html_ae560a965060bfbc817a6ca717f61f4c4"><div class="ttname"><a href="classBPMN_1_1ExtensionElements.html#ae560a965060bfbc817a6ca717f61f4c4">BPMN::ExtensionElements::~ExtensionElements</a></div><div class="ttdeci">virtual ~ExtensionElements()</div><div class="ttdef"><b>Definition:</b> <a href="ExtensionElements_8cpp_source.html#l00010">ExtensionElements.cpp:10</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1ExtensionElements_html_aeeaf8622225c1410fee8dbfab62c79df"><div class="ttname"><a href="classBPMN_1_1ExtensionElements.html#aeeaf8622225c1410fee8dbfab62c79df">BPMN::ExtensionElements::ExtensionElements</a></div><div class="ttdeci">ExtensionElements(XML::bpmn::tBaseElement *baseElement)</div><div class="ttdef"><b>Definition:</b> <a href="ExtensionElements_8cpp_source.html#l00005">ExtensionElements.cpp:5</a></div></div>
+<div class="ttc" id="aclassXML_1_1bpmn_1_1tBaseElement_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a></div><div class="ttdef"><b>Definition:</b> <a href="tBaseElement_8h_source.html#l00032">tBaseElement.h:32</a></div></div>
+<div class="ttc" id="aclassXML_1_1bpmn_1_1tExtensionElements_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tExtensionElements.html">XML::bpmn::tExtensionElements</a></div><div class="ttdef"><b>Definition:</b> <a href="tExtensionElements_8h_source.html#l00024">tExtensionElements.h:24</a></div></div>
 <div class="ttc" id="anamespaceBPMN_html"><div class="ttname"><a href="namespaceBPMN.html">BPMN</a></div><div class="ttdoc">The BPMN namespace contains linked classes representing a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00011">Activity.h:11</a></div></div>
+<div class="ttc" id="atBaseElement_8h_html"><div class="ttname"><a href="tBaseElement_8h.html">tBaseElement.h</a></div></div>
+<div class="ttc" id="atExtensionElements_8h_html"><div class="ttname"><a href="tExtensionElements_8h.html">tExtensionElements.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </body></html>

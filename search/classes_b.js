@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['receivetask_681',['ReceiveTask',['../classBPMN_1_1ReceiveTask.html',1,'BPMN']]]
+  ['node_1585',['Node',['../classBPMN_1_1Node.html',1,'BPMN::Node'],['../classXML_1_1bpmn_1_1Node.html',1,'XML::bpmn::Node']]]
 ];

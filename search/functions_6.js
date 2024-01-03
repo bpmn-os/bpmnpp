@@ -1,6 +1,23 @@
 var searchData=
 [
-  ['inclusivegateway_1222',['InclusiveGateway',['../classBPMN_1_1InclusiveGateway.html#a999decefdcb439ad5bba43cb84ff77b1',1,'BPMN::InclusiveGateway']]],
-  ['initialize_1223',['initialize',['../classBPMN_1_1MessageFlow.html#ac2c0720ea2e339a509289f7fa0cbd933',1,'BPMN::MessageFlow']]],
-  ['is_1224',['is',['../classBPMN_1_1Node.html#a49efebc9ad4a5b8d0bfd0371e28eeb05',1,'BPMN::Node::is()'],['../classBPMN_1_1Node.html#af65d223c8a18632723f6af84476c6bac',1,'BPMN::Node::is() const'],['../classXML_1_1XMLObject.html#a8d034248e892049be10a03a9688db512',1,'XML::XMLObject::is()'],['../classXML_1_1XMLObject.html#a5a39ab78e7da44bf728dd119521e79e7',1,'XML::XMLObject::is() const']]]
+  ['gateway_2699',['Gateway',['../classBPMN_1_1Gateway.html#acba9c9b7ce8c97868491e00eb9dc2871',1,'BPMN::Gateway']]],
+  ['gateway_2700',['gateway',['../classXML_1_1bpmn_1_1gateway.html#a48dae5b90494d5957a9e7d1ba3c72a2e',1,'XML::bpmn::gateway']]],
+  ['get_2701',['get',['../classBPMN_1_1ExtensionElements.html#a489a66978ef865c9727e31db3de95ad4',1,'BPMN::ExtensionElements::get()'],['../classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d',1,'BPMN::Node::get()'],['../classBPMN_1_1Node.html#a6fcc6ae655e621b67750ed50ebe373e8',1,'BPMN::Node::get() const'],['../classXML_1_1XMLObject.html#adf76f25d8d09d9e46b6594f8e51f14fa',1,'XML::XMLObject::get()'],['../classXML_1_1XMLObject.html#a83b334f9c7ad89bb7037da74d1036880',1,'XML::XMLObject::get() const']]],
+  ['getchildren_2702',['getChildren',['../classXML_1_1XMLObject.html#aded470ce68062e69e42e21d30051b1e5',1,'XML::XMLObject']]],
+  ['getchildrenbyname_2703',['getChildrenByName',['../classXML_1_1XMLObject.html#a946284a7beaaed9c0dea579332483557',1,'XML::XMLObject']]],
+  ['getextensionelements_2704',['getExtensionElements',['../classBPMN_1_1ExtensionElements.html#a3e87fcf7e66ebb5734c5d3fe724bfbe2',1,'BPMN::ExtensionElements']]],
+  ['getoptionalattributebyname_2705',['getOptionalAttributeByName',['../classXML_1_1XMLObject.html#a3fc94bd28094f4d322688e139a03bb51',1,'XML::XMLObject']]],
+  ['getoptionalchild_2706',['getOptionalChild',['../classXML_1_1XMLObject.html#a14ef0edfa6f4e86da91f0318b1bc4b36',1,'XML::XMLObject']]],
+  ['getoptionalchildbyname_2707',['getOptionalChildByName',['../classXML_1_1XMLObject.html#ad065b37d2b9c9f80b12859ef095346ce',1,'XML::XMLObject']]],
+  ['getrequiredattributebyname_2708',['getRequiredAttributeByName',['../classXML_1_1XMLObject.html#ae736cef7b116fa6d8b11cbd6a7a91920',1,'XML::XMLObject']]],
+  ['getrequiredchild_2709',['getRequiredChild',['../classXML_1_1XMLObject.html#a7d18c043f0ce52365e396079ae5f416d',1,'XML::XMLObject']]],
+  ['getrequiredchildbyname_2710',['getRequiredChildByName',['../classXML_1_1XMLObject.html#a7d60abe07b087277cf3a6b574634c4c3',1,'XML::XMLObject']]],
+  ['globalbusinessruletask_2711',['globalBusinessRuleTask',['../classXML_1_1bpmn_1_1globalBusinessRuleTask.html#a7f061ef6a76cf741515196a1c19f92f7',1,'XML::bpmn::globalBusinessRuleTask']]],
+  ['globalchoreographytask_2712',['globalChoreographyTask',['../classXML_1_1bpmn_1_1globalChoreographyTask.html#a41fd284149edddfd8852b6667b2e7884',1,'XML::bpmn::globalChoreographyTask']]],
+  ['globalconversation_2713',['globalConversation',['../classXML_1_1bpmn_1_1globalConversation.html#a63361bd472cfb0bf897862faad548e81',1,'XML::bpmn::globalConversation']]],
+  ['globalmanualtask_2714',['globalManualTask',['../classXML_1_1bpmn_1_1globalManualTask.html#abf1b34ab1215067938636363257573fb',1,'XML::bpmn::globalManualTask']]],
+  ['globalscripttask_2715',['globalScriptTask',['../classXML_1_1bpmn_1_1globalScriptTask.html#abc706a6fb65a87adbef21acaf0d542a0',1,'XML::bpmn::globalScriptTask']]],
+  ['globaltask_2716',['globalTask',['../classXML_1_1bpmn_1_1globalTask.html#a0015bb99964f23180827d28101129989',1,'XML::bpmn::globalTask']]],
+  ['globalusertask_2717',['globalUserTask',['../classXML_1_1bpmn_1_1globalUserTask.html#abdb4f311da681141b7b744d5aae14e93',1,'XML::bpmn::globalUserTask']]],
+  ['group_2718',['group',['../classXML_1_1bpmn_1_1group.html#aeaa9e0420260eb47f8d0fb27e1167bab',1,'XML::bpmn::group']]]
 ];
