@@ -176,7 +176,7 @@ std::unique_ptr<FlowNode> Model::createEvent(XML::bpmn::tEvent* event, Scope* pa
 std::unique_ptr<FlowNode> Model::createBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent) {
   auto eventDefinitions = boundaryEvent->getChildren<XML::bpmn::tEventDefinition>();
   if ( eventDefinitions.empty() ) {
-    throw std::runtime_error("Model: Boundary event has no event definition");
+    throw std::runtime_error("Model: Boundary event '" + boundaryEvent->id.value().get().value.value + "' has no event definition");
   }
   else if ( eventDefinitions.size() > 1 ) {
     throw std::runtime_error("Model: Multiple event definitions are not yet supported");
@@ -207,7 +207,7 @@ std::unique_ptr<FlowNode> Model::createBoundaryEvent(XML::bpmn::tBoundaryEvent* 
     return createTimerBoundaryEvent(boundaryEvent,parent);
   }
   
-  throw std::logic_error("Model: Failed determining event definition for boundary event");
+  throw std::logic_error("Model: Failed determining event definition for boundary event '" + boundaryEvent->id.value().get().value.value + "'");
 
   return nullptr;
 }
@@ -273,7 +273,7 @@ std::unique_ptr<FlowNode> Model::createCatchEvent(XML::bpmn::tCatchEvent* catchE
     return createLinkTargetEvent(catchEvent,parent);
   }
 
-  throw std::logic_error("Model: Failed determining event definition for catching event");
+  throw std::logic_error("Model: Failed determining event definition for catching event '" + catchEvent->id.value().get().value.value + "'");
 
   return nullptr;
 }
@@ -322,7 +322,7 @@ std::unique_ptr<FlowNode> Model::createTypedStartEvent(XML::bpmn::tStartEvent* s
     return createTimerStartEvent(startEvent,parent);
   }
 
-  throw std::logic_error("Model: Failed determining event definition for typed start event");
+  throw std::logic_error("Model: Failed determining event definition for typed start event '" + startEvent->id.value().get().value.value + "'");
 
   return nullptr;
 }
@@ -393,7 +393,7 @@ std::unique_ptr<FlowNode> Model::createThrowEvent(XML::bpmn::tThrowEvent* throwE
     return createLinkSourceEvent(throwEvent,parent);
   }
 
-  throw std::logic_error("Model: Failed determining event definition for throwing event");
+  throw std::logic_error("Model: Failed determining event definition for throwing event '" + throwEvent->id.value().get().value.value + "'");
 
   return nullptr;
 }
@@ -452,7 +452,7 @@ std::unique_ptr<FlowNode> Model::createGateway(XML::bpmn::tGateway* gateway, Sco
     return createEventBasedGateway(eventBasedGateway,parent);
   }
   else {
-    throw std::logic_error("Model: Gateway is neither parallel, exclusive, inclusive, complex, nor event-based gateway");
+    throw std::logic_error("Model: Gateway '" + gateway->id.value().get().value.value + "' is neither parallel, exclusive, inclusive, complex, nor event-based gateway");
   }
 
   return nullptr;
@@ -624,7 +624,7 @@ void Model::createCompensations(Scope* scope) {
 
 void Model::createCompensationReferences(Scope* scope) {
   std::vector<CompensateThrowEvent*> compensateThrowEvents;
-  std::unordered_map< std::string, Activity*> compensatedActivityMap;
+  std::vector<Activity*> compensatedActivities;
 
   for ( auto& childNode: scope->childNodes ) {
     if ( auto compensateThrowEvent = childNode->represents<CompensateThrowEvent>(); compensateThrowEvent ) {
@@ -648,14 +648,14 @@ void Model::createCompensationReferences(Scope* scope) {
     if ( auto compensateBoundaryEvent = childNode->represents<CompensateBoundaryEvent>(); compensateBoundaryEvent ) {
       // add activity with compensate event attached to the boundary
       auto activity = compensateBoundaryEvent->attachedTo->as<Activity>();
-      compensatedActivityMap[activity->id] = activity;
+      compensatedActivities.push_back(activity);
     }
     else if ( auto subprocess = childNode->represents<SubProcess>();
       // add subprocess with compensation event subprocess
       subprocess &&
       subprocess->compensationEventSubProcess
     ) {
-      compensatedActivityMap[subprocess->id] = subprocess;
+      compensatedActivities.push_back(subprocess);
     }
   }
 
@@ -671,18 +671,33 @@ void Model::createCompensationReferences(Scope* scope) {
       activityRef = eventDefinition.activityRef.value().get().value.value;
     }
 
-    if ( activityRef.empty() && compensateThrowEvent->name.has_value() ) {
+    if ( !activityRef.empty() ) {
+      auto it = std::find_if(
+        compensatedActivities.begin(),
+        compensatedActivities.end(),
+        [&activityRef](const Activity* activity) {
+          return activity && activity->id == activityRef;
+      });
+      if ( it == compensatedActivities.end() ) {
+        throw std::runtime_error("Model: Cannot find activity '" + activityRef + "' to be compensated");
+      }
+      compensateThrowEvent->activity = *it;
+    }
+    else if ( compensateThrowEvent->name.has_value() && !compensateThrowEvent->name.value().empty() ) {
       // use node name as fallback
-      activityRef = compensateThrowEvent->name.value();
+      auto activityName = compensateThrowEvent->name.value();
+      auto it = std::find_if(
+        compensatedActivities.begin(),
+        compensatedActivities.end(),
+        [&activityName](const Activity* activity) {
+          return activity && activity->name.has_value() && activity->name.value() == activityName;
+      });
+      if ( it == compensatedActivities.end() ) {
+        throw std::runtime_error("Model: Cannot find activity with name '" + activityName + "' to be compensated");
+      }
+      compensateThrowEvent->activity = *it;
     }
 
-    if ( !activityRef.empty() ) {
-      auto it = compensatedActivityMap.find(activityRef);
-      if ( it == compensatedActivityMap.end() ) {
-        throw std::runtime_error("Model: Cannot find activity to be compensated");
-      }
-      compensateThrowEvent->activity = it->second;
-    }
   }
 
 }
@@ -709,14 +724,14 @@ void Model::createLinks(Scope* scope) {
     for ( auto linkTarget: linkTargets ) {
       if ( linkSource->name == linkTarget->name ) {
         if ( linkSource->target ) {
-          throw std::runtime_error("Model: Link event has multiple targets");
+          throw std::runtime_error("Model: Link event '" + linkSource->id + "' has multiple targets");
         }
         linkSource->target = linkTarget;
         linkTarget->sources.push_back(linkSource);
       }
     }
     if ( !linkSource->target ) {
-      throw std::runtime_error("Model: Link event has no target");
+      throw std::runtime_error("Model: Link event '" + linkSource->id + "' has no target");
     }
   }
 

@@ -12,6 +12,7 @@ INPUT             = src/ src/xml/ src/xml/bpmn/ xsd/ README.md
 
 USE_MDFILE_AS_MAINPAGE = README.md
 
+AUTOLINK_SUPPORT      = NO
 MARKDOWN_SUPPORT      = YES
 BUILTIN_STL_SUPPORT   = YES
 EXTRACT_ALL           = YES

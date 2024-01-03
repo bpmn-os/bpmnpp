@@ -80,23 +80,23 @@ class MessageFlow;
 /**
  * @brief Represents a BPMN model with all its processes and message flows.
  *
- * The `Model` class reads a BPMN model from a file and provides access to all processes
+ * The Model class reads a BPMN model from a file and provides access to all processes
  * with their content as well as to all message flows in a BPMN model.
- * @see Process, MessageFlow
+ * @see @ref Process, @ref MessageFlow
  * @note The BPMN model is expected to conform with the BPMN specification, e.g.,
  * it is expected that all boundary events and start events of event subprocesses have
  * an event definition.
  * @par
- * @note All nodes in a process model are derived from an abstract class `Node`. The
+ * @note All nodes in a process model are derived from an abstract class @ref Node. The
  * class model uses multiple inheritance to provide type specific attributes. References
  * are usually provided by pointers to a base class. Casting is required to gain access
  * to type specific attributes.
  * @par
  * @note The BPMN extension mechanism can be used by providing a custom model class derived
- * from `Model` and a custom extension derived from the abstract base class `ExtensionElements`.
- * The following example shows how an object of the custom extension `MyExtensionElements`
- * class can be bound to processes by overriding the method @ref createProcess in the custom
- * model `MyModel` class:
+ * from @ref Model and a custom extension derived from the abstract base class
+ * @ref ExtensionElements. The following example shows how an object of the custom extension
+ * `MyExtensionElements` class can be bound to processes by overriding the method
+ * @ref Model::createProcess in the custom model `MyModel` class:
  * ```
  * std::unique_ptr<BPMN::Process> MyModel::createProcess(XML::bpmn::tProcess* process) {
  *   return bind<BPMN::Process>(
@@ -112,7 +112,7 @@ class MessageFlow;
  * References between different classes are automatically determined:
  * - For each sequence flow and each message flow, pointers to the source and target
  *   are provided.
- *   @see SequenceFlow, MessageFlow, FlowNode, Process
+ *   @see @ref SequenceFlow, @ref MessageFlow, @ref FlowNode, @ref Process
  *
  * - For each node, pointers to receiving and sending message flows are provided.
  *   @see Node
@@ -120,35 +120,41 @@ class MessageFlow;
  *   and sequence flows between them are owned by the node. Pointers to each flow node,
  *   event subprocess,  start events, compensation activities, and compensation event
  *   subprocess are given.
- *   @see Scope
+ *   @see @ref Scope
  * - For each node within a scope, a pointer to the parent scope is provided.
- *   @see ChildNode
+ *   @see @ref ChildNode
  * - For each node that may receive a flow token, pointers to all incoming and outgoing
  *   sequence flows are given.
- *   @see FlowNode, SequenceFlow
+ *   @see @ref FlowNode, @ref SequenceFlow
  * - For each activity, pointers to each boundary event (excluding the compensation
  *   boundary event) and to the compensation activity or compensation event subprocess
  *   are provided.
- *   @see Activity, BoundaryEvent
+ *   @see @ref Activity, @ref BoundaryEvent
  * - For each event attached to the boundary of an activity, a pointer to the activity
  *   is provided.
- *   @see Activity, BoundaryEvent
+ *   @see @ref Activity, @ref BoundaryEvent
  * - For each link event, a pointer to the respective target or source(s) is provided.
- *   @note Target and sources are matched based on the `name` attribute in the link event
- *   definition. If no such name is given, the `name` attribute of the flow node is used
- *   as fallback.
+ *   @note Target and sources are matched based on the
+ *   @ref XML::bpmn::tLinkEventDefinition::name attribute in the link event
+ *   definition. If no such name is given, the @ref FlowNode::name attribute of the link
+ *   event is used as fallback.
  *   @attention For each link source exactly one link target must be found, otherwise a
  *   `std::runtime_error` will be thrown.
- *   @see LinkSourceEvent, LinkTargetEvent, XML::bpmn::tLinkEventDefinition, FlowNode
+ *   @see @ref LinkSourceEvent, @ref LinkTargetEvent, @ref XML::bpmn::tLinkEventDefinition,
+ *   @ref  FlowNode
  * - For each throwing compensation event, a pointer to the activity to be compensated is
  *   provided.
- *   @note The respective activity is determined based on `activityRef` attribute of the
- *   compensation event definition and the `name` attribute of the activity. If no such
- *   attribute reference is given, the `name` attribute of the flow node is used as fallback.
+ *   @note The respective activity is determined based on the
+ *   @ref XML::bpmn::tCompensateEventDefinition::activityRef attribute of the
+ *   compensation event definition and the @ref Node::id attribute of the activity. If
+ *   no such attribute reference is given, respective activity is determined based on the 
+ *   @ref FlowNode::name attribute of the compensate throw event and the @ref FlowNode::name
+ *   of the activity.
  *   @attention Compensation throw events in compensation event subprocesses can only trigger
  *   compensation of activities within parent scope. All other compensation throw events can
  *   only trigger compensation of activities within the same scope.
- *   @see CompensateThrowEvent, XML::bpmn::tCompensateEventDefinition, Activity, FlowNode
+ *   @see @ref CompensateThrowEvent, @ref XML::bpmn::tCompensateEventDefinition, @ref Activity,
+ *   @ref  FlowNode
  **/
 class Model {
 protected:
