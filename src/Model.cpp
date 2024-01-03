@@ -32,6 +32,7 @@ void Model::readBPMNFile(const std::string& filename)
     createChildNodes(process.get());
     createSequenceFlows(process.get());
     createNestedReferences(process.get());
+    createCompensations(process.get());
   }
 
   createMessageFlows();
@@ -589,9 +590,7 @@ void Model::createFlowReferences(FlowNode* flowNode) {
 
 void Model::createCompensations(Scope* scope) {
   std::unordered_map< std::string, Activity*> compensationActivityMap;
-  std::unordered_map< std::string, Activity*> compensatedActivityMap;
   std::unordered_map< std::string, CompensateBoundaryEvent*> compensateBoundaryEventMap;
-  std::vector<CompensateThrowEvent*> compensateThrowEvents;
 
   for ( auto compensationActivity : scope->compensationActivities ) {
     compensationActivityMap[compensationActivity->id] = compensationActivity;
@@ -600,19 +599,7 @@ void Model::createCompensations(Scope* scope) {
   for ( auto& childNode: scope->childNodes ) {
     if ( auto compensateBoundaryEvent = childNode->represents<CompensateBoundaryEvent>(); compensateBoundaryEvent ) {
       // add activity with compensate event attached to the boundary
-      auto activity = compensateBoundaryEvent->attachedTo->as<Activity>();
-      compensatedActivityMap[activity->id] = activity;
       compensateBoundaryEventMap[compensateBoundaryEvent->id] = compensateBoundaryEvent;
-    }
-    else if ( auto subprocess = childNode->represents<SubProcess>();
-      // add subprocess with compensation event subprocess
-      subprocess &&
-      subprocess->compensationEventSubProcess
-    ) {
-      compensatedActivityMap[subprocess->id] = subprocess;
-    }
-    else if ( auto compensateThrowEvent = childNode->represents<CompensateThrowEvent>(); compensateThrowEvent ) {
-      compensateThrowEvents.push_back(compensateThrowEvent);
     }
   }
 
@@ -624,6 +611,54 @@ void Model::createCompensations(Scope* scope) {
       it1->second->attachedTo->compensatedBy = it2->second;
     }
   }
+
+  createCompensationReferences(scope);
+
+  // recurse
+  for ( auto& childNode: scope->childNodes ) {
+    if ( auto childScope = childNode->represents<Scope>(); childScope ) {
+      createCompensations(childScope);
+    }
+  }
+}
+
+void Model::createCompensationReferences(Scope* scope) {
+  std::vector<CompensateThrowEvent*> compensateThrowEvents;
+  std::unordered_map< std::string, Activity*> compensatedActivityMap;
+
+  for ( auto& childNode: scope->childNodes ) {
+    if ( auto compensateThrowEvent = childNode->represents<CompensateThrowEvent>(); compensateThrowEvent ) {
+      compensateThrowEvents.push_back(compensateThrowEvent);
+    }
+  }
+
+
+  auto context = scope;
+  if ( auto eventSubProcess = scope->represents<EventSubProcess>();
+    eventSubProcess && 
+    scope->startEvents.size() == 1 &&
+    scope->startEvents.front()->represents<CompensateStartEvent>()
+  ) {
+    // compensation throw events in compensation event subprocess trigger 
+    // compensation of activities in parent scope
+    context = eventSubProcess->parent;
+  }
+
+  for ( auto& childNode: context->childNodes ) {
+    if ( auto compensateBoundaryEvent = childNode->represents<CompensateBoundaryEvent>(); compensateBoundaryEvent ) {
+      // add activity with compensate event attached to the boundary
+      auto activity = compensateBoundaryEvent->attachedTo->as<Activity>();
+      compensatedActivityMap[activity->id] = activity;
+    }
+    else if ( auto subprocess = childNode->represents<SubProcess>();
+      // add subprocess with compensation event subprocess
+      subprocess &&
+      subprocess->compensationEventSubProcess
+    ) {
+      compensatedActivityMap[subprocess->id] = subprocess;
+    }
+  }
+
 
   // determine activity to be compensated for compensate throw event
   for ( auto compensateThrowEvent : compensateThrowEvents ) {
@@ -649,6 +684,7 @@ void Model::createCompensations(Scope* scope) {
       compensateThrowEvent->activity = it->second;
     }
   }
+
 }
 
 void Model::createLinks(Scope* scope) {

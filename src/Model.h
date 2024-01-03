@@ -80,12 +80,31 @@ class MessageFlow;
 /**
  * @brief Represents a BPMN model with all its processes and message flows.
  *
- * The `Model` class reads a BPMN model from a file and encapsulates all processes and
- * message flows in a BPMN model.
- * @note The BPMN model is expected to conform with the BPMN specification, e.g., 
+ * The `Model` class reads a BPMN model from a file and provides access to all processes
+ * with their content as well as to all message flows in a BPMN model.
+ * @see Process, MessageFlow
+ * @note The BPMN model is expected to conform with the BPMN specification, e.g.,
  * it is expected that all boundary events and start events of event subprocesses have
  * an event definition.
- * @see Process, MessageFlow
+ * @par
+ * @note All nodes in a process model are derived from an abstract class `Node`. The
+ * class model uses multiple inheritance to provide type specific attributes. References
+ * are usually provided by pointers to a base class. Casting is required to gain access
+ * to type specific attributes.
+ * @par
+ * @note The BPMN extension mechanism can be used by providing a custom model class derived
+ * from `Model` and a custom extension derived from the abstract base class `ExtensionElements`.
+ * The following example shows how an object of the custom extension `MyExtensionElements`
+ * class can be bound to processes by overriding the method @ref createProcess in the custom
+ * model `MyModel` class:
+ * ```
+ * std::unique_ptr<BPMN::Process> MyModel::createProcess(XML::bpmn::tProcess* process) {
+ *   return bind<BPMN::Process>(
+ *     BPMN::Model::createProcess(process),
+ *     std::make_unique<MyExtensionElements>(process)
+ *   );
+ * }
+ * ```
  *
  * @warning Multiple event definitions are not yet supported. A `std::runtime_error`
  * will be thrown when parsing an event with multiple event definitions.
@@ -100,13 +119,13 @@ class MessageFlow;
  * - For each BPMN element that may have child nodes within its scope, the child nodes
  *   and sequence flows between them are owned by the node. Pointers to each flow node,
  *   event subprocess,  start events, compensation activities, and compensation event
- *   subprocess are given. 
+ *   subprocess are given.
  *   @see Scope
  * - For each node within a scope, a pointer to the parent scope is provided.
  *   @see ChildNode
- * - For each node that may receive a flow token, pointers to all incoming and outgoing 
+ * - For each node that may receive a flow token, pointers to all incoming and outgoing
  *   sequence flows are given.
- *   @see FlowNode, SequenceFlow 
+ *   @see FlowNode, SequenceFlow
  * - For each activity, pointers to each boundary event (excluding the compensation
  *   boundary event) and to the compensation activity or compensation event subprocess
  *   are provided.
@@ -114,7 +133,7 @@ class MessageFlow;
  * - For each event attached to the boundary of an activity, a pointer to the activity
  *   is provided.
  *   @see Activity, BoundaryEvent
- * - For each link event, a pointer to the respective target or source(s) is provided. 
+ * - For each link event, a pointer to the respective target or source(s) is provided.
  *   @note Target and sources are matched based on the `name` attribute in the link event
  *   definition. If no such name is given, the `name` attribute of the flow node is used
  *   as fallback.
@@ -126,6 +145,9 @@ class MessageFlow;
  *   @note The respective activity is determined based on `activityRef` attribute of the
  *   compensation event definition and the `name` attribute of the activity. If no such
  *   attribute reference is given, the `name` attribute of the flow node is used as fallback.
+ *   @attention Compensation throw events in compensation event subprocesses can only trigger
+ *   compensation of activities within parent scope. All other compensation throw events can
+ *   only trigger compensation of activities within the same scope.
  *   @see CompensateThrowEvent, XML::bpmn::tCompensateEventDefinition, Activity, FlowNode
  **/
 class Model {
@@ -217,6 +239,7 @@ protected:
   virtual void createNestedReferences(Scope* scope);
   virtual void createFlowReferences(FlowNode* flowNode);
   virtual void createCompensations(Scope* scope);
+  virtual void createCompensationReferences(Scope* scope);
   virtual void createLinks(Scope* scope);
   virtual void createMessageFlows();
 
