@@ -10,47 +10,29 @@ class Scope;
 class FlowNode;
 
 /**
- * The `SequenceFlow` class encapsulates the information and relationships associated with a sequence flow
- * in a BPMN process. The class provides access to the underlying `tSequenceFlow` element and the source 
- * and target node.
+ * @brief The SequenceFlow class encapsulates the information and relationships associated with a sequence flow
+ * in a BPMN process.
+ *
+ * The class provides access to the underlying @ref XML::bpmn::tSequenceFlow element
+ * and the source and target node.
  */
 class SequenceFlow {
 public:
-  //// Constructs a `SequenceFlow` object based on a `tSequenceFlow` element and the parent scope.
+  //// @brief Constructs a SequenceFlow object based on a @ref XML::bpmn::tSequenceFlow element and the parent scope.
 	SequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope);
 
   virtual ~SequenceFlow() = default;
 
   XML::bpmn::tSequenceFlow* element;
 
-  /// Id of sequence flow
+  /// @brief Id of sequence flow
   std::string id;
-  /// Reference to the source node of the sequence flow.
+  /// @brief Reference to the source node of the sequence flow.
   FlowNode* source;
-  /// Reference to the target node of the sequence flow.
+  /// @brief Reference to the target node of the sequence flow.
   FlowNode* target;
 
-  /**
-   * Check if the sequence flow can be downcasted to a derived class T.
-   * Returns true if the cast is successful, indicating that the element
-   * is of type T. Otherwise, returns false.
-   */
-  template<typename T> bool represents() {
-    return ( dynamic_cast<T*>(this) != nullptr );
-  }
-  /**
-   * Attempt to downcast the sequence flow to a derived class T.
-   * If the cast fails, throws a std::runtime_error with an error message
-   * indicating an illegal cast operation.
-   */
-  template<typename T> T* as() {
-    T* ptr = dynamic_cast<T*>(this); 
-    if ( ptr == nullptr ) {
-      throw std::runtime_error("SequenceFlow: Illegal downcast");
-    }
-    return ptr; 
-  }
-
+  /// @brief BPMN extension elements provided for the sequence flow.
   std::unique_ptr<ExtensionElements> extensionElements;
 protected:
   FlowNode* findNode(std::string& id, Scope* scope);

@@ -14,7 +14,7 @@ class SequenceFlow;
 /**
  * @brief Base class for BPMN elements that may contain incoming and outgoing SequenceFlow elements.
  *
- * The `FlowNode` class encapsulates the information and relationships associated with a node in a BPMN process.
+ * The FlowNode class encapsulates the information and relationships associated with a node in a BPMN process.
  * The class provides  allows to access the parent scope as well as incoming and outgoing sequence flows.
  */
 class FlowNode : public ChildNode {
@@ -25,10 +25,10 @@ public:
 
   std::optional<std::string> name;
   
-  /// Vector containing all incoming sequence flows of the node.
+  /// @brief Vector containing all incoming sequence flows of the node.
   std::vector< SequenceFlow* > incoming;
 
-  /// Vector containing all outgoing sequence flows of the node.
+  /// @brief Vector containing all outgoing sequence flows of the node.
   std::vector< SequenceFlow* > outgoing;
 
 protected:

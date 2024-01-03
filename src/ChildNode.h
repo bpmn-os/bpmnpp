@@ -18,7 +18,7 @@ class ChildNode : virtual public Node {
 public:
   ChildNode(XML::bpmn::tBaseElement* element, Scope* parent);
 
-  /// Reference to the parent node.
+  /// @brief Reference to the parent node.
   Scope* parent;
 };
 
