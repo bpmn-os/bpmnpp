@@ -13,9 +13,7 @@ class CancelBoundaryEvent : virtual public BoundaryEvent, virtual public CatchEv
   friend class Model;
 public:
   CancelBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent);
-
   XML::bpmn::tBoundaryEvent* element;
-protected:
 };
 
 } // namespace BPMN

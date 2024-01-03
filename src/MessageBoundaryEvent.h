@@ -14,9 +14,7 @@ class MessageBoundaryEvent : public MessageCatchEvent, public BoundaryEvent {
   friend class Model;
 public:
   MessageBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent);
-
   XML::bpmn::tBoundaryEvent* element;
-protected:
 };
 
 } // namespace BPMN

@@ -13,9 +13,6 @@ class ConditionalCatchEvent : virtual public CatchEvent {
   friend class Model;
 public:
   ConditionalCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
-
-  XML::bpmn::tCatchEvent* element;
-protected:
 };
 
 } // namespace BPMN

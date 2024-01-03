@@ -14,9 +14,7 @@ class ConditionalBoundaryEvent : public ConditionalCatchEvent, public BoundaryEv
   friend class Model;
 public:
   ConditionalBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent);
-
   XML::bpmn::tBoundaryEvent* element;
-protected:
 };
 
 } // namespace BPMN

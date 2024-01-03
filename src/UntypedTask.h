@@ -13,9 +13,6 @@ class UntypedTask : public Task {
   friend class Model;
 public:
   UntypedTask(XML::bpmn::tTask* task, Scope* parent);
-
-  XML::bpmn::tTask* element;
-protected:
 };
 
 } // namespace BPMN

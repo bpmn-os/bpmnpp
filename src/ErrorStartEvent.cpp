@@ -6,7 +6,6 @@ ErrorStartEvent::ErrorStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* pare
   : Node(startEvent)
   , CatchEvent(startEvent,parent)
   , TypedStartEvent(startEvent,parent)
-  , element(startEvent)
 {
 }
 

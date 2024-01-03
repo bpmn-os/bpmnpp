@@ -13,9 +13,7 @@ class CatchEvent : public Event {
   friend class Model;
 public:
   CatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
-
   XML::bpmn::tCatchEvent* element;
-protected:
 };
 
 } // namespace BPMN

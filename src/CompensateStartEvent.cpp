@@ -6,7 +6,6 @@ CompensateStartEvent::CompensateStartEvent(XML::bpmn::tStartEvent* startEvent, S
   : Node(startEvent)
   , CatchEvent(startEvent,parent)
   , TypedStartEvent(startEvent,parent)
-  , element(startEvent)
 {
 }
 

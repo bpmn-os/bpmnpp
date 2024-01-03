@@ -13,9 +13,7 @@ class ErrorBoundaryEvent : virtual public BoundaryEvent, virtual public CatchEve
   friend class Model;
 public:
   ErrorBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent);
-
   XML::bpmn::tBoundaryEvent* element;
-protected:
 };
 
 } // namespace BPMN

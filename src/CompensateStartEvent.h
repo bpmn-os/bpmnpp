@@ -13,9 +13,6 @@ class CompensateStartEvent : public TypedStartEvent {
   friend class Model;
 public:
   CompensateStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
-
-  XML::bpmn::tStartEvent* element;
-protected:
 };
 
 } // namespace BPMN

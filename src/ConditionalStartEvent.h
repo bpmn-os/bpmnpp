@@ -14,9 +14,7 @@ class ConditionalStartEvent : public ConditionalCatchEvent, public TypedStartEve
   friend class Model;
 public:
   ConditionalStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
-
   XML::bpmn::tStartEvent* element;
-protected:
 };
 
 } // namespace BPMN

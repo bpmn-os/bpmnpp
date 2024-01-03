@@ -13,9 +13,6 @@ class ErrorEndEvent : public ThrowEvent {
   friend class Model;
 public:
   ErrorEndEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent);
-
-  XML::bpmn::tThrowEvent* element;
-protected:
 };
 
 } // namespace BPMN

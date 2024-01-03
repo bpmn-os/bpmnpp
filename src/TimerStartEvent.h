@@ -14,9 +14,7 @@ class TimerStartEvent : public TimerCatchEvent, public TypedStartEvent {
   friend class Model;
 public:
   TimerStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
-
   XML::bpmn::tStartEvent* element;
-protected:
 };
 
 } // namespace BPMN

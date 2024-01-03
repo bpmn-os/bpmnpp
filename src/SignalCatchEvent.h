@@ -13,9 +13,6 @@ class SignalCatchEvent : virtual public CatchEvent {
   friend class Model;
 public:
   SignalCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
-
-  XML::bpmn::tCatchEvent* element;
-protected:
 };
 
 } // namespace BPMN

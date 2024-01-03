@@ -17,10 +17,8 @@ class LinkSourceEvent : public ThrowEvent {
   friend class Model;
 public:
   LinkSourceEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent);
-  XML::bpmn::tThrowEvent* element;
   std::string linkName;
   FlowNode* target; 
-protected:
 };
 
 } // namespace BPMN

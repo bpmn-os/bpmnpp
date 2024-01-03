@@ -14,9 +14,7 @@ class SignalBoundaryEvent : public SignalCatchEvent, public BoundaryEvent {
   friend class Model;
 public:
   SignalBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent);
-
   XML::bpmn::tBoundaryEvent* element;
-protected:
 };
 
 } // namespace BPMN

@@ -14,9 +14,7 @@ class SignalStartEvent : public SignalCatchEvent, public TypedStartEvent {
   friend class Model;
 public:
   SignalStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
-
   XML::bpmn::tStartEvent* element;
-protected:
 };
 
 } // namespace BPMN

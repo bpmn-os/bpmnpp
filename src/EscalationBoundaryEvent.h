@@ -13,9 +13,7 @@ class EscalationBoundaryEvent : virtual public BoundaryEvent, virtual public Cat
   friend class Model;
 public:
   EscalationBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent);
-
   XML::bpmn::tBoundaryEvent* element;
-protected:
 };
 
 } // namespace BPMN

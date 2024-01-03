@@ -13,9 +13,7 @@ class CompensateBoundaryEvent : virtual public BoundaryEvent, virtual public Cat
   friend class Model;
 public:
   CompensateBoundaryEvent(XML::bpmn::tBoundaryEvent* boundaryEvent, Scope* parent);
-
   XML::bpmn::tBoundaryEvent* element;
-protected:
 };
 
 } // namespace BPMN

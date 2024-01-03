@@ -13,9 +13,6 @@ class ErrorStartEvent : public TypedStartEvent {
   friend class Model;
 public:
   ErrorStartEvent(XML::bpmn::tStartEvent* startEvent, Scope* parent);
-
-  XML::bpmn::tStartEvent* element;
-protected:
 };
 
 } // namespace BPMN

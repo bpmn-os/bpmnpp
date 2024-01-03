@@ -16,9 +16,7 @@ class Event : public FlowNode {
   friend class Model;
 public:
   Event(XML::bpmn::tEvent* event, Scope* parent);
-
   XML::bpmn::tEvent* element;
-protected:
 };
 
 } // namespace BPMN

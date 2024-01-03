@@ -13,9 +13,6 @@ class MessageThrowEvent : public ThrowEvent {
   friend class Model;
 public:
   MessageThrowEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent);
-
-  XML::bpmn::tThrowEvent* element;
-protected:
 };
 
 } // namespace BPMN

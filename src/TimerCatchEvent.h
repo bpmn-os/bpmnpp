@@ -13,9 +13,6 @@ class TimerCatchEvent : virtual public CatchEvent {
   friend class Model;
 public:
   TimerCatchEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent);
-
-  XML::bpmn::tCatchEvent* element;
-protected:
 };
 
 } // namespace BPMN

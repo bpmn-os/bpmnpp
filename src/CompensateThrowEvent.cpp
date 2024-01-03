@@ -6,7 +6,6 @@ CompensateThrowEvent::CompensateThrowEvent(XML::bpmn::tThrowEvent* throwEvent, S
   : Node(throwEvent)
   , ThrowEvent(throwEvent,parent)
   , activity(nullptr)
-  , element(throwEvent)
 {
 }
 
