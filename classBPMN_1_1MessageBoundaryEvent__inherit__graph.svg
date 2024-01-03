@@ -28,7 +28,7 @@
 <polygon fill="none" stroke="black" points="0,-105.5 0,-162.5 151,-162.5 151,-105.5 0,-105.5"/>
 <text text-anchor="middle" x="75.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::MessageCatchEvent</text>
 <polyline fill="none" stroke="black" points="0,-143.5 151,-143.5 "/>
-<text text-anchor="start" x="8" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="75.5" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="0,-124.5 151,-124.5 "/>
 <text text-anchor="start" x="8" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ MessageCatchEvent()</text>
 </a>

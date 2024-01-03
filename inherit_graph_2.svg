@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classBPMN_1_1Model.html" target="_top" xlink:title="Represents a BPMN model with all its processes.">
+<g id="a_node1"><a xlink:href="classBPMN_1_1Model.html" target="_top" xlink:title="Represents a BPMN model with all its processes and message flows.">
 <polygon fill="none" stroke="black" points="0,-0.5 0,-19.5 82,-19.5 82,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="41" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::Model</text>
 </a>

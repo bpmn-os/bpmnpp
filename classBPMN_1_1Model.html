@@ -128,259 +128,2991 @@ $(document).ready(function(){initNavTree('classBPMN_1_1Model.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a BPMN model with all its processes.  
+<p>Represents a <a class="el" href="namespaceBPMN.html" title="The BPMN namespace contains linked classes representing a BPMN model.">BPMN</a> model with all its processes and message flows.  
  <a href="classBPMN_1_1Model.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Model_8h_source.html">Model.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a98de84e61b1e4a6101b3cba93888d841"><td class="memItemLeft" align="right" valign="top"><a id="a98de84e61b1e4a6101b3cba93888d841"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Model</b> (const std::string &amp;filename)</td></tr>
+<tr class="memitem:a98de84e61b1e4a6101b3cba93888d841"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a98de84e61b1e4a6101b3cba93888d841">Model</a> (const std::string &amp;filename)</td></tr>
 <tr class="separator:a98de84e61b1e4a6101b3cba93888d841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b12f5b3a10b3e6c74923b52dd84e1a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a92b12f5b3a10b3e6c74923b52dd84e1a">~Model</a> ()=default</td></tr>
+<tr class="separator:a92b12f5b3a10b3e6c74923b52dd84e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a726b3195cc0868077a0c2333ddacc0a6"><td class="memItemLeft" align="right" valign="top"><a id="a726b3195cc0868077a0c2333ddacc0a6"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="classXML_1_1XMLObject.html">XML::XMLObject</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>roots</b></td></tr>
+<tr class="memitem:a726b3195cc0868077a0c2333ddacc0a6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classXML_1_1XMLObject.html">XML::XMLObject</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a726b3195cc0868077a0c2333ddacc0a6">roots</a></td></tr>
 <tr class="separator:a726b3195cc0868077a0c2333ddacc0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a161464a851d7825e3ba1150e8dc2bbb4"><td class="memItemLeft" align="right" valign="top"><a id="a161464a851d7825e3ba1150e8dc2bbb4"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1Process.html">Process</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>processes</b></td></tr>
+<tr class="memitem:a161464a851d7825e3ba1150e8dc2bbb4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1Process.html">Process</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a161464a851d7825e3ba1150e8dc2bbb4">processes</a></td></tr>
 <tr class="separator:a161464a851d7825e3ba1150e8dc2bbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fbd982974a432552f51a2caf34db480"><td class="memItemLeft" align="right" valign="top"><a id="a6fbd982974a432552f51a2caf34db480"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>messageFlows</b></td></tr>
+<tr class="memitem:a6fbd982974a432552f51a2caf34db480"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a6fbd982974a432552f51a2caf34db480">messageFlows</a></td></tr>
 <tr class="separator:a6fbd982974a432552f51a2caf34db480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a87a1b1319155d7425905a793dcf3085b"><td class="memItemLeft" align="right" valign="top"><a id="a87a1b1319155d7425905a793dcf3085b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>readBPMNFile</b> (const std::string &amp;filename)</td></tr>
+<tr class="memitem:a2a684f87dafb1fc7c33c1b4bf13afe23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a2a684f87dafb1fc7c33c1b4bf13afe23">Model</a> ()</td></tr>
+<tr class="separator:a2a684f87dafb1fc7c33c1b4bf13afe23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a1b1319155d7425905a793dcf3085b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a87a1b1319155d7425905a793dcf3085b">readBPMNFile</a> (const std::string &amp;filename)</td></tr>
 <tr class="separator:a87a1b1319155d7425905a793dcf3085b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69c1d6fad5b2e6dd9abe6e8819ce8bbb"><td class="memItemLeft" align="right" valign="top"><a id="a69c1d6fad5b2e6dd9abe6e8819ce8bbb"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1Process.html">Process</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a> *process)</td></tr>
+<tr class="memitem:a69c1d6fad5b2e6dd9abe6e8819ce8bbb"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1Process.html">Process</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">createProcess</a> (XML::bpmn::tProcess *process)</td></tr>
 <tr class="separator:a69c1d6fad5b2e6dd9abe6e8819ce8bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ba683c2fc244ae0e4c46dce9b3a822b"><td class="memItemLeft" align="right" valign="top"><a id="a1ba683c2fc244ae0e4c46dce9b3a822b"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEventSubProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *subProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a1ba683c2fc244ae0e4c46dce9b3a822b"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a1ba683c2fc244ae0e4c46dce9b3a822b">createEventSubProcess</a> (XML::bpmn::tSubProcess *subProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a1ba683c2fc244ae0e4c46dce9b3a822b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a491687f47c404ddf097e2afd0f3b0cbe"><td class="memItemLeft" align="right" valign="top"><a id="a491687f47c404ddf097e2afd0f3b0cbe"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createFlowNode</b> (<a class="el" href="classXML_1_1bpmn_1_1tFlowNode.html">XML::bpmn::tFlowNode</a> *flowNode, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a491687f47c404ddf097e2afd0f3b0cbe"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a491687f47c404ddf097e2afd0f3b0cbe">createFlowNode</a> (XML::bpmn::tFlowNode *flowNode, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a491687f47c404ddf097e2afd0f3b0cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a901bc56ea971f667b0d51917ba68d791"><td class="memItemLeft" align="right" valign="top"><a id="a901bc56ea971f667b0d51917ba68d791"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createActivity</b> (<a class="el" href="classXML_1_1bpmn_1_1tActivity.html">XML::bpmn::tActivity</a> *activity, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a901bc56ea971f667b0d51917ba68d791"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a901bc56ea971f667b0d51917ba68d791">createActivity</a> (XML::bpmn::tActivity *activity, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a901bc56ea971f667b0d51917ba68d791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9466c2c85bf67a5ed044ed0ca40492b6"><td class="memItemLeft" align="right" valign="top"><a id="a9466c2c85bf67a5ed044ed0ca40492b6"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSubProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a> *subProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a9466c2c85bf67a5ed044ed0ca40492b6"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a9466c2c85bf67a5ed044ed0ca40492b6">createSubProcess</a> (XML::bpmn::tSubProcess *subProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a9466c2c85bf67a5ed044ed0ca40492b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73cc7cd19755291f3b87c369ffc7f0da"><td class="memItemLeft" align="right" valign="top"><a id="a73cc7cd19755291f3b87c369ffc7f0da"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCallActivity</b> (<a class="el" href="classXML_1_1bpmn_1_1tCallActivity.html">XML::bpmn::tCallActivity</a> *callActivity, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a73cc7cd19755291f3b87c369ffc7f0da"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a73cc7cd19755291f3b87c369ffc7f0da">createCallActivity</a> (XML::bpmn::tCallActivity *callActivity, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a73cc7cd19755291f3b87c369ffc7f0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d3036111779f7640e2b5b4f0456355"><td class="memItemLeft" align="right" valign="top"><a id="a15d3036111779f7640e2b5b4f0456355"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createAdHocSubProcess</b> (<a class="el" href="classXML_1_1bpmn_1_1tAdHocSubProcess.html">XML::bpmn::tAdHocSubProcess</a> *adHocSubProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a15d3036111779f7640e2b5b4f0456355"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a15d3036111779f7640e2b5b4f0456355">createAdHocSubProcess</a> (XML::bpmn::tAdHocSubProcess *adHocSubProcess, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a15d3036111779f7640e2b5b4f0456355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f09a56e3624930b8d4123ca1444fbb8"><td class="memItemLeft" align="right" valign="top"><a id="a5f09a56e3624930b8d4123ca1444fbb8"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTransaction</b> (<a class="el" href="classXML_1_1bpmn_1_1tTransaction.html">XML::bpmn::tTransaction</a> *transaction, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a5f09a56e3624930b8d4123ca1444fbb8"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a5f09a56e3624930b8d4123ca1444fbb8">createTransaction</a> (XML::bpmn::tTransaction *transaction, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a5f09a56e3624930b8d4123ca1444fbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0687836eb6c7fab3be4442de2e1400d"><td class="memItemLeft" align="right" valign="top"><a id="af0687836eb6c7fab3be4442de2e1400d"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tTask.html">XML::bpmn::tTask</a> *task, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:af0687836eb6c7fab3be4442de2e1400d"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#af0687836eb6c7fab3be4442de2e1400d">createTask</a> (XML::bpmn::tTask *task, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:af0687836eb6c7fab3be4442de2e1400d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a8b6b7a700c974acb31de8f4366213"><td class="memItemLeft" align="right" valign="top"><a id="a16a8b6b7a700c974acb31de8f4366213"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createUntypedTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tTask.html">XML::bpmn::tTask</a> *task, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a16a8b6b7a700c974acb31de8f4366213"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a16a8b6b7a700c974acb31de8f4366213">createUntypedTask</a> (XML::bpmn::tTask *task, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a16a8b6b7a700c974acb31de8f4366213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa32f65b3430f36d61753c74af53821"><td class="memItemLeft" align="right" valign="top"><a id="aaaa32f65b3430f36d61753c74af53821"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSendTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tSendTask.html">XML::bpmn::tSendTask</a> *sendTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:aaaa32f65b3430f36d61753c74af53821"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#aaaa32f65b3430f36d61753c74af53821">createSendTask</a> (XML::bpmn::tSendTask *sendTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:aaaa32f65b3430f36d61753c74af53821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9604933647764008e50043c2adf654b"><td class="memItemLeft" align="right" valign="top"><a id="ac9604933647764008e50043c2adf654b"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createReceiveTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tReceiveTask.html">XML::bpmn::tReceiveTask</a> *receiveTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:ac9604933647764008e50043c2adf654b"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ac9604933647764008e50043c2adf654b">createReceiveTask</a> (XML::bpmn::tReceiveTask *receiveTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:ac9604933647764008e50043c2adf654b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74d5b23140f809b74f3b59d629734985"><td class="memItemLeft" align="right" valign="top"><a id="a74d5b23140f809b74f3b59d629734985"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createUserTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tUserTask.html">XML::bpmn::tUserTask</a> *userTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a74d5b23140f809b74f3b59d629734985"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a74d5b23140f809b74f3b59d629734985">createUserTask</a> (XML::bpmn::tUserTask *userTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a74d5b23140f809b74f3b59d629734985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a615fbcee2b1d71ddab1526edff377c55"><td class="memItemLeft" align="right" valign="top"><a id="a615fbcee2b1d71ddab1526edff377c55"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createManualTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tManualTask.html">XML::bpmn::tManualTask</a> *manualTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a615fbcee2b1d71ddab1526edff377c55"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a615fbcee2b1d71ddab1526edff377c55">createManualTask</a> (XML::bpmn::tManualTask *manualTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a615fbcee2b1d71ddab1526edff377c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba8021af9dcc8ac379f9496e1da88316"><td class="memItemLeft" align="right" valign="top"><a id="aba8021af9dcc8ac379f9496e1da88316"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createScriptTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tScriptTask.html">XML::bpmn::tScriptTask</a> *scriptTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:aba8021af9dcc8ac379f9496e1da88316"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#aba8021af9dcc8ac379f9496e1da88316">createScriptTask</a> (XML::bpmn::tScriptTask *scriptTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:aba8021af9dcc8ac379f9496e1da88316"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad40d9aedd71c70d984b4b1c7fbe984cc"><td class="memItemLeft" align="right" valign="top"><a id="ad40d9aedd71c70d984b4b1c7fbe984cc"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createBusinessRuleTask</b> (<a class="el" href="classXML_1_1bpmn_1_1tBusinessRuleTask.html">XML::bpmn::tBusinessRuleTask</a> *businessRuleTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:ad40d9aedd71c70d984b4b1c7fbe984cc"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ad40d9aedd71c70d984b4b1c7fbe984cc">createBusinessRuleTask</a> (XML::bpmn::tBusinessRuleTask *businessRuleTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:ad40d9aedd71c70d984b4b1c7fbe984cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3ec2d9d6feb82afbd7d2cfdf5d03295"><td class="memItemLeft" align="right" valign="top"><a id="ac3ec2d9d6feb82afbd7d2cfdf5d03295"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tEvent.html">XML::bpmn::tEvent</a> *event, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:ac3ec2d9d6feb82afbd7d2cfdf5d03295"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ac3ec2d9d6feb82afbd7d2cfdf5d03295">createEvent</a> (XML::bpmn::tEvent *event, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:ac3ec2d9d6feb82afbd7d2cfdf5d03295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4e14157a14d95cb9cfca7ef65dc282d"><td class="memItemLeft" align="right" valign="top"><a id="ad4e14157a14d95cb9cfca7ef65dc282d"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:ad4e14157a14d95cb9cfca7ef65dc282d"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ad4e14157a14d95cb9cfca7ef65dc282d">createBoundaryEvent</a> (XML::bpmn::tBoundaryEvent *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:ad4e14157a14d95cb9cfca7ef65dc282d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae80ef3d8b479d29b452f639de52bdc53"><td class="memItemLeft" align="right" valign="top"><a id="ae80ef3d8b479d29b452f639de52bdc53"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCancelBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:ae80ef3d8b479d29b452f639de52bdc53"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ae80ef3d8b479d29b452f639de52bdc53">createCancelBoundaryEvent</a> (XML::bpmn::tBoundaryEvent *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:ae80ef3d8b479d29b452f639de52bdc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace4e687a8b7bc520484d97588a52bd9"><td class="memItemLeft" align="right" valign="top"><a id="aace4e687a8b7bc520484d97588a52bd9"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCompensateBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:aace4e687a8b7bc520484d97588a52bd9"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#aace4e687a8b7bc520484d97588a52bd9">createCompensateBoundaryEvent</a> (XML::bpmn::tBoundaryEvent *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:aace4e687a8b7bc520484d97588a52bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a800cf54f27eb9a983636bc570aa2e456"><td class="memItemLeft" align="right" valign="top"><a id="a800cf54f27eb9a983636bc570aa2e456"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createConditionalBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a800cf54f27eb9a983636bc570aa2e456"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a800cf54f27eb9a983636bc570aa2e456">createConditionalBoundaryEvent</a> (XML::bpmn::tBoundaryEvent *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a800cf54f27eb9a983636bc570aa2e456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a846a81c8d8f7ea6246425f19a25ab369"><td class="memItemLeft" align="right" valign="top"><a id="a846a81c8d8f7ea6246425f19a25ab369"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createErrorBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a846a81c8d8f7ea6246425f19a25ab369"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a846a81c8d8f7ea6246425f19a25ab369">createErrorBoundaryEvent</a> (XML::bpmn::tBoundaryEvent *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a846a81c8d8f7ea6246425f19a25ab369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43e9bbd74748b94c27ca01c740ef11f6"><td class="memItemLeft" align="right" valign="top"><a id="a43e9bbd74748b94c27ca01c740ef11f6"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEscalationBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a43e9bbd74748b94c27ca01c740ef11f6"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a43e9bbd74748b94c27ca01c740ef11f6">createEscalationBoundaryEvent</a> (XML::bpmn::tBoundaryEvent *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a43e9bbd74748b94c27ca01c740ef11f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cf32f688e2cfccf23c251c0e070bf34"><td class="memItemLeft" align="right" valign="top"><a id="a6cf32f688e2cfccf23c251c0e070bf34"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a6cf32f688e2cfccf23c251c0e070bf34"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a6cf32f688e2cfccf23c251c0e070bf34">createMessageBoundaryEvent</a> (XML::bpmn::tBoundaryEvent *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a6cf32f688e2cfccf23c251c0e070bf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a839bcdc0dc04937a99bac96daac0357f"><td class="memItemLeft" align="right" valign="top"><a id="a839bcdc0dc04937a99bac96daac0357f"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSignalBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a839bcdc0dc04937a99bac96daac0357f"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a839bcdc0dc04937a99bac96daac0357f">createSignalBoundaryEvent</a> (XML::bpmn::tBoundaryEvent *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a839bcdc0dc04937a99bac96daac0357f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeeb04cda95250f338c31224ec178334"><td class="memItemLeft" align="right" valign="top"><a id="adeeb04cda95250f338c31224ec178334"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTimerBoundaryEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tBoundaryEvent.html">XML::bpmn::tBoundaryEvent</a> *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:adeeb04cda95250f338c31224ec178334"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#adeeb04cda95250f338c31224ec178334">createTimerBoundaryEvent</a> (XML::bpmn::tBoundaryEvent *boundaryEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:adeeb04cda95250f338c31224ec178334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a691f2d8ac0a33a810b0fe6d4424e41ab"><td class="memItemLeft" align="right" valign="top"><a id="a691f2d8ac0a33a810b0fe6d4424e41ab"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCatchEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a691f2d8ac0a33a810b0fe6d4424e41ab"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a691f2d8ac0a33a810b0fe6d4424e41ab">createCatchEvent</a> (XML::bpmn::tCatchEvent *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a691f2d8ac0a33a810b0fe6d4424e41ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d20b00595d29e1105f121ed2811ff1"><td class="memItemLeft" align="right" valign="top"><a id="ad8d20b00595d29e1105f121ed2811ff1"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createConditionalCatchEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:ad8d20b00595d29e1105f121ed2811ff1"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ad8d20b00595d29e1105f121ed2811ff1">createConditionalCatchEvent</a> (XML::bpmn::tCatchEvent *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:ad8d20b00595d29e1105f121ed2811ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cfcf3feff3f4a77151fb4ce6627e69d"><td class="memItemLeft" align="right" valign="top"><a id="a8cfcf3feff3f4a77151fb4ce6627e69d"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageCatchEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a8cfcf3feff3f4a77151fb4ce6627e69d"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a8cfcf3feff3f4a77151fb4ce6627e69d">createMessageCatchEvent</a> (XML::bpmn::tCatchEvent *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a8cfcf3feff3f4a77151fb4ce6627e69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc9c11248a249021a7cc0c14e83ec8cc"><td class="memItemLeft" align="right" valign="top"><a id="abc9c11248a249021a7cc0c14e83ec8cc"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSignalCatchEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:abc9c11248a249021a7cc0c14e83ec8cc"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#abc9c11248a249021a7cc0c14e83ec8cc">createSignalCatchEvent</a> (XML::bpmn::tCatchEvent *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:abc9c11248a249021a7cc0c14e83ec8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3be74a48e2f26244b7c5cbcfa5981990"><td class="memItemLeft" align="right" valign="top"><a id="a3be74a48e2f26244b7c5cbcfa5981990"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTimerCatchEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a3be74a48e2f26244b7c5cbcfa5981990"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a3be74a48e2f26244b7c5cbcfa5981990">createTimerCatchEvent</a> (XML::bpmn::tCatchEvent *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a3be74a48e2f26244b7c5cbcfa5981990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab95910cce93623b5ad447496ff6be2c8"><td class="memItemLeft" align="right" valign="top"><a id="ab95910cce93623b5ad447496ff6be2c8"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createLinkTargetEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:ab95910cce93623b5ad447496ff6be2c8"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ab95910cce93623b5ad447496ff6be2c8">createLinkTargetEvent</a> (XML::bpmn::tCatchEvent *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:ab95910cce93623b5ad447496ff6be2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a794ae3b72997855f4b876b3f60c4dde7"><td class="memItemLeft" align="right" valign="top"><a id="a794ae3b72997855f4b876b3f60c4dde7"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTypedStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classXML_1_1bpmn_1_1tEventDefinition.html">XML::bpmn::tEventDefinition</a> &amp;eventDefinition, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a794ae3b72997855f4b876b3f60c4dde7"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a794ae3b72997855f4b876b3f60c4dde7">createTypedStartEvent</a> (XML::bpmn::tStartEvent *startEvent, XML::bpmn::tEventDefinition &amp;eventDefinition, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a794ae3b72997855f4b876b3f60c4dde7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e7b4b1986ff8350d48bb6df0057f47c"><td class="memItemLeft" align="right" valign="top"><a id="a5e7b4b1986ff8350d48bb6df0057f47c"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCompensateStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a5e7b4b1986ff8350d48bb6df0057f47c"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a5e7b4b1986ff8350d48bb6df0057f47c">createCompensateStartEvent</a> (XML::bpmn::tStartEvent *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a5e7b4b1986ff8350d48bb6df0057f47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa06875453f8df3146d198b18440f6bc4"><td class="memItemLeft" align="right" valign="top"><a id="aa06875453f8df3146d198b18440f6bc4"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createErrorStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:aa06875453f8df3146d198b18440f6bc4"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#aa06875453f8df3146d198b18440f6bc4">createErrorStartEvent</a> (XML::bpmn::tStartEvent *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:aa06875453f8df3146d198b18440f6bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03e16238b6e29c2245138e0df5aaa4ea"><td class="memItemLeft" align="right" valign="top"><a id="a03e16238b6e29c2245138e0df5aaa4ea"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEscalationStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a03e16238b6e29c2245138e0df5aaa4ea"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a03e16238b6e29c2245138e0df5aaa4ea">createEscalationStartEvent</a> (XML::bpmn::tStartEvent *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a03e16238b6e29c2245138e0df5aaa4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af864ef6e952c47391aad376a3e92760e"><td class="memItemLeft" align="right" valign="top"><a id="af864ef6e952c47391aad376a3e92760e"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createConditionalStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:af864ef6e952c47391aad376a3e92760e"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#af864ef6e952c47391aad376a3e92760e">createConditionalStartEvent</a> (XML::bpmn::tStartEvent *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:af864ef6e952c47391aad376a3e92760e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81f14eb1a28bb566e043e95bb5625520"><td class="memItemLeft" align="right" valign="top"><a id="a81f14eb1a28bb566e043e95bb5625520"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a81f14eb1a28bb566e043e95bb5625520"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a81f14eb1a28bb566e043e95bb5625520">createMessageStartEvent</a> (XML::bpmn::tStartEvent *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a81f14eb1a28bb566e043e95bb5625520"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5f11a8f6de7c1d2818f388c8113298f"><td class="memItemLeft" align="right" valign="top"><a id="ad5f11a8f6de7c1d2818f388c8113298f"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSignalStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:ad5f11a8f6de7c1d2818f388c8113298f"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ad5f11a8f6de7c1d2818f388c8113298f">createSignalStartEvent</a> (XML::bpmn::tStartEvent *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:ad5f11a8f6de7c1d2818f388c8113298f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15e1bfa0e2d6a8fdfc15917f07f3144d"><td class="memItemLeft" align="right" valign="top"><a id="a15e1bfa0e2d6a8fdfc15917f07f3144d"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTimerStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a> *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a15e1bfa0e2d6a8fdfc15917f07f3144d"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a15e1bfa0e2d6a8fdfc15917f07f3144d">createTimerStartEvent</a> (XML::bpmn::tStartEvent *startEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a15e1bfa0e2d6a8fdfc15917f07f3144d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a154298512200951cd32c17babd5fd11b"><td class="memItemLeft" align="right" valign="top"><a id="a154298512200951cd32c17babd5fd11b"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createUntypedStartEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tCatchEvent.html">XML::bpmn::tCatchEvent</a> *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a154298512200951cd32c17babd5fd11b"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a154298512200951cd32c17babd5fd11b">createUntypedStartEvent</a> (XML::bpmn::tCatchEvent *catchEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a154298512200951cd32c17babd5fd11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cdda7ac506b0b119a65e2b413cce652"><td class="memItemLeft" align="right" valign="top"><a id="a9cdda7ac506b0b119a65e2b413cce652"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createThrowEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a9cdda7ac506b0b119a65e2b413cce652"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a9cdda7ac506b0b119a65e2b413cce652">createThrowEvent</a> (XML::bpmn::tThrowEvent *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a9cdda7ac506b0b119a65e2b413cce652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac82cf60e05fa3665237732ac0f242cd0"><td class="memItemLeft" align="right" valign="top"><a id="ac82cf60e05fa3665237732ac0f242cd0"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCancelEndEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:ac82cf60e05fa3665237732ac0f242cd0"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ac82cf60e05fa3665237732ac0f242cd0">createCancelEndEvent</a> (XML::bpmn::tThrowEvent *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:ac82cf60e05fa3665237732ac0f242cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab58353bf796762d2c4408f85c1660235"><td class="memItemLeft" align="right" valign="top"><a id="ab58353bf796762d2c4408f85c1660235"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createCompensateThrowEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:ab58353bf796762d2c4408f85c1660235"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ab58353bf796762d2c4408f85c1660235">createCompensateThrowEvent</a> (XML::bpmn::tThrowEvent *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:ab58353bf796762d2c4408f85c1660235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7debf9dae7ee1adf10677fcce5ce0d50"><td class="memItemLeft" align="right" valign="top"><a id="a7debf9dae7ee1adf10677fcce5ce0d50"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createErrorEndEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a7debf9dae7ee1adf10677fcce5ce0d50"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a7debf9dae7ee1adf10677fcce5ce0d50">createErrorEndEvent</a> (XML::bpmn::tThrowEvent *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a7debf9dae7ee1adf10677fcce5ce0d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addb7bc33b2ab052f55793c5987ec36d4"><td class="memItemLeft" align="right" valign="top"><a id="addb7bc33b2ab052f55793c5987ec36d4"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEscalationThrowEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:addb7bc33b2ab052f55793c5987ec36d4"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#addb7bc33b2ab052f55793c5987ec36d4">createEscalationThrowEvent</a> (XML::bpmn::tThrowEvent *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:addb7bc33b2ab052f55793c5987ec36d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f28dd0ec2ac55922e215186ecf46a19"><td class="memItemLeft" align="right" valign="top"><a id="a8f28dd0ec2ac55922e215186ecf46a19"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageThrowEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a8f28dd0ec2ac55922e215186ecf46a19"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a8f28dd0ec2ac55922e215186ecf46a19">createMessageThrowEvent</a> (XML::bpmn::tThrowEvent *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a8f28dd0ec2ac55922e215186ecf46a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59393a65c63050a4a7645fbe827cfbcb"><td class="memItemLeft" align="right" valign="top"><a id="a59393a65c63050a4a7645fbe827cfbcb"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSignalThrowEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a59393a65c63050a4a7645fbe827cfbcb"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a59393a65c63050a4a7645fbe827cfbcb">createSignalThrowEvent</a> (XML::bpmn::tThrowEvent *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a59393a65c63050a4a7645fbe827cfbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20e18b41af2f7b62cc2e409fb8c8d377"><td class="memItemLeft" align="right" valign="top"><a id="a20e18b41af2f7b62cc2e409fb8c8d377"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createTerminateEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a20e18b41af2f7b62cc2e409fb8c8d377"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a20e18b41af2f7b62cc2e409fb8c8d377">createTerminateEvent</a> (XML::bpmn::tThrowEvent *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a20e18b41af2f7b62cc2e409fb8c8d377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fd4f5a71c031c1cfd4f509e70ade1d1"><td class="memItemLeft" align="right" valign="top"><a id="a1fd4f5a71c031c1cfd4f509e70ade1d1"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createLinkSourceEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a1fd4f5a71c031c1cfd4f509e70ade1d1"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a1fd4f5a71c031c1cfd4f509e70ade1d1">createLinkSourceEvent</a> (XML::bpmn::tThrowEvent *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a1fd4f5a71c031c1cfd4f509e70ade1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a485f0d4453e8d9a0a03959030e120b99"><td class="memItemLeft" align="right" valign="top"><a id="a485f0d4453e8d9a0a03959030e120b99"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createUntypedEndEvent</b> (<a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a485f0d4453e8d9a0a03959030e120b99"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a485f0d4453e8d9a0a03959030e120b99">createUntypedEndEvent</a> (XML::bpmn::tThrowEvent *throwEvent, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a485f0d4453e8d9a0a03959030e120b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7158b244166017e2f8788775ac8442d5"><td class="memItemLeft" align="right" valign="top"><a id="a7158b244166017e2f8788775ac8442d5"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tGateway.html">XML::bpmn::tGateway</a> *gateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a7158b244166017e2f8788775ac8442d5"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a7158b244166017e2f8788775ac8442d5">createGateway</a> (XML::bpmn::tGateway *gateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a7158b244166017e2f8788775ac8442d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e792df269cacbfd5cb71c81545ef85f"><td class="memItemLeft" align="right" valign="top"><a id="a1e792df269cacbfd5cb71c81545ef85f"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createParallelGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tParallelGateway.html">XML::bpmn::tParallelGateway</a> *parallelGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a1e792df269cacbfd5cb71c81545ef85f"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a1e792df269cacbfd5cb71c81545ef85f">createParallelGateway</a> (XML::bpmn::tParallelGateway *parallelGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a1e792df269cacbfd5cb71c81545ef85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd88165f04aee1ecd1fc5e93205befc"><td class="memItemLeft" align="right" valign="top"><a id="a9bd88165f04aee1ecd1fc5e93205befc"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createExclusiveGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tExclusiveGateway.html">XML::bpmn::tExclusiveGateway</a> *exclusiveGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a9bd88165f04aee1ecd1fc5e93205befc"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a9bd88165f04aee1ecd1fc5e93205befc">createExclusiveGateway</a> (XML::bpmn::tExclusiveGateway *exclusiveGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a9bd88165f04aee1ecd1fc5e93205befc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09e536a6eb7c10cb4f4cfaa6c87b8704"><td class="memItemLeft" align="right" valign="top"><a id="a09e536a6eb7c10cb4f4cfaa6c87b8704"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createInclusiveGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tInclusiveGateway.html">XML::bpmn::tInclusiveGateway</a> *inclusiveGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a09e536a6eb7c10cb4f4cfaa6c87b8704"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a09e536a6eb7c10cb4f4cfaa6c87b8704">createInclusiveGateway</a> (XML::bpmn::tInclusiveGateway *inclusiveGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a09e536a6eb7c10cb4f4cfaa6c87b8704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ccb9942694a288a86bb7501d349fc9c"><td class="memItemLeft" align="right" valign="top"><a id="a5ccb9942694a288a86bb7501d349fc9c"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createEventBasedGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tEventBasedGateway.html">XML::bpmn::tEventBasedGateway</a> *eventBasedGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:a5ccb9942694a288a86bb7501d349fc9c"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a5ccb9942694a288a86bb7501d349fc9c">createEventBasedGateway</a> (XML::bpmn::tEventBasedGateway *eventBasedGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:a5ccb9942694a288a86bb7501d349fc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace502efa4ef47cf6b88dfcee5d7d0bf7"><td class="memItemLeft" align="right" valign="top"><a id="ace502efa4ef47cf6b88dfcee5d7d0bf7"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createComplexGateway</b> (<a class="el" href="classXML_1_1bpmn_1_1tComplexGateway.html">XML::bpmn::tComplexGateway</a> *complexGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="memitem:ace502efa4ef47cf6b88dfcee5d7d0bf7"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ace502efa4ef47cf6b88dfcee5d7d0bf7">createComplexGateway</a> (XML::bpmn::tComplexGateway *complexGateway, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:ace502efa4ef47cf6b88dfcee5d7d0bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e9b7a2bf70f36a490a00e872cbb908"><td class="memItemLeft" align="right" valign="top"><a id="ac8e9b7a2bf70f36a490a00e872cbb908"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createSequenceFlow</b> (<a class="el" href="classXML_1_1bpmn_1_1tSequenceFlow.html">XML::bpmn::tSequenceFlow</a> *sequenceFlow, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
+<tr class="memitem:ac8e9b7a2bf70f36a490a00e872cbb908"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ac8e9b7a2bf70f36a490a00e872cbb908">createSequenceFlow</a> (XML::bpmn::tSequenceFlow *sequenceFlow, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
 <tr class="separator:ac8e9b7a2bf70f36a490a00e872cbb908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c371b22a314b3bf93ea2a311445402d"><td class="memItemLeft" align="right" valign="top"><a id="a2c371b22a314b3bf93ea2a311445402d"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageFlow</b> (<a class="el" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a> *messageFlow)</td></tr>
+<tr class="memitem:a2c371b22a314b3bf93ea2a311445402d"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a2c371b22a314b3bf93ea2a311445402d">createMessageFlow</a> (XML::bpmn::tMessageFlow *messageFlow)</td></tr>
 <tr class="separator:a2c371b22a314b3bf93ea2a311445402d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a662567a1f6b77245adfee40a82cb457b"><td class="memItemLeft" align="right" valign="top"><a id="a662567a1f6b77245adfee40a82cb457b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createChildNodes</b> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
+<tr class="memitem:a662567a1f6b77245adfee40a82cb457b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a662567a1f6b77245adfee40a82cb457b">createChildNodes</a> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
 <tr class="separator:a662567a1f6b77245adfee40a82cb457b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c9dc51bcddb77e8171f497c499d4c8"><td class="memItemLeft" align="right" valign="top"><a id="a11c9dc51bcddb77e8171f497c499d4c8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createSequenceFlows</b> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
+<tr class="memitem:a11c9dc51bcddb77e8171f497c499d4c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a11c9dc51bcddb77e8171f497c499d4c8">createSequenceFlows</a> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
 <tr class="separator:a11c9dc51bcddb77e8171f497c499d4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f32c7a06030f00db9b3273faeeea9f3"><td class="memItemLeft" align="right" valign="top"><a id="a5f32c7a06030f00db9b3273faeeea9f3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createNestedReferences</b> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
+<tr class="memitem:a5f32c7a06030f00db9b3273faeeea9f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a5f32c7a06030f00db9b3273faeeea9f3">createNestedReferences</a> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
 <tr class="separator:a5f32c7a06030f00db9b3273faeeea9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb99225100bcc242a8683d9db35bd1b6"><td class="memItemLeft" align="right" valign="top"><a id="acb99225100bcc242a8683d9db35bd1b6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createReferences</b> (<a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> *flowNode)</td></tr>
-<tr class="separator:acb99225100bcc242a8683d9db35bd1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7b035b0ba64e65d6889e93557efcf26"><td class="memItemLeft" align="right" valign="top"><a id="ab7b035b0ba64e65d6889e93557efcf26"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createMessageFlows</b> ()</td></tr>
-<tr class="separator:ab7b035b0ba64e65d6889e93557efcf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a280f632f03f93a50b201d7b039c93c6d"><td class="memItemLeft" align="right" valign="top"><a id="a280f632f03f93a50b201d7b039c93c6d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createLinks</b> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
+<tr class="memitem:a468a767cc5053306d40bdd2b79dfc8e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a468a767cc5053306d40bdd2b79dfc8e0">createFlowReferences</a> (<a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> *flowNode)</td></tr>
+<tr class="separator:a468a767cc5053306d40bdd2b79dfc8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499ec31275087ff4a68eac75f7845680"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a499ec31275087ff4a68eac75f7845680">createCompensations</a> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
+<tr class="separator:a499ec31275087ff4a68eac75f7845680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18392696607d84a625fc9189485f7a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ad18392696607d84a625fc9189485f7a2">createCompensationReferences</a> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
+<tr class="separator:ad18392696607d84a625fc9189485f7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280f632f03f93a50b201d7b039c93c6d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a280f632f03f93a50b201d7b039c93c6d">createLinks</a> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
 <tr class="separator:a280f632f03f93a50b201d7b039c93c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b035b0ba64e65d6889e93557efcf26"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ab7b035b0ba64e65d6889e93557efcf26">createMessageFlows</a> ()</td></tr>
+<tr class="separator:ab7b035b0ba64e65d6889e93557efcf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad1cdc6974a04a37e2bbc51d1fe48bf7a"><td class="memTemplParams" colspan="2"><a id="ad1cdc6974a04a37e2bbc51d1fe48bf7a"></a>
-template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad1cdc6974a04a37e2bbc51d1fe48bf7a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad1cdc6974a04a37e2bbc51d1fe48bf7a"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ad1cdc6974a04a37e2bbc51d1fe48bf7a">bind</a> (std::unique_ptr&lt; T &gt; &amp;&amp;node, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;&amp;extensionElements)</td></tr>
-<tr class="memdesc:ad1cdc6974a04a37e2bbc51d1fe48bf7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node. <br /></td></tr>
+<tr class="memdesc:ad1cdc6974a04a37e2bbc51d1fe48bf7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node.  <a href="classBPMN_1_1Model.html#ad1cdc6974a04a37e2bbc51d1fe48bf7a">More...</a><br /></td></tr>
 <tr class="separator:ad1cdc6974a04a37e2bbc51d1fe48bf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a899a7f8f40d2ff99cdd7d428b55e4"><td class="memTemplParams" colspan="2"><a id="a93a899a7f8f40d2ff99cdd7d428b55e4"></a>
-template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a93a899a7f8f40d2ff99cdd7d428b55e4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a93a899a7f8f40d2ff99cdd7d428b55e4"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a93a899a7f8f40d2ff99cdd7d428b55e4">bind</a> (std::unique_ptr&lt; T &gt; &amp;node, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;extensionElements)</td></tr>
-<tr class="memdesc:a93a899a7f8f40d2ff99cdd7d428b55e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node. <br /></td></tr>
+<tr class="memdesc:a93a899a7f8f40d2ff99cdd7d428b55e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node.  <a href="classBPMN_1_1Model.html#a93a899a7f8f40d2ff99cdd7d428b55e4">More...</a><br /></td></tr>
 <tr class="separator:a93a899a7f8f40d2ff99cdd7d428b55e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac76e0354135da60cb6034e0de1fbd2f0"><td class="memTemplParams" colspan="2"><a id="ac76e0354135da60cb6034e0de1fbd2f0"></a>
-template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac76e0354135da60cb6034e0de1fbd2f0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac76e0354135da60cb6034e0de1fbd2f0"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ac76e0354135da60cb6034e0de1fbd2f0">bind</a> (std::unique_ptr&lt; T &gt; &amp;node, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;&amp;extensionElements)</td></tr>
-<tr class="memdesc:ac76e0354135da60cb6034e0de1fbd2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node. <br /></td></tr>
+<tr class="memdesc:ac76e0354135da60cb6034e0de1fbd2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node.  <a href="classBPMN_1_1Model.html#ac76e0354135da60cb6034e0de1fbd2f0">More...</a><br /></td></tr>
 <tr class="separator:ac76e0354135da60cb6034e0de1fbd2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee63af147a02b20ad2488b6cd298cd9"><td class="memTemplParams" colspan="2"><a id="aaee63af147a02b20ad2488b6cd298cd9"></a>
-template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aaee63af147a02b20ad2488b6cd298cd9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aaee63af147a02b20ad2488b6cd298cd9"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#aaee63af147a02b20ad2488b6cd298cd9">bind</a> (std::unique_ptr&lt; T &gt; &amp;&amp;node, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;extensionElements)</td></tr>
-<tr class="memdesc:aaee63af147a02b20ad2488b6cd298cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node. <br /></td></tr>
+<tr class="memdesc:aaee63af147a02b20ad2488b6cd298cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node.  <a href="classBPMN_1_1Model.html#aaee63af147a02b20ad2488b6cd298cd9">More...</a><br /></td></tr>
 <tr class="separator:aaee63af147a02b20ad2488b6cd298cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a BPMN model with all its processes. </p>
-<p>The <code><a class="el" href="classBPMN_1_1Model.html" title="Represents a BPMN model with all its processes.">Model</a></code> class encapsulates all processes with their nodes and sequence flows of a BPMN model. </p>
+<div class="textblock"><p>The <code><a class="el" href="classBPMN_1_1Model.html" title="Represents a BPMN model with all its processes and message flows.">Model</a></code> class reads a <a class="el" href="namespaceBPMN.html" title="The BPMN namespace contains linked classes representing a BPMN model.">BPMN</a> model from a file and provides access to all processes with their content as well as to all message flows in a <a class="el" href="namespaceBPMN.html" title="The BPMN namespace contains linked classes representing a BPMN model.">BPMN</a> model. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Process.html">Process</a>, <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The <a class="el" href="namespaceBPMN.html" title="The BPMN namespace contains linked classes representing a BPMN model.">BPMN</a> model is expected to conform with the <a class="el" href="namespaceBPMN.html" title="The BPMN namespace contains linked classes representing a BPMN model.">BPMN</a> specification, e.g., it is expected that all boundary events and start events of event subprocesses have an event definition. </dd></dl>
+<dl class="section user"><dt></dt><dd></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>All nodes in a process model are derived from an abstract class <code><a class="el" href="classBPMN_1_1Node.html" title="Base class for all elements in a BPMN model.">Node</a></code>. The class model uses multiple inheritance to provide type specific attributes. References are usually provided by pointers to a base class. Casting is required to gain access to type specific attributes. </dd></dl>
+<dl class="section user"><dt></dt><dd></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The <a class="el" href="namespaceBPMN.html" title="The BPMN namespace contains linked classes representing a BPMN model.">BPMN</a> extension mechanism can be used by providing a custom model class derived from <code><a class="el" href="classBPMN_1_1Model.html" title="Represents a BPMN model with all its processes and message flows.">Model</a></code> and a custom extension derived from the abstract base class <code><a class="el" href="classBPMN_1_1ExtensionElements.html" title="Base class for extension elements that may be provided for a BPMN element.">ExtensionElements</a></code>. The following example shows how an object of the custom extension <code>MyExtensionElements</code> class can be bound to processes by overriding the method <a class="el" href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">createProcess</a> in the custom model <code>MyModel</code> class: <div class="fragment"><div class="line">std::unique_ptr&lt;BPMN::Process&gt; MyModel::createProcess(XML::bpmn::tProcess* process) {</div>
+<div class="line">  <span class="keywordflow">return</span> bind&lt;BPMN::Process&gt;(</div>
+<div class="line">    <a class="code" href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">BPMN::Model::createProcess</a>(process),</div>
+<div class="line">    std::make_unique&lt;MyExtensionElements&gt;(process)</div>
+<div class="line">  );</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassBPMN_1_1Model_html_a69c1d6fad5b2e6dd9abe6e8819ce8bbb"><div class="ttname"><a href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">BPMN::Model::createProcess</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Process &gt; createProcess(XML::bpmn::tProcess *process)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00044">Model.cpp:44</a></div></div>
+</div><!-- fragment --></dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Multiple event definitions are not yet supported. A <code>std::runtime_error</code> will be thrown when parsing an event with multiple event definitions.</dd></dl>
+<p>References between different classes are automatically determined:</p><ul>
+<li>For each sequence flow and each message flow, pointers to the source and target are provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a>, <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a>, <a class="el" href="classBPMN_1_1FlowNode.html" title="Base class for BPMN elements that may contain incoming and outgoing SequenceFlow elements.">FlowNode</a>, <a class="el" href="classBPMN_1_1Process.html">Process</a></dd></dl>
+</li>
+<li>For each node, pointers to receiving and sending message flows are provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Node.html" title="Base class for all elements in a BPMN model.">Node</a></dd></dl>
+</li>
+<li>For each <a class="el" href="namespaceBPMN.html" title="The BPMN namespace contains linked classes representing a BPMN model.">BPMN</a> element that may have child nodes within its scope, the child nodes and sequence flows between them are owned by the node. Pointers to each flow node, event subprocess, start events, compensation activities, and compensation event subprocess are given. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Scope.html" title="Base class for BPMN elements that may contain a ChildNode elements.">Scope</a></dd></dl>
+</li>
+<li>For each node within a scope, a pointer to the parent scope is provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1ChildNode.html" title="Base class for BPMN elements within a Scope.">ChildNode</a></dd></dl>
+</li>
+<li>For each node that may receive a flow token, pointers to all incoming and outgoing sequence flows are given. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1FlowNode.html" title="Base class for BPMN elements that may contain incoming and outgoing SequenceFlow elements.">FlowNode</a>, <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a></dd></dl>
+</li>
+<li>For each activity, pointers to each boundary event (excluding the compensation boundary event) and to the compensation activity or compensation event subprocess are provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1BoundaryEvent.html" title="Base class for all boundary events attached to an Activity.">BoundaryEvent</a></dd></dl>
+</li>
+<li>For each event attached to the boundary of an activity, a pointer to the activity is provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1BoundaryEvent.html" title="Base class for all boundary events attached to an Activity.">BoundaryEvent</a></dd></dl>
+</li>
+<li>For each link event, a pointer to the respective target or source(s) is provided. <dl class="section note"><dt>Note</dt><dd>Target and sources are matched based on the <code>name</code> attribute in the link event definition. If no such name is given, the <code>name</code> attribute of the flow node is used as fallback. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>For each link source exactly one link target must be found, otherwise a <code>std::runtime_error</code> will be thrown. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1LinkSourceEvent.html">LinkSourceEvent</a>, <a class="el" href="classBPMN_1_1LinkTargetEvent.html">LinkTargetEvent</a>, XML::bpmn::tLinkEventDefinition, <a class="el" href="classBPMN_1_1FlowNode.html" title="Base class for BPMN elements that may contain incoming and outgoing SequenceFlow elements.">FlowNode</a></dd></dl>
+</li>
+<li>For each throwing compensation event, a pointer to the activity to be compensated is provided. <dl class="section note"><dt>Note</dt><dd>The respective activity is determined based on <code>activityRef</code> attribute of the compensation event definition and the <code>name</code> attribute of the activity. If no such attribute reference is given, the <code>name</code> attribute of the flow node is used as fallback. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Compensation throw events in compensation event subprocesses can only trigger compensation of activities within parent scope. All other compensation throw events can only trigger compensation of activities within the same scope. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1CompensateThrowEvent.html">CompensateThrowEvent</a>, XML::bpmn::tCompensateEventDefinition, <a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1FlowNode.html" title="Base class for BPMN elements that may contain incoming and outgoing SequenceFlow elements.">FlowNode</a> </dd></dl>
+</li>
+</ul>
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00078">78</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00153">153</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2a684f87dafb1fc7c33c1b4bf13afe23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a684f87dafb1fc7c33c1b4bf13afe23">&#9670;&nbsp;</a></span>Model() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BPMN::Model::Model </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00155">155</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
+<a id="a98de84e61b1e4a6101b3cba93888d841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98de84e61b1e4a6101b3cba93888d841">&#9670;&nbsp;</a></span>Model() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Model::Model </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00018">18</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a92b12f5b3a10b3e6c74923b52dd84e1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92b12f5b3a10b3e6c74923b52dd84e1a">&#9670;&nbsp;</a></span>~Model()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual BPMN::Model::~Model </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad1cdc6974a04a37e2bbc51d1fe48bf7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1cdc6974a04a37e2bbc51d1fe48bf7a">&#9670;&nbsp;</a></span>bind() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::unique_ptr&lt;T&gt; BPMN::Model::bind </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>extensionElements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00248">248</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
+<a id="aaee63af147a02b20ad2488b6cd298cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee63af147a02b20ad2488b6cd298cd9">&#9670;&nbsp;</a></span>bind() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::unique_ptr&lt;T&gt; BPMN::Model::bind </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>extensionElements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00269">269</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
+<a id="ac76e0354135da60cb6034e0de1fbd2f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac76e0354135da60cb6034e0de1fbd2f0">&#9670;&nbsp;</a></span>bind() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::unique_ptr&lt;T&gt; BPMN::Model::bind </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>extensionElements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00262">262</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
+<a id="a93a899a7f8f40d2ff99cdd7d428b55e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a899a7f8f40d2ff99cdd7d428b55e4">&#9670;&nbsp;</a></span>bind() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::unique_ptr&lt;T&gt; BPMN::Model::bind </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>extensionElements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00255">255</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
+<a id="a901bc56ea971f667b0d51917ba68d791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901bc56ea971f667b0d51917ba68d791">&#9670;&nbsp;</a></span>createActivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createActivity </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tActivity *&#160;</td>
+          <td class="paramname"><em>activity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00069">69</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15d3036111779f7640e2b5b4f0456355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d3036111779f7640e2b5b4f0456355">&#9670;&nbsp;</a></span>createAdHocSubProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createAdHocSubProcess </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tAdHocSubProcess *&#160;</td>
+          <td class="paramname"><em>adHocSubProcess</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00096">96</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad4e14157a14d95cb9cfca7ef65dc282d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e14157a14d95cb9cfca7ef65dc282d">&#9670;&nbsp;</a></span>createBoundaryEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createBoundaryEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tBoundaryEvent *&#160;</td>
+          <td class="paramname"><em>boundaryEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00176">176</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad40d9aedd71c70d984b4b1c7fbe984cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad40d9aedd71c70d984b4b1c7fbe984cc">&#9670;&nbsp;</a></span>createBusinessRuleTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createBusinessRuleTask </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tBusinessRuleTask *&#160;</td>
+          <td class="paramname"><em>businessRuleTask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00155">155</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73cc7cd19755291f3b87c369ffc7f0da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73cc7cd19755291f3b87c369ffc7f0da">&#9670;&nbsp;</a></span>createCallActivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createCallActivity </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tCallActivity *&#160;</td>
+          <td class="paramname"><em>callActivity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00104">104</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae80ef3d8b479d29b452f639de52bdc53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae80ef3d8b479d29b452f639de52bdc53">&#9670;&nbsp;</a></span>createCancelBoundaryEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createCancelBoundaryEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tBoundaryEvent *&#160;</td>
+          <td class="paramname"><em>boundaryEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00215">215</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac82cf60e05fa3665237732ac0f242cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac82cf60e05fa3665237732ac0f242cd0">&#9670;&nbsp;</a></span>createCancelEndEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createCancelEndEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tThrowEvent *&#160;</td>
+          <td class="paramname"><em>throwEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00401">401</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a691f2d8ac0a33a810b0fe6d4424e41ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691f2d8ac0a33a810b0fe6d4424e41ab">&#9670;&nbsp;</a></span>createCatchEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createCatchEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tCatchEvent *&#160;</td>
+          <td class="paramname"><em>catchEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00247">247</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a662567a1f6b77245adfee40a82cb457b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a662567a1f6b77245adfee40a82cb457b">&#9670;&nbsp;</a></span>createChildNodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::createChildNodes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>scope</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00489">489</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aace4e687a8b7bc520484d97588a52bd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace4e687a8b7bc520484d97588a52bd9">&#9670;&nbsp;</a></span>createCompensateBoundaryEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createCompensateBoundaryEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tBoundaryEvent *&#160;</td>
+          <td class="paramname"><em>boundaryEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00219">219</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5e7b4b1986ff8350d48bb6df0057f47c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e7b4b1986ff8350d48bb6df0057f47c">&#9670;&nbsp;</a></span>createCompensateStartEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createCompensateStartEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tStartEvent *&#160;</td>
+          <td class="paramname"><em>startEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00330">330</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab58353bf796762d2c4408f85c1660235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58353bf796762d2c4408f85c1660235">&#9670;&nbsp;</a></span>createCompensateThrowEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createCompensateThrowEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tThrowEvent *&#160;</td>
+          <td class="paramname"><em>throwEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00405">405</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad18392696607d84a625fc9189485f7a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad18392696607d84a625fc9189485f7a2">&#9670;&nbsp;</a></span>createCompensationReferences()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::createCompensationReferences </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>scope</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00625">625</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a499ec31275087ff4a68eac75f7845680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a499ec31275087ff4a68eac75f7845680">&#9670;&nbsp;</a></span>createCompensations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::createCompensations </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>scope</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00591">591</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ace502efa4ef47cf6b88dfcee5d7d0bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace502efa4ef47cf6b88dfcee5d7d0bf7">&#9670;&nbsp;</a></span>createComplexGateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createComplexGateway </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tComplexGateway *&#160;</td>
+          <td class="paramname"><em>complexGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00477">477</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a800cf54f27eb9a983636bc570aa2e456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a800cf54f27eb9a983636bc570aa2e456">&#9670;&nbsp;</a></span>createConditionalBoundaryEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createConditionalBoundaryEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tBoundaryEvent *&#160;</td>
+          <td class="paramname"><em>boundaryEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00223">223</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad8d20b00595d29e1105f121ed2811ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d20b00595d29e1105f121ed2811ff1">&#9670;&nbsp;</a></span>createConditionalCatchEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createConditionalCatchEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tCatchEvent *&#160;</td>
+          <td class="paramname"><em>catchEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00281">281</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af864ef6e952c47391aad376a3e92760e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af864ef6e952c47391aad376a3e92760e">&#9670;&nbsp;</a></span>createConditionalStartEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createConditionalStartEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tStartEvent *&#160;</td>
+          <td class="paramname"><em>startEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00342">342</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a846a81c8d8f7ea6246425f19a25ab369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a846a81c8d8f7ea6246425f19a25ab369">&#9670;&nbsp;</a></span>createErrorBoundaryEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createErrorBoundaryEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tBoundaryEvent *&#160;</td>
+          <td class="paramname"><em>boundaryEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00227">227</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7debf9dae7ee1adf10677fcce5ce0d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7debf9dae7ee1adf10677fcce5ce0d50">&#9670;&nbsp;</a></span>createErrorEndEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createErrorEndEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tThrowEvent *&#160;</td>
+          <td class="paramname"><em>throwEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00409">409</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa06875453f8df3146d198b18440f6bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa06875453f8df3146d198b18440f6bc4">&#9670;&nbsp;</a></span>createErrorStartEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createErrorStartEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tStartEvent *&#160;</td>
+          <td class="paramname"><em>startEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00334">334</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a43e9bbd74748b94c27ca01c740ef11f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e9bbd74748b94c27ca01c740ef11f6">&#9670;&nbsp;</a></span>createEscalationBoundaryEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createEscalationBoundaryEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tBoundaryEvent *&#160;</td>
+          <td class="paramname"><em>boundaryEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00231">231</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a03e16238b6e29c2245138e0df5aaa4ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e16238b6e29c2245138e0df5aaa4ea">&#9670;&nbsp;</a></span>createEscalationStartEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createEscalationStartEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tStartEvent *&#160;</td>
+          <td class="paramname"><em>startEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00338">338</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="addb7bc33b2ab052f55793c5987ec36d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb7bc33b2ab052f55793c5987ec36d4">&#9670;&nbsp;</a></span>createEscalationThrowEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createEscalationThrowEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tThrowEvent *&#160;</td>
+          <td class="paramname"><em>throwEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00413">413</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac3ec2d9d6feb82afbd7d2cfdf5d03295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ec2d9d6feb82afbd7d2cfdf5d03295">&#9670;&nbsp;</a></span>createEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tEvent *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00159">159</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5ccb9942694a288a86bb7501d349fc9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ccb9942694a288a86bb7501d349fc9c">&#9670;&nbsp;</a></span>createEventBasedGateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createEventBasedGateway </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tEventBasedGateway *&#160;</td>
+          <td class="paramname"><em>eventBasedGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00473">473</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1ba683c2fc244ae0e4c46dce9b3a822b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba683c2fc244ae0e4c46dce9b3a822b">&#9670;&nbsp;</a></span>createEventSubProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a> &gt; Model::createEventSubProcess </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tSubProcess *&#160;</td>
+          <td class="paramname"><em>subProcess</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00048">48</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9bd88165f04aee1ecd1fc5e93205befc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd88165f04aee1ecd1fc5e93205befc">&#9670;&nbsp;</a></span>createExclusiveGateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createExclusiveGateway </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tExclusiveGateway *&#160;</td>
+          <td class="paramname"><em>exclusiveGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00465">465</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a491687f47c404ddf097e2afd0f3b0cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a491687f47c404ddf097e2afd0f3b0cbe">&#9670;&nbsp;</a></span>createFlowNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createFlowNode </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tFlowNode *&#160;</td>
+          <td class="paramname"><em>flowNode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00052">52</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a468a767cc5053306d40bdd2b79dfc8e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a468a767cc5053306d40bdd2b79dfc8e0">&#9670;&nbsp;</a></span>createFlowReferences()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::createFlowReferences </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> *&#160;</td>
+          <td class="paramname"><em>flowNode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00541">541</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7158b244166017e2f8788775ac8442d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7158b244166017e2f8788775ac8442d5">&#9670;&nbsp;</a></span>createGateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createGateway </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tGateway *&#160;</td>
+          <td class="paramname"><em>gateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00438">438</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a09e536a6eb7c10cb4f4cfaa6c87b8704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09e536a6eb7c10cb4f4cfaa6c87b8704">&#9670;&nbsp;</a></span>createInclusiveGateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createInclusiveGateway </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tInclusiveGateway *&#160;</td>
+          <td class="paramname"><em>inclusiveGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00469">469</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a280f632f03f93a50b201d7b039c93c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280f632f03f93a50b201d7b039c93c6d">&#9670;&nbsp;</a></span>createLinks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::createLinks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>scope</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00690">690</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1fd4f5a71c031c1cfd4f509e70ade1d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd4f5a71c031c1cfd4f509e70ade1d1">&#9670;&nbsp;</a></span>createLinkSourceEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createLinkSourceEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tThrowEvent *&#160;</td>
+          <td class="paramname"><em>throwEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00429">429</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab95910cce93623b5ad447496ff6be2c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab95910cce93623b5ad447496ff6be2c8">&#9670;&nbsp;</a></span>createLinkTargetEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createLinkTargetEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tCatchEvent *&#160;</td>
+          <td class="paramname"><em>catchEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00298">298</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a615fbcee2b1d71ddab1526edff377c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a615fbcee2b1d71ddab1526edff377c55">&#9670;&nbsp;</a></span>createManualTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createManualTask </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tManualTask *&#160;</td>
+          <td class="paramname"><em>manualTask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00147">147</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6cf32f688e2cfccf23c251c0e070bf34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cf32f688e2cfccf23c251c0e070bf34">&#9670;&nbsp;</a></span>createMessageBoundaryEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createMessageBoundaryEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tBoundaryEvent *&#160;</td>
+          <td class="paramname"><em>boundaryEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00235">235</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8cfcf3feff3f4a77151fb4ce6627e69d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cfcf3feff3f4a77151fb4ce6627e69d">&#9670;&nbsp;</a></span>createMessageCatchEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createMessageCatchEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tCatchEvent *&#160;</td>
+          <td class="paramname"><em>catchEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00286">286</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2c371b22a314b3bf93ea2a311445402d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c371b22a314b3bf93ea2a311445402d">&#9670;&nbsp;</a></span>createMessageFlow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> &gt; Model::createMessageFlow </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tMessageFlow *&#160;</td>
+          <td class="paramname"><em>messageFlow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00485">485</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab7b035b0ba64e65d6889e93557efcf26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b035b0ba64e65d6889e93557efcf26">&#9670;&nbsp;</a></span>createMessageFlows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::createMessageFlows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00725">725</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a81f14eb1a28bb566e043e95bb5625520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f14eb1a28bb566e043e95bb5625520">&#9670;&nbsp;</a></span>createMessageStartEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createMessageStartEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tStartEvent *&#160;</td>
+          <td class="paramname"><em>startEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00346">346</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8f28dd0ec2ac55922e215186ecf46a19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f28dd0ec2ac55922e215186ecf46a19">&#9670;&nbsp;</a></span>createMessageThrowEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createMessageThrowEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tThrowEvent *&#160;</td>
+          <td class="paramname"><em>throwEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00417">417</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5f32c7a06030f00db9b3273faeeea9f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f32c7a06030f00db9b3273faeeea9f3">&#9670;&nbsp;</a></span>createNestedReferences()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::createNestedReferences </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>scope</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00532">532</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1e792df269cacbfd5cb71c81545ef85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e792df269cacbfd5cb71c81545ef85f">&#9670;&nbsp;</a></span>createParallelGateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createParallelGateway </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tParallelGateway *&#160;</td>
+          <td class="paramname"><em>parallelGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00461">461</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a69c1d6fad5b2e6dd9abe6e8819ce8bbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">&#9670;&nbsp;</a></span>createProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1Process.html">Process</a> &gt; Model::createProcess </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tProcess *&#160;</td>
+          <td class="paramname"><em>process</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00044">44</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac9604933647764008e50043c2adf654b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9604933647764008e50043c2adf654b">&#9670;&nbsp;</a></span>createReceiveTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createReceiveTask </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tReceiveTask *&#160;</td>
+          <td class="paramname"><em>receiveTask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00139">139</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aba8021af9dcc8ac379f9496e1da88316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba8021af9dcc8ac379f9496e1da88316">&#9670;&nbsp;</a></span>createScriptTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createScriptTask </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tScriptTask *&#160;</td>
+          <td class="paramname"><em>scriptTask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00151">151</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaaa32f65b3430f36d61753c74af53821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa32f65b3430f36d61753c74af53821">&#9670;&nbsp;</a></span>createSendTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createSendTask </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tSendTask *&#160;</td>
+          <td class="paramname"><em>sendTask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00135">135</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac8e9b7a2bf70f36a490a00e872cbb908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e9b7a2bf70f36a490a00e872cbb908">&#9670;&nbsp;</a></span>createSequenceFlow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a> &gt; Model::createSequenceFlow </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tSequenceFlow *&#160;</td>
+          <td class="paramname"><em>sequenceFlow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>scope</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00481">481</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a11c9dc51bcddb77e8171f497c499d4c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c9dc51bcddb77e8171f497c499d4c8">&#9670;&nbsp;</a></span>createSequenceFlows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::createSequenceFlows </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>scope</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00519">519</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a839bcdc0dc04937a99bac96daac0357f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a839bcdc0dc04937a99bac96daac0357f">&#9670;&nbsp;</a></span>createSignalBoundaryEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createSignalBoundaryEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tBoundaryEvent *&#160;</td>
+          <td class="paramname"><em>boundaryEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00239">239</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abc9c11248a249021a7cc0c14e83ec8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc9c11248a249021a7cc0c14e83ec8cc">&#9670;&nbsp;</a></span>createSignalCatchEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createSignalCatchEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tCatchEvent *&#160;</td>
+          <td class="paramname"><em>catchEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00290">290</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad5f11a8f6de7c1d2818f388c8113298f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f11a8f6de7c1d2818f388c8113298f">&#9670;&nbsp;</a></span>createSignalStartEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createSignalStartEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tStartEvent *&#160;</td>
+          <td class="paramname"><em>startEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00350">350</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a59393a65c63050a4a7645fbe827cfbcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59393a65c63050a4a7645fbe827cfbcb">&#9670;&nbsp;</a></span>createSignalThrowEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createSignalThrowEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tThrowEvent *&#160;</td>
+          <td class="paramname"><em>throwEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00421">421</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9466c2c85bf67a5ed044ed0ca40492b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9466c2c85bf67a5ed044ed0ca40492b6">&#9670;&nbsp;</a></span>createSubProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createSubProcess </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tSubProcess *&#160;</td>
+          <td class="paramname"><em>subProcess</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00086">86</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af0687836eb6c7fab3be4442de2e1400d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0687836eb6c7fab3be4442de2e1400d">&#9670;&nbsp;</a></span>createTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createTask </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tTask *&#160;</td>
+          <td class="paramname"><em>task</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00108">108</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a20e18b41af2f7b62cc2e409fb8c8d377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20e18b41af2f7b62cc2e409fb8c8d377">&#9670;&nbsp;</a></span>createTerminateEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createTerminateEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tThrowEvent *&#160;</td>
+          <td class="paramname"><em>throwEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00425">425</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9cdda7ac506b0b119a65e2b413cce652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cdda7ac506b0b119a65e2b413cce652">&#9670;&nbsp;</a></span>createThrowEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createThrowEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tThrowEvent *&#160;</td>
+          <td class="paramname"><em>throwEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00362">362</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adeeb04cda95250f338c31224ec178334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeeb04cda95250f338c31224ec178334">&#9670;&nbsp;</a></span>createTimerBoundaryEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createTimerBoundaryEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tBoundaryEvent *&#160;</td>
+          <td class="paramname"><em>boundaryEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00243">243</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3be74a48e2f26244b7c5cbcfa5981990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be74a48e2f26244b7c5cbcfa5981990">&#9670;&nbsp;</a></span>createTimerCatchEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createTimerCatchEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tCatchEvent *&#160;</td>
+          <td class="paramname"><em>catchEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00294">294</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15e1bfa0e2d6a8fdfc15917f07f3144d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15e1bfa0e2d6a8fdfc15917f07f3144d">&#9670;&nbsp;</a></span>createTimerStartEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createTimerStartEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tStartEvent *&#160;</td>
+          <td class="paramname"><em>startEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00354">354</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5f09a56e3624930b8d4123ca1444fbb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f09a56e3624930b8d4123ca1444fbb8">&#9670;&nbsp;</a></span>createTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createTransaction </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tTransaction *&#160;</td>
+          <td class="paramname"><em>transaction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00100">100</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a794ae3b72997855f4b876b3f60c4dde7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a794ae3b72997855f4b876b3f60c4dde7">&#9670;&nbsp;</a></span>createTypedStartEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createTypedStartEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tStartEvent *&#160;</td>
+          <td class="paramname"><em>startEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XML::bpmn::tEventDefinition &amp;&#160;</td>
+          <td class="paramname"><em>eventDefinition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00302">302</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a485f0d4453e8d9a0a03959030e120b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485f0d4453e8d9a0a03959030e120b99">&#9670;&nbsp;</a></span>createUntypedEndEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createUntypedEndEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tThrowEvent *&#160;</td>
+          <td class="paramname"><em>throwEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00433">433</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a154298512200951cd32c17babd5fd11b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a154298512200951cd32c17babd5fd11b">&#9670;&nbsp;</a></span>createUntypedStartEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createUntypedStartEvent </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tCatchEvent *&#160;</td>
+          <td class="paramname"><em>catchEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00358">358</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a16a8b6b7a700c974acb31de8f4366213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a8b6b7a700c974acb31de8f4366213">&#9670;&nbsp;</a></span>createUntypedTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createUntypedTask </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tTask *&#160;</td>
+          <td class="paramname"><em>task</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00131">131</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a74d5b23140f809b74f3b59d629734985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d5b23140f809b74f3b59d629734985">&#9670;&nbsp;</a></span>createUserTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createUserTask </td>
+          <td>(</td>
+          <td class="paramtype">XML::bpmn::tUserTask *&#160;</td>
+          <td class="paramname"><em>userTask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00143">143</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a87a1b1319155d7425905a793dcf3085b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a1b1319155d7425905a793dcf3085b">&#9670;&nbsp;</a></span>readBPMNFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::readBPMNFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00023">23</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6fbd982974a432552f51a2caf34db480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fbd982974a432552f51a2caf34db480">&#9670;&nbsp;</a></span>messageFlows</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::unique_ptr&lt;<a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a>&gt; &gt; BPMN::Model::messageFlows</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00161">161</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
+<a id="a161464a851d7825e3ba1150e8dc2bbb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161464a851d7825e3ba1150e8dc2bbb4">&#9670;&nbsp;</a></span>processes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::unique_ptr&lt;<a class="el" href="classBPMN_1_1Process.html">Process</a>&gt; &gt; BPMN::Model::processes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00160">160</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
+<a id="a726b3195cc0868077a0c2333ddacc0a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a726b3195cc0868077a0c2333ddacc0a6">&#9670;&nbsp;</a></span>roots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="classXML_1_1XMLObject.html">XML::XMLObject</a>&gt; &gt; BPMN::Model::roots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00159">159</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="Model_8h_source.html">Model.h</a></li>
 <li>src/<a class="el" href="Model_8cpp_source.html">Model.cpp</a></li>
 </ul>

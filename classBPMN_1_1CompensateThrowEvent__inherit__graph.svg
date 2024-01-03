@@ -15,7 +15,7 @@
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-57.5 171,-57.5 171,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="85.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::CompensateThrowEvent</text>
 <polyline fill="none" stroke="black" points="0,-38.5 171,-38.5 "/>
-<text text-anchor="start" x="8" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="start" x="8" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ activity</text>
 <polyline fill="none" stroke="black" points="0,-19.5 171,-19.5 "/>
 <text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CompensateThrowEvent()</text>
 </a>

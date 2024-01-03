@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['get_735',['get',['../classBPMN_1_1ExtensionElements.html#a489a66978ef865c9727e31db3de95ad4',1,'BPMN::ExtensionElements::get()'],['../classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d',1,'BPMN::Node::get()'],['../classXML_1_1XMLObject.html#adf76f25d8d09d9e46b6594f8e51f14fa',1,'XML::XMLObject::get()']]],
-  ['getchildren_736',['getChildren',['../classXML_1_1XMLObject.html#aded470ce68062e69e42e21d30051b1e5',1,'XML::XMLObject']]],
-  ['getchildrenbyname_737',['getChildrenByName',['../classXML_1_1XMLObject.html#a946284a7beaaed9c0dea579332483557',1,'XML::XMLObject']]],
-  ['getextensionelements_738',['getExtensionElements',['../classBPMN_1_1ExtensionElements.html#a3e87fcf7e66ebb5734c5d3fe724bfbe2',1,'BPMN::ExtensionElements']]],
-  ['getoptionalattributebyname_739',['getOptionalAttributeByName',['../classXML_1_1XMLObject.html#a3fc94bd28094f4d322688e139a03bb51',1,'XML::XMLObject']]],
-  ['getoptionalchild_740',['getOptionalChild',['../classXML_1_1XMLObject.html#a14ef0edfa6f4e86da91f0318b1bc4b36',1,'XML::XMLObject']]],
-  ['getoptionalchildbyname_741',['getOptionalChildByName',['../classXML_1_1XMLObject.html#ad065b37d2b9c9f80b12859ef095346ce',1,'XML::XMLObject']]],
-  ['getrequiredattributebyname_742',['getRequiredAttributeByName',['../classXML_1_1XMLObject.html#ae736cef7b116fa6d8b11cbd6a7a91920',1,'XML::XMLObject']]],
-  ['getrequiredchild_743',['getRequiredChild',['../classXML_1_1XMLObject.html#a7d18c043f0ce52365e396079ae5f416d',1,'XML::XMLObject']]],
-  ['getrequiredchildbyname_744',['getRequiredChildByName',['../classXML_1_1XMLObject.html#a7d60abe07b087277cf3a6b574634c4c3',1,'XML::XMLObject']]]
+  ['find_1206',['find',['../classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05',1,'BPMN::Node::find(std::function&lt; bool(Node *)&gt; condition)'],['../classBPMN_1_1Node.html#ac54d74cc190d2cce3073c73c3bb0c7bf',1,'BPMN::Node::find(std::function&lt; bool(const Node *)&gt; condition) const'],['../classXML_1_1XMLObject.html#a31a06f0577b385182938470cae6dddae',1,'XML::XMLObject::find()'],['../classXML_1_1XMLObject.html#ac5684225eda56253c08007840680573e',1,'XML::XMLObject::find() const']]],
+  ['find_5fall_1207',['find_all',['../classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f',1,'BPMN::Node::find_all(std::function&lt; bool(Node *)&gt; condition)'],['../classBPMN_1_1Node.html#a703f6eeccc0b1fe9a10591980c832522',1,'BPMN::Node::find_all(std::function&lt; bool(const Node *)&gt; condition) const']]],
+  ['findnode_1208',['findNode',['../classBPMN_1_1SequenceFlow.html#a6b2bcf88058b68481c1edc95d72eacdf',1,'BPMN::SequenceFlow']]],
+  ['findrecursive_1209',['findRecursive',['../classBPMN_1_1MessageFlow.html#afd3162eebac2e6ca60886a06aa2dd210',1,'BPMN::MessageFlow']]],
+  ['flownode_1210',['FlowNode',['../classBPMN_1_1FlowNode.html#a9c34bf3db8fa13aa594c1515ee74c10b',1,'BPMN::FlowNode']]]
 ];

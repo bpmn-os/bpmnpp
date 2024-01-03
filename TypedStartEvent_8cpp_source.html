@@ -121,22 +121,25 @@ $(document).ready(function(){initNavTree('TypedStartEvent_8cpp_source.html','');
 <div class="title">TypedStartEvent.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;TypedStartEvent.h&quot;</span></div>
+<a href="TypedStartEvent_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="TypedStartEvent_8h.html">TypedStartEvent.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using namespace </span>BPMN;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceBPMN.html">BPMN</a>;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;TypedStartEvent::TypedStartEvent(<a class="code" href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a>* startEvent, <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* parent)</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classBPMN_1_1TypedStartEvent.html#a3705021ac5a3548f04313ae38ed553a8">    5</a></span>&#160;<a class="code" href="classBPMN_1_1TypedStartEvent.html#a3705021ac5a3548f04313ae38ed553a8">TypedStartEvent::TypedStartEvent</a>(XML::bpmn::tStartEvent* startEvent, <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* parent)</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  : <a class="code" href="classBPMN_1_1Node.html">Node</a>(startEvent)</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  , <a class="code" href="classBPMN_1_1CatchEvent.html">CatchEvent</a>(startEvent,parent)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  , isInterrupting(element-&gt;get&lt;XML::bpmn::tStartEvent&gt;()-&gt;isInterrupting.has_value() ? (bool)element-&gt;get&lt;XML::bpmn::tStartEvent&gt;()-&gt;isInterrupting.value().get().value : true)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  , isInterrupting(element-&gt;get&lt;<a class="code" href="namespaceXML.html">XML</a>::bpmn::tStartEvent&gt;()-&gt;isInterrupting.has_value() ? (bool)element-&gt;get&lt;<a class="code" href="namespaceXML.html">XML</a>::bpmn::tStartEvent&gt;()-&gt;isInterrupting.value().get().value : true)</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="ttc" id="aTypedStartEvent_8h_html"><div class="ttname"><a href="TypedStartEvent_8h.html">TypedStartEvent.h</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1CatchEvent_html"><div class="ttname"><a href="classBPMN_1_1CatchEvent.html">BPMN::CatchEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="CatchEvent_8h_source.html#l00012">CatchEvent.h:12</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Node_html"><div class="ttname"><a href="classBPMN_1_1Node.html">BPMN::Node</a></div><div class="ttdoc">Base class for all elements in a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8h_source.html#l00024">Node.h:24</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Base class for BPMN elements that may contain a ChildNode elements.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00022">Scope.h:22</a></div></div>
-<div class="ttc" id="aclassXML_1_1bpmn_1_1tStartEvent_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tStartEvent.html">XML::bpmn::tStartEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="tStartEvent_8h_source.html#l00038">tStartEvent.h:38</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Base class for BPMN elements that may contain a ChildNode elements.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00023">Scope.h:23</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1TypedStartEvent_html_a3705021ac5a3548f04313ae38ed553a8"><div class="ttname"><a href="classBPMN_1_1TypedStartEvent.html#a3705021ac5a3548f04313ae38ed553a8">BPMN::TypedStartEvent::TypedStartEvent</a></div><div class="ttdeci">TypedStartEvent(XML::bpmn::tStartEvent *startEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="TypedStartEvent_8cpp_source.html#l00005">TypedStartEvent.cpp:5</a></div></div>
+<div class="ttc" id="anamespaceBPMN_html"><div class="ttname"><a href="namespaceBPMN.html">BPMN</a></div><div class="ttdoc">The BPMN namespace contains linked classes representing a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00011">Activity.h:11</a></div></div>
+<div class="ttc" id="anamespaceXML_html"><div class="ttname"><a href="namespaceXML.html">XML</a></div><div class="ttdoc">The XML namespace contains classes representing XML-nodes defined in given XML-schema(s).</div><div class="ttdef"><b>Definition:</b> <a href="XMLObject_8cpp_source.html#l00008">XMLObject.cpp:8</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </body></html>

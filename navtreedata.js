@@ -31,34 +31,43 @@ var NAVTREE =
     [ "Install the library", "index.html#autotoc_md4", null ],
     [ "Run tests", "index.html#autotoc_md5", null ],
     [ "Example", "index.html#autotoc_md6", null ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Typedefs", "globals_type.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"Activity_8cpp_source.html",
-"classBPMN_1_1ErrorBoundaryEvent.html#adfe9144343e417b23df90ce180b23437",
-"classBPMN_1_1SignalCatchEvent.html#a2bf2a0e9b454c55aa5dcb5aa4698697b",
-"classXML_1_1bpmn_1_1globalUserTask.html#abdb4f311da681141b7b744d5aae14e93",
-"classXML_1_1bpmn_1_1tCollaboration.html#a51af260e16ed1847bf4a5eaeef33c95a",
-"classXML_1_1bpmn_1_1tExtensionElements.html#a7cd8a16a455c029c79cef8d536b3607c",
-"classXML_1_1bpmn_1_1tPartnerRole.html#a278a58902ae6f633b43492becfd549e3",
-"dataStoreReference_8cpp_source.html",
-"tConversationLink_8cpp_source.html"
+"Activity_8cpp.html",
+"SubProcess_8h.html",
+"classBPMN_1_1MessageFlow.html#a70601f7a01c862e55ab0fb6d1cd69636",
+"conditionalEventDefinition_8cpp_source.html",
+"tAdHocOrdering_8h.html",
+"tResourceParameter_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -242,7 +242,7 @@
 <polygon fill="none" stroke="black" points="776.5,-116.5 776.5,-173.5 939.5,-173.5 939.5,-116.5 776.5,-116.5"/>
 <text text-anchor="middle" x="858" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::ConditionalCatchEvent</text>
 <polyline fill="none" stroke="black" points="776.5,-154.5 939.5,-154.5 "/>
-<text text-anchor="start" x="784.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="858" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="776.5,-135.5 939.5,-135.5 "/>
 <text text-anchor="start" x="784.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ConditionalCatchEvent()</text>
 </a>
@@ -258,21 +258,20 @@
 <g id="node17" class="node">
 <title>Node17</title>
 <g id="a_node17"><a xlink:href="classBPMN_1_1LinkTargetEvent.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="208,-105.5 208,-184.5 338,-184.5 338,-105.5 208,-105.5"/>
-<text text-anchor="middle" x="273" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::LinkTargetEvent</text>
-<polyline fill="none" stroke="black" points="208,-165.5 338,-165.5 "/>
-<text text-anchor="start" x="216" y="-153.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
-<text text-anchor="start" x="216" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ linkName</text>
-<text text-anchor="start" x="216" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sources</text>
-<polyline fill="none" stroke="black" points="208,-124.5 338,-124.5 "/>
-<text text-anchor="start" x="216" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LinkTargetEvent()</text>
+<polygon fill="none" stroke="black" points="208,-111 208,-179 338,-179 338,-111 208,-111"/>
+<text text-anchor="middle" x="273" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::LinkTargetEvent</text>
+<polyline fill="none" stroke="black" points="208,-160 338,-160 "/>
+<text text-anchor="start" x="216" y="-148" font-family="Helvetica,sans-Serif" font-size="10.00">+ linkName</text>
+<text text-anchor="start" x="216" y="-137" font-family="Helvetica,sans-Serif" font-size="10.00">+ sources</text>
+<polyline fill="none" stroke="black" points="208,-130 338,-130 "/>
+<text text-anchor="start" x="216" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00">+ LinkTargetEvent()</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node17 -->
 <g id="edge21" class="edge">
 <title>Node5&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M631.12,-243.12C560.18,-235.25 442.99,-218.25 347,-185 344.12,-184 341.21,-182.9 338.3,-181.73"/>
+<path fill="none" stroke="midnightblue" d="M631.12,-243.12C560.18,-235.25 442.99,-218.25 347,-185 342.06,-183.29 337.05,-181.29 332.08,-179.11"/>
 <polygon fill="none" stroke="midnightblue" points="630.93,-246.62 641.25,-244.21 631.68,-239.66 630.93,-246.62"/>
 </g>
 <!-- Node18 -->
@@ -282,7 +281,7 @@
 <polygon fill="none" stroke="black" points="957.5,-116.5 957.5,-173.5 1108.5,-173.5 1108.5,-116.5 957.5,-116.5"/>
 <text text-anchor="middle" x="1033" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::MessageCatchEvent</text>
 <polyline fill="none" stroke="black" points="957.5,-154.5 1108.5,-154.5 "/>
-<text text-anchor="start" x="965.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="1033" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="957.5,-135.5 1108.5,-135.5 "/>
 <text text-anchor="start" x="965.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ MessageCatchEvent()</text>
 </a>
@@ -301,7 +300,7 @@
 <polygon fill="none" stroke="black" points="1126.5,-116.5 1126.5,-173.5 1263.5,-173.5 1263.5,-116.5 1126.5,-116.5"/>
 <text text-anchor="middle" x="1195" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::SignalCatchEvent</text>
 <polyline fill="none" stroke="black" points="1126.5,-154.5 1263.5,-154.5 "/>
-<text text-anchor="start" x="1134.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="1195" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="1126.5,-135.5 1263.5,-135.5 "/>
 <text text-anchor="start" x="1134.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SignalCatchEvent()</text>
 </a>
@@ -320,7 +319,7 @@
 <polygon fill="none" stroke="black" points="1282,-116.5 1282,-173.5 1418,-173.5 1418,-116.5 1282,-116.5"/>
 <text text-anchor="middle" x="1350" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::TimerCatchEvent</text>
 <polyline fill="none" stroke="black" points="1282,-154.5 1418,-154.5 "/>
-<text text-anchor="start" x="1290" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="1350" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="1282,-135.5 1418,-135.5 "/>
 <text text-anchor="start" x="1290" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ TimerCatchEvent()</text>
 </a>
@@ -358,7 +357,7 @@
 <polygon fill="none" stroke="black" points="356,-116.5 356,-173.5 500,-173.5 500,-116.5 356,-116.5"/>
 <text text-anchor="middle" x="428" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::UntypedStartEvent</text>
 <polyline fill="none" stroke="black" points="356,-154.5 500,-154.5 "/>
-<text text-anchor="start" x="364" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="428" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="356,-135.5 500,-135.5 "/>
 <text text-anchor="start" x="364" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ UntypedStartEvent()</text>
 </a>
@@ -602,7 +601,7 @@
 <polygon fill="none" stroke="black" points="2072,-6 2072,-63 2236,-63 2236,-6 2072,-6"/>
 <text text-anchor="middle" x="2154" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::CompensateStartEvent</text>
 <polyline fill="none" stroke="black" points="2072,-44 2236,-44 "/>
-<text text-anchor="start" x="2080" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="2154" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="2072,-25 2236,-25 "/>
 <text text-anchor="start" x="2080" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ CompensateStartEvent()</text>
 </a>
@@ -621,7 +620,7 @@
 <polygon fill="none" stroke="black" points="2254,-6 2254,-63 2380,-63 2380,-6 2254,-6"/>
 <text text-anchor="middle" x="2317" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::ErrorStartEvent</text>
 <polyline fill="none" stroke="black" points="2254,-44 2380,-44 "/>
-<text text-anchor="start" x="2262" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="2317" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="2254,-25 2380,-25 "/>
 <text text-anchor="start" x="2262" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ ErrorStartEvent()</text>
 </a>
@@ -640,7 +639,7 @@
 <polygon fill="none" stroke="black" points="2398.5,-6 2398.5,-63 2551.5,-63 2551.5,-6 2398.5,-6"/>
 <text text-anchor="middle" x="2475" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::EscalationStartEvent</text>
 <polyline fill="none" stroke="black" points="2398.5,-44 2551.5,-44 "/>
-<text text-anchor="start" x="2406.5" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="2475" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="2398.5,-25 2551.5,-25 "/>
 <text text-anchor="start" x="2406.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ EscalationStartEvent()</text>
 </a>
@@ -659,7 +658,7 @@
 <polygon fill="none" stroke="black" points="2884.5,-116.5 2884.5,-173.5 3015.5,-173.5 3015.5,-116.5 2884.5,-116.5"/>
 <text text-anchor="middle" x="2950" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::CancelEndEvent</text>
 <polyline fill="none" stroke="black" points="2884.5,-154.5 3015.5,-154.5 "/>
-<text text-anchor="start" x="2892.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="2950" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="2884.5,-135.5 3015.5,-135.5 "/>
 <text text-anchor="start" x="2892.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CancelEndEvent()</text>
 </a>
@@ -678,7 +677,7 @@
 <polygon fill="none" stroke="black" points="3033.5,-116.5 3033.5,-173.5 3204.5,-173.5 3204.5,-116.5 3033.5,-116.5"/>
 <text text-anchor="middle" x="3119" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::CompensateThrowEvent</text>
 <polyline fill="none" stroke="black" points="3033.5,-154.5 3204.5,-154.5 "/>
-<text text-anchor="start" x="3041.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="start" x="3041.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ activity</text>
 <polyline fill="none" stroke="black" points="3033.5,-135.5 3204.5,-135.5 "/>
 <text text-anchor="start" x="3041.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CompensateThrowEvent()</text>
 </a>
@@ -697,7 +696,7 @@
 <polygon fill="none" stroke="black" points="3222.5,-116.5 3222.5,-173.5 3343.5,-173.5 3343.5,-116.5 3222.5,-116.5"/>
 <text text-anchor="middle" x="3283" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::ErrorEndEvent</text>
 <polyline fill="none" stroke="black" points="3222.5,-154.5 3343.5,-154.5 "/>
-<text text-anchor="start" x="3230.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="3283" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="3222.5,-135.5 3343.5,-135.5 "/>
 <text text-anchor="start" x="3230.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ErrorEndEvent()</text>
 </a>
@@ -716,7 +715,7 @@
 <polygon fill="none" stroke="black" points="1922,-116.5 1922,-173.5 2082,-173.5 2082,-116.5 1922,-116.5"/>
 <text text-anchor="middle" x="2002" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::EscalationThrowEvent</text>
 <polyline fill="none" stroke="black" points="1922,-154.5 2082,-154.5 "/>
-<text text-anchor="start" x="1930" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="2002" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="1922,-135.5 2082,-135.5 "/>
 <text text-anchor="start" x="1930" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ EscalationThrowEvent()</text>
 </a>
@@ -732,21 +731,20 @@
 <g id="node34" class="node">
 <title>Node34</title>
 <g id="a_node34"><a xlink:href="classBPMN_1_1LinkSourceEvent.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="2100.5,-105.5 2100.5,-184.5 2233.5,-184.5 2233.5,-105.5 2100.5,-105.5"/>
-<text text-anchor="middle" x="2167" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::LinkSourceEvent</text>
-<polyline fill="none" stroke="black" points="2100.5,-165.5 2233.5,-165.5 "/>
-<text text-anchor="start" x="2108.5" y="-153.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
-<text text-anchor="start" x="2108.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ linkName</text>
-<text text-anchor="start" x="2108.5" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ target</text>
-<polyline fill="none" stroke="black" points="2100.5,-124.5 2233.5,-124.5 "/>
-<text text-anchor="start" x="2108.5" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LinkSourceEvent()</text>
+<polygon fill="none" stroke="black" points="2100.5,-111 2100.5,-179 2233.5,-179 2233.5,-111 2100.5,-111"/>
+<text text-anchor="middle" x="2167" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::LinkSourceEvent</text>
+<polyline fill="none" stroke="black" points="2100.5,-160 2233.5,-160 "/>
+<text text-anchor="start" x="2108.5" y="-148" font-family="Helvetica,sans-Serif" font-size="10.00">+ linkName</text>
+<text text-anchor="start" x="2108.5" y="-137" font-family="Helvetica,sans-Serif" font-size="10.00">+ target</text>
+<polyline fill="none" stroke="black" points="2100.5,-130 2233.5,-130 "/>
+<text text-anchor="start" x="2108.5" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00">+ LinkSourceEvent()</text>
 </a>
 </g>
 </g>
 <!-- Node29&#45;&gt;Node34 -->
 <g id="edge45" class="edge">
 <title>Node29&#45;&gt;Node34</title>
-<path fill="none" stroke="midnightblue" d="M2503.86,-241.67C2437.03,-232.9 2330.72,-215.44 2243,-185 2239.92,-183.93 2236.8,-182.76 2233.69,-181.5"/>
+<path fill="none" stroke="midnightblue" d="M2503.86,-241.67C2437.03,-232.9 2330.72,-215.44 2243,-185 2237.96,-183.25 2232.83,-181.22 2227.74,-179.03"/>
 <polygon fill="none" stroke="midnightblue" points="2503.47,-245.15 2513.84,-242.96 2504.37,-238.21 2503.47,-245.15"/>
 </g>
 <!-- Node35 -->
@@ -756,7 +754,7 @@
 <polygon fill="none" stroke="black" points="2251.5,-116.5 2251.5,-173.5 2404.5,-173.5 2404.5,-116.5 2251.5,-116.5"/>
 <text text-anchor="middle" x="2328" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::MessageThrowEvent</text>
 <polyline fill="none" stroke="black" points="2251.5,-154.5 2404.5,-154.5 "/>
-<text text-anchor="start" x="2259.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="2328" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="2251.5,-135.5 2404.5,-135.5 "/>
 <text text-anchor="start" x="2259.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ MessageThrowEvent()</text>
 </a>
@@ -775,7 +773,7 @@
 <polygon fill="none" stroke="black" points="2423,-116.5 2423,-173.5 2563,-173.5 2563,-116.5 2423,-116.5"/>
 <text text-anchor="middle" x="2493" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::SignalThrowEvent</text>
 <polyline fill="none" stroke="black" points="2423,-154.5 2563,-154.5 "/>
-<text text-anchor="start" x="2431" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="2493" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="2423,-135.5 2563,-135.5 "/>
 <text text-anchor="start" x="2431" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SignalThrowEvent()</text>
 </a>
@@ -794,7 +792,7 @@
 <polygon fill="none" stroke="black" points="2581,-116.5 2581,-173.5 2709,-173.5 2709,-116.5 2581,-116.5"/>
 <text text-anchor="middle" x="2645" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::TerminateEvent</text>
 <polyline fill="none" stroke="black" points="2581,-154.5 2709,-154.5 "/>
-<text text-anchor="start" x="2589" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="2645" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="2581,-135.5 2709,-135.5 "/>
 <text text-anchor="start" x="2589" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ TerminateEvent()</text>
 </a>
@@ -813,7 +811,7 @@
 <polygon fill="none" stroke="black" points="2727.5,-116.5 2727.5,-173.5 2866.5,-173.5 2866.5,-116.5 2727.5,-116.5"/>
 <text text-anchor="middle" x="2797" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::UntypedEndEvent</text>
 <polyline fill="none" stroke="black" points="2727.5,-154.5 2866.5,-154.5 "/>
-<text text-anchor="start" x="2735.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="2797" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="2727.5,-135.5 2866.5,-135.5 "/>
 <text text-anchor="start" x="2735.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ UntypedEndEvent()</text>
 </a>

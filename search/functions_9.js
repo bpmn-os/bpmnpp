@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stringify_749',['stringify',['../classXML_1_1XMLObject.html#a8fd43b17e150338b0779d60e9a3b539a',1,'XML::XMLObject']]]
+  ['node_1234',['Node',['../classBPMN_1_1Node.html#a526a91b865ed7188099ade8f7002895f',1,'BPMN::Node']]]
 ];

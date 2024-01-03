@@ -15,7 +15,7 @@
 <polygon fill="#bfbfbf" stroke="black" points="91,-105.5 91,-162.5 254,-162.5 254,-105.5 91,-105.5"/>
 <text text-anchor="middle" x="172.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::ConditionalCatchEvent</text>
 <polyline fill="none" stroke="black" points="91,-143.5 254,-143.5 "/>
-<text text-anchor="start" x="99" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="172.5" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="91,-124.5 254,-124.5 "/>
 <text text-anchor="start" x="99" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ConditionalCatchEvent()</text>
 </a>

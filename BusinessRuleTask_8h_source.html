@@ -121,35 +121,38 @@ $(document).ready(function(){initNavTree('BusinessRuleTask_8h_source.html',''); 
 <div class="title">BusinessRuleTask.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BPMN_BusinessRuleTask_H</span></div>
+<a href="BusinessRuleTask_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BPMN_BusinessRuleTask_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BPMN_BusinessRuleTask_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;optional&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;xml/bpmn/tBusinessRuleTask.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Task.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Task_8h.html">Task.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>BPMN {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceBPMN.html">BPMN</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classBPMN_1_1BusinessRuleTask.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBPMN_1_1BusinessRuleTask.html">BusinessRuleTask</a> : <span class="keyword">public</span> <a class="code" href="classBPMN_1_1Task.html">Task</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classBPMN_1_1Model.html">Model</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classBPMN_1_1BusinessRuleTask.html#a2bf2a0e9b454c55aa5dcb5aa4698697b">   13</a></span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classBPMN_1_1Model.html">Model</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="classBPMN_1_1BusinessRuleTask.html">BusinessRuleTask</a>(<a class="code" href="classXML_1_1bpmn_1_1tBusinessRuleTask.html">XML::bpmn::tBusinessRuleTask</a>* businessRuleTask, <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* <a class="code" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="classBPMN_1_1BusinessRuleTask.html#a87155b0d91266f63bbc0b36c6404b82c">BusinessRuleTask</a>(XML::bpmn::tBusinessRuleTask* businessRuleTask, <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* <a class="code" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="classXML_1_1bpmn_1_1tBusinessRuleTask.html">XML::bpmn::tBusinessRuleTask</a>* element;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classBPMN_1_1BusinessRuleTask.html#aca56d18129fc6281a367ddfe73bf7b7f">   17</a></span>&#160;  XML::bpmn::tBusinessRuleTask* <a class="code" href="classBPMN_1_1BusinessRuleTask.html#aca56d18129fc6281a367ddfe73bf7b7f">element</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <span class="comment">// namespace BPMN</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BPMN_BusinessRuleTask_H</span></div>
+<div class="ttc" id="aTask_8h_html"><div class="ttname"><a href="Task_8h.html">Task.h</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1BusinessRuleTask_html"><div class="ttname"><a href="classBPMN_1_1BusinessRuleTask.html">BPMN::BusinessRuleTask</a></div><div class="ttdef"><b>Definition:</b> <a href="BusinessRuleTask_8h_source.html#l00012">BusinessRuleTask.h:12</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1BusinessRuleTask_html_a87155b0d91266f63bbc0b36c6404b82c"><div class="ttname"><a href="classBPMN_1_1BusinessRuleTask.html#a87155b0d91266f63bbc0b36c6404b82c">BPMN::BusinessRuleTask::BusinessRuleTask</a></div><div class="ttdeci">BusinessRuleTask(XML::bpmn::tBusinessRuleTask *businessRuleTask, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="BusinessRuleTask_8cpp_source.html#l00005">BusinessRuleTask.cpp:5</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1BusinessRuleTask_html_aca56d18129fc6281a367ddfe73bf7b7f"><div class="ttname"><a href="classBPMN_1_1BusinessRuleTask.html#aca56d18129fc6281a367ddfe73bf7b7f">BPMN::BusinessRuleTask::element</a></div><div class="ttdeci">XML::bpmn::tBusinessRuleTask * element</div><div class="ttdef"><b>Definition:</b> <a href="BusinessRuleTask_8h_source.html#l00017">BusinessRuleTask.h:17</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1ChildNode_html_a3febaa340abab73947f6a43af200c46a"><div class="ttname"><a href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">BPMN::ChildNode::parent</a></div><div class="ttdeci">Scope * parent</div><div class="ttdoc">Reference to the parent node.</div><div class="ttdef"><b>Definition:</b> <a href="ChildNode_8h_source.html#l00022">ChildNode.h:22</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Model_html"><div class="ttname"><a href="classBPMN_1_1Model.html">BPMN::Model</a></div><div class="ttdoc">Represents a BPMN model with all its processes.</div><div class="ttdef"><b>Definition:</b> <a href="Model_8h_source.html#l00078">Model.h:78</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Base class for BPMN elements that may contain a ChildNode elements.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00022">Scope.h:22</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Model_html"><div class="ttname"><a href="classBPMN_1_1Model.html">BPMN::Model</a></div><div class="ttdoc">Represents a BPMN model with all its processes and message flows.</div><div class="ttdef"><b>Definition:</b> <a href="Model_8h_source.html#l00153">Model.h:153</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Base class for BPMN elements that may contain a ChildNode elements.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00023">Scope.h:23</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Task_html"><div class="ttname"><a href="classBPMN_1_1Task.html">BPMN::Task</a></div><div class="ttdef"><b>Definition:</b> <a href="Task_8h_source.html#l00012">Task.h:12</a></div></div>
-<div class="ttc" id="aclassXML_1_1bpmn_1_1tBusinessRuleTask_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tBusinessRuleTask.html">XML::bpmn::tBusinessRuleTask</a></div><div class="ttdef"><b>Definition:</b> <a href="tBusinessRuleTask_8h_source.html#l00044">tBusinessRuleTask.h:44</a></div></div>
+<div class="ttc" id="anamespaceBPMN_html"><div class="ttname"><a href="namespaceBPMN.html">BPMN</a></div><div class="ttdoc">The BPMN namespace contains linked classes representing a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00011">Activity.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </body></html>

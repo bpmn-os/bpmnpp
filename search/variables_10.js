@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_852',['value',['../classXML_1_1bpmn_1_1tCategoryValue.html#af960ea23b49da73667f50791dcdde6fc',1,'XML::bpmn::tCategoryValue']]]
+  ['xmlns_1318',['xmlns',['../structXML_1_1Attribute.html#ab23ea413cbf3772bb17e2ca82bdc4119',1,'XML::Attribute::xmlns()'],['../classXML_1_1XMLObject.html#af0a70ae87cf85fab6baf7fc724dd59fd',1,'XML::XMLObject::xmlns()']]]
 ];

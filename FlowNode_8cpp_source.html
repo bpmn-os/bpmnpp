@@ -121,26 +121,28 @@ $(document).ready(function(){initNavTree('FlowNode_8cpp_source.html',''); initRe
 <div class="title">FlowNode.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;FlowNode.h&quot;</span></div>
+<a href="FlowNode_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="FlowNode_8h.html">FlowNode.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;xml/bpmn/tActivity.h&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;xml/bpmn/tSubProcess.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span>BPMN;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceBPMN.html">BPMN</a>;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;FlowNode::FlowNode(<a class="code" href="classXML_1_1bpmn_1_1tFlowNode.html">XML::bpmn::tFlowNode</a>* flowNode, <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* parent)</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classBPMN_1_1FlowNode.html#a9c34bf3db8fa13aa594c1515ee74c10b">    7</a></span>&#160;<a class="code" href="classBPMN_1_1FlowNode.html#a9c34bf3db8fa13aa594c1515ee74c10b">FlowNode::FlowNode</a>(XML::bpmn::tFlowNode* flowNode, <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* parent)</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  : <a class="code" href="classBPMN_1_1Node.html">Node</a>(flowNode)</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  , <a class="code" href="classBPMN_1_1ChildNode.html">ChildNode</a>(flowNode,parent)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  , element(flowNode)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">if</span> ( flowNode-&gt;<a class="code" href="classXML_1_1bpmn_1_1tFlowElement.html#a93b7b8765fce10152ec1a836f425c06d">name</a>.has_value() ) {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    name = flowNode-&gt;<a class="code" href="classXML_1_1bpmn_1_1tFlowElement.html#a93b7b8765fce10152ec1a836f425c06d">name</a>.value().get().value;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">if</span> ( flowNode-&gt;name.has_value() ) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">name</a> = flowNode-&gt;name.value().get().value;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  }</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="ttc" id="aFlowNode_8h_html"><div class="ttname"><a href="FlowNode_8h.html">FlowNode.h</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1ChildNode_html"><div class="ttname"><a href="classBPMN_1_1ChildNode.html">BPMN::ChildNode</a></div><div class="ttdoc">Base class for BPMN elements within a Scope.</div><div class="ttdef"><b>Definition:</b> <a href="ChildNode_8h_source.html#l00016">ChildNode.h:16</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1FlowNode_html_a19f4c7543b0de08dffd34f1b8ad849be"><div class="ttname"><a href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">BPMN::FlowNode::name</a></div><div class="ttdeci">std::optional&lt; std::string &gt; name</div><div class="ttdef"><b>Definition:</b> <a href="FlowNode_8h_source.html#l00026">FlowNode.h:26</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1FlowNode_html_a9c34bf3db8fa13aa594c1515ee74c10b"><div class="ttname"><a href="classBPMN_1_1FlowNode.html#a9c34bf3db8fa13aa594c1515ee74c10b">BPMN::FlowNode::FlowNode</a></div><div class="ttdeci">FlowNode(XML::bpmn::tFlowNode *flowNode, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="FlowNode_8cpp_source.html#l00007">FlowNode.cpp:7</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Node_html"><div class="ttname"><a href="classBPMN_1_1Node.html">BPMN::Node</a></div><div class="ttdoc">Base class for all elements in a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8h_source.html#l00024">Node.h:24</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Base class for BPMN elements that may contain a ChildNode elements.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00022">Scope.h:22</a></div></div>
-<div class="ttc" id="aclassXML_1_1bpmn_1_1tFlowElement_html_a93b7b8765fce10152ec1a836f425c06d"><div class="ttname"><a href="classXML_1_1bpmn_1_1tFlowElement.html#a93b7b8765fce10152ec1a836f425c06d">XML::bpmn::tFlowElement::name</a></div><div class="ttdeci">std::optional&lt; std::reference_wrapper&lt; Attribute &gt; &gt; name</div><div class="ttdoc">Attribute value can be expected to be of type 'std::string'.</div><div class="ttdef"><b>Definition:</b> <a href="tFlowElement_8h_source.html#l00057">tFlowElement.h:57</a></div></div>
-<div class="ttc" id="aclassXML_1_1bpmn_1_1tFlowNode_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tFlowNode.html">XML::bpmn::tFlowNode</a></div><div class="ttdef"><b>Definition:</b> <a href="tFlowNode_8h_source.html#l00030">tFlowNode.h:30</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Base class for BPMN elements that may contain a ChildNode elements.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00023">Scope.h:23</a></div></div>
+<div class="ttc" id="anamespaceBPMN_html"><div class="ttname"><a href="namespaceBPMN.html">BPMN</a></div><div class="ttdoc">The BPMN namespace contains linked classes representing a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00011">Activity.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </body></html>

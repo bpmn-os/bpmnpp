@@ -15,7 +15,7 @@
 <polygon fill="#bfbfbf" stroke="black" points="0.5,-0.5 0.5,-57.5 121.5,-57.5 121.5,-0.5 0.5,-0.5"/>
 <text text-anchor="middle" x="61" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::ErrorEndEvent</text>
 <polyline fill="none" stroke="black" points="0.5,-38.5 121.5,-38.5 "/>
-<text text-anchor="start" x="8.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<text text-anchor="middle" x="61" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="0.5,-19.5 121.5,-19.5 "/>
 <text text-anchor="start" x="8.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ErrorEndEvent()</text>
 </a>
