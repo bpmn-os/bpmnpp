@@ -17,41 +17,48 @@ class MessageFlow;
 /**
  * @brief Base class for all elements in a BPMN model.
  *
- * The `Node` class encapsulates the information and relationships associated with a node in a BPMN process.
+ * The Node class encapsulates the information and relationships associated with a node in a BPMN process.
  * It can represent both a BPMN process itself or a flow node within a process. The class allows to access
  * the underlying XML element.
  */
 class Node {
   friend class Model;
 public:
-  /// Constructs a `Node` object representing a BPMN process or flow node.
+  /// @brief Constructs a Node object representing a BPMN process or flow node.
   Node(XML::bpmn::tBaseElement* element);
 
   virtual ~Node() = default;
 
 
-  /// Id of process or flow node.
+  /// @brief Id of process or flow node.
   std::string id;
 
-  /// Vector containing all message flows going in to the node.
+  /// @brief Vector containing all message flows going in to the node.
   std::vector< MessageFlow* > receiving;
 
-  /// Vector containing all message flows going out of the node.
+  /// @brief Vector containing all message flows going out of the node.
   std::vector< MessageFlow* > sending;
 
-  /// Returns a pointer of type T of the element.
+  /** @brief Attempts to return the @ref element in the specified type T.
+   * If the cast is successful, returns a pointer to the casted object.
+   * If the cast fails, returns `nullptr`.
+   */
   template<typename T> T* is() {
     return dynamic_cast<T*>(element);
   }
 
+  /** @brief Attempts to return the @ref element in the specified type T.
+   * If the cast is successful, returns a pointer to the casted object.
+   * If the cast fails, returns `nullptr`.
+   */
   template<typename T> const T* is() const {
     return dynamic_cast<const T*>(element);
   }
 
   /**
-   * Attempt to cast the element to the specified type T.
+   * @brief Casts the @ref element to the specified type T.
    * If the cast is successful, returns a pointer to the casted object.
-   * If the cast fails, throws a std::runtime_error with an error message
+   * If the cast fails, throws a `std::runtime_error` with an error message
    * indicating an illegal cast operation.
    */
   template<typename T = XML::bpmn::tBaseElement> T* get() {
@@ -62,6 +69,12 @@ public:
     return ptr;
   }
 
+  /**
+   * @brief Casts the element to the specified type T.
+   * If the cast is successful, returns a pointer to the casted object.
+   * If the cast fails, throws a `std::runtime_error` with an error message
+   * indicating an illegal cast operation.
+   */
   template<typename T = XML::bpmn::tBaseElement> const T* get() const {
     const T* ptr = dynamic_cast<const T*>(element);
     if ( ptr == nullptr ) {
@@ -70,19 +83,25 @@ public:
     return ptr;
   }
 
-  /// Returns a pointer of type T of the node.
+  /** @brief Attempts to cast the node to the specified type T.
+   * If the cast is successful, returns a pointer to the casted node.
+   * If the cast fails, returns `nullptr`.
+   */
   template<typename T> T* represents() {
     return dynamic_cast<T*>(this);
   }
 
-  /// Returns a pointer of type T of the node.
+  /** @brief Attempts to cast the node to the specified type T.
+   * If the cast is successful, returns a pointer to the casted node.
+   * If the cast fails, returns `nullptr`.
+   */
   template<typename T> const T* represents() const {
     return dynamic_cast<const T*>(this);
   }
 
   /**
-   * Attempt to downcast the node to a derived class T.
-   * If the cast fails, throws a std::runtime_error with an error message
+   * @brief Casts the node to the specified type T.
+   * If the cast fails, throws a `std::runtime_error` with an error message
    * indicating an illegal cast operation.
    */
   template<typename T> T* as() {
@@ -94,8 +113,8 @@ public:
   }
 
   /**
-   * Attempt to downcast the node to a derived class T.
-   * If the cast fails, throws a std::runtime_error with an error message
+   * @brief Casts the node to the specified type  T.
+   * If the cast fails, throws a `std::runtime_error` with an error message
    * indicating an illegal cast operation.
    */
   template<typename T> const T* as() const {
@@ -107,28 +126,28 @@ public:
   }
 
   /**
-   * Returns the first node found matching a given condition.
+   * @brief Returns the first node found matching a given condition.
    *
-   * @return A pointer to a node matching condition, or nullptr if no such node exists
+   * @return A pointer to a node matching condition, or `nullptr` if no such node exists
    */
   Node* find(std::function<bool(Node*)> condition);
 
   /**
-   * Returns the first node found matching a given condition.
+   * @brief Returns the first node found matching a given condition.
    *
-   * @return A pointer to a node matching condition, or nullptr if no such node exists
+   * @return A pointer to a node matching condition, or `nullptr` if no such node exists
    */
   const Node* find(std::function<bool(const Node*)> condition) const;
 
   /**
-   * Returns all nodes matching a given condition.
+   * @brief Returns all nodes matching a given condition.
    *
    * @return A vector of pointers to nodes matching condition
    */
   std::vector< Node* > find_all(std::function<bool(Node*)> condition);
 
   /**
-   * Returns all nodes matching a given condition.
+   * @brief Returns all nodes matching a given condition.
    *
    * @return A vector of pointers to nodes matching condition
    */
