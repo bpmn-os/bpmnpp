@@ -62,7 +62,14 @@
 #include <vector>
 #include <string>
 
-
+/**
+ * @brief The `BPMN` namespace contains linked classes representing a BPMN model.
+ *
+ * For each supported BPMN element a wrapper is used that contains an `element`
+ * attribute which is a pointer to the raw representation of the respective element
+ * in the BPMN file according to the XML-schema.
+ * @see XML::bpmn
+ */
 namespace BPMN {
 
 class Node;
@@ -71,10 +78,56 @@ class MessageFlow;
 
 
 /**
- * @brief Represents a BPMN model with all its processes.
+ * @brief Represents a BPMN model with all its processes and message flows.
  *
- * The `Model` class encapsulates all processes with their nodes and sequence flows of a BPMN model.
- */
+ * The `Model` class reads a BPMN model from a file and encapsulates all processes and
+ * message flows in a BPMN model.
+ * @note The BPMN model is expected to conform with the BPMN specification, e.g., 
+ * it is expected that all boundary events and start events of event subprocesses have
+ * an event definition.
+ * @see Process, MessageFlow
+ *
+ * @warning Multiple event definitions are not yet supported. A `std::runtime_error`
+ * will be thrown when parsing an event with multiple event definitions.
+ *
+ * References between different classes are automatically determined:
+ * - For each sequence flow and each message flow, pointers to the source and target
+ *   are provided.
+ *   @see SequenceFlow, MessageFlow, FlowNode, Process
+ *
+ * - For each node, pointers to receiving and sending message flows are provided.
+ *   @see Node
+ * - For each BPMN element that may have child nodes within its scope, the child nodes
+ *   and sequence flows between them are owned by the node. Pointers to each flow node,
+ *   event subprocess,  start events, compensation activities, and compensation event
+ *   subprocess are given. 
+ *   @see Scope
+ * - For each node within a scope, a pointer to the parent scope is provided.
+ *   @see ChildNode
+ * - For each node that may receive a flow token, pointers to all incoming and outgoing 
+ *   sequence flows are given.
+ *   @see FlowNode, SequenceFlow 
+ * - For each activity, pointers to each boundary event (excluding the compensation
+ *   boundary event) and to the compensation activity or compensation event subprocess
+ *   are provided.
+ *   @see Activity, BoundaryEvent
+ * - For each event attached to the boundary of an activity, a pointer to the activity
+ *   is provided.
+ *   @see Activity, BoundaryEvent
+ * - For each link event, a pointer to the respective target or source(s) is provided. 
+ *   @note Target and sources are matched based on the `name` attribute in the link event
+ *   definition. If no such name is given, the `name` attribute of the flow node is used
+ *   as fallback.
+ *   @attention For each link source exactly one link target must be found, otherwise a
+ *   `std::runtime_error` will be thrown.
+ *   @see LinkSourceEvent, LinkTargetEvent, XML::bpmn::tLinkEventDefinition, FlowNode
+ * - For each throwing compensation event, a pointer to the activity to be compensated is
+ *   provided.
+ *   @note The respective activity is determined based on `activityRef` attribute of the
+ *   compensation event definition and the `name` attribute of the activity. If no such
+ *   attribute reference is given, the `name` attribute of the flow node is used as fallback.
+ *   @see CompensateThrowEvent, XML::bpmn::tCompensateEventDefinition, Activity, FlowNode
+ **/
 class Model {
 protected:
 	Model() {};
