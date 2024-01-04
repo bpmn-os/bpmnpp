@@ -39,17 +39,17 @@ public:
   /// @brief Vector containing all message flows going out of the node.
   std::vector< MessageFlow* > sending;
 
-  /** @brief Attempts to return the @ref element in the specified type T.
-   * If the cast is successful, returns a pointer to the casted object.
-   * If the cast fails, returns `nullptr`.
+  /**
+   * @brief Attempts to return the @ref element in the specified type T.
+   * @return A pointer to casted object or `nullptr` if the cast fails
    */
   template<typename T> T* is() {
     return dynamic_cast<T*>(element);
   }
 
-  /** @brief Attempts to return the @ref element in the specified type T.
-   * If the cast is successful, returns a pointer to the casted object.
-   * If the cast fails, returns `nullptr`.
+  /**
+   * @brief Attempts to return the @ref element in the specified type T.
+   * @return A pointer to casted object or `nullptr` if the cast fails
    */
   template<typename T> const T* is() const {
     return dynamic_cast<const T*>(element);
@@ -57,9 +57,8 @@ public:
 
   /**
    * @brief Casts the @ref element to the specified type T.
-   * If the cast is successful, returns a pointer to the casted object.
-   * If the cast fails, throws a `std::runtime_error` with an error message
-   * indicating an illegal cast operation.
+   * @return A pointer to casted object
+   * @throws std::runtime_error if the cast fails
    */
   template<typename T = XML::bpmn::tBaseElement> T* get() {
     T* ptr = dynamic_cast<T*>(element); 
@@ -71,9 +70,8 @@ public:
 
   /**
    * @brief Casts the element to the specified type T.
-   * If the cast is successful, returns a pointer to the casted object.
-   * If the cast fails, throws a `std::runtime_error` with an error message
-   * indicating an illegal cast operation.
+   * @return A pointer to casted object
+   * @throws std::runtime_error if the cast fails
    */
   template<typename T = XML::bpmn::tBaseElement> const T* get() const {
     const T* ptr = dynamic_cast<const T*>(element);
@@ -83,17 +81,17 @@ public:
     return ptr;
   }
 
-  /** @brief Attempts to cast the node to the specified type T.
-   * If the cast is successful, returns a pointer to the casted node.
-   * If the cast fails, returns `nullptr`.
+  /**
+   * @brief Attempts to cast the node to the specified type T.
+   * @return A pointer to casted object or `nullptr` if the cast fails
    */
   template<typename T> T* represents() {
     return dynamic_cast<T*>(this);
   }
 
-  /** @brief Attempts to cast the node to the specified type T.
-   * If the cast is successful, returns a pointer to the casted node.
-   * If the cast fails, returns `nullptr`.
+  /**
+   * @brief Attempts to cast the node to the specified type T.
+   * @return A pointer to casted object or `nullptr` if the cast fails
    */
   template<typename T> const T* represents() const {
     return dynamic_cast<const T*>(this);
@@ -101,8 +99,8 @@ public:
 
   /**
    * @brief Casts the node to the specified type T.
-   * If the cast fails, throws a `std::runtime_error` with an error message
-   * indicating an illegal cast operation.
+   * @return A pointer to casted object
+   * @throws std::runtime_error if cast fails
    */
   template<typename T> T* as() {
     T* ptr = dynamic_cast<T*>(this);
@@ -114,8 +112,8 @@ public:
 
   /**
    * @brief Casts the node to the specified type  T.
-   * If the cast fails, throws a `std::runtime_error` with an error message
-   * indicating an illegal cast operation.
+   * @return A pointer to casted object
+   * @throws std::runtime_error if cast fails
    */
   template<typename T> const T* as() const {
     const T* ptr = dynamic_cast<const T*>(this);

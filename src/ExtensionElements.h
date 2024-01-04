@@ -15,20 +15,26 @@ public:
   ExtensionElements(XML::bpmn::tBaseElement* baseElement);
   virtual ~ExtensionElements();
 
-  /// Returns a pointer of type T of the ExtensionElements.
+  /**
+   * @brief Attempts to cast the object to the specified type T.
+   * @return A pointer to casted object or `nullptr` if the cast fails
+   */
   template<typename T> T* represents() {
     return dynamic_cast<T*>(this);
   }
 
-  /// Returns a pointer of type T of the ExtensionElements.
+  /**
+   * @brief Attempts to cast the object to the specified type T.
+   * @return A pointer to casted object or `nullptr` if the cast fails
+   */
   template<typename T> const T* represents() const {
     return dynamic_cast<const T*>(this);
   }
 
   /**
-   * Attempt to downcast the ExtensionElements to a derived class T.
-   * If the cast fails, throws a std::runtime_error with an error message
-   * indicating an illegal cast operation.
+   * @brief Casts the object to the specified type T.
+   * @return A pointer to casted object
+   * @throws std::runtime_error if cast fails
    */
   template<typename T> T* as() {
     T* ptr = dynamic_cast<T*>(this); 
@@ -39,9 +45,9 @@ public:
   }
 
   /**
-   * Attempt to downcast the ExtensionElements to a derived class T.
-   * If the cast fails, throws a std::runtime_error with an error message
-   * indicating an illegal cast operation.
+   * @brief Casts the object to the specified type T.
+   * @return A pointer to casted object
+   * @throws std::runtime_error if cast fails
    */
   template<typename T> const T* as() const {
     const T* ptr = dynamic_cast<const T*>(this);
@@ -52,12 +58,12 @@ public:
   }
 
   /**
-   * Returns a the extension elements if they are given or a nullptr otherwise.
+   * @brief Returns the @ref element if given or a `nullptr` otherwise.
    **/
   XML::bpmn::tExtensionElements* getExtensionElements(XML::bpmn::tBaseElement* baseElement);
 
   /**
-   * Returns a vector of elements of type T embedded within a container of type T.
+   * @brief Returns a vector of elements of type T embedded within a container of type T.
    **/
   template<class C, class T> std::vector< std::reference_wrapper<T> > get() {
     if ( element ) {
