@@ -1,8 +1,8 @@
 var classBPMN_1_1Scope =
 [
-    [ "Scope", "classBPMN_1_1Scope.html#a9fec57f59b4f426b9b9ff47d44ad254a", null ],
-    [ "add", "classBPMN_1_1Scope.html#aa4a9ce7b7f19bfc612c64a84f3a59b6c", null ],
-    [ "add", "classBPMN_1_1Scope.html#a854f51e47370a489da234d7aaca585b4", null ],
+    [ "Scope", "classBPMN_1_1Scope.html#a8d67a60fa9000a45b4f2f8adc3af90c5", null ],
+    [ "add", "classBPMN_1_1Scope.html#afd77c6d3bc94c956764d6c0081a39ab3", null ],
+    [ "add", "classBPMN_1_1Scope.html#acf4ff19a3a384c336e4bee0a4e5e24af", null ],
     [ "Model", "classBPMN_1_1Scope.html#a2bf2a0e9b454c55aa5dcb5aa4698697b", null ],
     [ "childNodes", "classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725", null ],
     [ "compensationActivities", "classBPMN_1_1Scope.html#a3283c9fa3043f504eeb36e574b569494", null ],
