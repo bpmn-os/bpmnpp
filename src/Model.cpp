@@ -77,7 +77,7 @@ std::unique_ptr<FlowNode> Model::createActivity(XML::bpmn::tActivity* activity, 
     return createTask(task,parent);
   }
   else {
-    throw std::logic_error("Model: Activity is neither subProcess, callActivity, nor task");
+    throw std::logic_error("Model: Activity is neither subprocess, call activity, nor task");
   }
 
   return nullptr;

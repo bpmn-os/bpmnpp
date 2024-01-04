@@ -127,34 +127,38 @@ class MessageFlow;
  *   sequence flows are given.
  *   @see @ref FlowNode, @ref SequenceFlow
  * - For each activity, pointers to each boundary event (excluding the compensation
- *   boundary event) and to the compensation activity or compensation event subprocess
- *   are provided.
+ *   boundary event) are provided.
  *   @see @ref Activity, @ref BoundaryEvent
+ * - For each activity that can be compensated, a pointer to the compensation activity
+ *   or compensation event subprocess is provided.
+ *   @attention Activities must not have both compensation activity and compensation event
+ *              subprocess.
+ *   @see @ref Activity, @ref CompensateBoundaryEvent, @ref CompensateStartEvent
  * - For each event attached to the boundary of an activity, a pointer to the activity
  *   is provided.
  *   @see @ref Activity, @ref BoundaryEvent
  * - For each link event, a pointer to the respective target or source(s) is provided.
  *   @note Target and sources are matched based on the
- *   @ref XML::bpmn::tLinkEventDefinition::name attribute in the link event
- *   definition. If no such name is given, the @ref FlowNode::name attribute of the link
- *   event is used as fallback.
+ *         @ref XML::bpmn::tLinkEventDefinition::name attribute in the link event
+ *         definition. If no such name is given, the @ref FlowNode::name attribute of the link
+ *         event is used as fallback.
  *   @attention For each link source exactly one link target must be found, otherwise a
- *   `std::runtime_error` will be thrown.
+ *              `std::runtime_error` will be thrown.
  *   @see @ref LinkSourceEvent, @ref LinkTargetEvent, @ref XML::bpmn::tLinkEventDefinition,
- *   @ref  FlowNode
+ *        @ref  FlowNode
  * - For each throwing compensation event, a pointer to the activity to be compensated is
  *   provided.
  *   @note The respective activity is determined based on the
- *   @ref XML::bpmn::tCompensateEventDefinition::activityRef attribute of the
- *   compensation event definition and the @ref Node::id attribute of the activity. If
- *   no such attribute reference is given, respective activity is determined based on the 
- *   @ref FlowNode::name attribute of the compensate throw event and the @ref FlowNode::name
- *   of the activity.
+ *         @ref XML::bpmn::tCompensateEventDefinition::activityRef attribute of the
+ *         compensation event definition and the @ref Node::id attribute of the activity. If
+ *         no such attribute reference is given, respective activity is determined based on the 
+ *         @ref FlowNode::name attribute of the compensate throw event and the @ref FlowNode::name
+ *         of the activity.
  *   @attention Compensation throw events in compensation event subprocesses can only trigger
- *   compensation of activities within parent scope. All other compensation throw events can
- *   only trigger compensation of activities within the same scope.
+ *              compensation of activities within parent scope. All other compensation throw events can
+ *              only trigger compensation of activities within the same scope.
  *   @see @ref CompensateThrowEvent, @ref XML::bpmn::tCompensateEventDefinition, @ref Activity,
- *   @ref  FlowNode
+ *        @ref  FlowNode
  **/
 class Model {
 protected:
