@@ -12,6 +12,6 @@ var XMLObject_8h =
     [ "Namespace", "XMLObject_8h.html#a38677cd8e74fc7c166311f92c73624b1", null ],
     [ "TextContent", "XMLObject_8h.html#ae2018b3e085b085f0dc537db79e2c4ae", null ],
     [ "createInstance", "XMLObject_8h.html#abea8621f15ae0ce459575c9fa9bcaca4", null ],
-    [ "operator<<", "XMLObject_8h.html#ac4885e2d2f2f1a659c966f50ad2e5739", null ],
-    [ "operator<<", "XMLObject_8h.html#ae77266678b4b587f585e45a0c3cc240d", null ]
+    [ "operator<<", "XMLObject_8h.html#a1e041eb83d7a478563932cb5b0803171", null ],
+    [ "operator<<", "XMLObject_8h.html#a45367afdcd50efa1a3aa8a006fd2ec22", null ]
 ];

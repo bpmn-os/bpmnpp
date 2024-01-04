@@ -62,16 +62,18 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"Activity_8h.html",
-"classBPMN_1_1ConditionalStartEvent.html#a5679ccc5d4e2b22d6b898de961667d97",
-"classBPMN_1_1SignalStartEvent.html#a91c87257aae8c1d48fd997a5e44cd031",
-"classXML_1_1bpmn_1_1inputSet.html#a278a58902ae6f633b43492becfd549e3",
-"classXML_1_1bpmn_1_1tCompensateEventDefinition.html#a511b181a6067246d9ee2a384ece51822",
-"classXML_1_1bpmn_1_1tFlowElement.html#a93b7b8765fce10152ec1a836f425c06d",
-"classXML_1_1bpmn_1_1tProcess.html#a014cf4607ea0ab300eef37959bf519a3",
-"endPoint_8h_source.html",
-"tAuditing_8h_source.html",
-"tSequenceFlow_8h_source.html"
+"Activity_8cpp.html",
+"SignalStartEvent_8h.html",
+"classBPMN_1_1FlowNode.html#a2bf2a0e9b454c55aa5dcb5aa4698697b",
+"classXML_1_1XMLObject.html",
+"classXML_1_1bpmn_1_1participantMultiplicity.html#af19fc086082a666b66a5ed6371eeb3f0",
+"classXML_1_1bpmn_1_1tCorrelationProperty.html#a0d57910378c25832aa3b79077aabdabd",
+"classXML_1_1bpmn_1_1tGroup.html#a62bea9602719b9290add004140536b99",
+"classXML_1_1bpmn_1_1tResourceAssignmentExpression.html#a278a58902ae6f633b43492becfd549e3",
+"errorEventDefinition_8h_source.html",
+"partnerRole_8cpp_source.html",
+"tDataInput_8h.html",
+"tParallelGateway_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

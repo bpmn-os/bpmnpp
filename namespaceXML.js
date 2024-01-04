@@ -13,6 +13,6 @@ var namespaceXML =
     [ "Namespace", "namespaceXML.html#a38677cd8e74fc7c166311f92c73624b1", null ],
     [ "TextContent", "namespaceXML.html#ae2018b3e085b085f0dc537db79e2c4ae", null ],
     [ "createInstance", "namespaceXML.html#abea8621f15ae0ce459575c9fa9bcaca4", null ],
-    [ "operator<<", "namespaceXML.html#ac4885e2d2f2f1a659c966f50ad2e5739", null ],
-    [ "operator<<", "namespaceXML.html#ae77266678b4b587f585e45a0c3cc240d", null ]
+    [ "operator<<", "namespaceXML.html#a1e041eb83d7a478563932cb5b0803171", null ],
+    [ "operator<<", "namespaceXML.html#a45367afdcd50efa1a3aa8a006fd2ec22", null ]
 ];
