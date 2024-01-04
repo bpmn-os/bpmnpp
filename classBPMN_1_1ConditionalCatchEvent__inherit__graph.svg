@@ -101,7 +101,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classBPMN_1_1FlowNode.html" target="_top" xlink:title="Base class for BPMN elements that may contain incoming and outgoing SequenceFlow elements.">
+<g id="a_node4"><a xlink:href="classBPMN_1_1FlowNode.html" target="_top" xlink:title="Base class for BPMN elements that may contain incoming and outgoing sequence flows.">
 <polygon fill="none" stroke="black" points="122,-387.5 122,-477.5 223,-477.5 223,-387.5 122,-387.5"/>
 <text text-anchor="middle" x="172.5" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::FlowNode</text>
 <polyline fill="none" stroke="black" points="122,-458.5 223,-458.5 "/>

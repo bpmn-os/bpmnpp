@@ -83,7 +83,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classBPMN_1_1FlowNode.html" target="_top" xlink:title="Base class for BPMN elements that may contain incoming and outgoing SequenceFlow elements.">
+<g id="a_node3"><a xlink:href="classBPMN_1_1FlowNode.html" target="_top" xlink:title="Base class for BPMN elements that may contain incoming and outgoing sequence flows.">
 <polygon fill="none" stroke="black" points="10,-332 10,-422 111,-422 111,-332 10,-332"/>
 <text text-anchor="middle" x="60.5" y="-410" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::FlowNode</text>
 <polyline fill="none" stroke="black" points="10,-403 111,-403 "/>
