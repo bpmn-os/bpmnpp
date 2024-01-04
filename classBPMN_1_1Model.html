@@ -336,7 +336,10 @@ Static Protected Member Functions</h2></td></tr>
 </li>
 <li>For each node that may receive a flow token, pointers to all incoming and outgoing sequence flows are given. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a>, <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a></dd></dl>
 </li>
-<li>For each activity, pointers to each boundary event (excluding the compensation boundary event) and to the compensation activity or compensation event subprocess are provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1BoundaryEvent.html">BoundaryEvent</a></dd></dl>
+<li>For each activity, pointers to each boundary event (excluding the compensation boundary event) are provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1BoundaryEvent.html">BoundaryEvent</a></dd></dl>
+</li>
+<li>For each activity that can be compensated, a pointer to the compensation activity or compensation event subprocess is provided. <dl class="section attention"><dt>Attention</dt><dd>Activities must not have both compensation activity and compensation event subprocess. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1CompensateBoundaryEvent.html">CompensateBoundaryEvent</a>, <a class="el" href="classBPMN_1_1CompensateStartEvent.html">CompensateStartEvent</a></dd></dl>
 </li>
 <li>For each event attached to the boundary of an activity, a pointer to the activity is provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1BoundaryEvent.html">BoundaryEvent</a></dd></dl>
 </li>
@@ -350,7 +353,7 @@ Static Protected Member Functions</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00159">159</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00163">163</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2a684f87dafb1fc7c33c1b4bf13afe23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a684f87dafb1fc7c33c1b4bf13afe23">&#9670;&nbsp;</a></span>Model() <span class="overload">[1/2]</span></h2>
@@ -375,7 +378,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00161">161</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00165">165</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +464,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00254">254</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00258">258</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -501,7 +504,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00275">275</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00279">279</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -541,7 +544,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00268">268</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00272">272</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -581,7 +584,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00261">261</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00265">265</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -3077,7 +3080,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00167">167</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00171">171</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -3093,7 +3096,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00166">166</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00170">170</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -3109,7 +3112,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00165">165</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00169">169</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
