@@ -9,6 +9,7 @@ OUTPUT_DIRECTORY  = docs
 
 # Input sources
 INPUT             = src/ src/xml/ src/xml/bpmn/ xsd/ README.md
+FILE_PATTERNS     = *.h *.xsd *.md
 
 USE_MDFILE_AS_MAINPAGE = README.md
 
