@@ -43,6 +43,8 @@ GENERATE_TREEVIEW     = YES
 DISABLE_INDEX         = NO
 FULL_SIDEBAR          = NO
 
+LAYOUT_FILE           = DoxygenLayout.xml
+
 HTML_HEADER           = $(DOXYGEN_AWESOME_DIR)/doxygen-custom/header.html
 HTML_FOOTER           = $(DOXYGEN_AWESOME_DIR)/doxygen-custom/footer.html
 HTML_STYLESHEET       =
