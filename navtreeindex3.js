@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"classBPMN_1_1UserTask.html#a620bdfbe7bb0a66248c6701a907dd07a":[6,0,0,63,0],
+"classBPMN_1_1UserTask.html#a89ad67b7d9dd2161c4a1a9658d304902":[6,0,0,63,2],
 "classXML_1_1XMLObject.html":[6,0,1,3],
 "classXML_1_1XMLObject.html#a14ef0edfa6f4e86da91f0318b1bc4b36":[6,0,1,3,9],
 "classXML_1_1XMLObject.html#a24a823ec385d33dd597a023c42f77f2d":[6,0,1,3,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "classXML_1_1bpmn_1_1parallelGateway.html#ab55c537246ed84f7b65332a75d95cbc9":[6,0,1,0,72,0],
 "classXML_1_1bpmn_1_1participantAssociation.html":[6,0,1,0,73],
 "classXML_1_1bpmn_1_1participantAssociation.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,73,1],
-"classXML_1_1bpmn_1_1participantAssociation.html#ab3dd2194f9944d10a410be3702f6b7d1":[6,0,1,0,73,0],
-"classXML_1_1bpmn_1_1participantMultiplicity.html":[6,0,1,0,74],
-"classXML_1_1bpmn_1_1participantMultiplicity.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,74,1]
+"classXML_1_1bpmn_1_1participantAssociation.html#ab3dd2194f9944d10a410be3702f6b7d1":[6,0,1,0,73,0]
 };

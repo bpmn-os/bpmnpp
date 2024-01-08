@@ -88,19 +88,20 @@
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="classBPMN_1_1EventSubProcess.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="3621,-459 3621,-516 3756,-516 3756,-459 3621,-459"/>
-<text text-anchor="middle" x="3688.5" y="-504" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::EventSubProcess</text>
-<polyline fill="none" stroke="black" points="3621,-497 3756,-497 "/>
-<text text-anchor="start" x="3629" y="-485" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
-<polyline fill="none" stroke="black" points="3621,-478 3756,-478 "/>
-<text text-anchor="start" x="3629" y="-466" font-family="Helvetica,sans-Serif" font-size="10.00">+ EventSubProcess()</text>
+<polygon fill="none" stroke="black" points="3621,-453.5 3621,-521.5 3756,-521.5 3756,-453.5 3621,-453.5"/>
+<text text-anchor="middle" x="3688.5" y="-509.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::EventSubProcess</text>
+<polyline fill="none" stroke="black" points="3621,-502.5 3756,-502.5 "/>
+<text text-anchor="start" x="3629" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startEvent</text>
+<text text-anchor="start" x="3629" y="-479.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<polyline fill="none" stroke="black" points="3621,-472.5 3756,-472.5 "/>
+<text text-anchor="start" x="3629" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ EventSubProcess()</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M3640.84,-603.86C3652.02,-576.8 3666.93,-540.72 3677.07,-516.17"/>
+<path fill="none" stroke="midnightblue" d="M3640.85,-603.85C3651.21,-578.77 3664.76,-545.97 3674.76,-521.76"/>
 <polygon fill="none" stroke="midnightblue" points="3637.49,-602.8 3636.91,-613.38 3643.96,-605.48 3637.49,-602.8"/>
 </g>
 <!-- Node4 -->
@@ -207,12 +208,13 @@
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="classBPMN_1_1SubProcess.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="3731,-227 3731,-284 3838,-284 3838,-227 3731,-227"/>
-<text text-anchor="middle" x="3784.5" y="-272" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::SubProcess</text>
-<polyline fill="none" stroke="black" points="3731,-265 3838,-265 "/>
-<text text-anchor="start" x="3739" y="-253" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
-<polyline fill="none" stroke="black" points="3731,-246 3838,-246 "/>
-<text text-anchor="start" x="3739" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">+ SubProcess()</text>
+<polygon fill="none" stroke="black" points="3731,-221.5 3731,-289.5 3838,-289.5 3838,-221.5 3731,-221.5"/>
+<text text-anchor="middle" x="3784.5" y="-277.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::SubProcess</text>
+<polyline fill="none" stroke="black" points="3731,-270.5 3838,-270.5 "/>
+<text text-anchor="start" x="3739" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startEvent</text>
+<text text-anchor="start" x="3739" y="-247.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<polyline fill="none" stroke="black" points="3731,-240.5 3838,-240.5 "/>
+<text text-anchor="start" x="3739" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SubProcess()</text>
 </a>
 </g>
 </g>
@@ -257,8 +259,8 @@
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M3799.26,-217.26C3804.93,-202.94 3811.3,-186.87 3816.56,-173.61"/>
-<polygon fill="none" stroke="midnightblue" points="3795.89,-216.25 3795.46,-226.84 3802.4,-218.83 3795.89,-216.25"/>
+<path fill="none" stroke="midnightblue" d="M3801.42,-211.82C3806.48,-199.05 3811.89,-185.38 3816.47,-173.83"/>
+<polygon fill="none" stroke="midnightblue" points="3798.07,-210.77 3797.64,-221.36 3804.57,-213.35 3798.07,-210.77"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
@@ -276,8 +278,8 @@
 <!-- Node7&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node7&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M3842.05,-221.96C3862.2,-210.43 3884.93,-197.27 3905.5,-185 3911.58,-181.38 3917.95,-177.51 3924.21,-173.67"/>
-<polygon fill="none" stroke="midnightblue" points="3840.23,-218.97 3833.29,-226.96 3843.71,-225.04 3840.23,-218.97"/>
+<path fill="none" stroke="midnightblue" d="M3846.86,-219.2C3865.77,-208.36 3886.55,-196.3 3905.5,-185 3911.58,-181.38 3917.95,-177.51 3924.21,-173.67"/>
+<polygon fill="none" stroke="midnightblue" points="3844.97,-216.25 3838.03,-224.26 3848.45,-222.33 3844.97,-216.25"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
@@ -980,13 +982,13 @@
 <!-- Node59&#45;&gt;Node3 -->
 <g id="edge52" class="edge">
 <title>Node59&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M3733.74,-560.37C3723.73,-544.47 3713.88,-528.81 3705.94,-516.2"/>
+<path fill="none" stroke="midnightblue" d="M3733.89,-560.6C3725.19,-546.78 3716.6,-533.14 3709.28,-521.51"/>
 <polygon fill="none" stroke="midnightblue" points="3731.02,-562.62 3739.31,-569.22 3736.95,-558.89 3731.02,-562.62"/>
 </g>
 <!-- Node59&#45;&gt;Node7 -->
 <g id="edge54" class="edge">
 <title>Node59&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M3784.5,-559.07C3784.5,-472.51 3784.5,-340.86 3784.5,-284.12"/>
+<path fill="none" stroke="midnightblue" d="M3784.5,-559.12C3784.5,-475.3 3784.5,-349.13 3784.5,-289.7"/>
 <polygon fill="none" stroke="midnightblue" points="3781,-559.13 3784.5,-569.13 3788,-559.13 3781,-559.13"/>
 </g>
 <!-- Node60 -->

@@ -134,18 +134,11 @@ $(document).ready(function(){initNavTree('SubProcess_8cpp_source.html',''); init
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  : <a class="code" href="classBPMN_1_1Node.html">Node</a>(subProcess)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  , <a class="code" href="classBPMN_1_1Activity.html">Activity</a>(subProcess,parent)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  , <a class="code" href="classBPMN_1_1Scope.html">Scope</a>(subProcess)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  , element(subProcess)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">if</span> ( <a class="code" href="classBPMN_1_1Scope.html#a805ac53ffb184502882be82a7a2b0e28">startEvents</a>.size() &gt; 1 ) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;SubProcess: more than one start node provided for &quot;</span> + <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> startEvent : <a class="code" href="classBPMN_1_1Scope.html#a805ac53ffb184502882be82a7a2b0e28">startEvents</a> ) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> ( !startEvent-&gt;represents&lt;<a class="code" href="classBPMN_1_1UntypedStartEvent.html">UntypedStartEvent</a>&gt;() ) {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;SubProcess: event definition provided for &quot;</span> + startEvent-&gt;id);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  , startEvent(nullptr)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  , element(subProcess)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="ttc" id="aEventSubProcess_8h_html"><div class="ttname"><a href="EventSubProcess_8h.html">EventSubProcess.h</a></div></div>
 <div class="ttc" id="aFlowNode_8h_html"><div class="ttname"><a href="FlowNode_8h.html">FlowNode.h</a></div></div>
 <div class="ttc" id="aScope_8h_html"><div class="ttname"><a href="Scope_8h.html">Scope.h</a></div></div>
@@ -155,9 +148,7 @@ $(document).ready(function(){initNavTree('SubProcess_8cpp_source.html',''); init
 <div class="ttc" id="aclassBPMN_1_1Activity_html"><div class="ttname"><a href="classBPMN_1_1Activity.html">BPMN::Activity</a></div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00015">Activity.h:15</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Node_html"><div class="ttname"><a href="classBPMN_1_1Node.html">BPMN::Node</a></div><div class="ttdoc">Base class for all elements in a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8h_source.html#l00024">Node.h:24</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Base class for BPMN elements that may contain a ChildNode elements.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00023">Scope.h:23</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Scope_html_a805ac53ffb184502882be82a7a2b0e28"><div class="ttname"><a href="classBPMN_1_1Scope.html#a805ac53ffb184502882be82a7a2b0e28">BPMN::Scope::startEvents</a></div><div class="ttdeci">std::vector&lt; FlowNode * &gt; startEvents</div><div class="ttdoc">Vector containing all flow nodes that may start execution of the scope.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00038">Scope.h:38</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1SubProcess_html_adfcdbcf23b38e834cab8af776ebe70a9"><div class="ttname"><a href="classBPMN_1_1SubProcess.html#adfcdbcf23b38e834cab8af776ebe70a9">BPMN::SubProcess::SubProcess</a></div><div class="ttdeci">SubProcess(XML::bpmn::tSubProcess *subProcess, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="SubProcess_8cpp_source.html#l00010">SubProcess.cpp:10</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1UntypedStartEvent_html"><div class="ttname"><a href="classBPMN_1_1UntypedStartEvent.html">BPMN::UntypedStartEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="UntypedStartEvent_8h_source.html#l00012">UntypedStartEvent.h:12</a></div></div>
 <div class="ttc" id="aclassXML_1_1bpmn_1_1tSubProcess_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tSubProcess.html">XML::bpmn::tSubProcess</a></div><div class="ttdef"><b>Definition:</b> <a href="tSubProcess_8h_source.html#l00055">tSubProcess.h:55</a></div></div>
 <div class="ttc" id="anamespaceBPMN_html"><div class="ttname"><a href="namespaceBPMN.html">BPMN</a></div><div class="ttdoc">The BPMN namespace contains linked classes representing a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00011">Activity.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -231,6 +231,7 @@ var NAVTREEINDEX1 =
 "classBPMN_1_1EventSubProcess.html":[6,0,0,24],
 "classBPMN_1_1EventSubProcess.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,24,1],
 "classBPMN_1_1EventSubProcess.html#a5ca24c11ddeb43817da7e97f97478a69":[6,0,0,24,2],
+"classBPMN_1_1EventSubProcess.html#a6533740de2f0bf62ee7c1cad6f398476":[6,0,0,24,3],
 "classBPMN_1_1EventSubProcess.html#ae128cc7c23f29cbfb388703cda7691d9":[6,0,0,24,0],
 "classBPMN_1_1ExclusiveGateway.html":[6,0,0,25],
 "classBPMN_1_1ExclusiveGateway.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,25,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classBPMN_1_1ExtensionElements.html#ae560a965060bfbc817a6ca717f61f4c4":[6,0,0,26,1],
 "classBPMN_1_1ExtensionElements.html#aeeaf8622225c1410fee8dbfab62c79df":[6,0,0,26,0],
 "classBPMN_1_1FlowNode.html":[6,0,0,27],
-"classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be":[6,0,0,27,4],
-"classBPMN_1_1FlowNode.html#a2562b130f4e345ed67d6bc6424fc465d":[6,0,0,27,3]
+"classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be":[6,0,0,27,4]
 };
