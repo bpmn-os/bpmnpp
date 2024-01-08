@@ -126,7 +126,13 @@ $(document).ready(function(){initNavTree('classBPMN_1_1CompensateThrowEvent.html
 <div class="title">BPMN::CompensateThrowEvent Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section note"><dt>Note</dt><dd>It is assumed that <code>waitForCompletion</code> is <code>true</code></dd>
+<dd>
+If <code>activity</code> is <code>nullptr</code> then each completed Activity in relevant Scope is compensated </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="CompensateThrowEvent_8h_source.html#l00018">18</a> of file <a class="el" href="CompensateThrowEvent_8h_source.html">CompensateThrowEvent.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="CompensateThrowEvent_8h_source.html">CompensateThrowEvent.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for BPMN::CompensateThrowEvent:</div>
@@ -204,9 +210,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a4b552ac006e78cad3bd3ac79ccfa25be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1CompensateThrowEvent.html#a4b552ac006e78cad3bd3ac79ccfa25be">activity</a></td></tr>
-<tr class="memdesc:a4b552ac006e78cad3bd3ac79ccfa25be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activity to be compensated.  <a href="classBPMN_1_1CompensateThrowEvent.html#a4b552ac006e78cad3bd3ac79ccfa25be">More...</a><br /></td></tr>
-<tr class="separator:a4b552ac006e78cad3bd3ac79ccfa25be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8cf9a9f040dc3e228501b86f0861f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBPMN_1_1Activity.html">Activity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1CompensateThrowEvent.html#aab8cf9a9f040dc3e228501b86f0861f9">activity</a></td></tr>
+<tr class="memdesc:aab8cf9a9f040dc3e228501b86f0861f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activity to be compensated.  <a href="classBPMN_1_1CompensateThrowEvent.html#aab8cf9a9f040dc3e228501b86f0861f9">More...</a><br /></td></tr>
+<tr class="separator:aab8cf9a9f040dc3e228501b86f0861f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classBPMN_1_1ThrowEvent"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classBPMN_1_1ThrowEvent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classBPMN_1_1ThrowEvent.html">BPMN::ThrowEvent</a></td></tr>
 <tr class="memitem:a17844665c4853b30d495d9423533bea6 inherit pub_attribs_classBPMN_1_1ThrowEvent"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classXML_1_1bpmn_1_1tThrowEvent.html">XML::bpmn::tThrowEvent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1ThrowEvent.html#a17844665c4853b30d495d9423533bea6">element</a></td></tr>
 <tr class="separator:a17844665c4853b30d495d9423533bea6 inherit pub_attribs_classBPMN_1_1ThrowEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,13 +254,7 @@ Friends</h2></td></tr>
 <tr class="memitem:a2bf2a0e9b454c55aa5dcb5aa4698697b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1CompensateThrowEvent.html#a2bf2a0e9b454c55aa5dcb5aa4698697b">Model</a></td></tr>
 <tr class="separator:a2bf2a0e9b454c55aa5dcb5aa4698697b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section note"><dt>Note</dt><dd>It is assumed that <code>waitForCompletion</code> is <code>true</code></dd>
-<dd>
-If <code>activity</code> is <code>nullptr</code> then each completed Activity in relevant Scope is compensated </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="CompensateThrowEvent_8h_source.html#l00017">17</a> of file <a class="el" href="CompensateThrowEvent_8h_source.html">CompensateThrowEvent.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a957c851e8bf345ccc6a9d949f559c1bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a957c851e8bf345ccc6a9d949f559c1bb">&#9670;&nbsp;</a></span>CompensateThrowEvent()</h2>
 
@@ -306,24 +306,24 @@ If <code>activity</code> is <code>nullptr</code> then each completed Activity in
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CompensateThrowEvent_8h_source.html#l00018">18</a> of file <a class="el" href="CompensateThrowEvent_8h_source.html">CompensateThrowEvent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CompensateThrowEvent_8h_source.html#l00019">19</a> of file <a class="el" href="CompensateThrowEvent_8h_source.html">CompensateThrowEvent.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4b552ac006e78cad3bd3ac79ccfa25be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b552ac006e78cad3bd3ac79ccfa25be">&#9670;&nbsp;</a></span>activity</h2>
+<a id="aab8cf9a9f040dc3e228501b86f0861f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab8cf9a9f040dc3e228501b86f0861f9">&#9670;&nbsp;</a></span>activity</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a>* BPMN::CompensateThrowEvent::activity</td>
+          <td class="memname"><a class="el" href="classBPMN_1_1Activity.html">Activity</a>* BPMN::CompensateThrowEvent::activity</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CompensateThrowEvent_8h_source.html#l00021">21</a> of file <a class="el" href="CompensateThrowEvent_8h_source.html">CompensateThrowEvent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CompensateThrowEvent_8h_source.html#l00022">22</a> of file <a class="el" href="CompensateThrowEvent_8h_source.html">CompensateThrowEvent.h</a>.</p>
 
 </div>
 </div>

@@ -129,7 +129,23 @@ $(document).ready(function(){initNavTree('structXML_1_1Value.html',''); initResi
 
 <p>A struct representing the value of an XML-node attribute.  
  <a href="structXML_1_1Value.html#details">More...</a></p>
-
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The Value struct stores a value and provides implicit conversion and assignment operators to facilitate easy conversion between different types and convenient assignment of values.</p>
+<p>Example usage: </p><div class="fragment"><div class="line"><a class="code" href="structXML_1_1Value.html#a1ab83ced335ea77861f37d7c9a628d0a">Value</a> <a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a>;</div>
+<div class="line"><a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a> = std::to_string(<span class="stringliteral">&quot;a_string&quot;</span>);  <span class="comment">// Assignment using a std::string.</span></div>
+<div class="line"><a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a> = <span class="keyword">true</span>;                        <span class="comment">// Assignment using a bool.</span></div>
+<div class="line"><a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a> = 42;                          <span class="comment">// Assignment using an int.</span></div>
+<div class="line"><a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a> = 3.14;                        <span class="comment">// Assignment using a double.</span></div>
+<div class="line"> </div>
+<div class="line">std::string stringValue = <a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a>;     <span class="comment">// Implicit conversion to std::string.</span></div>
+<div class="line"><span class="keywordtype">bool</span> booleanValue = <a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a>;           <span class="comment">// Implicit conversion to bool.</span></div>
+<div class="line"><span class="keywordtype">int</span> integerValue = <a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a>;            <span class="comment">// Implicit conversion to int.</span></div>
+<div class="line"><span class="keywordtype">double</span> realValue = <a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a>;            <span class="comment">// Implicit conversion to double.</span></div>
+<div class="ttc" id="astructXML_1_1Value_html_a1ab83ced335ea77861f37d7c9a628d0a"><div class="ttname"><a href="structXML_1_1Value.html#a1ab83ced335ea77861f37d7c9a628d0a">XML::Value::Value</a></div><div class="ttdeci">Value(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="XMLObject_8h_source.html#l00059">XMLObject.h:59</a></div></div>
+<div class="ttc" id="astructXML_1_1Value_html_aee618d47903ba4a29faaf281d221de1e"><div class="ttname"><a href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">XML::Value::value</a></div><div class="ttdeci">std::string value</div><div class="ttdef"><b>Definition:</b> <a href="XMLObject_8h_source.html#l00049">XMLObject.h:49</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="XMLObject_8h_source.html#l00048">48</a> of file <a class="el" href="XMLObject_8h_source.html">XMLObject.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="XMLObject_8h_source.html">XMLObject.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -173,23 +189,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad62b743077d3e1e3aa4e1bc8feea68ad"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structXML_1_1Value.html#ad62b743077d3e1e3aa4e1bc8feea68ad">False</a> = &quot;false&quot;</td></tr>
 <tr class="separator:ad62b743077d3e1e3aa4e1bc8feea68ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Value struct stores a value and provides implicit conversion and assignment operators to facilitate easy conversion between different types and convenient assignment of values.</p>
-<p>Example usage: </p><div class="fragment"><div class="line"><a class="code" href="structXML_1_1Value.html#a1ab83ced335ea77861f37d7c9a628d0a">Value</a> <a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a>;</div>
-<div class="line"><a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a> = std::to_string(<span class="stringliteral">&quot;a_string&quot;</span>);  <span class="comment">// Assignment using a std::string.</span></div>
-<div class="line"><a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a> = <span class="keyword">true</span>;                        <span class="comment">// Assignment using a bool.</span></div>
-<div class="line"><a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a> = 42;                          <span class="comment">// Assignment using an int.</span></div>
-<div class="line"><a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a> = 3.14;                        <span class="comment">// Assignment using a double.</span></div>
-<div class="line"> </div>
-<div class="line">std::string stringValue = <a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a>;     <span class="comment">// Implicit conversion to std::string.</span></div>
-<div class="line"><span class="keywordtype">bool</span> booleanValue = <a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a>;           <span class="comment">// Implicit conversion to bool.</span></div>
-<div class="line"><span class="keywordtype">int</span> integerValue = <a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a>;            <span class="comment">// Implicit conversion to int.</span></div>
-<div class="line"><span class="keywordtype">double</span> realValue = <a class="code" href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">value</a>;            <span class="comment">// Implicit conversion to double.</span></div>
-<div class="ttc" id="astructXML_1_1Value_html_a1ab83ced335ea77861f37d7c9a628d0a"><div class="ttname"><a href="structXML_1_1Value.html#a1ab83ced335ea77861f37d7c9a628d0a">XML::Value::Value</a></div><div class="ttdeci">Value(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="XMLObject_8h_source.html#l00059">XMLObject.h:59</a></div></div>
-<div class="ttc" id="astructXML_1_1Value_html_aee618d47903ba4a29faaf281d221de1e"><div class="ttname"><a href="structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e">XML::Value::value</a></div><div class="ttdeci">std::string value</div><div class="ttdef"><b>Definition:</b> <a href="XMLObject_8h_source.html#l00049">XMLObject.h:49</a></div></div>
-</div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="XMLObject_8h_source.html#l00048">48</a> of file <a class="el" href="XMLObject_8h_source.html">XMLObject.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1ab83ced335ea77861f37d7c9a628d0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ab83ced335ea77861f37d7c9a628d0a">&#9670;&nbsp;</a></span>Value() <span class="overload">[1/4]</span></h2>
 

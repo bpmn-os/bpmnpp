@@ -31,31 +31,11 @@ var NAVTREE =
     [ "Install the library", "index.html#autotoc_md4", null ],
     [ "Run tests", "index.html#autotoc_md5", null ],
     [ "Example", "index.html#autotoc_md6", null ],
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ]
-      ] ]
-    ] ],
-    [ "Classes", "annotated.html", [
+    [ "Developer documentation", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Related Functions", "functions_rela.html", "functions_rela" ]
-      ] ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Typedefs", "globals_type.html", null ]
-      ] ]
+      [ "Namespace List", "namespaces.html", "namespaces" ],
+      [ "File List", "files.html", "files" ]
     ] ]
   ] ]
 ];
@@ -70,10 +50,10 @@ var NAVTREEINDEX =
 "classXML_1_1bpmn_1_1tCorrelationProperty.html#a0d57910378c25832aa3b79077aabdabd",
 "classXML_1_1bpmn_1_1tGroup.html#a62bea9602719b9290add004140536b99",
 "classXML_1_1bpmn_1_1tResourceAssignmentExpression.html#a278a58902ae6f633b43492becfd549e3",
-"errorEventDefinition_8h_source.html",
-"partnerRole_8cpp_source.html",
-"tDataInput_8h.html",
-"tParallelGateway_8cpp_source.html"
+"escalationEventDefinition_8cpp.html",
+"structXML_1_1Value.html#af6fce8d5508d3c9514972e81f1d0c986",
+"tEvent_8h_source.html",
+"tResource_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

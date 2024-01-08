@@ -130,7 +130,52 @@ $(document).ready(function(){initNavTree('classBPMN_1_1Model.html',''); initResi
 
 <p>Represents a BPMN model with all its processes and message flows.  
  <a href="classBPMN_1_1Model.html#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The Model class reads a BPMN model from a file and provides access to all processes with their content as well as to all message flows in a BPMN model. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Process.html">Process</a>, <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The BPMN model is expected to conform with the BPMN specification, e.g., it is expected that all boundary events and start events of event subprocesses have an event definition. </dd></dl>
+<dl class="section user"><dt></dt><dd></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>All nodes in a process model are derived from an abstract class <a class="el" href="classBPMN_1_1Node.html">Node</a>. The class model uses multiple inheritance to provide type specific attributes. References are usually provided by pointers to a base class. Casting is required to gain access to type specific attributes. </dd></dl>
+<dl class="section user"><dt></dt><dd></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The BPMN extension mechanism can be used by providing a custom model class derived from <a class="el" href="classBPMN_1_1Model.html">Model</a> and a custom extension derived from the abstract base class <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a>. The following example shows how an object of the custom extension <code>MyExtensionElements</code> class can be bound to processes by overriding the method <a class="el" href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">Model::createProcess</a> in the custom model <code>MyModel</code> class: <div class="fragment"><div class="line">std::unique_ptr&lt;BPMN::Process&gt; MyModel::createProcess(<a class="code" href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a>* process) {</div>
+<div class="line">  <span class="keywordflow">return</span> bind&lt;BPMN::Process&gt;(</div>
+<div class="line">    <a class="code" href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">BPMN::Model::createProcess</a>(process),</div>
+<div class="line">    std::make_unique&lt;MyExtensionElements&gt;(process)</div>
+<div class="line">  );</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassBPMN_1_1Model_html_a69c1d6fad5b2e6dd9abe6e8819ce8bbb"><div class="ttname"><a href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">BPMN::Model::createProcess</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Process &gt; createProcess(XML::bpmn::tProcess *process)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00044">Model.cpp:44</a></div></div>
+<div class="ttc" id="aclassXML_1_1bpmn_1_1tProcess_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a></div><div class="ttdef"><b>Definition:</b> <a href="tProcess_8h_source.html#l00064">tProcess.h:64</a></div></div>
+</div><!-- fragment --></dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Multiple event definitions are not yet supported. A <code>std::runtime_error</code> will be thrown when parsing an event with multiple event definitions.</dd></dl>
+<p>References between different classes are automatically determined:</p><ul>
+<li>For each sequence flow and each message flow, pointers to the source and target are provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a>, <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a>, <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a>, <a class="el" href="classBPMN_1_1Process.html">Process</a></dd></dl>
+</li>
+<li>For each node, pointers to receiving and sending message flows are provided. <dl class="section see"><dt>See also</dt><dd>Node</dd></dl>
+</li>
+<li>For each BPMN element that may have child nodes within its scope, the child nodes and sequence flows between them are owned by the node. Pointers to each flow node, event subprocess, start events, compensation activities, and compensation event subprocess are given. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Scope.html">Scope</a></dd></dl>
+</li>
+<li>For each node within a scope, a pointer to the parent scope is provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1ChildNode.html">ChildNode</a></dd></dl>
+</li>
+<li>For each node that may receive a flow token, pointers to all incoming and outgoing sequence flows are given. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a>, <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a></dd></dl>
+</li>
+<li>For each activity, pointers to each boundary event (excluding the compensation boundary event) are provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1BoundaryEvent.html">BoundaryEvent</a></dd></dl>
+</li>
+<li>For each activity that can be compensated, a pointer to the compensation activity or compensation event subprocess is provided. <dl class="section attention"><dt>Attention</dt><dd>Activities must not have both compensation activity and compensation event subprocess. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1CompensateBoundaryEvent.html">CompensateBoundaryEvent</a>, <a class="el" href="classBPMN_1_1CompensateStartEvent.html">CompensateStartEvent</a></dd></dl>
+</li>
+<li>For each event attached to the boundary of an activity, a pointer to the activity is provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1BoundaryEvent.html">BoundaryEvent</a></dd></dl>
+</li>
+<li>For each link event, a pointer to the respective target or source(s) is provided. <dl class="section note"><dt>Note</dt><dd>Target and sources are matched based on the <a class="el" href="classXML_1_1bpmn_1_1tLinkEventDefinition.html#ac8521a05f762e638014b405dc02b193f">XML::bpmn::tLinkEventDefinition::name</a> attribute in the link event definition. If no such name is given, the <a class="el" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">FlowNode::name</a> attribute of the link event is used as fallback. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>For each link source exactly one link target must be found, otherwise a <code>std::runtime_error</code> will be thrown. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1LinkSourceEvent.html">LinkSourceEvent</a>, <a class="el" href="classBPMN_1_1LinkTargetEvent.html">LinkTargetEvent</a>, <a class="el" href="classXML_1_1bpmn_1_1tLinkEventDefinition.html">XML::bpmn::tLinkEventDefinition</a>, <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a></dd></dl>
+</li>
+<li>For each throwing compensation event, a pointer to the activity to be compensated is provided. <dl class="section note"><dt>Note</dt><dd>The respective activity is determined based on the <a class="el" href="classXML_1_1bpmn_1_1tCompensateEventDefinition.html#a511b181a6067246d9ee2a384ece51822">XML::bpmn::tCompensateEventDefinition::activityRef</a> attribute of the compensation event definition and the <a class="el" href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">Node::id</a> attribute of the activity. If no such attribute reference is given, respective activity is determined based on the <a class="el" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">FlowNode::name</a> attribute of the compensate throw event and the <a class="el" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">FlowNode::name</a> of the activity. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Compensation throw events in compensation event subprocesses can only trigger compensation of activities within parent scope. All other compensation throw events can only trigger compensation of activities within the same scope. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1CompensateThrowEvent.html">CompensateThrowEvent</a>, <a class="el" href="classXML_1_1bpmn_1_1tCompensateEventDefinition.html">XML::bpmn::tCompensateEventDefinition</a>, <a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> </dd></dl>
+</li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00163">163</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="Model_8h_source.html">Model.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -309,52 +354,7 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memdesc:aaee63af147a02b20ad2488b6cd298cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node.  <a href="classBPMN_1_1Model.html#aaee63af147a02b20ad2488b6cd298cd9">More...</a><br /></td></tr>
 <tr class="separator:aaee63af147a02b20ad2488b6cd298cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Model class reads a BPMN model from a file and provides access to all processes with their content as well as to all message flows in a BPMN model. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Process.html">Process</a>, <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a> </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The BPMN model is expected to conform with the BPMN specification, e.g., it is expected that all boundary events and start events of event subprocesses have an event definition. </dd></dl>
-<dl class="section user"><dt></dt><dd></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>All nodes in a process model are derived from an abstract class <a class="el" href="classBPMN_1_1Node.html">Node</a>. The class model uses multiple inheritance to provide type specific attributes. References are usually provided by pointers to a base class. Casting is required to gain access to type specific attributes. </dd></dl>
-<dl class="section user"><dt></dt><dd></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The BPMN extension mechanism can be used by providing a custom model class derived from <a class="el" href="classBPMN_1_1Model.html">Model</a> and a custom extension derived from the abstract base class <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a>. The following example shows how an object of the custom extension <code>MyExtensionElements</code> class can be bound to processes by overriding the method <a class="el" href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">Model::createProcess</a> in the custom model <code>MyModel</code> class: <div class="fragment"><div class="line">std::unique_ptr&lt;BPMN::Process&gt; MyModel::createProcess(<a class="code" href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a>* process) {</div>
-<div class="line">  <span class="keywordflow">return</span> bind&lt;BPMN::Process&gt;(</div>
-<div class="line">    <a class="code" href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">BPMN::Model::createProcess</a>(process),</div>
-<div class="line">    std::make_unique&lt;MyExtensionElements&gt;(process)</div>
-<div class="line">  );</div>
-<div class="line">}</div>
-<div class="ttc" id="aclassBPMN_1_1Model_html_a69c1d6fad5b2e6dd9abe6e8819ce8bbb"><div class="ttname"><a href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">BPMN::Model::createProcess</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Process &gt; createProcess(XML::bpmn::tProcess *process)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00044">Model.cpp:44</a></div></div>
-<div class="ttc" id="aclassXML_1_1bpmn_1_1tProcess_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a></div><div class="ttdef"><b>Definition:</b> <a href="tProcess_8h_source.html#l00064">tProcess.h:64</a></div></div>
-</div><!-- fragment --></dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Multiple event definitions are not yet supported. A <code>std::runtime_error</code> will be thrown when parsing an event with multiple event definitions.</dd></dl>
-<p>References between different classes are automatically determined:</p><ul>
-<li>For each sequence flow and each message flow, pointers to the source and target are provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a>, <a class="el" href="classBPMN_1_1MessageFlow.html">MessageFlow</a>, <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a>, <a class="el" href="classBPMN_1_1Process.html">Process</a></dd></dl>
-</li>
-<li>For each node, pointers to receiving and sending message flows are provided. <dl class="section see"><dt>See also</dt><dd>Node</dd></dl>
-</li>
-<li>For each BPMN element that may have child nodes within its scope, the child nodes and sequence flows between them are owned by the node. Pointers to each flow node, event subprocess, start events, compensation activities, and compensation event subprocess are given. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Scope.html">Scope</a></dd></dl>
-</li>
-<li>For each node within a scope, a pointer to the parent scope is provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1ChildNode.html">ChildNode</a></dd></dl>
-</li>
-<li>For each node that may receive a flow token, pointers to all incoming and outgoing sequence flows are given. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a>, <a class="el" href="classBPMN_1_1SequenceFlow.html">SequenceFlow</a></dd></dl>
-</li>
-<li>For each activity, pointers to each boundary event (excluding the compensation boundary event) are provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1BoundaryEvent.html">BoundaryEvent</a></dd></dl>
-</li>
-<li>For each activity that can be compensated, a pointer to the compensation activity or compensation event subprocess is provided. <dl class="section attention"><dt>Attention</dt><dd>Activities must not have both compensation activity and compensation event subprocess. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1CompensateBoundaryEvent.html">CompensateBoundaryEvent</a>, <a class="el" href="classBPMN_1_1CompensateStartEvent.html">CompensateStartEvent</a></dd></dl>
-</li>
-<li>For each event attached to the boundary of an activity, a pointer to the activity is provided. <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1BoundaryEvent.html">BoundaryEvent</a></dd></dl>
-</li>
-<li>For each link event, a pointer to the respective target or source(s) is provided. <dl class="section note"><dt>Note</dt><dd>Target and sources are matched based on the <a class="el" href="classXML_1_1bpmn_1_1tLinkEventDefinition.html#ac8521a05f762e638014b405dc02b193f">XML::bpmn::tLinkEventDefinition::name</a> attribute in the link event definition. If no such name is given, the <a class="el" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">FlowNode::name</a> attribute of the link event is used as fallback. </dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>For each link source exactly one link target must be found, otherwise a <code>std::runtime_error</code> will be thrown. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1LinkSourceEvent.html">LinkSourceEvent</a>, <a class="el" href="classBPMN_1_1LinkTargetEvent.html">LinkTargetEvent</a>, <a class="el" href="classXML_1_1bpmn_1_1tLinkEventDefinition.html">XML::bpmn::tLinkEventDefinition</a>, <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a></dd></dl>
-</li>
-<li>For each throwing compensation event, a pointer to the activity to be compensated is provided. <dl class="section note"><dt>Note</dt><dd>The respective activity is determined based on the <a class="el" href="classXML_1_1bpmn_1_1tCompensateEventDefinition.html#a511b181a6067246d9ee2a384ece51822">XML::bpmn::tCompensateEventDefinition::activityRef</a> attribute of the compensation event definition and the <a class="el" href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">Node::id</a> attribute of the activity. If no such attribute reference is given, respective activity is determined based on the <a class="el" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">FlowNode::name</a> attribute of the compensate throw event and the <a class="el" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">FlowNode::name</a> of the activity. </dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Compensation throw events in compensation event subprocesses can only trigger compensation of activities within parent scope. All other compensation throw events can only trigger compensation of activities within the same scope. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1CompensateThrowEvent.html">CompensateThrowEvent</a>, <a class="el" href="classXML_1_1bpmn_1_1tCompensateEventDefinition.html">XML::bpmn::tCompensateEventDefinition</a>, <a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> </dd></dl>
-</li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00163">163</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2a684f87dafb1fc7c33c1b4bf13afe23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a684f87dafb1fc7c33c1b4bf13afe23">&#9670;&nbsp;</a></span>Model() <span class="overload">[1/2]</span></h2>
 
