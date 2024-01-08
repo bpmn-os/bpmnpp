@@ -6,6 +6,7 @@
 #include <optional>
 #include "xml/bpmn/tThrowEvent.h"
 #include "ThrowEvent.h"
+#include "Activity.h"
 
 namespace BPMN {
 
@@ -18,7 +19,7 @@ class CompensateThrowEvent : public ThrowEvent {
   friend class Model;
 public:
   CompensateThrowEvent(XML::bpmn::tThrowEvent* throwEvent, Scope* parent);
-  FlowNode* activity; ///< Activity to be compensated
+  Activity* activity; ///< Activity to be compensated
 };
 
 } // namespace BPMN
