@@ -10,11 +10,13 @@
 
 namespace BPMN {
 
+class TypedStartEvent;
+
 class EventSubProcess : public ChildNode, public Scope  {
   friend class Model;
 public:
   EventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent);
-
+  TypedStartEvent* startEvent;
   XML::bpmn::tSubProcess* element;
 };
 

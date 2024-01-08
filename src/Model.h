@@ -173,7 +173,6 @@ protected:
   virtual void readBPMNFile(const std::string& filename);
   virtual std::unique_ptr<Process> createProcess(XML::bpmn::tProcess* process);
   virtual std::unique_ptr<EventSubProcess> createEventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent);
-
   virtual std::unique_ptr<FlowNode> createFlowNode(XML::bpmn::tFlowNode* flowNode, Scope* parent);
 
   virtual std::unique_ptr<FlowNode> createActivity(XML::bpmn::tActivity* activity, Scope* parent);

@@ -11,9 +11,7 @@
 namespace BPMN {
 
 /**
- * @note It is assumed that `waitForCompletion` is `true`
- *
- * @note If `activity` is `nullptr` then each completed Activity in relevant Scope is compensated
+ * @note If @ref activity is `nullptr` then each completed Activity in relevant Scope has to be compensated.
  **/
 class CompensateThrowEvent : public ThrowEvent {
   friend class Model;

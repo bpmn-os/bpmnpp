@@ -13,14 +13,7 @@ EventSubProcess::EventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* pare
   : Node(subProcess)
   , ChildNode(subProcess,parent)
   , Scope(subProcess)
+  , startEvent(nullptr)
   , element(subProcess)
 {
-  if ( startEvents.size() > 1 ) {
-    throw std::runtime_error("EventSubProcess: more than one start node provided for " + id);
-  }
-  for ( auto startEvent : startEvents ) {
-    if ( !startEvent->represents<TypedStartEvent>() ) {
-      throw std::runtime_error("EventSubProcess: no event definition provided for " + startEvent->id);
-    }
-  }
 }

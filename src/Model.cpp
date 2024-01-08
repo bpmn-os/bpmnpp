@@ -551,8 +551,34 @@ void Model::createFlowReferences(FlowNode* flowNode) {
     }
    
     // add to start nodes of parent if required 
-    if ( flowNode->represents<UntypedStartEvent>() || flowNode->represents<TypedStartEvent>() ) {
-      flowNode->parent->startEvents.push_back(flowNode);
+    if ( auto untypedStartEvent = flowNode->represents<UntypedStartEvent>() ) {
+      flowNode->parent->startEvents.push_back(untypedStartEvent);
+      if ( auto subProcess = untypedStartEvent->parent->represents<SubProcess>() ) {
+        if ( subProcess->startEvent ) {
+          throw std::runtime_error("Model: more than one start event provided for '" + subProcess->id + "'");
+        }
+        subProcess->startEvent = untypedStartEvent;
+      }
+      else if ( untypedStartEvent->parent->represents<EventSubProcess>() ) { 
+        throw std::runtime_error("Model: untyped start event provided for event subprocess '" + untypedStartEvent->parent->id + "'");
+      }
+    }
+    else if ( auto typedStartEvent = flowNode->represents<TypedStartEvent>() ) {
+      flowNode->parent->startEvents.push_back(typedStartEvent);
+      if ( auto eventSubProcess = typedStartEvent->parent->represents<EventSubProcess>() ) {
+        if ( eventSubProcess->startEvent ) {
+          throw std::runtime_error("Model: more than one start event provided for '" + eventSubProcess->id + "'");
+        }
+        eventSubProcess->startEvent = typedStartEvent;
+      }
+      else if ( typedStartEvent->parent->represents<SubProcess>() ) {
+        throw std::runtime_error("Model: typed start event provided for subprocess '" + typedStartEvent->parent->id + "'");
+      }
+      else if ( typedStartEvent->parent->represents<SubProcess>() &&
+        typedStartEvent->element->is<XML::bpmn::tCompensateEventDefinition>()
+      ) {
+        throw std::runtime_error("Model: compensation start event provided for process '" + typedStartEvent->parent->id + "'");
+      }
     }
 
     // link outgoing sequence flows
@@ -650,12 +676,12 @@ void Model::createCompensationReferences(Scope* scope) {
       auto activity = compensateBoundaryEvent->attachedTo->as<Activity>();
       compensatedActivities.push_back(activity);
     }
-    else if ( auto subprocess = childNode->represents<SubProcess>();
+    else if ( auto scope = childNode->represents<Scope>();
       // add subprocess with compensation event subprocess
-      subprocess &&
-      subprocess->compensationEventSubProcess
+      scope &&
+      scope->compensationEventSubProcess
     ) {
-      compensatedActivities.push_back(subprocess);
+      compensatedActivities.push_back(scope->as<SubProcess>());
     }
   }
 

@@ -10,11 +10,14 @@
 
 namespace BPMN {
 
+class UntypedStartEvent;
+
 class SubProcess : public Activity, public Scope {
   friend class Model;
 public:
-  XML::bpmn::tSubProcess* element;
   SubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent);
+  UntypedStartEvent* startEvent;
+  XML::bpmn::tSubProcess* element;
 protected:
 };
 
