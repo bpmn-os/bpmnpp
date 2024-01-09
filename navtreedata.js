@@ -45,15 +45,15 @@ var NAVTREEINDEX =
 "Activity_8cpp.html",
 "SignalStartEvent_8h.html",
 "classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be",
-"classBPMN_1_1UserTask.html#a2bf2a0e9b454c55aa5dcb5aa4698697b",
-"classXML_1_1bpmn_1_1participantAssociation.html#ab3dd2194f9944d10a410be3702f6b7d1",
-"classXML_1_1bpmn_1_1tCorrelationKey.html#abd210fd161aecd1db4b43ffe07b9e1a3",
-"classXML_1_1bpmn_1_1tGroup.html",
-"classXML_1_1bpmn_1_1tResource.html#a7f655eed8d4762dd2ee8faf566c49971",
-"errorEventDefinition_8cpp_source.html",
-"structXML_1_1Value.html#adbb93c1dd0766094e9bab9eaad2bc27f",
-"tEvent_8cpp.html",
-"tResource_8cpp.html"
+"classBPMN_1_1UserTask.html",
+"classXML_1_1bpmn_1_1participantAssociation.html#a278a58902ae6f633b43492becfd549e3",
+"classXML_1_1bpmn_1_1tCorrelationKey.html#a9b0a9bc67a2923d2c0fce7e28ae1b870",
+"classXML_1_1bpmn_1_1tGlobalUserTask.html#ad4c0799e4b60b9ad37b065544a33d132",
+"classXML_1_1bpmn_1_1tResource.html#a78e3fa74d37bd2bf09b851f866c6dd6a",
+"errorEventDefinition_8cpp.html",
+"structXML_1_1Value.html#a9b8db560c0ff452b7b1ada1360226c63",
+"tEventDefinition_8h_source.html",
+"tResourceRole_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

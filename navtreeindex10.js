@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"tEventDefinition_8h_source.html":[6,3,0,0,0,327],
 "tEvent_8cpp.html":[6,3,0,0,0,321],
 "tEvent_8cpp_source.html":[6,3,0,0,0,321],
 "tEvent_8h.html":[6,3,0,0,0,322],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "tResourceParameter_8h_source.html":[6,3,0,0,0,451],
 "tResourceRole_8cpp.html":[6,3,0,0,0,454],
 "tResourceRole_8cpp_source.html":[6,3,0,0,0,454],
-"tResourceRole_8h.html":[6,3,0,0,0,455],
-"tResourceRole_8h_source.html":[6,3,0,0,0,455]
+"tResourceRole_8h.html":[6,3,0,0,0,455]
 };

@@ -996,19 +996,20 @@
 <g id="node49" class="node">
 <title>Node60</title>
 <g id="a_node49"><a xlink:href="classBPMN_1_1Process.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="3813,-470 3813,-527 3902,-527 3902,-470 3813,-470"/>
-<text text-anchor="middle" x="3857.5" y="-515" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::Process</text>
-<polyline fill="none" stroke="black" points="3813,-508 3902,-508 "/>
-<text text-anchor="start" x="3821" y="-496" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
-<polyline fill="none" stroke="black" points="3813,-489 3902,-489 "/>
-<text text-anchor="start" x="3821" y="-477" font-family="Helvetica,sans-Serif" font-size="10.00">+ Process()</text>
+<polygon fill="none" stroke="black" points="3813,-464.5 3813,-532.5 3902,-532.5 3902,-464.5 3813,-464.5"/>
+<text text-anchor="middle" x="3857.5" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::Process</text>
+<polyline fill="none" stroke="black" points="3813,-513.5 3902,-513.5 "/>
+<text text-anchor="start" x="3821" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isExecutable</text>
+<text text-anchor="start" x="3821" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<polyline fill="none" stroke="black" points="3813,-483.5 3902,-483.5 "/>
+<text text-anchor="start" x="3821" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Process()</text>
 </a>
 </g>
 </g>
 <!-- Node59&#45;&gt;Node60 -->
 <g id="edge53" class="edge">
 <title>Node59&#45;&gt;Node60</title>
-<path fill="none" stroke="midnightblue" d="M3823.31,-570.93C3830.85,-555.18 3838.26,-539.7 3844.24,-527.2"/>
+<path fill="none" stroke="midnightblue" d="M3823.36,-570.82C3829.85,-557.27 3836.24,-543.92 3841.7,-532.51"/>
 <polygon fill="none" stroke="midnightblue" points="3820.02,-569.68 3818.86,-580.22 3826.34,-572.71 3820.02,-569.68"/>
 </g>
 </g>

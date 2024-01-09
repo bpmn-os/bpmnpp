@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"classXML_1_1bpmn_1_1tResource.html#a78e3fa74d37bd2bf09b851f866c6dd6a":[6,0,1,0,207,2],
 "classXML_1_1bpmn_1_1tResource.html#a7f655eed8d4762dd2ee8faf566c49971":[6,0,1,0,207,0],
 "classXML_1_1bpmn_1_1tResourceAssignmentExpression.html":[6,0,1,0,208],
 "classXML_1_1bpmn_1_1tResourceAssignmentExpression.html#a1d914201bbb2fbe41624261e69c09f79":[6,0,1,0,208,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "endPoint_8cpp.html":[6,3,0,0,0,85],
 "endPoint_8cpp_source.html":[6,3,0,0,0,85],
 "endPoint_8h.html":[6,3,0,0,0,86],
-"endPoint_8h_source.html":[6,3,0,0,0,86],
-"errorEventDefinition_8cpp.html":[6,3,0,0,0,87]
+"endPoint_8h_source.html":[6,3,0,0,0,86]
 };

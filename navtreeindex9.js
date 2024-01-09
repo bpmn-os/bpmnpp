@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"structXML_1_1Value.html#a9b8db560c0ff452b7b1ada1360226c63":[6,0,1,1,7],
 "structXML_1_1Value.html#adbb93c1dd0766094e9bab9eaad2bc27f":[6,0,1,1,4],
 "structXML_1_1Value.html#adc4433f06b6f2561ae8f2fd5da72334f":[6,0,1,1,10],
 "structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e":[6,0,1,1,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "tEventBasedGateway_8h_source.html":[6,3,0,0,0,324],
 "tEventDefinition_8cpp.html":[6,3,0,0,0,326],
 "tEventDefinition_8cpp_source.html":[6,3,0,0,0,326],
-"tEventDefinition_8h.html":[6,3,0,0,0,327],
-"tEventDefinition_8h_source.html":[6,3,0,0,0,327]
+"tEventDefinition_8h.html":[6,3,0,0,0,327]
 };

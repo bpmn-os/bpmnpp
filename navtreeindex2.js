@@ -157,6 +157,7 @@ var NAVTREEINDEX2 =
 "classBPMN_1_1Process.html":[6,0,0,41],
 "classBPMN_1_1Process.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,41,1],
 "classBPMN_1_1Process.html#a7dd778f729e02e142881d9f5f295bae5":[6,0,0,41,0],
+"classBPMN_1_1Process.html#ac296d6efdcc351efd3490b48745dbbc6":[6,0,0,41,3],
 "classBPMN_1_1Process.html#ac9abdb8b7e01a6e0bb9c9af7e5b16229":[6,0,0,41,2],
 "classBPMN_1_1ReceiveTask.html":[6,0,0,42],
 "classBPMN_1_1ReceiveTask.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,42,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classBPMN_1_1UntypedStartEvent.html#a4d088c5fe217371662730c070b5a4273":[6,0,0,61,0],
 "classBPMN_1_1UntypedTask.html":[6,0,0,62],
 "classBPMN_1_1UntypedTask.html#a13085854839409e7e8cc8def26252d80":[6,0,0,62,0],
-"classBPMN_1_1UntypedTask.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,62,1],
-"classBPMN_1_1UserTask.html":[6,0,0,63]
+"classBPMN_1_1UntypedTask.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,62,1]
 };

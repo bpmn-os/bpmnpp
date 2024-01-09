@@ -132,10 +132,11 @@ $(document).ready(function(){initNavTree('Process_8cpp_source.html',''); initRes
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classBPMN_1_1Process.html#a7dd778f729e02e142881d9f5f295bae5">    9</a></span>&#160;<a class="code" href="classBPMN_1_1Process.html#a7dd778f729e02e142881d9f5f295bae5">Process::Process</a>(<a class="code" href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a>* process)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  : <a class="code" href="classBPMN_1_1Node.html">Node</a>(process)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  , <a class="code" href="classBPMN_1_1Scope.html">Scope</a>(process)</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  , element(process)</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  , isExecutable(process-&gt;isExecutable.has_value() &amp;&amp; process-&gt;isExecutable.value().get().value)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  , element(process)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="ttc" id="aEventSubProcess_8h_html"><div class="ttname"><a href="EventSubProcess_8h.html">EventSubProcess.h</a></div></div>
 <div class="ttc" id="aFlowNode_8h_html"><div class="ttname"><a href="FlowNode_8h.html">FlowNode.h</a></div></div>
 <div class="ttc" id="aProcess_8h_html"><div class="ttname"><a href="Process_8h.html">Process.h</a></div></div>

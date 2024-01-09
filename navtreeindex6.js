@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classXML_1_1bpmn_1_1tGlobalUserTask.html#ad4c0799e4b60b9ad37b065544a33d132":[6,0,1,0,166,2],
 "classXML_1_1bpmn_1_1tGroup.html":[6,0,1,0,167],
 "classXML_1_1bpmn_1_1tGroup.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,167,1],
 "classXML_1_1bpmn_1_1tGroup.html#a5688f69038fc66e28b20da958bac17d9":[6,0,1,0,167,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classXML_1_1bpmn_1_1tRendering.html#a7a808922a0ff017721e27615fecfd27d":[6,0,1,0,206,0],
 "classXML_1_1bpmn_1_1tResource.html":[6,0,1,0,207],
 "classXML_1_1bpmn_1_1tResource.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,207,1],
-"classXML_1_1bpmn_1_1tResource.html#a484bd218b4dc3c610f7d801ef324c6ba":[6,0,1,0,207,3],
-"classXML_1_1bpmn_1_1tResource.html#a78e3fa74d37bd2bf09b851f866c6dd6a":[6,0,1,0,207,2]
+"classXML_1_1bpmn_1_1tResource.html#a484bd218b4dc3c610f7d801ef324c6ba":[6,0,1,0,207,3]
 };
