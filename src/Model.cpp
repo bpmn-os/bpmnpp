@@ -570,12 +570,18 @@ void Model::createFlowReferences(FlowNode* flowNode) {
           throw std::runtime_error("Model: more than one start event provided for '" + eventSubProcess->id + "'");
         }
         eventSubProcess->startEvent = typedStartEvent;
+        if ( typedStartEvent->represents<CompensateStartEvent>() ) {
+          if ( eventSubProcess->parent->compensationEventSubProcess ) {
+            throw std::runtime_error("Model: more than one compensation event subprocess provided for '" + eventSubProcess->parent->id + "'");
+          }
+          eventSubProcess->parent->compensationEventSubProcess = eventSubProcess;
+        }
       }
       else if ( typedStartEvent->parent->represents<SubProcess>() ) {
         throw std::runtime_error("Model: typed start event provided for subprocess '" + typedStartEvent->parent->id + "'");
       }
-      else if ( typedStartEvent->parent->represents<SubProcess>() &&
-        typedStartEvent->element->is<XML::bpmn::tCompensateEventDefinition>()
+      else if ( typedStartEvent->parent->represents<Process>() &&
+        typedStartEvent->represents<CompensateStartEvent>()
       ) {
         throw std::runtime_error("Model: compensation start event provided for process '" + typedStartEvent->parent->id + "'");
       }
@@ -662,8 +668,7 @@ void Model::createCompensationReferences(Scope* scope) {
   auto context = scope;
   if ( auto eventSubProcess = scope->represents<EventSubProcess>();
     eventSubProcess && 
-    scope->startEvents.size() == 1 &&
-    scope->startEvents.front()->represents<CompensateStartEvent>()
+    eventSubProcess->startEvent->represents<CompensateStartEvent>()
   ) {
     // compensation throw events in compensation event subprocess trigger 
     // compensation of activities in parent scope
