@@ -536,6 +536,22 @@ void Model::createNestedReferences(Scope* scope) {
   for ( auto eventSubProcess: scope->eventSubProcesses ) {
     createNestedReferences(eventSubProcess);
   }
+
+  // check for compensation event subprocess
+  auto it = std::find_if(
+    scope->eventSubProcesses.begin(),
+    scope->eventSubProcesses.end(),
+    [](auto& eventSubProcess) -> bool {
+      TypedStartEvent* startEvent = eventSubProcess->startEvent;
+      return startEvent && startEvent->represents<CompensateStartEvent>();
+    }
+  );
+
+  if ( it != scope->eventSubProcesses.end() ) {
+    // move compensation event subprocess from regular event subprocesses
+    scope->compensationEventSubProcess = std::move(*it);
+    scope->eventSubProcesses.erase(it);
+  }
 }
 
 void Model::createFlowReferences(FlowNode* flowNode) {

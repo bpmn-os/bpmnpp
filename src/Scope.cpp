@@ -16,15 +16,13 @@ Scope::Scope(XML::bpmn::tBaseElement* element)
 
 void Scope::add(std::unique_ptr<Node> node) {
   childNodes.push_back(std::move(node));
-  auto childNode = childNodes.end() - 1;
-  if ( auto flowNode = childNode->get()->represents<FlowNode>(); flowNode ) {
+  auto& childNode = childNodes.back();
+  if ( auto flowNode = childNode.get()->represents<FlowNode>(); flowNode ) {
     if ( flowNode->represents<CompensateBoundaryEvent>() ) {
       // nothing to be done for CompensateBoundaryEvent
     }
     else if ( auto activity = flowNode->represents<Activity>();
-      activity && 
-      activity->element->isForCompensation.has_value() && 
-      (bool)activity->element->isForCompensation.value().get().value
+      activity && activity->isForCompensation
     ) {
       compensationActivities.push_back(activity);
     }
@@ -32,27 +30,12 @@ void Scope::add(std::unique_ptr<Node> node) {
       flowNodes.push_back(flowNode);
     }
   }
-  else if ( auto eventSubProcess = childNode->get()->represents<EventSubProcess>(); eventSubProcess ) {
-    if ( eventSubProcess->startEvents.size() == 1 && 
-      eventSubProcess->startEvents.front()->represents<CompensateStartEvent>()
-    ) {
-      if ( !compensationEventSubProcess ) {
-        throw std::runtime_error("Scope: multiple compensation event subprocess for scope '" + id + "'");
-      }
-      compensationEventSubProcess = eventSubProcess;
-      if ( auto activity =  this->as<Activity>(); activity ) {
-        activity->compensatedBy = compensationEventSubProcess;
-      }
-      else {
-        throw std::runtime_error("Scope: compensation event subprocess provided for non-activity '" + id + "'");
-      }
-    }
-    else {
-      eventSubProcesses.push_back(eventSubProcess);
-    }
+  else if ( auto eventSubProcess = childNode.get()->represents<EventSubProcess>(); eventSubProcess ) {
+    // compensation event subprocesses are moved later
+    eventSubProcesses.push_back(eventSubProcess);
   }
   else {
-    throw std::logic_error("Scope: illegal child node '" + childNode->get()->id + "'");
+    throw std::logic_error("Scope: illegal child node '" + childNode.get()->id + "'");
   }
 }
 

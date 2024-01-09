@@ -9,8 +9,5 @@ Activity::Activity(XML::bpmn::tActivity* activity, Scope* parent)
   , isForCompensation(activity->isForCompensation.has_value() && activity->isForCompensation.value().get().value)
   , element(activity)
 {
-  if ( isForCompensation ) {
-    parent->compensationActivities.push_back(this);
-  }
 }
 
