@@ -19,6 +19,7 @@ public:
 
   std::vector< BoundaryEvent* > boundaryEvents;
   Node* compensatedBy; ///< Pointer to compensation activity or compensation event sub-process
+  bool isForCompensation;
   XML::bpmn::tActivity* element;
 protected:
 };
