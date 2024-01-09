@@ -12,8 +12,9 @@ namespace BPMN {
 class Process : public Scope {
   friend class Model;
 public:
-  XML::bpmn::tProcess* element;
   Process(XML::bpmn::tProcess* process);
+  bool isExecutable;
+  XML::bpmn::tProcess* element;
 protected:
 };
 

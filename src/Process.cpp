@@ -9,6 +9,7 @@ using namespace BPMN;
 Process::Process(XML::bpmn::tProcess* process)
   : Node(process)
   , Scope(process)
+  , isExecutable(process->isExecutable.has_value() && process->isExecutable.value().get().value)
   , element(process)
 {
 }
