@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be":[6,0,0,27,4],
 "classBPMN_1_1FlowNode.html#a2562b130f4e345ed67d6bc6424fc465d":[6,0,0,27,3],
 "classBPMN_1_1FlowNode.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,27,1],
 "classBPMN_1_1FlowNode.html#a3d29a8f5f1a401f23d17c3e331662283":[6,0,0,27,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classBPMN_1_1UntypedTask.html":[6,0,0,62],
 "classBPMN_1_1UntypedTask.html#a13085854839409e7e8cc8def26252d80":[6,0,0,62,0],
 "classBPMN_1_1UntypedTask.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,62,1],
-"classBPMN_1_1UserTask.html":[6,0,0,63],
-"classBPMN_1_1UserTask.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,63,1]
+"classBPMN_1_1UserTask.html":[6,0,0,63]
 };
