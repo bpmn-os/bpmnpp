@@ -689,6 +689,9 @@ void Model::createCompensationReferences(Scope* scope) {
     // compensation throw events in compensation event subprocess trigger 
     // compensation of activities in parent scope
     context = eventSubProcess->parent;
+    if ( auto subProcess = context->represents<SubProcess>() ) {
+      subProcess->compensatedBy = eventSubProcess;
+    }
   }
 
   for ( auto& childNode: context->childNodes ) {
