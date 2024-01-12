@@ -126,6 +126,12 @@ class MessageFlow;
  * - For each node that may receive a flow token, pointers to all incoming and outgoing
  *   sequence flows are given.
  *   @see @ref FlowNode, @ref SequenceFlow
+ * - For each subprocess, a pointer to the start event is provided.
+ *   @attention It is expected that each subprocess has a unique @ref UntypedStartEvent.
+ *   @see @ref SubProcess
+ * - For each event subprocess, a pointer to the start event is provided.
+ *   @attention It is expected that each event subprocess has a unique @ref TypedStartEvent.
+ *   @see @ref EventSubProcess
  * - For each activity, pointers to each boundary event (excluding the compensation
  *   boundary event) are provided.
  *   @see @ref Activity, @ref BoundaryEvent
