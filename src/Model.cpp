@@ -12,6 +12,7 @@
 #include "xml/bpmn/tCollaboration.h"
 #include "xml/bpmn/tParticipant.h"
 #include "xml/bpmn/tAssociation.h"
+#include <cassert>
 
 using namespace BPMN;
 
@@ -50,44 +51,43 @@ std::unique_ptr<EventSubProcess> Model::createEventSubProcess(XML::bpmn::tSubPro
 }
 
 std::unique_ptr<FlowNode> Model::createFlowNode(XML::bpmn::tFlowNode* flowNode, Scope* parent) {
-  if ( auto activity = flowNode->is<XML::bpmn::tActivity>(); activity ) {
+  if ( auto activity = flowNode->is<XML::bpmn::tActivity>() ) {
     return createActivity(activity,parent);
   }
-  else if ( auto event = flowNode->is<XML::bpmn::tEvent>(); event ) {
+  else if ( auto event = flowNode->is<XML::bpmn::tEvent>() ) {
     return createEvent(event,parent);
   }
-  else if ( auto gateway = flowNode->is<XML::bpmn::tGateway>(); gateway ) {
+  else if ( auto gateway = flowNode->is<XML::bpmn::tGateway>() ) {
     return createGateway(gateway,parent);
   }
-  else {
-    throw std::logic_error("Model: Flow node is neither activity, event, nor gateway");
-  }
+
+  assert(!"Flow node is neither activity, event, nor gateway");
 
   return nullptr;
 }
 
 std::unique_ptr<FlowNode> Model::createActivity(XML::bpmn::tActivity* activity, Scope* parent) {
-  if ( auto subProcess = activity->is<XML::bpmn::tSubProcess>(); subProcess ) {
+  if ( auto subProcess = activity->is<XML::bpmn::tSubProcess>() ) {
     return createSubProcess(subProcess,parent);
   }
-  if ( auto callActivity = activity->is<XML::bpmn::tCallActivity>(); callActivity ) {
+  if ( auto callActivity = activity->is<XML::bpmn::tCallActivity>() ) {
     return createCallActivity(callActivity,parent);
   }
-  if ( auto task = activity->is<XML::bpmn::tTask>(); task ) {
+  if ( auto task = activity->is<XML::bpmn::tTask>() ) {
     return createTask(task,parent);
   }
-  else {
-    throw std::logic_error("Model: Activity is neither subprocess, call activity, nor task");
-  }
+
+
+  assert(!"Activity is neither subprocess, call activity, nor task");
 
   return nullptr;
 }
 
 std::unique_ptr<FlowNode> Model::createSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent) {
-  if ( auto adHocSubProcess = subProcess->is<XML::bpmn::tAdHocSubProcess>(); adHocSubProcess ) {
+  if ( auto adHocSubProcess = subProcess->is<XML::bpmn::tAdHocSubProcess>() ) {
     return createAdHocSubProcess(adHocSubProcess,parent);
   }
-  else if ( auto transaction = subProcess->is<XML::bpmn::tTransaction>(); transaction ) {
+  else if ( auto transaction = subProcess->is<XML::bpmn::tTransaction>() ) {
     return createTransaction(transaction,parent);
   }
   return std::make_unique<SubProcess>(subProcess,parent);
@@ -106,22 +106,22 @@ std::unique_ptr<FlowNode> Model::createCallActivity(XML::bpmn::tCallActivity* ca
 }
 
 std::unique_ptr<FlowNode> Model::createTask(XML::bpmn::tTask* task, Scope* parent) {
-  if ( auto sendTask = task->is<XML::bpmn::tSendTask>(); sendTask ) {
+  if ( auto sendTask = task->is<XML::bpmn::tSendTask>() ) {
     return std::make_unique<SendTask>(sendTask,parent);
   }
-  else if ( auto receiveTask = task->is<XML::bpmn::tReceiveTask>(); receiveTask ) {
+  else if ( auto receiveTask = task->is<XML::bpmn::tReceiveTask>() ) {
     return std::make_unique<ReceiveTask>(receiveTask,parent);
   }
-  else if ( auto userTask = task->is<XML::bpmn::tUserTask>(); userTask ) {
+  else if ( auto userTask = task->is<XML::bpmn::tUserTask>() ) {
     return std::make_unique<UserTask>(userTask,parent);
   }
-  else if ( auto manualTask = task->is<XML::bpmn::tManualTask>(); manualTask ) {
+  else if ( auto manualTask = task->is<XML::bpmn::tManualTask>() ) {
     return std::make_unique<ManualTask>(manualTask,parent);
   }
-  else if ( auto scriptTask = task->is<XML::bpmn::tScriptTask>(); scriptTask ) {
+  else if ( auto scriptTask = task->is<XML::bpmn::tScriptTask>() ) {
     return std::make_unique<ScriptTask>(scriptTask,parent);
   }
-  else if ( auto businessRuleTask = task->is<XML::bpmn::tBusinessRuleTask>(); businessRuleTask ) {
+  else if ( auto businessRuleTask = task->is<XML::bpmn::tBusinessRuleTask>() ) {
     return std::make_unique<BusinessRuleTask>(businessRuleTask,parent);
   }
 
@@ -157,13 +157,13 @@ std::unique_ptr<FlowNode> Model::createBusinessRuleTask(XML::bpmn::tBusinessRule
 }
 
 std::unique_ptr<FlowNode> Model::createEvent(XML::bpmn::tEvent* event, Scope* parent) {
-  if ( auto boundaryEvent = event->is<XML::bpmn::tBoundaryEvent>(); boundaryEvent ) {
+  if ( auto boundaryEvent = event->is<XML::bpmn::tBoundaryEvent>() ) {
     return createBoundaryEvent(boundaryEvent,parent);
   }
-  else if ( auto catchEvent = event->is<XML::bpmn::tCatchEvent>(); catchEvent ) {
+  else if ( auto catchEvent = event->is<XML::bpmn::tCatchEvent>() ) {
     return createCatchEvent(catchEvent,parent);
   }
-  else if ( auto throwEvent = event->is<XML::bpmn::tThrowEvent>(); throwEvent ) {
+  else if ( auto throwEvent = event->is<XML::bpmn::tThrowEvent>() ) {
     return createThrowEvent(throwEvent,parent);
   }
   else {
@@ -253,7 +253,7 @@ std::unique_ptr<FlowNode> Model::createCatchEvent(XML::bpmn::tCatchEvent* catchE
     throw std::runtime_error("Model: Multiple event definitions are not yet supported");
   }
 
-  if ( auto startEvent = catchEvent->is<XML::bpmn::tStartEvent>(); startEvent ) {
+  if ( auto startEvent = catchEvent->is<XML::bpmn::tStartEvent>() ) {
     return createTypedStartEvent(startEvent,eventDefinitions[0].get(),parent);
   }
 
@@ -436,24 +436,23 @@ std::unique_ptr<FlowNode> Model::createUntypedEndEvent(XML::bpmn::tThrowEvent* t
 
 
 std::unique_ptr<FlowNode> Model::createGateway(XML::bpmn::tGateway* gateway, Scope* parent) {
-  if ( auto parallelGateway = gateway->is<XML::bpmn::tParallelGateway>(); parallelGateway ) {
+  if ( auto parallelGateway = gateway->is<XML::bpmn::tParallelGateway>() ) {
     return createParallelGateway(parallelGateway,parent);
   }
-  else if ( auto exclusiveGateway = gateway->is<XML::bpmn::tExclusiveGateway>(); exclusiveGateway ) {
+  else if ( auto exclusiveGateway = gateway->is<XML::bpmn::tExclusiveGateway>() ) {
     return createExclusiveGateway(exclusiveGateway,parent);
   }
-  else if ( auto inclusiveGateway = gateway->is<XML::bpmn::tInclusiveGateway>(); inclusiveGateway ) {
+  else if ( auto inclusiveGateway = gateway->is<XML::bpmn::tInclusiveGateway>() ) {
     return createInclusiveGateway(inclusiveGateway,parent);
   }
-  else if ( auto complexGateway = gateway->is<XML::bpmn::tComplexGateway>(); complexGateway ) {
+  else if ( auto complexGateway = gateway->is<XML::bpmn::tComplexGateway>() ) {
     return createComplexGateway(complexGateway,parent);
   }
-  else if ( auto eventBasedGateway = gateway->is<XML::bpmn::tEventBasedGateway>(); eventBasedGateway ) {
+  else if ( auto eventBasedGateway = gateway->is<XML::bpmn::tEventBasedGateway>() ) {
     return createEventBasedGateway(eventBasedGateway,parent);
   }
-  else {
-    throw std::logic_error("Model: Gateway '" + gateway->id.value().get().value.value + "' is neither parallel, exclusive, inclusive, complex, nor event-based gateway");
-  }
+
+  assert(!"Gateway is neither parallel, exclusive, inclusive, complex, nor event-based gateway");
 
   return nullptr;
 }
@@ -503,13 +502,13 @@ void Model::createChildNodes(Scope* scope) {
   }
   // add boundary events
   for (XML::bpmn::tFlowNode& flowNode: scope->element->getChildren<XML::bpmn::tFlowNode>() ) {
-    if ( auto boundaryEvent = flowNode.is<XML::bpmn::tBoundaryEvent>(); boundaryEvent ) {
+    if ( auto boundaryEvent = flowNode.is<XML::bpmn::tBoundaryEvent>() ) {
       scope->add(createBoundaryEvent(boundaryEvent,scope));
     }
   }
   // recurse
   for ( auto& childNode: scope->childNodes ) {
-    if ( auto childScope = childNode->represents<Scope>(); childScope ) {
+    if ( auto childScope = childNode->represents<Scope>() ) {
       createChildNodes(childScope);
       createSequenceFlows(childScope);
     }
@@ -523,7 +522,7 @@ void Model::createSequenceFlows(Scope* scope) {
   }
   // recurse
   for ( auto& childNode: scope->childNodes ) {
-    if ( auto scope = childNode->represents<Scope>(); scope ) {
+    if ( auto scope = childNode->represents<Scope>() ) {
       createSequenceFlows(scope);
     }
   }
@@ -615,13 +614,13 @@ void Model::createFlowReferences(FlowNode* flowNode) {
                id.has_value() &&
                id.value().get().value.value == sequenceFlow->id
           ) {
-            if ( auto exclusiveGateway = flowNode->represents<ExclusiveGateway>(); exclusiveGateway ) {
+            if ( auto exclusiveGateway = flowNode->represents<ExclusiveGateway>() ) {
               exclusiveGateway->defaultFlow = sequenceFlow.get();
             }
-            else if ( auto inclusiveGateway = flowNode->represents<InclusiveGateway>(); inclusiveGateway ) {
+            else if ( auto inclusiveGateway = flowNode->represents<InclusiveGateway>() ) {
               inclusiveGateway->defaultFlow = sequenceFlow.get();
             }
-            else if ( auto complexGateway = flowNode->represents<ComplexGateway>(); complexGateway ) {
+            else if ( auto complexGateway = flowNode->represents<ComplexGateway>() ) {
               complexGateway->defaultFlow = sequenceFlow.get();
             }
           }
@@ -631,7 +630,7 @@ void Model::createFlowReferences(FlowNode* flowNode) {
     }
   }
   // recurse
-  if ( auto scope = flowNode->represents<Scope>(); scope ) {
+  if ( auto scope = flowNode->represents<Scope>() ) {
     createNestedReferences(scope);
   }
 }
@@ -645,7 +644,7 @@ void Model::createCompensations(Scope* scope) {
   }
 
   for ( auto& childNode: scope->childNodes ) {
-    if ( auto compensateBoundaryEvent = childNode->represents<CompensateBoundaryEvent>(); compensateBoundaryEvent ) {
+    if ( auto compensateBoundaryEvent = childNode->represents<CompensateBoundaryEvent>() ) {
       // add activity with compensate event attached to the boundary
       compensateBoundaryEventMap[compensateBoundaryEvent->id] = compensateBoundaryEvent;
     }
@@ -664,7 +663,7 @@ void Model::createCompensations(Scope* scope) {
 
   // recurse
   for ( auto& childNode: scope->childNodes ) {
-    if ( auto childScope = childNode->represents<Scope>(); childScope ) {
+    if ( auto childScope = childNode->represents<Scope>() ) {
       createCompensations(childScope);
     }
   }
@@ -675,7 +674,7 @@ void Model::createCompensationReferences(Scope* scope) {
   std::vector<Activity*> compensatedActivities;
 
   for ( auto& childNode: scope->childNodes ) {
-    if ( auto compensateThrowEvent = childNode->represents<CompensateThrowEvent>(); compensateThrowEvent ) {
+    if ( auto compensateThrowEvent = childNode->represents<CompensateThrowEvent>() ) {
       compensateThrowEvents.push_back(compensateThrowEvent);
     }
   }
@@ -695,7 +694,7 @@ void Model::createCompensationReferences(Scope* scope) {
   }
 
   for ( auto& childNode: context->childNodes ) {
-    if ( auto compensateBoundaryEvent = childNode->represents<CompensateBoundaryEvent>(); compensateBoundaryEvent ) {
+    if ( auto compensateBoundaryEvent = childNode->represents<CompensateBoundaryEvent>() ) {
       // add activity with compensate event attached to the boundary
       auto activity = compensateBoundaryEvent->attachedTo->as<Activity>();
       compensatedActivities.push_back(activity);
@@ -757,15 +756,15 @@ void Model::createLinks(Scope* scope) {
   std::vector<LinkTargetEvent*> linkTargets;
 
   for ( auto& childNode: scope->childNodes ) {
-    if ( auto linkSource = childNode->represents<LinkSourceEvent>(); linkSource ) {
+    if ( auto linkSource = childNode->represents<LinkSourceEvent>() ) {
       linkSources.push_back(linkSource);
     }
-    if ( auto linkTarget = childNode->represents<LinkTargetEvent>(); linkTarget ) {
+    if ( auto linkTarget = childNode->represents<LinkTargetEvent>() ) {
       linkTargets.push_back(linkTarget);
     }
 
     // recurse
-    if ( auto childScope = childNode->represents<Scope>(); childScope ) {
+    if ( auto childScope = childNode->represents<Scope>() ) {
       createLinks(childScope);
     }
   }
@@ -792,7 +791,9 @@ void Model::createMessageFlows() {
   std::unordered_map<std::string,std::string> participantMap;
 
   for ( auto& root : roots ) {
-    if ( const auto& collaboration = root->getOptionalChild<XML::bpmn::tCollaboration>(); collaboration.has_value() ) {
+    if ( const auto& collaboration = root->getOptionalChild<XML::bpmn::tCollaboration>();
+      collaboration && collaboration.has_value()
+    ) {
  
       // add participants to map
       for ( const XML::bpmn::tParticipant& participant : collaboration->get().getChildren<XML::bpmn::tParticipant>() ) {
