@@ -12,7 +12,7 @@ namespace BPMN {
 /**
  * @attention Multiple event definitions are not yet supported.
  **/
-class Event : public FlowNode {
+class Event : virtual public FlowNode {
   friend class Model;
 public:
   Event(XML::bpmn::tEvent* event, Scope* parent);

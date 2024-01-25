@@ -6,10 +6,11 @@
 #include <optional>
 #include "xml/bpmn/tReceiveTask.h"
 #include "Task.h"
+#include "MessageCatchEvent.h"
 
 namespace BPMN {
 
-class ReceiveTask : public Task {
+class ReceiveTask : public Task, public MessageCatchEvent {
   friend class Model;
 public:
   ReceiveTask(XML::bpmn::tReceiveTask* receiveTask, Scope* parent);

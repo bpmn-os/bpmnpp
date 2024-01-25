@@ -16,19 +16,6 @@ list(APPEND bpmn_SOURCES
   EventSubProcess.cpp
   SequenceFlow.cpp
   FlowNode.cpp
-  Activity.cpp
-  SubProcess.cpp
-  Task.cpp
-  UntypedTask.cpp
-  BusinessRuleTask.cpp
-  ManualTask.cpp
-  ReceiveTask.cpp
-  ScriptTask.cpp
-  SendTask.cpp
-  UserTask.cpp
-  CallActivity.cpp
-  AdHocSubProcess.cpp
-  Transaction.cpp
   Event.cpp
   CatchEvent.cpp
   ConditionalCatchEvent.cpp
@@ -64,6 +51,19 @@ list(APPEND bpmn_SOURCES
   MessageBoundaryEvent.cpp
   SignalBoundaryEvent.cpp
   TimerBoundaryEvent.cpp
+  Activity.cpp
+  SubProcess.cpp
+  Task.cpp
+  UntypedTask.cpp
+  BusinessRuleTask.cpp
+  ManualTask.cpp
+  ReceiveTask.cpp
+  ScriptTask.cpp
+  SendTask.cpp
+  UserTask.cpp
+  CallActivity.cpp
+  AdHocSubProcess.cpp
+  Transaction.cpp
   Gateway.cpp
   ParallelGateway.cpp
   ExclusiveGateway.cpp
@@ -87,19 +87,6 @@ list(APPEND bpmn_HEADERS
   EventSubProcess.h
   SequenceFlow.h
   FlowNode.h
-  Activity.h
-  SubProcess.h
-  Task.h
-  UntypedTask.h
-  BusinessRuleTask.h
-  ManualTask.h
-  ReceiveTask.h
-  ScriptTask.h
-  SendTask.h
-  UserTask.h
-  CallActivity.h
-  AdHocSubProcess.h
-  Transaction.h
   Event.h
   CatchEvent.h
   ConditionalCatchEvent.h
@@ -135,6 +122,19 @@ list(APPEND bpmn_HEADERS
   MessageBoundaryEvent.h
   SignalBoundaryEvent.h
   TimerBoundaryEvent.h
+  Activity.h
+  SubProcess.h
+  Task.h
+  UntypedTask.h
+  BusinessRuleTask.h
+  ManualTask.h
+  ReceiveTask.h
+  ScriptTask.h
+  SendTask.h
+  UserTask.h
+  CallActivity.h
+  AdHocSubProcess.h
+  Transaction.h
   Gateway.h
   ParallelGateway.h
   ExclusiveGateway.h

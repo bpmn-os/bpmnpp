@@ -12,7 +12,7 @@ namespace BPMN {
 
 class BoundaryEvent;
 
-class Activity : public FlowNode {
+class Activity : virtual public FlowNode {
   friend class Model;
 public:
   Activity(XML::bpmn::tActivity* activity, Scope* parent);
@@ -20,8 +20,10 @@ public:
   std::vector< BoundaryEvent* > boundaryEvents;
   Node* compensatedBy; ///< Pointer to compensation activity or compensation event sub-process
   bool isForCompensation;
+  enum class LoopCharacteristics { MultiInstanceParallel, MultiInstanceSequential, Loop };
+  std::optional<LoopCharacteristics> loopCharacteristics;
+
   XML::bpmn::tActivity* element;
-protected:
 };
 
 } // namespace BPMN

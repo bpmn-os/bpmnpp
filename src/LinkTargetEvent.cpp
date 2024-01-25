@@ -5,6 +5,7 @@ using namespace BPMN;
 
 LinkTargetEvent::LinkTargetEvent(XML::bpmn::tCatchEvent* catchEvent, Scope* parent)
   : Node(catchEvent)
+  , FlowNode(catchEvent,parent)
   , CatchEvent(catchEvent,parent)
   , linkName (element->getRequiredChild<XML::bpmn::tLinkEventDefinition>().name.value)
 {

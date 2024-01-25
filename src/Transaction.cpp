@@ -8,6 +8,7 @@ using namespace BPMN;
 
 Transaction::Transaction(XML::bpmn::tTransaction* transaction, Scope* parent)
   : Node(transaction)
+  , FlowNode(transaction,parent)
   , SubProcess(transaction,parent)
   , element(transaction)
 {

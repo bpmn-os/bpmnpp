@@ -9,6 +9,7 @@ using namespace BPMN;
 
 SubProcess::SubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent)
   : Node(subProcess)
+  , FlowNode(subProcess,parent)
   , Activity(subProcess,parent)
   , Scope(subProcess)
   , startEvent(nullptr)

@@ -8,6 +8,7 @@ using namespace BPMN;
 
 AdHocSubProcess::AdHocSubProcess(XML::bpmn::tAdHocSubProcess* adHocSubProcess, Scope* parent)
   : Node(adHocSubProcess)
+  , FlowNode(adHocSubProcess,parent)
   , SubProcess(adHocSubProcess,parent)
   , element(adHocSubProcess)
 {

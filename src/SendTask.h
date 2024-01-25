@@ -6,10 +6,11 @@
 #include <optional>
 #include "xml/bpmn/tSendTask.h"
 #include "Task.h"
+#include "MessageThrowEvent.h"
 
 namespace BPMN {
 
-class SendTask : public Task {
+class SendTask : public Task, public MessageThrowEvent {
   friend class Model;
 public:
   SendTask(XML::bpmn::tSendTask* sendTask, Scope* parent);
