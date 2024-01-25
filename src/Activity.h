@@ -20,7 +20,7 @@ public:
   std::vector< BoundaryEvent* > boundaryEvents;
   Node* compensatedBy; ///< Pointer to compensation activity or compensation event sub-process
   bool isForCompensation;
-  enum class LoopCharacteristics { MultiInstanceParallel, MultiInstanceSequential, Loop };
+  enum class LoopCharacteristics { Standard, MultiInstanceSequential, MultiInstanceParallel };
   std::optional<LoopCharacteristics> loopCharacteristics;
 
   XML::bpmn::tActivity* element;

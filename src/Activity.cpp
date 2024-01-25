@@ -15,7 +15,7 @@ Activity::Activity(XML::bpmn::tActivity* activity, Scope* parent)
   auto marker = activity->getChildren<XML::bpmn::tLoopCharacteristics>();
   if ( !marker.empty() ) {
     if ( marker[0].get().is<XML::bpmn::tStandardLoopCharacteristics>() ) {
-      loopCharacteristics = LoopCharacteristics::Loop;
+      loopCharacteristics = LoopCharacteristics::Standard;
     }
     else if ( auto multiInstanceMarker = marker[0].get().is<XML::bpmn::tMultiInstanceLoopCharacteristics>() ) {
       if ( multiInstanceMarker->isSequential.has_value() &&
