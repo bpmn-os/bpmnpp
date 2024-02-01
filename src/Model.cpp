@@ -565,8 +565,8 @@ void Model::createFlowReferences(FlowNode* flowNode) {
       }
     }
 
-    // add to start nodes of parent if required
     if ( auto untypedStartEvent = flowNode->represents<UntypedStartEvent>() ) {
+      // add untyped start event to subprocess (excluding event subprocesses and adhoc subprocesses)
       flowNode->parent->startNodes.push_back(untypedStartEvent);
       if ( auto subProcess = untypedStartEvent->parent->represents<SubProcess>() ) {
         if ( subProcess->startEvent ) {
@@ -575,7 +575,12 @@ void Model::createFlowReferences(FlowNode* flowNode) {
         subProcess->startEvent = untypedStartEvent;
       }
       else if ( untypedStartEvent->parent->represents<EventSubProcess>() ) {
+        // do not add untyped start event to event subprocess
         throw std::runtime_error("Model: untyped start event provided for event subprocess '" + untypedStartEvent->parent->id + "'");
+      }
+      else if ( untypedStartEvent->parent->represents<AdHocSubProcess>() ) {
+        // do not add untyped start event to adhoc subprocess
+        throw std::runtime_error("Model: start event provided for adhoc subprocess '" + untypedStartEvent->parent->id + "'");
       }
     }
     else if ( auto typedStartEvent = flowNode->represents<TypedStartEvent>() ) {
@@ -600,6 +605,12 @@ void Model::createFlowReferences(FlowNode* flowNode) {
       ) {
         throw std::runtime_error("Model: compensation start event provided for process '" + typedStartEvent->parent->id + "'");
       }
+    }
+    else if ( flowNode->element->incoming.empty() &&
+      !flowNode->parent->represents<BoundaryEvent>() &&
+      ( !flowNode->parent->represents<Activity>() || !flowNode->parent->as<Activity>()->isForCompensation )
+    ) {
+      flowNode->parent->startNodes.push_back(flowNode);
     }
 
     // link outgoing sequence flows
