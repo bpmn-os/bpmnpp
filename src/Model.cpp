@@ -607,8 +607,8 @@ void Model::createFlowReferences(FlowNode* flowNode) {
       }
     }
     else if ( flowNode->element->incoming.empty() &&
-      !flowNode->parent->represents<BoundaryEvent>() &&
-      ( !flowNode->parent->represents<Activity>() || !flowNode->parent->as<Activity>()->isForCompensation )
+      !flowNode->represents<BoundaryEvent>() &&
+      ( !flowNode->represents<Activity>() || !flowNode->as<Activity>()->isForCompensation )
     ) {
       flowNode->parent->startNodes.push_back(flowNode);
     }
