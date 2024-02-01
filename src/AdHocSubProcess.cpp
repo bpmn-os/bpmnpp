@@ -9,8 +9,13 @@ using namespace BPMN;
 AdHocSubProcess::AdHocSubProcess(XML::bpmn::tAdHocSubProcess* adHocSubProcess, Scope* parent)
   : Node(adHocSubProcess)
   , FlowNode(adHocSubProcess,parent)
-  , SubProcess(adHocSubProcess,parent)
+  , Activity(adHocSubProcess,parent)
+  , Scope(adHocSubProcess)
+  , isSequential(false)
   , element(adHocSubProcess)
 {
+  if ( adHocSubProcess->ordering.has_value() ) {
+    isSequential = ( adHocSubProcess->ordering.value().get().value.value == "Sequential" );
+  }
 }
 

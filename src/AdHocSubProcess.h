@@ -9,13 +9,12 @@
 
 namespace BPMN {
 
-class AdHocSubProcess : public SubProcess {
+class AdHocSubProcess : public Activity, public Scope {
   friend class Model;
 public:
   AdHocSubProcess(XML::bpmn::tAdHocSubProcess* adHocSubProcess, Scope* parent);
-
+  bool isSequential;
   XML::bpmn::tAdHocSubProcess* element;
-protected:
 };
 
 } // namespace BPMN
