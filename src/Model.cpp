@@ -28,7 +28,7 @@ void Model::readBPMNFile(const std::string& filename)
   for ( XML::bpmn::tProcess& process : (*roots.rbegin())->getChildren<XML::bpmn::tProcess>() ) {
     processes.push_back(createProcess(&process));
   }
-  
+
   for ( auto& process : processes ) {
     createChildNodes(process.get());
     createSequenceFlows(process.get());
@@ -206,7 +206,7 @@ std::unique_ptr<FlowNode> Model::createBoundaryEvent(XML::bpmn::tBoundaryEvent* 
   else if ( eventDefinitions[0].get().is<XML::bpmn::tTimerEventDefinition>() ) {
     return createTimerBoundaryEvent(boundaryEvent,parent);
   }
-  
+
   throw std::logic_error("Model: Failed determining event definition for boundary event '" + boundaryEvent->id.value().get().value.value + "'");
 
   return nullptr;
@@ -564,22 +564,22 @@ void Model::createFlowReferences(FlowNode* flowNode) {
         }
       }
     }
-   
-    // add to start nodes of parent if required 
+
+    // add to start nodes of parent if required
     if ( auto untypedStartEvent = flowNode->represents<UntypedStartEvent>() ) {
-      flowNode->parent->startEvents.push_back(untypedStartEvent);
+      flowNode->parent->startNodes.push_back(untypedStartEvent);
       if ( auto subProcess = untypedStartEvent->parent->represents<SubProcess>() ) {
         if ( subProcess->startEvent ) {
           throw std::runtime_error("Model: more than one start event provided for '" + subProcess->id + "'");
         }
         subProcess->startEvent = untypedStartEvent;
       }
-      else if ( untypedStartEvent->parent->represents<EventSubProcess>() ) { 
+      else if ( untypedStartEvent->parent->represents<EventSubProcess>() ) {
         throw std::runtime_error("Model: untyped start event provided for event subprocess '" + untypedStartEvent->parent->id + "'");
       }
     }
     else if ( auto typedStartEvent = flowNode->represents<TypedStartEvent>() ) {
-      flowNode->parent->startEvents.push_back(typedStartEvent);
+      flowNode->parent->startNodes.push_back(typedStartEvent);
       if ( auto eventSubProcess = typedStartEvent->parent->represents<EventSubProcess>() ) {
         if ( eventSubProcess->startEvent ) {
           throw std::runtime_error("Model: more than one start event provided for '" + eventSubProcess->id + "'");
@@ -682,10 +682,10 @@ void Model::createCompensationReferences(Scope* scope) {
 
   auto context = scope;
   if ( auto eventSubProcess = scope->represents<EventSubProcess>();
-    eventSubProcess && 
+    eventSubProcess &&
     eventSubProcess->startEvent->represents<CompensateStartEvent>()
   ) {
-    // compensation throw events in compensation event subprocess trigger 
+    // compensation throw events in compensation event subprocess trigger
     // compensation of activities in parent scope
     context = eventSubProcess->parent;
     if ( auto subProcess = context->represents<SubProcess>() ) {
@@ -794,7 +794,7 @@ void Model::createMessageFlows() {
     if ( const auto& collaboration = root->getOptionalChild<XML::bpmn::tCollaboration>();
       collaboration && collaboration.has_value()
     ) {
- 
+
       // add participants to map
       for ( const XML::bpmn::tParticipant& participant : collaboration->get().getChildren<XML::bpmn::tParticipant>() ) {
         if ( participant.processRef.has_value() ) {
@@ -836,5 +836,3 @@ void Model::createMessageFlows() {
   }
 
 }
-
-

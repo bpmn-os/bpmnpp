@@ -35,7 +35,7 @@ public:
   std::vector< EventSubProcess* > eventSubProcesses;
 
   /// @brief Vector containing all flow nodes that may start execution of the scope.
-  std::vector< FlowNode* > startEvents;
+  std::vector< FlowNode* > startNodes;
 
   /// @brief Vector containing all sequence flows within the scope.
   std::vector< std::unique_ptr<SequenceFlow> > sequenceFlows;
