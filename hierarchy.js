@@ -9,9 +9,9 @@ var hierarchy =
         [ "BPMN::EventSubProcess", "classBPMN_1_1EventSubProcess.html", null ],
         [ "BPMN::FlowNode", "classBPMN_1_1FlowNode.html", [
           [ "BPMN::Activity", "classBPMN_1_1Activity.html", [
+            [ "BPMN::AdHocSubProcess", "classBPMN_1_1AdHocSubProcess.html", null ],
             [ "BPMN::CallActivity", "classBPMN_1_1CallActivity.html", null ],
             [ "BPMN::SubProcess", "classBPMN_1_1SubProcess.html", [
-              [ "BPMN::AdHocSubProcess", "classBPMN_1_1AdHocSubProcess.html", null ],
               [ "BPMN::Transaction", "classBPMN_1_1Transaction.html", null ]
             ] ],
             [ "BPMN::Task", "classBPMN_1_1Task.html", [
@@ -47,7 +47,8 @@ var hierarchy =
               [ "BPMN::LinkTargetEvent", "classBPMN_1_1LinkTargetEvent.html", null ],
               [ "BPMN::MessageCatchEvent", "classBPMN_1_1MessageCatchEvent.html", [
                 [ "BPMN::MessageBoundaryEvent", "classBPMN_1_1MessageBoundaryEvent.html", null ],
-                [ "BPMN::MessageStartEvent", "classBPMN_1_1MessageStartEvent.html", null ]
+                [ "BPMN::MessageStartEvent", "classBPMN_1_1MessageStartEvent.html", null ],
+                [ "BPMN::ReceiveTask", "classBPMN_1_1ReceiveTask.html", null ]
               ] ],
               [ "BPMN::SignalCatchEvent", "classBPMN_1_1SignalCatchEvent.html", [
                 [ "BPMN::SignalBoundaryEvent", "classBPMN_1_1SignalBoundaryEvent.html", null ],
@@ -74,7 +75,9 @@ var hierarchy =
               [ "BPMN::ErrorEndEvent", "classBPMN_1_1ErrorEndEvent.html", null ],
               [ "BPMN::EscalationThrowEvent", "classBPMN_1_1EscalationThrowEvent.html", null ],
               [ "BPMN::LinkSourceEvent", "classBPMN_1_1LinkSourceEvent.html", null ],
-              [ "BPMN::MessageThrowEvent", "classBPMN_1_1MessageThrowEvent.html", null ],
+              [ "BPMN::MessageThrowEvent", "classBPMN_1_1MessageThrowEvent.html", [
+                [ "BPMN::SendTask", "classBPMN_1_1SendTask.html", null ]
+              ] ],
               [ "BPMN::SignalThrowEvent", "classBPMN_1_1SignalThrowEvent.html", null ],
               [ "BPMN::TerminateEvent", "classBPMN_1_1TerminateEvent.html", null ],
               [ "BPMN::UntypedEndEvent", "classBPMN_1_1UntypedEndEvent.html", null ]
@@ -90,6 +93,7 @@ var hierarchy =
         ] ]
       ] ],
       [ "BPMN::Scope", "classBPMN_1_1Scope.html", [
+        [ "BPMN::AdHocSubProcess", "classBPMN_1_1AdHocSubProcess.html", null ],
         [ "BPMN::EventSubProcess", "classBPMN_1_1EventSubProcess.html", null ],
         [ "BPMN::Process", "classBPMN_1_1Process.html", null ],
         [ "BPMN::SubProcess", "classBPMN_1_1SubProcess.html", null ]

@@ -1,5 +1,11 @@
 var NAVTREEINDEX6 =
 {
+"classXML_1_1bpmn_1_1tGlobalTask.html#a50de131edd880b7c51a02cd0af0f688e":[6,0,1,0,165,0],
+"classXML_1_1bpmn_1_1tGlobalTask.html#a9bc37bc1e53f2f8f502a400d0eeb7928":[6,0,1,0,165,2],
+"classXML_1_1bpmn_1_1tGlobalUserTask.html":[6,0,1,0,166],
+"classXML_1_1bpmn_1_1tGlobalUserTask.html#a0b9787e5cdd9de3858ab82ece1d3603b":[6,0,1,0,166,3],
+"classXML_1_1bpmn_1_1tGlobalUserTask.html#a2551984cd23367ec59594d200405c6e0":[6,0,1,0,166,0],
+"classXML_1_1bpmn_1_1tGlobalUserTask.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,166,1],
 "classXML_1_1bpmn_1_1tGlobalUserTask.html#ad4c0799e4b60b9ad37b065544a33d132":[6,0,1,0,166,2],
 "classXML_1_1bpmn_1_1tGroup.html":[6,0,1,0,167],
 "classXML_1_1bpmn_1_1tGroup.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,167,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX6 =
 "classXML_1_1bpmn_1_1tRelationship.html#aa7c90b1c4da91b3e947a765f515a502b":[6,0,1,0,205,5],
 "classXML_1_1bpmn_1_1tRelationship.html#aaf39efb1221e6a59405efcd4fd594e49":[6,0,1,0,205,1],
 "classXML_1_1bpmn_1_1tRendering.html":[6,0,1,0,206],
-"classXML_1_1bpmn_1_1tRendering.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,206,3],
-"classXML_1_1bpmn_1_1tRendering.html#a3719a0ed2e88e2c7037ed8cc420950df":[6,0,1,0,206,2],
-"classXML_1_1bpmn_1_1tRendering.html#a42aefed497e8a716f10521471f2fbc1f":[6,0,1,0,206,1],
-"classXML_1_1bpmn_1_1tRendering.html#a7a808922a0ff017721e27615fecfd27d":[6,0,1,0,206,0],
-"classXML_1_1bpmn_1_1tResource.html":[6,0,1,0,207],
-"classXML_1_1bpmn_1_1tResource.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,207,1],
-"classXML_1_1bpmn_1_1tResource.html#a484bd218b4dc3c610f7d801ef324c6ba":[6,0,1,0,207,3]
+"classXML_1_1bpmn_1_1tRendering.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,206,3]
 };

@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('Model_8cpp_source.html',''); initResiz
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">for</span> ( <a class="code" href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a>&amp; process : (*<a class="code" href="classBPMN_1_1Model.html#a726b3195cc0868077a0c2333ddacc0a6">roots</a>.rbegin())-&gt;<a class="code" href="classXML_1_1XMLObject.html#aded470ce68062e69e42e21d30051b1e5">getChildren</a>&lt;<a class="code" href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a>&gt;() ) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classBPMN_1_1Model.html#a161464a851d7825e3ba1150e8dc2bbb4">processes</a>.push_back(<a class="code" href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">createProcess</a>(&amp;process));</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; process : <a class="code" href="classBPMN_1_1Model.html#a161464a851d7825e3ba1150e8dc2bbb4">processes</a> ) {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classBPMN_1_1Model.html#a662567a1f6b77245adfee40a82cb457b">createChildNodes</a>(process.get());</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classBPMN_1_1Model.html#a11c9dc51bcddb77e8171f497c499d4c8">createSequenceFlows</a>(process.get());</div>
@@ -329,7 +329,7 @@ $(document).ready(function(){initNavTree('Model_8cpp_source.html',''); initResiz
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( eventDefinitions[0].get().is&lt;XML::bpmn::tTimerEventDefinition&gt;() ) {</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classBPMN_1_1Model.html#adeeb04cda95250f338c31224ec178334">createTimerBoundaryEvent</a>(boundaryEvent,parent);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;Model: Failed determining event definition for boundary event &#39;&quot;</span> + boundaryEvent-&gt;<a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html#ac810520ed433d1778a6341156b290800">id</a>.value().get().value.value + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
@@ -687,283 +687,295 @@ $(document).ready(function(){initNavTree('Model_8cpp_source.html',''); initResiz
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        }</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;      }</div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    }</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;   </div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <span class="comment">// add to start nodes of parent if required </span></div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> untypedStartEvent = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1UntypedStartEvent.html">UntypedStartEvent</a>&gt;() ) {</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;      flowNode-&gt;<a class="code" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>-&gt;<a class="code" href="classBPMN_1_1Scope.html#a805ac53ffb184502882be82a7a2b0e28">startEvents</a>.push_back(untypedStartEvent);</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> untypedStartEvent = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1UntypedStartEvent.html">UntypedStartEvent</a>&gt;() ) {</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;      <span class="comment">// add untyped start event to subprocess (excluding event subprocesses and adhoc subprocesses)</span></div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;      flowNode-&gt;<a class="code" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>-&gt;<a class="code" href="classBPMN_1_1Scope.html#a2abb85eda0980c258f206c36bc6f2c7e">startNodes</a>.push_back(untypedStartEvent);</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;      <span class="keywordflow">if</span> ( <span class="keyword">auto</span> subProcess = untypedStartEvent-&gt;parent-&gt;represents&lt;<a class="code" href="classBPMN_1_1SubProcess.html">SubProcess</a>&gt;() ) {</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <span class="keywordflow">if</span> ( subProcess-&gt;startEvent ) {</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;          <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: more than one start event provided for &#39;&quot;</span> + subProcess-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        }</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        subProcess-&gt;startEvent = untypedStartEvent;</div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;      }</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( untypedStartEvent-&gt;parent-&gt;represents&lt;<a class="code" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a>&gt;() ) { </div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: untyped start event provided for event subprocess &#39;&quot;</span> + untypedStartEvent-&gt;parent-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;      }</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    }</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( <span class="keyword">auto</span> typedStartEvent = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1TypedStartEvent.html">TypedStartEvent</a>&gt;() ) {</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;      flowNode-&gt;<a class="code" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>-&gt;<a class="code" href="classBPMN_1_1Scope.html#a805ac53ffb184502882be82a7a2b0e28">startEvents</a>.push_back(typedStartEvent);</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;      <span class="keywordflow">if</span> ( <span class="keyword">auto</span> eventSubProcess = typedStartEvent-&gt;parent-&gt;represents&lt;<a class="code" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a>&gt;() ) {</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <span class="keywordflow">if</span> ( eventSubProcess-&gt;startEvent ) {</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;          <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: more than one start event provided for &#39;&quot;</span> + eventSubProcess-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        }</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        eventSubProcess-&gt;startEvent = typedStartEvent;</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <span class="keywordflow">if</span> ( typedStartEvent-&gt;represents&lt;<a class="code" href="classBPMN_1_1CompensateStartEvent.html">CompensateStartEvent</a>&gt;() ) {</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;          <span class="keywordflow">if</span> ( eventSubProcess-&gt;parent-&gt;compensationEventSubProcess ) {</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: more than one compensation event subprocess provided for &#39;&quot;</span> + eventSubProcess-&gt;parent-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;          }</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;          eventSubProcess-&gt;parent-&gt;compensationEventSubProcess = eventSubProcess;</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        }</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;      }</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( typedStartEvent-&gt;parent-&gt;represents&lt;<a class="code" href="classBPMN_1_1SubProcess.html">SubProcess</a>&gt;() ) {</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: typed start event provided for subprocess &#39;&quot;</span> + typedStartEvent-&gt;parent-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;      }</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( typedStartEvent-&gt;parent-&gt;represents&lt;<a class="code" href="classBPMN_1_1Process.html">Process</a>&gt;() &amp;&amp;</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        typedStartEvent-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1CompensateStartEvent.html">CompensateStartEvent</a>&gt;()</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;      ) {</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: compensation start event provided for process &#39;&quot;</span> + typedStartEvent-&gt;parent-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( untypedStartEvent-&gt;parent-&gt;represents&lt;<a class="code" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a>&gt;() ) {</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        <span class="comment">// do not add untyped start event to event subprocess</span></div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: untyped start event provided for event subprocess &#39;&quot;</span> + untypedStartEvent-&gt;parent-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;      }</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( untypedStartEvent-&gt;parent-&gt;represents&lt;<a class="code" href="classBPMN_1_1AdHocSubProcess.html">AdHocSubProcess</a>&gt;() ) {</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;        <span class="comment">// do not add untyped start event to adhoc subprocess</span></div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: start event provided for adhoc subprocess &#39;&quot;</span> + untypedStartEvent-&gt;parent-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;      }</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    }</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( <span class="keyword">auto</span> typedStartEvent = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1TypedStartEvent.html">TypedStartEvent</a>&gt;() ) {</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;      flowNode-&gt;<a class="code" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>-&gt;<a class="code" href="classBPMN_1_1Scope.html#a2abb85eda0980c258f206c36bc6f2c7e">startNodes</a>.push_back(typedStartEvent);</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;      <span class="keywordflow">if</span> ( <span class="keyword">auto</span> eventSubProcess = typedStartEvent-&gt;parent-&gt;represents&lt;<a class="code" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a>&gt;() ) {</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <span class="keywordflow">if</span> ( eventSubProcess-&gt;startEvent ) {</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;          <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: more than one start event provided for &#39;&quot;</span> + eventSubProcess-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        }</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        eventSubProcess-&gt;startEvent = typedStartEvent;</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <span class="keywordflow">if</span> ( typedStartEvent-&gt;represents&lt;<a class="code" href="classBPMN_1_1CompensateStartEvent.html">CompensateStartEvent</a>&gt;() ) {</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;          <span class="keywordflow">if</span> ( eventSubProcess-&gt;parent-&gt;compensationEventSubProcess ) {</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;            <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: more than one compensation event subprocess provided for &#39;&quot;</span> + eventSubProcess-&gt;parent-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;          }</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;          eventSubProcess-&gt;parent-&gt;compensationEventSubProcess = eventSubProcess;</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        }</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;      }</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( typedStartEvent-&gt;parent-&gt;represents&lt;<a class="code" href="classBPMN_1_1SubProcess.html">SubProcess</a>&gt;() ) {</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: typed start event provided for subprocess &#39;&quot;</span> + typedStartEvent-&gt;parent-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;      }</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    }</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160; </div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <span class="comment">// link outgoing sequence flows</span></div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; outflow : flowNode-&gt;<a class="code" href="classBPMN_1_1FlowNode.html#a3d29a8f5f1a401f23d17c3e331662283">element</a>-&gt;<a class="code" href="classXML_1_1bpmn_1_1tFlowNode.html#ab9528329c2071a49e8fc4f75e370ad4d">outgoing</a> ) {</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; sequenceFlow : flowNode-&gt;<a class="code" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>-&gt;<a class="code" href="classBPMN_1_1Scope.html#acb6f3ff661f73277942735399abc6708">sequenceFlows</a> ) {</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        <span class="keywordflow">if</span> ( sequenceFlow-&gt;element-&gt;id.has_value() &amp;&amp; outflow.get().textContent == sequenceFlow-&gt;id ) {</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;          flowNode-&gt;<a class="code" href="classBPMN_1_1FlowNode.html#a5888d4465eb836f718cc4cfbcfbbb8a5">outgoing</a>.push_back(sequenceFlow.get());</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160; </div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;          <span class="comment">// link optional default flow for gateways</span></div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;          <span class="keywordflow">if</span> ( <span class="keyword">auto</span> <span class="keywordtype">id</span> = flowNode-&gt;<a class="code" href="classBPMN_1_1FlowNode.html#a3d29a8f5f1a401f23d17c3e331662283">element</a>-&gt;<a class="code" href="classXML_1_1XMLObject.html#a3fc94bd28094f4d322688e139a03bb51">getOptionalAttributeByName</a>(<span class="stringliteral">&quot;default&quot;</span>);</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;               flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1Gateway.html">Gateway</a>&gt;() &amp;&amp;</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;               <span class="keywordtype">id</span>.has_value() &amp;&amp;</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;               <span class="keywordtype">id</span>.value().<a class="code" href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">get</a>().value.value == sequenceFlow-&gt;id</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;          ) {</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;            <span class="keywordflow">if</span> ( <span class="keyword">auto</span> exclusiveGateway = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1ExclusiveGateway.html">ExclusiveGateway</a>&gt;() ) {</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;              exclusiveGateway-&gt;defaultFlow = sequenceFlow.get();</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            }</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( <span class="keyword">auto</span> inclusiveGateway = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1InclusiveGateway.html">InclusiveGateway</a>&gt;() ) {</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;              inclusiveGateway-&gt;defaultFlow = sequenceFlow.get();</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            }</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( <span class="keyword">auto</span> complexGateway = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1ComplexGateway.html">ComplexGateway</a>&gt;() ) {</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;              complexGateway-&gt;defaultFlow = sequenceFlow.get();</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;            }</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;          }</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        }</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;      }</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    }</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  }</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;  <span class="comment">// recurse</span></div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;  <span class="keywordflow">if</span> ( <span class="keyword">auto</span> scope = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1Scope.html">Scope</a>&gt;() ) {</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <a class="code" href="classBPMN_1_1Model.html#a5f32c7a06030f00db9b3273faeeea9f3">createNestedReferences</a>(scope);</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;  }</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;}</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160; </div>
-<div class="line"><a name="l00638"></a><span class="lineno"><a class="line" href="classBPMN_1_1Model.html#a499ec31275087ff4a68eac75f7845680">  638</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classBPMN_1_1Model.html#a499ec31275087ff4a68eac75f7845680">Model::createCompensations</a>(<a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope) {</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;  std::unordered_map&lt; std::string, Activity*&gt; compensationActivityMap;</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  std::unordered_map&lt; std::string, CompensateBoundaryEvent*&gt; compensateBoundaryEventMap;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160; </div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> compensationActivity : scope-&gt;<a class="code" href="classBPMN_1_1Scope.html#a3283c9fa3043f504eeb36e574b569494">compensationActivities</a> ) {</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    compensationActivityMap[compensationActivity-&gt;id] = compensationActivity;</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;  }</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160; </div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; childNode: scope-&gt;<a class="code" href="classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725">childNodes</a> ) {</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> compensateBoundaryEvent = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1CompensateBoundaryEvent.html">CompensateBoundaryEvent</a>&gt;() ) {</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;      <span class="comment">// add activity with compensate event attached to the boundary</span></div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;      compensateBoundaryEventMap[compensateBoundaryEvent-&gt;id] = compensateBoundaryEvent;</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    }</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  }</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( typedStartEvent-&gt;parent-&gt;represents&lt;<a class="code" href="classBPMN_1_1Process.html">Process</a>&gt;() &amp;&amp;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        typedStartEvent-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1CompensateStartEvent.html">CompensateStartEvent</a>&gt;()</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;      ) {</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: compensation start event provided for process &#39;&quot;</span> + typedStartEvent-&gt;parent-&gt;id + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;      }</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    }</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( flowNode-&gt;<a class="code" href="classBPMN_1_1FlowNode.html#a3d29a8f5f1a401f23d17c3e331662283">element</a>-&gt;<a class="code" href="classXML_1_1bpmn_1_1tFlowNode.html#aceeb4edbaaa2448dfe5a1ab77eba645f">incoming</a>.empty() &amp;&amp;</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;      !flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1BoundaryEvent.html">BoundaryEvent</a>&gt;() &amp;&amp;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;      ( !flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1Activity.html">Activity</a>&gt;() || !flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a305cca302fb9555b98663fe276e37db7">as</a>&lt;<a class="code" href="classBPMN_1_1Activity.html">Activity</a>&gt;()-&gt;<a class="code" href="classBPMN_1_1Activity.html#ac4d926643134855419d6df620ddeec51">isForCompensation</a> )</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    ) {</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;      flowNode-&gt;<a class="code" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>-&gt;<a class="code" href="classBPMN_1_1Scope.html#a2abb85eda0980c258f206c36bc6f2c7e">startNodes</a>.push_back(flowNode);</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    }</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160; </div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    <span class="comment">// link outgoing sequence flows</span></div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; outflow : flowNode-&gt;<a class="code" href="classBPMN_1_1FlowNode.html#a3d29a8f5f1a401f23d17c3e331662283">element</a>-&gt;<a class="code" href="classXML_1_1bpmn_1_1tFlowNode.html#ab9528329c2071a49e8fc4f75e370ad4d">outgoing</a> ) {</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; sequenceFlow : flowNode-&gt;<a class="code" href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">parent</a>-&gt;<a class="code" href="classBPMN_1_1Scope.html#acb6f3ff661f73277942735399abc6708">sequenceFlows</a> ) {</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <span class="keywordflow">if</span> ( sequenceFlow-&gt;element-&gt;id.has_value() &amp;&amp; outflow.get().textContent == sequenceFlow-&gt;id ) {</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;          flowNode-&gt;<a class="code" href="classBPMN_1_1FlowNode.html#a5888d4465eb836f718cc4cfbcfbbb8a5">outgoing</a>.push_back(sequenceFlow.get());</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160; </div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;          <span class="comment">// link optional default flow for gateways</span></div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;          <span class="keywordflow">if</span> ( <span class="keyword">auto</span> <span class="keywordtype">id</span> = flowNode-&gt;<a class="code" href="classBPMN_1_1FlowNode.html#a3d29a8f5f1a401f23d17c3e331662283">element</a>-&gt;<a class="code" href="classXML_1_1XMLObject.html#a3fc94bd28094f4d322688e139a03bb51">getOptionalAttributeByName</a>(<span class="stringliteral">&quot;default&quot;</span>);</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;               flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1Gateway.html">Gateway</a>&gt;() &amp;&amp;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;               <span class="keywordtype">id</span>.has_value() &amp;&amp;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;               <span class="keywordtype">id</span>.value().<a class="code" href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">get</a>().value.value == sequenceFlow-&gt;id</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;          ) {</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;            <span class="keywordflow">if</span> ( <span class="keyword">auto</span> exclusiveGateway = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1ExclusiveGateway.html">ExclusiveGateway</a>&gt;() ) {</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;              exclusiveGateway-&gt;defaultFlow = sequenceFlow.get();</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;            }</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( <span class="keyword">auto</span> inclusiveGateway = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1InclusiveGateway.html">InclusiveGateway</a>&gt;() ) {</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;              inclusiveGateway-&gt;defaultFlow = sequenceFlow.get();</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;            }</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( <span class="keyword">auto</span> complexGateway = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1ComplexGateway.html">ComplexGateway</a>&gt;() ) {</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;              complexGateway-&gt;defaultFlow = sequenceFlow.get();</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;            }</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;          }</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        }</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;      }</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    }</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  }</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;  <span class="comment">// recurse</span></div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;  <span class="keywordflow">if</span> ( <span class="keyword">auto</span> scope = flowNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1Scope.html">Scope</a>&gt;() ) {</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <a class="code" href="classBPMN_1_1Model.html#a5f32c7a06030f00db9b3273faeeea9f3">createNestedReferences</a>(scope);</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  }</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;}</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160; </div>
+<div class="line"><a name="l00649"></a><span class="lineno"><a class="line" href="classBPMN_1_1Model.html#a499ec31275087ff4a68eac75f7845680">  649</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classBPMN_1_1Model.html#a499ec31275087ff4a68eac75f7845680">Model::createCompensations</a>(<a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope) {</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  std::unordered_map&lt; std::string, Activity*&gt; compensationActivityMap;</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  std::unordered_map&lt; std::string, CompensateBoundaryEvent*&gt; compensateBoundaryEventMap;</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160; </div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;  <span class="comment">// determine compensation activity for each activity with a compensate event attached to the boundary</span></div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="classXML_1_1bpmn_1_1tAssociation.html">XML::bpmn::tAssociation</a>&amp; association: scope-&gt;<a class="code" href="classBPMN_1_1Node.html#a8c8771042ad15e4a3f9467fa84c2e595">element</a>-&gt;<a class="code" href="classXML_1_1XMLObject.html#aded470ce68062e69e42e21d30051b1e5">getChildren</a>&lt;<a class="code" href="classXML_1_1bpmn_1_1tAssociation.html">XML::bpmn::tAssociation</a>&gt;() ) {</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    <span class="keyword">auto</span> it1 = compensateBoundaryEventMap.find(association.sourceRef.value);</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <span class="keyword">auto</span> it2 = compensationActivityMap.find(association.targetRef.value);</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <span class="keywordflow">if</span> ( it1 != compensateBoundaryEventMap.end() &amp;&amp; it2 != compensationActivityMap.end() ) {</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;      it1-&gt;second-&gt;attachedTo-&gt;compensatedBy = it2-&gt;second;</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    }</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;  }</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160; </div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;  <a class="code" href="classBPMN_1_1Model.html#ad18392696607d84a625fc9189485f7a2">createCompensationReferences</a>(scope);</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> compensationActivity : scope-&gt;<a class="code" href="classBPMN_1_1Scope.html#a3283c9fa3043f504eeb36e574b569494">compensationActivities</a> ) {</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    compensationActivityMap[compensationActivity-&gt;id] = compensationActivity;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;  }</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160; </div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; childNode: scope-&gt;<a class="code" href="classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725">childNodes</a> ) {</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> compensateBoundaryEvent = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1CompensateBoundaryEvent.html">CompensateBoundaryEvent</a>&gt;() ) {</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;      <span class="comment">// add activity with compensate event attached to the boundary</span></div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;      compensateBoundaryEventMap[compensateBoundaryEvent-&gt;id] = compensateBoundaryEvent;</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    }</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;  }</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160; </div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;  <span class="comment">// recurse</span></div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; childNode: scope-&gt;<a class="code" href="classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725">childNodes</a> ) {</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> childScope = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1Scope.html">Scope</a>&gt;() ) {</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;      <a class="code" href="classBPMN_1_1Model.html#a499ec31275087ff4a68eac75f7845680">createCompensations</a>(childScope);</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    }</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;  }</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;}</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160; </div>
-<div class="line"><a name="l00672"></a><span class="lineno"><a class="line" href="classBPMN_1_1Model.html#ad18392696607d84a625fc9189485f7a2">  672</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classBPMN_1_1Model.html#ad18392696607d84a625fc9189485f7a2">Model::createCompensationReferences</a>(<a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope) {</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  std::vector&lt;CompensateThrowEvent*&gt; compensateThrowEvents;</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;  std::vector&lt;Activity*&gt; compensatedActivities;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160; </div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;  <span class="comment">// determine compensation activity for each activity with a compensate event attached to the boundary</span></div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="classXML_1_1bpmn_1_1tAssociation.html">XML::bpmn::tAssociation</a>&amp; association: scope-&gt;<a class="code" href="classBPMN_1_1Node.html#a8c8771042ad15e4a3f9467fa84c2e595">element</a>-&gt;<a class="code" href="classXML_1_1XMLObject.html#aded470ce68062e69e42e21d30051b1e5">getChildren</a>&lt;<a class="code" href="classXML_1_1bpmn_1_1tAssociation.html">XML::bpmn::tAssociation</a>&gt;() ) {</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <span class="keyword">auto</span> it1 = compensateBoundaryEventMap.find(association.sourceRef.value);</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    <span class="keyword">auto</span> it2 = compensationActivityMap.find(association.targetRef.value);</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    <span class="keywordflow">if</span> ( it1 != compensateBoundaryEventMap.end() &amp;&amp; it2 != compensationActivityMap.end() ) {</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;      it1-&gt;second-&gt;attachedTo-&gt;compensatedBy = it2-&gt;second;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    }</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  }</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160; </div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  <a class="code" href="classBPMN_1_1Model.html#ad18392696607d84a625fc9189485f7a2">createCompensationReferences</a>(scope);</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160; </div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;  <span class="comment">// recurse</span></div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; childNode: scope-&gt;<a class="code" href="classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725">childNodes</a> ) {</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> compensateThrowEvent = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1CompensateThrowEvent.html">CompensateThrowEvent</a>&gt;() ) {</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;      compensateThrowEvents.push_back(compensateThrowEvent);</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> childScope = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1Scope.html">Scope</a>&gt;() ) {</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;      <a class="code" href="classBPMN_1_1Model.html#a499ec31275087ff4a68eac75f7845680">createCompensations</a>(childScope);</div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    }</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;  }</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160; </div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;}</div>
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160; </div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;  <span class="keyword">auto</span> context = scope;</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;  <span class="keywordflow">if</span> ( <span class="keyword">auto</span> eventSubProcess = scope-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a>&gt;();</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    eventSubProcess &amp;&amp; </div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    eventSubProcess-&gt;<a class="code" href="classBPMN_1_1EventSubProcess.html#a6533740de2f0bf62ee7c1cad6f398476">startEvent</a>-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1CompensateStartEvent.html">CompensateStartEvent</a>&gt;()</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  ) {</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    <span class="comment">// compensation throw events in compensation event subprocess trigger </span></div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <span class="comment">// compensation of activities in parent scope</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    context = eventSubProcess-&gt;parent;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> subProcess = context-&gt;represents&lt;<a class="code" href="classBPMN_1_1SubProcess.html">SubProcess</a>&gt;() ) {</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;      subProcess-&gt;compensatedBy = eventSubProcess;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    }</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  }</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160; </div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; childNode: context-&gt;childNodes ) {</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> compensateBoundaryEvent = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1CompensateBoundaryEvent.html">CompensateBoundaryEvent</a>&gt;() ) {</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;      <span class="comment">// add activity with compensate event attached to the boundary</span></div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;      <span class="keyword">auto</span> activity = compensateBoundaryEvent-&gt;attachedTo-&gt;<a class="code" href="classBPMN_1_1Node.html#a305cca302fb9555b98663fe276e37db7">as</a>&lt;<a class="code" href="classBPMN_1_1Activity.html">Activity</a>&gt;();</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;      compensatedActivities.push_back(activity);</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    }</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( <span class="keyword">auto</span> scope = childNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1Scope.html">Scope</a>&gt;();</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;      <span class="comment">// add subprocess with compensation event subprocess</span></div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;      scope &amp;&amp;</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;      scope-&gt;<a class="code" href="classBPMN_1_1Scope.html#a670457733de4055e05c7ddf1143e07d8">compensationEventSubProcess</a></div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    ) {</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;      compensatedActivities.push_back(scope-&gt;<a class="code" href="classBPMN_1_1Node.html#a305cca302fb9555b98663fe276e37db7">as</a>&lt;<a class="code" href="classBPMN_1_1SubProcess.html">SubProcess</a>&gt;());</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    }</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;  }</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160; </div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160; </div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;  <span class="comment">// determine activity to be compensated for compensate throw event</span></div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> compensateThrowEvent : compensateThrowEvents ) {</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="keyword">auto</span>&amp; eventDefinition = compensateThrowEvent-&gt;<a class="code" href="classBPMN_1_1Activity.html#a7a33ed123c1e69722e1fbf182e0233f0">element</a>-&gt;<a class="code" href="classXML_1_1XMLObject.html#aded470ce68062e69e42e21d30051b1e5">getChildren</a>&lt;<a class="code" href="classXML_1_1bpmn_1_1tCompensateEventDefinition.html">XML::bpmn::tCompensateEventDefinition</a>&gt;()[0].get();</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160; </div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    std::string activityRef;</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160; </div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        <span class="comment">// try to get activityRef from event definition</span></div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <span class="keywordflow">if</span> ( eventDefinition.activityRef.has_value() ) {</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;      activityRef = eventDefinition.activityRef.value().get().value.value;</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    }</div>
+<div class="line"><a name="l00683"></a><span class="lineno"><a class="line" href="classBPMN_1_1Model.html#ad18392696607d84a625fc9189485f7a2">  683</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classBPMN_1_1Model.html#ad18392696607d84a625fc9189485f7a2">Model::createCompensationReferences</a>(<a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope) {</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;  std::vector&lt;CompensateThrowEvent*&gt; compensateThrowEvents;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;  std::vector&lt;Activity*&gt; compensatedActivities;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160; </div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; childNode: scope-&gt;<a class="code" href="classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725">childNodes</a> ) {</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> compensateThrowEvent = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1CompensateThrowEvent.html">CompensateThrowEvent</a>&gt;() ) {</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;      compensateThrowEvents.push_back(compensateThrowEvent);</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    }</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;  }</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160; </div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160; </div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  <span class="keyword">auto</span> context = scope;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  <span class="keywordflow">if</span> ( <span class="keyword">auto</span> eventSubProcess = scope-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1EventSubProcess.html">EventSubProcess</a>&gt;();</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    eventSubProcess &amp;&amp;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    eventSubProcess-&gt;<a class="code" href="classBPMN_1_1EventSubProcess.html#a6533740de2f0bf62ee7c1cad6f398476">startEvent</a>-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1CompensateStartEvent.html">CompensateStartEvent</a>&gt;()</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  ) {</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    <span class="comment">// compensation throw events in compensation event subprocess trigger</span></div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="comment">// compensation of activities in parent scope</span></div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    context = eventSubProcess-&gt;parent;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> subProcess = context-&gt;represents&lt;<a class="code" href="classBPMN_1_1SubProcess.html">SubProcess</a>&gt;() ) {</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;      subProcess-&gt;compensatedBy = eventSubProcess;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    }</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;  }</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160; </div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; childNode: context-&gt;childNodes ) {</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> compensateBoundaryEvent = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1CompensateBoundaryEvent.html">CompensateBoundaryEvent</a>&gt;() ) {</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;      <span class="comment">// add activity with compensate event attached to the boundary</span></div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;      <span class="keyword">auto</span> activity = compensateBoundaryEvent-&gt;attachedTo-&gt;<a class="code" href="classBPMN_1_1Node.html#a305cca302fb9555b98663fe276e37db7">as</a>&lt;<a class="code" href="classBPMN_1_1Activity.html">Activity</a>&gt;();</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;      compensatedActivities.push_back(activity);</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    }</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( <span class="keyword">auto</span> scope = childNode-&gt;<a class="code" href="classBPMN_1_1Node.html#a8970b9f701e23a2b8afa6cad79d54519">represents</a>&lt;<a class="code" href="classBPMN_1_1Scope.html">Scope</a>&gt;();</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;      <span class="comment">// add subprocess with compensation event subprocess</span></div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;      scope &amp;&amp;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;      scope-&gt;<a class="code" href="classBPMN_1_1Scope.html#a670457733de4055e05c7ddf1143e07d8">compensationEventSubProcess</a></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    ) {</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;      compensatedActivities.push_back(scope-&gt;<a class="code" href="classBPMN_1_1Node.html#a305cca302fb9555b98663fe276e37db7">as</a>&lt;<a class="code" href="classBPMN_1_1SubProcess.html">SubProcess</a>&gt;());</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    }</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  }</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160; </div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160; </div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <span class="keywordflow">if</span> ( !activityRef.empty() ) {</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;      <span class="keyword">auto</span> it = std::find_if(</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        compensatedActivities.begin(),</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        compensatedActivities.end(),</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        [&amp;activityRef](<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Activity.html">Activity</a>* activity) {</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;          return activity &amp;&amp; activity-&gt;id == activityRef;</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;      });</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;      <span class="keywordflow">if</span> ( it == compensatedActivities.end() ) {</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: Cannot find activity &#39;&quot;</span> + activityRef + <span class="stringliteral">&quot;&#39; to be compensated&quot;</span>);</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;      }</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;      compensateThrowEvent-&gt;activity = *it;</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    }</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( compensateThrowEvent-&gt;name.has_value() &amp;&amp; !compensateThrowEvent-&gt;name.value().empty() ) {</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;      <span class="comment">// use node name as fallback</span></div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;      <span class="keyword">auto</span> activityName = compensateThrowEvent-&gt;name.value();</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;      <span class="keyword">auto</span> it = std::find_if(</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        compensatedActivities.begin(),</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        compensatedActivities.end(),</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        [&amp;activityName](<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Activity.html">Activity</a>* activity) {</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;          return activity &amp;&amp; activity-&gt;name.has_value() &amp;&amp; activity-&gt;name.value() == activityName;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;      });</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;      <span class="keywordflow">if</span> ( it == compensatedActivities.end() ) {</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: Cannot find activity with name &#39;&quot;</span> + activityName + <span class="stringliteral">&quot;&#39; to be compensated&quot;</span>);</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;      }</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;      compensateThrowEvent-&gt;activity = *it;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    }</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160; </div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;  }</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160; </div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;}</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160; </div>
-<div class="line"><a name="l00754"></a><span class="lineno"><a class="line" href="classBPMN_1_1Model.html#a280f632f03f93a50b201d7b039c93c6d">  754</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classBPMN_1_1Model.html#a280f632f03f93a50b201d7b039c93c6d">Model::createLinks</a>(<a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope) {</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;  std::vector&lt;LinkSourceEvent*&gt; linkSources;</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;  std::vector&lt;LinkTargetEvent*&gt; linkTargets;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160; </div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; childNode: scope-&gt;<a class="code" href="classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725">childNodes</a> ) {</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> linkSource = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1LinkSourceEvent.html">LinkSourceEvent</a>&gt;() ) {</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;      linkSources.push_back(linkSource);</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    }</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> linkTarget = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1LinkTargetEvent.html">LinkTargetEvent</a>&gt;() ) {</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;      linkTargets.push_back(linkTarget);</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    }</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160; </div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="comment">// recurse</span></div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> childScope = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1Scope.html">Scope</a>&gt;() ) {</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;      <a class="code" href="classBPMN_1_1Model.html#a280f632f03f93a50b201d7b039c93c6d">createLinks</a>(childScope);</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    }</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  }</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160; </div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> linkSource: linkSources ) {</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> linkTarget: linkTargets ) {</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;      <span class="keywordflow">if</span> ( linkSource-&gt;name == linkTarget-&gt;name ) {</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        <span class="keywordflow">if</span> ( linkSource-&gt;target ) {</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;          <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: Link event &#39;&quot;</span> + linkSource-&gt;id + <span class="stringliteral">&quot;&#39; has multiple targets&quot;</span>);</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        }</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        linkSource-&gt;target = linkTarget;</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        linkTarget-&gt;sources.push_back(linkSource);</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;      }</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    }</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    <span class="keywordflow">if</span> ( !linkSource-&gt;target ) {</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: Link event &#39;&quot;</span> + linkSource-&gt;id + <span class="stringliteral">&quot;&#39; has no target&quot;</span>);</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    }</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;  }</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160; </div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;}</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160; </div>
-<div class="line"><a name="l00789"></a><span class="lineno"><a class="line" href="classBPMN_1_1Model.html#ab7b035b0ba64e65d6889e93557efcf26">  789</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classBPMN_1_1Model.html#ab7b035b0ba64e65d6889e93557efcf26">Model::createMessageFlows</a>() {</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  <span class="comment">// initialize map to resolve reference to participants</span></div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  std::unordered_map&lt;std::string,std::string&gt; participantMap;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160; </div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; root : <a class="code" href="classBPMN_1_1Model.html#a726b3195cc0868077a0c2333ddacc0a6">roots</a> ) {</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">const</span> <span class="keyword">auto</span>&amp; collaboration = root-&gt;getOptionalChild&lt;<a class="code" href="classXML_1_1bpmn_1_1tCollaboration.html">XML::bpmn::tCollaboration</a>&gt;();</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;      collaboration &amp;&amp; collaboration.has_value()</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    ) {</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  <span class="comment">// determine activity to be compensated for compensate throw event</span></div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> compensateThrowEvent : compensateThrowEvents ) {</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="keyword">auto</span>&amp; eventDefinition = compensateThrowEvent-&gt;<a class="code" href="classBPMN_1_1Activity.html#a7a33ed123c1e69722e1fbf182e0233f0">element</a>-&gt;<a class="code" href="classXML_1_1XMLObject.html#aded470ce68062e69e42e21d30051b1e5">getChildren</a>&lt;<a class="code" href="classXML_1_1bpmn_1_1tCompensateEventDefinition.html">XML::bpmn::tCompensateEventDefinition</a>&gt;()[0].get();</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160; </div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    std::string activityRef;</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160; </div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        <span class="comment">// try to get activityRef from event definition</span></div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keywordflow">if</span> ( eventDefinition.activityRef.has_value() ) {</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;      activityRef = eventDefinition.activityRef.value().get().value.value;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    }</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160; </div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <span class="keywordflow">if</span> ( !activityRef.empty() ) {</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;      <span class="keyword">auto</span> it = std::find_if(</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        compensatedActivities.begin(),</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        compensatedActivities.end(),</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        [&amp;activityRef](<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Activity.html">Activity</a>* activity) {</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;          return activity &amp;&amp; activity-&gt;id == activityRef;</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;      });</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;      <span class="keywordflow">if</span> ( it == compensatedActivities.end() ) {</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: Cannot find activity &#39;&quot;</span> + activityRef + <span class="stringliteral">&quot;&#39; to be compensated&quot;</span>);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;      }</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;      compensateThrowEvent-&gt;activity = *it;</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    }</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( compensateThrowEvent-&gt;name.has_value() &amp;&amp; !compensateThrowEvent-&gt;name.value().empty() ) {</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;      <span class="comment">// use node name as fallback</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;      <span class="keyword">auto</span> activityName = compensateThrowEvent-&gt;name.value();</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;      <span class="keyword">auto</span> it = std::find_if(</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        compensatedActivities.begin(),</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        compensatedActivities.end(),</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        [&amp;activityName](<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Activity.html">Activity</a>* activity) {</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;          return activity &amp;&amp; activity-&gt;name.has_value() &amp;&amp; activity-&gt;name.value() == activityName;</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;      });</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;      <span class="keywordflow">if</span> ( it == compensatedActivities.end() ) {</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: Cannot find activity with name &#39;&quot;</span> + activityName + <span class="stringliteral">&quot;&#39; to be compensated&quot;</span>);</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;      }</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;      compensateThrowEvent-&gt;activity = *it;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    }</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160; </div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;  }</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160; </div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;}</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160; </div>
+<div class="line"><a name="l00765"></a><span class="lineno"><a class="line" href="classBPMN_1_1Model.html#a280f632f03f93a50b201d7b039c93c6d">  765</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classBPMN_1_1Model.html#a280f632f03f93a50b201d7b039c93c6d">Model::createLinks</a>(<a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope) {</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;  std::vector&lt;LinkSourceEvent*&gt; linkSources;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;  std::vector&lt;LinkTargetEvent*&gt; linkTargets;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160; </div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; childNode: scope-&gt;<a class="code" href="classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725">childNodes</a> ) {</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> linkSource = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1LinkSourceEvent.html">LinkSourceEvent</a>&gt;() ) {</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;      linkSources.push_back(linkSource);</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    }</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> linkTarget = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1LinkTargetEvent.html">LinkTargetEvent</a>&gt;() ) {</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;      linkTargets.push_back(linkTarget);</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    }</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160; </div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    <span class="comment">// recurse</span></div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">auto</span> childScope = childNode-&gt;represents&lt;<a class="code" href="classBPMN_1_1Scope.html">Scope</a>&gt;() ) {</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;      <a class="code" href="classBPMN_1_1Model.html#a280f632f03f93a50b201d7b039c93c6d">createLinks</a>(childScope);</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    }</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;  }</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160; </div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> linkSource: linkSources ) {</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> linkTarget: linkTargets ) {</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;      <span class="keywordflow">if</span> ( linkSource-&gt;name == linkTarget-&gt;name ) {</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;        <span class="keywordflow">if</span> ( linkSource-&gt;target ) {</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;          <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: Link event &#39;&quot;</span> + linkSource-&gt;id + <span class="stringliteral">&quot;&#39; has multiple targets&quot;</span>);</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        }</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        linkSource-&gt;target = linkTarget;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        linkTarget-&gt;sources.push_back(linkSource);</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;      }</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    }</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    <span class="keywordflow">if</span> ( !linkSource-&gt;target ) {</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Model: Link event &#39;&quot;</span> + linkSource-&gt;id + <span class="stringliteral">&quot;&#39; has no target&quot;</span>);</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    }</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;  }</div>
 <div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160; </div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;      <span class="comment">// add participants to map</span></div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;      <span class="keywordflow">for</span> ( <span class="keyword">const</span> <a class="code" href="classXML_1_1bpmn_1_1tParticipant.html">XML::bpmn::tParticipant</a>&amp; participant : collaboration-&gt;<a class="code" href="classXML_1_1XMLObject.html#adf76f25d8d09d9e46b6594f8e51f14fa">get</a>().getChildren&lt;<a class="code" href="classXML_1_1bpmn_1_1tParticipant.html">XML::bpmn::tParticipant</a>&gt;() ) {</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <span class="keywordflow">if</span> ( participant.processRef.has_value() ) {</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;          participantMap[participant.id-&gt;get().value] = participant.processRef-&gt;get().value;</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        }</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;      }</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160; </div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;      <span class="comment">// create message flow objects</span></div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;      <span class="keywordflow">for</span> ( <a class="code" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a>&amp; messageFlow : collaboration-&gt;<a class="code" href="classXML_1_1XMLObject.html#adf76f25d8d09d9e46b6594f8e51f14fa">get</a>().getChildren&lt;<a class="code" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a>&gt;() ) {</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        <a class="code" href="classBPMN_1_1Model.html#a6fbd982974a432552f51a2caf34db480">messageFlows</a>.push_back(<a class="code" href="classBPMN_1_1Model.html#a2c371b22a314b3bf93ea2a311445402d">createMessageFlow</a>(&amp;messageFlow));</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;      }</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    }</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;  }</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;  <span class="comment">// create references</span></div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; messageFlow : <a class="code" href="classBPMN_1_1Model.html#a6fbd982974a432552f51a2caf34db480">messageFlows</a> ) {</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    messageFlow-&gt;initialize(<a class="code" href="classBPMN_1_1Model.html#a161464a851d7825e3ba1150e8dc2bbb4">processes</a>,participantMap);</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;}</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160; </div>
+<div class="line"><a name="l00800"></a><span class="lineno"><a class="line" href="classBPMN_1_1Model.html#ab7b035b0ba64e65d6889e93557efcf26">  800</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classBPMN_1_1Model.html#ab7b035b0ba64e65d6889e93557efcf26">Model::createMessageFlows</a>() {</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;  <span class="comment">// initialize map to resolve reference to participants</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;  std::unordered_map&lt;std::string,std::string&gt; participantMap;</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160; </div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp; root : <a class="code" href="classBPMN_1_1Model.html#a726b3195cc0868077a0c2333ddacc0a6">roots</a> ) {</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">const</span> <span class="keyword">auto</span>&amp; collaboration = root-&gt;getOptionalChild&lt;<a class="code" href="classXML_1_1bpmn_1_1tCollaboration.html">XML::bpmn::tCollaboration</a>&gt;();</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;      collaboration &amp;&amp; collaboration.has_value()</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    ) {</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160; </div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;      <span class="comment">// add participants to map</span></div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;      <span class="keywordflow">for</span> ( <span class="keyword">const</span> <a class="code" href="classXML_1_1bpmn_1_1tParticipant.html">XML::bpmn::tParticipant</a>&amp; participant : collaboration-&gt;<a class="code" href="classXML_1_1XMLObject.html#adf76f25d8d09d9e46b6594f8e51f14fa">get</a>().getChildren&lt;<a class="code" href="classXML_1_1bpmn_1_1tParticipant.html">XML::bpmn::tParticipant</a>&gt;() ) {</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        <span class="keywordflow">if</span> ( participant.processRef.has_value() ) {</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;          participantMap[participant.id-&gt;get().value] = participant.processRef-&gt;get().value;</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        }</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;      }</div>
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160; </div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <span class="keyword">auto</span>&amp; [sourceProcess,sourceFlowNode] = messageFlow-&gt;source;</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="keywordflow">if</span> ( sourceFlowNode ) {</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;      sourceFlowNode-&gt;sending.push_back(messageFlow.get());</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    }</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( sourceProcess ) {</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;      sourceProcess-&gt;sending.push_back(messageFlow.get());</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    }</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;      <span class="comment">// nothing to do for message from empty collapsed participant</span></div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    }</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <span class="keyword">auto</span>&amp; [targetProcess,targetFlowNode] = messageFlow-&gt;target;</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <span class="keywordflow">if</span> ( targetFlowNode ) {</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;      targetFlowNode-&gt;receiving.push_back(messageFlow.get());</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    }</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( targetProcess ) {</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;      targetProcess-&gt;receiving.push_back(messageFlow.get());</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    }</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;      <span class="comment">// nothing to do for message to empty collapsed participant</span></div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    }</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  }</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160; </div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;}</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160; </div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160; </div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;      <span class="comment">// create message flow objects</span></div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;      <span class="keywordflow">for</span> ( <a class="code" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a>&amp; messageFlow : collaboration-&gt;<a class="code" href="classXML_1_1XMLObject.html#adf76f25d8d09d9e46b6594f8e51f14fa">get</a>().getChildren&lt;<a class="code" href="classXML_1_1bpmn_1_1tMessageFlow.html">XML::bpmn::tMessageFlow</a>&gt;() ) {</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        <a class="code" href="classBPMN_1_1Model.html#a6fbd982974a432552f51a2caf34db480">messageFlows</a>.push_back(<a class="code" href="classBPMN_1_1Model.html#a2c371b22a314b3bf93ea2a311445402d">createMessageFlow</a>(&amp;messageFlow));</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;      }</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    }</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;  }</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160; </div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;  <span class="comment">// create references</span></div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; messageFlow : <a class="code" href="classBPMN_1_1Model.html#a6fbd982974a432552f51a2caf34db480">messageFlows</a> ) {</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    messageFlow-&gt;initialize(<a class="code" href="classBPMN_1_1Model.html#a161464a851d7825e3ba1150e8dc2bbb4">processes</a>,participantMap);</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160; </div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <span class="keyword">auto</span>&amp; [sourceProcess,sourceFlowNode] = messageFlow-&gt;source;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    <span class="keywordflow">if</span> ( sourceFlowNode ) {</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;      sourceFlowNode-&gt;sending.push_back(messageFlow.get());</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    }</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( sourceProcess ) {</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;      sourceProcess-&gt;sending.push_back(messageFlow.get());</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    }</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;      <span class="comment">// nothing to do for message from empty collapsed participant</span></div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    }</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    <span class="keyword">auto</span>&amp; [targetProcess,targetFlowNode] = messageFlow-&gt;target;</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    <span class="keywordflow">if</span> ( targetFlowNode ) {</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;      targetFlowNode-&gt;receiving.push_back(messageFlow.get());</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    }</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( targetProcess ) {</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;      targetProcess-&gt;receiving.push_back(messageFlow.get());</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    }</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;      <span class="comment">// nothing to do for message to empty collapsed participant</span></div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    }</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  }</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160; </div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;}</div>
 <div class="ttc" id="aModel_8h_html"><div class="ttname"><a href="Model_8h.html">Model.h</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Activity_html"><div class="ttname"><a href="classBPMN_1_1Activity.html">BPMN::Activity</a></div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00015">Activity.h:15</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Activity_html_a7a33ed123c1e69722e1fbf182e0233f0"><div class="ttname"><a href="classBPMN_1_1Activity.html#a7a33ed123c1e69722e1fbf182e0233f0">BPMN::Activity::element</a></div><div class="ttdeci">XML::bpmn::tActivity * element</div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00023">Activity.h:23</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Activity_html_a7a33ed123c1e69722e1fbf182e0233f0"><div class="ttname"><a href="classBPMN_1_1Activity.html#a7a33ed123c1e69722e1fbf182e0233f0">BPMN::Activity::element</a></div><div class="ttdeci">XML::bpmn::tActivity * element</div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00026">Activity.h:26</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Activity_html_ac4d926643134855419d6df620ddeec51"><div class="ttname"><a href="classBPMN_1_1Activity.html#ac4d926643134855419d6df620ddeec51">BPMN::Activity::isForCompensation</a></div><div class="ttdeci">bool isForCompensation</div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00022">Activity.h:22</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1AdHocSubProcess_html"><div class="ttname"><a href="classBPMN_1_1AdHocSubProcess.html">BPMN::AdHocSubProcess</a></div><div class="ttdef"><b>Definition:</b> <a href="AdHocSubProcess_8h_source.html#l00012">AdHocSubProcess.h:12</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1BoundaryEvent_html"><div class="ttname"><a href="classBPMN_1_1BoundaryEvent.html">BPMN::BoundaryEvent</a></div><div class="ttdoc">Base class for all boundary events attached to an Activity.</div><div class="ttdef"><b>Definition:</b> <a href="BoundaryEvent_8h_source.html#l00016">BoundaryEvent.h:16</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1ChildNode_html_a3febaa340abab73947f6a43af200c46a"><div class="ttname"><a href="classBPMN_1_1ChildNode.html#a3febaa340abab73947f6a43af200c46a">BPMN::ChildNode::parent</a></div><div class="ttdeci">Scope * parent</div><div class="ttdoc">Reference to the parent node.</div><div class="ttdef"><b>Definition:</b> <a href="ChildNode_8h_source.html#l00022">ChildNode.h:22</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1CompensateBoundaryEvent_html"><div class="ttname"><a href="classBPMN_1_1CompensateBoundaryEvent.html">BPMN::CompensateBoundaryEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="CompensateBoundaryEvent_8h_source.html#l00012">CompensateBoundaryEvent.h:12</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1CompensateStartEvent_html"><div class="ttname"><a href="classBPMN_1_1CompensateStartEvent.html">BPMN::CompensateStartEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="CompensateStartEvent_8h_source.html#l00012">CompensateStartEvent.h:12</a></div></div>
@@ -992,7 +1004,7 @@ $(document).ready(function(){initNavTree('Model_8cpp_source.html',''); initResiz
 <div class="ttc" id="aclassBPMN_1_1Model_html_a1e792df269cacbfd5cb71c81545ef85f"><div class="ttname"><a href="classBPMN_1_1Model.html#a1e792df269cacbfd5cb71c81545ef85f">BPMN::Model::createParallelGateway</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createParallelGateway(XML::bpmn::tParallelGateway *parallelGateway, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00460">Model.cpp:460</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_a1fd4f5a71c031c1cfd4f509e70ade1d1"><div class="ttname"><a href="classBPMN_1_1Model.html#a1fd4f5a71c031c1cfd4f509e70ade1d1">BPMN::Model::createLinkSourceEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createLinkSourceEvent(XML::bpmn::tThrowEvent *throwEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00429">Model.cpp:429</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_a20e18b41af2f7b62cc2e409fb8c8d377"><div class="ttname"><a href="classBPMN_1_1Model.html#a20e18b41af2f7b62cc2e409fb8c8d377">BPMN::Model::createTerminateEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createTerminateEvent(XML::bpmn::tThrowEvent *throwEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00425">Model.cpp:425</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Model_html_a280f632f03f93a50b201d7b039c93c6d"><div class="ttname"><a href="classBPMN_1_1Model.html#a280f632f03f93a50b201d7b039c93c6d">BPMN::Model::createLinks</a></div><div class="ttdeci">virtual void createLinks(Scope *scope)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00754">Model.cpp:754</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Model_html_a280f632f03f93a50b201d7b039c93c6d"><div class="ttname"><a href="classBPMN_1_1Model.html#a280f632f03f93a50b201d7b039c93c6d">BPMN::Model::createLinks</a></div><div class="ttdeci">virtual void createLinks(Scope *scope)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00765">Model.cpp:765</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_a2a684f87dafb1fc7c33c1b4bf13afe23"><div class="ttname"><a href="classBPMN_1_1Model.html#a2a684f87dafb1fc7c33c1b4bf13afe23">BPMN::Model::Model</a></div><div class="ttdeci">Model()</div><div class="ttdef"><b>Definition:</b> <a href="Model_8h_source.html#l00171">Model.h:171</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_a2c371b22a314b3bf93ea2a311445402d"><div class="ttname"><a href="classBPMN_1_1Model.html#a2c371b22a314b3bf93ea2a311445402d">BPMN::Model::createMessageFlow</a></div><div class="ttdeci">virtual std::unique_ptr&lt; MessageFlow &gt; createMessageFlow(XML::bpmn::tMessageFlow *messageFlow)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00484">Model.cpp:484</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_a3be74a48e2f26244b7c5cbcfa5981990"><div class="ttname"><a href="classBPMN_1_1Model.html#a3be74a48e2f26244b7c5cbcfa5981990">BPMN::Model::createTimerCatchEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createTimerCatchEvent(XML::bpmn::tCatchEvent *catchEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00294">Model.cpp:294</a></div></div>
@@ -1000,7 +1012,7 @@ $(document).ready(function(){initNavTree('Model_8cpp_source.html',''); initResiz
 <div class="ttc" id="aclassBPMN_1_1Model_html_a468a767cc5053306d40bdd2b79dfc8e0"><div class="ttname"><a href="classBPMN_1_1Model.html#a468a767cc5053306d40bdd2b79dfc8e0">BPMN::Model::createFlowReferences</a></div><div class="ttdeci">virtual void createFlowReferences(FlowNode *flowNode)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00556">Model.cpp:556</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_a485f0d4453e8d9a0a03959030e120b99"><div class="ttname"><a href="classBPMN_1_1Model.html#a485f0d4453e8d9a0a03959030e120b99">BPMN::Model::createUntypedEndEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createUntypedEndEvent(XML::bpmn::tThrowEvent *throwEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00433">Model.cpp:433</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_a491687f47c404ddf097e2afd0f3b0cbe"><div class="ttname"><a href="classBPMN_1_1Model.html#a491687f47c404ddf097e2afd0f3b0cbe">BPMN::Model::createFlowNode</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createFlowNode(XML::bpmn::tFlowNode *flowNode, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00053">Model.cpp:53</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Model_html_a499ec31275087ff4a68eac75f7845680"><div class="ttname"><a href="classBPMN_1_1Model.html#a499ec31275087ff4a68eac75f7845680">BPMN::Model::createCompensations</a></div><div class="ttdeci">virtual void createCompensations(Scope *scope)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00638">Model.cpp:638</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Model_html_a499ec31275087ff4a68eac75f7845680"><div class="ttname"><a href="classBPMN_1_1Model.html#a499ec31275087ff4a68eac75f7845680">BPMN::Model::createCompensations</a></div><div class="ttdeci">virtual void createCompensations(Scope *scope)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00649">Model.cpp:649</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_a59393a65c63050a4a7645fbe827cfbcb"><div class="ttname"><a href="classBPMN_1_1Model.html#a59393a65c63050a4a7645fbe827cfbcb">BPMN::Model::createSignalThrowEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createSignalThrowEvent(XML::bpmn::tThrowEvent *throwEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00421">Model.cpp:421</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_a5ccb9942694a288a86bb7501d349fc9c"><div class="ttname"><a href="classBPMN_1_1Model.html#a5ccb9942694a288a86bb7501d349fc9c">BPMN::Model::createEventBasedGateway</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createEventBasedGateway(XML::bpmn::tEventBasedGateway *eventBasedGateway, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00472">Model.cpp:472</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_a5e7b4b1986ff8350d48bb6df0057f47c"><div class="ttname"><a href="classBPMN_1_1Model.html#a5e7b4b1986ff8350d48bb6df0057f47c">BPMN::Model::createCompensateStartEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createCompensateStartEvent(XML::bpmn::tStartEvent *startEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00330">Model.cpp:330</a></div></div>
@@ -1033,7 +1045,7 @@ $(document).ready(function(){initNavTree('Model_8cpp_source.html',''); initResiz
 <div class="ttc" id="aclassBPMN_1_1Model_html_aaaa32f65b3430f36d61753c74af53821"><div class="ttname"><a href="classBPMN_1_1Model.html#aaaa32f65b3430f36d61753c74af53821">BPMN::Model::createSendTask</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createSendTask(XML::bpmn::tSendTask *sendTask, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00135">Model.cpp:135</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_aace4e687a8b7bc520484d97588a52bd9"><div class="ttname"><a href="classBPMN_1_1Model.html#aace4e687a8b7bc520484d97588a52bd9">BPMN::Model::createCompensateBoundaryEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createCompensateBoundaryEvent(XML::bpmn::tBoundaryEvent *boundaryEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00219">Model.cpp:219</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_ab58353bf796762d2c4408f85c1660235"><div class="ttname"><a href="classBPMN_1_1Model.html#ab58353bf796762d2c4408f85c1660235">BPMN::Model::createCompensateThrowEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createCompensateThrowEvent(XML::bpmn::tThrowEvent *throwEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00405">Model.cpp:405</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Model_html_ab7b035b0ba64e65d6889e93557efcf26"><div class="ttname"><a href="classBPMN_1_1Model.html#ab7b035b0ba64e65d6889e93557efcf26">BPMN::Model::createMessageFlows</a></div><div class="ttdeci">virtual void createMessageFlows()</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00789">Model.cpp:789</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Model_html_ab7b035b0ba64e65d6889e93557efcf26"><div class="ttname"><a href="classBPMN_1_1Model.html#ab7b035b0ba64e65d6889e93557efcf26">BPMN::Model::createMessageFlows</a></div><div class="ttdeci">virtual void createMessageFlows()</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00800">Model.cpp:800</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_ab95910cce93623b5ad447496ff6be2c8"><div class="ttname"><a href="classBPMN_1_1Model.html#ab95910cce93623b5ad447496ff6be2c8">BPMN::Model::createLinkTargetEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createLinkTargetEvent(XML::bpmn::tCatchEvent *catchEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00298">Model.cpp:298</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_aba8021af9dcc8ac379f9496e1da88316"><div class="ttname"><a href="classBPMN_1_1Model.html#aba8021af9dcc8ac379f9496e1da88316">BPMN::Model::createScriptTask</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createScriptTask(XML::bpmn::tScriptTask *scriptTask, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00151">Model.cpp:151</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_abc9c11248a249021a7cc0c14e83ec8cc"><div class="ttname"><a href="classBPMN_1_1Model.html#abc9c11248a249021a7cc0c14e83ec8cc">BPMN::Model::createSignalCatchEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createSignalCatchEvent(XML::bpmn::tCatchEvent *catchEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00290">Model.cpp:290</a></div></div>
@@ -1042,7 +1054,7 @@ $(document).ready(function(){initNavTree('Model_8cpp_source.html',''); initResiz
 <div class="ttc" id="aclassBPMN_1_1Model_html_ac8e9b7a2bf70f36a490a00e872cbb908"><div class="ttname"><a href="classBPMN_1_1Model.html#ac8e9b7a2bf70f36a490a00e872cbb908">BPMN::Model::createSequenceFlow</a></div><div class="ttdeci">virtual std::unique_ptr&lt; SequenceFlow &gt; createSequenceFlow(XML::bpmn::tSequenceFlow *sequenceFlow, Scope *scope)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00480">Model.cpp:480</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_ac9604933647764008e50043c2adf654b"><div class="ttname"><a href="classBPMN_1_1Model.html#ac9604933647764008e50043c2adf654b">BPMN::Model::createReceiveTask</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createReceiveTask(XML::bpmn::tReceiveTask *receiveTask, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00139">Model.cpp:139</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_ace502efa4ef47cf6b88dfcee5d7d0bf7"><div class="ttname"><a href="classBPMN_1_1Model.html#ace502efa4ef47cf6b88dfcee5d7d0bf7">BPMN::Model::createComplexGateway</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createComplexGateway(XML::bpmn::tComplexGateway *complexGateway, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00476">Model.cpp:476</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Model_html_ad18392696607d84a625fc9189485f7a2"><div class="ttname"><a href="classBPMN_1_1Model.html#ad18392696607d84a625fc9189485f7a2">BPMN::Model::createCompensationReferences</a></div><div class="ttdeci">virtual void createCompensationReferences(Scope *scope)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00672">Model.cpp:672</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Model_html_ad18392696607d84a625fc9189485f7a2"><div class="ttname"><a href="classBPMN_1_1Model.html#ad18392696607d84a625fc9189485f7a2">BPMN::Model::createCompensationReferences</a></div><div class="ttdeci">virtual void createCompensationReferences(Scope *scope)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00683">Model.cpp:683</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_ad40d9aedd71c70d984b4b1c7fbe984cc"><div class="ttname"><a href="classBPMN_1_1Model.html#ad40d9aedd71c70d984b4b1c7fbe984cc">BPMN::Model::createBusinessRuleTask</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createBusinessRuleTask(XML::bpmn::tBusinessRuleTask *businessRuleTask, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00155">Model.cpp:155</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_ad4e14157a14d95cb9cfca7ef65dc282d"><div class="ttname"><a href="classBPMN_1_1Model.html#ad4e14157a14d95cb9cfca7ef65dc282d">BPMN::Model::createBoundaryEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createBoundaryEvent(XML::bpmn::tBoundaryEvent *boundaryEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00176">Model.cpp:176</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Model_html_ad5f11a8f6de7c1d2818f388c8113298f"><div class="ttname"><a href="classBPMN_1_1Model.html#ad5f11a8f6de7c1d2818f388c8113298f">BPMN::Model::createSignalStartEvent</a></div><div class="ttdeci">virtual std::unique_ptr&lt; FlowNode &gt; createSignalStartEvent(XML::bpmn::tStartEvent *startEvent, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="Model_8cpp_source.html#l00350">Model.cpp:350</a></div></div>
@@ -1058,11 +1070,11 @@ $(document).ready(function(){initNavTree('Model_8cpp_source.html',''); initResiz
 <div class="ttc" id="aclassBPMN_1_1Node_html_a8c8771042ad15e4a3f9467fa84c2e595"><div class="ttname"><a href="classBPMN_1_1Node.html#a8c8771042ad15e4a3f9467fa84c2e595">BPMN::Node::element</a></div><div class="ttdeci">XML::bpmn::tBaseElement * element</div><div class="ttdef"><b>Definition:</b> <a href="Node_8h_source.html#l00154">Node.h:154</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Process_html"><div class="ttname"><a href="classBPMN_1_1Process.html">BPMN::Process</a></div><div class="ttdef"><b>Definition:</b> <a href="Process_8h_source.html#l00012">Process.h:12</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Base class for BPMN elements that may contain a ChildNode elements.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00023">Scope.h:23</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Scope_html_a2abb85eda0980c258f206c36bc6f2c7e"><div class="ttname"><a href="classBPMN_1_1Scope.html#a2abb85eda0980c258f206c36bc6f2c7e">BPMN::Scope::startNodes</a></div><div class="ttdeci">std::vector&lt; FlowNode * &gt; startNodes</div><div class="ttdoc">Vector containing all flow nodes that may start execution of the scope.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00038">Scope.h:38</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html_a3283c9fa3043f504eeb36e574b569494"><div class="ttname"><a href="classBPMN_1_1Scope.html#a3283c9fa3043f504eeb36e574b569494">BPMN::Scope::compensationActivities</a></div><div class="ttdeci">std::vector&lt; Activity * &gt; compensationActivities</div><div class="ttdoc">Vector containing pointers to all compensation activities within the scope.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00044">Scope.h:44</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html_a670457733de4055e05c7ddf1143e07d8"><div class="ttname"><a href="classBPMN_1_1Scope.html#a670457733de4055e05c7ddf1143e07d8">BPMN::Scope::compensationEventSubProcess</a></div><div class="ttdeci">EventSubProcess * compensationEventSubProcess</div><div class="ttdoc">Pointer to compensation event subprocess of the scope.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00047">Scope.h:47</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html_a68eb5f3fe79c3a91dd8c2af821fdbade"><div class="ttname"><a href="classBPMN_1_1Scope.html#a68eb5f3fe79c3a91dd8c2af821fdbade">BPMN::Scope::eventSubProcesses</a></div><div class="ttdeci">std::vector&lt; EventSubProcess * &gt; eventSubProcesses</div><div class="ttdoc">Vector containing pointers to all event subprocesses within the scope of the nodes.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00035">Scope.h:35</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html_a6dfcdcc7e129b84bc4fc560e61437a81"><div class="ttname"><a href="classBPMN_1_1Scope.html#a6dfcdcc7e129b84bc4fc560e61437a81">BPMN::Scope::flowNodes</a></div><div class="ttdeci">std::vector&lt; FlowNode * &gt; flowNodes</div><div class="ttdoc">Vector containing pointers to all flow nodes within the scope of the nodes.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00032">Scope.h:32</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Scope_html_a805ac53ffb184502882be82a7a2b0e28"><div class="ttname"><a href="classBPMN_1_1Scope.html#a805ac53ffb184502882be82a7a2b0e28">BPMN::Scope::startEvents</a></div><div class="ttdeci">std::vector&lt; FlowNode * &gt; startEvents</div><div class="ttdoc">Vector containing all flow nodes that may start execution of the scope.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00038">Scope.h:38</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html_aa4a9ce7b7f19bfc612c64a84f3a59b6c"><div class="ttname"><a href="classBPMN_1_1Scope.html#aa4a9ce7b7f19bfc612c64a84f3a59b6c">BPMN::Scope::add</a></div><div class="ttdeci">void add(std::unique_ptr&lt; Node &gt; node)</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8cpp_source.html#l00017">Scope.cpp:17</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html_acb6f3ff661f73277942735399abc6708"><div class="ttname"><a href="classBPMN_1_1Scope.html#acb6f3ff661f73277942735399abc6708">BPMN::Scope::sequenceFlows</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; SequenceFlow &gt; &gt; sequenceFlows</div><div class="ttdoc">Vector containing all sequence flows within the scope.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00041">Scope.h:41</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html_afdae519aaff2f7e4a7e04cc72b9d3725"><div class="ttname"><a href="classBPMN_1_1Scope.html#afdae519aaff2f7e4a7e04cc72b9d3725">BPMN::Scope::childNodes</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; Node &gt; &gt; childNodes</div><div class="ttdoc">Vector containing all child nodes within the scope of the nodes.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00029">Scope.h:29</a></div></div>

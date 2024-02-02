@@ -87,7 +87,7 @@
 <text text-anchor="start" x="128" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ childNodes</text>
 <text text-anchor="start" x="128" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ flowNodes</text>
 <text text-anchor="start" x="128" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ eventSubProcesses</text>
-<text text-anchor="start" x="128" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startEvents</text>
+<text text-anchor="start" x="128" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startNodes</text>
 <text text-anchor="start" x="128" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sequenceFlows</text>
 <text text-anchor="start" x="128" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ compensationActivities</text>
 <text text-anchor="start" x="128" y="-153.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ compensationEventSubProcess</text>

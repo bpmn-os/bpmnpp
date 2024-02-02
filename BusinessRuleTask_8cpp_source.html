@@ -127,13 +127,15 @@ $(document).ready(function(){initNavTree('BusinessRuleTask_8cpp_source.html','')
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classBPMN_1_1BusinessRuleTask.html#a87155b0d91266f63bbc0b36c6404b82c">    5</a></span>&#160;<a class="code" href="classBPMN_1_1BusinessRuleTask.html#a87155b0d91266f63bbc0b36c6404b82c">BusinessRuleTask::BusinessRuleTask</a>(<a class="code" href="classXML_1_1bpmn_1_1tBusinessRuleTask.html">XML::bpmn::tBusinessRuleTask</a>* businessRuleTask, <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* parent)</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  : <a class="code" href="classBPMN_1_1Node.html">Node</a>(businessRuleTask)</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  , <a class="code" href="classBPMN_1_1Task.html">Task</a>(businessRuleTask,parent)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  , element(businessRuleTask)</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  , <a class="code" href="classBPMN_1_1FlowNode.html">FlowNode</a>(businessRuleTask,parent)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  , <a class="code" href="classBPMN_1_1Task.html">Task</a>(businessRuleTask,parent)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  , element(businessRuleTask)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="ttc" id="aBusinessRuleTask_8h_html"><div class="ttname"><a href="BusinessRuleTask_8h.html">BusinessRuleTask.h</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1BusinessRuleTask_html_a87155b0d91266f63bbc0b36c6404b82c"><div class="ttname"><a href="classBPMN_1_1BusinessRuleTask.html#a87155b0d91266f63bbc0b36c6404b82c">BPMN::BusinessRuleTask::BusinessRuleTask</a></div><div class="ttdeci">BusinessRuleTask(XML::bpmn::tBusinessRuleTask *businessRuleTask, Scope *parent)</div><div class="ttdef"><b>Definition:</b> <a href="BusinessRuleTask_8cpp_source.html#l00005">BusinessRuleTask.cpp:5</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1FlowNode_html"><div class="ttname"><a href="classBPMN_1_1FlowNode.html">BPMN::FlowNode</a></div><div class="ttdoc">Base class for BPMN elements that may contain incoming and outgoing sequence flows.</div><div class="ttdef"><b>Definition:</b> <a href="FlowNode_8h_source.html#l00020">FlowNode.h:20</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Node_html"><div class="ttname"><a href="classBPMN_1_1Node.html">BPMN::Node</a></div><div class="ttdoc">Base class for all elements in a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8h_source.html#l00024">Node.h:24</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Base class for BPMN elements that may contain a ChildNode elements.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00023">Scope.h:23</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Task_html"><div class="ttname"><a href="classBPMN_1_1Task.html">BPMN::Task</a></div><div class="ttdef"><b>Definition:</b> <a href="Task_8h_source.html#l00012">Task.h:12</a></div></div>

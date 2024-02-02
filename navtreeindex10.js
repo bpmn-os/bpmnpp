@@ -1,5 +1,11 @@
 var NAVTREEINDEX10 =
 {
+"tEventBasedGateway_8cpp_source.html":[6,3,0,0,0,323],
+"tEventBasedGateway_8h.html":[6,3,0,0,0,324],
+"tEventBasedGateway_8h_source.html":[6,3,0,0,0,324],
+"tEventDefinition_8cpp.html":[6,3,0,0,0,326],
+"tEventDefinition_8cpp_source.html":[6,3,0,0,0,326],
+"tEventDefinition_8h.html":[6,3,0,0,0,327],
 "tEventDefinition_8h_source.html":[6,3,0,0,0,327],
 "tEvent_8cpp.html":[6,3,0,0,0,321],
 "tEvent_8cpp_source.html":[6,3,0,0,0,321],
@@ -243,11 +249,5 @@ var NAVTREEINDEX10 =
 "tResourceParameterBinding_8cpp_source.html":[6,3,0,0,0,452],
 "tResourceParameterBinding_8h.html":[6,3,0,0,0,453],
 "tResourceParameterBinding_8h_source.html":[6,3,0,0,0,453],
-"tResourceParameter_8cpp.html":[6,3,0,0,0,450],
-"tResourceParameter_8cpp_source.html":[6,3,0,0,0,450],
-"tResourceParameter_8h.html":[6,3,0,0,0,451],
-"tResourceParameter_8h_source.html":[6,3,0,0,0,451],
-"tResourceRole_8cpp.html":[6,3,0,0,0,454],
-"tResourceRole_8cpp_source.html":[6,3,0,0,0,454],
-"tResourceRole_8h.html":[6,3,0,0,0,455]
+"tResourceParameter_8cpp.html":[6,3,0,0,0,450]
 };

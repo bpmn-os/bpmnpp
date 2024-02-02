@@ -10,5 +10,5 @@ var classBPMN_1_1Scope =
     [ "eventSubProcesses", "classBPMN_1_1Scope.html#a68eb5f3fe79c3a91dd8c2af821fdbade", null ],
     [ "flowNodes", "classBPMN_1_1Scope.html#a6dfcdcc7e129b84bc4fc560e61437a81", null ],
     [ "sequenceFlows", "classBPMN_1_1Scope.html#acb6f3ff661f73277942735399abc6708", null ],
-    [ "startEvents", "classBPMN_1_1Scope.html#a805ac53ffb184502882be82a7a2b0e28", null ]
+    [ "startNodes", "classBPMN_1_1Scope.html#a2abb85eda0980c258f206c36bc6f2c7e", null ]
 ];
