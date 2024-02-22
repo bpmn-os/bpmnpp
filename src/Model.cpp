@@ -535,6 +535,11 @@ void Model::createNestedReferences(Scope* scope) {
   for ( auto eventSubProcess: scope->eventSubProcesses ) {
     createNestedReferences(eventSubProcess);
   }
+  for ( auto activity: scope->compensationActivities ) {
+    if ( auto activityScope = activity->represents<Scope>() ) {
+      createNestedReferences(activityScope);
+    }
+  }
 
   // check for compensation event subprocess
   auto it = std::find_if(
