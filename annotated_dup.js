@@ -3,6 +3,7 @@ var annotated_dup =
     [ "BPMN", "namespaceBPMN.html", [
       [ "Activity", "classBPMN_1_1Activity.html", "classBPMN_1_1Activity" ],
       [ "AdHocSubProcess", "classBPMN_1_1AdHocSubProcess.html", "classBPMN_1_1AdHocSubProcess" ],
+      [ "BaseElement", "classBPMN_1_1BaseElement.html", "classBPMN_1_1BaseElement" ],
       [ "BoundaryEvent", "classBPMN_1_1BoundaryEvent.html", "classBPMN_1_1BoundaryEvent" ],
       [ "BusinessRuleTask", "classBPMN_1_1BusinessRuleTask.html", "classBPMN_1_1BusinessRuleTask" ],
       [ "CallActivity", "classBPMN_1_1CallActivity.html", "classBPMN_1_1CallActivity" ],

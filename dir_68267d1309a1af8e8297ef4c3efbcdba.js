@@ -9,6 +9,10 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "AdHocSubProcess.h", "AdHocSubProcess_8h.html", [
       [ "AdHocSubProcess", "classBPMN_1_1AdHocSubProcess.html", "classBPMN_1_1AdHocSubProcess" ]
     ] ],
+    [ "BaseElement.cpp", "BaseElement_8cpp.html", null ],
+    [ "BaseElement.h", "BaseElement_8h.html", [
+      [ "BaseElement", "classBPMN_1_1BaseElement.html", "classBPMN_1_1BaseElement" ]
+    ] ],
     [ "BoundaryEvent.cpp", "BoundaryEvent_8cpp.html", null ],
     [ "BoundaryEvent.h", "BoundaryEvent_8h.html", [
       [ "BoundaryEvent", "classBPMN_1_1BoundaryEvent.html", "classBPMN_1_1BoundaryEvent" ]

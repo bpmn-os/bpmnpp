@@ -127,94 +127,90 @@ $(document).ready(function(){initNavTree('Node_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceBPMN.html">BPMN</a>;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a526a91b865ed7188099ade8f7002895f">    6</a></span>&#160;<a class="code" href="classBPMN_1_1Node.html#a526a91b865ed7188099ade8f7002895f">Node::Node</a>(<a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a>* element)</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  : element(element)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  , extensionElements(std::make_unique&lt;<a class="code" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a>&gt;(element))</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keywordtype">id</span> = <a class="code" href="classBPMN_1_1Node.html#a8c8771042ad15e4a3f9467fa84c2e595">element</a>-&gt;<a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html#ac810520ed433d1778a6341156b290800">id</a>.has_value() ? (std::string)<a class="code" href="classBPMN_1_1Node.html#a8c8771042ad15e4a3f9467fa84c2e595">element</a>-&gt;<a class="code" href="classXML_1_1bpmn_1_1tBaseElement.html#ac810520ed433d1778a6341156b290800">id</a>-&gt;get().value : <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">   13</a></span>&#160;<a class="code" href="classBPMN_1_1Node.html">Node</a>* <a class="code" href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">Node::find</a>(std::function&lt;<span class="keywordtype">bool</span>(<a class="code" href="classBPMN_1_1Node.html">Node</a>*)&gt; condition) {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">if</span> (condition(<span class="keyword">this</span>)) {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope = this-&gt;represents&lt;Scope&gt;(); scope) {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; childNode : scope-&gt;childNodes) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <a class="code" href="classBPMN_1_1Node.html">Node</a>* node = childNode.<a class="code" href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">get</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="classBPMN_1_1Node.html">Node</a>* result = node-&gt;<a class="code" href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">find</a>(condition);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keywordflow">if</span> (result != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#ac54d74cc190d2cce3073c73c3bb0c7bf">   30</a></span>&#160;<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>* <a class="code" href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">Node::find</a>(std::function&lt;<span class="keywordtype">bool</span>(<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>*)&gt; condition)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">if</span> (condition(<span class="keyword">this</span>)) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope = this-&gt;represents&lt;Scope&gt;(); scope) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; childNode : scope-&gt;childNodes) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>* node = childNode.<a class="code" href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">get</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>* result = node-&gt;<a class="code" href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">find</a>(condition);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">if</span> (result != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">   47</a></span>&#160;std::vector&lt; Node* &gt; <a class="code" href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">Node::find_all</a>(std::function&lt;<span class="keywordtype">bool</span>(<a class="code" href="classBPMN_1_1Node.html">Node</a>*)&gt; condition) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::vector&lt; Node* &gt; result;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">if</span> (condition(<span class="keyword">this</span>)) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    result.push_back(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">if</span> ( <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope = this-&gt;represents&lt;Scope&gt;(); scope ) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> &amp;childNode : scope-&gt;childNodes) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="classBPMN_1_1Node.html">Node</a>* node = childNode.<a class="code" href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">get</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      std::vector&lt; Node* &gt; childResults = node-&gt;<a class="code" href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">find_all</a>(condition);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      result.insert(result.end(), childResults.begin(), childResults.end());</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a703f6eeccc0b1fe9a10591980c832522">   65</a></span>&#160;std::vector&lt; const Node* &gt; <a class="code" href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">Node::find_all</a>(std::function&lt;<span class="keywordtype">bool</span>(<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>*)&gt; condition)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::vector&lt; const Node* &gt; result;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">if</span> (condition(<span class="keyword">this</span>)) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    result.push_back(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">if</span> ( <span class="keyword">const</span> <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope = this-&gt;represents&lt;Scope&gt;(); scope ) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">for</span> ( <span class="keyword">const</span> <span class="keyword">auto</span>&amp; childNode : scope-&gt;childNodes) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>* node = childNode.<a class="code" href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">get</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      std::vector&lt; const Node* &gt; childResults = node-&gt;<a class="code" href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">find_all</a>(condition);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      result.insert(result.end(), childResults.begin(), childResults.end());</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  : <a class="code" href="classBPMN_1_1BaseElement.html">BaseElement</a>(element)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">   11</a></span>&#160;<a class="code" href="classBPMN_1_1Node.html">Node</a>* <a class="code" href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">Node::find</a>(std::function&lt;<span class="keywordtype">bool</span>(<a class="code" href="classBPMN_1_1Node.html">Node</a>*)&gt; condition) {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">if</span> (condition(<span class="keyword">this</span>)) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope = this-&gt;represents&lt;Scope&gt;(); scope) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; childNode : scope-&gt;childNodes) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <a class="code" href="classBPMN_1_1Node.html">Node</a>* node = childNode.<a class="code" href="classBPMN_1_1BaseElement.html#a055e71c89a57baba88a8e73b37175717">get</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="classBPMN_1_1Node.html">Node</a>* result = node-&gt;<a class="code" href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">find</a>(condition);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <span class="keywordflow">if</span> (result != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#ac54d74cc190d2cce3073c73c3bb0c7bf">   28</a></span>&#160;<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>* <a class="code" href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">Node::find</a>(std::function&lt;<span class="keywordtype">bool</span>(<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>*)&gt; condition)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">if</span> (condition(<span class="keyword">this</span>)) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope = this-&gt;represents&lt;Scope&gt;(); scope) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; childNode : scope-&gt;childNodes) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>* node = childNode.<a class="code" href="classBPMN_1_1BaseElement.html#a055e71c89a57baba88a8e73b37175717">get</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>* result = node-&gt;<a class="code" href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">find</a>(condition);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">if</span> (result != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">   45</a></span>&#160;std::vector&lt; Node* &gt; <a class="code" href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">Node::find_all</a>(std::function&lt;<span class="keywordtype">bool</span>(<a class="code" href="classBPMN_1_1Node.html">Node</a>*)&gt; condition) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  std::vector&lt; Node* &gt; result;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">if</span> (condition(<span class="keyword">this</span>)) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    result.push_back(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">if</span> ( <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope = this-&gt;represents&lt;Scope&gt;(); scope ) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> &amp;childNode : scope-&gt;childNodes) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="classBPMN_1_1Node.html">Node</a>* node = childNode.<a class="code" href="classBPMN_1_1BaseElement.html#a055e71c89a57baba88a8e73b37175717">get</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      std::vector&lt; Node* &gt; childResults = node-&gt;<a class="code" href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">find_all</a>(condition);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      result.insert(result.end(), childResults.begin(), childResults.end());</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classBPMN_1_1Node.html#a703f6eeccc0b1fe9a10591980c832522">   63</a></span>&#160;std::vector&lt; const Node* &gt; <a class="code" href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">Node::find_all</a>(std::function&lt;<span class="keywordtype">bool</span>(<span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>*)&gt; condition)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::vector&lt; const Node* &gt; result;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">if</span> (condition(<span class="keyword">this</span>)) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    result.push_back(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">if</span> ( <span class="keyword">const</span> <a class="code" href="classBPMN_1_1Scope.html">Scope</a>* scope = this-&gt;represents&lt;Scope&gt;(); scope ) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">for</span> ( <span class="keyword">const</span> <span class="keyword">auto</span>&amp; childNode : scope-&gt;childNodes) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keyword">const</span> <a class="code" href="classBPMN_1_1Node.html">Node</a>* node = childNode.<a class="code" href="classBPMN_1_1BaseElement.html#a055e71c89a57baba88a8e73b37175717">get</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      std::vector&lt; const Node* &gt; childResults = node-&gt;<a class="code" href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">find_all</a>(condition);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      result.insert(result.end(), childResults.begin(), childResults.end());</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="ttc" id="aNode_8h_html"><div class="ttname"><a href="Node_8h.html">Node.h</a></div></div>
 <div class="ttc" id="aScope_8h_html"><div class="ttname"><a href="Scope_8h.html">Scope.h</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1ExtensionElements_html"><div class="ttname"><a href="classBPMN_1_1ExtensionElements.html">BPMN::ExtensionElements</a></div><div class="ttdoc">Base class for extension elements that may be provided for a BPMN element.</div><div class="ttdef"><b>Definition:</b> <a href="ExtensionElements_8h_source.html#l00013">ExtensionElements.h:13</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html"><div class="ttname"><a href="classBPMN_1_1Node.html">BPMN::Node</a></div><div class="ttdoc">Base class for all elements in a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8h_source.html#l00024">Node.h:24</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html_a2d0aeb88f3169d78526c5827d37da06d"><div class="ttname"><a href="classBPMN_1_1Node.html#a2d0aeb88f3169d78526c5827d37da06d">BPMN::Node::get</a></div><div class="ttdeci">T * get()</div><div class="ttdoc">Casts the element to the specified type T.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8h_source.html#l00063">Node.h:63</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html_a36070daadcbc9304cd62eda80f532f05"><div class="ttname"><a href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">BPMN::Node::find</a></div><div class="ttdeci">Node * find(std::function&lt; bool(Node *)&gt; condition)</div><div class="ttdoc">Returns the first node found matching a given condition.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8cpp_source.html#l00013">Node.cpp:13</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1BaseElement_html"><div class="ttname"><a href="classBPMN_1_1BaseElement.html">BPMN::BaseElement</a></div><div class="ttdoc">Base class for all elements in a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="BaseElement_8h_source.html#l00019">BaseElement.h:19</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1BaseElement_html_a055e71c89a57baba88a8e73b37175717"><div class="ttname"><a href="classBPMN_1_1BaseElement.html#a055e71c89a57baba88a8e73b37175717">BPMN::BaseElement::get</a></div><div class="ttdeci">T * get()</div><div class="ttdoc">Casts the element to the specified type T.</div><div class="ttdef"><b>Definition:</b> <a href="BaseElement_8h_source.html#l00050">BaseElement.h:50</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Node_html"><div class="ttname"><a href="classBPMN_1_1Node.html">BPMN::Node</a></div><div class="ttdoc">Base class for all nodes in a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8h_source.html#l00024">Node.h:24</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Node_html_a36070daadcbc9304cd62eda80f532f05"><div class="ttname"><a href="classBPMN_1_1Node.html#a36070daadcbc9304cd62eda80f532f05">BPMN::Node::find</a></div><div class="ttdeci">Node * find(std::function&lt; bool(Node *)&gt; condition)</div><div class="ttdoc">Returns the first node found matching a given condition.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8cpp_source.html#l00011">Node.cpp:11</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Node_html_a526a91b865ed7188099ade8f7002895f"><div class="ttname"><a href="classBPMN_1_1Node.html#a526a91b865ed7188099ade8f7002895f">BPMN::Node::Node</a></div><div class="ttdeci">Node(XML::bpmn::tBaseElement *element)</div><div class="ttdoc">Constructs a Node object representing a BPMN process or flow node.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8cpp_source.html#l00006">Node.cpp:6</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html_a67a65fac206811c9cabf625f5740d68f"><div class="ttname"><a href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">BPMN::Node::find_all</a></div><div class="ttdeci">std::vector&lt; Node * &gt; find_all(std::function&lt; bool(Node *)&gt; condition)</div><div class="ttdoc">Returns all nodes matching a given condition.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8cpp_source.html#l00047">Node.cpp:47</a></div></div>
-<div class="ttc" id="aclassBPMN_1_1Node_html_a8c8771042ad15e4a3f9467fa84c2e595"><div class="ttname"><a href="classBPMN_1_1Node.html#a8c8771042ad15e4a3f9467fa84c2e595">BPMN::Node::element</a></div><div class="ttdeci">XML::bpmn::tBaseElement * element</div><div class="ttdef"><b>Definition:</b> <a href="Node_8h_source.html#l00154">Node.h:154</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Node_html_a67a65fac206811c9cabf625f5740d68f"><div class="ttname"><a href="classBPMN_1_1Node.html#a67a65fac206811c9cabf625f5740d68f">BPMN::Node::find_all</a></div><div class="ttdeci">std::vector&lt; Node * &gt; find_all(std::function&lt; bool(Node *)&gt; condition)</div><div class="ttdoc">Returns all nodes matching a given condition.</div><div class="ttdef"><b>Definition:</b> <a href="Node_8cpp_source.html#l00045">Node.cpp:45</a></div></div>
 <div class="ttc" id="aclassBPMN_1_1Scope_html"><div class="ttname"><a href="classBPMN_1_1Scope.html">BPMN::Scope</a></div><div class="ttdoc">Base class for BPMN elements that may contain a ChildNode elements.</div><div class="ttdef"><b>Definition:</b> <a href="Scope_8h_source.html#l00023">Scope.h:23</a></div></div>
 <div class="ttc" id="aclassXML_1_1bpmn_1_1tBaseElement_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a></div><div class="ttdef"><b>Definition:</b> <a href="tBaseElement_8h_source.html#l00032">tBaseElement.h:32</a></div></div>
-<div class="ttc" id="aclassXML_1_1bpmn_1_1tBaseElement_html_ac810520ed433d1778a6341156b290800"><div class="ttname"><a href="classXML_1_1bpmn_1_1tBaseElement.html#ac810520ed433d1778a6341156b290800">XML::bpmn::tBaseElement::id</a></div><div class="ttdeci">std::optional&lt; std::reference_wrapper&lt; Attribute &gt; &gt; id</div><div class="ttdoc">Attribute value can be expected to be of type 'std::string'.</div><div class="ttdef"><b>Definition:</b> <a href="tBaseElement_8h_source.html#l00052">tBaseElement.h:52</a></div></div>
 <div class="ttc" id="anamespaceBPMN_html"><div class="ttname"><a href="namespaceBPMN.html">BPMN</a></div><div class="ttdoc">The BPMN namespace contains linked classes representing a BPMN model.</div><div class="ttdef"><b>Definition:</b> <a href="Activity_8h_source.html#l00011">Activity.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

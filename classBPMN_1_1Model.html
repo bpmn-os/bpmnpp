@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('classBPMN_1_1Model.html',''); initResi
 <dl class="section attention"><dt>Attention</dt><dd>For each link source exactly one link target must be found, otherwise a <code>std::runtime_error</code> will be thrown. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1LinkSourceEvent.html">LinkSourceEvent</a>, <a class="el" href="classBPMN_1_1LinkTargetEvent.html">LinkTargetEvent</a>, <a class="el" href="classXML_1_1bpmn_1_1tLinkEventDefinition.html">XML::bpmn::tLinkEventDefinition</a>, <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a></dd></dl>
 </li>
-<li>For each throwing compensation event, a pointer to the activity to be compensated is provided. <dl class="section note"><dt>Note</dt><dd>The respective activity is determined based on the <a class="el" href="classXML_1_1bpmn_1_1tCompensateEventDefinition.html#a511b181a6067246d9ee2a384ece51822">XML::bpmn::tCompensateEventDefinition::activityRef</a> attribute of the compensation event definition and the <a class="el" href="classBPMN_1_1Node.html#a97f9cc067ccba15103ea405da891e8ff">Node::id</a> attribute of the activity. If no such attribute reference is given, respective activity is determined based on the <a class="el" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">FlowNode::name</a> attribute of the compensate throw event and the <a class="el" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">FlowNode::name</a> of the activity. </dd></dl>
+<li>For each throwing compensation event, a pointer to the activity to be compensated is provided. <dl class="section note"><dt>Note</dt><dd>The respective activity is determined based on the <a class="el" href="classXML_1_1bpmn_1_1tCompensateEventDefinition.html#a511b181a6067246d9ee2a384ece51822">XML::bpmn::tCompensateEventDefinition::activityRef</a> attribute of the compensation event definition and the <a class="el" href="classBPMN_1_1BaseElement.html#a1348258f04b8afbe72d9fe1bce2243dc">Node::id</a> attribute of the activity. If no such attribute reference is given, respective activity is determined based on the <a class="el" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">FlowNode::name</a> attribute of the compensate throw event and the <a class="el" href="classBPMN_1_1FlowNode.html#a19f4c7543b0de08dffd34f1b8ad849be">FlowNode::name</a> of the activity. </dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>Compensation throw events in compensation event subprocesses can only trigger compensation of activities within parent scope. All other compensation throw events can only trigger compensation of activities within the same scope. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classBPMN_1_1CompensateThrowEvent.html">CompensateThrowEvent</a>, <a class="el" href="classXML_1_1bpmn_1_1tCompensateEventDefinition.html">XML::bpmn::tCompensateEventDefinition</a>, <a class="el" href="classBPMN_1_1Activity.html">Activity</a>, <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> </dd></dl>
 </li>
@@ -343,22 +343,22 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad1cdc6974a04a37e2bbc51d1fe48bf7a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad1cdc6974a04a37e2bbc51d1fe48bf7a"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ad1cdc6974a04a37e2bbc51d1fe48bf7a">bind</a> (std::unique_ptr&lt; T &gt; &amp;&amp;node, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;&amp;extensionElements)</td></tr>
-<tr class="memdesc:ad1cdc6974a04a37e2bbc51d1fe48bf7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node.  <a href="classBPMN_1_1Model.html#ad1cdc6974a04a37e2bbc51d1fe48bf7a">More...</a><br /></td></tr>
-<tr class="separator:ad1cdc6974a04a37e2bbc51d1fe48bf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a899a7f8f40d2ff99cdd7d428b55e4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a93a899a7f8f40d2ff99cdd7d428b55e4"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a93a899a7f8f40d2ff99cdd7d428b55e4">bind</a> (std::unique_ptr&lt; T &gt; &amp;node, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;extensionElements)</td></tr>
-<tr class="memdesc:a93a899a7f8f40d2ff99cdd7d428b55e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node.  <a href="classBPMN_1_1Model.html#a93a899a7f8f40d2ff99cdd7d428b55e4">More...</a><br /></td></tr>
-<tr class="separator:a93a899a7f8f40d2ff99cdd7d428b55e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac76e0354135da60cb6034e0de1fbd2f0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac76e0354135da60cb6034e0de1fbd2f0"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ac76e0354135da60cb6034e0de1fbd2f0">bind</a> (std::unique_ptr&lt; T &gt; &amp;node, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;&amp;extensionElements)</td></tr>
-<tr class="memdesc:ac76e0354135da60cb6034e0de1fbd2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node.  <a href="classBPMN_1_1Model.html#ac76e0354135da60cb6034e0de1fbd2f0">More...</a><br /></td></tr>
-<tr class="separator:ac76e0354135da60cb6034e0de1fbd2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee63af147a02b20ad2488b6cd298cd9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aaee63af147a02b20ad2488b6cd298cd9"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#aaee63af147a02b20ad2488b6cd298cd9">bind</a> (std::unique_ptr&lt; T &gt; &amp;&amp;node, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;extensionElements)</td></tr>
-<tr class="memdesc:aaee63af147a02b20ad2488b6cd298cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension element to the given node.  <a href="classBPMN_1_1Model.html#aaee63af147a02b20ad2488b6cd298cd9">More...</a><br /></td></tr>
-<tr class="separator:aaee63af147a02b20ad2488b6cd298cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbbae84bee8435e090ede810db90a80d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adbbae84bee8435e090ede810db90a80d"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#adbbae84bee8435e090ede810db90a80d">bind</a> (std::unique_ptr&lt; T &gt; &amp;&amp;baseElement, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;&amp;extensionElements)</td></tr>
+<tr class="memdesc:adbbae84bee8435e090ede810db90a80d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension elements to the given baseElement.  <a href="classBPMN_1_1Model.html#adbbae84bee8435e090ede810db90a80d">More...</a><br /></td></tr>
+<tr class="separator:adbbae84bee8435e090ede810db90a80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e0fb361396cc6cb062a589f0e53e87"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a26e0fb361396cc6cb062a589f0e53e87"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a26e0fb361396cc6cb062a589f0e53e87">bind</a> (std::unique_ptr&lt; T &gt; &amp;baseElement, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;extensionElements)</td></tr>
+<tr class="memdesc:a26e0fb361396cc6cb062a589f0e53e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension elements to the given baseElement.  <a href="classBPMN_1_1Model.html#a26e0fb361396cc6cb062a589f0e53e87">More...</a><br /></td></tr>
+<tr class="separator:a26e0fb361396cc6cb062a589f0e53e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5497bd7d0a98f8292920ad0eb5c78259"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5497bd7d0a98f8292920ad0eb5c78259"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a5497bd7d0a98f8292920ad0eb5c78259">bind</a> (std::unique_ptr&lt; T &gt; &amp;baseElement, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;&amp;extensionElements)</td></tr>
+<tr class="memdesc:a5497bd7d0a98f8292920ad0eb5c78259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension elements to the given baseElement.  <a href="classBPMN_1_1Model.html#a5497bd7d0a98f8292920ad0eb5c78259">More...</a><br /></td></tr>
+<tr class="separator:a5497bd7d0a98f8292920ad0eb5c78259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc263efa6b7ef2b9fcd0ef4dc9c3ba8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2cc263efa6b7ef2b9fcd0ef4dc9c3ba8"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a2cc263efa6b7ef2b9fcd0ef4dc9c3ba8">bind</a> (std::unique_ptr&lt; T &gt; &amp;&amp;baseElement, std::unique_ptr&lt; <a class="el" href="classBPMN_1_1ExtensionElements.html">ExtensionElements</a> &gt; &amp;extensionElements)</td></tr>
+<tr class="memdesc:a2cc263efa6b7ef2b9fcd0ef4dc9c3ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the extension elements to the given baseElement.  <a href="classBPMN_1_1Model.html#a2cc263efa6b7ef2b9fcd0ef4dc9c3ba8">More...</a><br /></td></tr>
+<tr class="separator:a2cc263efa6b7ef2b9fcd0ef4dc9c3ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2a684f87dafb1fc7c33c1b4bf13afe23"></a>
@@ -434,8 +434,8 @@ Static Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad1cdc6974a04a37e2bbc51d1fe48bf7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1cdc6974a04a37e2bbc51d1fe48bf7a">&#9670;&nbsp;</a></span>bind() <span class="overload">[1/4]</span></h2>
+<a id="adbbae84bee8435e090ede810db90a80d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbbae84bee8435e090ede810db90a80d">&#9670;&nbsp;</a></span>bind() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,7 +449,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">static std::unique_ptr&lt;T&gt; BPMN::Model::bind </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; T &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
+          <td class="paramname"><em>baseElement</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -474,8 +474,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aaee63af147a02b20ad2488b6cd298cd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaee63af147a02b20ad2488b6cd298cd9">&#9670;&nbsp;</a></span>bind() <span class="overload">[2/4]</span></h2>
+<a id="a2cc263efa6b7ef2b9fcd0ef4dc9c3ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc263efa6b7ef2b9fcd0ef4dc9c3ba8">&#9670;&nbsp;</a></span>bind() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -489,7 +489,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">static std::unique_ptr&lt;T&gt; BPMN::Model::bind </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; T &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
+          <td class="paramname"><em>baseElement</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -510,12 +510,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00284">284</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00287">287</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
-<a id="ac76e0354135da60cb6034e0de1fbd2f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac76e0354135da60cb6034e0de1fbd2f0">&#9670;&nbsp;</a></span>bind() <span class="overload">[3/4]</span></h2>
+<a id="a5497bd7d0a98f8292920ad0eb5c78259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5497bd7d0a98f8292920ad0eb5c78259">&#9670;&nbsp;</a></span>bind() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -529,7 +529,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">static std::unique_ptr&lt;T&gt; BPMN::Model::bind </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
+          <td class="paramname"><em>baseElement</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -550,12 +550,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00277">277</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00279">279</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
-<a id="a93a899a7f8f40d2ff99cdd7d428b55e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93a899a7f8f40d2ff99cdd7d428b55e4">&#9670;&nbsp;</a></span>bind() <span class="overload">[4/4]</span></h2>
+<a id="a26e0fb361396cc6cb062a589f0e53e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26e0fb361396cc6cb062a589f0e53e87">&#9670;&nbsp;</a></span>bind() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,7 +569,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">static std::unique_ptr&lt;T&gt; BPMN::Model::bind </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
+          <td class="paramname"><em>baseElement</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -590,7 +590,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00270">270</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00271">271</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
