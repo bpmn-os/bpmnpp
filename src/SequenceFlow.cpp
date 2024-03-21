@@ -5,7 +5,8 @@
 using namespace BPMN;
 
 SequenceFlow::SequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope)
-  : element(sequenceFlow)
+  : BaseElement(sequenceFlow)
+  , element(sequenceFlow)
   , source(findNode(sequenceFlow->sourceRef.value.value,scope))
   , target(findNode(sequenceFlow->targetRef.value.value,scope))
 {

@@ -7,12 +7,14 @@
 
 namespace BPMN {
 
+class BaseElement;
+
 /**
  * @brief Base class for extension elements that may be provided for a BPMN element.
  */
 class ExtensionElements {
 public:
-  ExtensionElements(XML::bpmn::tBaseElement* baseElement);
+  ExtensionElements(XML::bpmn::tBaseElement* element);
   virtual ~ExtensionElements();
 
   /**
@@ -60,14 +62,14 @@ public:
   /**
    * @brief Returns the @ref element if given or a `nullptr` otherwise.
    **/
-  XML::bpmn::tExtensionElements* getExtensionElements(XML::bpmn::tBaseElement* baseElement);
+  XML::bpmn::tExtensionElements* getExtensionElements(XML::bpmn::tBaseElement* element);
 
   /**
    * @brief Returns a vector of elements of type T embedded within a container of type T.
    **/
   template<class C, class T> std::vector< std::reference_wrapper<T> > get() {
-    if ( element ) {
-      if ( auto container = element->template getOptionalChild<C>(); container.has_value() ) {
+   if ( element ) {
+       if ( auto container = element->template getOptionalChild<C>(); container.has_value() ) {
         return container->get().template getChildren<T>();
       }
     }
@@ -75,6 +77,11 @@ public:
   }
 
   XML::bpmn::tExtensionElements* element;
+
+  /**
+   * @brief Reference to the base element the extension elements are bound to.
+   */
+  BaseElement* baseElement;
 
 };
 

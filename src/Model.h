@@ -258,32 +258,36 @@ protected:
   virtual void createLinks(Scope* scope);
   virtual void createMessageFlows();
 
-  /// Binds the extension element to the given node
+  /// Binds the extension elements to the given baseElement
   template< typename T>
-  static std::unique_ptr<T> bind(std::unique_ptr<T>&& node, std::unique_ptr<ExtensionElements>&& extensionElements) {
-    node->extensionElements = std::move(extensionElements);
-    return std::move(node);
+  static std::unique_ptr<T> bind(std::unique_ptr<T>&& baseElement, std::unique_ptr<ExtensionElements>&& extensionElements) {
+    baseElement->extensionElements = std::move(extensionElements);
+    baseElement->extensionElements->baseElement = baseElement.get();
+    return std::move(baseElement);
   }
 
-  /// Binds the extension element to the given node
+  /// Binds the extension elements to the given baseElement
   template< typename T>
-  static std::unique_ptr<T> bind(std::unique_ptr<T>& node, std::unique_ptr<ExtensionElements>& extensionElements) {
-    node->extensionElements = std::move(extensionElements);
-    return std::move(node);
+  static std::unique_ptr<T> bind(std::unique_ptr<T>& baseElement, std::unique_ptr<ExtensionElements>& extensionElements) {
+    baseElement->extensionElements = std::move(extensionElements);
+    baseElement->extensionElements->baseElement = baseElement.get();
+    return std::move(baseElement);
   }
 
-  /// Binds the extension element to the given node
+  /// Binds the extension elements to the given baseElement
   template< typename T>
-  static std::unique_ptr<T> bind(std::unique_ptr<T>& node, std::unique_ptr<ExtensionElements>&& extensionElements) {
-    node->extensionElements = std::move(extensionElements);
-    return std::move(node);
+  static std::unique_ptr<T> bind(std::unique_ptr<T>& baseElement, std::unique_ptr<ExtensionElements>&& extensionElements) {
+    baseElement->extensionElements = std::move(extensionElements);
+    baseElement->extensionElements->baseElement = baseElement.get();
+    return std::move(baseElement);
   }
 
-  /// Binds the extension element to the given node
+  /// Binds the extension elements to the given baseElement
   template< typename T>
-  static std::unique_ptr<T> bind(std::unique_ptr<T>&& node, std::unique_ptr<ExtensionElements>& extensionElements) {
-    node->extensionElements = std::move(extensionElements);
-    return std::move(node);
+  static std::unique_ptr<T> bind(std::unique_ptr<T>&& baseElement, std::unique_ptr<ExtensionElements>& extensionElements) {
+    baseElement->extensionElements = std::move(extensionElements);
+    baseElement->extensionElements->baseElement = baseElement.get();
+    return std::move(baseElement);
   }
 
 

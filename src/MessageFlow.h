@@ -2,7 +2,7 @@
 #define BPMN_MessageFlow_H
 
 #include "xml/bpmn/tMessageFlow.h"
-#include "ExtensionElements.h"
+#include "BaseElement.h"
 
 namespace BPMN {
 
@@ -18,24 +18,17 @@ class FlowNode;
  * The class provides access to the underlying @ref XML::bpmn::tMessageFlow element and the source
  * and target node.
  */
-class MessageFlow {
+class MessageFlow : public BaseElement {
 public:
   /// @brief Constructs a MessageFlow object based on a @ref XML::bpmn::tMessageFlow element.
-	MessageFlow(XML::bpmn::tMessageFlow* messageFlow);
-
-  virtual ~MessageFlow() = default;
+  MessageFlow(XML::bpmn::tMessageFlow* messageFlow);
 
   XML::bpmn::tMessageFlow* element;
 
-  /// @brief Id of message flow
-  std::string id;
   /// @brief Reference to the source node of the message flow.
   std::pair<Process*, FlowNode*> source;
   /// @brief Reference to the target node of the message flow.
   std::pair<Process*, FlowNode*> target;
-
-  /// @brief BPMN extension elements provided for the message flow.
-  std::unique_ptr<ExtensionElements> extensionElements;
 protected:
   friend class Model;
   void initialize(std::vector< std::unique_ptr<Process> >& processes, std::unordered_map<std::string,std::string>& participantMap);

@@ -7,11 +7,11 @@
 using namespace BPMN;
 
 MessageFlow::MessageFlow(XML::bpmn::tMessageFlow* messageFlow)
-  : element(messageFlow)
+  : BaseElement(messageFlow)
+  , element(messageFlow)
   , source( {nullptr,nullptr} )
   , target( {nullptr,nullptr} )
 {
-  id = messageFlow->id.has_value() ? (std::string)messageFlow->id->get().value : "";
 }
 
 void MessageFlow::initialize(std::vector< std::unique_ptr<Process> >& processes, std::unordered_map<std::string,std::string>& participantMap) {

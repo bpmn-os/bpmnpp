@@ -2,7 +2,7 @@
 #define BPMN_SequenceFlow_H
 
 #include "xml/bpmn/tSequenceFlow.h"
-#include "ExtensionElements.h"
+#include "BaseElement.h"
 
 namespace BPMN {
 
@@ -16,24 +16,18 @@ class FlowNode;
  * The class provides access to the underlying @ref XML::bpmn::tSequenceFlow element
  * and the source and target node.
  */
-class SequenceFlow {
+class SequenceFlow : public BaseElement {
 public:
   //// @brief Constructs a SequenceFlow object based on a @ref XML::bpmn::tSequenceFlow element and the parent scope.
-	SequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope);
-
-  virtual ~SequenceFlow() = default;
+  SequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope);
 
   XML::bpmn::tSequenceFlow* element;
 
-  /// @brief Id of sequence flow
-  std::string id;
   /// @brief Reference to the source node of the sequence flow.
   FlowNode* source;
   /// @brief Reference to the target node of the sequence flow.
   FlowNode* target;
 
-  /// @brief BPMN extension elements provided for the sequence flow.
-  std::unique_ptr<ExtensionElements> extensionElements;
 protected:
   FlowNode* findNode(std::string& id, Scope* scope);
 };

@@ -4,10 +4,8 @@
 using namespace BPMN;
 
 Node::Node(XML::bpmn::tBaseElement* element)
-  : element(element)
-  , extensionElements(std::make_unique<ExtensionElements>(element))
+  : BaseElement(element)
 {
-  id = element->id.has_value() ? (std::string)element->id->get().value : "";
 }
 
 Node* Node::find(std::function<bool(Node*)> condition) {
