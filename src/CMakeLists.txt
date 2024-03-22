@@ -8,6 +8,7 @@ list(PREPEND bpmn_SOURCES
 )
 
 list(APPEND bpmn_SOURCES
+  Element.cpp
   BaseElement.cpp
   ExtensionElements.cpp
   Node.cpp
@@ -80,6 +81,7 @@ list(PREPEND bpmn_HEADERS
 )
 
 list(APPEND bpmn_HEADERS
+  Element.h
   BaseElement.h
   ExtensionElements.h
   Node.h
