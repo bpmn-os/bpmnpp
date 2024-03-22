@@ -17,6 +17,7 @@ var namespaceBPMN =
     [ "ConditionalBoundaryEvent", "classBPMN_1_1ConditionalBoundaryEvent.html", "classBPMN_1_1ConditionalBoundaryEvent" ],
     [ "ConditionalCatchEvent", "classBPMN_1_1ConditionalCatchEvent.html", "classBPMN_1_1ConditionalCatchEvent" ],
     [ "ConditionalStartEvent", "classBPMN_1_1ConditionalStartEvent.html", "classBPMN_1_1ConditionalStartEvent" ],
+    [ "Element", "classBPMN_1_1Element.html", "classBPMN_1_1Element" ],
     [ "ErrorBoundaryEvent", "classBPMN_1_1ErrorBoundaryEvent.html", "classBPMN_1_1ErrorBoundaryEvent" ],
     [ "ErrorEndEvent", "classBPMN_1_1ErrorEndEvent.html", "classBPMN_1_1ErrorEndEvent" ],
     [ "ErrorStartEvent", "classBPMN_1_1ErrorStartEvent.html", "classBPMN_1_1ErrorStartEvent" ],

@@ -69,6 +69,10 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "ConditionalStartEvent.h", "ConditionalStartEvent_8h.html", [
       [ "ConditionalStartEvent", "classBPMN_1_1ConditionalStartEvent.html", "classBPMN_1_1ConditionalStartEvent" ]
     ] ],
+    [ "Element.cpp", "Element_8cpp.html", null ],
+    [ "Element.h", "Element_8h.html", [
+      [ "Element", "classBPMN_1_1Element.html", "classBPMN_1_1Element" ]
+    ] ],
     [ "ErrorBoundaryEvent.cpp", "ErrorBoundaryEvent_8cpp.html", null ],
     [ "ErrorBoundaryEvent.h", "ErrorBoundaryEvent_8h.html", [
       [ "ErrorBoundaryEvent", "classBPMN_1_1ErrorBoundaryEvent.html", "classBPMN_1_1ErrorBoundaryEvent" ]

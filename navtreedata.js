@@ -43,8 +43,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Activity_8cpp.html",
-"SignalCatchEvent_8h.html",
-"classBPMN_1_1EventBasedGateway.html#a2bf2a0e9b454c55aa5dcb5aa4698697b",
+"SignalBoundaryEvent_8h.html",
+"classBPMN_1_1Event.html",
 "classBPMN_1_1UntypedEndEvent.html#abbc1efc9380574314e84888ccd757194",
 "classXML_1_1bpmn_1_1outputSet.html",
 "classXML_1_1bpmn_1_1tConversationNode.html#ac92b8e3504f11db8644ab3d02ead6ef5",
