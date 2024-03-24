@@ -58,6 +58,7 @@
 #include "TimerBoundaryEvent.h"
 #include "SequenceFlow.h"
 #include "MessageFlow.h"
+#include "DataObject.h"
 #include <memory>
 #include <vector>
 #include <string>
@@ -248,9 +249,11 @@ protected:
   virtual std::unique_ptr<FlowNode> createComplexGateway(XML::bpmn::tComplexGateway* complexGateway, Scope* parent);
 
   virtual std::unique_ptr<SequenceFlow> createSequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope);
+  virtual std::unique_ptr<DataObject> createDataObject(XML::bpmn::tDataObject* dataObject, BPMN::Scope* scope);
   virtual std::unique_ptr<MessageFlow> createMessageFlow(XML::bpmn::tMessageFlow* messageFlow);
   virtual void createChildNodes(Scope* scope);
   virtual void createSequenceFlows(Scope* scope);
+  virtual void createDataObjects(Scope* scope);
   virtual void createNestedReferences(Scope* scope);
   virtual void createFlowReferences(FlowNode* flowNode);
   virtual void createCompensations(Scope* scope);

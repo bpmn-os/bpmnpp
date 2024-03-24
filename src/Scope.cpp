@@ -43,3 +43,7 @@ void Scope::add(std::unique_ptr<SequenceFlow> sequenceFlow) {
   sequenceFlows.push_back(std::move(sequenceFlow));
 }
 
+void Scope::add(std::unique_ptr<DataObject> dataObject) {
+  dataObjects.push_back(std::move(dataObject));
+}
+

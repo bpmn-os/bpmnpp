@@ -5,6 +5,7 @@
 #include <vector>
 #include <optional>
 #include "Node.h"
+#include "DataObject.h"
 
 namespace BPMN {
 
@@ -43,12 +44,16 @@ public:
   /// @brief Vector containing pointers to all compensation activities within the scope.
   std::vector< Activity* > compensationActivities;
 
-  /// @brief Pointer to compensation  event subprocess of the scope.
+  /// @brief Pointer to compensation event subprocess of the scope.
   EventSubProcess* compensationEventSubProcess;
+
+  /// @brief Vector containing all data objects within the scope.
+  std::vector< std::unique_ptr<DataObject> > dataObjects;
 
 protected:
   void add(std::unique_ptr<Node> node);
   void add(std::unique_ptr<SequenceFlow> sequenceFlow);
+  void add(std::unique_ptr<DataObject> dataObject);
 };
 
 } // namespace BPMN

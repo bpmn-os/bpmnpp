@@ -11,6 +11,7 @@ list(APPEND bpmn_SOURCES
   Element.cpp
   BaseElement.cpp
   ExtensionElements.cpp
+  DataObject.cpp
   Node.cpp
   Scope.cpp
   ChildNode.cpp
@@ -84,6 +85,7 @@ list(APPEND bpmn_HEADERS
   Element.h
   BaseElement.h
   ExtensionElements.h
+  DataObject.h
   Node.h
   Scope.h
   ChildNode.h
