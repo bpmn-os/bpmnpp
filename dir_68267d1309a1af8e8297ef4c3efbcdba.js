@@ -69,6 +69,10 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "ConditionalStartEvent.h", "ConditionalStartEvent_8h.html", [
       [ "ConditionalStartEvent", "classBPMN_1_1ConditionalStartEvent.html", "classBPMN_1_1ConditionalStartEvent" ]
     ] ],
+    [ "DataObject.cpp", "DataObject_8cpp.html", null ],
+    [ "DataObject.h", "DataObject_8h.html", [
+      [ "DataObject", "classBPMN_1_1DataObject.html", "classBPMN_1_1DataObject" ]
+    ] ],
     [ "Element.cpp", "Element_8cpp.html", null ],
     [ "Element.h", "Element_8h.html", [
       [ "Element", "classBPMN_1_1Element.html", "classBPMN_1_1Element" ]

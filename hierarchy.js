@@ -3,6 +3,7 @@ var hierarchy =
     [ "XML::Attribute", "structXML_1_1Attribute.html", null ],
     [ "BPMN::Element", "classBPMN_1_1Element.html", [
       [ "BPMN::BaseElement", "classBPMN_1_1BaseElement.html", [
+        [ "BPMN::DataObject", "classBPMN_1_1DataObject.html", null ],
         [ "BPMN::MessageFlow", "classBPMN_1_1MessageFlow.html", null ],
         [ "BPMN::Node", "classBPMN_1_1Node.html", [
           [ "BPMN::ChildNode", "classBPMN_1_1ChildNode.html", [
