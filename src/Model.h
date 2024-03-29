@@ -253,7 +253,6 @@ protected:
   virtual std::unique_ptr<MessageFlow> createMessageFlow(XML::bpmn::tMessageFlow* messageFlow);
   virtual void createChildNodes(Scope* scope);
   virtual void createSequenceFlows(Scope* scope);
-  virtual void createDataObjects(Scope* scope);
   virtual void createNestedReferences(Scope* scope);
   virtual void createFlowReferences(FlowNode* flowNode);
   virtual void createCompensations(Scope* scope);

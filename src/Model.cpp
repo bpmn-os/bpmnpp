@@ -32,7 +32,6 @@ void Model::readBPMNFile(const std::string& filename)
   for ( auto& process : processes ) {
     createChildNodes(process.get());
     createSequenceFlows(process.get());
-    createDataObjects(process.get());
     createNestedReferences(process.get());
     createCompensations(process.get());
   }
@@ -492,6 +491,11 @@ std::unique_ptr<MessageFlow> Model::createMessageFlow(XML::bpmn::tMessageFlow* m
 
 
 void Model::createChildNodes(Scope* scope) {
+  // add data objects within scope of the node
+  for (XML::bpmn::tDataObject& dataObject: scope->element->getChildren<XML::bpmn::tDataObject>() ) {
+    scope->add(createDataObject(&dataObject,scope));
+  }
+
   // add flow nodes (except boundary events)
   for (XML::bpmn::tFlowNode& flowNode : scope->element->getChildren<XML::bpmn::tFlowNode>() ) {
     if ( auto subProcess = flowNode.is<XML::bpmn::tSubProcess>();
@@ -512,12 +516,12 @@ void Model::createChildNodes(Scope* scope) {
       scope->add(createBoundaryEvent(boundaryEvent,scope));
     }
   }
+
   // recurse
   for ( auto& childNode: scope->childNodes ) {
     if ( auto childScope = childNode->represents<Scope>() ) {
       createChildNodes(childScope);
       createSequenceFlows(childScope);
-      createDataObjects(childScope);
     }
   }
 }
@@ -531,19 +535,6 @@ void Model::createSequenceFlows(Scope* scope) {
   for ( auto& childNode: scope->childNodes ) {
     if ( auto scope = childNode->represents<Scope>() ) {
       createSequenceFlows(scope);
-    }
-  }
-}
-
-void Model::createDataObjects(Scope* scope) {
-  // add data objects within scope of the node
-  for (XML::bpmn::tDataObject& dataObject: scope->element->getChildren<XML::bpmn::tDataObject>() ) {
-    scope->add(createDataObject(&dataObject,scope));
-  }
-  // recurse
-  for ( auto& childNode: scope->childNodes ) {
-    if ( auto scope = childNode->represents<Scope>() ) {
-      createDataObjects(scope);
     }
   }
 }
