@@ -22,7 +22,6 @@ var classBPMN_1_1Model =
     [ "createConditionalCatchEvent", "classBPMN_1_1Model.html#ad8d20b00595d29e1105f121ed2811ff1", null ],
     [ "createConditionalStartEvent", "classBPMN_1_1Model.html#af864ef6e952c47391aad376a3e92760e", null ],
     [ "createDataObject", "classBPMN_1_1Model.html#a7c29eef1682f2577e549e83d23660032", null ],
-    [ "createDataObjects", "classBPMN_1_1Model.html#a2351edb2eb313d85ee63ccf375c922da", null ],
     [ "createErrorBoundaryEvent", "classBPMN_1_1Model.html#a846a81c8d8f7ea6246425f19a25ab369", null ],
     [ "createErrorEndEvent", "classBPMN_1_1Model.html#a7debf9dae7ee1adf10677fcce5ce0d50", null ],
     [ "createErrorStartEvent", "classBPMN_1_1Model.html#aa06875453f8df3146d198b18440f6bc4", null ],
