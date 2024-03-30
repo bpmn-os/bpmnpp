@@ -30,7 +30,7 @@ make
 This creates a single header file `lib/bpmn++.h` and a library `lib/libbpmn++.a`.
 
 ## Install the library
-After library the program, it can be installed by
+After building the library, it can be installed by
 
 ```
 sudo make install
