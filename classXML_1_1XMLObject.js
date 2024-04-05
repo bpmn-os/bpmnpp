@@ -4,6 +4,7 @@ var classXML_1_1XMLObject =
     [ "XMLObject", "classXML_1_1XMLObject.html#a9eeeb5b43166e0659421a10baa61bf5e", null ],
     [ "find", "classXML_1_1XMLObject.html#a31a06f0577b385182938470cae6dddae", null ],
     [ "find", "classXML_1_1XMLObject.html#ac5684225eda56253c08007840680573e", null ],
+    [ "format", "classXML_1_1XMLObject.html#a5b7af0a6a90adf34e78843ed7acec90f", null ],
     [ "get", "classXML_1_1XMLObject.html#adf76f25d8d09d9e46b6594f8e51f14fa", null ],
     [ "get", "classXML_1_1XMLObject.html#a83b334f9c7ad89bb7037da74d1036880", null ],
     [ "getChildren", "classXML_1_1XMLObject.html#aded470ce68062e69e42e21d30051b1e5", null ],

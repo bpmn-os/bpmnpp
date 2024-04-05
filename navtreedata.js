@@ -46,14 +46,14 @@ var NAVTREEINDEX =
 "Shape_8cpp.html",
 "classBPMN_1_1EscalationBoundaryEvent.html#a2bf2a0e9b454c55aa5dcb5aa4698697b",
 "classBPMN_1_1TimerStartEvent.html#a2bf2a0e9b454c55aa5dcb5aa4698697b",
-"classXML_1_1bpmn_1_1messageEventDefinition.html",
-"classXML_1_1bpmn_1_1tConversationLink.html#a160c7c12e6a802608ff08dcfa1d8a601",
-"classXML_1_1bpmn_1_1tGlobalConversation.html",
-"classXML_1_1bpmn_1_1tReceiveTask.html#ab3082b0e6165a2c2e1aa500e6a3f61f2",
-"dataStoreReference_8cpp_source.html",
-"standardLoopCharacteristics_8h.html",
-"tError_8h_source.html",
-"tRendering_8cpp.html"
+"classXML_1_1bpmn_1_1manualTask.html#abdca91a05289ffbd0ae564f4ccd3546e",
+"classXML_1_1bpmn_1_1tConversationLink.html#a0bbc3a826b87bd4e5f7bdaedce36b31f",
+"classXML_1_1bpmn_1_1tGlobalChoreographyTask.html#ad89796353122ac1cd1b34c0416057bd3",
+"classXML_1_1bpmn_1_1tReceiveTask.html#a65c520e85adf546801d293f56b33a21f",
+"dataStoreReference_8cpp.html",
+"standardLoopCharacteristics_8cpp_source.html",
+"tError_8h.html",
+"tRelationship_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

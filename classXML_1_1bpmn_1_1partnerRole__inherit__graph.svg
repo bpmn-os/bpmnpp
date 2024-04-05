@@ -108,9 +108,9 @@
 <text text-anchor="start" x="18" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ find()</text>
 <text text-anchor="start" x="18" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ find()</text>
 <text text-anchor="start" x="18" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ stringify()</text>
-<text text-anchor="start" x="18" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRequiredChild()</text>
-<text text-anchor="start" x="18" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getOptionalChild()</text>
-<text text-anchor="start" x="18" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 6 more...</text>
+<text text-anchor="start" x="18" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ format()</text>
+<text text-anchor="start" x="18" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRequiredChild()</text>
+<text text-anchor="start" x="18" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 7 more...</text>
 <text text-anchor="start" x="18" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createFromStream()</text>
 <text text-anchor="start" x="18" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createFromString()</text>
 <text text-anchor="start" x="18" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createFromFile()</text>

@@ -192,6 +192,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8fd43b17e150338b0779d60e9a3b539a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXML_1_1XMLObject.html#a8fd43b17e150338b0779d60e9a3b539a">stringify</a> () const</td></tr>
 <tr class="memdesc:a8fd43b17e150338b0779d60e9a3b539a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the XMLObject and its children to a string representation.  <a href="classXML_1_1XMLObject.html#a8fd43b17e150338b0779d60e9a3b539a">More...</a><br /></td></tr>
 <tr class="separator:a8fd43b17e150338b0779d60e9a3b539a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7af0a6a90adf34e78843ed7acec90f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXML_1_1XMLObject.html#a5b7af0a6a90adf34e78843ed7acec90f">format</a> (std::string indentation=&quot;\t&quot;, unsigned int depth=0) const</td></tr>
+<tr class="memdesc:a5b7af0a6a90adf34e78843ed7acec90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates formated string representing the XMLObject including its children.  <a href="classXML_1_1XMLObject.html#a5b7af0a6a90adf34e78843ed7acec90f">More...</a><br /></td></tr>
+<tr class="separator:a5b7af0a6a90adf34e78843ed7acec90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d18c043f0ce52365e396079ae5f416d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a7d18c043f0ce52365e396079ae5f416d"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classXML_1_1XMLObject.html#a7d18c043f0ce52365e396079ae5f416d">getRequiredChild</a> ()</td></tr>
 <tr class="memdesc:a7d18c043f0ce52365e396079ae5f416d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a required child of type T.  <a href="classXML_1_1XMLObject.html#a7d18c043f0ce52365e396079ae5f416d">More...</a><br /></td></tr>
@@ -569,6 +572,37 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a5b7af0a6a90adf34e78843ed7acec90f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7af0a6a90adf34e78843ed7acec90f">&#9670;&nbsp;</a></span>format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string XML::XMLObject::format </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>indentation</em> = <code>&quot;\t&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>depth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A formated string representing the XMLObject. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="XMLObject_8cpp_source.html#l00210">210</a> of file <a class="el" href="XMLObject_8cpp_source.html">XMLObject.cpp</a>.</p>
+
+</div>
+</div>
 <a id="adf76f25d8d09d9e46b6594f8e51f14fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf76f25d8d09d9e46b6594f8e51f14fa">&#9670;&nbsp;</a></span>get() <span class="overload">[1/2]</span></h2>
 
@@ -667,7 +701,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A vector of references to the children of type T. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="XMLObject_8h_source.html#l00294">294</a> of file <a class="el" href="XMLObject_8h_source.html">XMLObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="XMLObject_8h_source.html#l00301">301</a> of file <a class="el" href="XMLObject_8h_source.html">XMLObject.h</a>.</p>
 
 </div>
 </div>
@@ -751,7 +785,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>An optional containing a reference to the optional child if found, or <code>std::nullopt</code> if the optional child is not found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="XMLObject_8h_source.html#l00280">280</a> of file <a class="el" href="XMLObject_8h_source.html">XMLObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="XMLObject_8h_source.html#l00287">287</a> of file <a class="el" href="XMLObject_8h_source.html">XMLObject.h</a>.</p>
 
 </div>
 </div>
@@ -847,7 +881,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="XMLObject_8h_source.html#l00265">265</a> of file <a class="el" href="XMLObject_8h_source.html">XMLObject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="XMLObject_8h_source.html#l00272">272</a> of file <a class="el" href="XMLObject_8h_source.html">XMLObject.h</a>.</p>
 
 </div>
 </div>
