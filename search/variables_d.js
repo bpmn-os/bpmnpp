@@ -9,5 +9,5 @@ var searchData=
   ['resourceref_2833',['resourceRef',['../classXML_1_1bpmn_1_1tResourceRole.html#a0d281197be925f997313f8e92e2175d9',1,'XML::bpmn::tResourceRole']]],
   ['resourcerole_2834',['resourceRole',['../classXML_1_1bpmn_1_1tActivity.html#a125eb5e4a05bb006749d3bf98513a097',1,'XML::bpmn::tActivity::resourceRole()'],['../classXML_1_1bpmn_1_1tGlobalTask.html#a9bc37bc1e53f2f8f502a400d0eeb7928',1,'XML::bpmn::tGlobalTask::resourceRole()'],['../classXML_1_1bpmn_1_1tProcess.html#a834d59278d32c2d7874fbca5f3aea472',1,'XML::bpmn::tProcess::resourceRole()']]],
   ['rootelement_2835',['rootElement',['../classXML_1_1bpmn_1_1tDefinitions.html#a2d5a150896c80b6323dae4c9f052b7a5',1,'XML::bpmn::tDefinitions']]],
-  ['roots_2836',['roots',['../classBPMN_1_1Model.html#a726b3195cc0868077a0c2333ddacc0a6',1,'BPMN::Model']]]
+  ['roots_2836',['roots',['../classBPMN_1_1Model.html#a98e88b54da28e46b2e9429eb8ea0f374',1,'BPMN::Model']]]
 ];

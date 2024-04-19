@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classXML_1_1bpmn_1_1tGlobalChoreographyTask.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,161,1],
 "classXML_1_1bpmn_1_1tGlobalChoreographyTask.html#ad89796353122ac1cd1b34c0416057bd3":[6,0,1,0,161,2],
 "classXML_1_1bpmn_1_1tGlobalConversation.html":[6,0,1,0,162],
 "classXML_1_1bpmn_1_1tGlobalConversation.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,162,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classXML_1_1bpmn_1_1tProperty.html#ae07e2e3013853f820fcea8558f9a2886":[6,0,1,0,203,6],
 "classXML_1_1bpmn_1_1tProperty.html#ae401b45f6c2b7b4f9f2b949bc5b6c617":[6,0,1,0,203,2],
 "classXML_1_1bpmn_1_1tReceiveTask.html":[6,0,1,0,204],
-"classXML_1_1bpmn_1_1tReceiveTask.html#a0e2249b715d9add9e0042d7bbce022ab":[6,0,1,0,204,3],
-"classXML_1_1bpmn_1_1tReceiveTask.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,204,1]
+"classXML_1_1bpmn_1_1tReceiveTask.html#a0e2249b715d9add9e0042d7bbce022ab":[6,0,1,0,204,3]
 };

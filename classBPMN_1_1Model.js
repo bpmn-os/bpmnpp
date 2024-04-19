@@ -50,6 +50,7 @@ var classBPMN_1_1Model =
     [ "createParallelGateway", "classBPMN_1_1Model.html#a1e792df269cacbfd5cb71c81545ef85f", null ],
     [ "createProcess", "classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb", null ],
     [ "createReceiveTask", "classBPMN_1_1Model.html#ac9604933647764008e50043c2adf654b", null ],
+    [ "createRoot", "classBPMN_1_1Model.html#aa6d3d1d835a89ac6c02ddfcbdee206db", null ],
     [ "createScriptTask", "classBPMN_1_1Model.html#aba8021af9dcc8ac379f9496e1da88316", null ],
     [ "createSendTask", "classBPMN_1_1Model.html#aaaa32f65b3430f36d61753c74af53821", null ],
     [ "createSequenceFlow", "classBPMN_1_1Model.html#ac8e9b7a2bf70f36a490a00e872cbb908", null ],
@@ -74,5 +75,5 @@ var classBPMN_1_1Model =
     [ "readBPMNFile", "classBPMN_1_1Model.html#a87a1b1319155d7425905a793dcf3085b", null ],
     [ "messageFlows", "classBPMN_1_1Model.html#a6fbd982974a432552f51a2caf34db480", null ],
     [ "processes", "classBPMN_1_1Model.html#a161464a851d7825e3ba1150e8dc2bbb4", null ],
-    [ "roots", "classBPMN_1_1Model.html#a726b3195cc0868077a0c2333ddacc0a6", null ]
+    [ "roots", "classBPMN_1_1Model.html#a98e88b54da28e46b2e9429eb8ea0f374", null ]
 ];
