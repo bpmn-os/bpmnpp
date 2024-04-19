@@ -23,9 +23,9 @@ Model::Model(const std::string& filename)
 
 void Model::readBPMNFile(const std::string& filename)
 {
-  roots.push_back( std::unique_ptr<XML::XMLObject>(XML::XMLObject::createFromFile(filename)) );
+  roots.push_back( createRoot(filename) );
 
-  for ( XML::bpmn::tProcess& process : (*roots.rbegin())->getChildren<XML::bpmn::tProcess>() ) {
+  for ( XML::bpmn::tProcess& process : roots.back()->getChildren<XML::bpmn::tProcess>() ) {
     processes.push_back(createProcess(&process));
   }
 
@@ -40,6 +40,10 @@ void Model::readBPMNFile(const std::string& filename)
   for ( auto& process : processes ) {
     createLinks(process.get());
   }
+}
+
+std::unique_ptr<XML::XMLObject> Model::createRoot(const std::string& filename) {
+  return std::unique_ptr<XML::XMLObject>(XML::XMLObject::createFromFile(filename));
 }
 
 std::unique_ptr<Process> Model::createProcess(XML::bpmn::tProcess* process) {

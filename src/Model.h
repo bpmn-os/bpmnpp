@@ -171,13 +171,15 @@ class Model {
 protected:
 	Model() {};
 public:
-	Model(const std::string& filename);
+  Model(const std::string& filename);
   virtual ~Model() = default;
-  std::vector<std::unique_ptr<XML::XMLObject> > roots;
+  std::vector< std::unique_ptr<XML::XMLObject> > roots;
   std::vector< std::unique_ptr<Process> > processes;
   std::vector< std::unique_ptr<MessageFlow> > messageFlows;
 protected:
   virtual void readBPMNFile(const std::string& filename);
+  virtual std::unique_ptr<XML::XMLObject> createRoot(const std::string& filename);
+
   virtual std::unique_ptr<Process> createProcess(XML::bpmn::tProcess* process);
   virtual std::unique_ptr<EventSubProcess> createEventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent);
   virtual std::unique_ptr<FlowNode> createFlowNode(XML::bpmn::tFlowNode* flowNode, Scope* parent);
@@ -251,6 +253,7 @@ protected:
   virtual std::unique_ptr<SequenceFlow> createSequenceFlow(XML::bpmn::tSequenceFlow* sequenceFlow, Scope* scope);
   virtual std::unique_ptr<DataObject> createDataObject(XML::bpmn::tDataObject* dataObject, BPMN::Scope* scope);
   virtual std::unique_ptr<MessageFlow> createMessageFlow(XML::bpmn::tMessageFlow* messageFlow);
+
   virtual void createChildNodes(Scope* scope);
   virtual void createSequenceFlows(Scope* scope);
   virtual void createNestedReferences(Scope* scope);
