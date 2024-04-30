@@ -57,7 +57,7 @@ list(APPEND bpmn_SOURCES
   Activity.cpp
   SubProcess.cpp
   Task.cpp
-  UntypedTask.cpp
+  AbstractTask.cpp
   BusinessRuleTask.cpp
   ManualTask.cpp
   ReceiveTask.cpp
@@ -131,7 +131,7 @@ list(APPEND bpmn_HEADERS
   Activity.h
   SubProcess.h
   Task.h
-  UntypedTask.h
+  AbstractTask.h
   BusinessRuleTask.h
   ManualTask.h
   ReceiveTask.h

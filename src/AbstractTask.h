@@ -1,5 +1,5 @@
-#ifndef BPMN_UntypedTask_H
-#define BPMN_UntypedTask_H
+#ifndef BPMN_AbstractTask_H
+#define BPMN_AbstractTask_H
 
 #include <memory>
 #include <vector>
@@ -9,12 +9,12 @@
 
 namespace BPMN {
 
-class UntypedTask : public Task {
+class AbstractTask : public Task {
   friend class Model;
 public:
-  UntypedTask(XML::bpmn::tTask* task, Scope* parent);
+  AbstractTask(XML::bpmn::tTask* task, Scope* parent);
 };
 
 } // namespace BPMN
 
-#endif // BPMN_UntypedTask_H
+#endif // BPMN_AbstractTask_H

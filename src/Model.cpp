@@ -129,11 +129,11 @@ std::unique_ptr<FlowNode> Model::createTask(XML::bpmn::tTask* task, Scope* paren
     return std::make_unique<BusinessRuleTask>(businessRuleTask,parent);
   }
 
-  return createUntypedTask(task,parent);
+  return createAbstractTask(task,parent);
 }
 
-std::unique_ptr<FlowNode> Model::createUntypedTask(XML::bpmn::tTask* task, Scope* parent) {
-  return std::make_unique<UntypedTask>(task,parent);
+std::unique_ptr<FlowNode> Model::createAbstractTask(XML::bpmn::tTask* task, Scope* parent) {
+  return std::make_unique<AbstractTask>(task,parent);
 }
 
 std::unique_ptr<FlowNode> Model::createSendTask(XML::bpmn::tSendTask* sendTask, Scope* parent) {

@@ -10,7 +10,7 @@
 #include "AdHocSubProcess.h"
 #include "Transaction.h"
 #include "Task.h"
-#include "UntypedTask.h"
+#include "AbstractTask.h"
 #include "SendTask.h"
 #include "ReceiveTask.h"
 #include "UserTask.h"
@@ -192,7 +192,7 @@ protected:
   virtual std::unique_ptr<FlowNode> createTransaction(XML::bpmn::tTransaction* transaction, Scope* parent);
   virtual std::unique_ptr<FlowNode> createTask(XML::bpmn::tTask* task, Scope* parent);
 
-  virtual std::unique_ptr<FlowNode> createUntypedTask(XML::bpmn::tTask* task, Scope* parent);
+  virtual std::unique_ptr<FlowNode> createAbstractTask(XML::bpmn::tTask* task, Scope* parent);
   virtual std::unique_ptr<FlowNode> createSendTask(XML::bpmn::tSendTask* sendTask, Scope* parent);
   virtual std::unique_ptr<FlowNode> createReceiveTask(XML::bpmn::tReceiveTask* receiveTask, Scope* parent);
   virtual std::unique_ptr<FlowNode> createUserTask(XML::bpmn::tUserTask* userTask, Scope* parent);
