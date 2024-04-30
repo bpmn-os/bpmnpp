@@ -16,12 +16,12 @@ var hierarchy =
                   [ "BPMN::Transaction", "classBPMN_1_1Transaction.html", null ]
                 ] ],
                 [ "BPMN::Task", "classBPMN_1_1Task.html", [
+                  [ "BPMN::AbstractTask", "classBPMN_1_1AbstractTask.html", null ],
                   [ "BPMN::BusinessRuleTask", "classBPMN_1_1BusinessRuleTask.html", null ],
                   [ "BPMN::ManualTask", "classBPMN_1_1ManualTask.html", null ],
                   [ "BPMN::ReceiveTask", "classBPMN_1_1ReceiveTask.html", null ],
                   [ "BPMN::ScriptTask", "classBPMN_1_1ScriptTask.html", null ],
                   [ "BPMN::SendTask", "classBPMN_1_1SendTask.html", null ],
-                  [ "BPMN::UntypedTask", "classBPMN_1_1UntypedTask.html", null ],
                   [ "BPMN::UserTask", "classBPMN_1_1UserTask.html", null ]
                 ] ]
               ] ],

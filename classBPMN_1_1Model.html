@@ -226,8 +226,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a5f09a56e3624930b8d4123ca1444fbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0687836eb6c7fab3be4442de2e1400d"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#af0687836eb6c7fab3be4442de2e1400d">createTask</a> (<a class="el" href="classXML_1_1bpmn_1_1tTask.html">XML::bpmn::tTask</a> *task, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:af0687836eb6c7fab3be4442de2e1400d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a8b6b7a700c974acb31de8f4366213"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a16a8b6b7a700c974acb31de8f4366213">createUntypedTask</a> (<a class="el" href="classXML_1_1bpmn_1_1tTask.html">XML::bpmn::tTask</a> *task, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
-<tr class="separator:a16a8b6b7a700c974acb31de8f4366213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5749327c56d35ef1b42f91f0f9f746"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#aad5749327c56d35ef1b42f91f0f9f746">createAbstractTask</a> (<a class="el" href="classXML_1_1bpmn_1_1tTask.html">XML::bpmn::tTask</a> *task, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
+<tr class="separator:aad5749327c56d35ef1b42f91f0f9f746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaa32f65b3430f36d61753c74af53821"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#aaaa32f65b3430f36d61753c74af53821">createSendTask</a> (<a class="el" href="classXML_1_1bpmn_1_1tSendTask.html">XML::bpmn::tSendTask</a> *sendTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
 <tr class="separator:aaaa32f65b3430f36d61753c74af53821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9604933647764008e50043c2adf654b"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ac9604933647764008e50043c2adf654b">createReceiveTask</a> (<a class="el" href="classXML_1_1bpmn_1_1tReceiveTask.html">XML::bpmn::tReceiveTask</a> *receiveTask, <a class="el" href="classBPMN_1_1Scope.html">Scope</a> *parent)</td></tr>
@@ -595,6 +595,44 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00276">276</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
+<a id="aad5749327c56d35ef1b42f91f0f9f746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad5749327c56d35ef1b42f91f0f9f746">&#9670;&nbsp;</a></span>createAbstractTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createAbstractTask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classXML_1_1bpmn_1_1tTask.html">XML::bpmn::tTask</a> *&#160;</td>
+          <td class="paramname"><em>task</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00135">135</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -3036,44 +3074,6 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00362">362</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a16a8b6b7a700c974acb31de8f4366213"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16a8b6b7a700c974acb31de8f4366213">&#9670;&nbsp;</a></span>createUntypedTask()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classBPMN_1_1FlowNode.html">FlowNode</a> &gt; Model::createUntypedTask </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classXML_1_1bpmn_1_1tTask.html">XML::bpmn::tTask</a> *&#160;</td>
-          <td class="paramname"><em>task</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classBPMN_1_1Scope.html">Scope</a> *&#160;</td>
-          <td class="paramname"><em>parent</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00135">135</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>

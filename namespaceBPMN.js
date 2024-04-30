@@ -1,5 +1,6 @@
 var namespaceBPMN =
 [
+    [ "AbstractTask", "classBPMN_1_1AbstractTask.html", "classBPMN_1_1AbstractTask" ],
     [ "Activity", "classBPMN_1_1Activity.html", "classBPMN_1_1Activity" ],
     [ "AdHocSubProcess", "classBPMN_1_1AdHocSubProcess.html", "classBPMN_1_1AdHocSubProcess" ],
     [ "BaseElement", "classBPMN_1_1BaseElement.html", "classBPMN_1_1BaseElement" ],
@@ -65,6 +66,5 @@ var namespaceBPMN =
     [ "TypedStartEvent", "classBPMN_1_1TypedStartEvent.html", "classBPMN_1_1TypedStartEvent" ],
     [ "UntypedEndEvent", "classBPMN_1_1UntypedEndEvent.html", "classBPMN_1_1UntypedEndEvent" ],
     [ "UntypedStartEvent", "classBPMN_1_1UntypedStartEvent.html", "classBPMN_1_1UntypedStartEvent" ],
-    [ "UntypedTask", "classBPMN_1_1UntypedTask.html", "classBPMN_1_1UntypedTask" ],
     [ "UserTask", "classBPMN_1_1UserTask.html", "classBPMN_1_1UserTask" ]
 ];

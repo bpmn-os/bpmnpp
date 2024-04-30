@@ -1,6 +1,10 @@
 var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
     [ "xml", "dir_c43b215a2ade73e6562bd37d8a11c12a.html", "dir_c43b215a2ade73e6562bd37d8a11c12a" ],
+    [ "AbstractTask.cpp", "AbstractTask_8cpp.html", null ],
+    [ "AbstractTask.h", "AbstractTask_8h.html", [
+      [ "AbstractTask", "classBPMN_1_1AbstractTask.html", "classBPMN_1_1AbstractTask" ]
+    ] ],
     [ "Activity.cpp", "Activity_8cpp.html", null ],
     [ "Activity.h", "Activity_8h.html", [
       [ "Activity", "classBPMN_1_1Activity.html", "classBPMN_1_1Activity" ]
@@ -260,10 +264,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "UntypedStartEvent.cpp", "UntypedStartEvent_8cpp.html", null ],
     [ "UntypedStartEvent.h", "UntypedStartEvent_8h.html", [
       [ "UntypedStartEvent", "classBPMN_1_1UntypedStartEvent.html", "classBPMN_1_1UntypedStartEvent" ]
-    ] ],
-    [ "UntypedTask.cpp", "UntypedTask_8cpp.html", null ],
-    [ "UntypedTask.h", "UntypedTask_8h.html", [
-      [ "UntypedTask", "classBPMN_1_1UntypedTask.html", "classBPMN_1_1UntypedTask" ]
     ] ],
     [ "UserTask.cpp", "UserTask_8cpp.html", null ],
     [ "UserTask.h", "UserTask_8h.html", [

@@ -288,19 +288,19 @@
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="classBPMN_1_1Task.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="2592.5,-116.5 2592.5,-173.5 2666.5,-173.5 2666.5,-116.5 2592.5,-116.5"/>
-<text text-anchor="middle" x="2629.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::Task</text>
-<polyline fill="none" stroke="black" points="2592.5,-154.5 2666.5,-154.5 "/>
-<text text-anchor="start" x="2600.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
-<polyline fill="none" stroke="black" points="2592.5,-135.5 2666.5,-135.5 "/>
-<text text-anchor="start" x="2600.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Task()</text>
+<polygon fill="none" stroke="black" points="2587.5,-116.5 2587.5,-173.5 2661.5,-173.5 2661.5,-116.5 2587.5,-116.5"/>
+<text text-anchor="middle" x="2624.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::Task</text>
+<polyline fill="none" stroke="black" points="2587.5,-154.5 2661.5,-154.5 "/>
+<text text-anchor="start" x="2595.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<polyline fill="none" stroke="black" points="2587.5,-135.5 2661.5,-135.5 "/>
+<text text-anchor="start" x="2595.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Task()</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node12 -->
 <g id="edge11" class="edge">
 <title>Node7&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M2731.41,-317.93C2724.87,-308.72 2718.37,-299.2 2712.5,-290 2693.67,-260.48 2691.95,-251.35 2674.5,-221 2665.42,-205.2 2654.96,-187.74 2646.42,-173.64"/>
+<path fill="none" stroke="midnightblue" d="M2731.41,-317.93C2724.87,-308.72 2718.37,-299.2 2712.5,-290 2693.67,-260.48 2692.67,-250.93 2674.5,-221 2664.83,-205.08 2653.35,-187.76 2643.83,-173.77"/>
 <polygon fill="none" stroke="midnightblue" points="2728.74,-320.2 2737.41,-326.28 2734.42,-316.12 2728.74,-320.2"/>
 </g>
 <!-- Node11 -->
@@ -325,45 +325,64 @@
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="classBPMN_1_1BusinessRuleTask.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="2735,-6 2735,-63 2874,-63 2874,-6 2735,-6"/>
-<text text-anchor="middle" x="2804.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::BusinessRuleTask</text>
-<polyline fill="none" stroke="black" points="2735,-44 2874,-44 "/>
-<text text-anchor="start" x="2743" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
-<polyline fill="none" stroke="black" points="2735,-25 2874,-25 "/>
-<text text-anchor="start" x="2743" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ BusinessRuleTask()</text>
+<g id="a_node13"><a xlink:href="classBPMN_1_1AbstractTask.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="2601.5,-6 2601.5,-63 2715.5,-63 2715.5,-6 2601.5,-6"/>
+<text text-anchor="middle" x="2658.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::AbstractTask</text>
+<polyline fill="none" stroke="black" points="2601.5,-44 2715.5,-44 "/>
+<text text-anchor="middle" x="2658.5" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="2601.5,-25 2715.5,-25 "/>
+<text text-anchor="start" x="2609.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ AbstractTask()</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node13 -->
 <g id="edge12" class="edge">
 <title>Node12&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M2675.22,-115.66C2701.38,-99.44 2734.05,-79.18 2760,-63.09"/>
-<polygon fill="none" stroke="midnightblue" points="2673.27,-112.75 2666.61,-120.99 2676.96,-118.7 2673.27,-112.75"/>
+<path fill="none" stroke="midnightblue" d="M2636.17,-106.76C2640.66,-92.44 2645.69,-76.37 2649.85,-63.11"/>
+<polygon fill="none" stroke="midnightblue" points="2632.82,-105.75 2633.17,-116.34 2639.5,-107.84 2632.82,-105.75"/>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
-<g id="a_node14"><a xlink:href="classBPMN_1_1ManualTask.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="2892.5,-6 2892.5,-63 3002.5,-63 3002.5,-6 2892.5,-6"/>
-<text text-anchor="middle" x="2947.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::ManualTask</text>
-<polyline fill="none" stroke="black" points="2892.5,-44 3002.5,-44 "/>
-<text text-anchor="start" x="2900.5" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
-<polyline fill="none" stroke="black" points="2892.5,-25 3002.5,-25 "/>
-<text text-anchor="start" x="2900.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ ManualTask()</text>
+<g id="a_node14"><a xlink:href="classBPMN_1_1BusinessRuleTask.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="2734,-6 2734,-63 2873,-63 2873,-6 2734,-6"/>
+<text text-anchor="middle" x="2803.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::BusinessRuleTask</text>
+<polyline fill="none" stroke="black" points="2734,-44 2873,-44 "/>
+<text text-anchor="start" x="2742" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<polyline fill="none" stroke="black" points="2734,-25 2873,-25 "/>
+<text text-anchor="start" x="2742" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ BusinessRuleTask()</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node14 -->
 <g id="edge13" class="edge">
 <title>Node12&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M2676.53,-132.88C2728.01,-120.06 2812.56,-97.1 2882.5,-69 2886.98,-67.2 2891.56,-65.2 2896.11,-63.09"/>
-<polygon fill="none" stroke="midnightblue" points="2675.56,-129.51 2666.69,-135.31 2677.23,-136.31 2675.56,-129.51"/>
+<path fill="none" stroke="midnightblue" d="M2670.41,-116.17C2697.27,-99.89 2731.07,-79.41 2757.88,-63.15"/>
+<polygon fill="none" stroke="midnightblue" points="2668.33,-113.34 2661.59,-121.52 2671.95,-119.33 2668.33,-113.34"/>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<g id="a_node15"><a xlink:href="classBPMN_1_1ReceiveTask.html" target="_top" xlink:title=" ">
+<g id="a_node15"><a xlink:href="classBPMN_1_1ManualTask.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="2891.5,-6 2891.5,-63 3001.5,-63 3001.5,-6 2891.5,-6"/>
+<text text-anchor="middle" x="2946.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::ManualTask</text>
+<polyline fill="none" stroke="black" points="2891.5,-44 3001.5,-44 "/>
+<text text-anchor="start" x="2899.5" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<polyline fill="none" stroke="black" points="2891.5,-25 3001.5,-25 "/>
+<text text-anchor="start" x="2899.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ ManualTask()</text>
+</a>
+</g>
+</g>
+<!-- Node12&#45;&gt;Node15 -->
+<g id="edge14" class="edge">
+<title>Node12&#45;&gt;Node15</title>
+<path fill="none" stroke="midnightblue" d="M2671.84,-133.09C2724.1,-120.38 2810.28,-97.44 2881.5,-69 2885.98,-67.21 2890.56,-65.21 2895.12,-63.11"/>
+<polygon fill="none" stroke="midnightblue" points="2670.75,-129.75 2661.85,-135.49 2672.39,-136.55 2670.75,-129.75"/>
+</g>
+<!-- Node16 -->
+<g id="node16" class="node">
+<title>Node16</title>
+<g id="a_node16"><a xlink:href="classBPMN_1_1ReceiveTask.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="1785,-6 1785,-63 1898,-63 1898,-6 1785,-6"/>
 <text text-anchor="middle" x="1841.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::ReceiveTask</text>
 <polyline fill="none" stroke="black" points="1785,-44 1898,-44 "/>
@@ -373,16 +392,16 @@
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node15 -->
-<g id="edge14" class="edge">
-<title>Node12&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M2583.28,-119.44C2570.98,-113.84 2557.49,-108.52 2544.5,-105 2482.72,-88.28 2054.25,-52.61 1898.19,-40.02"/>
-<polygon fill="none" stroke="midnightblue" points="2581.89,-122.65 2592.43,-123.75 2584.87,-116.32 2581.89,-122.65"/>
+<!-- Node12&#45;&gt;Node16 -->
+<g id="edge15" class="edge">
+<title>Node12&#45;&gt;Node16</title>
+<path fill="none" stroke="midnightblue" d="M2578.14,-117.98C2567.38,-112.91 2555.77,-108.19 2544.5,-105 2482.92,-87.55 2054.33,-52.35 1898.21,-39.95"/>
+<polygon fill="none" stroke="midnightblue" points="2576.82,-121.23 2587.34,-122.49 2579.9,-114.95 2576.82,-121.23"/>
 </g>
-<!-- Node16 -->
-<g id="node16" class="node">
-<title>Node16</title>
-<g id="a_node16"><a xlink:href="classBPMN_1_1ScriptTask.html" target="_top" xlink:title=" ">
+<!-- Node17 -->
+<g id="node17" class="node">
+<title>Node17</title>
+<g id="a_node17"><a xlink:href="classBPMN_1_1ScriptTask.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="2368,-6 2368,-63 2469,-63 2469,-6 2368,-6"/>
 <text text-anchor="middle" x="2418.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::ScriptTask</text>
 <polyline fill="none" stroke="black" points="2368,-44 2469,-44 "/>
@@ -392,16 +411,16 @@
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node16 -->
-<g id="edge15" class="edge">
-<title>Node12&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M2583.27,-122.05C2552.97,-107.45 2512.61,-87.61 2477.5,-69 2473.96,-67.12 2470.32,-65.16 2466.67,-63.15"/>
-<polygon fill="none" stroke="midnightblue" points="2581.81,-125.23 2592.34,-126.41 2584.84,-118.92 2581.81,-125.23"/>
+<!-- Node12&#45;&gt;Node17 -->
+<g id="edge16" class="edge">
+<title>Node12&#45;&gt;Node17</title>
+<path fill="none" stroke="midnightblue" d="M2578.38,-120.83C2549.55,-106.21 2511.7,-86.79 2478.5,-69 2474.92,-67.08 2471.24,-65.09 2467.54,-63.06"/>
+<polygon fill="none" stroke="midnightblue" points="2576.91,-124 2587.41,-125.4 2580.07,-117.76 2576.91,-124"/>
 </g>
-<!-- Node17 -->
-<g id="node17" class="node">
-<title>Node17</title>
-<g id="a_node17"><a xlink:href="classBPMN_1_1SendTask.html" target="_top" xlink:title=" ">
+<!-- Node18 -->
+<g id="node18" class="node">
+<title>Node18</title>
+<g id="a_node18"><a xlink:href="classBPMN_1_1SendTask.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="2251.5,-6 2251.5,-63 2349.5,-63 2349.5,-6 2251.5,-6"/>
 <text text-anchor="middle" x="2300.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::SendTask</text>
 <polyline fill="none" stroke="black" points="2251.5,-44 2349.5,-44 "/>
@@ -411,49 +430,30 @@
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node17 -->
-<g id="edge16" class="edge">
-<title>Node12&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M2583.03,-120.26C2570.74,-114.65 2557.31,-109.11 2544.5,-105 2464.33,-79.26 2437.38,-98.46 2358.5,-69 2353.92,-67.29 2349.29,-65.24 2344.74,-63.01"/>
-<polygon fill="none" stroke="midnightblue" points="2581.65,-123.48 2592.19,-124.54 2584.61,-117.13 2581.65,-123.48"/>
-</g>
-<!-- Node18 -->
-<g id="node18" class="node">
-<title>Node18</title>
-<g id="a_node18"><a xlink:href="classBPMN_1_1UntypedTask.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="2487,-6 2487,-63 2602,-63 2602,-6 2487,-6"/>
-<text text-anchor="middle" x="2544.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::UntypedTask</text>
-<polyline fill="none" stroke="black" points="2487,-44 2602,-44 "/>
-<text text-anchor="middle" x="2544.5" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="2487,-25 2602,-25 "/>
-<text text-anchor="start" x="2495" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ UntypedTask()</text>
-</a>
-</g>
-</g>
 <!-- Node12&#45;&gt;Node18 -->
 <g id="edge17" class="edge">
 <title>Node12&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M2601.62,-108.41C2590.08,-93.69 2576.91,-76.88 2566.13,-63.11"/>
-<polygon fill="none" stroke="midnightblue" points="2598.91,-110.63 2607.83,-116.34 2604.42,-106.31 2598.91,-110.63"/>
+<path fill="none" stroke="midnightblue" d="M2577.9,-118.75C2567.15,-113.64 2555.61,-108.71 2544.5,-105 2464.64,-78.32 2437.38,-98.46 2358.5,-69 2353.92,-67.29 2349.29,-65.24 2344.74,-63.01"/>
+<polygon fill="none" stroke="midnightblue" points="2576.59,-122 2587.11,-123.25 2579.66,-115.71 2576.59,-122"/>
 </g>
 <!-- Node19 -->
 <g id="node19" class="node">
 <title>Node19</title>
 <g id="a_node19"><a xlink:href="classBPMN_1_1UserTask.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="2620.5,-6 2620.5,-63 2716.5,-63 2716.5,-6 2620.5,-6"/>
-<text text-anchor="middle" x="2668.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::UserTask</text>
-<polyline fill="none" stroke="black" points="2620.5,-44 2716.5,-44 "/>
-<text text-anchor="start" x="2628.5" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
-<polyline fill="none" stroke="black" points="2620.5,-25 2716.5,-25 "/>
-<text text-anchor="start" x="2628.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ UserTask()</text>
+<polygon fill="none" stroke="black" points="2487.5,-6 2487.5,-63 2583.5,-63 2583.5,-6 2487.5,-6"/>
+<text text-anchor="middle" x="2535.5" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">BPMN::UserTask</text>
+<polyline fill="none" stroke="black" points="2487.5,-44 2583.5,-44 "/>
+<text text-anchor="start" x="2495.5" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">+ element</text>
+<polyline fill="none" stroke="black" points="2487.5,-25 2583.5,-25 "/>
+<text text-anchor="start" x="2495.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ UserTask()</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node19 -->
 <g id="edge18" class="edge">
 <title>Node12&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M2642.88,-106.76C2648.03,-92.44 2653.81,-76.37 2658.58,-63.11"/>
-<polygon fill="none" stroke="midnightblue" points="2639.53,-105.75 2639.44,-116.34 2646.12,-108.11 2639.53,-105.75"/>
+<path fill="none" stroke="midnightblue" d="M2595.3,-108.41C2583.23,-93.69 2569.44,-76.88 2558.15,-63.11"/>
+<polygon fill="none" stroke="midnightblue" points="2592.76,-110.83 2601.81,-116.34 2598.18,-106.39 2592.76,-110.83"/>
 </g>
 <!-- Node21 -->
 <g id="node21" class="node">
@@ -750,9 +750,9 @@
 <path fill="none" stroke="midnightblue" d="M1163,-113.98C1197.02,-99.89 1237.66,-83.06 1272.57,-68.6"/>
 <polygon fill="none" stroke="midnightblue" points="1161.49,-110.81 1153.59,-117.87 1164.17,-117.28 1161.49,-110.81"/>
 </g>
-<!-- Node34&#45;&gt;Node15 -->
+<!-- Node34&#45;&gt;Node16 -->
 <g id="edge33" class="edge">
-<title>Node34&#45;&gt;Node15</title>
+<title>Node34&#45;&gt;Node16</title>
 <path fill="none" stroke="midnightblue" d="M1386.67,-112.44C1393.6,-109.66 1400.63,-107.1 1407.5,-105 1539.22,-64.73 1700.95,-46.69 1784.89,-39.56"/>
 <polygon fill="none" stroke="midnightblue" points="1385.18,-109.27 1377.31,-116.37 1387.89,-115.73 1385.18,-109.27"/>
 </g>
@@ -890,9 +890,9 @@
 <path fill="none" stroke="midnightblue" d="M1872.61,-223.2C1874.91,-222.39 1877.21,-221.65 1879.5,-221 2096.39,-159.43 2167.75,-243.46 2385.5,-185 2395.8,-182.24 2406.35,-178.13 2416.28,-173.6"/>
 <polygon fill="none" stroke="midnightblue" points="1871.23,-219.98 1863.2,-226.88 1873.79,-226.49 1871.23,-219.98"/>
 </g>
-<!-- Node51&#45;&gt;Node17 -->
+<!-- Node51&#45;&gt;Node18 -->
 <g id="edge45" class="edge">
-<title>Node51&#45;&gt;Node17</title>
+<title>Node51&#45;&gt;Node18</title>
 <path fill="none" stroke="midnightblue" d="M2300.5,-105.94C2300.5,-91.83 2300.5,-76.11 2300.5,-63.11"/>
 <polygon fill="none" stroke="midnightblue" points="2297,-106.34 2300.5,-116.34 2304,-106.34 2297,-106.34"/>
 </g>
