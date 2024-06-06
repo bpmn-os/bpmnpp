@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classBPMN_1_1TimerCatchEvent.html":[6,0,0,60],
 "classBPMN_1_1TimerCatchEvent.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,60,1],
 "classBPMN_1_1TimerCatchEvent.html#ae5b66b0632a8ea5821f0493660b135b3":[6,0,0,60,0],
 "classBPMN_1_1TimerStartEvent.html":[6,0,0,61],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classXML_1_1bpmn_1_1linkEventDefinition.html#a8815daf7e30a71f5a0a08abf9943be9d":[6,0,1,0,64,0],
 "classXML_1_1bpmn_1_1loopCharacteristics.html":[6,0,1,0,65],
 "classXML_1_1bpmn_1_1loopCharacteristics.html#a278a58902ae6f633b43492becfd549e3":[6,0,1,0,65,1],
-"classXML_1_1bpmn_1_1loopCharacteristics.html#aa1f13f98b3e6a0e3172d3150fdf1bc82":[6,0,1,0,65,0],
-"classXML_1_1bpmn_1_1manualTask.html":[6,0,1,0,66]
+"classXML_1_1bpmn_1_1loopCharacteristics.html#aa1f13f98b3e6a0e3172d3150fdf1bc82":[6,0,1,0,65,0]
 };

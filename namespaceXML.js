@@ -14,5 +14,6 @@ var namespaceXML =
     [ "TextContent", "namespaceXML.html#ae2018b3e085b085f0dc537db79e2c4ae", null ],
     [ "createInstance", "namespaceXML.html#abea8621f15ae0ce459575c9fa9bcaca4", null ],
     [ "operator<<", "namespaceXML.html#a1e041eb83d7a478563932cb5b0803171", null ],
-    [ "operator<<", "namespaceXML.html#a45367afdcd50efa1a3aa8a006fd2ec22", null ]
+    [ "operator<<", "namespaceXML.html#a45367afdcd50efa1a3aa8a006fd2ec22", null ],
+    [ "transcode", "namespaceXML.html#af55b8223f1bf8e716a2086c3ab312fe2", null ]
 ];

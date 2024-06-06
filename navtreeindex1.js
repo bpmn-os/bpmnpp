@@ -75,6 +75,7 @@ var NAVTREEINDEX1 =
 "XMLObject_8cpp.html":[6,3,0,0,1],
 "XMLObject_8cpp.html#a1e041eb83d7a478563932cb5b0803171":[6,3,0,0,1,0],
 "XMLObject_8cpp.html#a45367afdcd50efa1a3aa8a006fd2ec22":[6,3,0,0,1,1],
+"XMLObject_8cpp.html#af55b8223f1bf8e716a2086c3ab312fe2":[6,3,0,0,1,2],
 "XMLObject_8cpp_source.html":[6,3,0,0,1],
 "XMLObject_8h.html":[6,3,0,0,2],
 "XMLObject_8h.html#a0bc50cf368871273b0212ebdcc70c160":[6,3,0,0,2,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classBPMN_1_1ErrorBoundaryEvent.html#af8ab26e50ed5ed708e6ac2f9aee1d8be":[6,0,0,20,2],
 "classBPMN_1_1ErrorEndEvent.html":[6,0,0,21],
 "classBPMN_1_1ErrorEndEvent.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,21,1],
-"classBPMN_1_1ErrorEndEvent.html#a7bb95104568f63f095eb33704835d41e":[6,0,0,21,0],
-"classBPMN_1_1ErrorStartEvent.html":[6,0,0,22]
+"classBPMN_1_1ErrorEndEvent.html#a7bb95104568f63f095eb33704835d41e":[6,0,0,21,0]
 };

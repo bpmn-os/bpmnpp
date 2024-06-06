@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classBPMN_1_1ErrorStartEvent.html":[6,0,0,22],
 "classBPMN_1_1ErrorStartEvent.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,22,1],
 "classBPMN_1_1ErrorStartEvent.html#a450356f129ad31b92642bd7ec1b58783":[6,0,0,22,0],
 "classBPMN_1_1EscalationBoundaryEvent.html":[6,0,0,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classBPMN_1_1TimerBoundaryEvent.html":[6,0,0,59],
 "classBPMN_1_1TimerBoundaryEvent.html#a061c764d47245f38b8e4d1e2b60b331d":[6,0,0,59,2],
 "classBPMN_1_1TimerBoundaryEvent.html#a0f56028a55061156ca0293c200da9bda":[6,0,0,59,0],
-"classBPMN_1_1TimerBoundaryEvent.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,59,1],
-"classBPMN_1_1TimerCatchEvent.html":[6,0,0,60]
+"classBPMN_1_1TimerBoundaryEvent.html#a2bf2a0e9b454c55aa5dcb5aa4698697b":[6,0,0,59,1]
 };
