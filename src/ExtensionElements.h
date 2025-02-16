@@ -22,8 +22,8 @@ public:
    * @brief Returns a vector of elements of type T embedded within a container of type T.
    **/
   template<class C, class T> std::vector< std::reference_wrapper<T> > get() {
-   if ( element ) {
-       if ( auto container = element->template getOptionalChild<C>(); container.has_value() ) {
+    if ( element ) {
+      if ( auto container = element->template getOptionalChild<C>(); container.has_value() ) {
         return container->get().template getChildren<T>();
       }
     }
@@ -34,8 +34,8 @@ public:
    * @brief Returns a vector of elements of type T embedded within a container of type T.
    **/
   template<class C, class T> std::vector< std::reference_wrapper<const T> > get() const {
-   if ( element ) {
-       if ( auto container = element->template getOptionalChild<const C>(); container.has_value() ) {
+    if ( element ) {
+      if ( auto container = element->template getOptionalChild<const C>(); container.has_value() ) {
         return container->get().template getChildren<const T>();
       }
     }

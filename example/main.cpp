@@ -54,6 +54,7 @@ int main(int argc, char **argv) {
   Model model(argv[1]); // Use basic model
 //  CustomModel model(argv[1]); // Use extended model
 
+
   cout << "Number of processes: " << model.processes.size() << endl;
   for ( auto& processNode : model.processes ) {
 //    if ( processNode->represents<CustomNode>() ) cout << "CustomNode" << endl;
@@ -63,12 +64,12 @@ int main(int argc, char **argv) {
 
     cout << "- Process";
     if ( process.id.has_value() ) {
-      cout << " with id '" << (string)process.id->get() << "'";
+      cout << " with id '" << (string)process.id->get().value << "'";
     }
     else {
       cout << " without id";
     }
-    if ( process.isExecutable.has_value() && process.isExecutable->get() ) {
+    if ( process.isExecutable.has_value() && (bool)process.isExecutable->get().value ) {
       cout << " is executable and"; 
     }
 
@@ -132,6 +133,15 @@ int main(int argc, char **argv) {
     cout << "process '" << (std::string)messageFlow->target.first->id << "'";
     cout << endl;
   }
+
+  size_t n = 0;
+  for ( auto& root : model.roots ) {
+    auto dataStoreReferences = root->find<XML::bpmn::tDataStoreReference>();
+    n += dataStoreReferences.size();  
+  }
+  cout << "Number of data store references: " << n << endl;  
+
+
   return 0;
 }
 
