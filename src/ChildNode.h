@@ -17,7 +17,31 @@ class ChildNode : virtual public Node {
   friend class Model;
 public:
   ChildNode(XML::bpmn::tBaseElement* element, Scope* parent);
+  
+  /// @brief Returns the first ancestor node representing type T.
+  template<typename T> Node* ancestor() {
+    BPMN::Node* node = this;
+    while ( node->represents<ChildNode>() ) {
+      node = node->as<ChildNode>()->parent;
+      if ( node->represents<T>() ) {
+        return node;
+      }
+    }
+    return nullptr;
+  }
 
+  /// @brief Returns the first ancestor node representing type T.
+  template<typename T> const Node* ancestor() const {
+    const BPMN::Node* node = this;
+    while ( node->represents<ChildNode>() ) {
+      node = node->as<ChildNode>()->parent;
+      if ( node->represents<T>() ) {
+        return node;
+      }
+    }
+    return nullptr;
+  }
+  
   /// @brief Reference to the parent node.
   Scope* parent;
 };
