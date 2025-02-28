@@ -535,12 +535,6 @@ void Model::createSequenceFlows(Scope* scope) {
   for (XML::bpmn::tSequenceFlow& sequenceFlow: scope->element->getChildren<XML::bpmn::tSequenceFlow>() ) {
     scope->add(createSequenceFlow(&sequenceFlow,scope));
   }
-  // recurse
-  for ( auto& childNode: scope->childNodes ) {
-    if ( auto scope = childNode->represents<Scope>() ) {
-      createSequenceFlows(scope);
-    }
-  }
 }
 
 void Model::createNestedReferences(Scope* scope) {
