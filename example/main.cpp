@@ -138,6 +138,8 @@ int main(int argc, char **argv) {
 
   cout << "Number of data store references: " << dataStoreReferences.size() << endl;  
 
+//  auto diagram = model.root->find<XML::bpmn::BPMNDiagram>();
+//  cout << diagram.front().get() << endl;
 
   return 0;
 }
