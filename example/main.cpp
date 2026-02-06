@@ -134,12 +134,9 @@ int main(int argc, char **argv) {
     cout << endl;
   }
 
-  size_t n = 0;
-  for ( auto& root : model.roots ) {
-    auto dataStoreReferences = root->find<XML::bpmn::tDataStoreReference>();
-    n += dataStoreReferences.size();  
-  }
-  cout << "Number of data store references: " << n << endl;  
+  auto dataStoreReferences = model.root->find<XML::bpmn::tDataStoreReference>();
+
+  cout << "Number of data store references: " << dataStoreReferences.size() << endl;  
 
 
   return 0;
