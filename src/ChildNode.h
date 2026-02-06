@@ -22,7 +22,7 @@ public:
   template<typename T> Node* ancestor() {
     BPMN::Node* node = this;
     while ( node->represents<ChildNode>() ) {
-      node = node->as<ChildNode>()->parent;
+      node = (Node*)node->as<ChildNode>()->parent;
       if ( node->represents<T>() ) {
         return node;
       }
@@ -34,7 +34,7 @@ public:
   template<typename T> const Node* ancestor() const {
     const BPMN::Node* node = this;
     while ( node->represents<ChildNode>() ) {
-      node = node->as<ChildNode>()->parent;
+      node = (Node*)node->as<ChildNode>()->parent;
       if ( node->represents<T>() ) {
         return node;
       }

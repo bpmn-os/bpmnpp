@@ -12,6 +12,7 @@
 #include "xml/bpmn/tCollaboration.h"
 #include "xml/bpmn/tParticipant.h"
 #include "xml/bpmn/tAssociation.h"
+#include <algorithm>
 #include <cassert>
 
 using namespace BPMN;
@@ -23,9 +24,9 @@ Model::Model(const std::string& filename)
 
 void Model::readBPMNFile(const std::string& filename)
 {
-  roots.push_back( createRoot(filename) );
+  root = createRoot(filename);
 
-  for ( XML::bpmn::tProcess& process : roots.back()->getChildren<XML::bpmn::tProcess>() ) {
+  for ( XML::bpmn::tProcess& process : root->getChildren<XML::bpmn::tProcess>() ) {
     processes.push_back(createProcess(&process));
   }
 
@@ -815,22 +816,20 @@ void Model::createMessageFlows() {
   // initialize map to resolve reference to participants
   std::unordered_map<std::string,std::string> participantMap;
 
-  for ( auto& root : roots ) {
-    if ( const auto& collaboration = root->getOptionalChild<XML::bpmn::tCollaboration>();
-      collaboration && collaboration.has_value()
-    ) {
+  if ( const auto& collaboration = root->getOptionalChild<XML::bpmn::tCollaboration>();
+    collaboration && collaboration.has_value()
+  ) {
 
-      // add participants to map
-      for ( const XML::bpmn::tParticipant& participant : collaboration->get().getChildren<XML::bpmn::tParticipant>() ) {
-        if ( participant.processRef.has_value() ) {
-          participantMap[participant.id->get().value] = participant.processRef->get().value;
-        }
+    // add participants to map
+    for ( const XML::bpmn::tParticipant& participant : collaboration->get().getChildren<XML::bpmn::tParticipant>() ) {
+      if ( participant.processRef.has_value() ) {
+        participantMap[participant.id->get().value] = participant.processRef->get().value;
       }
+    }
 
-      // create message flow objects
-      for ( XML::bpmn::tMessageFlow& messageFlow : collaboration->get().getChildren<XML::bpmn::tMessageFlow>() ) {
-        messageFlows.push_back(createMessageFlow(&messageFlow));
-      }
+    // create message flow objects
+    for ( XML::bpmn::tMessageFlow& messageFlow : collaboration->get().getChildren<XML::bpmn::tMessageFlow>() ) {
+      messageFlows.push_back(createMessageFlow(&messageFlow));
     }
   }
 
@@ -859,5 +858,4 @@ void Model::createMessageFlows() {
       // nothing to do for message to empty collapsed participant
     }
   }
-
 }

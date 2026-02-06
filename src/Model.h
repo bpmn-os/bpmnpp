@@ -173,7 +173,7 @@ protected:
 public:
   Model(const std::string& filename);
   virtual ~Model() = default;
-  std::vector< std::unique_ptr<XML::XMLObject> > roots;
+  std::unique_ptr<XML::XMLObject> root;
   std::vector< std::unique_ptr<Process> > processes;
   std::vector< std::unique_ptr<MessageFlow> > messageFlows;
 protected:
