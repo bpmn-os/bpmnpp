@@ -2,271 +2,137 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
     [ "xml", "dir_c43b215a2ade73e6562bd37d8a11c12a.html", "dir_c43b215a2ade73e6562bd37d8a11c12a" ],
     [ "AbstractTask.cpp", "AbstractTask_8cpp.html", null ],
-    [ "AbstractTask.h", "AbstractTask_8h.html", [
-      [ "AbstractTask", "classBPMN_1_1AbstractTask.html", "classBPMN_1_1AbstractTask" ]
-    ] ],
+    [ "AbstractTask.h", "AbstractTask_8h.html", "AbstractTask_8h" ],
     [ "Activity.cpp", "Activity_8cpp.html", null ],
-    [ "Activity.h", "Activity_8h.html", [
-      [ "Activity", "classBPMN_1_1Activity.html", "classBPMN_1_1Activity" ]
-    ] ],
+    [ "Activity.h", "Activity_8h.html", "Activity_8h" ],
     [ "AdHocSubProcess.cpp", "AdHocSubProcess_8cpp.html", null ],
-    [ "AdHocSubProcess.h", "AdHocSubProcess_8h.html", [
-      [ "AdHocSubProcess", "classBPMN_1_1AdHocSubProcess.html", "classBPMN_1_1AdHocSubProcess" ]
-    ] ],
+    [ "AdHocSubProcess.h", "AdHocSubProcess_8h.html", "AdHocSubProcess_8h" ],
     [ "BaseElement.cpp", "BaseElement_8cpp.html", null ],
-    [ "BaseElement.h", "BaseElement_8h.html", [
-      [ "BaseElement", "classBPMN_1_1BaseElement.html", "classBPMN_1_1BaseElement" ]
-    ] ],
+    [ "BaseElement.h", "BaseElement_8h.html", "BaseElement_8h" ],
     [ "BoundaryEvent.cpp", "BoundaryEvent_8cpp.html", null ],
-    [ "BoundaryEvent.h", "BoundaryEvent_8h.html", [
-      [ "BoundaryEvent", "classBPMN_1_1BoundaryEvent.html", "classBPMN_1_1BoundaryEvent" ]
-    ] ],
+    [ "BoundaryEvent.h", "BoundaryEvent_8h.html", "BoundaryEvent_8h" ],
     [ "BusinessRuleTask.cpp", "BusinessRuleTask_8cpp.html", null ],
-    [ "BusinessRuleTask.h", "BusinessRuleTask_8h.html", [
-      [ "BusinessRuleTask", "classBPMN_1_1BusinessRuleTask.html", "classBPMN_1_1BusinessRuleTask" ]
-    ] ],
+    [ "BusinessRuleTask.h", "BusinessRuleTask_8h.html", "BusinessRuleTask_8h" ],
     [ "CallActivity.cpp", "CallActivity_8cpp.html", null ],
-    [ "CallActivity.h", "CallActivity_8h.html", [
-      [ "CallActivity", "classBPMN_1_1CallActivity.html", "classBPMN_1_1CallActivity" ]
-    ] ],
+    [ "CallActivity.h", "CallActivity_8h.html", "CallActivity_8h" ],
     [ "CancelBoundaryEvent.cpp", "CancelBoundaryEvent_8cpp.html", null ],
-    [ "CancelBoundaryEvent.h", "CancelBoundaryEvent_8h.html", [
-      [ "CancelBoundaryEvent", "classBPMN_1_1CancelBoundaryEvent.html", "classBPMN_1_1CancelBoundaryEvent" ]
-    ] ],
+    [ "CancelBoundaryEvent.h", "CancelBoundaryEvent_8h.html", "CancelBoundaryEvent_8h" ],
     [ "CancelEndEvent.cpp", "CancelEndEvent_8cpp.html", null ],
-    [ "CancelEndEvent.h", "CancelEndEvent_8h.html", [
-      [ "CancelEndEvent", "classBPMN_1_1CancelEndEvent.html", "classBPMN_1_1CancelEndEvent" ]
-    ] ],
+    [ "CancelEndEvent.h", "CancelEndEvent_8h.html", "CancelEndEvent_8h" ],
     [ "CatchEvent.cpp", "CatchEvent_8cpp.html", null ],
-    [ "CatchEvent.h", "CatchEvent_8h.html", [
-      [ "CatchEvent", "classBPMN_1_1CatchEvent.html", "classBPMN_1_1CatchEvent" ]
-    ] ],
+    [ "CatchEvent.h", "CatchEvent_8h.html", "CatchEvent_8h" ],
     [ "ChildNode.cpp", "ChildNode_8cpp.html", null ],
-    [ "ChildNode.h", "ChildNode_8h.html", [
-      [ "ChildNode", "classBPMN_1_1ChildNode.html", "classBPMN_1_1ChildNode" ]
-    ] ],
+    [ "ChildNode.h", "ChildNode_8h.html", "ChildNode_8h" ],
     [ "CompensateBoundaryEvent.cpp", "CompensateBoundaryEvent_8cpp.html", null ],
-    [ "CompensateBoundaryEvent.h", "CompensateBoundaryEvent_8h.html", [
-      [ "CompensateBoundaryEvent", "classBPMN_1_1CompensateBoundaryEvent.html", "classBPMN_1_1CompensateBoundaryEvent" ]
-    ] ],
+    [ "CompensateBoundaryEvent.h", "CompensateBoundaryEvent_8h.html", "CompensateBoundaryEvent_8h" ],
     [ "CompensateStartEvent.cpp", "CompensateStartEvent_8cpp.html", null ],
-    [ "CompensateStartEvent.h", "CompensateStartEvent_8h.html", [
-      [ "CompensateStartEvent", "classBPMN_1_1CompensateStartEvent.html", "classBPMN_1_1CompensateStartEvent" ]
-    ] ],
+    [ "CompensateStartEvent.h", "CompensateStartEvent_8h.html", "CompensateStartEvent_8h" ],
     [ "CompensateThrowEvent.cpp", "CompensateThrowEvent_8cpp.html", null ],
-    [ "CompensateThrowEvent.h", "CompensateThrowEvent_8h.html", [
-      [ "CompensateThrowEvent", "classBPMN_1_1CompensateThrowEvent.html", "classBPMN_1_1CompensateThrowEvent" ]
-    ] ],
+    [ "CompensateThrowEvent.h", "CompensateThrowEvent_8h.html", "CompensateThrowEvent_8h" ],
     [ "ComplexGateway.cpp", "ComplexGateway_8cpp.html", null ],
-    [ "ComplexGateway.h", "ComplexGateway_8h.html", [
-      [ "ComplexGateway", "classBPMN_1_1ComplexGateway.html", "classBPMN_1_1ComplexGateway" ]
-    ] ],
+    [ "ComplexGateway.h", "ComplexGateway_8h.html", "ComplexGateway_8h" ],
     [ "ConditionalBoundaryEvent.cpp", "ConditionalBoundaryEvent_8cpp.html", null ],
-    [ "ConditionalBoundaryEvent.h", "ConditionalBoundaryEvent_8h.html", [
-      [ "ConditionalBoundaryEvent", "classBPMN_1_1ConditionalBoundaryEvent.html", "classBPMN_1_1ConditionalBoundaryEvent" ]
-    ] ],
+    [ "ConditionalBoundaryEvent.h", "ConditionalBoundaryEvent_8h.html", "ConditionalBoundaryEvent_8h" ],
     [ "ConditionalCatchEvent.cpp", "ConditionalCatchEvent_8cpp.html", null ],
-    [ "ConditionalCatchEvent.h", "ConditionalCatchEvent_8h.html", [
-      [ "ConditionalCatchEvent", "classBPMN_1_1ConditionalCatchEvent.html", "classBPMN_1_1ConditionalCatchEvent" ]
-    ] ],
+    [ "ConditionalCatchEvent.h", "ConditionalCatchEvent_8h.html", "ConditionalCatchEvent_8h" ],
     [ "ConditionalStartEvent.cpp", "ConditionalStartEvent_8cpp.html", null ],
-    [ "ConditionalStartEvent.h", "ConditionalStartEvent_8h.html", [
-      [ "ConditionalStartEvent", "classBPMN_1_1ConditionalStartEvent.html", "classBPMN_1_1ConditionalStartEvent" ]
-    ] ],
+    [ "ConditionalStartEvent.h", "ConditionalStartEvent_8h.html", "ConditionalStartEvent_8h" ],
     [ "DataObject.cpp", "DataObject_8cpp.html", null ],
-    [ "DataObject.h", "DataObject_8h.html", [
-      [ "DataObject", "classBPMN_1_1DataObject.html", "classBPMN_1_1DataObject" ]
-    ] ],
+    [ "DataObject.h", "DataObject_8h.html", "DataObject_8h" ],
     [ "Element.cpp", "Element_8cpp.html", null ],
-    [ "Element.h", "Element_8h.html", [
-      [ "Element", "classBPMN_1_1Element.html", "classBPMN_1_1Element" ]
-    ] ],
+    [ "Element.h", "Element_8h.html", "Element_8h" ],
     [ "ErrorBoundaryEvent.cpp", "ErrorBoundaryEvent_8cpp.html", null ],
-    [ "ErrorBoundaryEvent.h", "ErrorBoundaryEvent_8h.html", [
-      [ "ErrorBoundaryEvent", "classBPMN_1_1ErrorBoundaryEvent.html", "classBPMN_1_1ErrorBoundaryEvent" ]
-    ] ],
+    [ "ErrorBoundaryEvent.h", "ErrorBoundaryEvent_8h.html", "ErrorBoundaryEvent_8h" ],
     [ "ErrorEndEvent.cpp", "ErrorEndEvent_8cpp.html", null ],
-    [ "ErrorEndEvent.h", "ErrorEndEvent_8h.html", [
-      [ "ErrorEndEvent", "classBPMN_1_1ErrorEndEvent.html", "classBPMN_1_1ErrorEndEvent" ]
-    ] ],
+    [ "ErrorEndEvent.h", "ErrorEndEvent_8h.html", "ErrorEndEvent_8h" ],
     [ "ErrorStartEvent.cpp", "ErrorStartEvent_8cpp.html", null ],
-    [ "ErrorStartEvent.h", "ErrorStartEvent_8h.html", [
-      [ "ErrorStartEvent", "classBPMN_1_1ErrorStartEvent.html", "classBPMN_1_1ErrorStartEvent" ]
-    ] ],
+    [ "ErrorStartEvent.h", "ErrorStartEvent_8h.html", "ErrorStartEvent_8h" ],
     [ "EscalationBoundaryEvent.cpp", "EscalationBoundaryEvent_8cpp.html", null ],
-    [ "EscalationBoundaryEvent.h", "EscalationBoundaryEvent_8h.html", [
-      [ "EscalationBoundaryEvent", "classBPMN_1_1EscalationBoundaryEvent.html", "classBPMN_1_1EscalationBoundaryEvent" ]
-    ] ],
+    [ "EscalationBoundaryEvent.h", "EscalationBoundaryEvent_8h.html", "EscalationBoundaryEvent_8h" ],
     [ "EscalationStartEvent.cpp", "EscalationStartEvent_8cpp.html", null ],
-    [ "EscalationStartEvent.h", "EscalationStartEvent_8h.html", [
-      [ "EscalationStartEvent", "classBPMN_1_1EscalationStartEvent.html", "classBPMN_1_1EscalationStartEvent" ]
-    ] ],
+    [ "EscalationStartEvent.h", "EscalationStartEvent_8h.html", "EscalationStartEvent_8h" ],
     [ "EscalationThrowEvent.cpp", "EscalationThrowEvent_8cpp.html", null ],
-    [ "EscalationThrowEvent.h", "EscalationThrowEvent_8h.html", [
-      [ "EscalationThrowEvent", "classBPMN_1_1EscalationThrowEvent.html", "classBPMN_1_1EscalationThrowEvent" ]
-    ] ],
+    [ "EscalationThrowEvent.h", "EscalationThrowEvent_8h.html", "EscalationThrowEvent_8h" ],
     [ "Event.cpp", "Event_8cpp.html", null ],
-    [ "Event.h", "Event_8h.html", [
-      [ "Event", "classBPMN_1_1Event.html", "classBPMN_1_1Event" ]
-    ] ],
+    [ "Event.h", "Event_8h.html", "Event_8h" ],
     [ "EventBasedGateway.cpp", "EventBasedGateway_8cpp.html", null ],
-    [ "EventBasedGateway.h", "EventBasedGateway_8h.html", [
-      [ "EventBasedGateway", "classBPMN_1_1EventBasedGateway.html", "classBPMN_1_1EventBasedGateway" ]
-    ] ],
+    [ "EventBasedGateway.h", "EventBasedGateway_8h.html", "EventBasedGateway_8h" ],
     [ "EventSubProcess.cpp", "EventSubProcess_8cpp.html", null ],
-    [ "EventSubProcess.h", "EventSubProcess_8h.html", [
-      [ "EventSubProcess", "classBPMN_1_1EventSubProcess.html", "classBPMN_1_1EventSubProcess" ]
-    ] ],
+    [ "EventSubProcess.h", "EventSubProcess_8h.html", "EventSubProcess_8h" ],
     [ "ExclusiveGateway.cpp", "ExclusiveGateway_8cpp.html", null ],
-    [ "ExclusiveGateway.h", "ExclusiveGateway_8h.html", [
-      [ "ExclusiveGateway", "classBPMN_1_1ExclusiveGateway.html", "classBPMN_1_1ExclusiveGateway" ]
-    ] ],
+    [ "ExclusiveGateway.h", "ExclusiveGateway_8h.html", "ExclusiveGateway_8h" ],
     [ "ExtensionElements.cpp", "ExtensionElements_8cpp.html", null ],
-    [ "ExtensionElements.h", "ExtensionElements_8h.html", [
-      [ "ExtensionElements", "classBPMN_1_1ExtensionElements.html", "classBPMN_1_1ExtensionElements" ]
-    ] ],
+    [ "ExtensionElements.h", "ExtensionElements_8h.html", "ExtensionElements_8h" ],
     [ "FlowNode.cpp", "FlowNode_8cpp.html", null ],
-    [ "FlowNode.h", "FlowNode_8h.html", [
-      [ "FlowNode", "classBPMN_1_1FlowNode.html", "classBPMN_1_1FlowNode" ]
-    ] ],
+    [ "FlowNode.h", "FlowNode_8h.html", "FlowNode_8h" ],
     [ "Gateway.cpp", "Gateway_8cpp.html", null ],
-    [ "Gateway.h", "Gateway_8h.html", [
-      [ "Gateway", "classBPMN_1_1Gateway.html", "classBPMN_1_1Gateway" ]
-    ] ],
+    [ "Gateway.h", "Gateway_8h.html", "Gateway_8h" ],
     [ "InclusiveGateway.cpp", "InclusiveGateway_8cpp.html", null ],
-    [ "InclusiveGateway.h", "InclusiveGateway_8h.html", [
-      [ "InclusiveGateway", "classBPMN_1_1InclusiveGateway.html", "classBPMN_1_1InclusiveGateway" ]
-    ] ],
+    [ "InclusiveGateway.h", "InclusiveGateway_8h.html", "InclusiveGateway_8h" ],
     [ "LinkSourceEvent.cpp", "LinkSourceEvent_8cpp.html", null ],
-    [ "LinkSourceEvent.h", "LinkSourceEvent_8h.html", [
-      [ "LinkSourceEvent", "classBPMN_1_1LinkSourceEvent.html", "classBPMN_1_1LinkSourceEvent" ]
-    ] ],
+    [ "LinkSourceEvent.h", "LinkSourceEvent_8h.html", "LinkSourceEvent_8h" ],
     [ "LinkTargetEvent.cpp", "LinkTargetEvent_8cpp.html", null ],
-    [ "LinkTargetEvent.h", "LinkTargetEvent_8h.html", [
-      [ "LinkTargetEvent", "classBPMN_1_1LinkTargetEvent.html", "classBPMN_1_1LinkTargetEvent" ]
-    ] ],
+    [ "LinkTargetEvent.h", "LinkTargetEvent_8h.html", "LinkTargetEvent_8h" ],
     [ "ManualTask.cpp", "ManualTask_8cpp.html", null ],
-    [ "ManualTask.h", "ManualTask_8h.html", [
-      [ "ManualTask", "classBPMN_1_1ManualTask.html", "classBPMN_1_1ManualTask" ]
-    ] ],
+    [ "ManualTask.h", "ManualTask_8h.html", "ManualTask_8h" ],
     [ "MessageBoundaryEvent.cpp", "MessageBoundaryEvent_8cpp.html", null ],
-    [ "MessageBoundaryEvent.h", "MessageBoundaryEvent_8h.html", [
-      [ "MessageBoundaryEvent", "classBPMN_1_1MessageBoundaryEvent.html", "classBPMN_1_1MessageBoundaryEvent" ]
-    ] ],
+    [ "MessageBoundaryEvent.h", "MessageBoundaryEvent_8h.html", "MessageBoundaryEvent_8h" ],
     [ "MessageCatchEvent.cpp", "MessageCatchEvent_8cpp.html", null ],
-    [ "MessageCatchEvent.h", "MessageCatchEvent_8h.html", [
-      [ "MessageCatchEvent", "classBPMN_1_1MessageCatchEvent.html", "classBPMN_1_1MessageCatchEvent" ]
-    ] ],
+    [ "MessageCatchEvent.h", "MessageCatchEvent_8h.html", "MessageCatchEvent_8h" ],
     [ "MessageFlow.cpp", "MessageFlow_8cpp.html", null ],
-    [ "MessageFlow.h", "MessageFlow_8h.html", [
-      [ "MessageFlow", "classBPMN_1_1MessageFlow.html", "classBPMN_1_1MessageFlow" ]
-    ] ],
+    [ "MessageFlow.h", "MessageFlow_8h.html", "MessageFlow_8h" ],
     [ "MessageStartEvent.cpp", "MessageStartEvent_8cpp.html", null ],
-    [ "MessageStartEvent.h", "MessageStartEvent_8h.html", [
-      [ "MessageStartEvent", "classBPMN_1_1MessageStartEvent.html", "classBPMN_1_1MessageStartEvent" ]
-    ] ],
+    [ "MessageStartEvent.h", "MessageStartEvent_8h.html", "MessageStartEvent_8h" ],
     [ "MessageThrowEvent.cpp", "MessageThrowEvent_8cpp.html", null ],
-    [ "MessageThrowEvent.h", "MessageThrowEvent_8h.html", [
-      [ "MessageThrowEvent", "classBPMN_1_1MessageThrowEvent.html", "classBPMN_1_1MessageThrowEvent" ]
-    ] ],
+    [ "MessageThrowEvent.h", "MessageThrowEvent_8h.html", "MessageThrowEvent_8h" ],
     [ "Model.cpp", "Model_8cpp.html", null ],
-    [ "Model.h", "Model_8h.html", [
-      [ "Model", "classBPMN_1_1Model.html", "classBPMN_1_1Model" ]
-    ] ],
+    [ "Model.h", "Model_8h.html", "Model_8h" ],
     [ "Node.cpp", "Node_8cpp.html", null ],
-    [ "Node.h", "Node_8h.html", [
-      [ "Node", "classBPMN_1_1Node.html", "classBPMN_1_1Node" ]
-    ] ],
+    [ "Node.h", "Node_8h.html", "Node_8h" ],
     [ "ParallelGateway.cpp", "ParallelGateway_8cpp.html", null ],
-    [ "ParallelGateway.h", "ParallelGateway_8h.html", [
-      [ "ParallelGateway", "classBPMN_1_1ParallelGateway.html", "classBPMN_1_1ParallelGateway" ]
-    ] ],
+    [ "ParallelGateway.h", "ParallelGateway_8h.html", "ParallelGateway_8h" ],
     [ "Process.cpp", "Process_8cpp.html", null ],
-    [ "Process.h", "Process_8h.html", [
-      [ "Process", "classBPMN_1_1Process.html", "classBPMN_1_1Process" ]
-    ] ],
+    [ "Process.h", "Process_8h.html", "Process_8h" ],
     [ "ReceiveTask.cpp", "ReceiveTask_8cpp.html", null ],
-    [ "ReceiveTask.h", "ReceiveTask_8h.html", [
-      [ "ReceiveTask", "classBPMN_1_1ReceiveTask.html", "classBPMN_1_1ReceiveTask" ]
-    ] ],
+    [ "ReceiveTask.h", "ReceiveTask_8h.html", "ReceiveTask_8h" ],
     [ "Scope.cpp", "Scope_8cpp.html", null ],
-    [ "Scope.h", "Scope_8h.html", [
-      [ "Scope", "classBPMN_1_1Scope.html", "classBPMN_1_1Scope" ]
-    ] ],
+    [ "Scope.h", "Scope_8h.html", "Scope_8h" ],
     [ "ScriptTask.cpp", "ScriptTask_8cpp.html", null ],
-    [ "ScriptTask.h", "ScriptTask_8h.html", [
-      [ "ScriptTask", "classBPMN_1_1ScriptTask.html", "classBPMN_1_1ScriptTask" ]
-    ] ],
+    [ "ScriptTask.h", "ScriptTask_8h.html", "ScriptTask_8h" ],
     [ "SendTask.cpp", "SendTask_8cpp.html", null ],
-    [ "SendTask.h", "SendTask_8h.html", [
-      [ "SendTask", "classBPMN_1_1SendTask.html", "classBPMN_1_1SendTask" ]
-    ] ],
+    [ "SendTask.h", "SendTask_8h.html", "SendTask_8h" ],
     [ "SequenceFlow.cpp", "SequenceFlow_8cpp.html", null ],
-    [ "SequenceFlow.h", "SequenceFlow_8h.html", [
-      [ "SequenceFlow", "classBPMN_1_1SequenceFlow.html", "classBPMN_1_1SequenceFlow" ]
-    ] ],
+    [ "SequenceFlow.h", "SequenceFlow_8h.html", "SequenceFlow_8h" ],
     [ "SignalBoundaryEvent.cpp", "SignalBoundaryEvent_8cpp.html", null ],
-    [ "SignalBoundaryEvent.h", "SignalBoundaryEvent_8h.html", [
-      [ "SignalBoundaryEvent", "classBPMN_1_1SignalBoundaryEvent.html", "classBPMN_1_1SignalBoundaryEvent" ]
-    ] ],
+    [ "SignalBoundaryEvent.h", "SignalBoundaryEvent_8h.html", "SignalBoundaryEvent_8h" ],
     [ "SignalCatchEvent.cpp", "SignalCatchEvent_8cpp.html", null ],
-    [ "SignalCatchEvent.h", "SignalCatchEvent_8h.html", [
-      [ "SignalCatchEvent", "classBPMN_1_1SignalCatchEvent.html", "classBPMN_1_1SignalCatchEvent" ]
-    ] ],
+    [ "SignalCatchEvent.h", "SignalCatchEvent_8h.html", "SignalCatchEvent_8h" ],
     [ "SignalStartEvent.cpp", "SignalStartEvent_8cpp.html", null ],
-    [ "SignalStartEvent.h", "SignalStartEvent_8h.html", [
-      [ "SignalStartEvent", "classBPMN_1_1SignalStartEvent.html", "classBPMN_1_1SignalStartEvent" ]
-    ] ],
+    [ "SignalStartEvent.h", "SignalStartEvent_8h.html", "SignalStartEvent_8h" ],
     [ "SignalThrowEvent.cpp", "SignalThrowEvent_8cpp.html", null ],
-    [ "SignalThrowEvent.h", "SignalThrowEvent_8h.html", [
-      [ "SignalThrowEvent", "classBPMN_1_1SignalThrowEvent.html", "classBPMN_1_1SignalThrowEvent" ]
-    ] ],
+    [ "SignalThrowEvent.h", "SignalThrowEvent_8h.html", "SignalThrowEvent_8h" ],
     [ "SubProcess.cpp", "SubProcess_8cpp.html", null ],
-    [ "SubProcess.h", "SubProcess_8h.html", [
-      [ "SubProcess", "classBPMN_1_1SubProcess.html", "classBPMN_1_1SubProcess" ]
-    ] ],
+    [ "SubProcess.h", "SubProcess_8h.html", "SubProcess_8h" ],
     [ "Task.cpp", "Task_8cpp.html", null ],
-    [ "Task.h", "Task_8h.html", [
-      [ "Task", "classBPMN_1_1Task.html", "classBPMN_1_1Task" ]
-    ] ],
+    [ "Task.h", "Task_8h.html", "Task_8h" ],
     [ "TerminateEvent.cpp", "TerminateEvent_8cpp.html", null ],
-    [ "TerminateEvent.h", "TerminateEvent_8h.html", [
-      [ "TerminateEvent", "classBPMN_1_1TerminateEvent.html", "classBPMN_1_1TerminateEvent" ]
-    ] ],
+    [ "TerminateEvent.h", "TerminateEvent_8h.html", "TerminateEvent_8h" ],
     [ "ThrowEvent.cpp", "ThrowEvent_8cpp.html", null ],
-    [ "ThrowEvent.h", "ThrowEvent_8h.html", [
-      [ "ThrowEvent", "classBPMN_1_1ThrowEvent.html", "classBPMN_1_1ThrowEvent" ]
-    ] ],
+    [ "ThrowEvent.h", "ThrowEvent_8h.html", "ThrowEvent_8h" ],
     [ "TimerBoundaryEvent.cpp", "TimerBoundaryEvent_8cpp.html", null ],
-    [ "TimerBoundaryEvent.h", "TimerBoundaryEvent_8h.html", [
-      [ "TimerBoundaryEvent", "classBPMN_1_1TimerBoundaryEvent.html", "classBPMN_1_1TimerBoundaryEvent" ]
-    ] ],
+    [ "TimerBoundaryEvent.h", "TimerBoundaryEvent_8h.html", "TimerBoundaryEvent_8h" ],
     [ "TimerCatchEvent.cpp", "TimerCatchEvent_8cpp.html", null ],
-    [ "TimerCatchEvent.h", "TimerCatchEvent_8h.html", [
-      [ "TimerCatchEvent", "classBPMN_1_1TimerCatchEvent.html", "classBPMN_1_1TimerCatchEvent" ]
-    ] ],
+    [ "TimerCatchEvent.h", "TimerCatchEvent_8h.html", "TimerCatchEvent_8h" ],
     [ "TimerStartEvent.cpp", "TimerStartEvent_8cpp.html", null ],
-    [ "TimerStartEvent.h", "TimerStartEvent_8h.html", [
-      [ "TimerStartEvent", "classBPMN_1_1TimerStartEvent.html", "classBPMN_1_1TimerStartEvent" ]
-    ] ],
+    [ "TimerStartEvent.h", "TimerStartEvent_8h.html", "TimerStartEvent_8h" ],
     [ "Transaction.cpp", "Transaction_8cpp.html", null ],
-    [ "Transaction.h", "Transaction_8h.html", [
-      [ "Transaction", "classBPMN_1_1Transaction.html", "classBPMN_1_1Transaction" ]
-    ] ],
+    [ "Transaction.h", "Transaction_8h.html", "Transaction_8h" ],
     [ "TypedStartEvent.cpp", "TypedStartEvent_8cpp.html", null ],
-    [ "TypedStartEvent.h", "TypedStartEvent_8h.html", [
-      [ "TypedStartEvent", "classBPMN_1_1TypedStartEvent.html", "classBPMN_1_1TypedStartEvent" ]
-    ] ],
+    [ "TypedStartEvent.h", "TypedStartEvent_8h.html", "TypedStartEvent_8h" ],
     [ "UntypedEndEvent.cpp", "UntypedEndEvent_8cpp.html", null ],
-    [ "UntypedEndEvent.h", "UntypedEndEvent_8h.html", [
-      [ "UntypedEndEvent", "classBPMN_1_1UntypedEndEvent.html", "classBPMN_1_1UntypedEndEvent" ]
-    ] ],
+    [ "UntypedEndEvent.h", "UntypedEndEvent_8h.html", "UntypedEndEvent_8h" ],
     [ "UntypedStartEvent.cpp", "UntypedStartEvent_8cpp.html", null ],
-    [ "UntypedStartEvent.h", "UntypedStartEvent_8h.html", [
-      [ "UntypedStartEvent", "classBPMN_1_1UntypedStartEvent.html", "classBPMN_1_1UntypedStartEvent" ]
-    ] ],
+    [ "UntypedStartEvent.h", "UntypedStartEvent_8h.html", "UntypedStartEvent_8h" ],
     [ "UserTask.cpp", "UserTask_8cpp.html", null ],
-    [ "UserTask.h", "UserTask_8h.html", [
-      [ "UserTask", "classBPMN_1_1UserTask.html", "classBPMN_1_1UserTask" ]
-    ] ]
+    [ "UserTask.h", "UserTask_8h.html", "UserTask_8h" ]
 ];

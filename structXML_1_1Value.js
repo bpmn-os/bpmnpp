@@ -9,9 +9,9 @@ var structXML_1_1Value =
     [ "operator int", "structXML_1_1Value.html#afb133adec4971960f6804e6af6fa1b6b", null ],
     [ "operator std::string", "structXML_1_1Value.html#a9b8db560c0ff452b7b1ada1360226c63", null ],
     [ "operator std::string_view", "structXML_1_1Value.html#af6fce8d5508d3c9514972e81f1d0c986", null ],
-    [ "operator=", "structXML_1_1Value.html#a66dcdd7258a81024895473f298633c4f", null ],
-    [ "operator=", "structXML_1_1Value.html#adc4433f06b6f2561ae8f2fd5da72334f", null ],
-    [ "operator=", "structXML_1_1Value.html#a5c967d2662ca411abd748a13657658e6", null ],
-    [ "operator=", "structXML_1_1Value.html#a68babdc4431e14974ce43bd849442efc", null ],
+    [ "operator=", "structXML_1_1Value.html#a1b8076e4375f2a76fe45578e3ce377f6", null ],
+    [ "operator=", "structXML_1_1Value.html#a6318287ae7b5d0c085df191e3641bf87", null ],
+    [ "operator=", "structXML_1_1Value.html#a24c466987f779220846700ec8a8b65a0", null ],
+    [ "operator=", "structXML_1_1Value.html#a971476b364cb2a10cbab3924f5402432", null ],
     [ "value", "structXML_1_1Value.html#aee618d47903ba4a29faaf281d221de1e", null ]
 ];

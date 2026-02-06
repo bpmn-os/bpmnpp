@@ -1,21 +1,13 @@
 var dir_c3bd96c94368a872efdf37d4fe45f81a =
 [
     [ "adHocSubProcess.cpp", "adHocSubProcess_8cpp.html", null ],
-    [ "adHocSubProcess.h", "adHocSubProcess_8h.html", [
-      [ "adHocSubProcess", "classXML_1_1bpmn_1_1adHocSubProcess.html", "classXML_1_1bpmn_1_1adHocSubProcess" ]
-    ] ],
+    [ "adHocSubProcess.h", "adHocSubProcess_8h.html", "adHocSubProcess_8h" ],
     [ "baseElement.cpp", "baseElement_8cpp.html", null ],
-    [ "baseElement.h", "baseElement_8h.html", [
-      [ "baseElement", "classXML_1_1bpmn_1_1baseElement.html", "classXML_1_1bpmn_1_1baseElement" ]
-    ] ],
+    [ "baseElement.h", "baseElement_8h.html", "baseElement_8h" ],
     [ "baseElementWithMixedContent.cpp", "baseElementWithMixedContent_8cpp.html", null ],
-    [ "baseElementWithMixedContent.h", "baseElementWithMixedContent_8h.html", [
-      [ "baseElementWithMixedContent", "classXML_1_1bpmn_1_1baseElementWithMixedContent.html", "classXML_1_1bpmn_1_1baseElementWithMixedContent" ]
-    ] ],
+    [ "baseElementWithMixedContent.h", "baseElementWithMixedContent_8h.html", "baseElementWithMixedContent_8h" ],
     [ "boundaryEvent.cpp", "boundaryEvent_8cpp.html", null ],
-    [ "boundaryEvent.h", "boundaryEvent_8h.html", [
-      [ "boundaryEvent", "classXML_1_1bpmn_1_1boundaryEvent.html", "classXML_1_1bpmn_1_1boundaryEvent" ]
-    ] ],
+    [ "boundaryEvent.h", "boundaryEvent_8h.html", "boundaryEvent_8h" ],
     [ "Bounds.cpp", "Bounds_8cpp.html", null ],
     [ "BPMNDiagram.cpp", "BPMNDiagram_8cpp.html", null ],
     [ "BPMNEdge.cpp", "BPMNEdge_8cpp.html", null ],
@@ -24,949 +16,489 @@ var dir_c3bd96c94368a872efdf37d4fe45f81a =
     [ "BPMNPlane.cpp", "BPMNPlane_8cpp.html", null ],
     [ "BPMNShape.cpp", "BPMNShape_8cpp.html", null ],
     [ "businessRuleTask.cpp", "businessRuleTask_8cpp.html", null ],
-    [ "businessRuleTask.h", "businessRuleTask_8h.html", [
-      [ "businessRuleTask", "classXML_1_1bpmn_1_1businessRuleTask.html", "classXML_1_1bpmn_1_1businessRuleTask" ]
-    ] ],
+    [ "businessRuleTask.h", "businessRuleTask_8h.html", "businessRuleTask_8h" ],
     [ "callableElement.cpp", "callableElement_8cpp.html", null ],
-    [ "callableElement.h", "callableElement_8h.html", [
-      [ "callableElement", "classXML_1_1bpmn_1_1callableElement.html", "classXML_1_1bpmn_1_1callableElement" ]
-    ] ],
+    [ "callableElement.h", "callableElement_8h.html", "callableElement_8h" ],
     [ "callActivity.cpp", "callActivity_8cpp.html", null ],
-    [ "callActivity.h", "callActivity_8h.html", [
-      [ "callActivity", "classXML_1_1bpmn_1_1callActivity.html", "classXML_1_1bpmn_1_1callActivity" ]
-    ] ],
+    [ "callActivity.h", "callActivity_8h.html", "callActivity_8h" ],
     [ "callChoreography.cpp", "callChoreography_8cpp.html", null ],
-    [ "callChoreography.h", "callChoreography_8h.html", [
-      [ "callChoreography", "classXML_1_1bpmn_1_1callChoreography.html", "classXML_1_1bpmn_1_1callChoreography" ]
-    ] ],
+    [ "callChoreography.h", "callChoreography_8h.html", "callChoreography_8h" ],
     [ "callConversation.cpp", "callConversation_8cpp.html", null ],
-    [ "callConversation.h", "callConversation_8h.html", [
-      [ "callConversation", "classXML_1_1bpmn_1_1callConversation.html", "classXML_1_1bpmn_1_1callConversation" ]
-    ] ],
+    [ "callConversation.h", "callConversation_8h.html", "callConversation_8h" ],
     [ "cancelEventDefinition.cpp", "cancelEventDefinition_8cpp.html", null ],
-    [ "cancelEventDefinition.h", "cancelEventDefinition_8h.html", [
-      [ "cancelEventDefinition", "classXML_1_1bpmn_1_1cancelEventDefinition.html", "classXML_1_1bpmn_1_1cancelEventDefinition" ]
-    ] ],
+    [ "cancelEventDefinition.h", "cancelEventDefinition_8h.html", "cancelEventDefinition_8h" ],
     [ "catchEvent.cpp", "catchEvent_8cpp.html", null ],
-    [ "catchEvent.h", "catchEvent_8h.html", [
-      [ "catchEvent", "classXML_1_1bpmn_1_1catchEvent.html", "classXML_1_1bpmn_1_1catchEvent" ]
-    ] ],
+    [ "catchEvent.h", "catchEvent_8h.html", "catchEvent_8h" ],
     [ "categoryValue.cpp", "categoryValue_8cpp.html", null ],
-    [ "categoryValue.h", "categoryValue_8h.html", [
-      [ "categoryValue", "classXML_1_1bpmn_1_1categoryValue.html", "classXML_1_1bpmn_1_1categoryValue" ]
-    ] ],
+    [ "categoryValue.h", "categoryValue_8h.html", "categoryValue_8h" ],
     [ "choreographyActivity.cpp", "choreographyActivity_8cpp.html", null ],
-    [ "choreographyActivity.h", "choreographyActivity_8h.html", [
-      [ "choreographyActivity", "classXML_1_1bpmn_1_1choreographyActivity.html", "classXML_1_1bpmn_1_1choreographyActivity" ]
-    ] ],
+    [ "choreographyActivity.h", "choreographyActivity_8h.html", "choreographyActivity_8h" ],
     [ "choreographyTask.cpp", "choreographyTask_8cpp.html", null ],
-    [ "choreographyTask.h", "choreographyTask_8h.html", [
-      [ "choreographyTask", "classXML_1_1bpmn_1_1choreographyTask.html", "classXML_1_1bpmn_1_1choreographyTask" ]
-    ] ],
+    [ "choreographyTask.h", "choreographyTask_8h.html", "choreographyTask_8h" ],
     [ "compensateEventDefinition.cpp", "compensateEventDefinition_8cpp.html", null ],
-    [ "compensateEventDefinition.h", "compensateEventDefinition_8h.html", [
-      [ "compensateEventDefinition", "classXML_1_1bpmn_1_1compensateEventDefinition.html", "classXML_1_1bpmn_1_1compensateEventDefinition" ]
-    ] ],
+    [ "compensateEventDefinition.h", "compensateEventDefinition_8h.html", "compensateEventDefinition_8h" ],
     [ "complexBehaviorDefinition.cpp", "complexBehaviorDefinition_8cpp.html", null ],
-    [ "complexBehaviorDefinition.h", "complexBehaviorDefinition_8h.html", [
-      [ "complexBehaviorDefinition", "classXML_1_1bpmn_1_1complexBehaviorDefinition.html", "classXML_1_1bpmn_1_1complexBehaviorDefinition" ]
-    ] ],
+    [ "complexBehaviorDefinition.h", "complexBehaviorDefinition_8h.html", "complexBehaviorDefinition_8h" ],
     [ "complexGateway.cpp", "complexGateway_8cpp.html", null ],
-    [ "complexGateway.h", "complexGateway_8h.html", [
-      [ "complexGateway", "classXML_1_1bpmn_1_1complexGateway.html", "classXML_1_1bpmn_1_1complexGateway" ]
-    ] ],
+    [ "complexGateway.h", "complexGateway_8h.html", "complexGateway_8h" ],
     [ "conditionalEventDefinition.cpp", "conditionalEventDefinition_8cpp.html", null ],
-    [ "conditionalEventDefinition.h", "conditionalEventDefinition_8h.html", [
-      [ "conditionalEventDefinition", "classXML_1_1bpmn_1_1conditionalEventDefinition.html", "classXML_1_1bpmn_1_1conditionalEventDefinition" ]
-    ] ],
+    [ "conditionalEventDefinition.h", "conditionalEventDefinition_8h.html", "conditionalEventDefinition_8h" ],
     [ "conversationAssociation.cpp", "conversationAssociation_8cpp.html", null ],
-    [ "conversationAssociation.h", "conversationAssociation_8h.html", [
-      [ "conversationAssociation", "classXML_1_1bpmn_1_1conversationAssociation.html", "classXML_1_1bpmn_1_1conversationAssociation" ]
-    ] ],
+    [ "conversationAssociation.h", "conversationAssociation_8h.html", "conversationAssociation_8h" ],
     [ "conversationLink.cpp", "conversationLink_8cpp.html", null ],
-    [ "conversationLink.h", "conversationLink_8h.html", [
-      [ "conversationLink", "classXML_1_1bpmn_1_1conversationLink.html", "classXML_1_1bpmn_1_1conversationLink" ]
-    ] ],
+    [ "conversationLink.h", "conversationLink_8h.html", "conversationLink_8h" ],
     [ "conversationNode.cpp", "conversationNode_8cpp.html", null ],
-    [ "conversationNode.h", "conversationNode_8h.html", [
-      [ "conversationNode", "classXML_1_1bpmn_1_1conversationNode.html", "classXML_1_1bpmn_1_1conversationNode" ]
-    ] ],
+    [ "conversationNode.h", "conversationNode_8h.html", "conversationNode_8h" ],
     [ "correlationKey.cpp", "correlationKey_8cpp.html", null ],
-    [ "correlationKey.h", "correlationKey_8h.html", [
-      [ "correlationKey", "classXML_1_1bpmn_1_1correlationKey.html", "classXML_1_1bpmn_1_1correlationKey" ]
-    ] ],
+    [ "correlationKey.h", "correlationKey_8h.html", "correlationKey_8h" ],
     [ "correlationProperty.cpp", "correlationProperty_8cpp.html", null ],
-    [ "correlationProperty.h", "correlationProperty_8h.html", [
-      [ "correlationProperty", "classXML_1_1bpmn_1_1correlationProperty.html", "classXML_1_1bpmn_1_1correlationProperty" ]
-    ] ],
+    [ "correlationProperty.h", "correlationProperty_8h.html", "correlationProperty_8h" ],
     [ "correlationPropertyBinding.cpp", "correlationPropertyBinding_8cpp.html", null ],
-    [ "correlationPropertyBinding.h", "correlationPropertyBinding_8h.html", [
-      [ "correlationPropertyBinding", "classXML_1_1bpmn_1_1correlationPropertyBinding.html", "classXML_1_1bpmn_1_1correlationPropertyBinding" ]
-    ] ],
+    [ "correlationPropertyBinding.h", "correlationPropertyBinding_8h.html", "correlationPropertyBinding_8h" ],
     [ "correlationPropertyRetrievalExpression.cpp", "correlationPropertyRetrievalExpression_8cpp.html", null ],
-    [ "correlationPropertyRetrievalExpression.h", "correlationPropertyRetrievalExpression_8h.html", [
-      [ "correlationPropertyRetrievalExpression", "classXML_1_1bpmn_1_1correlationPropertyRetrievalExpression.html", "classXML_1_1bpmn_1_1correlationPropertyRetrievalExpression" ]
-    ] ],
+    [ "correlationPropertyRetrievalExpression.h", "correlationPropertyRetrievalExpression_8h.html", "correlationPropertyRetrievalExpression_8h" ],
     [ "correlationSubscription.cpp", "correlationSubscription_8cpp.html", null ],
-    [ "correlationSubscription.h", "correlationSubscription_8h.html", [
-      [ "correlationSubscription", "classXML_1_1bpmn_1_1correlationSubscription.html", "classXML_1_1bpmn_1_1correlationSubscription" ]
-    ] ],
+    [ "correlationSubscription.h", "correlationSubscription_8h.html", "correlationSubscription_8h" ],
     [ "dataAssociation.cpp", "dataAssociation_8cpp.html", null ],
-    [ "dataAssociation.h", "dataAssociation_8h.html", [
-      [ "dataAssociation", "classXML_1_1bpmn_1_1dataAssociation.html", "classXML_1_1bpmn_1_1dataAssociation" ]
-    ] ],
+    [ "dataAssociation.h", "dataAssociation_8h.html", "dataAssociation_8h" ],
     [ "dataInput.cpp", "dataInput_8cpp.html", null ],
-    [ "dataInput.h", "dataInput_8h.html", [
-      [ "dataInput", "classXML_1_1bpmn_1_1dataInput.html", "classXML_1_1bpmn_1_1dataInput" ]
-    ] ],
+    [ "dataInput.h", "dataInput_8h.html", "dataInput_8h" ],
     [ "dataInputAssociation.cpp", "dataInputAssociation_8cpp.html", null ],
-    [ "dataInputAssociation.h", "dataInputAssociation_8h.html", [
-      [ "dataInputAssociation", "classXML_1_1bpmn_1_1dataInputAssociation.html", "classXML_1_1bpmn_1_1dataInputAssociation" ]
-    ] ],
+    [ "dataInputAssociation.h", "dataInputAssociation_8h.html", "dataInputAssociation_8h" ],
     [ "dataObject.cpp", "dataObject_8cpp.html", null ],
-    [ "dataObject.h", "dataObject_8h.html", [
-      [ "dataObject", "classXML_1_1bpmn_1_1dataObject.html", "classXML_1_1bpmn_1_1dataObject" ]
-    ] ],
+    [ "dataObject.h", "dataObject_8h.html", "dataObject_8h" ],
     [ "dataObjectReference.cpp", "dataObjectReference_8cpp.html", null ],
-    [ "dataObjectReference.h", "dataObjectReference_8h.html", [
-      [ "dataObjectReference", "classXML_1_1bpmn_1_1dataObjectReference.html", "classXML_1_1bpmn_1_1dataObjectReference" ]
-    ] ],
+    [ "dataObjectReference.h", "dataObjectReference_8h.html", "dataObjectReference_8h" ],
     [ "dataOutput.cpp", "dataOutput_8cpp.html", null ],
-    [ "dataOutput.h", "dataOutput_8h.html", [
-      [ "dataOutput", "classXML_1_1bpmn_1_1dataOutput.html", "classXML_1_1bpmn_1_1dataOutput" ]
-    ] ],
+    [ "dataOutput.h", "dataOutput_8h.html", "dataOutput_8h" ],
     [ "dataOutputAssociation.cpp", "dataOutputAssociation_8cpp.html", null ],
-    [ "dataOutputAssociation.h", "dataOutputAssociation_8h.html", [
-      [ "dataOutputAssociation", "classXML_1_1bpmn_1_1dataOutputAssociation.html", "classXML_1_1bpmn_1_1dataOutputAssociation" ]
-    ] ],
+    [ "dataOutputAssociation.h", "dataOutputAssociation_8h.html", "dataOutputAssociation_8h" ],
     [ "dataState.cpp", "dataState_8cpp.html", null ],
-    [ "dataState.h", "dataState_8h.html", [
-      [ "dataState", "classXML_1_1bpmn_1_1dataState.html", "classXML_1_1bpmn_1_1dataState" ]
-    ] ],
+    [ "dataState.h", "dataState_8h.html", "dataState_8h" ],
     [ "dataStore.cpp", "dataStore_8cpp.html", null ],
-    [ "dataStore.h", "dataStore_8h.html", [
-      [ "dataStore", "classXML_1_1bpmn_1_1dataStore.html", "classXML_1_1bpmn_1_1dataStore" ]
-    ] ],
+    [ "dataStore.h", "dataStore_8h.html", "dataStore_8h" ],
     [ "dataStoreReference.cpp", "dataStoreReference_8cpp.html", null ],
-    [ "dataStoreReference.h", "dataStoreReference_8h.html", [
-      [ "dataStoreReference", "classXML_1_1bpmn_1_1dataStoreReference.html", "classXML_1_1bpmn_1_1dataStoreReference" ]
-    ] ],
+    [ "dataStoreReference.h", "dataStoreReference_8h.html", "dataStoreReference_8h" ],
     [ "Diagram.cpp", "Diagram_8cpp.html", null ],
     [ "DiagramElement.cpp", "DiagramElement_8cpp.html", null ],
     [ "DiagramElement_extension.cpp", "DiagramElement__extension_8cpp.html", null ],
     [ "Edge.cpp", "Edge_8cpp.html", null ],
     [ "endEvent.cpp", "endEvent_8cpp.html", null ],
-    [ "endEvent.h", "endEvent_8h.html", [
-      [ "endEvent", "classXML_1_1bpmn_1_1endEvent.html", "classXML_1_1bpmn_1_1endEvent" ]
-    ] ],
+    [ "endEvent.h", "endEvent_8h.html", "endEvent_8h" ],
     [ "endPoint.cpp", "endPoint_8cpp.html", null ],
-    [ "endPoint.h", "endPoint_8h.html", [
-      [ "endPoint", "classXML_1_1bpmn_1_1endPoint.html", "classXML_1_1bpmn_1_1endPoint" ]
-    ] ],
+    [ "endPoint.h", "endPoint_8h.html", "endPoint_8h" ],
     [ "errorEventDefinition.cpp", "errorEventDefinition_8cpp.html", null ],
-    [ "errorEventDefinition.h", "errorEventDefinition_8h.html", [
-      [ "errorEventDefinition", "classXML_1_1bpmn_1_1errorEventDefinition.html", "classXML_1_1bpmn_1_1errorEventDefinition" ]
-    ] ],
+    [ "errorEventDefinition.h", "errorEventDefinition_8h.html", "errorEventDefinition_8h" ],
     [ "escalationEventDefinition.cpp", "escalationEventDefinition_8cpp.html", null ],
-    [ "escalationEventDefinition.h", "escalationEventDefinition_8h.html", [
-      [ "escalationEventDefinition", "classXML_1_1bpmn_1_1escalationEventDefinition.html", "classXML_1_1bpmn_1_1escalationEventDefinition" ]
-    ] ],
+    [ "escalationEventDefinition.h", "escalationEventDefinition_8h.html", "escalationEventDefinition_8h" ],
     [ "eventBasedGateway.cpp", "eventBasedGateway_8cpp.html", null ],
-    [ "eventBasedGateway.h", "eventBasedGateway_8h.html", [
-      [ "eventBasedGateway", "classXML_1_1bpmn_1_1eventBasedGateway.html", "classXML_1_1bpmn_1_1eventBasedGateway" ]
-    ] ],
+    [ "eventBasedGateway.h", "eventBasedGateway_8h.html", "eventBasedGateway_8h" ],
     [ "eventDefinition.cpp", "eventDefinition_8cpp.html", null ],
-    [ "eventDefinition.h", "eventDefinition_8h.html", [
-      [ "eventDefinition", "classXML_1_1bpmn_1_1eventDefinition.html", "classXML_1_1bpmn_1_1eventDefinition" ]
-    ] ],
+    [ "eventDefinition.h", "eventDefinition_8h.html", "eventDefinition_8h" ],
     [ "exclusiveGateway.cpp", "exclusiveGateway_8cpp.html", null ],
-    [ "exclusiveGateway.h", "exclusiveGateway_8h.html", [
-      [ "exclusiveGateway", "classXML_1_1bpmn_1_1exclusiveGateway.html", "classXML_1_1bpmn_1_1exclusiveGateway" ]
-    ] ],
+    [ "exclusiveGateway.h", "exclusiveGateway_8h.html", "exclusiveGateway_8h" ],
     [ "extensionElements.cpp", "extensionElements_8cpp.html", null ],
-    [ "extensionElements.h", "extensionElements_8h.html", [
-      [ "extensionElements", "classXML_1_1bpmn_1_1extensionElements.html", "classXML_1_1bpmn_1_1extensionElements" ]
-    ] ],
+    [ "extensionElements.h", "extensionElements_8h.html", "extensionElements_8h" ],
     [ "flowElement.cpp", "flowElement_8cpp.html", null ],
-    [ "flowElement.h", "flowElement_8h.html", [
-      [ "flowElement", "classXML_1_1bpmn_1_1flowElement.html", "classXML_1_1bpmn_1_1flowElement" ]
-    ] ],
+    [ "flowElement.h", "flowElement_8h.html", "flowElement_8h" ],
     [ "flowNode.cpp", "flowNode_8cpp.html", null ],
-    [ "flowNode.h", "flowNode_8h.html", [
-      [ "flowNode", "classXML_1_1bpmn_1_1flowNode.html", "classXML_1_1bpmn_1_1flowNode" ]
-    ] ],
+    [ "flowNode.h", "flowNode_8h.html", "flowNode_8h" ],
     [ "Font.cpp", "Font_8cpp.html", null ],
     [ "formalExpression.cpp", "formalExpression_8cpp.html", null ],
-    [ "formalExpression.h", "formalExpression_8h.html", [
-      [ "formalExpression", "classXML_1_1bpmn_1_1formalExpression.html", "classXML_1_1bpmn_1_1formalExpression" ]
-    ] ],
+    [ "formalExpression.h", "formalExpression_8h.html", "formalExpression_8h" ],
     [ "globalBusinessRuleTask.cpp", "globalBusinessRuleTask_8cpp.html", null ],
-    [ "globalBusinessRuleTask.h", "globalBusinessRuleTask_8h.html", [
-      [ "globalBusinessRuleTask", "classXML_1_1bpmn_1_1globalBusinessRuleTask.html", "classXML_1_1bpmn_1_1globalBusinessRuleTask" ]
-    ] ],
+    [ "globalBusinessRuleTask.h", "globalBusinessRuleTask_8h.html", "globalBusinessRuleTask_8h" ],
     [ "globalChoreographyTask.cpp", "globalChoreographyTask_8cpp.html", null ],
-    [ "globalChoreographyTask.h", "globalChoreographyTask_8h.html", [
-      [ "globalChoreographyTask", "classXML_1_1bpmn_1_1globalChoreographyTask.html", "classXML_1_1bpmn_1_1globalChoreographyTask" ]
-    ] ],
+    [ "globalChoreographyTask.h", "globalChoreographyTask_8h.html", "globalChoreographyTask_8h" ],
     [ "globalConversation.cpp", "globalConversation_8cpp.html", null ],
-    [ "globalConversation.h", "globalConversation_8h.html", [
-      [ "globalConversation", "classXML_1_1bpmn_1_1globalConversation.html", "classXML_1_1bpmn_1_1globalConversation" ]
-    ] ],
+    [ "globalConversation.h", "globalConversation_8h.html", "globalConversation_8h" ],
     [ "globalManualTask.cpp", "globalManualTask_8cpp.html", null ],
-    [ "globalManualTask.h", "globalManualTask_8h.html", [
-      [ "globalManualTask", "classXML_1_1bpmn_1_1globalManualTask.html", "classXML_1_1bpmn_1_1globalManualTask" ]
-    ] ],
+    [ "globalManualTask.h", "globalManualTask_8h.html", "globalManualTask_8h" ],
     [ "globalScriptTask.cpp", "globalScriptTask_8cpp.html", null ],
-    [ "globalScriptTask.h", "globalScriptTask_8h.html", [
-      [ "globalScriptTask", "classXML_1_1bpmn_1_1globalScriptTask.html", "classXML_1_1bpmn_1_1globalScriptTask" ]
-    ] ],
+    [ "globalScriptTask.h", "globalScriptTask_8h.html", "globalScriptTask_8h" ],
     [ "globalTask.cpp", "globalTask_8cpp.html", null ],
-    [ "globalTask.h", "globalTask_8h.html", [
-      [ "globalTask", "classXML_1_1bpmn_1_1globalTask.html", "classXML_1_1bpmn_1_1globalTask" ]
-    ] ],
+    [ "globalTask.h", "globalTask_8h.html", "globalTask_8h" ],
     [ "globalUserTask.cpp", "globalUserTask_8cpp.html", null ],
-    [ "globalUserTask.h", "globalUserTask_8h.html", [
-      [ "globalUserTask", "classXML_1_1bpmn_1_1globalUserTask.html", "classXML_1_1bpmn_1_1globalUserTask" ]
-    ] ],
+    [ "globalUserTask.h", "globalUserTask_8h.html", "globalUserTask_8h" ],
     [ "humanPerformer.cpp", "humanPerformer_8cpp.html", null ],
-    [ "humanPerformer.h", "humanPerformer_8h.html", [
-      [ "humanPerformer", "classXML_1_1bpmn_1_1humanPerformer.html", "classXML_1_1bpmn_1_1humanPerformer" ]
-    ] ],
+    [ "humanPerformer.h", "humanPerformer_8h.html", "humanPerformer_8h" ],
     [ "implicitThrowEvent.cpp", "implicitThrowEvent_8cpp.html", null ],
-    [ "implicitThrowEvent.h", "implicitThrowEvent_8h.html", [
-      [ "implicitThrowEvent", "classXML_1_1bpmn_1_1implicitThrowEvent.html", "classXML_1_1bpmn_1_1implicitThrowEvent" ]
-    ] ],
+    [ "implicitThrowEvent.h", "implicitThrowEvent_8h.html", "implicitThrowEvent_8h" ],
     [ "inclusiveGateway.cpp", "inclusiveGateway_8cpp.html", null ],
-    [ "inclusiveGateway.h", "inclusiveGateway_8h.html", [
-      [ "inclusiveGateway", "classXML_1_1bpmn_1_1inclusiveGateway.html", "classXML_1_1bpmn_1_1inclusiveGateway" ]
-    ] ],
+    [ "inclusiveGateway.h", "inclusiveGateway_8h.html", "inclusiveGateway_8h" ],
     [ "inputSet.cpp", "inputSet_8cpp.html", null ],
-    [ "inputSet.h", "inputSet_8h.html", [
-      [ "inputSet", "classXML_1_1bpmn_1_1inputSet.html", "classXML_1_1bpmn_1_1inputSet" ]
-    ] ],
+    [ "inputSet.h", "inputSet_8h.html", "inputSet_8h" ],
     [ "intermediateCatchEvent.cpp", "intermediateCatchEvent_8cpp.html", null ],
-    [ "intermediateCatchEvent.h", "intermediateCatchEvent_8h.html", [
-      [ "intermediateCatchEvent", "classXML_1_1bpmn_1_1intermediateCatchEvent.html", "classXML_1_1bpmn_1_1intermediateCatchEvent" ]
-    ] ],
+    [ "intermediateCatchEvent.h", "intermediateCatchEvent_8h.html", "intermediateCatchEvent_8h" ],
     [ "intermediateThrowEvent.cpp", "intermediateThrowEvent_8cpp.html", null ],
-    [ "intermediateThrowEvent.h", "intermediateThrowEvent_8h.html", [
-      [ "intermediateThrowEvent", "classXML_1_1bpmn_1_1intermediateThrowEvent.html", "classXML_1_1bpmn_1_1intermediateThrowEvent" ]
-    ] ],
+    [ "intermediateThrowEvent.h", "intermediateThrowEvent_8h.html", "intermediateThrowEvent_8h" ],
     [ "ioBinding.cpp", "ioBinding_8cpp.html", null ],
-    [ "ioBinding.h", "ioBinding_8h.html", [
-      [ "ioBinding", "classXML_1_1bpmn_1_1ioBinding.html", "classXML_1_1bpmn_1_1ioBinding" ]
-    ] ],
+    [ "ioBinding.h", "ioBinding_8h.html", "ioBinding_8h" ],
     [ "ioSpecification.cpp", "ioSpecification_8cpp.html", null ],
-    [ "ioSpecification.h", "ioSpecification_8h.html", [
-      [ "ioSpecification", "classXML_1_1bpmn_1_1ioSpecification.html", "classXML_1_1bpmn_1_1ioSpecification" ]
-    ] ],
+    [ "ioSpecification.h", "ioSpecification_8h.html", "ioSpecification_8h" ],
     [ "itemDefinition.cpp", "itemDefinition_8cpp.html", null ],
-    [ "itemDefinition.h", "itemDefinition_8h.html", [
-      [ "itemDefinition", "classXML_1_1bpmn_1_1itemDefinition.html", "classXML_1_1bpmn_1_1itemDefinition" ]
-    ] ],
+    [ "itemDefinition.h", "itemDefinition_8h.html", "itemDefinition_8h" ],
     [ "Label.cpp", "Label_8cpp.html", null ],
     [ "LabeledEdge.cpp", "LabeledEdge_8cpp.html", null ],
     [ "LabeledShape.cpp", "LabeledShape_8cpp.html", null ],
     [ "laneSet.cpp", "laneSet_8cpp.html", null ],
-    [ "laneSet.h", "laneSet_8h.html", [
-      [ "laneSet", "classXML_1_1bpmn_1_1laneSet.html", "classXML_1_1bpmn_1_1laneSet" ]
-    ] ],
+    [ "laneSet.h", "laneSet_8h.html", "laneSet_8h" ],
     [ "linkEventDefinition.cpp", "linkEventDefinition_8cpp.html", null ],
-    [ "linkEventDefinition.h", "linkEventDefinition_8h.html", [
-      [ "linkEventDefinition", "classXML_1_1bpmn_1_1linkEventDefinition.html", "classXML_1_1bpmn_1_1linkEventDefinition" ]
-    ] ],
+    [ "linkEventDefinition.h", "linkEventDefinition_8h.html", "linkEventDefinition_8h" ],
     [ "loopCharacteristics.cpp", "loopCharacteristics_8cpp.html", null ],
-    [ "loopCharacteristics.h", "loopCharacteristics_8h.html", [
-      [ "loopCharacteristics", "classXML_1_1bpmn_1_1loopCharacteristics.html", "classXML_1_1bpmn_1_1loopCharacteristics" ]
-    ] ],
+    [ "loopCharacteristics.h", "loopCharacteristics_8h.html", "loopCharacteristics_8h" ],
     [ "manualTask.cpp", "manualTask_8cpp.html", null ],
-    [ "manualTask.h", "manualTask_8h.html", [
-      [ "manualTask", "classXML_1_1bpmn_1_1manualTask.html", "classXML_1_1bpmn_1_1manualTask" ]
-    ] ],
+    [ "manualTask.h", "manualTask_8h.html", "manualTask_8h" ],
     [ "messageEventDefinition.cpp", "messageEventDefinition_8cpp.html", null ],
-    [ "messageEventDefinition.h", "messageEventDefinition_8h.html", [
-      [ "messageEventDefinition", "classXML_1_1bpmn_1_1messageEventDefinition.html", "classXML_1_1bpmn_1_1messageEventDefinition" ]
-    ] ],
+    [ "messageEventDefinition.h", "messageEventDefinition_8h.html", "messageEventDefinition_8h" ],
     [ "messageFlow.cpp", "messageFlow_8cpp.html", null ],
-    [ "messageFlow.h", "messageFlow_8h.html", [
-      [ "messageFlow", "classXML_1_1bpmn_1_1messageFlow.html", "classXML_1_1bpmn_1_1messageFlow" ]
-    ] ],
+    [ "messageFlow.h", "messageFlow_8h.html", "messageFlow_8h" ],
     [ "messageFlowAssociation.cpp", "messageFlowAssociation_8cpp.html", null ],
-    [ "messageFlowAssociation.h", "messageFlowAssociation_8h.html", [
-      [ "messageFlowAssociation", "classXML_1_1bpmn_1_1messageFlowAssociation.html", "classXML_1_1bpmn_1_1messageFlowAssociation" ]
-    ] ],
+    [ "messageFlowAssociation.h", "messageFlowAssociation_8h.html", "messageFlowAssociation_8h" ],
     [ "MessageVisibleKind.h", "MessageVisibleKind_8h.html", "MessageVisibleKind_8h" ],
     [ "multiInstanceLoopCharacteristics.cpp", "multiInstanceLoopCharacteristics_8cpp.html", null ],
-    [ "multiInstanceLoopCharacteristics.h", "multiInstanceLoopCharacteristics_8h.html", [
-      [ "multiInstanceLoopCharacteristics", "classXML_1_1bpmn_1_1multiInstanceLoopCharacteristics.html", "classXML_1_1bpmn_1_1multiInstanceLoopCharacteristics" ]
-    ] ],
+    [ "multiInstanceLoopCharacteristics.h", "multiInstanceLoopCharacteristics_8h.html", "multiInstanceLoopCharacteristics_8h" ],
     [ "Node.cpp", "xml_2bpmn_2Node_8cpp.html", null ],
     [ "outputSet.cpp", "outputSet_8cpp.html", null ],
-    [ "outputSet.h", "outputSet_8h.html", [
-      [ "outputSet", "classXML_1_1bpmn_1_1outputSet.html", "classXML_1_1bpmn_1_1outputSet" ]
-    ] ],
+    [ "outputSet.h", "outputSet_8h.html", "outputSet_8h" ],
     [ "parallelGateway.cpp", "parallelGateway_8cpp.html", null ],
-    [ "parallelGateway.h", "parallelGateway_8h.html", [
-      [ "parallelGateway", "classXML_1_1bpmn_1_1parallelGateway.html", "classXML_1_1bpmn_1_1parallelGateway" ]
-    ] ],
+    [ "parallelGateway.h", "parallelGateway_8h.html", "parallelGateway_8h" ],
     [ "participantAssociation.cpp", "participantAssociation_8cpp.html", null ],
-    [ "participantAssociation.h", "participantAssociation_8h.html", [
-      [ "participantAssociation", "classXML_1_1bpmn_1_1participantAssociation.html", "classXML_1_1bpmn_1_1participantAssociation" ]
-    ] ],
+    [ "participantAssociation.h", "participantAssociation_8h.html", "participantAssociation_8h" ],
     [ "ParticipantBandKind.h", "ParticipantBandKind_8h.html", "ParticipantBandKind_8h" ],
     [ "participantMultiplicity.cpp", "participantMultiplicity_8cpp.html", null ],
-    [ "participantMultiplicity.h", "participantMultiplicity_8h.html", [
-      [ "participantMultiplicity", "classXML_1_1bpmn_1_1participantMultiplicity.html", "classXML_1_1bpmn_1_1participantMultiplicity" ]
-    ] ],
+    [ "participantMultiplicity.h", "participantMultiplicity_8h.html", "participantMultiplicity_8h" ],
     [ "partnerEntity.cpp", "partnerEntity_8cpp.html", null ],
-    [ "partnerEntity.h", "partnerEntity_8h.html", [
-      [ "partnerEntity", "classXML_1_1bpmn_1_1partnerEntity.html", "classXML_1_1bpmn_1_1partnerEntity" ]
-    ] ],
+    [ "partnerEntity.h", "partnerEntity_8h.html", "partnerEntity_8h" ],
     [ "partnerRole.cpp", "partnerRole_8cpp.html", null ],
-    [ "partnerRole.h", "partnerRole_8h.html", [
-      [ "partnerRole", "classXML_1_1bpmn_1_1partnerRole.html", "classXML_1_1bpmn_1_1partnerRole" ]
-    ] ],
+    [ "partnerRole.h", "partnerRole_8h.html", "partnerRole_8h" ],
     [ "Plane.cpp", "Plane_8cpp.html", null ],
     [ "Point.cpp", "Point_8cpp.html", null ],
     [ "potentialOwner.cpp", "potentialOwner_8cpp.html", null ],
-    [ "potentialOwner.h", "potentialOwner_8h.html", [
-      [ "potentialOwner", "classXML_1_1bpmn_1_1potentialOwner.html", "classXML_1_1bpmn_1_1potentialOwner" ]
-    ] ],
+    [ "potentialOwner.h", "potentialOwner_8h.html", "potentialOwner_8h" ],
     [ "receiveTask.cpp", "receiveTask_8cpp.html", null ],
-    [ "receiveTask.h", "receiveTask_8h.html", [
-      [ "receiveTask", "classXML_1_1bpmn_1_1receiveTask.html", "classXML_1_1bpmn_1_1receiveTask" ]
-    ] ],
+    [ "receiveTask.h", "receiveTask_8h.html", "receiveTask_8h" ],
     [ "resourceAssignmentExpression.cpp", "resourceAssignmentExpression_8cpp.html", null ],
-    [ "resourceAssignmentExpression.h", "resourceAssignmentExpression_8h.html", [
-      [ "resourceAssignmentExpression", "classXML_1_1bpmn_1_1resourceAssignmentExpression.html", "classXML_1_1bpmn_1_1resourceAssignmentExpression" ]
-    ] ],
+    [ "resourceAssignmentExpression.h", "resourceAssignmentExpression_8h.html", "resourceAssignmentExpression_8h" ],
     [ "resourceParameter.cpp", "resourceParameter_8cpp.html", null ],
-    [ "resourceParameter.h", "resourceParameter_8h.html", [
-      [ "resourceParameter", "classXML_1_1bpmn_1_1resourceParameter.html", "classXML_1_1bpmn_1_1resourceParameter" ]
-    ] ],
+    [ "resourceParameter.h", "resourceParameter_8h.html", "resourceParameter_8h" ],
     [ "resourceParameterBinding.cpp", "resourceParameterBinding_8cpp.html", null ],
-    [ "resourceParameterBinding.h", "resourceParameterBinding_8h.html", [
-      [ "resourceParameterBinding", "classXML_1_1bpmn_1_1resourceParameterBinding.html", "classXML_1_1bpmn_1_1resourceParameterBinding" ]
-    ] ],
+    [ "resourceParameterBinding.h", "resourceParameterBinding_8h.html", "resourceParameterBinding_8h" ],
     [ "resourceRole.cpp", "resourceRole_8cpp.html", null ],
-    [ "resourceRole.h", "resourceRole_8h.html", [
-      [ "resourceRole", "classXML_1_1bpmn_1_1resourceRole.html", "classXML_1_1bpmn_1_1resourceRole" ]
-    ] ],
+    [ "resourceRole.h", "resourceRole_8h.html", "resourceRole_8h" ],
     [ "rootElement.cpp", "rootElement_8cpp.html", null ],
-    [ "rootElement.h", "rootElement_8h.html", [
-      [ "rootElement", "classXML_1_1bpmn_1_1rootElement.html", "classXML_1_1bpmn_1_1rootElement" ]
-    ] ],
+    [ "rootElement.h", "rootElement_8h.html", "rootElement_8h" ],
     [ "scriptTask.cpp", "scriptTask_8cpp.html", null ],
-    [ "scriptTask.h", "scriptTask_8h.html", [
-      [ "scriptTask", "classXML_1_1bpmn_1_1scriptTask.html", "classXML_1_1bpmn_1_1scriptTask" ]
-    ] ],
+    [ "scriptTask.h", "scriptTask_8h.html", "scriptTask_8h" ],
     [ "sendTask.cpp", "sendTask_8cpp.html", null ],
-    [ "sendTask.h", "sendTask_8h.html", [
-      [ "sendTask", "classXML_1_1bpmn_1_1sendTask.html", "classXML_1_1bpmn_1_1sendTask" ]
-    ] ],
+    [ "sendTask.h", "sendTask_8h.html", "sendTask_8h" ],
     [ "sequenceFlow.cpp", "sequenceFlow_8cpp.html", null ],
-    [ "sequenceFlow.h", "sequenceFlow_8h.html", [
-      [ "sequenceFlow", "classXML_1_1bpmn_1_1sequenceFlow.html", "classXML_1_1bpmn_1_1sequenceFlow" ]
-    ] ],
+    [ "sequenceFlow.h", "sequenceFlow_8h.html", "sequenceFlow_8h" ],
     [ "serviceTask.cpp", "serviceTask_8cpp.html", null ],
-    [ "serviceTask.h", "serviceTask_8h.html", [
-      [ "serviceTask", "classXML_1_1bpmn_1_1serviceTask.html", "classXML_1_1bpmn_1_1serviceTask" ]
-    ] ],
+    [ "serviceTask.h", "serviceTask_8h.html", "serviceTask_8h" ],
     [ "Shape.cpp", "Shape_8cpp.html", null ],
     [ "signalEventDefinition.cpp", "signalEventDefinition_8cpp.html", null ],
-    [ "signalEventDefinition.h", "signalEventDefinition_8h.html", [
-      [ "signalEventDefinition", "classXML_1_1bpmn_1_1signalEventDefinition.html", "classXML_1_1bpmn_1_1signalEventDefinition" ]
-    ] ],
+    [ "signalEventDefinition.h", "signalEventDefinition_8h.html", "signalEventDefinition_8h" ],
     [ "standardLoopCharacteristics.cpp", "standardLoopCharacteristics_8cpp.html", null ],
-    [ "standardLoopCharacteristics.h", "standardLoopCharacteristics_8h.html", [
-      [ "standardLoopCharacteristics", "classXML_1_1bpmn_1_1standardLoopCharacteristics.html", "classXML_1_1bpmn_1_1standardLoopCharacteristics" ]
-    ] ],
+    [ "standardLoopCharacteristics.h", "standardLoopCharacteristics_8h.html", "standardLoopCharacteristics_8h" ],
     [ "startEvent.cpp", "startEvent_8cpp.html", null ],
-    [ "startEvent.h", "startEvent_8h.html", [
-      [ "startEvent", "classXML_1_1bpmn_1_1startEvent.html", "classXML_1_1bpmn_1_1startEvent" ]
-    ] ],
+    [ "startEvent.h", "startEvent_8h.html", "startEvent_8h" ],
     [ "Style.cpp", "Style_8cpp.html", null ],
     [ "subChoreography.cpp", "subChoreography_8cpp.html", null ],
-    [ "subChoreography.h", "subChoreography_8h.html", [
-      [ "subChoreography", "classXML_1_1bpmn_1_1subChoreography.html", "classXML_1_1bpmn_1_1subChoreography" ]
-    ] ],
+    [ "subChoreography.h", "subChoreography_8h.html", "subChoreography_8h" ],
     [ "subConversation.cpp", "subConversation_8cpp.html", null ],
-    [ "subConversation.h", "subConversation_8h.html", [
-      [ "subConversation", "classXML_1_1bpmn_1_1subConversation.html", "classXML_1_1bpmn_1_1subConversation" ]
-    ] ],
+    [ "subConversation.h", "subConversation_8h.html", "subConversation_8h" ],
     [ "subProcess.cpp", "subProcess_8cpp.html", null ],
-    [ "subProcess.h", "subProcess_8h.html", [
-      [ "subProcess", "classXML_1_1bpmn_1_1subProcess.html", "classXML_1_1bpmn_1_1subProcess" ]
-    ] ],
+    [ "subProcess.h", "subProcess_8h.html", "subProcess_8h" ],
     [ "tActivity.cpp", "tActivity_8cpp.html", null ],
-    [ "tActivity.h", "tActivity_8h.html", [
-      [ "tActivity", "classXML_1_1bpmn_1_1tActivity.html", "classXML_1_1bpmn_1_1tActivity" ]
-    ] ],
+    [ "tActivity.h", "tActivity_8h.html", "tActivity_8h" ],
     [ "tAdHocOrdering.h", "tAdHocOrdering_8h.html", "tAdHocOrdering_8h" ],
     [ "tAdHocSubProcess.cpp", "tAdHocSubProcess_8cpp.html", null ],
-    [ "tAdHocSubProcess.h", "tAdHocSubProcess_8h.html", [
-      [ "tAdHocSubProcess", "classXML_1_1bpmn_1_1tAdHocSubProcess.html", "classXML_1_1bpmn_1_1tAdHocSubProcess" ]
-    ] ],
+    [ "tAdHocSubProcess.h", "tAdHocSubProcess_8h.html", "tAdHocSubProcess_8h" ],
     [ "tArtifact.cpp", "tArtifact_8cpp.html", null ],
-    [ "tArtifact.h", "tArtifact_8h.html", [
-      [ "tArtifact", "classXML_1_1bpmn_1_1tArtifact.html", "classXML_1_1bpmn_1_1tArtifact" ]
-    ] ],
+    [ "tArtifact.h", "tArtifact_8h.html", "tArtifact_8h" ],
     [ "tAssignment.cpp", "tAssignment_8cpp.html", null ],
-    [ "tAssignment.h", "tAssignment_8h.html", [
-      [ "tAssignment", "classXML_1_1bpmn_1_1tAssignment.html", "classXML_1_1bpmn_1_1tAssignment" ]
-    ] ],
+    [ "tAssignment.h", "tAssignment_8h.html", "tAssignment_8h" ],
     [ "tAssociation.cpp", "tAssociation_8cpp.html", null ],
-    [ "tAssociation.h", "tAssociation_8h.html", [
-      [ "tAssociation", "classXML_1_1bpmn_1_1tAssociation.html", "classXML_1_1bpmn_1_1tAssociation" ]
-    ] ],
+    [ "tAssociation.h", "tAssociation_8h.html", "tAssociation_8h" ],
     [ "tAssociationDirection.h", "tAssociationDirection_8h.html", "tAssociationDirection_8h" ],
     [ "tAuditing.cpp", "tAuditing_8cpp.html", null ],
-    [ "tAuditing.h", "tAuditing_8h.html", [
-      [ "tAuditing", "classXML_1_1bpmn_1_1tAuditing.html", "classXML_1_1bpmn_1_1tAuditing" ]
-    ] ],
+    [ "tAuditing.h", "tAuditing_8h.html", "tAuditing_8h" ],
     [ "tBaseElement.cpp", "tBaseElement_8cpp.html", null ],
-    [ "tBaseElement.h", "tBaseElement_8h.html", [
-      [ "tBaseElement", "classXML_1_1bpmn_1_1tBaseElement.html", "classXML_1_1bpmn_1_1tBaseElement" ]
-    ] ],
+    [ "tBaseElement.h", "tBaseElement_8h.html", "tBaseElement_8h" ],
     [ "tBaseElementWithMixedContent.cpp", "tBaseElementWithMixedContent_8cpp.html", null ],
-    [ "tBaseElementWithMixedContent.h", "tBaseElementWithMixedContent_8h.html", [
-      [ "tBaseElementWithMixedContent", "classXML_1_1bpmn_1_1tBaseElementWithMixedContent.html", "classXML_1_1bpmn_1_1tBaseElementWithMixedContent" ]
-    ] ],
+    [ "tBaseElementWithMixedContent.h", "tBaseElementWithMixedContent_8h.html", "tBaseElementWithMixedContent_8h" ],
     [ "tBoundaryEvent.cpp", "tBoundaryEvent_8cpp.html", null ],
-    [ "tBoundaryEvent.h", "tBoundaryEvent_8h.html", [
-      [ "tBoundaryEvent", "classXML_1_1bpmn_1_1tBoundaryEvent.html", "classXML_1_1bpmn_1_1tBoundaryEvent" ]
-    ] ],
+    [ "tBoundaryEvent.h", "tBoundaryEvent_8h.html", "tBoundaryEvent_8h" ],
     [ "tBusinessRuleTask.cpp", "tBusinessRuleTask_8cpp.html", null ],
-    [ "tBusinessRuleTask.h", "tBusinessRuleTask_8h.html", [
-      [ "tBusinessRuleTask", "classXML_1_1bpmn_1_1tBusinessRuleTask.html", "classXML_1_1bpmn_1_1tBusinessRuleTask" ]
-    ] ],
+    [ "tBusinessRuleTask.h", "tBusinessRuleTask_8h.html", "tBusinessRuleTask_8h" ],
     [ "tCallableElement.cpp", "tCallableElement_8cpp.html", null ],
-    [ "tCallableElement.h", "tCallableElement_8h.html", [
-      [ "tCallableElement", "classXML_1_1bpmn_1_1tCallableElement.html", "classXML_1_1bpmn_1_1tCallableElement" ]
-    ] ],
+    [ "tCallableElement.h", "tCallableElement_8h.html", "tCallableElement_8h" ],
     [ "tCallActivity.cpp", "tCallActivity_8cpp.html", null ],
-    [ "tCallActivity.h", "tCallActivity_8h.html", [
-      [ "tCallActivity", "classXML_1_1bpmn_1_1tCallActivity.html", "classXML_1_1bpmn_1_1tCallActivity" ]
-    ] ],
+    [ "tCallActivity.h", "tCallActivity_8h.html", "tCallActivity_8h" ],
     [ "tCallChoreography.cpp", "tCallChoreography_8cpp.html", null ],
-    [ "tCallChoreography.h", "tCallChoreography_8h.html", [
-      [ "tCallChoreography", "classXML_1_1bpmn_1_1tCallChoreography.html", "classXML_1_1bpmn_1_1tCallChoreography" ]
-    ] ],
+    [ "tCallChoreography.h", "tCallChoreography_8h.html", "tCallChoreography_8h" ],
     [ "tCallConversation.cpp", "tCallConversation_8cpp.html", null ],
-    [ "tCallConversation.h", "tCallConversation_8h.html", [
-      [ "tCallConversation", "classXML_1_1bpmn_1_1tCallConversation.html", "classXML_1_1bpmn_1_1tCallConversation" ]
-    ] ],
+    [ "tCallConversation.h", "tCallConversation_8h.html", "tCallConversation_8h" ],
     [ "tCancelEventDefinition.cpp", "tCancelEventDefinition_8cpp.html", null ],
-    [ "tCancelEventDefinition.h", "tCancelEventDefinition_8h.html", [
-      [ "tCancelEventDefinition", "classXML_1_1bpmn_1_1tCancelEventDefinition.html", "classXML_1_1bpmn_1_1tCancelEventDefinition" ]
-    ] ],
+    [ "tCancelEventDefinition.h", "tCancelEventDefinition_8h.html", "tCancelEventDefinition_8h" ],
     [ "tCatchEvent.cpp", "tCatchEvent_8cpp.html", null ],
-    [ "tCatchEvent.h", "tCatchEvent_8h.html", [
-      [ "tCatchEvent", "classXML_1_1bpmn_1_1tCatchEvent.html", "classXML_1_1bpmn_1_1tCatchEvent" ]
-    ] ],
+    [ "tCatchEvent.h", "tCatchEvent_8h.html", "tCatchEvent_8h" ],
     [ "tCategory.cpp", "tCategory_8cpp.html", null ],
-    [ "tCategory.h", "tCategory_8h.html", [
-      [ "tCategory", "classXML_1_1bpmn_1_1tCategory.html", "classXML_1_1bpmn_1_1tCategory" ]
-    ] ],
+    [ "tCategory.h", "tCategory_8h.html", "tCategory_8h" ],
     [ "tCategoryValue.cpp", "tCategoryValue_8cpp.html", null ],
-    [ "tCategoryValue.h", "tCategoryValue_8h.html", [
-      [ "tCategoryValue", "classXML_1_1bpmn_1_1tCategoryValue.html", "classXML_1_1bpmn_1_1tCategoryValue" ]
-    ] ],
+    [ "tCategoryValue.h", "tCategoryValue_8h.html", "tCategoryValue_8h" ],
     [ "tChoreography.cpp", "tChoreography_8cpp.html", null ],
-    [ "tChoreography.h", "tChoreography_8h.html", [
-      [ "tChoreography", "classXML_1_1bpmn_1_1tChoreography.html", "classXML_1_1bpmn_1_1tChoreography" ]
-    ] ],
+    [ "tChoreography.h", "tChoreography_8h.html", "tChoreography_8h" ],
     [ "tChoreographyActivity.cpp", "tChoreographyActivity_8cpp.html", null ],
-    [ "tChoreographyActivity.h", "tChoreographyActivity_8h.html", [
-      [ "tChoreographyActivity", "classXML_1_1bpmn_1_1tChoreographyActivity.html", "classXML_1_1bpmn_1_1tChoreographyActivity" ]
-    ] ],
+    [ "tChoreographyActivity.h", "tChoreographyActivity_8h.html", "tChoreographyActivity_8h" ],
     [ "tChoreographyLoopType.h", "tChoreographyLoopType_8h.html", "tChoreographyLoopType_8h" ],
     [ "tChoreographyTask.cpp", "tChoreographyTask_8cpp.html", null ],
-    [ "tChoreographyTask.h", "tChoreographyTask_8h.html", [
-      [ "tChoreographyTask", "classXML_1_1bpmn_1_1tChoreographyTask.html", "classXML_1_1bpmn_1_1tChoreographyTask" ]
-    ] ],
+    [ "tChoreographyTask.h", "tChoreographyTask_8h.html", "tChoreographyTask_8h" ],
     [ "tCollaboration.cpp", "tCollaboration_8cpp.html", null ],
-    [ "tCollaboration.h", "tCollaboration_8h.html", [
-      [ "tCollaboration", "classXML_1_1bpmn_1_1tCollaboration.html", "classXML_1_1bpmn_1_1tCollaboration" ]
-    ] ],
+    [ "tCollaboration.h", "tCollaboration_8h.html", "tCollaboration_8h" ],
     [ "tCompensateEventDefinition.cpp", "tCompensateEventDefinition_8cpp.html", null ],
-    [ "tCompensateEventDefinition.h", "tCompensateEventDefinition_8h.html", [
-      [ "tCompensateEventDefinition", "classXML_1_1bpmn_1_1tCompensateEventDefinition.html", "classXML_1_1bpmn_1_1tCompensateEventDefinition" ]
-    ] ],
+    [ "tCompensateEventDefinition.h", "tCompensateEventDefinition_8h.html", "tCompensateEventDefinition_8h" ],
     [ "tComplexBehaviorDefinition.cpp", "tComplexBehaviorDefinition_8cpp.html", null ],
-    [ "tComplexBehaviorDefinition.h", "tComplexBehaviorDefinition_8h.html", [
-      [ "tComplexBehaviorDefinition", "classXML_1_1bpmn_1_1tComplexBehaviorDefinition.html", "classXML_1_1bpmn_1_1tComplexBehaviorDefinition" ]
-    ] ],
+    [ "tComplexBehaviorDefinition.h", "tComplexBehaviorDefinition_8h.html", "tComplexBehaviorDefinition_8h" ],
     [ "tComplexGateway.cpp", "tComplexGateway_8cpp.html", null ],
-    [ "tComplexGateway.h", "tComplexGateway_8h.html", [
-      [ "tComplexGateway", "classXML_1_1bpmn_1_1tComplexGateway.html", "classXML_1_1bpmn_1_1tComplexGateway" ]
-    ] ],
+    [ "tComplexGateway.h", "tComplexGateway_8h.html", "tComplexGateway_8h" ],
     [ "tConditionalEventDefinition.cpp", "tConditionalEventDefinition_8cpp.html", null ],
-    [ "tConditionalEventDefinition.h", "tConditionalEventDefinition_8h.html", [
-      [ "tConditionalEventDefinition", "classXML_1_1bpmn_1_1tConditionalEventDefinition.html", "classXML_1_1bpmn_1_1tConditionalEventDefinition" ]
-    ] ],
+    [ "tConditionalEventDefinition.h", "tConditionalEventDefinition_8h.html", "tConditionalEventDefinition_8h" ],
     [ "tConversation.cpp", "tConversation_8cpp.html", null ],
-    [ "tConversation.h", "tConversation_8h.html", [
-      [ "tConversation", "classXML_1_1bpmn_1_1tConversation.html", "classXML_1_1bpmn_1_1tConversation" ]
-    ] ],
+    [ "tConversation.h", "tConversation_8h.html", "tConversation_8h" ],
     [ "tConversationAssociation.cpp", "tConversationAssociation_8cpp.html", null ],
-    [ "tConversationAssociation.h", "tConversationAssociation_8h.html", [
-      [ "tConversationAssociation", "classXML_1_1bpmn_1_1tConversationAssociation.html", "classXML_1_1bpmn_1_1tConversationAssociation" ]
-    ] ],
+    [ "tConversationAssociation.h", "tConversationAssociation_8h.html", "tConversationAssociation_8h" ],
     [ "tConversationLink.cpp", "tConversationLink_8cpp.html", null ],
-    [ "tConversationLink.h", "tConversationLink_8h.html", [
-      [ "tConversationLink", "classXML_1_1bpmn_1_1tConversationLink.html", "classXML_1_1bpmn_1_1tConversationLink" ]
-    ] ],
+    [ "tConversationLink.h", "tConversationLink_8h.html", "tConversationLink_8h" ],
     [ "tConversationNode.cpp", "tConversationNode_8cpp.html", null ],
-    [ "tConversationNode.h", "tConversationNode_8h.html", [
-      [ "tConversationNode", "classXML_1_1bpmn_1_1tConversationNode.html", "classXML_1_1bpmn_1_1tConversationNode" ]
-    ] ],
+    [ "tConversationNode.h", "tConversationNode_8h.html", "tConversationNode_8h" ],
     [ "tCorrelationKey.cpp", "tCorrelationKey_8cpp.html", null ],
-    [ "tCorrelationKey.h", "tCorrelationKey_8h.html", [
-      [ "tCorrelationKey", "classXML_1_1bpmn_1_1tCorrelationKey.html", "classXML_1_1bpmn_1_1tCorrelationKey" ]
-    ] ],
+    [ "tCorrelationKey.h", "tCorrelationKey_8h.html", "tCorrelationKey_8h" ],
     [ "tCorrelationProperty.cpp", "tCorrelationProperty_8cpp.html", null ],
-    [ "tCorrelationProperty.h", "tCorrelationProperty_8h.html", [
-      [ "tCorrelationProperty", "classXML_1_1bpmn_1_1tCorrelationProperty.html", "classXML_1_1bpmn_1_1tCorrelationProperty" ]
-    ] ],
+    [ "tCorrelationProperty.h", "tCorrelationProperty_8h.html", "tCorrelationProperty_8h" ],
     [ "tCorrelationPropertyBinding.cpp", "tCorrelationPropertyBinding_8cpp.html", null ],
-    [ "tCorrelationPropertyBinding.h", "tCorrelationPropertyBinding_8h.html", [
-      [ "tCorrelationPropertyBinding", "classXML_1_1bpmn_1_1tCorrelationPropertyBinding.html", "classXML_1_1bpmn_1_1tCorrelationPropertyBinding" ]
-    ] ],
+    [ "tCorrelationPropertyBinding.h", "tCorrelationPropertyBinding_8h.html", "tCorrelationPropertyBinding_8h" ],
     [ "tCorrelationPropertyRetrievalExpression.cpp", "tCorrelationPropertyRetrievalExpression_8cpp.html", null ],
-    [ "tCorrelationPropertyRetrievalExpression.h", "tCorrelationPropertyRetrievalExpression_8h.html", [
-      [ "tCorrelationPropertyRetrievalExpression", "classXML_1_1bpmn_1_1tCorrelationPropertyRetrievalExpression.html", "classXML_1_1bpmn_1_1tCorrelationPropertyRetrievalExpression" ]
-    ] ],
+    [ "tCorrelationPropertyRetrievalExpression.h", "tCorrelationPropertyRetrievalExpression_8h.html", "tCorrelationPropertyRetrievalExpression_8h" ],
     [ "tCorrelationSubscription.cpp", "tCorrelationSubscription_8cpp.html", null ],
-    [ "tCorrelationSubscription.h", "tCorrelationSubscription_8h.html", [
-      [ "tCorrelationSubscription", "classXML_1_1bpmn_1_1tCorrelationSubscription.html", "classXML_1_1bpmn_1_1tCorrelationSubscription" ]
-    ] ],
+    [ "tCorrelationSubscription.h", "tCorrelationSubscription_8h.html", "tCorrelationSubscription_8h" ],
     [ "tDataAssociation.cpp", "tDataAssociation_8cpp.html", null ],
-    [ "tDataAssociation.h", "tDataAssociation_8h.html", [
-      [ "tDataAssociation", "classXML_1_1bpmn_1_1tDataAssociation.html", "classXML_1_1bpmn_1_1tDataAssociation" ]
-    ] ],
+    [ "tDataAssociation.h", "tDataAssociation_8h.html", "tDataAssociation_8h" ],
     [ "tDataInput.cpp", "tDataInput_8cpp.html", null ],
-    [ "tDataInput.h", "tDataInput_8h.html", [
-      [ "tDataInput", "classXML_1_1bpmn_1_1tDataInput.html", "classXML_1_1bpmn_1_1tDataInput" ]
-    ] ],
+    [ "tDataInput.h", "tDataInput_8h.html", "tDataInput_8h" ],
     [ "tDataInputAssociation.cpp", "tDataInputAssociation_8cpp.html", null ],
-    [ "tDataInputAssociation.h", "tDataInputAssociation_8h.html", [
-      [ "tDataInputAssociation", "classXML_1_1bpmn_1_1tDataInputAssociation.html", "classXML_1_1bpmn_1_1tDataInputAssociation" ]
-    ] ],
+    [ "tDataInputAssociation.h", "tDataInputAssociation_8h.html", "tDataInputAssociation_8h" ],
     [ "tDataObject.cpp", "tDataObject_8cpp.html", null ],
-    [ "tDataObject.h", "tDataObject_8h.html", [
-      [ "tDataObject", "classXML_1_1bpmn_1_1tDataObject.html", "classXML_1_1bpmn_1_1tDataObject" ]
-    ] ],
+    [ "tDataObject.h", "tDataObject_8h.html", "tDataObject_8h" ],
     [ "tDataObjectReference.cpp", "tDataObjectReference_8cpp.html", null ],
-    [ "tDataObjectReference.h", "tDataObjectReference_8h.html", [
-      [ "tDataObjectReference", "classXML_1_1bpmn_1_1tDataObjectReference.html", "classXML_1_1bpmn_1_1tDataObjectReference" ]
-    ] ],
+    [ "tDataObjectReference.h", "tDataObjectReference_8h.html", "tDataObjectReference_8h" ],
     [ "tDataOutput.cpp", "tDataOutput_8cpp.html", null ],
-    [ "tDataOutput.h", "tDataOutput_8h.html", [
-      [ "tDataOutput", "classXML_1_1bpmn_1_1tDataOutput.html", "classXML_1_1bpmn_1_1tDataOutput" ]
-    ] ],
+    [ "tDataOutput.h", "tDataOutput_8h.html", "tDataOutput_8h" ],
     [ "tDataOutputAssociation.cpp", "tDataOutputAssociation_8cpp.html", null ],
-    [ "tDataOutputAssociation.h", "tDataOutputAssociation_8h.html", [
-      [ "tDataOutputAssociation", "classXML_1_1bpmn_1_1tDataOutputAssociation.html", "classXML_1_1bpmn_1_1tDataOutputAssociation" ]
-    ] ],
+    [ "tDataOutputAssociation.h", "tDataOutputAssociation_8h.html", "tDataOutputAssociation_8h" ],
     [ "tDataState.cpp", "tDataState_8cpp.html", null ],
-    [ "tDataState.h", "tDataState_8h.html", [
-      [ "tDataState", "classXML_1_1bpmn_1_1tDataState.html", "classXML_1_1bpmn_1_1tDataState" ]
-    ] ],
+    [ "tDataState.h", "tDataState_8h.html", "tDataState_8h" ],
     [ "tDataStore.cpp", "tDataStore_8cpp.html", null ],
-    [ "tDataStore.h", "tDataStore_8h.html", [
-      [ "tDataStore", "classXML_1_1bpmn_1_1tDataStore.html", "classXML_1_1bpmn_1_1tDataStore" ]
-    ] ],
+    [ "tDataStore.h", "tDataStore_8h.html", "tDataStore_8h" ],
     [ "tDataStoreReference.cpp", "tDataStoreReference_8cpp.html", null ],
-    [ "tDataStoreReference.h", "tDataStoreReference_8h.html", [
-      [ "tDataStoreReference", "classXML_1_1bpmn_1_1tDataStoreReference.html", "classXML_1_1bpmn_1_1tDataStoreReference" ]
-    ] ],
+    [ "tDataStoreReference.h", "tDataStoreReference_8h.html", "tDataStoreReference_8h" ],
     [ "tDefinitions.cpp", "tDefinitions_8cpp.html", null ],
-    [ "tDefinitions.h", "tDefinitions_8h.html", [
-      [ "tDefinitions", "classXML_1_1bpmn_1_1tDefinitions.html", "classXML_1_1bpmn_1_1tDefinitions" ]
-    ] ],
+    [ "tDefinitions.h", "tDefinitions_8h.html", "tDefinitions_8h" ],
     [ "tDocumentation.cpp", "tDocumentation_8cpp.html", null ],
-    [ "tDocumentation.h", "tDocumentation_8h.html", [
-      [ "tDocumentation", "classXML_1_1bpmn_1_1tDocumentation.html", "classXML_1_1bpmn_1_1tDocumentation" ]
-    ] ],
+    [ "tDocumentation.h", "tDocumentation_8h.html", "tDocumentation_8h" ],
     [ "tEndEvent.cpp", "tEndEvent_8cpp.html", null ],
-    [ "tEndEvent.h", "tEndEvent_8h.html", [
-      [ "tEndEvent", "classXML_1_1bpmn_1_1tEndEvent.html", "classXML_1_1bpmn_1_1tEndEvent" ]
-    ] ],
+    [ "tEndEvent.h", "tEndEvent_8h.html", "tEndEvent_8h" ],
     [ "tEndPoint.cpp", "tEndPoint_8cpp.html", null ],
-    [ "tEndPoint.h", "tEndPoint_8h.html", [
-      [ "tEndPoint", "classXML_1_1bpmn_1_1tEndPoint.html", "classXML_1_1bpmn_1_1tEndPoint" ]
-    ] ],
+    [ "tEndPoint.h", "tEndPoint_8h.html", "tEndPoint_8h" ],
     [ "terminateEventDefinition.cpp", "terminateEventDefinition_8cpp.html", null ],
-    [ "terminateEventDefinition.h", "terminateEventDefinition_8h.html", [
-      [ "terminateEventDefinition", "classXML_1_1bpmn_1_1terminateEventDefinition.html", "classXML_1_1bpmn_1_1terminateEventDefinition" ]
-    ] ],
+    [ "terminateEventDefinition.h", "terminateEventDefinition_8h.html", "terminateEventDefinition_8h" ],
     [ "tError.cpp", "tError_8cpp.html", null ],
-    [ "tError.h", "tError_8h.html", [
-      [ "tError", "classXML_1_1bpmn_1_1tError.html", "classXML_1_1bpmn_1_1tError" ]
-    ] ],
+    [ "tError.h", "tError_8h.html", "tError_8h" ],
     [ "tErrorEventDefinition.cpp", "tErrorEventDefinition_8cpp.html", null ],
-    [ "tErrorEventDefinition.h", "tErrorEventDefinition_8h.html", [
-      [ "tErrorEventDefinition", "classXML_1_1bpmn_1_1tErrorEventDefinition.html", "classXML_1_1bpmn_1_1tErrorEventDefinition" ]
-    ] ],
+    [ "tErrorEventDefinition.h", "tErrorEventDefinition_8h.html", "tErrorEventDefinition_8h" ],
     [ "tEscalation.cpp", "tEscalation_8cpp.html", null ],
-    [ "tEscalation.h", "tEscalation_8h.html", [
-      [ "tEscalation", "classXML_1_1bpmn_1_1tEscalation.html", "classXML_1_1bpmn_1_1tEscalation" ]
-    ] ],
+    [ "tEscalation.h", "tEscalation_8h.html", "tEscalation_8h" ],
     [ "tEscalationEventDefinition.cpp", "tEscalationEventDefinition_8cpp.html", null ],
-    [ "tEscalationEventDefinition.h", "tEscalationEventDefinition_8h.html", [
-      [ "tEscalationEventDefinition", "classXML_1_1bpmn_1_1tEscalationEventDefinition.html", "classXML_1_1bpmn_1_1tEscalationEventDefinition" ]
-    ] ],
+    [ "tEscalationEventDefinition.h", "tEscalationEventDefinition_8h.html", "tEscalationEventDefinition_8h" ],
     [ "tEvent.cpp", "tEvent_8cpp.html", null ],
-    [ "tEvent.h", "tEvent_8h.html", [
-      [ "tEvent", "classXML_1_1bpmn_1_1tEvent.html", "classXML_1_1bpmn_1_1tEvent" ]
-    ] ],
+    [ "tEvent.h", "tEvent_8h.html", "tEvent_8h" ],
     [ "tEventBasedGateway.cpp", "tEventBasedGateway_8cpp.html", null ],
-    [ "tEventBasedGateway.h", "tEventBasedGateway_8h.html", [
-      [ "tEventBasedGateway", "classXML_1_1bpmn_1_1tEventBasedGateway.html", "classXML_1_1bpmn_1_1tEventBasedGateway" ]
-    ] ],
+    [ "tEventBasedGateway.h", "tEventBasedGateway_8h.html", "tEventBasedGateway_8h" ],
     [ "tEventBasedGatewayType.h", "tEventBasedGatewayType_8h.html", "tEventBasedGatewayType_8h" ],
     [ "tEventDefinition.cpp", "tEventDefinition_8cpp.html", null ],
-    [ "tEventDefinition.h", "tEventDefinition_8h.html", [
-      [ "tEventDefinition", "classXML_1_1bpmn_1_1tEventDefinition.html", "classXML_1_1bpmn_1_1tEventDefinition" ]
-    ] ],
+    [ "tEventDefinition.h", "tEventDefinition_8h.html", "tEventDefinition_8h" ],
     [ "tExclusiveGateway.cpp", "tExclusiveGateway_8cpp.html", null ],
-    [ "tExclusiveGateway.h", "tExclusiveGateway_8h.html", [
-      [ "tExclusiveGateway", "classXML_1_1bpmn_1_1tExclusiveGateway.html", "classXML_1_1bpmn_1_1tExclusiveGateway" ]
-    ] ],
+    [ "tExclusiveGateway.h", "tExclusiveGateway_8h.html", "tExclusiveGateway_8h" ],
     [ "tExpression.cpp", "tExpression_8cpp.html", null ],
-    [ "tExpression.h", "tExpression_8h.html", [
-      [ "tExpression", "classXML_1_1bpmn_1_1tExpression.html", "classXML_1_1bpmn_1_1tExpression" ]
-    ] ],
+    [ "tExpression.h", "tExpression_8h.html", "tExpression_8h" ],
     [ "textAnnotation.cpp", "textAnnotation_8cpp.html", null ],
-    [ "textAnnotation.h", "textAnnotation_8h.html", [
-      [ "textAnnotation", "classXML_1_1bpmn_1_1textAnnotation.html", "classXML_1_1bpmn_1_1textAnnotation" ]
-    ] ],
+    [ "textAnnotation.h", "textAnnotation_8h.html", "textAnnotation_8h" ],
     [ "tExtension.cpp", "tExtension_8cpp.html", null ],
-    [ "tExtension.h", "tExtension_8h.html", [
-      [ "tExtension", "classXML_1_1bpmn_1_1tExtension.html", "classXML_1_1bpmn_1_1tExtension" ]
-    ] ],
+    [ "tExtension.h", "tExtension_8h.html", "tExtension_8h" ],
     [ "tExtensionElements.cpp", "tExtensionElements_8cpp.html", null ],
-    [ "tExtensionElements.h", "tExtensionElements_8h.html", [
-      [ "tExtensionElements", "classXML_1_1bpmn_1_1tExtensionElements.html", "classXML_1_1bpmn_1_1tExtensionElements" ]
-    ] ],
+    [ "tExtensionElements.h", "tExtensionElements_8h.html", "tExtensionElements_8h" ],
     [ "tFlowElement.cpp", "tFlowElement_8cpp.html", null ],
-    [ "tFlowElement.h", "tFlowElement_8h.html", [
-      [ "tFlowElement", "classXML_1_1bpmn_1_1tFlowElement.html", "classXML_1_1bpmn_1_1tFlowElement" ]
-    ] ],
+    [ "tFlowElement.h", "tFlowElement_8h.html", "tFlowElement_8h" ],
     [ "tFlowNode.cpp", "tFlowNode_8cpp.html", null ],
-    [ "tFlowNode.h", "tFlowNode_8h.html", [
-      [ "tFlowNode", "classXML_1_1bpmn_1_1tFlowNode.html", "classXML_1_1bpmn_1_1tFlowNode" ]
-    ] ],
+    [ "tFlowNode.h", "tFlowNode_8h.html", "tFlowNode_8h" ],
     [ "tFormalExpression.cpp", "tFormalExpression_8cpp.html", null ],
-    [ "tFormalExpression.h", "tFormalExpression_8h.html", [
-      [ "tFormalExpression", "classXML_1_1bpmn_1_1tFormalExpression.html", "classXML_1_1bpmn_1_1tFormalExpression" ]
-    ] ],
+    [ "tFormalExpression.h", "tFormalExpression_8h.html", "tFormalExpression_8h" ],
     [ "tGateway.cpp", "tGateway_8cpp.html", null ],
-    [ "tGateway.h", "tGateway_8h.html", [
-      [ "tGateway", "classXML_1_1bpmn_1_1tGateway.html", "classXML_1_1bpmn_1_1tGateway" ]
-    ] ],
+    [ "tGateway.h", "tGateway_8h.html", "tGateway_8h" ],
     [ "tGatewayDirection.h", "tGatewayDirection_8h.html", "tGatewayDirection_8h" ],
     [ "tGlobalBusinessRuleTask.cpp", "tGlobalBusinessRuleTask_8cpp.html", null ],
-    [ "tGlobalBusinessRuleTask.h", "tGlobalBusinessRuleTask_8h.html", [
-      [ "tGlobalBusinessRuleTask", "classXML_1_1bpmn_1_1tGlobalBusinessRuleTask.html", "classXML_1_1bpmn_1_1tGlobalBusinessRuleTask" ]
-    ] ],
+    [ "tGlobalBusinessRuleTask.h", "tGlobalBusinessRuleTask_8h.html", "tGlobalBusinessRuleTask_8h" ],
     [ "tGlobalChoreographyTask.cpp", "tGlobalChoreographyTask_8cpp.html", null ],
-    [ "tGlobalChoreographyTask.h", "tGlobalChoreographyTask_8h.html", [
-      [ "tGlobalChoreographyTask", "classXML_1_1bpmn_1_1tGlobalChoreographyTask.html", "classXML_1_1bpmn_1_1tGlobalChoreographyTask" ]
-    ] ],
+    [ "tGlobalChoreographyTask.h", "tGlobalChoreographyTask_8h.html", "tGlobalChoreographyTask_8h" ],
     [ "tGlobalConversation.cpp", "tGlobalConversation_8cpp.html", null ],
-    [ "tGlobalConversation.h", "tGlobalConversation_8h.html", [
-      [ "tGlobalConversation", "classXML_1_1bpmn_1_1tGlobalConversation.html", "classXML_1_1bpmn_1_1tGlobalConversation" ]
-    ] ],
+    [ "tGlobalConversation.h", "tGlobalConversation_8h.html", "tGlobalConversation_8h" ],
     [ "tGlobalManualTask.cpp", "tGlobalManualTask_8cpp.html", null ],
-    [ "tGlobalManualTask.h", "tGlobalManualTask_8h.html", [
-      [ "tGlobalManualTask", "classXML_1_1bpmn_1_1tGlobalManualTask.html", "classXML_1_1bpmn_1_1tGlobalManualTask" ]
-    ] ],
+    [ "tGlobalManualTask.h", "tGlobalManualTask_8h.html", "tGlobalManualTask_8h" ],
     [ "tGlobalScriptTask.cpp", "tGlobalScriptTask_8cpp.html", null ],
-    [ "tGlobalScriptTask.h", "tGlobalScriptTask_8h.html", [
-      [ "tGlobalScriptTask", "classXML_1_1bpmn_1_1tGlobalScriptTask.html", "classXML_1_1bpmn_1_1tGlobalScriptTask" ]
-    ] ],
+    [ "tGlobalScriptTask.h", "tGlobalScriptTask_8h.html", "tGlobalScriptTask_8h" ],
     [ "tGlobalTask.cpp", "tGlobalTask_8cpp.html", null ],
-    [ "tGlobalTask.h", "tGlobalTask_8h.html", [
-      [ "tGlobalTask", "classXML_1_1bpmn_1_1tGlobalTask.html", "classXML_1_1bpmn_1_1tGlobalTask" ]
-    ] ],
+    [ "tGlobalTask.h", "tGlobalTask_8h.html", "tGlobalTask_8h" ],
     [ "tGlobalUserTask.cpp", "tGlobalUserTask_8cpp.html", null ],
-    [ "tGlobalUserTask.h", "tGlobalUserTask_8h.html", [
-      [ "tGlobalUserTask", "classXML_1_1bpmn_1_1tGlobalUserTask.html", "classXML_1_1bpmn_1_1tGlobalUserTask" ]
-    ] ],
+    [ "tGlobalUserTask.h", "tGlobalUserTask_8h.html", "tGlobalUserTask_8h" ],
     [ "tGroup.cpp", "tGroup_8cpp.html", null ],
-    [ "tGroup.h", "tGroup_8h.html", [
-      [ "tGroup", "classXML_1_1bpmn_1_1tGroup.html", "classXML_1_1bpmn_1_1tGroup" ]
-    ] ],
+    [ "tGroup.h", "tGroup_8h.html", "tGroup_8h" ],
     [ "throwEvent.cpp", "throwEvent_8cpp.html", null ],
-    [ "throwEvent.h", "throwEvent_8h.html", [
-      [ "throwEvent", "classXML_1_1bpmn_1_1throwEvent.html", "classXML_1_1bpmn_1_1throwEvent" ]
-    ] ],
+    [ "throwEvent.h", "throwEvent_8h.html", "throwEvent_8h" ],
     [ "tHumanPerformer.cpp", "tHumanPerformer_8cpp.html", null ],
-    [ "tHumanPerformer.h", "tHumanPerformer_8h.html", [
-      [ "tHumanPerformer", "classXML_1_1bpmn_1_1tHumanPerformer.html", "classXML_1_1bpmn_1_1tHumanPerformer" ]
-    ] ],
+    [ "tHumanPerformer.h", "tHumanPerformer_8h.html", "tHumanPerformer_8h" ],
     [ "timerEventDefinition.cpp", "timerEventDefinition_8cpp.html", null ],
-    [ "timerEventDefinition.h", "timerEventDefinition_8h.html", [
-      [ "timerEventDefinition", "classXML_1_1bpmn_1_1timerEventDefinition.html", "classXML_1_1bpmn_1_1timerEventDefinition" ]
-    ] ],
+    [ "timerEventDefinition.h", "timerEventDefinition_8h.html", "timerEventDefinition_8h" ],
     [ "tImplementation.h", "tImplementation_8h.html", "tImplementation_8h" ],
     [ "tImplicitThrowEvent.cpp", "tImplicitThrowEvent_8cpp.html", null ],
-    [ "tImplicitThrowEvent.h", "tImplicitThrowEvent_8h.html", [
-      [ "tImplicitThrowEvent", "classXML_1_1bpmn_1_1tImplicitThrowEvent.html", "classXML_1_1bpmn_1_1tImplicitThrowEvent" ]
-    ] ],
+    [ "tImplicitThrowEvent.h", "tImplicitThrowEvent_8h.html", "tImplicitThrowEvent_8h" ],
     [ "tImport.cpp", "tImport_8cpp.html", null ],
-    [ "tImport.h", "tImport_8h.html", [
-      [ "tImport", "classXML_1_1bpmn_1_1tImport.html", "classXML_1_1bpmn_1_1tImport" ]
-    ] ],
+    [ "tImport.h", "tImport_8h.html", "tImport_8h" ],
     [ "tInclusiveGateway.cpp", "tInclusiveGateway_8cpp.html", null ],
-    [ "tInclusiveGateway.h", "tInclusiveGateway_8h.html", [
-      [ "tInclusiveGateway", "classXML_1_1bpmn_1_1tInclusiveGateway.html", "classXML_1_1bpmn_1_1tInclusiveGateway" ]
-    ] ],
+    [ "tInclusiveGateway.h", "tInclusiveGateway_8h.html", "tInclusiveGateway_8h" ],
     [ "tInputOutputBinding.cpp", "tInputOutputBinding_8cpp.html", null ],
-    [ "tInputOutputBinding.h", "tInputOutputBinding_8h.html", [
-      [ "tInputOutputBinding", "classXML_1_1bpmn_1_1tInputOutputBinding.html", "classXML_1_1bpmn_1_1tInputOutputBinding" ]
-    ] ],
+    [ "tInputOutputBinding.h", "tInputOutputBinding_8h.html", "tInputOutputBinding_8h" ],
     [ "tInputOutputSpecification.cpp", "tInputOutputSpecification_8cpp.html", null ],
-    [ "tInputOutputSpecification.h", "tInputOutputSpecification_8h.html", [
-      [ "tInputOutputSpecification", "classXML_1_1bpmn_1_1tInputOutputSpecification.html", "classXML_1_1bpmn_1_1tInputOutputSpecification" ]
-    ] ],
+    [ "tInputOutputSpecification.h", "tInputOutputSpecification_8h.html", "tInputOutputSpecification_8h" ],
     [ "tInputSet.cpp", "tInputSet_8cpp.html", null ],
-    [ "tInputSet.h", "tInputSet_8h.html", [
-      [ "tInputSet", "classXML_1_1bpmn_1_1tInputSet.html", "classXML_1_1bpmn_1_1tInputSet" ]
-    ] ],
+    [ "tInputSet.h", "tInputSet_8h.html", "tInputSet_8h" ],
     [ "tInterface.cpp", "tInterface_8cpp.html", null ],
-    [ "tInterface.h", "tInterface_8h.html", [
-      [ "tInterface", "classXML_1_1bpmn_1_1tInterface.html", "classXML_1_1bpmn_1_1tInterface" ]
-    ] ],
+    [ "tInterface.h", "tInterface_8h.html", "tInterface_8h" ],
     [ "tIntermediateCatchEvent.cpp", "tIntermediateCatchEvent_8cpp.html", null ],
-    [ "tIntermediateCatchEvent.h", "tIntermediateCatchEvent_8h.html", [
-      [ "tIntermediateCatchEvent", "classXML_1_1bpmn_1_1tIntermediateCatchEvent.html", "classXML_1_1bpmn_1_1tIntermediateCatchEvent" ]
-    ] ],
+    [ "tIntermediateCatchEvent.h", "tIntermediateCatchEvent_8h.html", "tIntermediateCatchEvent_8h" ],
     [ "tIntermediateThrowEvent.cpp", "tIntermediateThrowEvent_8cpp.html", null ],
-    [ "tIntermediateThrowEvent.h", "tIntermediateThrowEvent_8h.html", [
-      [ "tIntermediateThrowEvent", "classXML_1_1bpmn_1_1tIntermediateThrowEvent.html", "classXML_1_1bpmn_1_1tIntermediateThrowEvent" ]
-    ] ],
+    [ "tIntermediateThrowEvent.h", "tIntermediateThrowEvent_8h.html", "tIntermediateThrowEvent_8h" ],
     [ "tItemDefinition.cpp", "tItemDefinition_8cpp.html", null ],
-    [ "tItemDefinition.h", "tItemDefinition_8h.html", [
-      [ "tItemDefinition", "classXML_1_1bpmn_1_1tItemDefinition.html", "classXML_1_1bpmn_1_1tItemDefinition" ]
-    ] ],
+    [ "tItemDefinition.h", "tItemDefinition_8h.html", "tItemDefinition_8h" ],
     [ "tItemKind.h", "tItemKind_8h.html", "tItemKind_8h" ],
     [ "tLane.cpp", "tLane_8cpp.html", null ],
-    [ "tLane.h", "tLane_8h.html", [
-      [ "tLane", "classXML_1_1bpmn_1_1tLane.html", "classXML_1_1bpmn_1_1tLane" ]
-    ] ],
+    [ "tLane.h", "tLane_8h.html", "tLane_8h" ],
     [ "tLaneSet.cpp", "tLaneSet_8cpp.html", null ],
-    [ "tLaneSet.h", "tLaneSet_8h.html", [
-      [ "tLaneSet", "classXML_1_1bpmn_1_1tLaneSet.html", "classXML_1_1bpmn_1_1tLaneSet" ]
-    ] ],
+    [ "tLaneSet.h", "tLaneSet_8h.html", "tLaneSet_8h" ],
     [ "tLinkEventDefinition.cpp", "tLinkEventDefinition_8cpp.html", null ],
-    [ "tLinkEventDefinition.h", "tLinkEventDefinition_8h.html", [
-      [ "tLinkEventDefinition", "classXML_1_1bpmn_1_1tLinkEventDefinition.html", "classXML_1_1bpmn_1_1tLinkEventDefinition" ]
-    ] ],
+    [ "tLinkEventDefinition.h", "tLinkEventDefinition_8h.html", "tLinkEventDefinition_8h" ],
     [ "tLoopCharacteristics.cpp", "tLoopCharacteristics_8cpp.html", null ],
-    [ "tLoopCharacteristics.h", "tLoopCharacteristics_8h.html", [
-      [ "tLoopCharacteristics", "classXML_1_1bpmn_1_1tLoopCharacteristics.html", "classXML_1_1bpmn_1_1tLoopCharacteristics" ]
-    ] ],
+    [ "tLoopCharacteristics.h", "tLoopCharacteristics_8h.html", "tLoopCharacteristics_8h" ],
     [ "tManualTask.cpp", "tManualTask_8cpp.html", null ],
-    [ "tManualTask.h", "tManualTask_8h.html", [
-      [ "tManualTask", "classXML_1_1bpmn_1_1tManualTask.html", "classXML_1_1bpmn_1_1tManualTask" ]
-    ] ],
+    [ "tManualTask.h", "tManualTask_8h.html", "tManualTask_8h" ],
     [ "tMessage.cpp", "tMessage_8cpp.html", null ],
-    [ "tMessage.h", "tMessage_8h.html", [
-      [ "tMessage", "classXML_1_1bpmn_1_1tMessage.html", "classXML_1_1bpmn_1_1tMessage" ]
-    ] ],
+    [ "tMessage.h", "tMessage_8h.html", "tMessage_8h" ],
     [ "tMessageEventDefinition.cpp", "tMessageEventDefinition_8cpp.html", null ],
-    [ "tMessageEventDefinition.h", "tMessageEventDefinition_8h.html", [
-      [ "tMessageEventDefinition", "classXML_1_1bpmn_1_1tMessageEventDefinition.html", "classXML_1_1bpmn_1_1tMessageEventDefinition" ]
-    ] ],
+    [ "tMessageEventDefinition.h", "tMessageEventDefinition_8h.html", "tMessageEventDefinition_8h" ],
     [ "tMessageFlow.cpp", "tMessageFlow_8cpp.html", null ],
-    [ "tMessageFlow.h", "tMessageFlow_8h.html", [
-      [ "tMessageFlow", "classXML_1_1bpmn_1_1tMessageFlow.html", "classXML_1_1bpmn_1_1tMessageFlow" ]
-    ] ],
+    [ "tMessageFlow.h", "tMessageFlow_8h.html", "tMessageFlow_8h" ],
     [ "tMessageFlowAssociation.cpp", "tMessageFlowAssociation_8cpp.html", null ],
-    [ "tMessageFlowAssociation.h", "tMessageFlowAssociation_8h.html", [
-      [ "tMessageFlowAssociation", "classXML_1_1bpmn_1_1tMessageFlowAssociation.html", "classXML_1_1bpmn_1_1tMessageFlowAssociation" ]
-    ] ],
+    [ "tMessageFlowAssociation.h", "tMessageFlowAssociation_8h.html", "tMessageFlowAssociation_8h" ],
     [ "tMonitoring.cpp", "tMonitoring_8cpp.html", null ],
-    [ "tMonitoring.h", "tMonitoring_8h.html", [
-      [ "tMonitoring", "classXML_1_1bpmn_1_1tMonitoring.html", "classXML_1_1bpmn_1_1tMonitoring" ]
-    ] ],
+    [ "tMonitoring.h", "tMonitoring_8h.html", "tMonitoring_8h" ],
     [ "tMultiInstanceFlowCondition.h", "tMultiInstanceFlowCondition_8h.html", "tMultiInstanceFlowCondition_8h" ],
     [ "tMultiInstanceLoopCharacteristics.cpp", "tMultiInstanceLoopCharacteristics_8cpp.html", null ],
-    [ "tMultiInstanceLoopCharacteristics.h", "tMultiInstanceLoopCharacteristics_8h.html", [
-      [ "tMultiInstanceLoopCharacteristics", "classXML_1_1bpmn_1_1tMultiInstanceLoopCharacteristics.html", "classXML_1_1bpmn_1_1tMultiInstanceLoopCharacteristics" ]
-    ] ],
+    [ "tMultiInstanceLoopCharacteristics.h", "tMultiInstanceLoopCharacteristics_8h.html", "tMultiInstanceLoopCharacteristics_8h" ],
     [ "tOperation.cpp", "tOperation_8cpp.html", null ],
-    [ "tOperation.h", "tOperation_8h.html", [
-      [ "tOperation", "classXML_1_1bpmn_1_1tOperation.html", "classXML_1_1bpmn_1_1tOperation" ]
-    ] ],
+    [ "tOperation.h", "tOperation_8h.html", "tOperation_8h" ],
     [ "tOutputSet.cpp", "tOutputSet_8cpp.html", null ],
-    [ "tOutputSet.h", "tOutputSet_8h.html", [
-      [ "tOutputSet", "classXML_1_1bpmn_1_1tOutputSet.html", "classXML_1_1bpmn_1_1tOutputSet" ]
-    ] ],
+    [ "tOutputSet.h", "tOutputSet_8h.html", "tOutputSet_8h" ],
     [ "tParallelGateway.cpp", "tParallelGateway_8cpp.html", null ],
-    [ "tParallelGateway.h", "tParallelGateway_8h.html", [
-      [ "tParallelGateway", "classXML_1_1bpmn_1_1tParallelGateway.html", "classXML_1_1bpmn_1_1tParallelGateway" ]
-    ] ],
+    [ "tParallelGateway.h", "tParallelGateway_8h.html", "tParallelGateway_8h" ],
     [ "tParticipant.cpp", "tParticipant_8cpp.html", null ],
-    [ "tParticipant.h", "tParticipant_8h.html", [
-      [ "tParticipant", "classXML_1_1bpmn_1_1tParticipant.html", "classXML_1_1bpmn_1_1tParticipant" ]
-    ] ],
+    [ "tParticipant.h", "tParticipant_8h.html", "tParticipant_8h" ],
     [ "tParticipantAssociation.cpp", "tParticipantAssociation_8cpp.html", null ],
-    [ "tParticipantAssociation.h", "tParticipantAssociation_8h.html", [
-      [ "tParticipantAssociation", "classXML_1_1bpmn_1_1tParticipantAssociation.html", "classXML_1_1bpmn_1_1tParticipantAssociation" ]
-    ] ],
+    [ "tParticipantAssociation.h", "tParticipantAssociation_8h.html", "tParticipantAssociation_8h" ],
     [ "tParticipantMultiplicity.cpp", "tParticipantMultiplicity_8cpp.html", null ],
-    [ "tParticipantMultiplicity.h", "tParticipantMultiplicity_8h.html", [
-      [ "tParticipantMultiplicity", "classXML_1_1bpmn_1_1tParticipantMultiplicity.html", "classXML_1_1bpmn_1_1tParticipantMultiplicity" ]
-    ] ],
+    [ "tParticipantMultiplicity.h", "tParticipantMultiplicity_8h.html", "tParticipantMultiplicity_8h" ],
     [ "tPartnerEntity.cpp", "tPartnerEntity_8cpp.html", null ],
-    [ "tPartnerEntity.h", "tPartnerEntity_8h.html", [
-      [ "tPartnerEntity", "classXML_1_1bpmn_1_1tPartnerEntity.html", "classXML_1_1bpmn_1_1tPartnerEntity" ]
-    ] ],
+    [ "tPartnerEntity.h", "tPartnerEntity_8h.html", "tPartnerEntity_8h" ],
     [ "tPartnerRole.cpp", "tPartnerRole_8cpp.html", null ],
-    [ "tPartnerRole.h", "tPartnerRole_8h.html", [
-      [ "tPartnerRole", "classXML_1_1bpmn_1_1tPartnerRole.html", "classXML_1_1bpmn_1_1tPartnerRole" ]
-    ] ],
+    [ "tPartnerRole.h", "tPartnerRole_8h.html", "tPartnerRole_8h" ],
     [ "tPerformer.cpp", "tPerformer_8cpp.html", null ],
-    [ "tPerformer.h", "tPerformer_8h.html", [
-      [ "tPerformer", "classXML_1_1bpmn_1_1tPerformer.html", "classXML_1_1bpmn_1_1tPerformer" ]
-    ] ],
+    [ "tPerformer.h", "tPerformer_8h.html", "tPerformer_8h" ],
     [ "tPotentialOwner.cpp", "tPotentialOwner_8cpp.html", null ],
-    [ "tPotentialOwner.h", "tPotentialOwner_8h.html", [
-      [ "tPotentialOwner", "classXML_1_1bpmn_1_1tPotentialOwner.html", "classXML_1_1bpmn_1_1tPotentialOwner" ]
-    ] ],
+    [ "tPotentialOwner.h", "tPotentialOwner_8h.html", "tPotentialOwner_8h" ],
     [ "tProcess.cpp", "tProcess_8cpp.html", null ],
-    [ "tProcess.h", "tProcess_8h.html", [
-      [ "tProcess", "classXML_1_1bpmn_1_1tProcess.html", "classXML_1_1bpmn_1_1tProcess" ]
-    ] ],
+    [ "tProcess.h", "tProcess_8h.html", "tProcess_8h" ],
     [ "tProcessType.h", "tProcessType_8h.html", "tProcessType_8h" ],
     [ "tProperty.cpp", "tProperty_8cpp.html", null ],
-    [ "tProperty.h", "tProperty_8h.html", [
-      [ "tProperty", "classXML_1_1bpmn_1_1tProperty.html", "classXML_1_1bpmn_1_1tProperty" ]
-    ] ],
+    [ "tProperty.h", "tProperty_8h.html", "tProperty_8h" ],
     [ "tReceiveTask.cpp", "tReceiveTask_8cpp.html", null ],
-    [ "tReceiveTask.h", "tReceiveTask_8h.html", [
-      [ "tReceiveTask", "classXML_1_1bpmn_1_1tReceiveTask.html", "classXML_1_1bpmn_1_1tReceiveTask" ]
-    ] ],
+    [ "tReceiveTask.h", "tReceiveTask_8h.html", "tReceiveTask_8h" ],
     [ "tRelationship.cpp", "tRelationship_8cpp.html", null ],
-    [ "tRelationship.h", "tRelationship_8h.html", [
-      [ "tRelationship", "classXML_1_1bpmn_1_1tRelationship.html", "classXML_1_1bpmn_1_1tRelationship" ]
-    ] ],
+    [ "tRelationship.h", "tRelationship_8h.html", "tRelationship_8h" ],
     [ "tRelationshipDirection.h", "tRelationshipDirection_8h.html", "tRelationshipDirection_8h" ],
     [ "tRendering.cpp", "tRendering_8cpp.html", null ],
-    [ "tRendering.h", "tRendering_8h.html", [
-      [ "tRendering", "classXML_1_1bpmn_1_1tRendering.html", "classXML_1_1bpmn_1_1tRendering" ]
-    ] ],
+    [ "tRendering.h", "tRendering_8h.html", "tRendering_8h" ],
     [ "tResource.cpp", "tResource_8cpp.html", null ],
-    [ "tResource.h", "tResource_8h.html", [
-      [ "tResource", "classXML_1_1bpmn_1_1tResource.html", "classXML_1_1bpmn_1_1tResource" ]
-    ] ],
+    [ "tResource.h", "tResource_8h.html", "tResource_8h" ],
     [ "tResourceAssignmentExpression.cpp", "tResourceAssignmentExpression_8cpp.html", null ],
-    [ "tResourceAssignmentExpression.h", "tResourceAssignmentExpression_8h.html", [
-      [ "tResourceAssignmentExpression", "classXML_1_1bpmn_1_1tResourceAssignmentExpression.html", "classXML_1_1bpmn_1_1tResourceAssignmentExpression" ]
-    ] ],
+    [ "tResourceAssignmentExpression.h", "tResourceAssignmentExpression_8h.html", "tResourceAssignmentExpression_8h" ],
     [ "tResourceParameter.cpp", "tResourceParameter_8cpp.html", null ],
-    [ "tResourceParameter.h", "tResourceParameter_8h.html", [
-      [ "tResourceParameter", "classXML_1_1bpmn_1_1tResourceParameter.html", "classXML_1_1bpmn_1_1tResourceParameter" ]
-    ] ],
+    [ "tResourceParameter.h", "tResourceParameter_8h.html", "tResourceParameter_8h" ],
     [ "tResourceParameterBinding.cpp", "tResourceParameterBinding_8cpp.html", null ],
-    [ "tResourceParameterBinding.h", "tResourceParameterBinding_8h.html", [
-      [ "tResourceParameterBinding", "classXML_1_1bpmn_1_1tResourceParameterBinding.html", "classXML_1_1bpmn_1_1tResourceParameterBinding" ]
-    ] ],
+    [ "tResourceParameterBinding.h", "tResourceParameterBinding_8h.html", "tResourceParameterBinding_8h" ],
     [ "tResourceRole.cpp", "tResourceRole_8cpp.html", null ],
-    [ "tResourceRole.h", "tResourceRole_8h.html", [
-      [ "tResourceRole", "classXML_1_1bpmn_1_1tResourceRole.html", "classXML_1_1bpmn_1_1tResourceRole" ]
-    ] ],
+    [ "tResourceRole.h", "tResourceRole_8h.html", "tResourceRole_8h" ],
     [ "tRootElement.cpp", "tRootElement_8cpp.html", null ],
-    [ "tRootElement.h", "tRootElement_8h.html", [
-      [ "tRootElement", "classXML_1_1bpmn_1_1tRootElement.html", "classXML_1_1bpmn_1_1tRootElement" ]
-    ] ],
+    [ "tRootElement.h", "tRootElement_8h.html", "tRootElement_8h" ],
     [ "tScript.cpp", "tScript_8cpp.html", null ],
-    [ "tScript.h", "tScript_8h.html", [
-      [ "tScript", "classXML_1_1bpmn_1_1tScript.html", "classXML_1_1bpmn_1_1tScript" ]
-    ] ],
+    [ "tScript.h", "tScript_8h.html", "tScript_8h" ],
     [ "tScriptTask.cpp", "tScriptTask_8cpp.html", null ],
-    [ "tScriptTask.h", "tScriptTask_8h.html", [
-      [ "tScriptTask", "classXML_1_1bpmn_1_1tScriptTask.html", "classXML_1_1bpmn_1_1tScriptTask" ]
-    ] ],
+    [ "tScriptTask.h", "tScriptTask_8h.html", "tScriptTask_8h" ],
     [ "tSendTask.cpp", "tSendTask_8cpp.html", null ],
-    [ "tSendTask.h", "tSendTask_8h.html", [
-      [ "tSendTask", "classXML_1_1bpmn_1_1tSendTask.html", "classXML_1_1bpmn_1_1tSendTask" ]
-    ] ],
+    [ "tSendTask.h", "tSendTask_8h.html", "tSendTask_8h" ],
     [ "tSequenceFlow.cpp", "tSequenceFlow_8cpp.html", null ],
-    [ "tSequenceFlow.h", "tSequenceFlow_8h.html", [
-      [ "tSequenceFlow", "classXML_1_1bpmn_1_1tSequenceFlow.html", "classXML_1_1bpmn_1_1tSequenceFlow" ]
-    ] ],
+    [ "tSequenceFlow.h", "tSequenceFlow_8h.html", "tSequenceFlow_8h" ],
     [ "tServiceTask.cpp", "tServiceTask_8cpp.html", null ],
-    [ "tServiceTask.h", "tServiceTask_8h.html", [
-      [ "tServiceTask", "classXML_1_1bpmn_1_1tServiceTask.html", "classXML_1_1bpmn_1_1tServiceTask" ]
-    ] ],
+    [ "tServiceTask.h", "tServiceTask_8h.html", "tServiceTask_8h" ],
     [ "tSignal.cpp", "tSignal_8cpp.html", null ],
-    [ "tSignal.h", "tSignal_8h.html", [
-      [ "tSignal", "classXML_1_1bpmn_1_1tSignal.html", "classXML_1_1bpmn_1_1tSignal" ]
-    ] ],
+    [ "tSignal.h", "tSignal_8h.html", "tSignal_8h" ],
     [ "tSignalEventDefinition.cpp", "tSignalEventDefinition_8cpp.html", null ],
-    [ "tSignalEventDefinition.h", "tSignalEventDefinition_8h.html", [
-      [ "tSignalEventDefinition", "classXML_1_1bpmn_1_1tSignalEventDefinition.html", "classXML_1_1bpmn_1_1tSignalEventDefinition" ]
-    ] ],
+    [ "tSignalEventDefinition.h", "tSignalEventDefinition_8h.html", "tSignalEventDefinition_8h" ],
     [ "tStandardLoopCharacteristics.cpp", "tStandardLoopCharacteristics_8cpp.html", null ],
-    [ "tStandardLoopCharacteristics.h", "tStandardLoopCharacteristics_8h.html", [
-      [ "tStandardLoopCharacteristics", "classXML_1_1bpmn_1_1tStandardLoopCharacteristics.html", "classXML_1_1bpmn_1_1tStandardLoopCharacteristics" ]
-    ] ],
+    [ "tStandardLoopCharacteristics.h", "tStandardLoopCharacteristics_8h.html", "tStandardLoopCharacteristics_8h" ],
     [ "tStartEvent.cpp", "tStartEvent_8cpp.html", null ],
-    [ "tStartEvent.h", "tStartEvent_8h.html", [
-      [ "tStartEvent", "classXML_1_1bpmn_1_1tStartEvent.html", "classXML_1_1bpmn_1_1tStartEvent" ]
-    ] ],
+    [ "tStartEvent.h", "tStartEvent_8h.html", "tStartEvent_8h" ],
     [ "tSubChoreography.cpp", "tSubChoreography_8cpp.html", null ],
-    [ "tSubChoreography.h", "tSubChoreography_8h.html", [
-      [ "tSubChoreography", "classXML_1_1bpmn_1_1tSubChoreography.html", "classXML_1_1bpmn_1_1tSubChoreography" ]
-    ] ],
+    [ "tSubChoreography.h", "tSubChoreography_8h.html", "tSubChoreography_8h" ],
     [ "tSubConversation.cpp", "tSubConversation_8cpp.html", null ],
-    [ "tSubConversation.h", "tSubConversation_8h.html", [
-      [ "tSubConversation", "classXML_1_1bpmn_1_1tSubConversation.html", "classXML_1_1bpmn_1_1tSubConversation" ]
-    ] ],
+    [ "tSubConversation.h", "tSubConversation_8h.html", "tSubConversation_8h" ],
     [ "tSubProcess.cpp", "tSubProcess_8cpp.html", null ],
-    [ "tSubProcess.h", "tSubProcess_8h.html", [
-      [ "tSubProcess", "classXML_1_1bpmn_1_1tSubProcess.html", "classXML_1_1bpmn_1_1tSubProcess" ]
-    ] ],
+    [ "tSubProcess.h", "tSubProcess_8h.html", "tSubProcess_8h" ],
     [ "tTask.cpp", "tTask_8cpp.html", null ],
-    [ "tTask.h", "tTask_8h.html", [
-      [ "tTask", "classXML_1_1bpmn_1_1tTask.html", "classXML_1_1bpmn_1_1tTask" ]
-    ] ],
+    [ "tTask.h", "tTask_8h.html", "tTask_8h" ],
     [ "tTerminateEventDefinition.cpp", "tTerminateEventDefinition_8cpp.html", null ],
-    [ "tTerminateEventDefinition.h", "tTerminateEventDefinition_8h.html", [
-      [ "tTerminateEventDefinition", "classXML_1_1bpmn_1_1tTerminateEventDefinition.html", "classXML_1_1bpmn_1_1tTerminateEventDefinition" ]
-    ] ],
+    [ "tTerminateEventDefinition.h", "tTerminateEventDefinition_8h.html", "tTerminateEventDefinition_8h" ],
     [ "tText.cpp", "tText_8cpp.html", null ],
-    [ "tText.h", "tText_8h.html", [
-      [ "tText", "classXML_1_1bpmn_1_1tText.html", "classXML_1_1bpmn_1_1tText" ]
-    ] ],
+    [ "tText.h", "tText_8h.html", "tText_8h" ],
     [ "tTextAnnotation.cpp", "tTextAnnotation_8cpp.html", null ],
-    [ "tTextAnnotation.h", "tTextAnnotation_8h.html", [
-      [ "tTextAnnotation", "classXML_1_1bpmn_1_1tTextAnnotation.html", "classXML_1_1bpmn_1_1tTextAnnotation" ]
-    ] ],
+    [ "tTextAnnotation.h", "tTextAnnotation_8h.html", "tTextAnnotation_8h" ],
     [ "tThrowEvent.cpp", "tThrowEvent_8cpp.html", null ],
-    [ "tThrowEvent.h", "tThrowEvent_8h.html", [
-      [ "tThrowEvent", "classXML_1_1bpmn_1_1tThrowEvent.html", "classXML_1_1bpmn_1_1tThrowEvent" ]
-    ] ],
+    [ "tThrowEvent.h", "tThrowEvent_8h.html", "tThrowEvent_8h" ],
     [ "tTimerEventDefinition.cpp", "tTimerEventDefinition_8cpp.html", null ],
-    [ "tTimerEventDefinition.h", "tTimerEventDefinition_8h.html", [
-      [ "tTimerEventDefinition", "classXML_1_1bpmn_1_1tTimerEventDefinition.html", "classXML_1_1bpmn_1_1tTimerEventDefinition" ]
-    ] ],
+    [ "tTimerEventDefinition.h", "tTimerEventDefinition_8h.html", "tTimerEventDefinition_8h" ],
     [ "tTransaction.cpp", "tTransaction_8cpp.html", null ],
-    [ "tTransaction.h", "tTransaction_8h.html", [
-      [ "tTransaction", "classXML_1_1bpmn_1_1tTransaction.html", "classXML_1_1bpmn_1_1tTransaction" ]
-    ] ],
+    [ "tTransaction.h", "tTransaction_8h.html", "tTransaction_8h" ],
     [ "tTransactionMethod.h", "tTransactionMethod_8h.html", "tTransactionMethod_8h" ],
     [ "tUserTask.cpp", "tUserTask_8cpp.html", null ],
-    [ "tUserTask.h", "tUserTask_8h.html", [
-      [ "tUserTask", "classXML_1_1bpmn_1_1tUserTask.html", "classXML_1_1bpmn_1_1tUserTask" ]
-    ] ],
+    [ "tUserTask.h", "tUserTask_8h.html", "tUserTask_8h" ],
     [ "userTask.cpp", "userTask_8cpp.html", null ],
-    [ "userTask.h", "userTask_8h.html", [
-      [ "userTask", "classXML_1_1bpmn_1_1userTask.html", "classXML_1_1bpmn_1_1userTask" ]
-    ] ]
+    [ "userTask.h", "userTask_8h.html", "userTask_8h" ]
 ];

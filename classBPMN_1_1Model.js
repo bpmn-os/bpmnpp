@@ -75,5 +75,5 @@ var classBPMN_1_1Model =
     [ "readBPMNFile", "classBPMN_1_1Model.html#a87a1b1319155d7425905a793dcf3085b", null ],
     [ "messageFlows", "classBPMN_1_1Model.html#a6fbd982974a432552f51a2caf34db480", null ],
     [ "processes", "classBPMN_1_1Model.html#a161464a851d7825e3ba1150e8dc2bbb4", null ],
-    [ "roots", "classBPMN_1_1Model.html#a98e88b54da28e46b2e9429eb8ea0f374", null ]
+    [ "root", "classBPMN_1_1Model.html#ada5877c7e82c8bf576d7c1c399b5027a", null ]
 ];
