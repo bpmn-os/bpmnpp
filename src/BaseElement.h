@@ -17,6 +17,14 @@ public:
   /// @brief Constructs a BaseElement object representing a BPMN element.
   BaseElement(XML::bpmn::tBaseElement* element);
 
+  /// @brief Destructor.
+  /// @note Declared here and defined out-of-line (in BaseElement.cpp, where
+  /// ExtensionElements is a complete type) so that the destructor of the
+  /// std::unique_ptr<ExtensionElements> member is not instantiated against
+  /// the forward-declared type. Clang requires the complete type at the point
+  /// of instantiation, so an implicit destructor here fails to compile.
+  ~BaseElement();
+
   XML::bpmn::tBaseElement* element;
 
   /// @brief Id of element.
