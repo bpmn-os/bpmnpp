@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.26.4)
 project(bpmn++)
 
 # Set the C++ standard
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23)
 
 option(BPMNPP_TESTS "Build bpmn++ tests" ON)
 if(BPMNPP_TESTS)
