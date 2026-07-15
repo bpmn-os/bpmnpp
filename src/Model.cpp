@@ -1,4 +1,6 @@
 #include "Model.h"
+#include <fstream>
+#include <stdexcept>
 #include "xml/bpmn/tLinkEventDefinition.h"
 #include "xml/bpmn/tCancelEventDefinition.h"
 #include "xml/bpmn/tCompensateEventDefinition.h"
@@ -22,11 +24,27 @@ Model::Model(const std::string& filename)
   readBPMNFile(filename);
 }
 
+Model::Model(std::unique_ptr<XML::XMLObject> root)
+{
+  buildModel(std::move(root));
+}
+
 void Model::readBPMNFile(const std::string& filename)
 {
-  root = createRoot(filename);
+  std::ifstream stream(filename);
+  if ( !stream.is_open() ) {
+    throw std::runtime_error("Model: could not open file '" + filename + "'");
+  }
+  buildModel(createRoot(stream));
+}
 
-  for ( XML::bpmn::tProcess& process : root->getChildren<XML::bpmn::tProcess>() ) {
+void Model::buildModel(std::unique_ptr<XML::XMLObject> root)
+{
+  this->root = std::move(root);
+
+  processRoot();
+
+  for ( XML::bpmn::tProcess& process : this->root->getChildren<XML::bpmn::tProcess>() ) {
     processes.push_back(createProcess(&process));
   }
 
@@ -43,8 +61,8 @@ void Model::readBPMNFile(const std::string& filename)
   }
 }
 
-std::unique_ptr<XML::XMLObject> Model::createRoot(const std::string& filename) {
-  return std::unique_ptr<XML::XMLObject>(XML::XMLObject::createFromFile(filename));
+std::unique_ptr<XML::XMLObject> Model::createRoot(std::istream& stream) {
+  return std::unique_ptr<XML::XMLObject>(XML::XMLObject::createFromStream(stream));
 }
 
 std::unique_ptr<Process> Model::createProcess(XML::bpmn::tProcess* process) {
