@@ -5,7 +5,10 @@ project(bpmn++)
 # Set the C++ standard
 set(CMAKE_CXX_STANDARD 20)
 
-add_subdirectory(tests)
+option(BPMNPP_TESTS "Build bpmn++ tests" ON)
+if(BPMNPP_TESTS)
+  add_subdirectory(tests)
+endif()
 
 # Check dependencies
 find_library(XERCES_LIB xerces-c)
