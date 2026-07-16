@@ -50,7 +50,7 @@ An example using the library can be found in `example` folder.
 After successful installation of the library, you can build the example by
 
 ```sh
-g++ -std=c++20 main.cpp -lbpmn++ -lxerces-c -o bpmn++
+g++ -std=c++23 main.cpp -lbpmn++ -lxerces-c -o bpmn++
 ```
 
 You can run the example by
