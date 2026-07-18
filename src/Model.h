@@ -179,10 +179,13 @@ public:
   std::vector< std::unique_ptr<Process> > processes;
   std::vector< std::unique_ptr<MessageFlow> > messageFlows;
 protected:
-  virtual void readBPMNFile(const std::string& filename);
-  virtual void buildModel(std::unique_ptr<XML::XMLObject> root);
-  virtual void processRoot() {} ///< Hook run after the root is installed and before processes are built; derived classes may override it for post-parse setup.
-  std::unique_ptr<XML::XMLObject> createRoot(std::istream& stream);
+  /// @brief Parses @p filename into the model root and returns it.
+  /// Virtual hook: derived classes may override it to perform post-parse setup before the children
+  /// are built. Overrides should call this base version to obtain the parsed root.
+  virtual std::unique_ptr<XML::XMLObject> createRoot(const std::string& filename);
+  /// @brief Builds processes, nodes, sequence flows, message flows, and links from @ref root.
+  /// Must be called once @ref root is installed; invoked from the constructor body.
+  virtual void build();
 
   virtual std::unique_ptr<Process> createProcess(XML::bpmn::tProcess* process);
   virtual std::unique_ptr<EventSubProcess> createEventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent);

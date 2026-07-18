@@ -20,31 +20,24 @@
 using namespace BPMN;
 
 Model::Model(const std::string& filename)
+  : Model(createRoot(filename))
 {
-  readBPMNFile(filename);
 }
 
 Model::Model(std::unique_ptr<XML::XMLObject> root)
+  : root(std::move(root))
 {
-  buildModel(std::move(root));
+  build();
 }
 
-void Model::readBPMNFile(const std::string& filename)
+std::unique_ptr<XML::XMLObject> Model::createRoot(const std::string& filename)
 {
-  std::ifstream stream(filename);
-  if ( !stream.is_open() ) {
-    throw std::runtime_error("Model: could not open file '" + filename + "'");
-  }
-  buildModel(createRoot(stream));
+  return std::unique_ptr<XML::XMLObject>(XML::XMLObject::createFromFile(filename));
 }
 
-void Model::buildModel(std::unique_ptr<XML::XMLObject> root)
+void Model::build()
 {
-  this->root = std::move(root);
-
-  processRoot();
-
-  for ( XML::bpmn::tProcess& process : this->root->getChildren<XML::bpmn::tProcess>() ) {
+  for ( XML::bpmn::tProcess& process : root->getChildren<XML::bpmn::tProcess>() ) {
     processes.push_back(createProcess(&process));
   }
 
@@ -59,10 +52,6 @@ void Model::buildModel(std::unique_ptr<XML::XMLObject> root)
   for ( auto& process : processes ) {
     createLinks(process.get());
   }
-}
-
-std::unique_ptr<XML::XMLObject> Model::createRoot(std::istream& stream) {
-  return std::unique_ptr<XML::XMLObject>(XML::XMLObject::createFromStream(stream));
 }
 
 std::unique_ptr<Process> Model::createProcess(XML::bpmn::tProcess* process) {
