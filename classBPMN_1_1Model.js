@@ -2,7 +2,9 @@ var classBPMN_1_1Model =
 [
     [ "Model", "classBPMN_1_1Model.html#a2a684f87dafb1fc7c33c1b4bf13afe23", null ],
     [ "Model", "classBPMN_1_1Model.html#a98de84e61b1e4a6101b3cba93888d841", null ],
+    [ "Model", "classBPMN_1_1Model.html#a2cd669903f528054f1f8b5c37e87337b", null ],
     [ "~Model", "classBPMN_1_1Model.html#a92b12f5b3a10b3e6c74923b52dd84e1a", null ],
+    [ "build", "classBPMN_1_1Model.html#a634f78d23c53e8f9027e66d685e7199f", null ],
     [ "createAbstractTask", "classBPMN_1_1Model.html#aad5749327c56d35ef1b42f91f0f9f746", null ],
     [ "createActivity", "classBPMN_1_1Model.html#a901bc56ea971f667b0d51917ba68d791", null ],
     [ "createAdHocSubProcess", "classBPMN_1_1Model.html#a15d3036111779f7640e2b5b4f0456355", null ],
@@ -72,7 +74,6 @@ var classBPMN_1_1Model =
     [ "createUntypedEndEvent", "classBPMN_1_1Model.html#a485f0d4453e8d9a0a03959030e120b99", null ],
     [ "createUntypedStartEvent", "classBPMN_1_1Model.html#a154298512200951cd32c17babd5fd11b", null ],
     [ "createUserTask", "classBPMN_1_1Model.html#a74d5b23140f809b74f3b59d629734985", null ],
-    [ "readBPMNFile", "classBPMN_1_1Model.html#a87a1b1319155d7425905a793dcf3085b", null ],
     [ "messageFlows", "classBPMN_1_1Model.html#a6fbd982974a432552f51a2caf34db480", null ],
     [ "processes", "classBPMN_1_1Model.html#a161464a851d7825e3ba1150e8dc2bbb4", null ],
     [ "root", "classBPMN_1_1Model.html#ada5877c7e82c8bf576d7c1c399b5027a", null ]

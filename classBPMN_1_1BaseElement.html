@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('classBPMN_1_1BaseElement.html',''); in
 <div class="dynheader">
 Inheritance diagram for BPMN::BaseElement:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classBPMN_1_1BaseElement__inherit__graph.svg" width="3863" height="1698"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classBPMN_1_1BaseElement__inherit__graph.svg" width="3863" height="1718"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -152,6 +152,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4147d5a0736aa8daeaebb07a66cfc209" id="r_a4147d5a0736aa8daeaebb07a66cfc209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1BaseElement.html#a4147d5a0736aa8daeaebb07a66cfc209">BaseElement</a> (<a class="el" href="classXML_1_1bpmn_1_1tBaseElement.html">XML::bpmn::tBaseElement</a> *<a class="el" href="classBPMN_1_1BaseElement.html#a7e97627a52c0312c4a28763747bde6ec">element</a>)</td></tr>
 <tr class="memdesc:a4147d5a0736aa8daeaebb07a66cfc209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a BaseElement object representing a BPMN element.  <br /></td></tr>
 <tr class="separator:a4147d5a0736aa8daeaebb07a66cfc209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6a3d276b26ad39bdae9e5256a32e6d" id="r_a7b6a3d276b26ad39bdae9e5256a32e6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1BaseElement.html#a7b6a3d276b26ad39bdae9e5256a32e6d">~BaseElement</a> ()</td></tr>
+<tr class="memdesc:a7b6a3d276b26ad39bdae9e5256a32e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:a7b6a3d276b26ad39bdae9e5256a32e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05dd1779e7ed7f0b4ecd95dacb9c28e2" id="r_a05dd1779e7ed7f0b4ecd95dacb9c28e2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a05dd1779e7ed7f0b4ecd95dacb9c28e2"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBPMN_1_1BaseElement.html#a05dd1779e7ed7f0b4ecd95dacb9c28e2">is</a> ()</td></tr>
 <tr class="memdesc:a05dd1779e7ed7f0b4ecd95dacb9c28e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to return the <a class="el" href="classBPMN_1_1BaseElement.html#a7e97627a52c0312c4a28763747bde6ec">element</a> in the specified type T.  <br /></td></tr>
@@ -219,6 +222,32 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7b6a3d276b26ad39bdae9e5256a32e6d" name="a7b6a3d276b26ad39bdae9e5256a32e6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6a3d276b26ad39bdae9e5256a32e6d">&#9670;&#160;</a></span>~BaseElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BaseElement::~BaseElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>Declared here and defined out-of-line (in BaseElement.cpp, where ExtensionElements is a complete type) so that the destructor of the std::unique_ptr&lt;ExtensionElements&gt; member is not instantiated against the forward-declared type. Clang requires the complete type at the point of instantiation, so an implicit destructor here fails to compile. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac21739a752ed0505c1b20c1361ebbcc6" name="ac21739a752ed0505c1b20c1361ebbcc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac21739a752ed0505c1b20c1361ebbcc6">&#9670;&#160;</a></span>get() <span class="overload">[1/2]</span></h2>
@@ -252,7 +281,7 @@ template&lt;typename T  = XML::bpmn::tBaseElement&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00047">47</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00055">55</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +317,7 @@ template&lt;typename T  = XML::bpmn::tBaseElement&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00060">60</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00068">68</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
 
 </div>
 </div>
@@ -318,7 +347,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A pointer to casted object or <code>nullptr</code> if the cast fails </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00030">30</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00038">38</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
 
 </div>
 </div>
@@ -348,7 +377,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A pointer to casted object or <code>nullptr</code> if the cast fails </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00038">38</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00046">46</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
 
 </div>
 </div>
@@ -365,7 +394,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00020">20</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00028">28</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +410,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00024">24</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00032">32</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +426,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00023">23</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BaseElement_8h_source.html#l00031">31</a> of file <a class="el" href="BaseElement_8h_source.html">BaseElement.h</a>.</p>
 
 </div>
 </div>

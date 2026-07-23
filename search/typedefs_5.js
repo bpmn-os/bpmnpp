@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['namespace_0',['Namespace',['../namespaceXML.html#a38677cd8e74fc7c166311f92c73624b1',1,'XML']]]
+  ['messagevisiblekind_0',['MessageVisibleKind',['../MessageVisibleKind_8h.html#aeba296f31e0b87fd529e527d1b7238a0',1,'MessageVisibleKind.h']]]
 ];

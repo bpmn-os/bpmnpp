@@ -140,6 +140,8 @@ $(document).ready(function(){initNavTree('XMLObject_8h.html',''); initResizable(
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;xercesc/dom/DOM.hpp&gt;</code><br />
 </div>
 <p><a href="XMLObject_8h_source.html">Go to the source code of this file.</a></p>
@@ -181,6 +183,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa622e068f62243ef3efaf89207f070d4" id="r_aa622e068f62243ef3efaf89207f070d4"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="namespaceXML.html#a0bc50cf368871273b0212ebdcc70c160">ElementName</a>, <a class="el" href="classXML_1_1XMLObject.html">XMLObject</a> *(*)(const <a class="el" href="namespaceXML.html#a38677cd8e74fc7c166311f92c73624b1">Namespace</a> &amp;xmlns, const <a class="el" href="namespaceXML.html#a8c738f76831f9e08a8e852dd94fa1e44">ClassName</a> &amp;className, const xercesc::DOMElement *element)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceXML.html#aa622e068f62243ef3efaf89207f070d4">XML::Factory</a></td></tr>
 <tr class="memdesc:aa622e068f62243ef3efaf89207f070d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory used to create instance depending on element name.  <br /></td></tr>
 <tr class="separator:aa622e068f62243ef3efaf89207f070d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316bea3d0ce71315692200adeef455f4" id="r_a316bea3d0ce71315692200adeef455f4"><td class="memTemplParams" colspan="2">template&lt;typename Self , typename T &gt; </td></tr>
+<tr class="memitem:a316bea3d0ce71315692200adeef455f4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceXML.html#a316bea3d0ce71315692200adeef455f4">XML::like_const_t</a> = std::conditional_t&lt; std::is_const_v&lt; std::remove_reference_t&lt; Self &gt; &gt;, const T, T &gt;</td></tr>
+<tr class="memdesc:a316bea3d0ce71315692200adeef455f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields <code>const T</code> when the deduced <code>Self</code> is a const-qualified object, otherwise <code>T</code>.  <br /></td></tr>
+<tr class="separator:a316bea3d0ce71315692200adeef455f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>

@@ -10,6 +10,7 @@ var namespaceXML =
     [ "ClassName", "namespaceXML.html#a8c738f76831f9e08a8e852dd94fa1e44", null ],
     [ "ElementName", "namespaceXML.html#a0bc50cf368871273b0212ebdcc70c160", null ],
     [ "Factory", "namespaceXML.html#aa622e068f62243ef3efaf89207f070d4", null ],
+    [ "like_const_t", "namespaceXML.html#a316bea3d0ce71315692200adeef455f4", null ],
     [ "Namespace", "namespaceXML.html#a38677cd8e74fc7c166311f92c73624b1", null ],
     [ "TextContent", "namespaceXML.html#ae2018b3e085b085f0dc537db79e2c4ae", null ],
     [ "createInstance", "namespaceXML.html#aa59ec4ada5c483ead6eb378ffdbe50a5", null ],

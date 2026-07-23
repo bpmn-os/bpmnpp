@@ -1,6 +1,7 @@
 var classBPMN_1_1BaseElement =
 [
     [ "BaseElement", "classBPMN_1_1BaseElement.html#a4147d5a0736aa8daeaebb07a66cfc209", null ],
+    [ "~BaseElement", "classBPMN_1_1BaseElement.html#a7b6a3d276b26ad39bdae9e5256a32e6d", null ],
     [ "get", "classBPMN_1_1BaseElement.html#ac21739a752ed0505c1b20c1361ebbcc6", null ],
     [ "get", "classBPMN_1_1BaseElement.html#a0f14f013f11e8f9b71e99c6b3bd79ad4", null ],
     [ "is", "classBPMN_1_1BaseElement.html#a05dd1779e7ed7f0b4ecd95dacb9c28e2", null ],

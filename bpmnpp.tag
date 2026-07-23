@@ -5500,6 +5500,13 @@
       <arglist>(XML::bpmn::tBaseElement *element)</arglist>
     </member>
     <member kind="function">
+      <type></type>
+      <name>~BaseElement</name>
+      <anchorfile>classBPMN_1_1BaseElement.html</anchorfile>
+      <anchor>a7b6a3d276b26ad39bdae9e5256a32e6d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>T *</type>
       <name>is</name>
       <anchorfile>classBPMN_1_1BaseElement.html</anchorfile>
@@ -8440,6 +8447,13 @@
       <anchor>a98de84e61b1e4a6101b3cba93888d841</anchor>
       <arglist>(const std::string &amp;filename)</arglist>
     </member>
+    <member kind="function">
+      <type></type>
+      <name>Model</name>
+      <anchorfile>classBPMN_1_1Model.html</anchorfile>
+      <anchor>a2cd669903f528054f1f8b5c37e87337b</anchor>
+      <arglist>(std::unique_ptr&lt; XML::XMLObject &gt; root)</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~Model</name>
@@ -8476,18 +8490,18 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual void</type>
-      <name>readBPMNFile</name>
-      <anchorfile>classBPMN_1_1Model.html</anchorfile>
-      <anchor>a87a1b1319155d7425905a793dcf3085b</anchor>
-      <arglist>(const std::string &amp;filename)</arglist>
-    </member>
-    <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual std::unique_ptr&lt; XML::XMLObject &gt;</type>
       <name>createRoot</name>
       <anchorfile>classBPMN_1_1Model.html</anchorfile>
       <anchor>aa6d3d1d835a89ac6c02ddfcbdee206db</anchor>
       <arglist>(const std::string &amp;filename)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>build</name>
+      <anchorfile>classBPMN_1_1Model.html</anchorfile>
+      <anchor>a634f78d23c53e8f9027e66d685e7199f</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual std::unique_ptr&lt; Process &gt;</type>
@@ -17033,46 +17047,25 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>T *</type>
+      <type>auto *</type>
       <name>is</name>
       <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>a749a9e28c7d34aeb688ca2b45443ba23</anchor>
-      <arglist>()</arglist>
+      <anchor>af411b270804032d54f9983da51143b1e</anchor>
+      <arglist>(this Self &amp;&amp;self)</arglist>
     </member>
     <member kind="function">
-      <type>const T *</type>
-      <name>is</name>
-      <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>a280259f56f482c66ef4ff69e4da793ed</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>T *</type>
+      <type>auto *</type>
       <name>get</name>
       <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>ae6a3f75521284b0eeb9db7c572eb8f0b</anchor>
-      <arglist>()</arglist>
+      <anchor>a1b7c5776a906c0f6c15a52248020719d</anchor>
+      <arglist>(this Self &amp;&amp;self)</arglist>
     </member>
     <member kind="function">
-      <type>const T *</type>
-      <name>get</name>
-      <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>a1d64177fc3fdd31a9cd593f526be96d8</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>std::vector&lt; std::reference_wrapper&lt; T &gt; &gt;</type>
+      <type>auto</type>
       <name>find</name>
       <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>a286e87cf1cee8f70b20dd51906135d8b</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>std::vector&lt; std::reference_wrapper&lt; const T &gt; &gt;</type>
-      <name>find</name>
-      <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>ab5e7762b2598c0ef3a493e99a325fd92</anchor>
-      <arglist>() const</arglist>
+      <anchor>ab6b1a76845235f4423c08d30bdd15730</anchor>
+      <arglist>(this Self &amp;&amp;self)</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
@@ -17089,60 +17082,60 @@
       <arglist>(std::string indentation=&quot;\t&quot;, unsigned int depth=0) const</arglist>
     </member>
     <member kind="function">
-      <type>T &amp;</type>
+      <type>auto &amp;</type>
       <name>getRequiredChild</name>
       <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>af7d5ce8f5308589c9388675e2eb7c4a4</anchor>
-      <arglist>()</arglist>
+      <anchor>a4456212f0c089e6827f48b8fc0f113e9</anchor>
+      <arglist>(this Self &amp;&amp;self)</arglist>
     </member>
     <member kind="function">
-      <type>std::optional&lt; std::reference_wrapper&lt; T &gt; &gt;</type>
+      <type>auto</type>
       <name>getOptionalChild</name>
       <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>a3857ae384e142fed6a8bc3171bd65333</anchor>
-      <arglist>()</arglist>
+      <anchor>a0f01824e23e01f7229979d510fd90257</anchor>
+      <arglist>(this Self &amp;&amp;self)</arglist>
     </member>
     <member kind="function">
-      <type>std::vector&lt; std::reference_wrapper&lt; T &gt; &gt;</type>
+      <type>auto</type>
       <name>getChildren</name>
       <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>ae2c12f3ed9e9d4d3ce2f0b8b86065257</anchor>
-      <arglist>()</arglist>
+      <anchor>a53227d3966cd9a86844a43ede63044b2</anchor>
+      <arglist>(this Self &amp;&amp;self)</arglist>
     </member>
     <member kind="function">
-      <type>XMLObject &amp;</type>
+      <type>auto &amp;</type>
       <name>getRequiredChildByName</name>
       <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>a87fbfd85b70cff478eae5a7ef6cf50b1</anchor>
-      <arglist>(const ElementName &amp;name)</arglist>
+      <anchor>a525de5fa636add5c942f38a2e2045fea</anchor>
+      <arglist>(this Self &amp;&amp;self, const ElementName &amp;name)</arglist>
     </member>
     <member kind="function">
-      <type>std::optional&lt; std::reference_wrapper&lt; XMLObject &gt; &gt;</type>
+      <type>auto</type>
       <name>getOptionalChildByName</name>
       <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>a473c91efbf329e18c279afc0cb42858e</anchor>
-      <arglist>(const ElementName &amp;name)</arglist>
+      <anchor>ae0e06cba433de3a5769f23f1c72e6ff3</anchor>
+      <arglist>(this Self &amp;&amp;self, const ElementName &amp;name)</arglist>
     </member>
     <member kind="function">
-      <type>std::vector&lt; std::reference_wrapper&lt; XMLObject &gt; &gt;</type>
+      <type>auto</type>
       <name>getChildrenByName</name>
       <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>abedbcb2bf67bd6141626c1135fc7ea52</anchor>
-      <arglist>(const ElementName &amp;name)</arglist>
+      <anchor>a7911f051b1be7182b71680f178e4731d</anchor>
+      <arglist>(this Self &amp;&amp;self, const ElementName &amp;name)</arglist>
     </member>
     <member kind="function">
-      <type>Attribute &amp;</type>
+      <type>auto &amp;</type>
       <name>getRequiredAttributeByName</name>
       <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>ab92ed763c085202e96b65c7530fc841c</anchor>
-      <arglist>(const AttributeName &amp;name)</arglist>
+      <anchor>a8158a84d1d31cd7a3f2df850b9527e65</anchor>
+      <arglist>(this Self &amp;&amp;self, const AttributeName &amp;name)</arglist>
     </member>
     <member kind="function">
-      <type>std::optional&lt; std::reference_wrapper&lt; Attribute &gt; &gt;</type>
+      <type>auto</type>
       <name>getOptionalAttributeByName</name>
       <anchorfile>classXML_1_1XMLObject.html</anchorfile>
-      <anchor>a6a9b586896b4192630aadf7d111aab16</anchor>
-      <arglist>(const AttributeName &amp;name)</arglist>
+      <anchor>a55553b2b20daac067188e39c30835058</anchor>
+      <arglist>(this Self &amp;&amp;self, const AttributeName &amp;name)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static XMLObject *</type>
@@ -17382,6 +17375,13 @@
       <name>Factory</name>
       <anchorfile>namespaceXML.html</anchorfile>
       <anchor>aa622e068f62243ef3efaf89207f070d4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::conditional_t&lt; std::is_const_v&lt; std::remove_reference_t&lt; Self &gt; &gt;, const T, T &gt;</type>
+      <name>like_const_t</name>
+      <anchorfile>namespaceXML.html</anchorfile>
+      <anchor>a316bea3d0ce71315692200adeef455f4</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
