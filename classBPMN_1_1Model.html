@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('classBPMN_1_1Model.html',''); initResi
 <div class="line">    std::make_unique&lt;MyExtensionElements&gt;(process)</div>
 <div class="line">  );</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassBPMN_1_1Model_html_a69c1d6fad5b2e6dd9abe6e8819ce8bbb"><div class="ttname"><a href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">BPMN::Model::createProcess</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Process &gt; createProcess(XML::bpmn::tProcess *process)</div><div class="ttdef"><b>Definition</b> <a href="Model_8cpp_source.html#l00065">Model.cpp:65</a></div></div>
+<div class="ttc" id="aclassBPMN_1_1Model_html_a69c1d6fad5b2e6dd9abe6e8819ce8bbb"><div class="ttname"><a href="classBPMN_1_1Model.html#a69c1d6fad5b2e6dd9abe6e8819ce8bbb">BPMN::Model::createProcess</a></div><div class="ttdeci">virtual std::unique_ptr&lt; Process &gt; createProcess(XML::bpmn::tProcess *process)</div><div class="ttdef"><b>Definition</b> <a href="Model_8cpp_source.html#l00074">Model.cpp:74</a></div></div>
 <div class="ttc" id="aclassXML_1_1bpmn_1_1tProcess_html"><div class="ttname"><a href="classXML_1_1bpmn_1_1tProcess.html">XML::bpmn::tProcess</a></div><div class="ttdef"><b>Definition</b> <a href="tProcess_8h_source.html#l00064">tProcess.h:64</a></div></div>
 </div><!-- fragment --></dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Multiple event definitions are not yet supported. A <code>std::runtime_error</code> will be thrown when parsing an event with multiple event definitions.</dd></dl>
@@ -357,6 +357,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ad18392696607d84a625fc9189485f7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a280f632f03f93a50b201d7b039c93c6d" id="r_a280f632f03f93a50b201d7b039c93c6d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a280f632f03f93a50b201d7b039c93c6d">createLinks</a> (<a class="el" href="classBPMN_1_1Scope.html">Scope</a> *scope)</td></tr>
 <tr class="separator:a280f632f03f93a50b201d7b039c93c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932249e26cb9a6a731d33159ccb6ae4c" id="r_a932249e26cb9a6a731d33159ccb6ae4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a932249e26cb9a6a731d33159ccb6ae4c">createDataStores</a> ()</td></tr>
+<tr class="separator:a932249e26cb9a6a731d33159ccb6ae4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d857cdeba82c5ff43c972031c0139aa" id="r_a6d857cdeba82c5ff43c972031c0139aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#a6d857cdeba82c5ff43c972031c0139aa">createProcesses</a> ()</td></tr>
+<tr class="separator:a6d857cdeba82c5ff43c972031c0139aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7b035b0ba64e65d6889e93557efcf26" id="r_ab7b035b0ba64e65d6889e93557efcf26"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBPMN_1_1Model.html#ab7b035b0ba64e65d6889e93557efcf26">createMessageFlows</a> ()</td></tr>
 <tr class="separator:ab7b035b0ba64e65d6889e93557efcf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -509,7 +513,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00278">278</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00280">280</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -549,7 +553,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00302">302</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00304">304</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -589,7 +593,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00294">294</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00296">296</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +633,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00286">286</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8h_source.html#l00288">288</a> of file <a class="el" href="Model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -694,7 +698,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00151">151</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00160">160</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -732,7 +736,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00089">89</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00098">98</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -770,7 +774,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00116">116</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00125">125</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -808,7 +812,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00196">196</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00205">205</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -846,7 +850,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00175">175</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00184">184</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -884,7 +888,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00124">124</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00133">133</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -922,7 +926,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00235">235</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00244">244</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -960,7 +964,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00421">421</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00430">430</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1002,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00267">267</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00276">276</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1030,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00513">513</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00522">522</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1064,7 +1068,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00239">239</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00248">248</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1106,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00350">350</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00359">359</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1144,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00425">425</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00434">434</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1172,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00713">713</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00722">722</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1196,7 +1200,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00679">679</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00688">688</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1234,7 +1238,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00496">496</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00505">505</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1272,7 +1276,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00243">243</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00252">252</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1310,7 +1314,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00301">301</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00310">310</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1348,7 +1352,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00362">362</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00371">371</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1386,7 +1390,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00504">504</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00513">513</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1414,7 +1418,34 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00061">61</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00070">70</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a932249e26cb9a6a731d33159ccb6ae4c" name="a932249e26cb9a6a731d33159ccb6ae4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932249e26cb9a6a731d33159ccb6ae4c">&#9670;&#160;</a></span>createDataStores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::createDataStores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00051">51</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1452,7 +1483,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00247">247</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00256">256</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1490,7 +1521,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00429">429</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00438">438</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1528,7 +1559,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00354">354</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00363">363</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1566,7 +1597,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00251">251</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00260">260</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1604,7 +1635,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00358">358</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00367">367</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1642,7 +1673,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00433">433</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00442">442</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1680,7 +1711,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00179">179</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00188">188</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1718,7 +1749,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00492">492</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00501">501</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1756,7 +1787,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00069">69</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00078">78</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1794,7 +1825,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00484">484</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00493">493</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1832,7 +1863,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00073">73</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00082">82</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1860,7 +1891,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00586">586</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00595">595</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1898,7 +1929,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00458">458</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00467">467</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1936,7 +1967,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00488">488</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00497">497</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -1964,7 +1995,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00795">795</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00804">804</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2002,7 +2033,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00449">449</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00458">458</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2040,7 +2071,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00318">318</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00327">327</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2078,7 +2109,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00167">167</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00176">176</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2116,7 +2147,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00255">255</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00264">264</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2154,7 +2185,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00306">306</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00315">315</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2182,7 +2213,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00508">508</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00517">517</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2209,7 +2240,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00830">830</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00839">839</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2247,7 +2278,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00366">366</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00375">375</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2285,7 +2316,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00437">437</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00446">446</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2313,7 +2344,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00556">556</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00565">565</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2351,7 +2382,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00480">480</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00489">489</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2379,7 +2410,34 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00065">65</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00074">74</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6d857cdeba82c5ff43c972031c0139aa" name="a6d857cdeba82c5ff43c972031c0139aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d857cdeba82c5ff43c972031c0139aa">&#9670;&#160;</a></span>createProcesses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::createProcesses </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00057">57</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2417,7 +2475,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00159">159</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00168">168</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2483,7 +2541,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00171">171</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00180">180</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2521,7 +2579,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00155">155</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00164">164</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2559,7 +2617,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00500">500</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00509">509</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2587,7 +2645,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00549">549</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00558">558</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2625,7 +2683,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00259">259</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00268">268</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2663,7 +2721,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00310">310</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00319">319</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2701,7 +2759,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00370">370</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00379">379</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2739,7 +2797,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00441">441</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00450">450</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2777,7 +2835,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00106">106</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00115">115</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2815,7 +2873,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00128">128</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00137">137</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2853,7 +2911,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00445">445</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00454">454</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2891,7 +2949,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00382">382</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00391">391</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2929,7 +2987,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00263">263</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00272">272</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -2967,7 +3025,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00314">314</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00323">323</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -3005,7 +3063,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00374">374</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00383">383</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -3043,7 +3101,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00120">120</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00129">129</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -3087,7 +3145,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00322">322</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00331">331</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -3125,7 +3183,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00453">453</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00462">462</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -3163,7 +3221,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00378">378</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00387">387</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>
@@ -3201,7 +3259,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00163">163</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Model_8cpp_source.html#l00172">172</a> of file <a class="el" href="Model_8cpp_source.html">Model.cpp</a>.</p>
 
 </div>
 </div>

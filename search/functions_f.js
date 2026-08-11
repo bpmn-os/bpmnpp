@@ -3,7 +3,7 @@ var searchData=
   ['scope_0',['Scope',['../classBPMN_1_1Scope.html#a9fec57f59b4f426b9b9ff47d44ad254a',1,'BPMN::Scope']]],
   ['scripttask_1',['scripttask',['../classBPMN_1_1ScriptTask.html#ad4034f698d1edbb5cf1c041e6c09a639',1,'BPMN::ScriptTask::ScriptTask()'],['../classXML_1_1bpmn_1_1scriptTask.html#a93dac47ba8dc0953c918558e9cd38a51',1,'XML::bpmn::scriptTask::scriptTask()']]],
   ['sendtask_2',['sendtask',['../classBPMN_1_1SendTask.html#a82dcd9179d6ba280981a62611eb23a16',1,'BPMN::SendTask::SendTask()'],['../classXML_1_1bpmn_1_1sendTask.html#af2f086004557297c8295481c49d83a93',1,'XML::bpmn::sendTask::sendTask()']]],
-  ['sequenceflow_3',['sequenceflow',['../classXML_1_1bpmn_1_1sequenceFlow.html#ae12faf0038f398da42d8e1d1efb37cb3',1,'XML::bpmn::sequenceFlow::sequenceFlow()'],['../classBPMN_1_1SequenceFlow.html#a962fdc0e6df58716e92077d415380acc',1,'BPMN::SequenceFlow::SequenceFlow()']]],
+  ['sequenceflow_3',['sequenceflow',['../classBPMN_1_1SequenceFlow.html#a962fdc0e6df58716e92077d415380acc',1,'BPMN::SequenceFlow::SequenceFlow()'],['../classXML_1_1bpmn_1_1sequenceFlow.html#ae12faf0038f398da42d8e1d1efb37cb3',1,'XML::bpmn::sequenceFlow::sequenceFlow()']]],
   ['servicetask_4',['serviceTask',['../classXML_1_1bpmn_1_1serviceTask.html#aaa40cfb4ab7c134992ae2f6cfed93aa1',1,'XML::bpmn::serviceTask']]],
   ['signalboundaryevent_5',['SignalBoundaryEvent',['../classBPMN_1_1SignalBoundaryEvent.html#a654e5cede3e9e767510fb3ffa4a3c96e',1,'BPMN::SignalBoundaryEvent']]],
   ['signalcatchevent_6',['SignalCatchEvent',['../classBPMN_1_1SignalCatchEvent.html#a8a49d4670d73b40de0d64d742a2c0fec',1,'BPMN::SignalCatchEvent']]],

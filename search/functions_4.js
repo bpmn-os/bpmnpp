@@ -15,5 +15,5 @@ var searchData=
   ['eventdefinition_12',['eventDefinition',['../classXML_1_1bpmn_1_1eventDefinition.html#a28c749414868abac5c9f9bd2bc90d801',1,'XML::bpmn::eventDefinition']]],
   ['eventsubprocess_13',['EventSubProcess',['../classBPMN_1_1EventSubProcess.html#ae128cc7c23f29cbfb388703cda7691d9',1,'BPMN::EventSubProcess']]],
   ['exclusivegateway_14',['exclusivegateway',['../classBPMN_1_1ExclusiveGateway.html#a7fb32af3e29ef56b709e83a42fff7185',1,'BPMN::ExclusiveGateway::ExclusiveGateway()'],['../classXML_1_1bpmn_1_1exclusiveGateway.html#a28bc528c608fa304b80a8543bd22bbd8',1,'XML::bpmn::exclusiveGateway::exclusiveGateway()']]],
-  ['extensionelements_15',['extensionelements',['../classBPMN_1_1ExtensionElements.html#aef7df5624b90cde3eeca82c1cef9a080',1,'BPMN::ExtensionElements::ExtensionElements()'],['../classXML_1_1bpmn_1_1extensionElements.html#ab8c1f056c8d70d75e6b67bc9a40d5514',1,'XML::bpmn::extensionElements::extensionElements()']]]
+  ['extensionelements_15',['extensionelements',['../classXML_1_1bpmn_1_1extensionElements.html#ab8c1f056c8d70d75e6b67bc9a40d5514',1,'XML::bpmn::extensionElements::extensionElements()'],['../classBPMN_1_1ExtensionElements.html#aef7df5624b90cde3eeca82c1cef9a080',1,'BPMN::ExtensionElements::ExtensionElements()']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['implicitthrowevent_0',['implicitThrowEvent',['../classXML_1_1bpmn_1_1implicitThrowEvent.html#af3c80acf786826b3836788e1e898e9b1',1,'XML::bpmn::implicitThrowEvent']]],
-  ['inclusivegateway_1',['inclusivegateway',['../classXML_1_1bpmn_1_1inclusiveGateway.html#ae0e1e9e0f60eba825789e641d847f02d',1,'XML::bpmn::inclusiveGateway::inclusiveGateway()'],['../classBPMN_1_1InclusiveGateway.html#a999decefdcb439ad5bba43cb84ff77b1',1,'BPMN::InclusiveGateway::InclusiveGateway()']]],
+  ['inclusivegateway_1',['inclusivegateway',['../classBPMN_1_1InclusiveGateway.html#a999decefdcb439ad5bba43cb84ff77b1',1,'BPMN::InclusiveGateway::InclusiveGateway()'],['../classXML_1_1bpmn_1_1inclusiveGateway.html#ae0e1e9e0f60eba825789e641d847f02d',1,'XML::bpmn::inclusiveGateway::inclusiveGateway()']]],
   ['initialize_2',['initialize',['../classBPMN_1_1MessageFlow.html#ac2c0720ea2e339a509289f7fa0cbd933',1,'BPMN::MessageFlow']]],
   ['inputset_3',['inputSet',['../classXML_1_1bpmn_1_1inputSet.html#a2db27e0f85c9d1998f70d8b9282f5cde',1,'XML::bpmn::inputSet']]],
   ['intermediatecatchevent_4',['intermediateCatchEvent',['../classXML_1_1bpmn_1_1intermediateCatchEvent.html#a18495221d78cc9567804d502b90a466f',1,'XML::bpmn::intermediateCatchEvent']]],

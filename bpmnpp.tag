@@ -9031,6 +9031,20 @@
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
+      <name>createDataStores</name>
+      <anchorfile>classBPMN_1_1Model.html</anchorfile>
+      <anchor>a932249e26cb9a6a731d33159ccb6ae4c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>createProcesses</name>
+      <anchorfile>classBPMN_1_1Model.html</anchorfile>
+      <anchor>a6d857cdeba82c5ff43c972031c0139aa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
       <name>createMessageFlows</name>
       <anchorfile>classBPMN_1_1Model.html</anchorfile>
       <anchor>ab7b035b0ba64e65d6889e93557efcf26</anchor>
