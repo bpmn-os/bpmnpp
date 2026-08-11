@@ -59,6 +59,7 @@
 #include "SequenceFlow.h"
 #include "MessageFlow.h"
 #include "DataObject.h"
+#include "DataStore.h"
 #include <memory>
 #include <vector>
 #include <string>
@@ -80,11 +81,11 @@ class MessageFlow;
 
 
 /**
- * @brief Represents a BPMN model with all its processes and message flows.
+ * @brief Represents a BPMN model with all its processes, message flows, and data stores.
  *
  * The Model class reads a BPMN model from a file and provides access to all processes
- * with their content as well as to all message flows in a BPMN model.
- * @see @ref Process, @ref MessageFlow
+ * with their content as well as to all message flows and data stores in a BPMN model. 
+ * @see @ref Process, @ref MessageFlow, @ref DataStore, @ref DataObject
  * @note The BPMN model is expected to conform with the BPMN specification, e.g.,
  * it is expected that all boundary events and start events of event subprocesses have
  * an event definition.
@@ -176,6 +177,7 @@ public:
   Model(std::unique_ptr<XML::XMLObject> root);
   virtual ~Model() = default;
   std::unique_ptr<XML::XMLObject> root;
+  std::vector< std::unique_ptr<DataStore> > dataStores;
   std::vector< std::unique_ptr<Process> > processes;
   std::vector< std::unique_ptr<MessageFlow> > messageFlows;
 protected:
@@ -183,10 +185,11 @@ protected:
   /// Virtual hook: derived classes may override it to perform post-parse setup before the children
   /// are built. Overrides should call this base version to obtain the parsed root.
   virtual std::unique_ptr<XML::XMLObject> createRoot(const std::string& filename);
-  /// @brief Builds processes, nodes, sequence flows, message flows, and links from @ref root.
+  /// @brief Builds processes, nodes, sequence flows, message flows, links, and data stores from @ref root.
   /// Must be called once @ref root is installed; invoked from the constructor body.
   virtual void build();
 
+  virtual std::unique_ptr<DataStore> createDataStore(XML::bpmn::tDataStore* dataStore);
   virtual std::unique_ptr<Process> createProcess(XML::bpmn::tProcess* process);
   virtual std::unique_ptr<EventSubProcess> createEventSubProcess(XML::bpmn::tSubProcess* subProcess, Scope* parent);
   virtual std::unique_ptr<FlowNode> createFlowNode(XML::bpmn::tFlowNode* flowNode, Scope* parent);

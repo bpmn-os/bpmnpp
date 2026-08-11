@@ -37,6 +37,10 @@ std::unique_ptr<XML::XMLObject> Model::createRoot(const std::string& filename)
 
 void Model::build()
 {
+  for ( XML::bpmn::tDataStore& dataStore : root->getChildren<XML::bpmn::tDataStore>() ) {
+    dataStores.push_back(createDataStore(&dataStore));
+  }
+
   for ( XML::bpmn::tProcess& process : root->getChildren<XML::bpmn::tProcess>() ) {
     processes.push_back(createProcess(&process));
   }
@@ -52,6 +56,10 @@ void Model::build()
   for ( auto& process : processes ) {
     createLinks(process.get());
   }
+}
+
+std::unique_ptr<DataStore> Model::createDataStore(XML::bpmn::tDataStore* dataStore) {
+  return std::make_unique<DataStore>(dataStore);
 }
 
 std::unique_ptr<Process> Model::createProcess(XML::bpmn::tProcess* process) {

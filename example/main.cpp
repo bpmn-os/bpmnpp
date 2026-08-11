@@ -134,9 +134,7 @@ int main(int argc, char **argv) {
     cout << endl;
   }
 
-  auto dataStoreReferences = model.root->find<XML::bpmn::tDataStoreReference>();
-
-  cout << "Number of data store references: " << dataStoreReferences.size() << endl;  
+  cout << "Number of data stores: " << model.dataStores.size() << endl;  
 
 //  auto diagram = model.root->find<XML::bpmn::BPMNDiagram>();
 //  cout << diagram.front().get() << endl;
