@@ -8,6 +8,6 @@ var searchData=
   ['dataoutput_5',['dataOutput',['../classXML_1_1bpmn_1_1dataOutput.html',1,'XML::bpmn']]],
   ['dataoutputassociation_6',['dataOutputAssociation',['../classXML_1_1bpmn_1_1dataOutputAssociation.html',1,'XML::bpmn']]],
   ['datastate_7',['dataState',['../classXML_1_1bpmn_1_1dataState.html',1,'XML::bpmn']]],
-  ['datastore_8',['dataStore',['../classXML_1_1bpmn_1_1dataStore.html',1,'XML::bpmn']]],
+  ['datastore_8',['datastore',['../classBPMN_1_1DataStore.html',1,'BPMN::DataStore'],['../classXML_1_1bpmn_1_1dataStore.html',1,'XML::bpmn::dataStore']]],
   ['datastorereference_9',['dataStoreReference',['../classXML_1_1bpmn_1_1dataStoreReference.html',1,'XML::bpmn']]]
 ];

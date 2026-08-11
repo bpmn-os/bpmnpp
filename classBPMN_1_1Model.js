@@ -25,6 +25,7 @@ var classBPMN_1_1Model =
     [ "createConditionalCatchEvent", "classBPMN_1_1Model.html#ad8d20b00595d29e1105f121ed2811ff1", null ],
     [ "createConditionalStartEvent", "classBPMN_1_1Model.html#af864ef6e952c47391aad376a3e92760e", null ],
     [ "createDataObject", "classBPMN_1_1Model.html#a7c29eef1682f2577e549e83d23660032", null ],
+    [ "createDataStore", "classBPMN_1_1Model.html#a674c107fea869a44a609715ca2edc020", null ],
     [ "createErrorBoundaryEvent", "classBPMN_1_1Model.html#a846a81c8d8f7ea6246425f19a25ab369", null ],
     [ "createErrorEndEvent", "classBPMN_1_1Model.html#a7debf9dae7ee1adf10677fcce5ce0d50", null ],
     [ "createErrorStartEvent", "classBPMN_1_1Model.html#aa06875453f8df3146d198b18440f6bc4", null ],
@@ -74,6 +75,7 @@ var classBPMN_1_1Model =
     [ "createUntypedEndEvent", "classBPMN_1_1Model.html#a485f0d4453e8d9a0a03959030e120b99", null ],
     [ "createUntypedStartEvent", "classBPMN_1_1Model.html#a154298512200951cd32c17babd5fd11b", null ],
     [ "createUserTask", "classBPMN_1_1Model.html#a74d5b23140f809b74f3b59d629734985", null ],
+    [ "dataStores", "classBPMN_1_1Model.html#ae97882067d8de6deeeb135b8954ef117", null ],
     [ "messageFlows", "classBPMN_1_1Model.html#a6fbd982974a432552f51a2caf34db480", null ],
     [ "processes", "classBPMN_1_1Model.html#a161464a851d7825e3ba1150e8dc2bbb4", null ],
     [ "root", "classBPMN_1_1Model.html#ada5877c7e82c8bf576d7c1c399b5027a", null ]

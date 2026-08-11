@@ -308,6 +308,22 @@
     <namespace>BPMN</namespace>
   </compound>
   <compound kind="file">
+    <name>DataStore.cpp</name>
+    <path>src/</path>
+    <filename>DataStore_8cpp.html</filename>
+    <includes id="DataStore_8h" name="DataStore.h" local="yes" import="no" module="no" objc="no">DataStore.h</includes>
+    <includes id="ExtensionElements_8h" name="ExtensionElements.h" local="yes" import="no" module="no" objc="no">ExtensionElements.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>DataStore.h</name>
+    <path>src/</path>
+    <filename>DataStore_8h.html</filename>
+    <includes id="tDataStore_8h" name="tDataStore.h" local="yes" import="no" module="no" objc="no">xml/bpmn/tDataStore.h</includes>
+    <includes id="BaseElement_8h" name="BaseElement.h" local="yes" import="no" module="no" objc="no">BaseElement.h</includes>
+    <class kind="class">BPMN::DataStore</class>
+    <namespace>BPMN</namespace>
+  </compound>
+  <compound kind="file">
     <name>Element.cpp</name>
     <path>src/</path>
     <filename>Element_8cpp.html</filename>
@@ -754,6 +770,7 @@
     <includes id="SequenceFlow_8h" name="SequenceFlow.h" local="yes" import="no" module="no" objc="no">SequenceFlow.h</includes>
     <includes id="MessageFlow_8h" name="MessageFlow.h" local="yes" import="no" module="no" objc="no">MessageFlow.h</includes>
     <includes id="DataObject_8h" name="DataObject.h" local="yes" import="no" module="no" objc="no">DataObject.h</includes>
+    <includes id="DataStore_8h" name="DataStore.h" local="yes" import="no" module="no" objc="no">DataStore.h</includes>
     <class kind="class">BPMN::Model</class>
     <namespace>BPMN</namespace>
   </compound>
@@ -6830,6 +6847,32 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>BPMN::DataStore</name>
+    <filename>classBPMN_1_1DataStore.html</filename>
+    <base>BPMN::BaseElement</base>
+    <member kind="function">
+      <type></type>
+      <name>DataStore</name>
+      <anchorfile>classBPMN_1_1DataStore.html</anchorfile>
+      <anchor>adc47c651b17fa88ddf96c9035314c1d9</anchor>
+      <arglist>(XML::bpmn::tDataStore *dataStore)</arglist>
+    </member>
+    <member kind="variable">
+      <type>XML::bpmn::tDataStore *</type>
+      <name>element</name>
+      <anchorfile>classBPMN_1_1DataStore.html</anchorfile>
+      <anchor>a486192f40536cbc27d3eafc6e2c6167b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>Model</name>
+      <anchorfile>classBPMN_1_1DataStore.html</anchorfile>
+      <anchor>a2bf2a0e9b454c55aa5dcb5aa4698697b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>XML::bpmn::dataStore</name>
     <filename>classXML_1_1bpmn_1_1dataStore.html</filename>
     <base>XML::bpmn::tDataStore</base>
@@ -8469,6 +8512,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>std::vector&lt; std::unique_ptr&lt; DataStore &gt; &gt;</type>
+      <name>dataStores</name>
+      <anchorfile>classBPMN_1_1Model.html</anchorfile>
+      <anchor>ae97882067d8de6deeeb135b8954ef117</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>std::vector&lt; std::unique_ptr&lt; Process &gt; &gt;</type>
       <name>processes</name>
       <anchorfile>classBPMN_1_1Model.html</anchorfile>
@@ -8502,6 +8552,13 @@
       <anchorfile>classBPMN_1_1Model.html</anchorfile>
       <anchor>a634f78d23c53e8f9027e66d685e7199f</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual std::unique_ptr&lt; DataStore &gt;</type>
+      <name>createDataStore</name>
+      <anchorfile>classBPMN_1_1Model.html</anchorfile>
+      <anchor>a674c107fea869a44a609715ca2edc020</anchor>
+      <arglist>(XML::bpmn::tDataStore *dataStore)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual std::unique_ptr&lt; Process &gt;</type>
@@ -17265,6 +17322,7 @@
     <class kind="class">BPMN::ConditionalCatchEvent</class>
     <class kind="class">BPMN::ConditionalStartEvent</class>
     <class kind="class">BPMN::DataObject</class>
+    <class kind="class">BPMN::DataStore</class>
     <class kind="class">BPMN::Element</class>
     <class kind="class">BPMN::ErrorBoundaryEvent</class>
     <class kind="class">BPMN::ErrorEndEvent</class>

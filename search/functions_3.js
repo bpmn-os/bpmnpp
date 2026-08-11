@@ -8,6 +8,6 @@ var searchData=
   ['dataoutput_5',['dataOutput',['../classXML_1_1bpmn_1_1dataOutput.html#a3a592d0fdd14aa6458610848d7a0d34e',1,'XML::bpmn::dataOutput']]],
   ['dataoutputassociation_6',['dataOutputAssociation',['../classXML_1_1bpmn_1_1dataOutputAssociation.html#ab73ace08e81b46c561d4a99485f6b8ce',1,'XML::bpmn::dataOutputAssociation']]],
   ['datastate_7',['dataState',['../classXML_1_1bpmn_1_1dataState.html#a6f07e3439940f71fe8928294133b295a',1,'XML::bpmn::dataState']]],
-  ['datastore_8',['dataStore',['../classXML_1_1bpmn_1_1dataStore.html#a71d8c4e436e956a3e813e1517e84cb19',1,'XML::bpmn::dataStore']]],
+  ['datastore_8',['datastore',['../classXML_1_1bpmn_1_1dataStore.html#a71d8c4e436e956a3e813e1517e84cb19',1,'XML::bpmn::dataStore::dataStore()'],['../classBPMN_1_1DataStore.html#adc47c651b17fa88ddf96c9035314c1d9',1,'BPMN::DataStore::DataStore()']]],
   ['datastorereference_9',['dataStoreReference',['../classXML_1_1bpmn_1_1dataStoreReference.html#a2932eb3e6ec7d59b933e1f359b5acc79',1,'XML::bpmn::dataStoreReference']]]
 ];

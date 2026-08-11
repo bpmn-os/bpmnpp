@@ -20,6 +20,7 @@ var annotated_dup =
       [ "ConditionalCatchEvent", "classBPMN_1_1ConditionalCatchEvent.html", "classBPMN_1_1ConditionalCatchEvent" ],
       [ "ConditionalStartEvent", "classBPMN_1_1ConditionalStartEvent.html", "classBPMN_1_1ConditionalStartEvent" ],
       [ "DataObject", "classBPMN_1_1DataObject.html", "classBPMN_1_1DataObject" ],
+      [ "DataStore", "classBPMN_1_1DataStore.html", "classBPMN_1_1DataStore" ],
       [ "Element", "classBPMN_1_1Element.html", "classBPMN_1_1Element" ],
       [ "ErrorBoundaryEvent", "classBPMN_1_1ErrorBoundaryEvent.html", "classBPMN_1_1ErrorBoundaryEvent" ],
       [ "ErrorEndEvent", "classBPMN_1_1ErrorEndEvent.html", "classBPMN_1_1ErrorEndEvent" ],
