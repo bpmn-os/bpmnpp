@@ -271,6 +271,8 @@ protected:
   virtual void createCompensations(Scope* scope);
   virtual void createCompensationReferences(Scope* scope);
   virtual void createLinks(Scope* scope);
+  virtual void createDataStores();
+  virtual void createProcesses();
   virtual void createMessageFlows();
 
   /// Binds the extension elements to the given baseElement
