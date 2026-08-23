@@ -60,6 +60,14 @@ if(TARGET XercesC::XercesC)
   set(XERCES_TARGET XercesC::XercesC)
 else()
   set(XERCES_TARGET xerces-c)
+  # A fetched Xerces carries no include directories of its own, its headers being meant to be consumed from
+  # an install tree, so the directories are attached here: the source tree for the headers and the build tree
+  # for Xerces_autoconf_config.hpp, which its configure step generates. SYSTEM, so that a consumer's warning
+  # flags do not apply to them.
+  target_include_directories(xerces-c SYSTEM PUBLIC
+    $<BUILD_INTERFACE:${xercesc_SOURCE_DIR}/src>
+    $<BUILD_INTERFACE:${xercesc_BINARY_DIR}/src>
+  )
 endif()
 
 # schematic++ has to be a runnable binary before this configure finishes, not merely a target: it emits
@@ -256,7 +264,10 @@ target_include_directories(${PROJECT_NAME}
     ${CMAKE_CURRENT_BINARY_DIR}
 )
 
-target_link_libraries(${PROJECT_NAME} PUBLIC XercesC::XercesC)
+# The name differs by how Xerces was resolved: find_package gives the imported XercesC::XercesC, while a
+# fetched copy builds a plain xerces-c. Naming the imported one unconditionally left a cross compile, where
+# nothing installed can be used and Xerces is therefore fetched, failing to configure.
+target_link_libraries(${PROJECT_NAME} PUBLIC ${XERCES_TARGET})
 
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_23)
 
