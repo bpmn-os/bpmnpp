@@ -39,7 +39,6 @@ REPEAT_BRIEF          = NO
 
 HAVE_DOT              = YES
 DOT_IMAGE_FORMAT      = svg
-DOT_TRANSPARENT       = YES
 
 
 GENERATE_TREEVIEW     = YES
