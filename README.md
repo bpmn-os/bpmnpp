@@ -11,59 +11,60 @@ This library provides a parser library for BPMN 2.0 allowing easy access to all 
 
 A C++23 compiler, GCC 15.2 or Clang 18.1.3 or later, CMake 3.26.4 or later, and git.
 
-Other dependencies like Xerces-C++ 3.2.x or schematic++ are fetched automatically unless installed already.
-
+Xerces-C++ 3.2.x, schematic++ and Catch2 are fetched automatically unless they are installed already.
 
 ## Build
 
-To build bpmn++, run
+This project has two preset configurations that are created in folders `build/release` and `build/debug`. Presets are configured the first time they are needed or when running `make configure`.
+
+| Preset | Folder | Compiled with | Used for |
+| --- | --- | --- | --- |
+| `release` | `build/release` | `-O3 -DNDEBUG`, assertions off | building, documentation, installing |
+| `debug` | `build/debug` | `-O3 -g`, assertions live | development, tests |
+
+You can build the single header and the library by
 
 ```sh
-mkdir build
-cd build
-cmake ..
-make -j$(nproc)
+make # (release)
+```
+or
+```sh
+make dev # (debug)
+```
+with the preset indicated in parentheses. This creates `build/release/include/bpmn++.h` and
+`build/release/lib/libbpmn++.a`, respectively the same two files under `build/debug`.
+
+## Tests
+
+To (build and) run the test suite, use
+```sh
+make tests # (debug)
 ```
 
-This creates the single header `include/bpmn++.h` and the
-library `lib/libbpmn++.a` in the `build/` folder.
-
-The build type defaults to `Release`. Configure with 
+Once the tests are built (and run) with `make tests`, selected tests carrying a given Catch2 tag can be run
+with
 ```sh
-cmake .. -DCMAKE_BUILD_TYPE=Debug
+cd tests && ../build/debug/tests/run_tests "[selected_tag]"
 ```
-to keep assertions that are otherwise ignored.
+The test binary reads `diagram.bpmn` by a relative path, so it is run from the `tests` folder.
 
-### Documentation
+## Documentation
 
-To create the documentation, run
+To generate docs in `build/release/docs/html` folder, run
 
 ```sh
-make docs
+make docs # (release)
 ```
 
-This creates the documentation in the `build/docs` folder.
+> [!NOTE]
+> Building the documentation requires `doxygen` and `graphviz`. Run `sudo apt install doxygen graphviz` to install these.
 
-**Note:** Building the documentation requires `doxygen` and `graphviz`. Run `sudo apt install doxygen graphviz` to install these.
+## Installation
 
-### Tests
-
-For testing, run
+To install, run
 ```sh
-make -j$(nproc) tests
-```
-
-## Install
-
-After building, run
-
-```sh
+make # (release)
 sudo make install
-```
-to install bpmn++ into `/usr/local`, or
-
-```sh
-cmake --install <build> --prefix <target>
 ```
 to copy
 ```
@@ -71,7 +72,16 @@ include/bpmn++.h
 lib/libbpmn++.a
 lib/cmake/bpmnpp/
 ```
-from the `<build>` to the `<target>` folder.
+into `/usr/local`.
+
+Alternatively, run
+```sh
+cmake --install build/release --prefix <target>
+```
+to install these files into the `<target>` folder.
+
+> [!NOTE]
+> Only a release build can be installed. Installing `build/debug` is refused with an error.
 
 A consumer can resolve the library with
 
@@ -80,8 +90,8 @@ find_package(bpmnpp REQUIRED)
 target_link_libraries(mytarget PRIVATE bpmnpp::bpmn++)
 ```
 
-Nothing further is needed when bpmn++ was installed into `/usr/local`. For any other folder, the consumer
-is built with `cmake .. -DCMAKE_PREFIX_PATH=<target>`.
+Nothing further is needed when bpmn++ was installed into `/usr/local`. For a custom target folder, add
+`-DCMAKE_PREFIX_PATH=<target>` when configuring the consumer.
 
 A minimum version can be required, for instance `find_package(bpmnpp 0.1.0 REQUIRED)`, which accepts any
 later `0.1.x` and refuses `0.2.0`.
@@ -96,11 +106,11 @@ rm <target>/lib/libbpmn++.a
 rm -rf <target>/lib/cmake/bpmnpp
 ```
 
-The file `<build>/install_manifest.txt` lists the installed files.
+The file `build/release/install_manifest.txt` lists the installed files.
 
 ## Example
 
-An example using the library can be found in the `example` folder. After installing, build it with
+An example using the library can be found in the [example folder](example). After installing, build it with
 
 ```sh
 g++ -std=c++23 main.cpp -lbpmn++ -lxerces-c -o bpmn++

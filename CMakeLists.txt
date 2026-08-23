@@ -282,6 +282,15 @@ target_compile_options(${PROJECT_NAME}
 include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 
+# Only a release build is installable. A debug archive installed into a prefix would poison every consumer
+# that linked it, and nothing in the installed package records how it was built. This runs before any other
+# install rule, so the attempt stops rather than half-completing.
+install(CODE "
+  if(NOT \"${CMAKE_BUILD_TYPE}\" STREQUAL \"Release\")
+    message(FATAL_ERROR \"bpmn++: only a release build can be installed; this is a ${CMAKE_BUILD_TYPE} build.\")
+  endif()
+")
+
 # Install the header files
 install(FILES ${SINGLE_HEADER_PATH} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 

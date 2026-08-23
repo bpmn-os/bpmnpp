@@ -1,9 +1,19 @@
+# Build the Doxygen documentation and publish it to GitHub Pages.
+#
+# The library itself is not compiled. Configuring is enough: schematic++ generates the BPMN classes from
+# the schemas during configure, and those generated classes are part of the Doxygen input. schematic++ is
+# resolved by the configure step, which builds it in a sub-build when no installed copy is found, so the
+# runner installs only xerces, doxygen and graphviz.
+#
+# A plain build folder is used rather than one of the presets, since none of their compiler settings apply
+# to a run that compiles nothing.
+
 name: Deploy Docs
 
 on:
   push:
     branches:
-      - main  # Change this to your main branch name
+      - main
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
@@ -14,39 +24,27 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Set up Doxygen
+      - name: System packages
         run: |
-          sudo apt-get install graphviz
-          sudo apt-get install -y doxygen
-      - name: Set up Xerces-c
-        run: |
-          sudo apt install libxerces-c-dev
-      - name: Set up schematicpp
-        run: |
-          git clone https://github.com/rajgoel/schematicpp.git
-          cd schematicpp
-          mkdir build
-          cd build
-          cmake ..
-          make
-          make install
+          sudo apt-get update
+          sudo apt-get install -y doxygen graphviz libxerces-c-dev cmake build-essential git
+
       - name: Generate Docs
         run: |
-          mkdir build
-          cd build
-          cmake ..
-          cd xml/bpmn
+          cmake -S . -B build
+          # The diagram interchange classes are generated but not documented.
+          cd build/xml/bpmn
           find . -type f -regex '\./[a-z][^A-Z]*' -delete
           grep -l "XML-Schema:    xsd/BPMNDI.xsd" *.h | xargs rm
           grep -l "XML-Schema:    xsd/DI.xsd" *.h | xargs rm
           grep -l "XML-Schema:    xsd/DC.xsd" *.h | xargs rm
-          cd ../..
-          make docs
-          cd docs/html
-          rm *.md5
-          rm *.map
+          cd ../../..
+          cmake --build build --target docs
+          # drop Doxygen's dot intermediates — not needed to serve the SVGs, and they shrink the site
+          rm -f build/docs/html/*.md5 build/docs/html/*.map
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
