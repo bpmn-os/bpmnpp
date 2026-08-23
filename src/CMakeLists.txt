@@ -1,13 +1,18 @@
-include("${SOURCE_DIR}/xml/bpmn/CMakeLists.txt")
+# The generated classes live in XML_DIR, which is in the build tree, while the hand-written sources live in
+# SOURCE_DIR, so the two sets no longer share a prefix and are kept apart until both have been resolved.
+# The generated CMakeLists writes the unqualified names, so they are moved aside first.
+include("${XML_DIR}/bpmn/CMakeLists.txt")
 
-list(TRANSFORM bpmn_HEADERS PREPEND "xml/")
-list(TRANSFORM bpmn_SOURCES PREPEND "xml/")
+set(bpmn_xml_SOURCES ${bpmn_SOURCES})
+set(bpmn_xml_HEADERS ${bpmn_HEADERS})
 
-list(PREPEND bpmn_SOURCES
-  xml/XMLObject.cpp
-)
+list(TRANSFORM bpmn_xml_SOURCES PREPEND "${XML_DIR}/")
+list(TRANSFORM bpmn_xml_HEADERS PREPEND "${XML_DIR}/")
 
-list(APPEND bpmn_SOURCES
+list(PREPEND bpmn_xml_SOURCES ${XML_DIR}/XMLObject.cpp)
+list(PREPEND bpmn_xml_HEADERS ${XML_DIR}/XMLObject.h)
+
+set(bpmn_SOURCES
   Element.cpp
   BaseElement.cpp
   ExtensionElements.cpp
@@ -78,11 +83,10 @@ list(APPEND bpmn_SOURCES
   Model.cpp
 )
 
-list(PREPEND bpmn_HEADERS
-  xml/XMLObject.h
-)
+list(TRANSFORM bpmn_SOURCES PREPEND "${SOURCE_DIR}/")
+list(PREPEND bpmn_SOURCES ${bpmn_xml_SOURCES})
 
-list(APPEND bpmn_HEADERS
+set(bpmn_HEADERS
   Element.h
   BaseElement.h
   ExtensionElements.h
@@ -152,3 +156,8 @@ list(APPEND bpmn_HEADERS
   MessageFlow.h
   Model.h
 )
+
+# The xml set goes first, as it did when both were relative: the amalgamated header is these files
+# concatenated in list order, so XMLObject and the generated classes must precede what derives from them.
+list(TRANSFORM bpmn_HEADERS PREPEND "${SOURCE_DIR}/")
+list(PREPEND bpmn_HEADERS ${bpmn_xml_HEADERS})

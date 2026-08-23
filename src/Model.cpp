@@ -90,7 +90,7 @@ std::unique_ptr<FlowNode> Model::createFlowNode(XML::bpmn::tFlowNode* flowNode, 
     return createGateway(gateway,parent);
   }
 
-  assert(!"Flow node is neither activity, event, nor gateway");
+  assert(false && "Flow node is neither activity, event, nor gateway");
 
   return nullptr;
 }
@@ -107,7 +107,7 @@ std::unique_ptr<FlowNode> Model::createActivity(XML::bpmn::tActivity* activity, 
   }
 
 
-  assert(!"Activity is neither subprocess, call activity, nor task");
+  assert(false && "Activity is neither subprocess, call activity, nor task");
 
   return nullptr;
 }
@@ -481,7 +481,7 @@ std::unique_ptr<FlowNode> Model::createGateway(XML::bpmn::tGateway* gateway, Sco
     return createEventBasedGateway(eventBasedGateway,parent);
   }
 
-  assert(!"Gateway is neither parallel, exclusive, inclusive, complex, nor event-based gateway");
+  assert(false && "Gateway is neither parallel, exclusive, inclusive, complex, nor event-based gateway");
 
   return nullptr;
 }

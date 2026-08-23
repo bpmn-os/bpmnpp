@@ -1,0 +1,19 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# The same compiler requirement as the build: bpmn++.h uses C++23 explicit object parameters, so a
+# consumer resolving an installed copy is refused as clearly as one building from source.
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS 15.2)
+  message(FATAL_ERROR "bpmn++ requires GCC 15.2 or later, found ${CMAKE_CXX_COMPILER_VERSION}.")
+elseif(CMAKE_CXX_COMPILER_ID MATCHES "Clang" AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS 18.1.3)
+  message(FATAL_ERROR "bpmn++ requires Clang 18.1.3 or later, found ${CMAKE_CXX_COMPILER_VERSION}.")
+endif()
+
+# bpmn++ exposes Xerces-C through its own interface: its generated classes are built on xercesc types and
+# a consumer of the installed archive must link it. Resolving it here means no consumer names Xerces.
+find_dependency(XercesC 3.2)
+
+include("${CMAKE_CURRENT_LIST_DIR}/bpmnpp-targets.cmake")
+
+check_required_components(bpmnpp)

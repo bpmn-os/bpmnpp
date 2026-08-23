@@ -5,55 +5,106 @@
 This library provides a parser library for BPMN 2.0 allowing easy access to all elements and children (no getters or setters).
 
 - **Download:** https://github.com/bpmn-os/bpmnpp
-- **Documentation:** https://bpmn-os.github.io/bpmnpp 
+- **Documentation:** https://bpmn-os.github.io/bpmnpp
 
-## Dependencies
+## Requirements
 
-bpmn++ requires Xerces-C++ 3.2.x. On Ubuntu Linux Xerces can be installed by
-```sh
-sudo apt install libxerces-c-dev
-```
+A C++23 compiler, GCC 15.2 or Clang 18.1.3 or later, CMake 3.26.4 or later, and git.
 
-Furthermore, `schematic++` must be available for the build process. You can obtain `schematic++` from https://github.com/rajgoel/schematicpp.
+Other dependencies like Xerces-C++ 3.2.x or schematic++ are fetched automatically unless installed already.
 
-## Build the library
 
-The library is built like a typical CMake project. A normal build from within the project folder will look something like this (output omitted):
+## Build
+
+To build bpmn++, run
 
 ```sh
 mkdir build
 cd build
 cmake ..
-make
+make -j$(nproc)
 ```
 
-This creates a single header file `lib/bpmn++.h` and a library `lib/libbpmn++.a`.
+This creates the single header `include/bpmn++.h` and the
+library `lib/libbpmn++.a` in the `build/` folder.
 
-## Install the library
-After building the library, it can be installed by
-
+The build type defaults to `Release`. Configure with 
+```sh
+cmake .. -DCMAKE_BUILD_TYPE=Debug
 ```
+to keep assertions that are otherwise ignored.
+
+### Documentation
+
+To create the documentation, run
+
+```sh
+make docs
+```
+
+This creates the documentation in the `build/docs` folder.
+
+**Note:** Building the documentation requires `doxygen` and `graphviz`. Run `sudo apt install doxygen graphviz` to install these.
+
+### Tests
+
+For testing, run
+```sh
+make -j$(nproc) tests
+```
+
+## Install
+
+After building, run
+
+```sh
 sudo make install
 ```
+to install bpmn++ into `/usr/local`, or
 
-## Run tests
-Tests can be run by
+```sh
+cmake --install <build> --prefix <target>
+```
+to copy
+```
+include/bpmn++.h
+lib/libbpmn++.a
+lib/cmake/bpmnpp/
+```
+from the `<build>` to the `<target>` folder.
 
+A consumer can resolve the library with
+
+```cmake
+find_package(bpmnpp REQUIRED)
+target_link_libraries(mytarget PRIVATE bpmnpp::bpmn++)
 ```
-make tests
+
+Nothing further is needed when bpmn++ was installed into `/usr/local`. For any other folder, the consumer
+is built with `cmake .. -DCMAKE_PREFIX_PATH=<target>`.
+
+A minimum version can be required, for instance `find_package(bpmnpp 0.1.0 REQUIRED)`, which accepts any
+later `0.1.x` and refuses `0.2.0`.
+
+### Uninstall
+
+Remove the installed files, where `<target>` is `/usr/local` or the folder given when installing.
+
+```sh
+rm <target>/include/bpmn++.h
+rm <target>/lib/libbpmn++.a
+rm -rf <target>/lib/cmake/bpmnpp
 ```
+
+The file `<build>/install_manifest.txt` lists the installed files.
 
 ## Example
 
-An example using the library can be found in `example` folder.
-
-After successful installation of the library, you can build the example by
+An example using the library can be found in the `example` folder. After installing, build it with
 
 ```sh
 g++ -std=c++23 main.cpp -lbpmn++ -lxerces-c -o bpmn++
-```
-
-You can run the example by
-```sh
 ./bpmn++ diagram.bpmn
 ```
+
+Explicitly provide include and lib folder by `-I<target>/include -L<target>/lib` if needed.

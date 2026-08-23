@@ -5,10 +5,12 @@ PROJECT_NAME      = bpmn++
 PROJECT_LOGO      = bpmn++.svg
 PROJECT_BRIEF     = "A BPMN parser library, written in C++"
 
-OUTPUT_DIRECTORY  = docs
+# Output and the generated classes live in the build tree. The build sets both, so that documentation is
+# build output like everything else and finds the classes schematic++ generated.
+OUTPUT_DIRECTORY  = $(DOXYGEN_OUTPUT_DIR)
 
 # Input sources
-INPUT             = src/ src/xml/ src/xml/bpmn/ xsd/ README.md
+INPUT             = src/ $(DOXYGEN_XML_DIR) $(DOXYGEN_XML_DIR)/bpmn/ xsd/ README.md
 FILE_PATTERNS     = *.h *.cpp *.xsd *.md
 
 USE_MDFILE_AS_MAINPAGE = README.md
@@ -26,7 +28,7 @@ SOURCE_BROWSER        = YES
 STRIP_CODE_COMMENTS   = NO
 GENERATE_HTML         = YES
 GENERATE_LATEX        = NO
-GENERATE_TAGFILE      = docs/html/bpmnpp.tag
+GENERATE_TAGFILE      = $(DOXYGEN_OUTPUT_DIR)/html/bpmnpp.tag
 QUIET                 = YES
 WARN_IF_UNDOCUMENTED  = NO
 UML_LOOK              = YES
