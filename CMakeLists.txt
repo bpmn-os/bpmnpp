@@ -72,7 +72,10 @@ set(SCHEMATICPP_VERSION 0.8.0)
 set(SCHEMATICPP_REF "dependency-management")
 find_package(schematicpp ${SCHEMATICPP_VERSION} QUIET)
 
-if(schematicpp_FOUND)
+if(SCHEMATICPP AND EXISTS ${SCHEMATICPP})
+  # A parent project that already has the generator supplies it, rather than each project building its own.
+  message(STATUS "bpmn++: using schematic++ supplied by the parent project at ${SCHEMATICPP}")
+elseif(schematicpp_FOUND)
   get_target_property(SCHEMATICPP schematicpp::schematic++ IMPORTED_LOCATION_RELEASE)
   if(NOT SCHEMATICPP)
     get_target_property(SCHEMATICPP schematicpp::schematic++ IMPORTED_LOCATION)
@@ -117,16 +120,18 @@ else()
   endif()
 endif()
 
-# Set folder for the library to be created
-set(LIB_DIR "lib" CACHE STRING "Library directory")
-set(INCLUDE_DIR "include" CACHE STRING "Header directory")
+# Internal paths, deliberately not cache variables: another project in the same build may use the same
+# names, and set(... CACHE ...) does not overwrite an existing entry, so whichever configured first would
+# decide both. The engine declares SOURCE_DIR and XML_DIR too.
+set(LIB_DIR "lib")
+set(INCLUDE_DIR "include")
 message("-- Library will be created in folder: ${LIB_DIR}")
 
 # Set folder in which sources are located
-set(SOURCE_DIR "${PROJECT_SOURCE_DIR}/src" CACHE STRING "Source directory")
+set(SOURCE_DIR "${PROJECT_SOURCE_DIR}/src")
 
 # The generated XML classes are build output and belong in the build tree, not in the checkout.
-set(XML_DIR "${CMAKE_CURRENT_BINARY_DIR}/xml" CACHE STRING "XML classes output directory")
+set(XML_DIR "${CMAKE_CURRENT_BINARY_DIR}/xml")
 
 # Build output goes to the build tree, so that a consumer building bpmn++ writes nothing into this
 # checkout and two build directories do not overwrite each other's archive.
