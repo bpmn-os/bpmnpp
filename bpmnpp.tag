@@ -1,5 +1,4139 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.8">
+<tagfile doxygen_version="1.15.0">
+  <compound kind="file">
+    <name>adHocSubProcess.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>adHocSubProcess_8cpp.html</filename>
+    <includes id="adHocSubProcess_8h" name="adHocSubProcess.h" local="yes" import="no" module="no" objc="no">adHocSubProcess.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>adHocSubProcess.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>adHocSubProcess_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tAdHocSubProcess_8h" name="tAdHocSubProcess.h" local="yes" import="no" module="no" objc="no">tAdHocSubProcess.h</includes>
+    <class kind="class">XML::bpmn::adHocSubProcess</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>baseElement.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>baseElement_8cpp.html</filename>
+    <includes id="baseElement_8h" name="baseElement.h" local="yes" import="no" module="no" objc="no">baseElement.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>baseElement.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>baseElement_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::baseElement</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>baseElementWithMixedContent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>baseElementWithMixedContent_8cpp.html</filename>
+    <includes id="baseElementWithMixedContent_8h" name="baseElementWithMixedContent.h" local="yes" import="no" module="no" objc="no">baseElementWithMixedContent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>baseElementWithMixedContent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>baseElementWithMixedContent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElementWithMixedContent_8h" name="tBaseElementWithMixedContent.h" local="yes" import="no" module="no" objc="no">tBaseElementWithMixedContent.h</includes>
+    <class kind="class">XML::bpmn::baseElementWithMixedContent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>boundaryEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>boundaryEvent_8cpp.html</filename>
+    <includes id="boundaryEvent_8h" name="boundaryEvent.h" local="yes" import="no" module="no" objc="no">boundaryEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>boundaryEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>boundaryEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBoundaryEvent_8h" name="tBoundaryEvent.h" local="yes" import="no" module="no" objc="no">tBoundaryEvent.h</includes>
+    <class kind="class">XML::bpmn::boundaryEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Bounds.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>Bounds_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>BPMNDiagram.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>BPMNDiagram_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>BPMNEdge.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>BPMNEdge_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>BPMNLabel.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>BPMNLabel_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>BPMNLabelStyle.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>BPMNLabelStyle_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>BPMNPlane.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>BPMNPlane_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>BPMNShape.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>BPMNShape_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>businessRuleTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>businessRuleTask_8cpp.html</filename>
+    <includes id="businessRuleTask_8h" name="businessRuleTask.h" local="yes" import="no" module="no" objc="no">businessRuleTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>businessRuleTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>businessRuleTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBusinessRuleTask_8h" name="tBusinessRuleTask.h" local="yes" import="no" module="no" objc="no">tBusinessRuleTask.h</includes>
+    <class kind="class">XML::bpmn::businessRuleTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>callableElement.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>callableElement_8cpp.html</filename>
+    <includes id="callableElement_8h" name="callableElement.h" local="yes" import="no" module="no" objc="no">callableElement.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>callableElement.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>callableElement_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCallableElement_8h" name="tCallableElement.h" local="yes" import="no" module="no" objc="no">tCallableElement.h</includes>
+    <class kind="class">XML::bpmn::callableElement</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>callActivity.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>callActivity_8cpp.html</filename>
+    <includes id="callActivity_8h" name="callActivity.h" local="yes" import="no" module="no" objc="no">callActivity.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>callActivity.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>callActivity_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCallActivity_8h" name="tCallActivity.h" local="yes" import="no" module="no" objc="no">tCallActivity.h</includes>
+    <class kind="class">XML::bpmn::callActivity</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>callChoreography.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>callChoreography_8cpp.html</filename>
+    <includes id="callChoreography_8h" name="callChoreography.h" local="yes" import="no" module="no" objc="no">callChoreography.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>callChoreography.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>callChoreography_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCallChoreography_8h" name="tCallChoreography.h" local="yes" import="no" module="no" objc="no">tCallChoreography.h</includes>
+    <class kind="class">XML::bpmn::callChoreography</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>callConversation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>callConversation_8cpp.html</filename>
+    <includes id="callConversation_8h" name="callConversation.h" local="yes" import="no" module="no" objc="no">callConversation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>callConversation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>callConversation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCallConversation_8h" name="tCallConversation.h" local="yes" import="no" module="no" objc="no">tCallConversation.h</includes>
+    <class kind="class">XML::bpmn::callConversation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>cancelEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>cancelEventDefinition_8cpp.html</filename>
+    <includes id="cancelEventDefinition_8h" name="cancelEventDefinition.h" local="yes" import="no" module="no" objc="no">cancelEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>cancelEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>cancelEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCancelEventDefinition_8h" name="tCancelEventDefinition.h" local="yes" import="no" module="no" objc="no">tCancelEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::cancelEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>catchEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>catchEvent_8cpp.html</filename>
+    <includes id="catchEvent_8h" name="catchEvent.h" local="yes" import="no" module="no" objc="no">catchEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>catchEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>catchEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCatchEvent_8h" name="tCatchEvent.h" local="yes" import="no" module="no" objc="no">tCatchEvent.h</includes>
+    <class kind="class">XML::bpmn::catchEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>categoryValue.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>categoryValue_8cpp.html</filename>
+    <includes id="categoryValue_8h" name="categoryValue.h" local="yes" import="no" module="no" objc="no">categoryValue.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>categoryValue.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>categoryValue_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCategoryValue_8h" name="tCategoryValue.h" local="yes" import="no" module="no" objc="no">tCategoryValue.h</includes>
+    <class kind="class">XML::bpmn::categoryValue</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>choreographyActivity.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>choreographyActivity_8cpp.html</filename>
+    <includes id="choreographyActivity_8h" name="choreographyActivity.h" local="yes" import="no" module="no" objc="no">choreographyActivity.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>choreographyActivity.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>choreographyActivity_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tChoreographyActivity_8h" name="tChoreographyActivity.h" local="yes" import="no" module="no" objc="no">tChoreographyActivity.h</includes>
+    <class kind="class">XML::bpmn::choreographyActivity</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>choreographyTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>choreographyTask_8cpp.html</filename>
+    <includes id="choreographyTask_8h" name="choreographyTask.h" local="yes" import="no" module="no" objc="no">choreographyTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>choreographyTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>choreographyTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tChoreographyTask_8h" name="tChoreographyTask.h" local="yes" import="no" module="no" objc="no">tChoreographyTask.h</includes>
+    <class kind="class">XML::bpmn::choreographyTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>compensateEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>compensateEventDefinition_8cpp.html</filename>
+    <includes id="compensateEventDefinition_8h" name="compensateEventDefinition.h" local="yes" import="no" module="no" objc="no">compensateEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>compensateEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>compensateEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCompensateEventDefinition_8h" name="tCompensateEventDefinition.h" local="yes" import="no" module="no" objc="no">tCompensateEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::compensateEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>complexBehaviorDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>complexBehaviorDefinition_8cpp.html</filename>
+    <includes id="complexBehaviorDefinition_8h" name="complexBehaviorDefinition.h" local="yes" import="no" module="no" objc="no">complexBehaviorDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>complexBehaviorDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>complexBehaviorDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tComplexBehaviorDefinition_8h" name="tComplexBehaviorDefinition.h" local="yes" import="no" module="no" objc="no">tComplexBehaviorDefinition.h</includes>
+    <class kind="class">XML::bpmn::complexBehaviorDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>complexGateway.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>complexGateway_8cpp.html</filename>
+    <includes id="complexGateway_8h" name="complexGateway.h" local="yes" import="no" module="no" objc="no">complexGateway.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>complexGateway.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>complexGateway_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tComplexGateway_8h" name="tComplexGateway.h" local="yes" import="no" module="no" objc="no">tComplexGateway.h</includes>
+    <class kind="class">XML::bpmn::complexGateway</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>conditionalEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>conditionalEventDefinition_8cpp.html</filename>
+    <includes id="conditionalEventDefinition_8h" name="conditionalEventDefinition.h" local="yes" import="no" module="no" objc="no">conditionalEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>conditionalEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>conditionalEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tConditionalEventDefinition_8h" name="tConditionalEventDefinition.h" local="yes" import="no" module="no" objc="no">tConditionalEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::conditionalEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>conversationAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>conversationAssociation_8cpp.html</filename>
+    <includes id="conversationAssociation_8h" name="conversationAssociation.h" local="yes" import="no" module="no" objc="no">conversationAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>conversationAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>conversationAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tConversationAssociation_8h" name="tConversationAssociation.h" local="yes" import="no" module="no" objc="no">tConversationAssociation.h</includes>
+    <class kind="class">XML::bpmn::conversationAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>conversationLink.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>conversationLink_8cpp.html</filename>
+    <includes id="conversationLink_8h" name="conversationLink.h" local="yes" import="no" module="no" objc="no">conversationLink.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>conversationLink.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>conversationLink_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tConversationLink_8h" name="tConversationLink.h" local="yes" import="no" module="no" objc="no">tConversationLink.h</includes>
+    <class kind="class">XML::bpmn::conversationLink</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>conversationNode.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>conversationNode_8cpp.html</filename>
+    <includes id="conversationNode_8h" name="conversationNode.h" local="yes" import="no" module="no" objc="no">conversationNode.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>conversationNode.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>conversationNode_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
+    <class kind="class">XML::bpmn::conversationNode</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>correlationKey.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>correlationKey_8cpp.html</filename>
+    <includes id="correlationKey_8h" name="correlationKey.h" local="yes" import="no" module="no" objc="no">correlationKey.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>correlationKey.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>correlationKey_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCorrelationKey_8h" name="tCorrelationKey.h" local="yes" import="no" module="no" objc="no">tCorrelationKey.h</includes>
+    <class kind="class">XML::bpmn::correlationKey</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>correlationProperty.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>correlationProperty_8cpp.html</filename>
+    <includes id="correlationProperty_8h" name="correlationProperty.h" local="yes" import="no" module="no" objc="no">correlationProperty.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>correlationProperty.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>correlationProperty_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCorrelationProperty_8h" name="tCorrelationProperty.h" local="yes" import="no" module="no" objc="no">tCorrelationProperty.h</includes>
+    <class kind="class">XML::bpmn::correlationProperty</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>correlationPropertyBinding.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>correlationPropertyBinding_8cpp.html</filename>
+    <includes id="correlationPropertyBinding_8h" name="correlationPropertyBinding.h" local="yes" import="no" module="no" objc="no">correlationPropertyBinding.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>correlationPropertyBinding.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>correlationPropertyBinding_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCorrelationPropertyBinding_8h" name="tCorrelationPropertyBinding.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyBinding.h</includes>
+    <class kind="class">XML::bpmn::correlationPropertyBinding</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>correlationPropertyRetrievalExpression.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>correlationPropertyRetrievalExpression_8cpp.html</filename>
+    <includes id="correlationPropertyRetrievalExpression_8h" name="correlationPropertyRetrievalExpression.h" local="yes" import="no" module="no" objc="no">correlationPropertyRetrievalExpression.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>correlationPropertyRetrievalExpression.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>correlationPropertyRetrievalExpression_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCorrelationPropertyRetrievalExpression_8h" name="tCorrelationPropertyRetrievalExpression.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyRetrievalExpression.h</includes>
+    <class kind="class">XML::bpmn::correlationPropertyRetrievalExpression</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>correlationSubscription.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>correlationSubscription_8cpp.html</filename>
+    <includes id="correlationSubscription_8h" name="correlationSubscription.h" local="yes" import="no" module="no" objc="no">correlationSubscription.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>correlationSubscription.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>correlationSubscription_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCorrelationSubscription_8h" name="tCorrelationSubscription.h" local="yes" import="no" module="no" objc="no">tCorrelationSubscription.h</includes>
+    <class kind="class">XML::bpmn::correlationSubscription</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dataAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataAssociation_8cpp.html</filename>
+    <includes id="dataAssociation_8h" name="dataAssociation.h" local="yes" import="no" module="no" objc="no">dataAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dataAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataAssociation_8h" name="tDataAssociation.h" local="yes" import="no" module="no" objc="no">tDataAssociation.h</includes>
+    <class kind="class">XML::bpmn::dataAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dataInput.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataInput_8cpp.html</filename>
+    <includes id="dataInput_8h" name="dataInput.h" local="yes" import="no" module="no" objc="no">dataInput.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dataInput.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataInput_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataInput_8h" name="tDataInput.h" local="yes" import="no" module="no" objc="no">tDataInput.h</includes>
+    <class kind="class">XML::bpmn::dataInput</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dataInputAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataInputAssociation_8cpp.html</filename>
+    <includes id="dataInputAssociation_8h" name="dataInputAssociation.h" local="yes" import="no" module="no" objc="no">dataInputAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dataInputAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataInputAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataInputAssociation_8h" name="tDataInputAssociation.h" local="yes" import="no" module="no" objc="no">tDataInputAssociation.h</includes>
+    <class kind="class">XML::bpmn::dataInputAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dataObject.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataObject_8cpp.html</filename>
+    <includes id="dataObject_8h" name="dataObject.h" local="yes" import="no" module="no" objc="no">dataObject.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dataObject.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataObject_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataObject_8h" name="tDataObject.h" local="yes" import="no" module="no" objc="no">tDataObject.h</includes>
+    <class kind="class">XML::bpmn::dataObject</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dataObjectReference.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataObjectReference_8cpp.html</filename>
+    <includes id="dataObjectReference_8h" name="dataObjectReference.h" local="yes" import="no" module="no" objc="no">dataObjectReference.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dataObjectReference.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataObjectReference_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataObjectReference_8h" name="tDataObjectReference.h" local="yes" import="no" module="no" objc="no">tDataObjectReference.h</includes>
+    <class kind="class">XML::bpmn::dataObjectReference</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dataOutput.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataOutput_8cpp.html</filename>
+    <includes id="dataOutput_8h" name="dataOutput.h" local="yes" import="no" module="no" objc="no">dataOutput.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dataOutput.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataOutput_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataOutput_8h" name="tDataOutput.h" local="yes" import="no" module="no" objc="no">tDataOutput.h</includes>
+    <class kind="class">XML::bpmn::dataOutput</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dataOutputAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataOutputAssociation_8cpp.html</filename>
+    <includes id="dataOutputAssociation_8h" name="dataOutputAssociation.h" local="yes" import="no" module="no" objc="no">dataOutputAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dataOutputAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataOutputAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataOutputAssociation_8h" name="tDataOutputAssociation.h" local="yes" import="no" module="no" objc="no">tDataOutputAssociation.h</includes>
+    <class kind="class">XML::bpmn::dataOutputAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dataState.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataState_8cpp.html</filename>
+    <includes id="dataState_8h" name="dataState.h" local="yes" import="no" module="no" objc="no">dataState.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dataState.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataState_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
+    <class kind="class">XML::bpmn::dataState</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dataStore.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataStore_8cpp.html</filename>
+    <includes id="dataStore_8h" name="dataStore.h" local="yes" import="no" module="no" objc="no">dataStore.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dataStore.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataStore_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataStore_8h" name="tDataStore.h" local="yes" import="no" module="no" objc="no">tDataStore.h</includes>
+    <class kind="class">XML::bpmn::dataStore</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dataStoreReference.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataStoreReference_8cpp.html</filename>
+    <includes id="dataStoreReference_8h" name="dataStoreReference.h" local="yes" import="no" module="no" objc="no">dataStoreReference.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dataStoreReference.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dataStoreReference_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataStoreReference_8h" name="tDataStoreReference.h" local="yes" import="no" module="no" objc="no">tDataStoreReference.h</includes>
+    <class kind="class">XML::bpmn::dataStoreReference</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Diagram.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>Diagram_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>DiagramElement.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>DiagramElement_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>DiagramElement_extension.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>DiagramElement__extension_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>Edge.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>Edge_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>endEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>endEvent_8cpp.html</filename>
+    <includes id="endEvent_8h" name="endEvent.h" local="yes" import="no" module="no" objc="no">endEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>endEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>endEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEndEvent_8h" name="tEndEvent.h" local="yes" import="no" module="no" objc="no">tEndEvent.h</includes>
+    <class kind="class">XML::bpmn::endEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>endPoint.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>endPoint_8cpp.html</filename>
+    <includes id="endPoint_8h" name="endPoint.h" local="yes" import="no" module="no" objc="no">endPoint.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>endPoint.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>endPoint_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEndPoint_8h" name="tEndPoint.h" local="yes" import="no" module="no" objc="no">tEndPoint.h</includes>
+    <class kind="class">XML::bpmn::endPoint</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>errorEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>errorEventDefinition_8cpp.html</filename>
+    <includes id="errorEventDefinition_8h" name="errorEventDefinition.h" local="yes" import="no" module="no" objc="no">errorEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>errorEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>errorEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tErrorEventDefinition_8h" name="tErrorEventDefinition.h" local="yes" import="no" module="no" objc="no">tErrorEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::errorEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>escalationEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>escalationEventDefinition_8cpp.html</filename>
+    <includes id="escalationEventDefinition_8h" name="escalationEventDefinition.h" local="yes" import="no" module="no" objc="no">escalationEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>escalationEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>escalationEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEscalationEventDefinition_8h" name="tEscalationEventDefinition.h" local="yes" import="no" module="no" objc="no">tEscalationEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::escalationEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>eventBasedGateway.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>eventBasedGateway_8cpp.html</filename>
+    <includes id="eventBasedGateway_8h" name="eventBasedGateway.h" local="yes" import="no" module="no" objc="no">eventBasedGateway.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>eventBasedGateway.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>eventBasedGateway_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventBasedGateway_8h" name="tEventBasedGateway.h" local="yes" import="no" module="no" objc="no">tEventBasedGateway.h</includes>
+    <class kind="class">XML::bpmn::eventBasedGateway</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>eventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>eventDefinition_8cpp.html</filename>
+    <includes id="eventDefinition_8h" name="eventDefinition.h" local="yes" import="no" module="no" objc="no">eventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>eventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>eventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::eventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>exclusiveGateway.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>exclusiveGateway_8cpp.html</filename>
+    <includes id="exclusiveGateway_8h" name="exclusiveGateway.h" local="yes" import="no" module="no" objc="no">exclusiveGateway.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>exclusiveGateway.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>exclusiveGateway_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tExclusiveGateway_8h" name="tExclusiveGateway.h" local="yes" import="no" module="no" objc="no">tExclusiveGateway.h</includes>
+    <class kind="class">XML::bpmn::exclusiveGateway</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>extensionElements.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>extensionElements_8cpp.html</filename>
+    <includes id="extensionElements_8h" name="extensionElements.h" local="yes" import="no" module="no" objc="no">extensionElements.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>extensionElements.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>extensionElements_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tExtensionElements_8h" name="tExtensionElements.h" local="yes" import="no" module="no" objc="no">tExtensionElements.h</includes>
+    <class kind="class">XML::bpmn::extensionElements</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>flowElement.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>flowElement_8cpp.html</filename>
+    <includes id="flowElement_8h" name="flowElement.h" local="yes" import="no" module="no" objc="no">flowElement.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>flowElement.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>flowElement_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
+    <class kind="class">XML::bpmn::flowElement</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>flowNode.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>flowNode_8cpp.html</filename>
+    <includes id="flowNode_8h" name="flowNode.h" local="yes" import="no" module="no" objc="no">flowNode.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>flowNode.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>flowNode_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
+    <class kind="class">XML::bpmn::flowNode</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Font.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>Font_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>formalExpression.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>formalExpression_8cpp.html</filename>
+    <includes id="formalExpression_8h" name="formalExpression.h" local="yes" import="no" module="no" objc="no">formalExpression.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>formalExpression.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>formalExpression_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
+    <class kind="class">XML::bpmn::formalExpression</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>globalBusinessRuleTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalBusinessRuleTask_8cpp.html</filename>
+    <includes id="globalBusinessRuleTask_8h" name="globalBusinessRuleTask.h" local="yes" import="no" module="no" objc="no">globalBusinessRuleTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>globalBusinessRuleTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalBusinessRuleTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGlobalBusinessRuleTask_8h" name="tGlobalBusinessRuleTask.h" local="yes" import="no" module="no" objc="no">tGlobalBusinessRuleTask.h</includes>
+    <class kind="class">XML::bpmn::globalBusinessRuleTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>globalChoreographyTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalChoreographyTask_8cpp.html</filename>
+    <includes id="globalChoreographyTask_8h" name="globalChoreographyTask.h" local="yes" import="no" module="no" objc="no">globalChoreographyTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>globalChoreographyTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalChoreographyTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGlobalChoreographyTask_8h" name="tGlobalChoreographyTask.h" local="yes" import="no" module="no" objc="no">tGlobalChoreographyTask.h</includes>
+    <class kind="class">XML::bpmn::globalChoreographyTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>globalConversation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalConversation_8cpp.html</filename>
+    <includes id="globalConversation_8h" name="globalConversation.h" local="yes" import="no" module="no" objc="no">globalConversation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>globalConversation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalConversation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGlobalConversation_8h" name="tGlobalConversation.h" local="yes" import="no" module="no" objc="no">tGlobalConversation.h</includes>
+    <class kind="class">XML::bpmn::globalConversation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>globalManualTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalManualTask_8cpp.html</filename>
+    <includes id="globalManualTask_8h" name="globalManualTask.h" local="yes" import="no" module="no" objc="no">globalManualTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>globalManualTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalManualTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGlobalManualTask_8h" name="tGlobalManualTask.h" local="yes" import="no" module="no" objc="no">tGlobalManualTask.h</includes>
+    <class kind="class">XML::bpmn::globalManualTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>globalScriptTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalScriptTask_8cpp.html</filename>
+    <includes id="globalScriptTask_8h" name="globalScriptTask.h" local="yes" import="no" module="no" objc="no">globalScriptTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>globalScriptTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalScriptTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGlobalScriptTask_8h" name="tGlobalScriptTask.h" local="yes" import="no" module="no" objc="no">tGlobalScriptTask.h</includes>
+    <class kind="class">XML::bpmn::globalScriptTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>globalTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalTask_8cpp.html</filename>
+    <includes id="globalTask_8h" name="globalTask.h" local="yes" import="no" module="no" objc="no">globalTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>globalTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
+    <class kind="class">XML::bpmn::globalTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>globalUserTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalUserTask_8cpp.html</filename>
+    <includes id="globalUserTask_8h" name="globalUserTask.h" local="yes" import="no" module="no" objc="no">globalUserTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>globalUserTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>globalUserTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGlobalUserTask_8h" name="tGlobalUserTask.h" local="yes" import="no" module="no" objc="no">tGlobalUserTask.h</includes>
+    <class kind="class">XML::bpmn::globalUserTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>humanPerformer.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>humanPerformer_8cpp.html</filename>
+    <includes id="humanPerformer_8h" name="humanPerformer.h" local="yes" import="no" module="no" objc="no">humanPerformer.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>humanPerformer.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>humanPerformer_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tHumanPerformer_8h" name="tHumanPerformer.h" local="yes" import="no" module="no" objc="no">tHumanPerformer.h</includes>
+    <class kind="class">XML::bpmn::humanPerformer</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>implicitThrowEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>implicitThrowEvent_8cpp.html</filename>
+    <includes id="implicitThrowEvent_8h" name="implicitThrowEvent.h" local="yes" import="no" module="no" objc="no">implicitThrowEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>implicitThrowEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>implicitThrowEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tImplicitThrowEvent_8h" name="tImplicitThrowEvent.h" local="yes" import="no" module="no" objc="no">tImplicitThrowEvent.h</includes>
+    <class kind="class">XML::bpmn::implicitThrowEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>inclusiveGateway.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>inclusiveGateway_8cpp.html</filename>
+    <includes id="inclusiveGateway_8h" name="inclusiveGateway.h" local="yes" import="no" module="no" objc="no">inclusiveGateway.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>inclusiveGateway.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>inclusiveGateway_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tInclusiveGateway_8h" name="tInclusiveGateway.h" local="yes" import="no" module="no" objc="no">tInclusiveGateway.h</includes>
+    <class kind="class">XML::bpmn::inclusiveGateway</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>inputSet.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>inputSet_8cpp.html</filename>
+    <includes id="inputSet_8h" name="inputSet.h" local="yes" import="no" module="no" objc="no">inputSet.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>inputSet.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>inputSet_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tInputSet_8h" name="tInputSet.h" local="yes" import="no" module="no" objc="no">tInputSet.h</includes>
+    <class kind="class">XML::bpmn::inputSet</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>intermediateCatchEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>intermediateCatchEvent_8cpp.html</filename>
+    <includes id="intermediateCatchEvent_8h" name="intermediateCatchEvent.h" local="yes" import="no" module="no" objc="no">intermediateCatchEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>intermediateCatchEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>intermediateCatchEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tIntermediateCatchEvent_8h" name="tIntermediateCatchEvent.h" local="yes" import="no" module="no" objc="no">tIntermediateCatchEvent.h</includes>
+    <class kind="class">XML::bpmn::intermediateCatchEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>intermediateThrowEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>intermediateThrowEvent_8cpp.html</filename>
+    <includes id="intermediateThrowEvent_8h" name="intermediateThrowEvent.h" local="yes" import="no" module="no" objc="no">intermediateThrowEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>intermediateThrowEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>intermediateThrowEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tIntermediateThrowEvent_8h" name="tIntermediateThrowEvent.h" local="yes" import="no" module="no" objc="no">tIntermediateThrowEvent.h</includes>
+    <class kind="class">XML::bpmn::intermediateThrowEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>ioBinding.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>ioBinding_8cpp.html</filename>
+    <includes id="ioBinding_8h" name="ioBinding.h" local="yes" import="no" module="no" objc="no">ioBinding.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>ioBinding.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>ioBinding_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tInputOutputBinding_8h" name="tInputOutputBinding.h" local="yes" import="no" module="no" objc="no">tInputOutputBinding.h</includes>
+    <class kind="class">XML::bpmn::ioBinding</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>ioSpecification.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>ioSpecification_8cpp.html</filename>
+    <includes id="ioSpecification_8h" name="ioSpecification.h" local="yes" import="no" module="no" objc="no">ioSpecification.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>ioSpecification.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>ioSpecification_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tInputOutputSpecification_8h" name="tInputOutputSpecification.h" local="yes" import="no" module="no" objc="no">tInputOutputSpecification.h</includes>
+    <class kind="class">XML::bpmn::ioSpecification</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>itemDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>itemDefinition_8cpp.html</filename>
+    <includes id="itemDefinition_8h" name="itemDefinition.h" local="yes" import="no" module="no" objc="no">itemDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>itemDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>itemDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tItemDefinition_8h" name="tItemDefinition.h" local="yes" import="no" module="no" objc="no">tItemDefinition.h</includes>
+    <class kind="class">XML::bpmn::itemDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Label.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>Label_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>LabeledEdge.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>LabeledEdge_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>LabeledShape.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>LabeledShape_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>laneSet.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>laneSet_8cpp.html</filename>
+    <includes id="laneSet_8h" name="laneSet.h" local="yes" import="no" module="no" objc="no">laneSet.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>laneSet.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>laneSet_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tLaneSet_8h" name="tLaneSet.h" local="yes" import="no" module="no" objc="no">tLaneSet.h</includes>
+    <class kind="class">XML::bpmn::laneSet</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>linkEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>linkEventDefinition_8cpp.html</filename>
+    <includes id="linkEventDefinition_8h" name="linkEventDefinition.h" local="yes" import="no" module="no" objc="no">linkEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>linkEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>linkEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tLinkEventDefinition_8h" name="tLinkEventDefinition.h" local="yes" import="no" module="no" objc="no">tLinkEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::linkEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>loopCharacteristics.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>loopCharacteristics_8cpp.html</filename>
+    <includes id="loopCharacteristics_8h" name="loopCharacteristics.h" local="yes" import="no" module="no" objc="no">loopCharacteristics.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>loopCharacteristics.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>loopCharacteristics_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tLoopCharacteristics_8h" name="tLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tLoopCharacteristics.h</includes>
+    <class kind="class">XML::bpmn::loopCharacteristics</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>manualTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>manualTask_8cpp.html</filename>
+    <includes id="manualTask_8h" name="manualTask.h" local="yes" import="no" module="no" objc="no">manualTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>manualTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>manualTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tManualTask_8h" name="tManualTask.h" local="yes" import="no" module="no" objc="no">tManualTask.h</includes>
+    <class kind="class">XML::bpmn::manualTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>messageEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>messageEventDefinition_8cpp.html</filename>
+    <includes id="messageEventDefinition_8h" name="messageEventDefinition.h" local="yes" import="no" module="no" objc="no">messageEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>messageEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>messageEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tMessageEventDefinition_8h" name="tMessageEventDefinition.h" local="yes" import="no" module="no" objc="no">tMessageEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::messageEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>messageFlow.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>messageFlow_8cpp.html</filename>
+    <includes id="messageFlow_8h" name="messageFlow.h" local="yes" import="no" module="no" objc="no">messageFlow.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>messageFlow.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>messageFlow_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tMessageFlow_8h" name="tMessageFlow.h" local="yes" import="no" module="no" objc="no">tMessageFlow.h</includes>
+    <class kind="class">XML::bpmn::messageFlow</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>messageFlowAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>messageFlowAssociation_8cpp.html</filename>
+    <includes id="messageFlowAssociation_8h" name="messageFlowAssociation.h" local="yes" import="no" module="no" objc="no">messageFlowAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>messageFlowAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>messageFlowAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tMessageFlowAssociation_8h" name="tMessageFlowAssociation.h" local="yes" import="no" module="no" objc="no">tMessageFlowAssociation.h</includes>
+    <class kind="class">XML::bpmn::messageFlowAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>MessageVisibleKind.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>MessageVisibleKind_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>MessageVisibleKind</name>
+      <anchorfile>MessageVisibleKind_8h.html</anchorfile>
+      <anchor>aeba296f31e0b87fd529e527d1b7238a0</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>multiInstanceLoopCharacteristics.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>multiInstanceLoopCharacteristics_8cpp.html</filename>
+    <includes id="multiInstanceLoopCharacteristics_8h" name="multiInstanceLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">multiInstanceLoopCharacteristics.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>multiInstanceLoopCharacteristics.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>multiInstanceLoopCharacteristics_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tMultiInstanceLoopCharacteristics_8h" name="tMultiInstanceLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tMultiInstanceLoopCharacteristics.h</includes>
+    <class kind="class">XML::bpmn::multiInstanceLoopCharacteristics</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>outputSet.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>outputSet_8cpp.html</filename>
+    <includes id="outputSet_8h" name="outputSet.h" local="yes" import="no" module="no" objc="no">outputSet.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>outputSet.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>outputSet_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tOutputSet_8h" name="tOutputSet.h" local="yes" import="no" module="no" objc="no">tOutputSet.h</includes>
+    <class kind="class">XML::bpmn::outputSet</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>parallelGateway.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>parallelGateway_8cpp.html</filename>
+    <includes id="parallelGateway_8h" name="parallelGateway.h" local="yes" import="no" module="no" objc="no">parallelGateway.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>parallelGateway.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>parallelGateway_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tParallelGateway_8h" name="tParallelGateway.h" local="yes" import="no" module="no" objc="no">tParallelGateway.h</includes>
+    <class kind="class">XML::bpmn::parallelGateway</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>participantAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>participantAssociation_8cpp.html</filename>
+    <includes id="participantAssociation_8h" name="participantAssociation.h" local="yes" import="no" module="no" objc="no">participantAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>participantAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>participantAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tParticipantAssociation_8h" name="tParticipantAssociation.h" local="yes" import="no" module="no" objc="no">tParticipantAssociation.h</includes>
+    <class kind="class">XML::bpmn::participantAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>ParticipantBandKind.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>ParticipantBandKind_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>ParticipantBandKind</name>
+      <anchorfile>ParticipantBandKind_8h.html</anchorfile>
+      <anchor>a1f17faebf8ae7625474f384ed31b7568</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>participantMultiplicity.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>participantMultiplicity_8cpp.html</filename>
+    <includes id="participantMultiplicity_8h" name="participantMultiplicity.h" local="yes" import="no" module="no" objc="no">participantMultiplicity.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>participantMultiplicity.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>participantMultiplicity_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tParticipantMultiplicity_8h" name="tParticipantMultiplicity.h" local="yes" import="no" module="no" objc="no">tParticipantMultiplicity.h</includes>
+    <class kind="class">XML::bpmn::participantMultiplicity</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>partnerEntity.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>partnerEntity_8cpp.html</filename>
+    <includes id="partnerEntity_8h" name="partnerEntity.h" local="yes" import="no" module="no" objc="no">partnerEntity.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>partnerEntity.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>partnerEntity_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tPartnerEntity_8h" name="tPartnerEntity.h" local="yes" import="no" module="no" objc="no">tPartnerEntity.h</includes>
+    <class kind="class">XML::bpmn::partnerEntity</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>partnerRole.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>partnerRole_8cpp.html</filename>
+    <includes id="partnerRole_8h" name="partnerRole.h" local="yes" import="no" module="no" objc="no">partnerRole.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>partnerRole.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>partnerRole_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tPartnerRole_8h" name="tPartnerRole.h" local="yes" import="no" module="no" objc="no">tPartnerRole.h</includes>
+    <class kind="class">XML::bpmn::partnerRole</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Plane.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>Plane_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>Point.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>Point_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>potentialOwner.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>potentialOwner_8cpp.html</filename>
+    <includes id="potentialOwner_8h" name="potentialOwner.h" local="yes" import="no" module="no" objc="no">potentialOwner.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>potentialOwner.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>potentialOwner_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tPotentialOwner_8h" name="tPotentialOwner.h" local="yes" import="no" module="no" objc="no">tPotentialOwner.h</includes>
+    <class kind="class">XML::bpmn::potentialOwner</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>receiveTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>receiveTask_8cpp.html</filename>
+    <includes id="receiveTask_8h" name="receiveTask.h" local="yes" import="no" module="no" objc="no">receiveTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>receiveTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>receiveTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tReceiveTask_8h" name="tReceiveTask.h" local="yes" import="no" module="no" objc="no">tReceiveTask.h</includes>
+    <class kind="class">XML::bpmn::receiveTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>resourceAssignmentExpression.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>resourceAssignmentExpression_8cpp.html</filename>
+    <includes id="resourceAssignmentExpression_8h" name="resourceAssignmentExpression.h" local="yes" import="no" module="no" objc="no">resourceAssignmentExpression.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>resourceAssignmentExpression.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>resourceAssignmentExpression_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tResourceAssignmentExpression_8h" name="tResourceAssignmentExpression.h" local="yes" import="no" module="no" objc="no">tResourceAssignmentExpression.h</includes>
+    <class kind="class">XML::bpmn::resourceAssignmentExpression</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>resourceParameter.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>resourceParameter_8cpp.html</filename>
+    <includes id="resourceParameter_8h" name="resourceParameter.h" local="yes" import="no" module="no" objc="no">resourceParameter.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>resourceParameter.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>resourceParameter_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tResourceParameter_8h" name="tResourceParameter.h" local="yes" import="no" module="no" objc="no">tResourceParameter.h</includes>
+    <class kind="class">XML::bpmn::resourceParameter</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>resourceParameterBinding.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>resourceParameterBinding_8cpp.html</filename>
+    <includes id="resourceParameterBinding_8h" name="resourceParameterBinding.h" local="yes" import="no" module="no" objc="no">resourceParameterBinding.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>resourceParameterBinding.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>resourceParameterBinding_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tResourceParameterBinding_8h" name="tResourceParameterBinding.h" local="yes" import="no" module="no" objc="no">tResourceParameterBinding.h</includes>
+    <class kind="class">XML::bpmn::resourceParameterBinding</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>resourceRole.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>resourceRole_8cpp.html</filename>
+    <includes id="resourceRole_8h" name="resourceRole.h" local="yes" import="no" module="no" objc="no">resourceRole.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>resourceRole.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>resourceRole_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
+    <class kind="class">XML::bpmn::resourceRole</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>rootElement.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>rootElement_8cpp.html</filename>
+    <includes id="rootElement_8h" name="rootElement.h" local="yes" import="no" module="no" objc="no">rootElement.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>rootElement.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>rootElement_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <class kind="class">XML::bpmn::rootElement</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>scriptTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>scriptTask_8cpp.html</filename>
+    <includes id="scriptTask_8h" name="scriptTask.h" local="yes" import="no" module="no" objc="no">scriptTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>scriptTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>scriptTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tScriptTask_8h" name="tScriptTask.h" local="yes" import="no" module="no" objc="no">tScriptTask.h</includes>
+    <class kind="class">XML::bpmn::scriptTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>sendTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>sendTask_8cpp.html</filename>
+    <includes id="sendTask_8h" name="sendTask.h" local="yes" import="no" module="no" objc="no">sendTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>sendTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>sendTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tSendTask_8h" name="tSendTask.h" local="yes" import="no" module="no" objc="no">tSendTask.h</includes>
+    <class kind="class">XML::bpmn::sendTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>sequenceFlow.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>sequenceFlow_8cpp.html</filename>
+    <includes id="sequenceFlow_8h" name="sequenceFlow.h" local="yes" import="no" module="no" objc="no">sequenceFlow.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>sequenceFlow.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>sequenceFlow_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tSequenceFlow_8h" name="tSequenceFlow.h" local="yes" import="no" module="no" objc="no">tSequenceFlow.h</includes>
+    <class kind="class">XML::bpmn::sequenceFlow</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>serviceTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>serviceTask_8cpp.html</filename>
+    <includes id="serviceTask_8h" name="serviceTask.h" local="yes" import="no" module="no" objc="no">serviceTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>serviceTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>serviceTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tServiceTask_8h" name="tServiceTask.h" local="yes" import="no" module="no" objc="no">tServiceTask.h</includes>
+    <class kind="class">XML::bpmn::serviceTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Shape.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>Shape_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>signalEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>signalEventDefinition_8cpp.html</filename>
+    <includes id="signalEventDefinition_8h" name="signalEventDefinition.h" local="yes" import="no" module="no" objc="no">signalEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>signalEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>signalEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tSignalEventDefinition_8h" name="tSignalEventDefinition.h" local="yes" import="no" module="no" objc="no">tSignalEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::signalEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>standardLoopCharacteristics.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>standardLoopCharacteristics_8cpp.html</filename>
+    <includes id="standardLoopCharacteristics_8h" name="standardLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">standardLoopCharacteristics.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>standardLoopCharacteristics.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>standardLoopCharacteristics_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tStandardLoopCharacteristics_8h" name="tStandardLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tStandardLoopCharacteristics.h</includes>
+    <class kind="class">XML::bpmn::standardLoopCharacteristics</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>startEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>startEvent_8cpp.html</filename>
+    <includes id="startEvent_8h" name="startEvent.h" local="yes" import="no" module="no" objc="no">startEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>startEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>startEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tStartEvent_8h" name="tStartEvent.h" local="yes" import="no" module="no" objc="no">tStartEvent.h</includes>
+    <class kind="class">XML::bpmn::startEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Style.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>Style_8cpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>subChoreography.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>subChoreography_8cpp.html</filename>
+    <includes id="subChoreography_8h" name="subChoreography.h" local="yes" import="no" module="no" objc="no">subChoreography.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>subChoreography.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>subChoreography_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tSubChoreography_8h" name="tSubChoreography.h" local="yes" import="no" module="no" objc="no">tSubChoreography.h</includes>
+    <class kind="class">XML::bpmn::subChoreography</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>subConversation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>subConversation_8cpp.html</filename>
+    <includes id="subConversation_8h" name="subConversation.h" local="yes" import="no" module="no" objc="no">subConversation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>subConversation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>subConversation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tSubConversation_8h" name="tSubConversation.h" local="yes" import="no" module="no" objc="no">tSubConversation.h</includes>
+    <class kind="class">XML::bpmn::subConversation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>subProcess.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>subProcess_8cpp.html</filename>
+    <includes id="subProcess_8h" name="subProcess.h" local="yes" import="no" module="no" objc="no">subProcess.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>subProcess.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>subProcess_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tSubProcess_8h" name="tSubProcess.h" local="yes" import="no" module="no" objc="no">tSubProcess.h</includes>
+    <class kind="class">XML::bpmn::subProcess</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tActivity.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tActivity_8cpp.html</filename>
+    <includes id="tActivity_8h" name="tActivity.h" local="yes" import="no" module="no" objc="no">tActivity.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tActivity.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tActivity_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
+    <includes id="tInputOutputSpecification_8h" name="tInputOutputSpecification.h" local="yes" import="no" module="no" objc="no">tInputOutputSpecification.h</includes>
+    <includes id="tProperty_8h" name="tProperty.h" local="yes" import="no" module="no" objc="no">tProperty.h</includes>
+    <includes id="tDataInputAssociation_8h" name="tDataInputAssociation.h" local="yes" import="no" module="no" objc="no">tDataInputAssociation.h</includes>
+    <includes id="tDataOutputAssociation_8h" name="tDataOutputAssociation.h" local="yes" import="no" module="no" objc="no">tDataOutputAssociation.h</includes>
+    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
+    <includes id="tLoopCharacteristics_8h" name="tLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tLoopCharacteristics.h</includes>
+    <class kind="class">XML::bpmn::tActivity</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tAdHocOrdering.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tAdHocOrdering_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>tAdHocOrdering</name>
+      <anchorfile>tAdHocOrdering_8h.html</anchorfile>
+      <anchor>aeccc117cb0d04d33170f092550176ca8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tAdHocSubProcess.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tAdHocSubProcess_8cpp.html</filename>
+    <includes id="tAdHocSubProcess_8h" name="tAdHocSubProcess.h" local="yes" import="no" module="no" objc="no">tAdHocSubProcess.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tAdHocSubProcess.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tAdHocSubProcess_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tSubProcess_8h" name="tSubProcess.h" local="yes" import="no" module="no" objc="no">tSubProcess.h</includes>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+    <includes id="tAdHocOrdering_8h" name="tAdHocOrdering.h" local="yes" import="no" module="no" objc="no">tAdHocOrdering.h</includes>
+    <class kind="class">XML::bpmn::tAdHocSubProcess</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tArtifact.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tArtifact_8cpp.html</filename>
+    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tArtifact.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tArtifact_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tArtifact</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tAssignment.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tAssignment_8cpp.html</filename>
+    <includes id="tAssignment_8h" name="tAssignment.h" local="yes" import="no" module="no" objc="no">tAssignment.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tAssignment.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tAssignment_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+    <class kind="class">XML::bpmn::tAssignment</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tAssociation_8cpp.html</filename>
+    <includes id="tAssociation_8h" name="tAssociation.h" local="yes" import="no" module="no" objc="no">tAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
+    <includes id="tAssociationDirection_8h" name="tAssociationDirection.h" local="yes" import="no" module="no" objc="no">tAssociationDirection.h</includes>
+    <class kind="class">XML::bpmn::tAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tAssociationDirection.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tAssociationDirection_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>tAssociationDirection</name>
+      <anchorfile>tAssociationDirection_8h.html</anchorfile>
+      <anchor>a608b55cd6ee6d4d65f4ff08f60535954</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tAuditing.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tAuditing_8cpp.html</filename>
+    <includes id="tAuditing_8h" name="tAuditing.h" local="yes" import="no" module="no" objc="no">tAuditing.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tAuditing.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tAuditing_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tAuditing</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tBaseElement.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tBaseElement_8cpp.html</filename>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tBaseElement.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tBaseElement_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDocumentation_8h" name="tDocumentation.h" local="yes" import="no" module="no" objc="no">tDocumentation.h</includes>
+    <includes id="tExtensionElements_8h" name="tExtensionElements.h" local="yes" import="no" module="no" objc="no">tExtensionElements.h</includes>
+    <class kind="class">XML::bpmn::tBaseElement</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tBaseElementWithMixedContent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tBaseElementWithMixedContent_8cpp.html</filename>
+    <includes id="tBaseElementWithMixedContent_8h" name="tBaseElementWithMixedContent.h" local="yes" import="no" module="no" objc="no">tBaseElementWithMixedContent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tBaseElementWithMixedContent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tBaseElementWithMixedContent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDocumentation_8h" name="tDocumentation.h" local="yes" import="no" module="no" objc="no">tDocumentation.h</includes>
+    <includes id="tExtensionElements_8h" name="tExtensionElements.h" local="yes" import="no" module="no" objc="no">tExtensionElements.h</includes>
+    <class kind="class">XML::bpmn::tBaseElementWithMixedContent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tBoundaryEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tBoundaryEvent_8cpp.html</filename>
+    <includes id="tBoundaryEvent_8h" name="tBoundaryEvent.h" local="yes" import="no" module="no" objc="no">tBoundaryEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tBoundaryEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tBoundaryEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCatchEvent_8h" name="tCatchEvent.h" local="yes" import="no" module="no" objc="no">tCatchEvent.h</includes>
+    <class kind="class">XML::bpmn::tBoundaryEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tBusinessRuleTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tBusinessRuleTask_8cpp.html</filename>
+    <includes id="tBusinessRuleTask_8h" name="tBusinessRuleTask.h" local="yes" import="no" module="no" objc="no">tBusinessRuleTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tBusinessRuleTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tBusinessRuleTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
+    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
+    <class kind="class">XML::bpmn::tBusinessRuleTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCallableElement.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCallableElement_8cpp.html</filename>
+    <includes id="tCallableElement_8h" name="tCallableElement.h" local="yes" import="no" module="no" objc="no">tCallableElement.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCallableElement.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCallableElement_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <includes id="tInputOutputSpecification_8h" name="tInputOutputSpecification.h" local="yes" import="no" module="no" objc="no">tInputOutputSpecification.h</includes>
+    <includes id="tInputOutputBinding_8h" name="tInputOutputBinding.h" local="yes" import="no" module="no" objc="no">tInputOutputBinding.h</includes>
+    <class kind="class">XML::bpmn::tCallableElement</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCallActivity.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCallActivity_8cpp.html</filename>
+    <includes id="tCallActivity_8h" name="tCallActivity.h" local="yes" import="no" module="no" objc="no">tCallActivity.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCallActivity.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCallActivity_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tActivity_8h" name="tActivity.h" local="yes" import="no" module="no" objc="no">tActivity.h</includes>
+    <class kind="class">XML::bpmn::tCallActivity</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCallChoreography.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCallChoreography_8cpp.html</filename>
+    <includes id="tCallChoreography_8h" name="tCallChoreography.h" local="yes" import="no" module="no" objc="no">tCallChoreography.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCallChoreography.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCallChoreography_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tChoreographyActivity_8h" name="tChoreographyActivity.h" local="yes" import="no" module="no" objc="no">tChoreographyActivity.h</includes>
+    <includes id="tParticipantAssociation_8h" name="tParticipantAssociation.h" local="yes" import="no" module="no" objc="no">tParticipantAssociation.h</includes>
+    <class kind="class">XML::bpmn::tCallChoreography</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCallConversation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCallConversation_8cpp.html</filename>
+    <includes id="tCallConversation_8h" name="tCallConversation.h" local="yes" import="no" module="no" objc="no">tCallConversation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCallConversation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCallConversation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
+    <includes id="tParticipantAssociation_8h" name="tParticipantAssociation.h" local="yes" import="no" module="no" objc="no">tParticipantAssociation.h</includes>
+    <class kind="class">XML::bpmn::tCallConversation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCancelEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCancelEventDefinition_8cpp.html</filename>
+    <includes id="tCancelEventDefinition_8h" name="tCancelEventDefinition.h" local="yes" import="no" module="no" objc="no">tCancelEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCancelEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCancelEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::tCancelEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCatchEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCatchEvent_8cpp.html</filename>
+    <includes id="tCatchEvent_8h" name="tCatchEvent.h" local="yes" import="no" module="no" objc="no">tCatchEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCatchEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCatchEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEvent_8h" name="tEvent.h" local="yes" import="no" module="no" objc="no">tEvent.h</includes>
+    <includes id="tDataOutput_8h" name="tDataOutput.h" local="yes" import="no" module="no" objc="no">tDataOutput.h</includes>
+    <includes id="tDataOutputAssociation_8h" name="tDataOutputAssociation.h" local="yes" import="no" module="no" objc="no">tDataOutputAssociation.h</includes>
+    <includes id="tOutputSet_8h" name="tOutputSet.h" local="yes" import="no" module="no" objc="no">tOutputSet.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::tCatchEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCategory.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCategory_8cpp.html</filename>
+    <includes id="tCategory_8h" name="tCategory.h" local="yes" import="no" module="no" objc="no">tCategory.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCategory.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCategory_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <includes id="tCategoryValue_8h" name="tCategoryValue.h" local="yes" import="no" module="no" objc="no">tCategoryValue.h</includes>
+    <class kind="class">XML::bpmn::tCategory</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCategoryValue.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCategoryValue_8cpp.html</filename>
+    <includes id="tCategoryValue_8h" name="tCategoryValue.h" local="yes" import="no" module="no" objc="no">tCategoryValue.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCategoryValue.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCategoryValue_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tCategoryValue</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tChoreography.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tChoreography_8cpp.html</filename>
+    <includes id="tChoreography_8h" name="tChoreography.h" local="yes" import="no" module="no" objc="no">tChoreography.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tChoreography.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tChoreography_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCollaboration_8h" name="tCollaboration.h" local="yes" import="no" module="no" objc="no">tCollaboration.h</includes>
+    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
+    <class kind="class">XML::bpmn::tChoreography</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tChoreographyActivity.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tChoreographyActivity_8cpp.html</filename>
+    <includes id="tChoreographyActivity_8h" name="tChoreographyActivity.h" local="yes" import="no" module="no" objc="no">tChoreographyActivity.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tChoreographyActivity.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tChoreographyActivity_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
+    <includes id="tCorrelationKey_8h" name="tCorrelationKey.h" local="yes" import="no" module="no" objc="no">tCorrelationKey.h</includes>
+    <includes id="tChoreographyLoopType_8h" name="tChoreographyLoopType.h" local="yes" import="no" module="no" objc="no">tChoreographyLoopType.h</includes>
+    <class kind="class">XML::bpmn::tChoreographyActivity</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tChoreographyLoopType.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tChoreographyLoopType_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>tChoreographyLoopType</name>
+      <anchorfile>tChoreographyLoopType_8h.html</anchorfile>
+      <anchor>aa2150f51501098079e47e5fda41d92c9</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tChoreographyTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tChoreographyTask_8cpp.html</filename>
+    <includes id="tChoreographyTask_8h" name="tChoreographyTask.h" local="yes" import="no" module="no" objc="no">tChoreographyTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tChoreographyTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tChoreographyTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tChoreographyActivity_8h" name="tChoreographyActivity.h" local="yes" import="no" module="no" objc="no">tChoreographyActivity.h</includes>
+    <class kind="class">XML::bpmn::tChoreographyTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCollaboration.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCollaboration_8cpp.html</filename>
+    <includes id="tCollaboration_8h" name="tCollaboration.h" local="yes" import="no" module="no" objc="no">tCollaboration.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCollaboration.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCollaboration_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <includes id="tParticipant_8h" name="tParticipant.h" local="yes" import="no" module="no" objc="no">tParticipant.h</includes>
+    <includes id="tMessageFlow_8h" name="tMessageFlow.h" local="yes" import="no" module="no" objc="no">tMessageFlow.h</includes>
+    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
+    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
+    <includes id="tConversationAssociation_8h" name="tConversationAssociation.h" local="yes" import="no" module="no" objc="no">tConversationAssociation.h</includes>
+    <includes id="tParticipantAssociation_8h" name="tParticipantAssociation.h" local="yes" import="no" module="no" objc="no">tParticipantAssociation.h</includes>
+    <includes id="tMessageFlowAssociation_8h" name="tMessageFlowAssociation.h" local="yes" import="no" module="no" objc="no">tMessageFlowAssociation.h</includes>
+    <includes id="tCorrelationKey_8h" name="tCorrelationKey.h" local="yes" import="no" module="no" objc="no">tCorrelationKey.h</includes>
+    <includes id="tConversationLink_8h" name="tConversationLink.h" local="yes" import="no" module="no" objc="no">tConversationLink.h</includes>
+    <class kind="class">XML::bpmn::tCollaboration</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCompensateEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCompensateEventDefinition_8cpp.html</filename>
+    <includes id="tCompensateEventDefinition_8h" name="tCompensateEventDefinition.h" local="yes" import="no" module="no" objc="no">tCompensateEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCompensateEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCompensateEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::tCompensateEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tComplexBehaviorDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tComplexBehaviorDefinition_8cpp.html</filename>
+    <includes id="tComplexBehaviorDefinition_8h" name="tComplexBehaviorDefinition.h" local="yes" import="no" module="no" objc="no">tComplexBehaviorDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tComplexBehaviorDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tComplexBehaviorDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
+    <includes id="tImplicitThrowEvent_8h" name="tImplicitThrowEvent.h" local="yes" import="no" module="no" objc="no">tImplicitThrowEvent.h</includes>
+    <class kind="class">XML::bpmn::tComplexBehaviorDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tComplexGateway.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tComplexGateway_8cpp.html</filename>
+    <includes id="tComplexGateway_8h" name="tComplexGateway.h" local="yes" import="no" module="no" objc="no">tComplexGateway.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tComplexGateway.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tComplexGateway_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+    <class kind="class">XML::bpmn::tComplexGateway</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tConditionalEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tConditionalEventDefinition_8cpp.html</filename>
+    <includes id="tConditionalEventDefinition_8h" name="tConditionalEventDefinition.h" local="yes" import="no" module="no" objc="no">tConditionalEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tConditionalEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tConditionalEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+    <class kind="class">XML::bpmn::tConditionalEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tConversation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tConversation_8cpp.html</filename>
+    <includes id="tConversation_8h" name="tConversation.h" local="yes" import="no" module="no" objc="no">tConversation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tConversation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tConversation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
+    <class kind="class">XML::bpmn::tConversation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tConversationAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tConversationAssociation_8cpp.html</filename>
+    <includes id="tConversationAssociation_8h" name="tConversationAssociation.h" local="yes" import="no" module="no" objc="no">tConversationAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tConversationAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tConversationAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tConversationAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tConversationLink.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tConversationLink_8cpp.html</filename>
+    <includes id="tConversationLink_8h" name="tConversationLink.h" local="yes" import="no" module="no" objc="no">tConversationLink.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tConversationLink.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tConversationLink_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tConversationLink</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tConversationNode.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tConversationNode_8cpp.html</filename>
+    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tConversationNode.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tConversationNode_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tCorrelationKey_8h" name="tCorrelationKey.h" local="yes" import="no" module="no" objc="no">tCorrelationKey.h</includes>
+    <class kind="class">XML::bpmn::tConversationNode</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCorrelationKey.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCorrelationKey_8cpp.html</filename>
+    <includes id="tCorrelationKey_8h" name="tCorrelationKey.h" local="yes" import="no" module="no" objc="no">tCorrelationKey.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCorrelationKey.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCorrelationKey_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tCorrelationKey</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCorrelationProperty.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCorrelationProperty_8cpp.html</filename>
+    <includes id="tCorrelationProperty_8h" name="tCorrelationProperty.h" local="yes" import="no" module="no" objc="no">tCorrelationProperty.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCorrelationProperty.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCorrelationProperty_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <includes id="tCorrelationPropertyRetrievalExpression_8h" name="tCorrelationPropertyRetrievalExpression.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyRetrievalExpression.h</includes>
+    <class kind="class">XML::bpmn::tCorrelationProperty</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCorrelationPropertyBinding.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCorrelationPropertyBinding_8cpp.html</filename>
+    <includes id="tCorrelationPropertyBinding_8h" name="tCorrelationPropertyBinding.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyBinding.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCorrelationPropertyBinding.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCorrelationPropertyBinding_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
+    <class kind="class">XML::bpmn::tCorrelationPropertyBinding</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCorrelationPropertyRetrievalExpression.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCorrelationPropertyRetrievalExpression_8cpp.html</filename>
+    <includes id="tCorrelationPropertyRetrievalExpression_8h" name="tCorrelationPropertyRetrievalExpression.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyRetrievalExpression.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCorrelationPropertyRetrievalExpression.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCorrelationPropertyRetrievalExpression_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
+    <class kind="class">XML::bpmn::tCorrelationPropertyRetrievalExpression</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tCorrelationSubscription.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCorrelationSubscription_8cpp.html</filename>
+    <includes id="tCorrelationSubscription_8h" name="tCorrelationSubscription.h" local="yes" import="no" module="no" objc="no">tCorrelationSubscription.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tCorrelationSubscription.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tCorrelationSubscription_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tCorrelationPropertyBinding_8h" name="tCorrelationPropertyBinding.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyBinding.h</includes>
+    <class kind="class">XML::bpmn::tCorrelationSubscription</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDataAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataAssociation_8cpp.html</filename>
+    <includes id="tDataAssociation_8h" name="tDataAssociation.h" local="yes" import="no" module="no" objc="no">tDataAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDataAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
+    <includes id="tAssignment_8h" name="tAssignment.h" local="yes" import="no" module="no" objc="no">tAssignment.h</includes>
+    <class kind="class">XML::bpmn::tDataAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDataInput.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataInput_8cpp.html</filename>
+    <includes id="tDataInput_8h" name="tDataInput.h" local="yes" import="no" module="no" objc="no">tDataInput.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDataInput.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataInput_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
+    <class kind="class">XML::bpmn::tDataInput</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDataInputAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataInputAssociation_8cpp.html</filename>
+    <includes id="tDataInputAssociation_8h" name="tDataInputAssociation.h" local="yes" import="no" module="no" objc="no">tDataInputAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDataInputAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataInputAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataAssociation_8h" name="tDataAssociation.h" local="yes" import="no" module="no" objc="no">tDataAssociation.h</includes>
+    <class kind="class">XML::bpmn::tDataInputAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDataObject.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataObject_8cpp.html</filename>
+    <includes id="tDataObject_8h" name="tDataObject.h" local="yes" import="no" module="no" objc="no">tDataObject.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDataObject.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataObject_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
+    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
+    <class kind="class">XML::bpmn::tDataObject</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDataObjectReference.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataObjectReference_8cpp.html</filename>
+    <includes id="tDataObjectReference_8h" name="tDataObjectReference.h" local="yes" import="no" module="no" objc="no">tDataObjectReference.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDataObjectReference.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataObjectReference_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
+    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
+    <class kind="class">XML::bpmn::tDataObjectReference</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDataOutput.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataOutput_8cpp.html</filename>
+    <includes id="tDataOutput_8h" name="tDataOutput.h" local="yes" import="no" module="no" objc="no">tDataOutput.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDataOutput.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataOutput_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
+    <class kind="class">XML::bpmn::tDataOutput</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDataOutputAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataOutputAssociation_8cpp.html</filename>
+    <includes id="tDataOutputAssociation_8h" name="tDataOutputAssociation.h" local="yes" import="no" module="no" objc="no">tDataOutputAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDataOutputAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataOutputAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDataAssociation_8h" name="tDataAssociation.h" local="yes" import="no" module="no" objc="no">tDataAssociation.h</includes>
+    <class kind="class">XML::bpmn::tDataOutputAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDataState.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataState_8cpp.html</filename>
+    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDataState.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataState_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tDataState</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDataStore.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataStore_8cpp.html</filename>
+    <includes id="tDataStore_8h" name="tDataStore.h" local="yes" import="no" module="no" objc="no">tDataStore.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDataStore.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataStore_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
+    <class kind="class">XML::bpmn::tDataStore</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDataStoreReference.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataStoreReference_8cpp.html</filename>
+    <includes id="tDataStoreReference_8h" name="tDataStoreReference.h" local="yes" import="no" module="no" objc="no">tDataStoreReference.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDataStoreReference.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDataStoreReference_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
+    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
+    <class kind="class">XML::bpmn::tDataStoreReference</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDefinitions.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDefinitions_8cpp.html</filename>
+    <includes id="tDefinitions_8h" name="tDefinitions.h" local="yes" import="no" module="no" objc="no">tDefinitions.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDefinitions.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDefinitions_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tImport_8h" name="tImport.h" local="yes" import="no" module="no" objc="no">tImport.h</includes>
+    <includes id="tExtension_8h" name="tExtension.h" local="yes" import="no" module="no" objc="no">tExtension.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <includes id="tProcess_8h" name="tProcess.h" local="yes" import="no" module="no" objc="no">tProcess.h</includes>
+    <includes id="tRelationship_8h" name="tRelationship.h" local="yes" import="no" module="no" objc="no">tRelationship.h</includes>
+    <class kind="class">XML::bpmn::tDefinitions</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tDocumentation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDocumentation_8cpp.html</filename>
+    <includes id="tDocumentation_8h" name="tDocumentation.h" local="yes" import="no" module="no" objc="no">tDocumentation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tDocumentation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tDocumentation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <class kind="class">XML::bpmn::tDocumentation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tEndEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEndEvent_8cpp.html</filename>
+    <includes id="tEndEvent_8h" name="tEndEvent.h" local="yes" import="no" module="no" objc="no">tEndEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tEndEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEndEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tThrowEvent_8h" name="tThrowEvent.h" local="yes" import="no" module="no" objc="no">tThrowEvent.h</includes>
+    <class kind="class">XML::bpmn::tEndEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tEndPoint.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEndPoint_8cpp.html</filename>
+    <includes id="tEndPoint_8h" name="tEndPoint.h" local="yes" import="no" module="no" objc="no">tEndPoint.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tEndPoint.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEndPoint_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <class kind="class">XML::bpmn::tEndPoint</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>terminateEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>terminateEventDefinition_8cpp.html</filename>
+    <includes id="terminateEventDefinition_8h" name="terminateEventDefinition.h" local="yes" import="no" module="no" objc="no">terminateEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>terminateEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>terminateEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tTerminateEventDefinition_8h" name="tTerminateEventDefinition.h" local="yes" import="no" module="no" objc="no">tTerminateEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::terminateEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tError.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tError_8cpp.html</filename>
+    <includes id="tError_8h" name="tError.h" local="yes" import="no" module="no" objc="no">tError.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tError.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tError_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <class kind="class">XML::bpmn::tError</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tErrorEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tErrorEventDefinition_8cpp.html</filename>
+    <includes id="tErrorEventDefinition_8h" name="tErrorEventDefinition.h" local="yes" import="no" module="no" objc="no">tErrorEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tErrorEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tErrorEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::tErrorEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tEscalation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEscalation_8cpp.html</filename>
+    <includes id="tEscalation_8h" name="tEscalation.h" local="yes" import="no" module="no" objc="no">tEscalation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tEscalation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEscalation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <class kind="class">XML::bpmn::tEscalation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tEscalationEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEscalationEventDefinition_8cpp.html</filename>
+    <includes id="tEscalationEventDefinition_8h" name="tEscalationEventDefinition.h" local="yes" import="no" module="no" objc="no">tEscalationEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tEscalationEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEscalationEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::tEscalationEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEvent_8cpp.html</filename>
+    <includes id="tEvent_8h" name="tEvent.h" local="yes" import="no" module="no" objc="no">tEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
+    <includes id="tProperty_8h" name="tProperty.h" local="yes" import="no" module="no" objc="no">tProperty.h</includes>
+    <class kind="class">XML::bpmn::tEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tEventBasedGateway.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEventBasedGateway_8cpp.html</filename>
+    <includes id="tEventBasedGateway_8h" name="tEventBasedGateway.h" local="yes" import="no" module="no" objc="no">tEventBasedGateway.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tEventBasedGateway.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEventBasedGateway_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
+    <includes id="tEventBasedGatewayType_8h" name="tEventBasedGatewayType.h" local="yes" import="no" module="no" objc="no">tEventBasedGatewayType.h</includes>
+    <class kind="class">XML::bpmn::tEventBasedGateway</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tEventBasedGatewayType.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEventBasedGatewayType_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>tEventBasedGatewayType</name>
+      <anchorfile>tEventBasedGatewayType_8h.html</anchorfile>
+      <anchor>a0523988d0750905f76e8b4c324a60ba4</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEventDefinition_8cpp.html</filename>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <class kind="class">XML::bpmn::tEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tExclusiveGateway.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tExclusiveGateway_8cpp.html</filename>
+    <includes id="tExclusiveGateway_8h" name="tExclusiveGateway.h" local="yes" import="no" module="no" objc="no">tExclusiveGateway.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tExclusiveGateway.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tExclusiveGateway_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
+    <class kind="class">XML::bpmn::tExclusiveGateway</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tExpression.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tExpression_8cpp.html</filename>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tExpression.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tExpression_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElementWithMixedContent_8h" name="tBaseElementWithMixedContent.h" local="yes" import="no" module="no" objc="no">tBaseElementWithMixedContent.h</includes>
+    <class kind="class">XML::bpmn::tExpression</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>textAnnotation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>textAnnotation_8cpp.html</filename>
+    <includes id="textAnnotation_8h" name="textAnnotation.h" local="yes" import="no" module="no" objc="no">textAnnotation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>textAnnotation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>textAnnotation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tTextAnnotation_8h" name="tTextAnnotation.h" local="yes" import="no" module="no" objc="no">tTextAnnotation.h</includes>
+    <class kind="class">XML::bpmn::textAnnotation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tExtension.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tExtension_8cpp.html</filename>
+    <includes id="tExtension_8h" name="tExtension.h" local="yes" import="no" module="no" objc="no">tExtension.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tExtension.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tExtension_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tDocumentation_8h" name="tDocumentation.h" local="yes" import="no" module="no" objc="no">tDocumentation.h</includes>
+    <class kind="class">XML::bpmn::tExtension</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tExtensionElements.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tExtensionElements_8cpp.html</filename>
+    <includes id="tExtensionElements_8h" name="tExtensionElements.h" local="yes" import="no" module="no" objc="no">tExtensionElements.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tExtensionElements.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tExtensionElements_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <class kind="class">XML::bpmn::tExtensionElements</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tFlowElement.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tFlowElement_8cpp.html</filename>
+    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tFlowElement.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tFlowElement_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tAuditing_8h" name="tAuditing.h" local="yes" import="no" module="no" objc="no">tAuditing.h</includes>
+    <includes id="tMonitoring_8h" name="tMonitoring.h" local="yes" import="no" module="no" objc="no">tMonitoring.h</includes>
+    <class kind="class">XML::bpmn::tFlowElement</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tFlowNode.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tFlowNode_8cpp.html</filename>
+    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tFlowNode.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tFlowNode_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
+    <class kind="class">XML::bpmn::tFlowNode</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tFormalExpression.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tFormalExpression_8cpp.html</filename>
+    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tFormalExpression.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tFormalExpression_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+    <class kind="class">XML::bpmn::tFormalExpression</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tGateway.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGateway_8cpp.html</filename>
+    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tGateway.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGateway_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
+    <includes id="tGatewayDirection_8h" name="tGatewayDirection.h" local="yes" import="no" module="no" objc="no">tGatewayDirection.h</includes>
+    <class kind="class">XML::bpmn::tGateway</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tGatewayDirection.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGatewayDirection_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>tGatewayDirection</name>
+      <anchorfile>tGatewayDirection_8h.html</anchorfile>
+      <anchor>a685f33360b9744a9cefd1df2c036b788</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalBusinessRuleTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalBusinessRuleTask_8cpp.html</filename>
+    <includes id="tGlobalBusinessRuleTask_8h" name="tGlobalBusinessRuleTask.h" local="yes" import="no" module="no" objc="no">tGlobalBusinessRuleTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalBusinessRuleTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalBusinessRuleTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
+    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
+    <class kind="class">XML::bpmn::tGlobalBusinessRuleTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalChoreographyTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalChoreographyTask_8cpp.html</filename>
+    <includes id="tGlobalChoreographyTask_8h" name="tGlobalChoreographyTask.h" local="yes" import="no" module="no" objc="no">tGlobalChoreographyTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalChoreographyTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalChoreographyTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tChoreography_8h" name="tChoreography.h" local="yes" import="no" module="no" objc="no">tChoreography.h</includes>
+    <class kind="class">XML::bpmn::tGlobalChoreographyTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalConversation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalConversation_8cpp.html</filename>
+    <includes id="tGlobalConversation_8h" name="tGlobalConversation.h" local="yes" import="no" module="no" objc="no">tGlobalConversation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalConversation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalConversation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCollaboration_8h" name="tCollaboration.h" local="yes" import="no" module="no" objc="no">tCollaboration.h</includes>
+    <class kind="class">XML::bpmn::tGlobalConversation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalManualTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalManualTask_8cpp.html</filename>
+    <includes id="tGlobalManualTask_8h" name="tGlobalManualTask.h" local="yes" import="no" module="no" objc="no">tGlobalManualTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalManualTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalManualTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
+    <class kind="class">XML::bpmn::tGlobalManualTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalScriptTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalScriptTask_8cpp.html</filename>
+    <includes id="tGlobalScriptTask_8h" name="tGlobalScriptTask.h" local="yes" import="no" module="no" objc="no">tGlobalScriptTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalScriptTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalScriptTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
+    <includes id="tScript_8h" name="tScript.h" local="yes" import="no" module="no" objc="no">tScript.h</includes>
+    <class kind="class">XML::bpmn::tGlobalScriptTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalTask_8cpp.html</filename>
+    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCallableElement_8h" name="tCallableElement.h" local="yes" import="no" module="no" objc="no">tCallableElement.h</includes>
+    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
+    <class kind="class">XML::bpmn::tGlobalTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalUserTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalUserTask_8cpp.html</filename>
+    <includes id="tGlobalUserTask_8h" name="tGlobalUserTask.h" local="yes" import="no" module="no" objc="no">tGlobalUserTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tGlobalUserTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGlobalUserTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
+    <includes id="tRendering_8h" name="tRendering.h" local="yes" import="no" module="no" objc="no">tRendering.h</includes>
+    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
+    <class kind="class">XML::bpmn::tGlobalUserTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tGroup.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGroup_8cpp.html</filename>
+    <includes id="tGroup_8h" name="tGroup.h" local="yes" import="no" module="no" objc="no">tGroup.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tGroup.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tGroup_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
+    <class kind="class">XML::bpmn::tGroup</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>throwEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>throwEvent_8cpp.html</filename>
+    <includes id="throwEvent_8h" name="throwEvent.h" local="yes" import="no" module="no" objc="no">throwEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>throwEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>throwEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tThrowEvent_8h" name="tThrowEvent.h" local="yes" import="no" module="no" objc="no">tThrowEvent.h</includes>
+    <class kind="class">XML::bpmn::throwEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tHumanPerformer.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tHumanPerformer_8cpp.html</filename>
+    <includes id="tHumanPerformer_8h" name="tHumanPerformer.h" local="yes" import="no" module="no" objc="no">tHumanPerformer.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tHumanPerformer.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tHumanPerformer_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tPerformer_8h" name="tPerformer.h" local="yes" import="no" module="no" objc="no">tPerformer.h</includes>
+    <class kind="class">XML::bpmn::tHumanPerformer</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>timerEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>timerEventDefinition_8cpp.html</filename>
+    <includes id="timerEventDefinition_8h" name="timerEventDefinition.h" local="yes" import="no" module="no" objc="no">timerEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>timerEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>timerEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tTimerEventDefinition_8h" name="tTimerEventDefinition.h" local="yes" import="no" module="no" objc="no">tTimerEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::timerEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tImplementation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tImplementation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>tImplementation</name>
+      <anchorfile>tImplementation_8h.html</anchorfile>
+      <anchor>ac4642eb4a5ff0a246c7807ee4b6b6829</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tImplicitThrowEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tImplicitThrowEvent_8cpp.html</filename>
+    <includes id="tImplicitThrowEvent_8h" name="tImplicitThrowEvent.h" local="yes" import="no" module="no" objc="no">tImplicitThrowEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tImplicitThrowEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tImplicitThrowEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tThrowEvent_8h" name="tThrowEvent.h" local="yes" import="no" module="no" objc="no">tThrowEvent.h</includes>
+    <class kind="class">XML::bpmn::tImplicitThrowEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tImport.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tImport_8cpp.html</filename>
+    <includes id="tImport_8h" name="tImport.h" local="yes" import="no" module="no" objc="no">tImport.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tImport.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tImport_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <class kind="class">XML::bpmn::tImport</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tInclusiveGateway.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tInclusiveGateway_8cpp.html</filename>
+    <includes id="tInclusiveGateway_8h" name="tInclusiveGateway.h" local="yes" import="no" module="no" objc="no">tInclusiveGateway.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tInclusiveGateway.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tInclusiveGateway_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
+    <class kind="class">XML::bpmn::tInclusiveGateway</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tInputOutputBinding.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tInputOutputBinding_8cpp.html</filename>
+    <includes id="tInputOutputBinding_8h" name="tInputOutputBinding.h" local="yes" import="no" module="no" objc="no">tInputOutputBinding.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tInputOutputBinding.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tInputOutputBinding_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tInputOutputBinding</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tInputOutputSpecification.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tInputOutputSpecification_8cpp.html</filename>
+    <includes id="tInputOutputSpecification_8h" name="tInputOutputSpecification.h" local="yes" import="no" module="no" objc="no">tInputOutputSpecification.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tInputOutputSpecification.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tInputOutputSpecification_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tDataInput_8h" name="tDataInput.h" local="yes" import="no" module="no" objc="no">tDataInput.h</includes>
+    <includes id="tDataOutput_8h" name="tDataOutput.h" local="yes" import="no" module="no" objc="no">tDataOutput.h</includes>
+    <includes id="tInputSet_8h" name="tInputSet.h" local="yes" import="no" module="no" objc="no">tInputSet.h</includes>
+    <includes id="tOutputSet_8h" name="tOutputSet.h" local="yes" import="no" module="no" objc="no">tOutputSet.h</includes>
+    <class kind="class">XML::bpmn::tInputOutputSpecification</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tInputSet.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tInputSet_8cpp.html</filename>
+    <includes id="tInputSet_8h" name="tInputSet.h" local="yes" import="no" module="no" objc="no">tInputSet.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tInputSet.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tInputSet_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tInputSet</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tInterface.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tInterface_8cpp.html</filename>
+    <includes id="tInterface_8h" name="tInterface.h" local="yes" import="no" module="no" objc="no">tInterface.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tInterface.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tInterface_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <includes id="tOperation_8h" name="tOperation.h" local="yes" import="no" module="no" objc="no">tOperation.h</includes>
+    <class kind="class">XML::bpmn::tInterface</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tIntermediateCatchEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tIntermediateCatchEvent_8cpp.html</filename>
+    <includes id="tIntermediateCatchEvent_8h" name="tIntermediateCatchEvent.h" local="yes" import="no" module="no" objc="no">tIntermediateCatchEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tIntermediateCatchEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tIntermediateCatchEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCatchEvent_8h" name="tCatchEvent.h" local="yes" import="no" module="no" objc="no">tCatchEvent.h</includes>
+    <class kind="class">XML::bpmn::tIntermediateCatchEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tIntermediateThrowEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tIntermediateThrowEvent_8cpp.html</filename>
+    <includes id="tIntermediateThrowEvent_8h" name="tIntermediateThrowEvent.h" local="yes" import="no" module="no" objc="no">tIntermediateThrowEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tIntermediateThrowEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tIntermediateThrowEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tThrowEvent_8h" name="tThrowEvent.h" local="yes" import="no" module="no" objc="no">tThrowEvent.h</includes>
+    <class kind="class">XML::bpmn::tIntermediateThrowEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tItemDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tItemDefinition_8cpp.html</filename>
+    <includes id="tItemDefinition_8h" name="tItemDefinition.h" local="yes" import="no" module="no" objc="no">tItemDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tItemDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tItemDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <includes id="tItemKind_8h" name="tItemKind.h" local="yes" import="no" module="no" objc="no">tItemKind.h</includes>
+    <class kind="class">XML::bpmn::tItemDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tItemKind.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tItemKind_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>tItemKind</name>
+      <anchorfile>tItemKind_8h.html</anchorfile>
+      <anchor>af1477e44e051a7055ade69b8c61786c8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tLane.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tLane_8cpp.html</filename>
+    <includes id="tLane_8h" name="tLane.h" local="yes" import="no" module="no" objc="no">tLane.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tLane.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tLane_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tLaneSet_8h" name="tLaneSet.h" local="yes" import="no" module="no" objc="no">tLaneSet.h</includes>
+    <class kind="class">XML::bpmn::tLane</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tLaneSet.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tLaneSet_8cpp.html</filename>
+    <includes id="tLaneSet_8h" name="tLaneSet.h" local="yes" import="no" module="no" objc="no">tLaneSet.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tLaneSet.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tLaneSet_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tLane_8h" name="tLane.h" local="yes" import="no" module="no" objc="no">tLane.h</includes>
+    <class kind="class">XML::bpmn::tLaneSet</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tLinkEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tLinkEventDefinition_8cpp.html</filename>
+    <includes id="tLinkEventDefinition_8h" name="tLinkEventDefinition.h" local="yes" import="no" module="no" objc="no">tLinkEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tLinkEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tLinkEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::tLinkEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tLoopCharacteristics.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tLoopCharacteristics_8cpp.html</filename>
+    <includes id="tLoopCharacteristics_8h" name="tLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tLoopCharacteristics.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tLoopCharacteristics.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tLoopCharacteristics_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tLoopCharacteristics</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tManualTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tManualTask_8cpp.html</filename>
+    <includes id="tManualTask_8h" name="tManualTask.h" local="yes" import="no" module="no" objc="no">tManualTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tManualTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tManualTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
+    <class kind="class">XML::bpmn::tManualTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tMessage.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMessage_8cpp.html</filename>
+    <includes id="tMessage_8h" name="tMessage.h" local="yes" import="no" module="no" objc="no">tMessage.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tMessage.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMessage_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <class kind="class">XML::bpmn::tMessage</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tMessageEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMessageEventDefinition_8cpp.html</filename>
+    <includes id="tMessageEventDefinition_8h" name="tMessageEventDefinition.h" local="yes" import="no" module="no" objc="no">tMessageEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tMessageEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMessageEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::tMessageEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tMessageFlow.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMessageFlow_8cpp.html</filename>
+    <includes id="tMessageFlow_8h" name="tMessageFlow.h" local="yes" import="no" module="no" objc="no">tMessageFlow.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tMessageFlow.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMessageFlow_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tMessageFlow</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tMessageFlowAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMessageFlowAssociation_8cpp.html</filename>
+    <includes id="tMessageFlowAssociation_8h" name="tMessageFlowAssociation.h" local="yes" import="no" module="no" objc="no">tMessageFlowAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tMessageFlowAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMessageFlowAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tMessageFlowAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tMonitoring.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMonitoring_8cpp.html</filename>
+    <includes id="tMonitoring_8h" name="tMonitoring.h" local="yes" import="no" module="no" objc="no">tMonitoring.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tMonitoring.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMonitoring_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tMonitoring</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tMultiInstanceFlowCondition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMultiInstanceFlowCondition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>tMultiInstanceFlowCondition</name>
+      <anchorfile>tMultiInstanceFlowCondition_8h.html</anchorfile>
+      <anchor>a6e4a3e96546216cf8bbe556d78fc7cd0</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tMultiInstanceLoopCharacteristics.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMultiInstanceLoopCharacteristics_8cpp.html</filename>
+    <includes id="tMultiInstanceLoopCharacteristics_8h" name="tMultiInstanceLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tMultiInstanceLoopCharacteristics.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tMultiInstanceLoopCharacteristics.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tMultiInstanceLoopCharacteristics_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tLoopCharacteristics_8h" name="tLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tLoopCharacteristics.h</includes>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+    <includes id="tDataInput_8h" name="tDataInput.h" local="yes" import="no" module="no" objc="no">tDataInput.h</includes>
+    <includes id="tDataOutput_8h" name="tDataOutput.h" local="yes" import="no" module="no" objc="no">tDataOutput.h</includes>
+    <includes id="tComplexBehaviorDefinition_8h" name="tComplexBehaviorDefinition.h" local="yes" import="no" module="no" objc="no">tComplexBehaviorDefinition.h</includes>
+    <includes id="tMultiInstanceFlowCondition_8h" name="tMultiInstanceFlowCondition.h" local="yes" import="no" module="no" objc="no">tMultiInstanceFlowCondition.h</includes>
+    <class kind="class">XML::bpmn::tMultiInstanceLoopCharacteristics</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tOperation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tOperation_8cpp.html</filename>
+    <includes id="tOperation_8h" name="tOperation.h" local="yes" import="no" module="no" objc="no">tOperation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tOperation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tOperation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tOperation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tOutputSet.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tOutputSet_8cpp.html</filename>
+    <includes id="tOutputSet_8h" name="tOutputSet.h" local="yes" import="no" module="no" objc="no">tOutputSet.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tOutputSet.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tOutputSet_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tOutputSet</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tParallelGateway.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tParallelGateway_8cpp.html</filename>
+    <includes id="tParallelGateway_8h" name="tParallelGateway.h" local="yes" import="no" module="no" objc="no">tParallelGateway.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tParallelGateway.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tParallelGateway_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
+    <class kind="class">XML::bpmn::tParallelGateway</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tParticipant.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tParticipant_8cpp.html</filename>
+    <includes id="tParticipant_8h" name="tParticipant.h" local="yes" import="no" module="no" objc="no">tParticipant.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tParticipant.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tParticipant_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tParticipantMultiplicity_8h" name="tParticipantMultiplicity.h" local="yes" import="no" module="no" objc="no">tParticipantMultiplicity.h</includes>
+    <class kind="class">XML::bpmn::tParticipant</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tParticipantAssociation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tParticipantAssociation_8cpp.html</filename>
+    <includes id="tParticipantAssociation_8h" name="tParticipantAssociation.h" local="yes" import="no" module="no" objc="no">tParticipantAssociation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tParticipantAssociation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tParticipantAssociation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tParticipantAssociation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tParticipantMultiplicity.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tParticipantMultiplicity_8cpp.html</filename>
+    <includes id="tParticipantMultiplicity_8h" name="tParticipantMultiplicity.h" local="yes" import="no" module="no" objc="no">tParticipantMultiplicity.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tParticipantMultiplicity.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tParticipantMultiplicity_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tParticipantMultiplicity</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tPartnerEntity.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tPartnerEntity_8cpp.html</filename>
+    <includes id="tPartnerEntity_8h" name="tPartnerEntity.h" local="yes" import="no" module="no" objc="no">tPartnerEntity.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tPartnerEntity.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tPartnerEntity_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <class kind="class">XML::bpmn::tPartnerEntity</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tPartnerRole.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tPartnerRole_8cpp.html</filename>
+    <includes id="tPartnerRole_8h" name="tPartnerRole.h" local="yes" import="no" module="no" objc="no">tPartnerRole.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tPartnerRole.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tPartnerRole_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <class kind="class">XML::bpmn::tPartnerRole</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tPerformer.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tPerformer_8cpp.html</filename>
+    <includes id="tPerformer_8h" name="tPerformer.h" local="yes" import="no" module="no" objc="no">tPerformer.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tPerformer.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tPerformer_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
+    <class kind="class">XML::bpmn::tPerformer</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tPotentialOwner.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tPotentialOwner_8cpp.html</filename>
+    <includes id="tPotentialOwner_8h" name="tPotentialOwner.h" local="yes" import="no" module="no" objc="no">tPotentialOwner.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tPotentialOwner.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tPotentialOwner_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tHumanPerformer_8h" name="tHumanPerformer.h" local="yes" import="no" module="no" objc="no">tHumanPerformer.h</includes>
+    <class kind="class">XML::bpmn::tPotentialOwner</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tProcess.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tProcess_8cpp.html</filename>
+    <includes id="tProcess_8h" name="tProcess.h" local="yes" import="no" module="no" objc="no">tProcess.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tProcess.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tProcess_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCallableElement_8h" name="tCallableElement.h" local="yes" import="no" module="no" objc="no">tCallableElement.h</includes>
+    <includes id="tAuditing_8h" name="tAuditing.h" local="yes" import="no" module="no" objc="no">tAuditing.h</includes>
+    <includes id="tMonitoring_8h" name="tMonitoring.h" local="yes" import="no" module="no" objc="no">tMonitoring.h</includes>
+    <includes id="tProperty_8h" name="tProperty.h" local="yes" import="no" module="no" objc="no">tProperty.h</includes>
+    <includes id="tLaneSet_8h" name="tLaneSet.h" local="yes" import="no" module="no" objc="no">tLaneSet.h</includes>
+    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
+    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
+    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
+    <includes id="tCorrelationSubscription_8h" name="tCorrelationSubscription.h" local="yes" import="no" module="no" objc="no">tCorrelationSubscription.h</includes>
+    <includes id="tProcessType_8h" name="tProcessType.h" local="yes" import="no" module="no" objc="no">tProcessType.h</includes>
+    <class kind="class">XML::bpmn::tProcess</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tProcessType.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tProcessType_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>tProcessType</name>
+      <anchorfile>tProcessType_8h.html</anchorfile>
+      <anchor>a00d8f78f052e6a27b6f510e5af842237</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tProperty.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tProperty_8cpp.html</filename>
+    <includes id="tProperty_8h" name="tProperty.h" local="yes" import="no" module="no" objc="no">tProperty.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tProperty.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tProperty_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
+    <class kind="class">XML::bpmn::tProperty</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tReceiveTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tReceiveTask_8cpp.html</filename>
+    <includes id="tReceiveTask_8h" name="tReceiveTask.h" local="yes" import="no" module="no" objc="no">tReceiveTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tReceiveTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tReceiveTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
+    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
+    <class kind="class">XML::bpmn::tReceiveTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tRelationship.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tRelationship_8cpp.html</filename>
+    <includes id="tRelationship_8h" name="tRelationship.h" local="yes" import="no" module="no" objc="no">tRelationship.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tRelationship.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tRelationship_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tRelationshipDirection_8h" name="tRelationshipDirection.h" local="yes" import="no" module="no" objc="no">tRelationshipDirection.h</includes>
+    <class kind="class">XML::bpmn::tRelationship</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tRelationshipDirection.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tRelationshipDirection_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>tRelationshipDirection</name>
+      <anchorfile>tRelationshipDirection_8h.html</anchorfile>
+      <anchor>aea663760e41d1dbf59eee406aef590bf</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tRendering.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tRendering_8cpp.html</filename>
+    <includes id="tRendering_8h" name="tRendering.h" local="yes" import="no" module="no" objc="no">tRendering.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tRendering.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tRendering_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tRendering</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tResource.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tResource_8cpp.html</filename>
+    <includes id="tResource_8h" name="tResource.h" local="yes" import="no" module="no" objc="no">tResource.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tResource.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tResource_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <includes id="tResourceParameter_8h" name="tResourceParameter.h" local="yes" import="no" module="no" objc="no">tResourceParameter.h</includes>
+    <class kind="class">XML::bpmn::tResource</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tResourceAssignmentExpression.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tResourceAssignmentExpression_8cpp.html</filename>
+    <includes id="tResourceAssignmentExpression_8h" name="tResourceAssignmentExpression.h" local="yes" import="no" module="no" objc="no">tResourceAssignmentExpression.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tResourceAssignmentExpression.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tResourceAssignmentExpression_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+    <class kind="class">XML::bpmn::tResourceAssignmentExpression</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tResourceParameter.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tResourceParameter_8cpp.html</filename>
+    <includes id="tResourceParameter_8h" name="tResourceParameter.h" local="yes" import="no" module="no" objc="no">tResourceParameter.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tResourceParameter.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tResourceParameter_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tResourceParameter</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tResourceParameterBinding.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tResourceParameterBinding_8cpp.html</filename>
+    <includes id="tResourceParameterBinding_8h" name="tResourceParameterBinding.h" local="yes" import="no" module="no" objc="no">tResourceParameterBinding.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tResourceParameterBinding.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tResourceParameterBinding_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+    <class kind="class">XML::bpmn::tResourceParameterBinding</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tResourceRole.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tResourceRole_8cpp.html</filename>
+    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tResourceRole.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tResourceRole_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <includes id="tResourceAssignmentExpression_8h" name="tResourceAssignmentExpression.h" local="yes" import="no" module="no" objc="no">tResourceAssignmentExpression.h</includes>
+    <includes id="tResourceParameterBinding_8h" name="tResourceParameterBinding.h" local="yes" import="no" module="no" objc="no">tResourceParameterBinding.h</includes>
+    <class kind="class">XML::bpmn::tResourceRole</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tRootElement.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tRootElement_8cpp.html</filename>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tRootElement.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tRootElement_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
+    <class kind="class">XML::bpmn::tRootElement</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tScript.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tScript_8cpp.html</filename>
+    <includes id="tScript_8h" name="tScript.h" local="yes" import="no" module="no" objc="no">tScript.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tScript.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tScript_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <class kind="class">XML::bpmn::tScript</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tScriptTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tScriptTask_8cpp.html</filename>
+    <includes id="tScriptTask_8h" name="tScriptTask.h" local="yes" import="no" module="no" objc="no">tScriptTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tScriptTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tScriptTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
+    <includes id="tScript_8h" name="tScript.h" local="yes" import="no" module="no" objc="no">tScript.h</includes>
+    <class kind="class">XML::bpmn::tScriptTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tSendTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSendTask_8cpp.html</filename>
+    <includes id="tSendTask_8h" name="tSendTask.h" local="yes" import="no" module="no" objc="no">tSendTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tSendTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSendTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
+    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
+    <class kind="class">XML::bpmn::tSendTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tSequenceFlow.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSequenceFlow_8cpp.html</filename>
+    <includes id="tSequenceFlow_8h" name="tSequenceFlow.h" local="yes" import="no" module="no" objc="no">tSequenceFlow.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tSequenceFlow.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSequenceFlow_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+    <class kind="class">XML::bpmn::tSequenceFlow</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tServiceTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tServiceTask_8cpp.html</filename>
+    <includes id="tServiceTask_8h" name="tServiceTask.h" local="yes" import="no" module="no" objc="no">tServiceTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tServiceTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tServiceTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
+    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
+    <class kind="class">XML::bpmn::tServiceTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tSignal.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSignal_8cpp.html</filename>
+    <includes id="tSignal_8h" name="tSignal.h" local="yes" import="no" module="no" objc="no">tSignal.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tSignal.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSignal_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
+    <class kind="class">XML::bpmn::tSignal</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tSignalEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSignalEventDefinition_8cpp.html</filename>
+    <includes id="tSignalEventDefinition_8h" name="tSignalEventDefinition.h" local="yes" import="no" module="no" objc="no">tSignalEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tSignalEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSignalEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::tSignalEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tStandardLoopCharacteristics.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tStandardLoopCharacteristics_8cpp.html</filename>
+    <includes id="tStandardLoopCharacteristics_8h" name="tStandardLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tStandardLoopCharacteristics.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tStandardLoopCharacteristics.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tStandardLoopCharacteristics_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tLoopCharacteristics_8h" name="tLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tLoopCharacteristics.h</includes>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+    <class kind="class">XML::bpmn::tStandardLoopCharacteristics</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tStartEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tStartEvent_8cpp.html</filename>
+    <includes id="tStartEvent_8h" name="tStartEvent.h" local="yes" import="no" module="no" objc="no">tStartEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tStartEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tStartEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tCatchEvent_8h" name="tCatchEvent.h" local="yes" import="no" module="no" objc="no">tCatchEvent.h</includes>
+    <class kind="class">XML::bpmn::tStartEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tSubChoreography.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSubChoreography_8cpp.html</filename>
+    <includes id="tSubChoreography_8h" name="tSubChoreography.h" local="yes" import="no" module="no" objc="no">tSubChoreography.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tSubChoreography.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSubChoreography_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tChoreographyActivity_8h" name="tChoreographyActivity.h" local="yes" import="no" module="no" objc="no">tChoreographyActivity.h</includes>
+    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
+    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
+    <class kind="class">XML::bpmn::tSubChoreography</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tSubConversation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSubConversation_8cpp.html</filename>
+    <includes id="tSubConversation_8h" name="tSubConversation.h" local="yes" import="no" module="no" objc="no">tSubConversation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tSubConversation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSubConversation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
+    <class kind="class">XML::bpmn::tSubConversation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tSubProcess.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSubProcess_8cpp.html</filename>
+    <includes id="tSubProcess_8h" name="tSubProcess.h" local="yes" import="no" module="no" objc="no">tSubProcess.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tSubProcess.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tSubProcess_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tActivity_8h" name="tActivity.h" local="yes" import="no" module="no" objc="no">tActivity.h</includes>
+    <includes id="tLaneSet_8h" name="tLaneSet.h" local="yes" import="no" module="no" objc="no">tLaneSet.h</includes>
+    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
+    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
+    <class kind="class">XML::bpmn::tSubProcess</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tTask_8cpp.html</filename>
+    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tActivity_8h" name="tActivity.h" local="yes" import="no" module="no" objc="no">tActivity.h</includes>
+    <class kind="class">XML::bpmn::tTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tTerminateEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tTerminateEventDefinition_8cpp.html</filename>
+    <includes id="tTerminateEventDefinition_8h" name="tTerminateEventDefinition.h" local="yes" import="no" module="no" objc="no">tTerminateEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tTerminateEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tTerminateEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::tTerminateEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tText.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tText_8cpp.html</filename>
+    <includes id="tText_8h" name="tText.h" local="yes" import="no" module="no" objc="no">tText.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tText.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tText_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <class kind="class">XML::bpmn::tText</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tTextAnnotation.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tTextAnnotation_8cpp.html</filename>
+    <includes id="tTextAnnotation_8h" name="tTextAnnotation.h" local="yes" import="no" module="no" objc="no">tTextAnnotation.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tTextAnnotation.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tTextAnnotation_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
+    <includes id="tText_8h" name="tText.h" local="yes" import="no" module="no" objc="no">tText.h</includes>
+    <class kind="class">XML::bpmn::tTextAnnotation</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tThrowEvent.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tThrowEvent_8cpp.html</filename>
+    <includes id="tThrowEvent_8h" name="tThrowEvent.h" local="yes" import="no" module="no" objc="no">tThrowEvent.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tThrowEvent.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tThrowEvent_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEvent_8h" name="tEvent.h" local="yes" import="no" module="no" objc="no">tEvent.h</includes>
+    <includes id="tDataInput_8h" name="tDataInput.h" local="yes" import="no" module="no" objc="no">tDataInput.h</includes>
+    <includes id="tDataInputAssociation_8h" name="tDataInputAssociation.h" local="yes" import="no" module="no" objc="no">tDataInputAssociation.h</includes>
+    <includes id="tInputSet_8h" name="tInputSet.h" local="yes" import="no" module="no" objc="no">tInputSet.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <class kind="class">XML::bpmn::tThrowEvent</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tTimerEventDefinition.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tTimerEventDefinition_8cpp.html</filename>
+    <includes id="tTimerEventDefinition_8h" name="tTimerEventDefinition.h" local="yes" import="no" module="no" objc="no">tTimerEventDefinition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tTimerEventDefinition.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tTimerEventDefinition_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
+    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
+    <class kind="class">XML::bpmn::tTimerEventDefinition</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tTransaction.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tTransaction_8cpp.html</filename>
+    <includes id="tTransaction_8h" name="tTransaction.h" local="yes" import="no" module="no" objc="no">tTransaction.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tTransaction.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tTransaction_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tSubProcess_8h" name="tSubProcess.h" local="yes" import="no" module="no" objc="no">tSubProcess.h</includes>
+    <includes id="tTransactionMethod_8h" name="tTransactionMethod.h" local="yes" import="no" module="no" objc="no">tTransactionMethod.h</includes>
+    <class kind="class">XML::bpmn::tTransaction</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>tTransactionMethod.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tTransactionMethod_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <member kind="typedef">
+      <type>std::string</type>
+      <name>tTransactionMethod</name>
+      <anchorfile>tTransactionMethod_8h.html</anchorfile>
+      <anchor>ade2f8383a56aa100e5d5f25aeb30266b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>tUserTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tUserTask_8cpp.html</filename>
+    <includes id="tUserTask_8h" name="tUserTask.h" local="yes" import="no" module="no" objc="no">tUserTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>tUserTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>tUserTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
+    <includes id="tRendering_8h" name="tRendering.h" local="yes" import="no" module="no" objc="no">tRendering.h</includes>
+    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
+    <class kind="class">XML::bpmn::tUserTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>userTask.cpp</name>
+    <path>build/xml/bpmn/</path>
+    <filename>userTask_8cpp.html</filename>
+    <includes id="userTask_8h" name="userTask.h" local="yes" import="no" module="no" objc="no">userTask.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>userTask.h</name>
+    <path>build/xml/bpmn/</path>
+    <filename>userTask_8h.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
+    <includes id="tUserTask_8h" name="tUserTask.h" local="yes" import="no" module="no" objc="no">tUserTask.h</includes>
+    <class kind="class">XML::bpmn::userTask</class>
+    <namespace>XML</namespace>
+    <namespace>XML::bpmn</namespace>
+  </compound>
+  <compound kind="file">
+    <name>XMLObject.cpp</name>
+    <path>build/xml/</path>
+    <filename>XMLObject_8cpp.html</filename>
+    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">XMLObject.h</includes>
+    <namespace>XML</namespace>
+  </compound>
+  <compound kind="file">
+    <name>XMLObject.h</name>
+    <path>build/xml/</path>
+    <filename>XMLObject_8h.html</filename>
+    <class kind="struct">XML::Value</class>
+    <class kind="struct">XML::Attribute</class>
+    <class kind="class">XML::XMLObject</class>
+    <namespace>XML</namespace>
+  </compound>
   <compound kind="file">
     <name>README.md</name>
     <path></path>
@@ -776,16 +4910,16 @@
   </compound>
   <compound kind="file">
     <name>Node.cpp</name>
-    <path>src/</path>
-    <filename>Node_8cpp.html</filename>
+    <path>build/xml/bpmn/</path>
+    <filename>build_2xml_2bpmn_2Node_8cpp.html</filename>
     <includes id="Node_8h" name="Node.h" local="yes" import="no" module="no" objc="no">Node.h</includes>
-    <includes id="Scope_8h" name="Scope.h" local="yes" import="no" module="no" objc="no">Scope.h</includes>
   </compound>
   <compound kind="file">
     <name>Node.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>xml_2bpmn_2Node_8cpp.html</filename>
+    <path>src/</path>
+    <filename>src_2Node_8cpp.html</filename>
     <includes id="Node_8h" name="Node.h" local="yes" import="no" module="no" objc="no">Node.h</includes>
+    <includes id="Scope_8h" name="Scope.h" local="yes" import="no" module="no" objc="no">Scope.h</includes>
   </compound>
   <compound kind="file">
     <name>Node.h</name>
@@ -1170,4140 +5304,6 @@
     <includes id="Task_8h" name="Task.h" local="yes" import="no" module="no" objc="no">Task.h</includes>
     <class kind="class">BPMN::UserTask</class>
     <namespace>BPMN</namespace>
-  </compound>
-  <compound kind="file">
-    <name>adHocSubProcess.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>adHocSubProcess_8cpp.html</filename>
-    <includes id="adHocSubProcess_8h" name="adHocSubProcess.h" local="yes" import="no" module="no" objc="no">adHocSubProcess.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>adHocSubProcess.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>adHocSubProcess_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tAdHocSubProcess_8h" name="tAdHocSubProcess.h" local="yes" import="no" module="no" objc="no">tAdHocSubProcess.h</includes>
-    <class kind="class">XML::bpmn::adHocSubProcess</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>baseElement.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>baseElement_8cpp.html</filename>
-    <includes id="baseElement_8h" name="baseElement.h" local="yes" import="no" module="no" objc="no">baseElement.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>baseElement.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>baseElement_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::baseElement</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>baseElementWithMixedContent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>baseElementWithMixedContent_8cpp.html</filename>
-    <includes id="baseElementWithMixedContent_8h" name="baseElementWithMixedContent.h" local="yes" import="no" module="no" objc="no">baseElementWithMixedContent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>baseElementWithMixedContent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>baseElementWithMixedContent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElementWithMixedContent_8h" name="tBaseElementWithMixedContent.h" local="yes" import="no" module="no" objc="no">tBaseElementWithMixedContent.h</includes>
-    <class kind="class">XML::bpmn::baseElementWithMixedContent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>boundaryEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>boundaryEvent_8cpp.html</filename>
-    <includes id="boundaryEvent_8h" name="boundaryEvent.h" local="yes" import="no" module="no" objc="no">boundaryEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>boundaryEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>boundaryEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBoundaryEvent_8h" name="tBoundaryEvent.h" local="yes" import="no" module="no" objc="no">tBoundaryEvent.h</includes>
-    <class kind="class">XML::bpmn::boundaryEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>Bounds.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>Bounds_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>BPMNDiagram.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>BPMNDiagram_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>BPMNEdge.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>BPMNEdge_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>BPMNLabel.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>BPMNLabel_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>BPMNLabelStyle.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>BPMNLabelStyle_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>BPMNPlane.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>BPMNPlane_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>BPMNShape.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>BPMNShape_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>businessRuleTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>businessRuleTask_8cpp.html</filename>
-    <includes id="businessRuleTask_8h" name="businessRuleTask.h" local="yes" import="no" module="no" objc="no">businessRuleTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>businessRuleTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>businessRuleTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBusinessRuleTask_8h" name="tBusinessRuleTask.h" local="yes" import="no" module="no" objc="no">tBusinessRuleTask.h</includes>
-    <class kind="class">XML::bpmn::businessRuleTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>callableElement.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>callableElement_8cpp.html</filename>
-    <includes id="callableElement_8h" name="callableElement.h" local="yes" import="no" module="no" objc="no">callableElement.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>callableElement.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>callableElement_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCallableElement_8h" name="tCallableElement.h" local="yes" import="no" module="no" objc="no">tCallableElement.h</includes>
-    <class kind="class">XML::bpmn::callableElement</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>callActivity.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>callActivity_8cpp.html</filename>
-    <includes id="callActivity_8h" name="callActivity.h" local="yes" import="no" module="no" objc="no">callActivity.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>callActivity.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>callActivity_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCallActivity_8h" name="tCallActivity.h" local="yes" import="no" module="no" objc="no">tCallActivity.h</includes>
-    <class kind="class">XML::bpmn::callActivity</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>callChoreography.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>callChoreography_8cpp.html</filename>
-    <includes id="callChoreography_8h" name="callChoreography.h" local="yes" import="no" module="no" objc="no">callChoreography.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>callChoreography.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>callChoreography_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCallChoreography_8h" name="tCallChoreography.h" local="yes" import="no" module="no" objc="no">tCallChoreography.h</includes>
-    <class kind="class">XML::bpmn::callChoreography</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>callConversation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>callConversation_8cpp.html</filename>
-    <includes id="callConversation_8h" name="callConversation.h" local="yes" import="no" module="no" objc="no">callConversation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>callConversation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>callConversation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCallConversation_8h" name="tCallConversation.h" local="yes" import="no" module="no" objc="no">tCallConversation.h</includes>
-    <class kind="class">XML::bpmn::callConversation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>cancelEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>cancelEventDefinition_8cpp.html</filename>
-    <includes id="cancelEventDefinition_8h" name="cancelEventDefinition.h" local="yes" import="no" module="no" objc="no">cancelEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>cancelEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>cancelEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCancelEventDefinition_8h" name="tCancelEventDefinition.h" local="yes" import="no" module="no" objc="no">tCancelEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::cancelEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>catchEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>catchEvent_8cpp.html</filename>
-    <includes id="catchEvent_8h" name="catchEvent.h" local="yes" import="no" module="no" objc="no">catchEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>catchEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>catchEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCatchEvent_8h" name="tCatchEvent.h" local="yes" import="no" module="no" objc="no">tCatchEvent.h</includes>
-    <class kind="class">XML::bpmn::catchEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>categoryValue.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>categoryValue_8cpp.html</filename>
-    <includes id="categoryValue_8h" name="categoryValue.h" local="yes" import="no" module="no" objc="no">categoryValue.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>categoryValue.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>categoryValue_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCategoryValue_8h" name="tCategoryValue.h" local="yes" import="no" module="no" objc="no">tCategoryValue.h</includes>
-    <class kind="class">XML::bpmn::categoryValue</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>choreographyActivity.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>choreographyActivity_8cpp.html</filename>
-    <includes id="choreographyActivity_8h" name="choreographyActivity.h" local="yes" import="no" module="no" objc="no">choreographyActivity.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>choreographyActivity.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>choreographyActivity_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tChoreographyActivity_8h" name="tChoreographyActivity.h" local="yes" import="no" module="no" objc="no">tChoreographyActivity.h</includes>
-    <class kind="class">XML::bpmn::choreographyActivity</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>choreographyTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>choreographyTask_8cpp.html</filename>
-    <includes id="choreographyTask_8h" name="choreographyTask.h" local="yes" import="no" module="no" objc="no">choreographyTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>choreographyTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>choreographyTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tChoreographyTask_8h" name="tChoreographyTask.h" local="yes" import="no" module="no" objc="no">tChoreographyTask.h</includes>
-    <class kind="class">XML::bpmn::choreographyTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>compensateEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>compensateEventDefinition_8cpp.html</filename>
-    <includes id="compensateEventDefinition_8h" name="compensateEventDefinition.h" local="yes" import="no" module="no" objc="no">compensateEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>compensateEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>compensateEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCompensateEventDefinition_8h" name="tCompensateEventDefinition.h" local="yes" import="no" module="no" objc="no">tCompensateEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::compensateEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>complexBehaviorDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>complexBehaviorDefinition_8cpp.html</filename>
-    <includes id="complexBehaviorDefinition_8h" name="complexBehaviorDefinition.h" local="yes" import="no" module="no" objc="no">complexBehaviorDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>complexBehaviorDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>complexBehaviorDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tComplexBehaviorDefinition_8h" name="tComplexBehaviorDefinition.h" local="yes" import="no" module="no" objc="no">tComplexBehaviorDefinition.h</includes>
-    <class kind="class">XML::bpmn::complexBehaviorDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>complexGateway.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>complexGateway_8cpp.html</filename>
-    <includes id="complexGateway_8h" name="complexGateway.h" local="yes" import="no" module="no" objc="no">complexGateway.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>complexGateway.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>complexGateway_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tComplexGateway_8h" name="tComplexGateway.h" local="yes" import="no" module="no" objc="no">tComplexGateway.h</includes>
-    <class kind="class">XML::bpmn::complexGateway</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>conditionalEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>conditionalEventDefinition_8cpp.html</filename>
-    <includes id="conditionalEventDefinition_8h" name="conditionalEventDefinition.h" local="yes" import="no" module="no" objc="no">conditionalEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>conditionalEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>conditionalEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tConditionalEventDefinition_8h" name="tConditionalEventDefinition.h" local="yes" import="no" module="no" objc="no">tConditionalEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::conditionalEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>conversationAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>conversationAssociation_8cpp.html</filename>
-    <includes id="conversationAssociation_8h" name="conversationAssociation.h" local="yes" import="no" module="no" objc="no">conversationAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>conversationAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>conversationAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tConversationAssociation_8h" name="tConversationAssociation.h" local="yes" import="no" module="no" objc="no">tConversationAssociation.h</includes>
-    <class kind="class">XML::bpmn::conversationAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>conversationLink.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>conversationLink_8cpp.html</filename>
-    <includes id="conversationLink_8h" name="conversationLink.h" local="yes" import="no" module="no" objc="no">conversationLink.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>conversationLink.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>conversationLink_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tConversationLink_8h" name="tConversationLink.h" local="yes" import="no" module="no" objc="no">tConversationLink.h</includes>
-    <class kind="class">XML::bpmn::conversationLink</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>conversationNode.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>conversationNode_8cpp.html</filename>
-    <includes id="conversationNode_8h" name="conversationNode.h" local="yes" import="no" module="no" objc="no">conversationNode.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>conversationNode.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>conversationNode_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
-    <class kind="class">XML::bpmn::conversationNode</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>correlationKey.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>correlationKey_8cpp.html</filename>
-    <includes id="correlationKey_8h" name="correlationKey.h" local="yes" import="no" module="no" objc="no">correlationKey.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>correlationKey.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>correlationKey_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCorrelationKey_8h" name="tCorrelationKey.h" local="yes" import="no" module="no" objc="no">tCorrelationKey.h</includes>
-    <class kind="class">XML::bpmn::correlationKey</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>correlationProperty.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>correlationProperty_8cpp.html</filename>
-    <includes id="correlationProperty_8h" name="correlationProperty.h" local="yes" import="no" module="no" objc="no">correlationProperty.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>correlationProperty.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>correlationProperty_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCorrelationProperty_8h" name="tCorrelationProperty.h" local="yes" import="no" module="no" objc="no">tCorrelationProperty.h</includes>
-    <class kind="class">XML::bpmn::correlationProperty</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>correlationPropertyBinding.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>correlationPropertyBinding_8cpp.html</filename>
-    <includes id="correlationPropertyBinding_8h" name="correlationPropertyBinding.h" local="yes" import="no" module="no" objc="no">correlationPropertyBinding.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>correlationPropertyBinding.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>correlationPropertyBinding_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCorrelationPropertyBinding_8h" name="tCorrelationPropertyBinding.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyBinding.h</includes>
-    <class kind="class">XML::bpmn::correlationPropertyBinding</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>correlationPropertyRetrievalExpression.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>correlationPropertyRetrievalExpression_8cpp.html</filename>
-    <includes id="correlationPropertyRetrievalExpression_8h" name="correlationPropertyRetrievalExpression.h" local="yes" import="no" module="no" objc="no">correlationPropertyRetrievalExpression.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>correlationPropertyRetrievalExpression.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>correlationPropertyRetrievalExpression_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCorrelationPropertyRetrievalExpression_8h" name="tCorrelationPropertyRetrievalExpression.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyRetrievalExpression.h</includes>
-    <class kind="class">XML::bpmn::correlationPropertyRetrievalExpression</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>correlationSubscription.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>correlationSubscription_8cpp.html</filename>
-    <includes id="correlationSubscription_8h" name="correlationSubscription.h" local="yes" import="no" module="no" objc="no">correlationSubscription.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>correlationSubscription.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>correlationSubscription_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCorrelationSubscription_8h" name="tCorrelationSubscription.h" local="yes" import="no" module="no" objc="no">tCorrelationSubscription.h</includes>
-    <class kind="class">XML::bpmn::correlationSubscription</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>dataAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataAssociation_8cpp.html</filename>
-    <includes id="dataAssociation_8h" name="dataAssociation.h" local="yes" import="no" module="no" objc="no">dataAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>dataAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataAssociation_8h" name="tDataAssociation.h" local="yes" import="no" module="no" objc="no">tDataAssociation.h</includes>
-    <class kind="class">XML::bpmn::dataAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>dataInput.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataInput_8cpp.html</filename>
-    <includes id="dataInput_8h" name="dataInput.h" local="yes" import="no" module="no" objc="no">dataInput.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>dataInput.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataInput_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataInput_8h" name="tDataInput.h" local="yes" import="no" module="no" objc="no">tDataInput.h</includes>
-    <class kind="class">XML::bpmn::dataInput</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>dataInputAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataInputAssociation_8cpp.html</filename>
-    <includes id="dataInputAssociation_8h" name="dataInputAssociation.h" local="yes" import="no" module="no" objc="no">dataInputAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>dataInputAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataInputAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataInputAssociation_8h" name="tDataInputAssociation.h" local="yes" import="no" module="no" objc="no">tDataInputAssociation.h</includes>
-    <class kind="class">XML::bpmn::dataInputAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>dataObject.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataObject_8cpp.html</filename>
-    <includes id="dataObject_8h" name="dataObject.h" local="yes" import="no" module="no" objc="no">dataObject.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>dataObject.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataObject_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataObject_8h" name="tDataObject.h" local="yes" import="no" module="no" objc="no">tDataObject.h</includes>
-    <class kind="class">XML::bpmn::dataObject</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>dataObjectReference.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataObjectReference_8cpp.html</filename>
-    <includes id="dataObjectReference_8h" name="dataObjectReference.h" local="yes" import="no" module="no" objc="no">dataObjectReference.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>dataObjectReference.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataObjectReference_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataObjectReference_8h" name="tDataObjectReference.h" local="yes" import="no" module="no" objc="no">tDataObjectReference.h</includes>
-    <class kind="class">XML::bpmn::dataObjectReference</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>dataOutput.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataOutput_8cpp.html</filename>
-    <includes id="dataOutput_8h" name="dataOutput.h" local="yes" import="no" module="no" objc="no">dataOutput.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>dataOutput.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataOutput_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataOutput_8h" name="tDataOutput.h" local="yes" import="no" module="no" objc="no">tDataOutput.h</includes>
-    <class kind="class">XML::bpmn::dataOutput</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>dataOutputAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataOutputAssociation_8cpp.html</filename>
-    <includes id="dataOutputAssociation_8h" name="dataOutputAssociation.h" local="yes" import="no" module="no" objc="no">dataOutputAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>dataOutputAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataOutputAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataOutputAssociation_8h" name="tDataOutputAssociation.h" local="yes" import="no" module="no" objc="no">tDataOutputAssociation.h</includes>
-    <class kind="class">XML::bpmn::dataOutputAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>dataState.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataState_8cpp.html</filename>
-    <includes id="dataState_8h" name="dataState.h" local="yes" import="no" module="no" objc="no">dataState.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>dataState.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataState_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
-    <class kind="class">XML::bpmn::dataState</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>dataStore.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataStore_8cpp.html</filename>
-    <includes id="dataStore_8h" name="dataStore.h" local="yes" import="no" module="no" objc="no">dataStore.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>dataStore.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataStore_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataStore_8h" name="tDataStore.h" local="yes" import="no" module="no" objc="no">tDataStore.h</includes>
-    <class kind="class">XML::bpmn::dataStore</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>dataStoreReference.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataStoreReference_8cpp.html</filename>
-    <includes id="dataStoreReference_8h" name="dataStoreReference.h" local="yes" import="no" module="no" objc="no">dataStoreReference.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>dataStoreReference.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>dataStoreReference_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataStoreReference_8h" name="tDataStoreReference.h" local="yes" import="no" module="no" objc="no">tDataStoreReference.h</includes>
-    <class kind="class">XML::bpmn::dataStoreReference</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>Diagram.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>Diagram_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>DiagramElement.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>DiagramElement_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>DiagramElement_extension.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>DiagramElement__extension_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>Edge.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>Edge_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>endEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>endEvent_8cpp.html</filename>
-    <includes id="endEvent_8h" name="endEvent.h" local="yes" import="no" module="no" objc="no">endEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>endEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>endEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEndEvent_8h" name="tEndEvent.h" local="yes" import="no" module="no" objc="no">tEndEvent.h</includes>
-    <class kind="class">XML::bpmn::endEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>endPoint.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>endPoint_8cpp.html</filename>
-    <includes id="endPoint_8h" name="endPoint.h" local="yes" import="no" module="no" objc="no">endPoint.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>endPoint.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>endPoint_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEndPoint_8h" name="tEndPoint.h" local="yes" import="no" module="no" objc="no">tEndPoint.h</includes>
-    <class kind="class">XML::bpmn::endPoint</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>errorEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>errorEventDefinition_8cpp.html</filename>
-    <includes id="errorEventDefinition_8h" name="errorEventDefinition.h" local="yes" import="no" module="no" objc="no">errorEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>errorEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>errorEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tErrorEventDefinition_8h" name="tErrorEventDefinition.h" local="yes" import="no" module="no" objc="no">tErrorEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::errorEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>escalationEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>escalationEventDefinition_8cpp.html</filename>
-    <includes id="escalationEventDefinition_8h" name="escalationEventDefinition.h" local="yes" import="no" module="no" objc="no">escalationEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>escalationEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>escalationEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEscalationEventDefinition_8h" name="tEscalationEventDefinition.h" local="yes" import="no" module="no" objc="no">tEscalationEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::escalationEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>eventBasedGateway.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>eventBasedGateway_8cpp.html</filename>
-    <includes id="eventBasedGateway_8h" name="eventBasedGateway.h" local="yes" import="no" module="no" objc="no">eventBasedGateway.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>eventBasedGateway.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>eventBasedGateway_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventBasedGateway_8h" name="tEventBasedGateway.h" local="yes" import="no" module="no" objc="no">tEventBasedGateway.h</includes>
-    <class kind="class">XML::bpmn::eventBasedGateway</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>eventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>eventDefinition_8cpp.html</filename>
-    <includes id="eventDefinition_8h" name="eventDefinition.h" local="yes" import="no" module="no" objc="no">eventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>eventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>eventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::eventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>exclusiveGateway.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>exclusiveGateway_8cpp.html</filename>
-    <includes id="exclusiveGateway_8h" name="exclusiveGateway.h" local="yes" import="no" module="no" objc="no">exclusiveGateway.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>exclusiveGateway.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>exclusiveGateway_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tExclusiveGateway_8h" name="tExclusiveGateway.h" local="yes" import="no" module="no" objc="no">tExclusiveGateway.h</includes>
-    <class kind="class">XML::bpmn::exclusiveGateway</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>extensionElements.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>extensionElements_8cpp.html</filename>
-    <includes id="extensionElements_8h" name="extensionElements.h" local="yes" import="no" module="no" objc="no">extensionElements.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>extensionElements.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>extensionElements_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tExtensionElements_8h" name="tExtensionElements.h" local="yes" import="no" module="no" objc="no">tExtensionElements.h</includes>
-    <class kind="class">XML::bpmn::extensionElements</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>flowElement.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>flowElement_8cpp.html</filename>
-    <includes id="flowElement_8h" name="flowElement.h" local="yes" import="no" module="no" objc="no">flowElement.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>flowElement.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>flowElement_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
-    <class kind="class">XML::bpmn::flowElement</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>flowNode.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>flowNode_8cpp.html</filename>
-    <includes id="flowNode_8h" name="flowNode.h" local="yes" import="no" module="no" objc="no">flowNode.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>flowNode.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>flowNode_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
-    <class kind="class">XML::bpmn::flowNode</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>Font.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>Font_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>formalExpression.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>formalExpression_8cpp.html</filename>
-    <includes id="formalExpression_8h" name="formalExpression.h" local="yes" import="no" module="no" objc="no">formalExpression.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>formalExpression.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>formalExpression_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
-    <class kind="class">XML::bpmn::formalExpression</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>globalBusinessRuleTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalBusinessRuleTask_8cpp.html</filename>
-    <includes id="globalBusinessRuleTask_8h" name="globalBusinessRuleTask.h" local="yes" import="no" module="no" objc="no">globalBusinessRuleTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>globalBusinessRuleTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalBusinessRuleTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGlobalBusinessRuleTask_8h" name="tGlobalBusinessRuleTask.h" local="yes" import="no" module="no" objc="no">tGlobalBusinessRuleTask.h</includes>
-    <class kind="class">XML::bpmn::globalBusinessRuleTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>globalChoreographyTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalChoreographyTask_8cpp.html</filename>
-    <includes id="globalChoreographyTask_8h" name="globalChoreographyTask.h" local="yes" import="no" module="no" objc="no">globalChoreographyTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>globalChoreographyTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalChoreographyTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGlobalChoreographyTask_8h" name="tGlobalChoreographyTask.h" local="yes" import="no" module="no" objc="no">tGlobalChoreographyTask.h</includes>
-    <class kind="class">XML::bpmn::globalChoreographyTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>globalConversation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalConversation_8cpp.html</filename>
-    <includes id="globalConversation_8h" name="globalConversation.h" local="yes" import="no" module="no" objc="no">globalConversation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>globalConversation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalConversation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGlobalConversation_8h" name="tGlobalConversation.h" local="yes" import="no" module="no" objc="no">tGlobalConversation.h</includes>
-    <class kind="class">XML::bpmn::globalConversation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>globalManualTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalManualTask_8cpp.html</filename>
-    <includes id="globalManualTask_8h" name="globalManualTask.h" local="yes" import="no" module="no" objc="no">globalManualTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>globalManualTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalManualTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGlobalManualTask_8h" name="tGlobalManualTask.h" local="yes" import="no" module="no" objc="no">tGlobalManualTask.h</includes>
-    <class kind="class">XML::bpmn::globalManualTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>globalScriptTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalScriptTask_8cpp.html</filename>
-    <includes id="globalScriptTask_8h" name="globalScriptTask.h" local="yes" import="no" module="no" objc="no">globalScriptTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>globalScriptTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalScriptTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGlobalScriptTask_8h" name="tGlobalScriptTask.h" local="yes" import="no" module="no" objc="no">tGlobalScriptTask.h</includes>
-    <class kind="class">XML::bpmn::globalScriptTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>globalTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalTask_8cpp.html</filename>
-    <includes id="globalTask_8h" name="globalTask.h" local="yes" import="no" module="no" objc="no">globalTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>globalTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
-    <class kind="class">XML::bpmn::globalTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>globalUserTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalUserTask_8cpp.html</filename>
-    <includes id="globalUserTask_8h" name="globalUserTask.h" local="yes" import="no" module="no" objc="no">globalUserTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>globalUserTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>globalUserTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGlobalUserTask_8h" name="tGlobalUserTask.h" local="yes" import="no" module="no" objc="no">tGlobalUserTask.h</includes>
-    <class kind="class">XML::bpmn::globalUserTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>humanPerformer.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>humanPerformer_8cpp.html</filename>
-    <includes id="humanPerformer_8h" name="humanPerformer.h" local="yes" import="no" module="no" objc="no">humanPerformer.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>humanPerformer.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>humanPerformer_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tHumanPerformer_8h" name="tHumanPerformer.h" local="yes" import="no" module="no" objc="no">tHumanPerformer.h</includes>
-    <class kind="class">XML::bpmn::humanPerformer</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>implicitThrowEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>implicitThrowEvent_8cpp.html</filename>
-    <includes id="implicitThrowEvent_8h" name="implicitThrowEvent.h" local="yes" import="no" module="no" objc="no">implicitThrowEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>implicitThrowEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>implicitThrowEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tImplicitThrowEvent_8h" name="tImplicitThrowEvent.h" local="yes" import="no" module="no" objc="no">tImplicitThrowEvent.h</includes>
-    <class kind="class">XML::bpmn::implicitThrowEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>inclusiveGateway.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>inclusiveGateway_8cpp.html</filename>
-    <includes id="inclusiveGateway_8h" name="inclusiveGateway.h" local="yes" import="no" module="no" objc="no">inclusiveGateway.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>inclusiveGateway.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>inclusiveGateway_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tInclusiveGateway_8h" name="tInclusiveGateway.h" local="yes" import="no" module="no" objc="no">tInclusiveGateway.h</includes>
-    <class kind="class">XML::bpmn::inclusiveGateway</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>inputSet.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>inputSet_8cpp.html</filename>
-    <includes id="inputSet_8h" name="inputSet.h" local="yes" import="no" module="no" objc="no">inputSet.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>inputSet.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>inputSet_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tInputSet_8h" name="tInputSet.h" local="yes" import="no" module="no" objc="no">tInputSet.h</includes>
-    <class kind="class">XML::bpmn::inputSet</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>intermediateCatchEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>intermediateCatchEvent_8cpp.html</filename>
-    <includes id="intermediateCatchEvent_8h" name="intermediateCatchEvent.h" local="yes" import="no" module="no" objc="no">intermediateCatchEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>intermediateCatchEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>intermediateCatchEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tIntermediateCatchEvent_8h" name="tIntermediateCatchEvent.h" local="yes" import="no" module="no" objc="no">tIntermediateCatchEvent.h</includes>
-    <class kind="class">XML::bpmn::intermediateCatchEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>intermediateThrowEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>intermediateThrowEvent_8cpp.html</filename>
-    <includes id="intermediateThrowEvent_8h" name="intermediateThrowEvent.h" local="yes" import="no" module="no" objc="no">intermediateThrowEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>intermediateThrowEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>intermediateThrowEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tIntermediateThrowEvent_8h" name="tIntermediateThrowEvent.h" local="yes" import="no" module="no" objc="no">tIntermediateThrowEvent.h</includes>
-    <class kind="class">XML::bpmn::intermediateThrowEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>ioBinding.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>ioBinding_8cpp.html</filename>
-    <includes id="ioBinding_8h" name="ioBinding.h" local="yes" import="no" module="no" objc="no">ioBinding.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>ioBinding.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>ioBinding_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tInputOutputBinding_8h" name="tInputOutputBinding.h" local="yes" import="no" module="no" objc="no">tInputOutputBinding.h</includes>
-    <class kind="class">XML::bpmn::ioBinding</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>ioSpecification.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>ioSpecification_8cpp.html</filename>
-    <includes id="ioSpecification_8h" name="ioSpecification.h" local="yes" import="no" module="no" objc="no">ioSpecification.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>ioSpecification.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>ioSpecification_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tInputOutputSpecification_8h" name="tInputOutputSpecification.h" local="yes" import="no" module="no" objc="no">tInputOutputSpecification.h</includes>
-    <class kind="class">XML::bpmn::ioSpecification</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>itemDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>itemDefinition_8cpp.html</filename>
-    <includes id="itemDefinition_8h" name="itemDefinition.h" local="yes" import="no" module="no" objc="no">itemDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>itemDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>itemDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tItemDefinition_8h" name="tItemDefinition.h" local="yes" import="no" module="no" objc="no">tItemDefinition.h</includes>
-    <class kind="class">XML::bpmn::itemDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>Label.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>Label_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>LabeledEdge.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>LabeledEdge_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>LabeledShape.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>LabeledShape_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>laneSet.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>laneSet_8cpp.html</filename>
-    <includes id="laneSet_8h" name="laneSet.h" local="yes" import="no" module="no" objc="no">laneSet.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>laneSet.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>laneSet_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tLaneSet_8h" name="tLaneSet.h" local="yes" import="no" module="no" objc="no">tLaneSet.h</includes>
-    <class kind="class">XML::bpmn::laneSet</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>linkEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>linkEventDefinition_8cpp.html</filename>
-    <includes id="linkEventDefinition_8h" name="linkEventDefinition.h" local="yes" import="no" module="no" objc="no">linkEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>linkEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>linkEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tLinkEventDefinition_8h" name="tLinkEventDefinition.h" local="yes" import="no" module="no" objc="no">tLinkEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::linkEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>loopCharacteristics.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>loopCharacteristics_8cpp.html</filename>
-    <includes id="loopCharacteristics_8h" name="loopCharacteristics.h" local="yes" import="no" module="no" objc="no">loopCharacteristics.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>loopCharacteristics.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>loopCharacteristics_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tLoopCharacteristics_8h" name="tLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tLoopCharacteristics.h</includes>
-    <class kind="class">XML::bpmn::loopCharacteristics</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>manualTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>manualTask_8cpp.html</filename>
-    <includes id="manualTask_8h" name="manualTask.h" local="yes" import="no" module="no" objc="no">manualTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>manualTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>manualTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tManualTask_8h" name="tManualTask.h" local="yes" import="no" module="no" objc="no">tManualTask.h</includes>
-    <class kind="class">XML::bpmn::manualTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>messageEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>messageEventDefinition_8cpp.html</filename>
-    <includes id="messageEventDefinition_8h" name="messageEventDefinition.h" local="yes" import="no" module="no" objc="no">messageEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>messageEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>messageEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tMessageEventDefinition_8h" name="tMessageEventDefinition.h" local="yes" import="no" module="no" objc="no">tMessageEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::messageEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>messageFlow.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>messageFlow_8cpp.html</filename>
-    <includes id="messageFlow_8h" name="messageFlow.h" local="yes" import="no" module="no" objc="no">messageFlow.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>messageFlow.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>messageFlow_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tMessageFlow_8h" name="tMessageFlow.h" local="yes" import="no" module="no" objc="no">tMessageFlow.h</includes>
-    <class kind="class">XML::bpmn::messageFlow</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>messageFlowAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>messageFlowAssociation_8cpp.html</filename>
-    <includes id="messageFlowAssociation_8h" name="messageFlowAssociation.h" local="yes" import="no" module="no" objc="no">messageFlowAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>messageFlowAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>messageFlowAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tMessageFlowAssociation_8h" name="tMessageFlowAssociation.h" local="yes" import="no" module="no" objc="no">tMessageFlowAssociation.h</includes>
-    <class kind="class">XML::bpmn::messageFlowAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>MessageVisibleKind.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>MessageVisibleKind_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>MessageVisibleKind</name>
-      <anchorfile>MessageVisibleKind_8h.html</anchorfile>
-      <anchor>aeba296f31e0b87fd529e527d1b7238a0</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>multiInstanceLoopCharacteristics.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>multiInstanceLoopCharacteristics_8cpp.html</filename>
-    <includes id="multiInstanceLoopCharacteristics_8h" name="multiInstanceLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">multiInstanceLoopCharacteristics.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>multiInstanceLoopCharacteristics.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>multiInstanceLoopCharacteristics_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tMultiInstanceLoopCharacteristics_8h" name="tMultiInstanceLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tMultiInstanceLoopCharacteristics.h</includes>
-    <class kind="class">XML::bpmn::multiInstanceLoopCharacteristics</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>outputSet.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>outputSet_8cpp.html</filename>
-    <includes id="outputSet_8h" name="outputSet.h" local="yes" import="no" module="no" objc="no">outputSet.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>outputSet.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>outputSet_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tOutputSet_8h" name="tOutputSet.h" local="yes" import="no" module="no" objc="no">tOutputSet.h</includes>
-    <class kind="class">XML::bpmn::outputSet</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>parallelGateway.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>parallelGateway_8cpp.html</filename>
-    <includes id="parallelGateway_8h" name="parallelGateway.h" local="yes" import="no" module="no" objc="no">parallelGateway.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>parallelGateway.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>parallelGateway_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tParallelGateway_8h" name="tParallelGateway.h" local="yes" import="no" module="no" objc="no">tParallelGateway.h</includes>
-    <class kind="class">XML::bpmn::parallelGateway</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>participantAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>participantAssociation_8cpp.html</filename>
-    <includes id="participantAssociation_8h" name="participantAssociation.h" local="yes" import="no" module="no" objc="no">participantAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>participantAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>participantAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tParticipantAssociation_8h" name="tParticipantAssociation.h" local="yes" import="no" module="no" objc="no">tParticipantAssociation.h</includes>
-    <class kind="class">XML::bpmn::participantAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>ParticipantBandKind.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>ParticipantBandKind_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>ParticipantBandKind</name>
-      <anchorfile>ParticipantBandKind_8h.html</anchorfile>
-      <anchor>a1f17faebf8ae7625474f384ed31b7568</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>participantMultiplicity.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>participantMultiplicity_8cpp.html</filename>
-    <includes id="participantMultiplicity_8h" name="participantMultiplicity.h" local="yes" import="no" module="no" objc="no">participantMultiplicity.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>participantMultiplicity.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>participantMultiplicity_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tParticipantMultiplicity_8h" name="tParticipantMultiplicity.h" local="yes" import="no" module="no" objc="no">tParticipantMultiplicity.h</includes>
-    <class kind="class">XML::bpmn::participantMultiplicity</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>partnerEntity.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>partnerEntity_8cpp.html</filename>
-    <includes id="partnerEntity_8h" name="partnerEntity.h" local="yes" import="no" module="no" objc="no">partnerEntity.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>partnerEntity.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>partnerEntity_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tPartnerEntity_8h" name="tPartnerEntity.h" local="yes" import="no" module="no" objc="no">tPartnerEntity.h</includes>
-    <class kind="class">XML::bpmn::partnerEntity</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>partnerRole.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>partnerRole_8cpp.html</filename>
-    <includes id="partnerRole_8h" name="partnerRole.h" local="yes" import="no" module="no" objc="no">partnerRole.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>partnerRole.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>partnerRole_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tPartnerRole_8h" name="tPartnerRole.h" local="yes" import="no" module="no" objc="no">tPartnerRole.h</includes>
-    <class kind="class">XML::bpmn::partnerRole</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>Plane.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>Plane_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>Point.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>Point_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>potentialOwner.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>potentialOwner_8cpp.html</filename>
-    <includes id="potentialOwner_8h" name="potentialOwner.h" local="yes" import="no" module="no" objc="no">potentialOwner.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>potentialOwner.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>potentialOwner_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tPotentialOwner_8h" name="tPotentialOwner.h" local="yes" import="no" module="no" objc="no">tPotentialOwner.h</includes>
-    <class kind="class">XML::bpmn::potentialOwner</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>receiveTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>receiveTask_8cpp.html</filename>
-    <includes id="receiveTask_8h" name="receiveTask.h" local="yes" import="no" module="no" objc="no">receiveTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>receiveTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>receiveTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tReceiveTask_8h" name="tReceiveTask.h" local="yes" import="no" module="no" objc="no">tReceiveTask.h</includes>
-    <class kind="class">XML::bpmn::receiveTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>resourceAssignmentExpression.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>resourceAssignmentExpression_8cpp.html</filename>
-    <includes id="resourceAssignmentExpression_8h" name="resourceAssignmentExpression.h" local="yes" import="no" module="no" objc="no">resourceAssignmentExpression.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>resourceAssignmentExpression.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>resourceAssignmentExpression_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tResourceAssignmentExpression_8h" name="tResourceAssignmentExpression.h" local="yes" import="no" module="no" objc="no">tResourceAssignmentExpression.h</includes>
-    <class kind="class">XML::bpmn::resourceAssignmentExpression</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>resourceParameter.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>resourceParameter_8cpp.html</filename>
-    <includes id="resourceParameter_8h" name="resourceParameter.h" local="yes" import="no" module="no" objc="no">resourceParameter.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>resourceParameter.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>resourceParameter_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tResourceParameter_8h" name="tResourceParameter.h" local="yes" import="no" module="no" objc="no">tResourceParameter.h</includes>
-    <class kind="class">XML::bpmn::resourceParameter</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>resourceParameterBinding.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>resourceParameterBinding_8cpp.html</filename>
-    <includes id="resourceParameterBinding_8h" name="resourceParameterBinding.h" local="yes" import="no" module="no" objc="no">resourceParameterBinding.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>resourceParameterBinding.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>resourceParameterBinding_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tResourceParameterBinding_8h" name="tResourceParameterBinding.h" local="yes" import="no" module="no" objc="no">tResourceParameterBinding.h</includes>
-    <class kind="class">XML::bpmn::resourceParameterBinding</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>resourceRole.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>resourceRole_8cpp.html</filename>
-    <includes id="resourceRole_8h" name="resourceRole.h" local="yes" import="no" module="no" objc="no">resourceRole.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>resourceRole.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>resourceRole_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
-    <class kind="class">XML::bpmn::resourceRole</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>rootElement.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>rootElement_8cpp.html</filename>
-    <includes id="rootElement_8h" name="rootElement.h" local="yes" import="no" module="no" objc="no">rootElement.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>rootElement.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>rootElement_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <class kind="class">XML::bpmn::rootElement</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>scriptTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>scriptTask_8cpp.html</filename>
-    <includes id="scriptTask_8h" name="scriptTask.h" local="yes" import="no" module="no" objc="no">scriptTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>scriptTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>scriptTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tScriptTask_8h" name="tScriptTask.h" local="yes" import="no" module="no" objc="no">tScriptTask.h</includes>
-    <class kind="class">XML::bpmn::scriptTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>sendTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>sendTask_8cpp.html</filename>
-    <includes id="sendTask_8h" name="sendTask.h" local="yes" import="no" module="no" objc="no">sendTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>sendTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>sendTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tSendTask_8h" name="tSendTask.h" local="yes" import="no" module="no" objc="no">tSendTask.h</includes>
-    <class kind="class">XML::bpmn::sendTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>sequenceFlow.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>sequenceFlow_8cpp.html</filename>
-    <includes id="sequenceFlow_8h" name="sequenceFlow.h" local="yes" import="no" module="no" objc="no">sequenceFlow.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>sequenceFlow.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>sequenceFlow_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tSequenceFlow_8h" name="tSequenceFlow.h" local="yes" import="no" module="no" objc="no">tSequenceFlow.h</includes>
-    <class kind="class">XML::bpmn::sequenceFlow</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>serviceTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>serviceTask_8cpp.html</filename>
-    <includes id="serviceTask_8h" name="serviceTask.h" local="yes" import="no" module="no" objc="no">serviceTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>serviceTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>serviceTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tServiceTask_8h" name="tServiceTask.h" local="yes" import="no" module="no" objc="no">tServiceTask.h</includes>
-    <class kind="class">XML::bpmn::serviceTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>Shape.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>Shape_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>signalEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>signalEventDefinition_8cpp.html</filename>
-    <includes id="signalEventDefinition_8h" name="signalEventDefinition.h" local="yes" import="no" module="no" objc="no">signalEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>signalEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>signalEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tSignalEventDefinition_8h" name="tSignalEventDefinition.h" local="yes" import="no" module="no" objc="no">tSignalEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::signalEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>standardLoopCharacteristics.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>standardLoopCharacteristics_8cpp.html</filename>
-    <includes id="standardLoopCharacteristics_8h" name="standardLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">standardLoopCharacteristics.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>standardLoopCharacteristics.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>standardLoopCharacteristics_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tStandardLoopCharacteristics_8h" name="tStandardLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tStandardLoopCharacteristics.h</includes>
-    <class kind="class">XML::bpmn::standardLoopCharacteristics</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>startEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>startEvent_8cpp.html</filename>
-    <includes id="startEvent_8h" name="startEvent.h" local="yes" import="no" module="no" objc="no">startEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>startEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>startEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tStartEvent_8h" name="tStartEvent.h" local="yes" import="no" module="no" objc="no">tStartEvent.h</includes>
-    <class kind="class">XML::bpmn::startEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>Style.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>Style_8cpp.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>subChoreography.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>subChoreography_8cpp.html</filename>
-    <includes id="subChoreography_8h" name="subChoreography.h" local="yes" import="no" module="no" objc="no">subChoreography.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>subChoreography.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>subChoreography_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tSubChoreography_8h" name="tSubChoreography.h" local="yes" import="no" module="no" objc="no">tSubChoreography.h</includes>
-    <class kind="class">XML::bpmn::subChoreography</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>subConversation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>subConversation_8cpp.html</filename>
-    <includes id="subConversation_8h" name="subConversation.h" local="yes" import="no" module="no" objc="no">subConversation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>subConversation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>subConversation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tSubConversation_8h" name="tSubConversation.h" local="yes" import="no" module="no" objc="no">tSubConversation.h</includes>
-    <class kind="class">XML::bpmn::subConversation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>subProcess.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>subProcess_8cpp.html</filename>
-    <includes id="subProcess_8h" name="subProcess.h" local="yes" import="no" module="no" objc="no">subProcess.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>subProcess.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>subProcess_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tSubProcess_8h" name="tSubProcess.h" local="yes" import="no" module="no" objc="no">tSubProcess.h</includes>
-    <class kind="class">XML::bpmn::subProcess</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tActivity.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tActivity_8cpp.html</filename>
-    <includes id="tActivity_8h" name="tActivity.h" local="yes" import="no" module="no" objc="no">tActivity.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tActivity.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tActivity_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
-    <includes id="tInputOutputSpecification_8h" name="tInputOutputSpecification.h" local="yes" import="no" module="no" objc="no">tInputOutputSpecification.h</includes>
-    <includes id="tProperty_8h" name="tProperty.h" local="yes" import="no" module="no" objc="no">tProperty.h</includes>
-    <includes id="tDataInputAssociation_8h" name="tDataInputAssociation.h" local="yes" import="no" module="no" objc="no">tDataInputAssociation.h</includes>
-    <includes id="tDataOutputAssociation_8h" name="tDataOutputAssociation.h" local="yes" import="no" module="no" objc="no">tDataOutputAssociation.h</includes>
-    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
-    <includes id="tLoopCharacteristics_8h" name="tLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tLoopCharacteristics.h</includes>
-    <class kind="class">XML::bpmn::tActivity</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tAdHocOrdering.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tAdHocOrdering_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>tAdHocOrdering</name>
-      <anchorfile>tAdHocOrdering_8h.html</anchorfile>
-      <anchor>aeccc117cb0d04d33170f092550176ca8</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>tAdHocSubProcess.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tAdHocSubProcess_8cpp.html</filename>
-    <includes id="tAdHocSubProcess_8h" name="tAdHocSubProcess.h" local="yes" import="no" module="no" objc="no">tAdHocSubProcess.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tAdHocSubProcess.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tAdHocSubProcess_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tSubProcess_8h" name="tSubProcess.h" local="yes" import="no" module="no" objc="no">tSubProcess.h</includes>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-    <includes id="tAdHocOrdering_8h" name="tAdHocOrdering.h" local="yes" import="no" module="no" objc="no">tAdHocOrdering.h</includes>
-    <class kind="class">XML::bpmn::tAdHocSubProcess</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tArtifact.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tArtifact_8cpp.html</filename>
-    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tArtifact.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tArtifact_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tArtifact</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tAssignment.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tAssignment_8cpp.html</filename>
-    <includes id="tAssignment_8h" name="tAssignment.h" local="yes" import="no" module="no" objc="no">tAssignment.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tAssignment.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tAssignment_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-    <class kind="class">XML::bpmn::tAssignment</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tAssociation_8cpp.html</filename>
-    <includes id="tAssociation_8h" name="tAssociation.h" local="yes" import="no" module="no" objc="no">tAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
-    <includes id="tAssociationDirection_8h" name="tAssociationDirection.h" local="yes" import="no" module="no" objc="no">tAssociationDirection.h</includes>
-    <class kind="class">XML::bpmn::tAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tAssociationDirection.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tAssociationDirection_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>tAssociationDirection</name>
-      <anchorfile>tAssociationDirection_8h.html</anchorfile>
-      <anchor>a608b55cd6ee6d4d65f4ff08f60535954</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>tAuditing.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tAuditing_8cpp.html</filename>
-    <includes id="tAuditing_8h" name="tAuditing.h" local="yes" import="no" module="no" objc="no">tAuditing.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tAuditing.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tAuditing_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tAuditing</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tBaseElement.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tBaseElement_8cpp.html</filename>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tBaseElement.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tBaseElement_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDocumentation_8h" name="tDocumentation.h" local="yes" import="no" module="no" objc="no">tDocumentation.h</includes>
-    <includes id="tExtensionElements_8h" name="tExtensionElements.h" local="yes" import="no" module="no" objc="no">tExtensionElements.h</includes>
-    <class kind="class">XML::bpmn::tBaseElement</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tBaseElementWithMixedContent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tBaseElementWithMixedContent_8cpp.html</filename>
-    <includes id="tBaseElementWithMixedContent_8h" name="tBaseElementWithMixedContent.h" local="yes" import="no" module="no" objc="no">tBaseElementWithMixedContent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tBaseElementWithMixedContent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tBaseElementWithMixedContent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDocumentation_8h" name="tDocumentation.h" local="yes" import="no" module="no" objc="no">tDocumentation.h</includes>
-    <includes id="tExtensionElements_8h" name="tExtensionElements.h" local="yes" import="no" module="no" objc="no">tExtensionElements.h</includes>
-    <class kind="class">XML::bpmn::tBaseElementWithMixedContent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tBoundaryEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tBoundaryEvent_8cpp.html</filename>
-    <includes id="tBoundaryEvent_8h" name="tBoundaryEvent.h" local="yes" import="no" module="no" objc="no">tBoundaryEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tBoundaryEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tBoundaryEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCatchEvent_8h" name="tCatchEvent.h" local="yes" import="no" module="no" objc="no">tCatchEvent.h</includes>
-    <class kind="class">XML::bpmn::tBoundaryEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tBusinessRuleTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tBusinessRuleTask_8cpp.html</filename>
-    <includes id="tBusinessRuleTask_8h" name="tBusinessRuleTask.h" local="yes" import="no" module="no" objc="no">tBusinessRuleTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tBusinessRuleTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tBusinessRuleTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
-    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
-    <class kind="class">XML::bpmn::tBusinessRuleTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCallableElement.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCallableElement_8cpp.html</filename>
-    <includes id="tCallableElement_8h" name="tCallableElement.h" local="yes" import="no" module="no" objc="no">tCallableElement.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCallableElement.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCallableElement_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <includes id="tInputOutputSpecification_8h" name="tInputOutputSpecification.h" local="yes" import="no" module="no" objc="no">tInputOutputSpecification.h</includes>
-    <includes id="tInputOutputBinding_8h" name="tInputOutputBinding.h" local="yes" import="no" module="no" objc="no">tInputOutputBinding.h</includes>
-    <class kind="class">XML::bpmn::tCallableElement</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCallActivity.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCallActivity_8cpp.html</filename>
-    <includes id="tCallActivity_8h" name="tCallActivity.h" local="yes" import="no" module="no" objc="no">tCallActivity.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCallActivity.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCallActivity_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tActivity_8h" name="tActivity.h" local="yes" import="no" module="no" objc="no">tActivity.h</includes>
-    <class kind="class">XML::bpmn::tCallActivity</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCallChoreography.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCallChoreography_8cpp.html</filename>
-    <includes id="tCallChoreography_8h" name="tCallChoreography.h" local="yes" import="no" module="no" objc="no">tCallChoreography.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCallChoreography.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCallChoreography_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tChoreographyActivity_8h" name="tChoreographyActivity.h" local="yes" import="no" module="no" objc="no">tChoreographyActivity.h</includes>
-    <includes id="tParticipantAssociation_8h" name="tParticipantAssociation.h" local="yes" import="no" module="no" objc="no">tParticipantAssociation.h</includes>
-    <class kind="class">XML::bpmn::tCallChoreography</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCallConversation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCallConversation_8cpp.html</filename>
-    <includes id="tCallConversation_8h" name="tCallConversation.h" local="yes" import="no" module="no" objc="no">tCallConversation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCallConversation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCallConversation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
-    <includes id="tParticipantAssociation_8h" name="tParticipantAssociation.h" local="yes" import="no" module="no" objc="no">tParticipantAssociation.h</includes>
-    <class kind="class">XML::bpmn::tCallConversation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCancelEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCancelEventDefinition_8cpp.html</filename>
-    <includes id="tCancelEventDefinition_8h" name="tCancelEventDefinition.h" local="yes" import="no" module="no" objc="no">tCancelEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCancelEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCancelEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::tCancelEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCatchEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCatchEvent_8cpp.html</filename>
-    <includes id="tCatchEvent_8h" name="tCatchEvent.h" local="yes" import="no" module="no" objc="no">tCatchEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCatchEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCatchEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEvent_8h" name="tEvent.h" local="yes" import="no" module="no" objc="no">tEvent.h</includes>
-    <includes id="tDataOutput_8h" name="tDataOutput.h" local="yes" import="no" module="no" objc="no">tDataOutput.h</includes>
-    <includes id="tDataOutputAssociation_8h" name="tDataOutputAssociation.h" local="yes" import="no" module="no" objc="no">tDataOutputAssociation.h</includes>
-    <includes id="tOutputSet_8h" name="tOutputSet.h" local="yes" import="no" module="no" objc="no">tOutputSet.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::tCatchEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCategory.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCategory_8cpp.html</filename>
-    <includes id="tCategory_8h" name="tCategory.h" local="yes" import="no" module="no" objc="no">tCategory.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCategory.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCategory_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <includes id="tCategoryValue_8h" name="tCategoryValue.h" local="yes" import="no" module="no" objc="no">tCategoryValue.h</includes>
-    <class kind="class">XML::bpmn::tCategory</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCategoryValue.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCategoryValue_8cpp.html</filename>
-    <includes id="tCategoryValue_8h" name="tCategoryValue.h" local="yes" import="no" module="no" objc="no">tCategoryValue.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCategoryValue.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCategoryValue_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tCategoryValue</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tChoreography.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tChoreography_8cpp.html</filename>
-    <includes id="tChoreography_8h" name="tChoreography.h" local="yes" import="no" module="no" objc="no">tChoreography.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tChoreography.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tChoreography_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCollaboration_8h" name="tCollaboration.h" local="yes" import="no" module="no" objc="no">tCollaboration.h</includes>
-    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
-    <class kind="class">XML::bpmn::tChoreography</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tChoreographyActivity.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tChoreographyActivity_8cpp.html</filename>
-    <includes id="tChoreographyActivity_8h" name="tChoreographyActivity.h" local="yes" import="no" module="no" objc="no">tChoreographyActivity.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tChoreographyActivity.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tChoreographyActivity_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
-    <includes id="tCorrelationKey_8h" name="tCorrelationKey.h" local="yes" import="no" module="no" objc="no">tCorrelationKey.h</includes>
-    <includes id="tChoreographyLoopType_8h" name="tChoreographyLoopType.h" local="yes" import="no" module="no" objc="no">tChoreographyLoopType.h</includes>
-    <class kind="class">XML::bpmn::tChoreographyActivity</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tChoreographyLoopType.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tChoreographyLoopType_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>tChoreographyLoopType</name>
-      <anchorfile>tChoreographyLoopType_8h.html</anchorfile>
-      <anchor>aa2150f51501098079e47e5fda41d92c9</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>tChoreographyTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tChoreographyTask_8cpp.html</filename>
-    <includes id="tChoreographyTask_8h" name="tChoreographyTask.h" local="yes" import="no" module="no" objc="no">tChoreographyTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tChoreographyTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tChoreographyTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tChoreographyActivity_8h" name="tChoreographyActivity.h" local="yes" import="no" module="no" objc="no">tChoreographyActivity.h</includes>
-    <class kind="class">XML::bpmn::tChoreographyTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCollaboration.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCollaboration_8cpp.html</filename>
-    <includes id="tCollaboration_8h" name="tCollaboration.h" local="yes" import="no" module="no" objc="no">tCollaboration.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCollaboration.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCollaboration_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <includes id="tParticipant_8h" name="tParticipant.h" local="yes" import="no" module="no" objc="no">tParticipant.h</includes>
-    <includes id="tMessageFlow_8h" name="tMessageFlow.h" local="yes" import="no" module="no" objc="no">tMessageFlow.h</includes>
-    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
-    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
-    <includes id="tConversationAssociation_8h" name="tConversationAssociation.h" local="yes" import="no" module="no" objc="no">tConversationAssociation.h</includes>
-    <includes id="tParticipantAssociation_8h" name="tParticipantAssociation.h" local="yes" import="no" module="no" objc="no">tParticipantAssociation.h</includes>
-    <includes id="tMessageFlowAssociation_8h" name="tMessageFlowAssociation.h" local="yes" import="no" module="no" objc="no">tMessageFlowAssociation.h</includes>
-    <includes id="tCorrelationKey_8h" name="tCorrelationKey.h" local="yes" import="no" module="no" objc="no">tCorrelationKey.h</includes>
-    <includes id="tConversationLink_8h" name="tConversationLink.h" local="yes" import="no" module="no" objc="no">tConversationLink.h</includes>
-    <class kind="class">XML::bpmn::tCollaboration</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCompensateEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCompensateEventDefinition_8cpp.html</filename>
-    <includes id="tCompensateEventDefinition_8h" name="tCompensateEventDefinition.h" local="yes" import="no" module="no" objc="no">tCompensateEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCompensateEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCompensateEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::tCompensateEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tComplexBehaviorDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tComplexBehaviorDefinition_8cpp.html</filename>
-    <includes id="tComplexBehaviorDefinition_8h" name="tComplexBehaviorDefinition.h" local="yes" import="no" module="no" objc="no">tComplexBehaviorDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tComplexBehaviorDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tComplexBehaviorDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
-    <includes id="tImplicitThrowEvent_8h" name="tImplicitThrowEvent.h" local="yes" import="no" module="no" objc="no">tImplicitThrowEvent.h</includes>
-    <class kind="class">XML::bpmn::tComplexBehaviorDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tComplexGateway.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tComplexGateway_8cpp.html</filename>
-    <includes id="tComplexGateway_8h" name="tComplexGateway.h" local="yes" import="no" module="no" objc="no">tComplexGateway.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tComplexGateway.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tComplexGateway_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-    <class kind="class">XML::bpmn::tComplexGateway</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tConditionalEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tConditionalEventDefinition_8cpp.html</filename>
-    <includes id="tConditionalEventDefinition_8h" name="tConditionalEventDefinition.h" local="yes" import="no" module="no" objc="no">tConditionalEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tConditionalEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tConditionalEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-    <class kind="class">XML::bpmn::tConditionalEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tConversation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tConversation_8cpp.html</filename>
-    <includes id="tConversation_8h" name="tConversation.h" local="yes" import="no" module="no" objc="no">tConversation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tConversation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tConversation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
-    <class kind="class">XML::bpmn::tConversation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tConversationAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tConversationAssociation_8cpp.html</filename>
-    <includes id="tConversationAssociation_8h" name="tConversationAssociation.h" local="yes" import="no" module="no" objc="no">tConversationAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tConversationAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tConversationAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tConversationAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tConversationLink.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tConversationLink_8cpp.html</filename>
-    <includes id="tConversationLink_8h" name="tConversationLink.h" local="yes" import="no" module="no" objc="no">tConversationLink.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tConversationLink.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tConversationLink_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tConversationLink</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tConversationNode.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tConversationNode_8cpp.html</filename>
-    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tConversationNode.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tConversationNode_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tCorrelationKey_8h" name="tCorrelationKey.h" local="yes" import="no" module="no" objc="no">tCorrelationKey.h</includes>
-    <class kind="class">XML::bpmn::tConversationNode</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCorrelationKey.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCorrelationKey_8cpp.html</filename>
-    <includes id="tCorrelationKey_8h" name="tCorrelationKey.h" local="yes" import="no" module="no" objc="no">tCorrelationKey.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCorrelationKey.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCorrelationKey_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tCorrelationKey</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCorrelationProperty.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCorrelationProperty_8cpp.html</filename>
-    <includes id="tCorrelationProperty_8h" name="tCorrelationProperty.h" local="yes" import="no" module="no" objc="no">tCorrelationProperty.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCorrelationProperty.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCorrelationProperty_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <includes id="tCorrelationPropertyRetrievalExpression_8h" name="tCorrelationPropertyRetrievalExpression.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyRetrievalExpression.h</includes>
-    <class kind="class">XML::bpmn::tCorrelationProperty</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCorrelationPropertyBinding.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCorrelationPropertyBinding_8cpp.html</filename>
-    <includes id="tCorrelationPropertyBinding_8h" name="tCorrelationPropertyBinding.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyBinding.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCorrelationPropertyBinding.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCorrelationPropertyBinding_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
-    <class kind="class">XML::bpmn::tCorrelationPropertyBinding</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCorrelationPropertyRetrievalExpression.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCorrelationPropertyRetrievalExpression_8cpp.html</filename>
-    <includes id="tCorrelationPropertyRetrievalExpression_8h" name="tCorrelationPropertyRetrievalExpression.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyRetrievalExpression.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCorrelationPropertyRetrievalExpression.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCorrelationPropertyRetrievalExpression_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
-    <class kind="class">XML::bpmn::tCorrelationPropertyRetrievalExpression</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tCorrelationSubscription.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCorrelationSubscription_8cpp.html</filename>
-    <includes id="tCorrelationSubscription_8h" name="tCorrelationSubscription.h" local="yes" import="no" module="no" objc="no">tCorrelationSubscription.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tCorrelationSubscription.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tCorrelationSubscription_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tCorrelationPropertyBinding_8h" name="tCorrelationPropertyBinding.h" local="yes" import="no" module="no" objc="no">tCorrelationPropertyBinding.h</includes>
-    <class kind="class">XML::bpmn::tCorrelationSubscription</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDataAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataAssociation_8cpp.html</filename>
-    <includes id="tDataAssociation_8h" name="tDataAssociation.h" local="yes" import="no" module="no" objc="no">tDataAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDataAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
-    <includes id="tAssignment_8h" name="tAssignment.h" local="yes" import="no" module="no" objc="no">tAssignment.h</includes>
-    <class kind="class">XML::bpmn::tDataAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDataInput.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataInput_8cpp.html</filename>
-    <includes id="tDataInput_8h" name="tDataInput.h" local="yes" import="no" module="no" objc="no">tDataInput.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDataInput.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataInput_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
-    <class kind="class">XML::bpmn::tDataInput</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDataInputAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataInputAssociation_8cpp.html</filename>
-    <includes id="tDataInputAssociation_8h" name="tDataInputAssociation.h" local="yes" import="no" module="no" objc="no">tDataInputAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDataInputAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataInputAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataAssociation_8h" name="tDataAssociation.h" local="yes" import="no" module="no" objc="no">tDataAssociation.h</includes>
-    <class kind="class">XML::bpmn::tDataInputAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDataObject.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataObject_8cpp.html</filename>
-    <includes id="tDataObject_8h" name="tDataObject.h" local="yes" import="no" module="no" objc="no">tDataObject.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDataObject.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataObject_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
-    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
-    <class kind="class">XML::bpmn::tDataObject</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDataObjectReference.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataObjectReference_8cpp.html</filename>
-    <includes id="tDataObjectReference_8h" name="tDataObjectReference.h" local="yes" import="no" module="no" objc="no">tDataObjectReference.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDataObjectReference.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataObjectReference_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
-    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
-    <class kind="class">XML::bpmn::tDataObjectReference</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDataOutput.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataOutput_8cpp.html</filename>
-    <includes id="tDataOutput_8h" name="tDataOutput.h" local="yes" import="no" module="no" objc="no">tDataOutput.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDataOutput.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataOutput_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
-    <class kind="class">XML::bpmn::tDataOutput</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDataOutputAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataOutputAssociation_8cpp.html</filename>
-    <includes id="tDataOutputAssociation_8h" name="tDataOutputAssociation.h" local="yes" import="no" module="no" objc="no">tDataOutputAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDataOutputAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataOutputAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDataAssociation_8h" name="tDataAssociation.h" local="yes" import="no" module="no" objc="no">tDataAssociation.h</includes>
-    <class kind="class">XML::bpmn::tDataOutputAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDataState.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataState_8cpp.html</filename>
-    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDataState.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataState_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tDataState</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDataStore.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataStore_8cpp.html</filename>
-    <includes id="tDataStore_8h" name="tDataStore.h" local="yes" import="no" module="no" objc="no">tDataStore.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDataStore.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataStore_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
-    <class kind="class">XML::bpmn::tDataStore</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDataStoreReference.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataStoreReference_8cpp.html</filename>
-    <includes id="tDataStoreReference_8h" name="tDataStoreReference.h" local="yes" import="no" module="no" objc="no">tDataStoreReference.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDataStoreReference.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDataStoreReference_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
-    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
-    <class kind="class">XML::bpmn::tDataStoreReference</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDefinitions.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDefinitions_8cpp.html</filename>
-    <includes id="tDefinitions_8h" name="tDefinitions.h" local="yes" import="no" module="no" objc="no">tDefinitions.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDefinitions.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDefinitions_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tImport_8h" name="tImport.h" local="yes" import="no" module="no" objc="no">tImport.h</includes>
-    <includes id="tExtension_8h" name="tExtension.h" local="yes" import="no" module="no" objc="no">tExtension.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <includes id="tProcess_8h" name="tProcess.h" local="yes" import="no" module="no" objc="no">tProcess.h</includes>
-    <includes id="tRelationship_8h" name="tRelationship.h" local="yes" import="no" module="no" objc="no">tRelationship.h</includes>
-    <class kind="class">XML::bpmn::tDefinitions</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tDocumentation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDocumentation_8cpp.html</filename>
-    <includes id="tDocumentation_8h" name="tDocumentation.h" local="yes" import="no" module="no" objc="no">tDocumentation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tDocumentation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tDocumentation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <class kind="class">XML::bpmn::tDocumentation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tEndEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEndEvent_8cpp.html</filename>
-    <includes id="tEndEvent_8h" name="tEndEvent.h" local="yes" import="no" module="no" objc="no">tEndEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tEndEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEndEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tThrowEvent_8h" name="tThrowEvent.h" local="yes" import="no" module="no" objc="no">tThrowEvent.h</includes>
-    <class kind="class">XML::bpmn::tEndEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tEndPoint.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEndPoint_8cpp.html</filename>
-    <includes id="tEndPoint_8h" name="tEndPoint.h" local="yes" import="no" module="no" objc="no">tEndPoint.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tEndPoint.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEndPoint_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <class kind="class">XML::bpmn::tEndPoint</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>terminateEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>terminateEventDefinition_8cpp.html</filename>
-    <includes id="terminateEventDefinition_8h" name="terminateEventDefinition.h" local="yes" import="no" module="no" objc="no">terminateEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>terminateEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>terminateEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tTerminateEventDefinition_8h" name="tTerminateEventDefinition.h" local="yes" import="no" module="no" objc="no">tTerminateEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::terminateEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tError.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tError_8cpp.html</filename>
-    <includes id="tError_8h" name="tError.h" local="yes" import="no" module="no" objc="no">tError.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tError.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tError_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <class kind="class">XML::bpmn::tError</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tErrorEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tErrorEventDefinition_8cpp.html</filename>
-    <includes id="tErrorEventDefinition_8h" name="tErrorEventDefinition.h" local="yes" import="no" module="no" objc="no">tErrorEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tErrorEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tErrorEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::tErrorEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tEscalation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEscalation_8cpp.html</filename>
-    <includes id="tEscalation_8h" name="tEscalation.h" local="yes" import="no" module="no" objc="no">tEscalation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tEscalation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEscalation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <class kind="class">XML::bpmn::tEscalation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tEscalationEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEscalationEventDefinition_8cpp.html</filename>
-    <includes id="tEscalationEventDefinition_8h" name="tEscalationEventDefinition.h" local="yes" import="no" module="no" objc="no">tEscalationEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tEscalationEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEscalationEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::tEscalationEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEvent_8cpp.html</filename>
-    <includes id="tEvent_8h" name="tEvent.h" local="yes" import="no" module="no" objc="no">tEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
-    <includes id="tProperty_8h" name="tProperty.h" local="yes" import="no" module="no" objc="no">tProperty.h</includes>
-    <class kind="class">XML::bpmn::tEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tEventBasedGateway.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEventBasedGateway_8cpp.html</filename>
-    <includes id="tEventBasedGateway_8h" name="tEventBasedGateway.h" local="yes" import="no" module="no" objc="no">tEventBasedGateway.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tEventBasedGateway.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEventBasedGateway_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
-    <includes id="tEventBasedGatewayType_8h" name="tEventBasedGatewayType.h" local="yes" import="no" module="no" objc="no">tEventBasedGatewayType.h</includes>
-    <class kind="class">XML::bpmn::tEventBasedGateway</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tEventBasedGatewayType.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEventBasedGatewayType_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>tEventBasedGatewayType</name>
-      <anchorfile>tEventBasedGatewayType_8h.html</anchorfile>
-      <anchor>a0523988d0750905f76e8b4c324a60ba4</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>tEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEventDefinition_8cpp.html</filename>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <class kind="class">XML::bpmn::tEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tExclusiveGateway.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tExclusiveGateway_8cpp.html</filename>
-    <includes id="tExclusiveGateway_8h" name="tExclusiveGateway.h" local="yes" import="no" module="no" objc="no">tExclusiveGateway.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tExclusiveGateway.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tExclusiveGateway_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
-    <class kind="class">XML::bpmn::tExclusiveGateway</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tExpression.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tExpression_8cpp.html</filename>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tExpression.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tExpression_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElementWithMixedContent_8h" name="tBaseElementWithMixedContent.h" local="yes" import="no" module="no" objc="no">tBaseElementWithMixedContent.h</includes>
-    <class kind="class">XML::bpmn::tExpression</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>textAnnotation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>textAnnotation_8cpp.html</filename>
-    <includes id="textAnnotation_8h" name="textAnnotation.h" local="yes" import="no" module="no" objc="no">textAnnotation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>textAnnotation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>textAnnotation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tTextAnnotation_8h" name="tTextAnnotation.h" local="yes" import="no" module="no" objc="no">tTextAnnotation.h</includes>
-    <class kind="class">XML::bpmn::textAnnotation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tExtension.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tExtension_8cpp.html</filename>
-    <includes id="tExtension_8h" name="tExtension.h" local="yes" import="no" module="no" objc="no">tExtension.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tExtension.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tExtension_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tDocumentation_8h" name="tDocumentation.h" local="yes" import="no" module="no" objc="no">tDocumentation.h</includes>
-    <class kind="class">XML::bpmn::tExtension</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tExtensionElements.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tExtensionElements_8cpp.html</filename>
-    <includes id="tExtensionElements_8h" name="tExtensionElements.h" local="yes" import="no" module="no" objc="no">tExtensionElements.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tExtensionElements.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tExtensionElements_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <class kind="class">XML::bpmn::tExtensionElements</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tFlowElement.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tFlowElement_8cpp.html</filename>
-    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tFlowElement.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tFlowElement_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tAuditing_8h" name="tAuditing.h" local="yes" import="no" module="no" objc="no">tAuditing.h</includes>
-    <includes id="tMonitoring_8h" name="tMonitoring.h" local="yes" import="no" module="no" objc="no">tMonitoring.h</includes>
-    <class kind="class">XML::bpmn::tFlowElement</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tFlowNode.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tFlowNode_8cpp.html</filename>
-    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tFlowNode.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tFlowNode_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
-    <class kind="class">XML::bpmn::tFlowNode</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tFormalExpression.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tFormalExpression_8cpp.html</filename>
-    <includes id="tFormalExpression_8h" name="tFormalExpression.h" local="yes" import="no" module="no" objc="no">tFormalExpression.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tFormalExpression.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tFormalExpression_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-    <class kind="class">XML::bpmn::tFormalExpression</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tGateway.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGateway_8cpp.html</filename>
-    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tGateway.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGateway_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFlowNode_8h" name="tFlowNode.h" local="yes" import="no" module="no" objc="no">tFlowNode.h</includes>
-    <includes id="tGatewayDirection_8h" name="tGatewayDirection.h" local="yes" import="no" module="no" objc="no">tGatewayDirection.h</includes>
-    <class kind="class">XML::bpmn::tGateway</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tGatewayDirection.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGatewayDirection_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>tGatewayDirection</name>
-      <anchorfile>tGatewayDirection_8h.html</anchorfile>
-      <anchor>a685f33360b9744a9cefd1df2c036b788</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalBusinessRuleTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalBusinessRuleTask_8cpp.html</filename>
-    <includes id="tGlobalBusinessRuleTask_8h" name="tGlobalBusinessRuleTask.h" local="yes" import="no" module="no" objc="no">tGlobalBusinessRuleTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalBusinessRuleTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalBusinessRuleTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
-    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
-    <class kind="class">XML::bpmn::tGlobalBusinessRuleTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalChoreographyTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalChoreographyTask_8cpp.html</filename>
-    <includes id="tGlobalChoreographyTask_8h" name="tGlobalChoreographyTask.h" local="yes" import="no" module="no" objc="no">tGlobalChoreographyTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalChoreographyTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalChoreographyTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tChoreography_8h" name="tChoreography.h" local="yes" import="no" module="no" objc="no">tChoreography.h</includes>
-    <class kind="class">XML::bpmn::tGlobalChoreographyTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalConversation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalConversation_8cpp.html</filename>
-    <includes id="tGlobalConversation_8h" name="tGlobalConversation.h" local="yes" import="no" module="no" objc="no">tGlobalConversation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalConversation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalConversation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCollaboration_8h" name="tCollaboration.h" local="yes" import="no" module="no" objc="no">tCollaboration.h</includes>
-    <class kind="class">XML::bpmn::tGlobalConversation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalManualTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalManualTask_8cpp.html</filename>
-    <includes id="tGlobalManualTask_8h" name="tGlobalManualTask.h" local="yes" import="no" module="no" objc="no">tGlobalManualTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalManualTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalManualTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
-    <class kind="class">XML::bpmn::tGlobalManualTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalScriptTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalScriptTask_8cpp.html</filename>
-    <includes id="tGlobalScriptTask_8h" name="tGlobalScriptTask.h" local="yes" import="no" module="no" objc="no">tGlobalScriptTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalScriptTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalScriptTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
-    <includes id="tScript_8h" name="tScript.h" local="yes" import="no" module="no" objc="no">tScript.h</includes>
-    <class kind="class">XML::bpmn::tGlobalScriptTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalTask_8cpp.html</filename>
-    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCallableElement_8h" name="tCallableElement.h" local="yes" import="no" module="no" objc="no">tCallableElement.h</includes>
-    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
-    <class kind="class">XML::bpmn::tGlobalTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalUserTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalUserTask_8cpp.html</filename>
-    <includes id="tGlobalUserTask_8h" name="tGlobalUserTask.h" local="yes" import="no" module="no" objc="no">tGlobalUserTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tGlobalUserTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGlobalUserTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGlobalTask_8h" name="tGlobalTask.h" local="yes" import="no" module="no" objc="no">tGlobalTask.h</includes>
-    <includes id="tRendering_8h" name="tRendering.h" local="yes" import="no" module="no" objc="no">tRendering.h</includes>
-    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
-    <class kind="class">XML::bpmn::tGlobalUserTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tGroup.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGroup_8cpp.html</filename>
-    <includes id="tGroup_8h" name="tGroup.h" local="yes" import="no" module="no" objc="no">tGroup.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tGroup.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tGroup_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
-    <class kind="class">XML::bpmn::tGroup</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>throwEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>throwEvent_8cpp.html</filename>
-    <includes id="throwEvent_8h" name="throwEvent.h" local="yes" import="no" module="no" objc="no">throwEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>throwEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>throwEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tThrowEvent_8h" name="tThrowEvent.h" local="yes" import="no" module="no" objc="no">tThrowEvent.h</includes>
-    <class kind="class">XML::bpmn::throwEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tHumanPerformer.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tHumanPerformer_8cpp.html</filename>
-    <includes id="tHumanPerformer_8h" name="tHumanPerformer.h" local="yes" import="no" module="no" objc="no">tHumanPerformer.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tHumanPerformer.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tHumanPerformer_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tPerformer_8h" name="tPerformer.h" local="yes" import="no" module="no" objc="no">tPerformer.h</includes>
-    <class kind="class">XML::bpmn::tHumanPerformer</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>timerEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>timerEventDefinition_8cpp.html</filename>
-    <includes id="timerEventDefinition_8h" name="timerEventDefinition.h" local="yes" import="no" module="no" objc="no">timerEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>timerEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>timerEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tTimerEventDefinition_8h" name="tTimerEventDefinition.h" local="yes" import="no" module="no" objc="no">tTimerEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::timerEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tImplementation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tImplementation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>tImplementation</name>
-      <anchorfile>tImplementation_8h.html</anchorfile>
-      <anchor>ac4642eb4a5ff0a246c7807ee4b6b6829</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>tImplicitThrowEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tImplicitThrowEvent_8cpp.html</filename>
-    <includes id="tImplicitThrowEvent_8h" name="tImplicitThrowEvent.h" local="yes" import="no" module="no" objc="no">tImplicitThrowEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tImplicitThrowEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tImplicitThrowEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tThrowEvent_8h" name="tThrowEvent.h" local="yes" import="no" module="no" objc="no">tThrowEvent.h</includes>
-    <class kind="class">XML::bpmn::tImplicitThrowEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tImport.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tImport_8cpp.html</filename>
-    <includes id="tImport_8h" name="tImport.h" local="yes" import="no" module="no" objc="no">tImport.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tImport.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tImport_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <class kind="class">XML::bpmn::tImport</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tInclusiveGateway.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tInclusiveGateway_8cpp.html</filename>
-    <includes id="tInclusiveGateway_8h" name="tInclusiveGateway.h" local="yes" import="no" module="no" objc="no">tInclusiveGateway.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tInclusiveGateway.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tInclusiveGateway_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
-    <class kind="class">XML::bpmn::tInclusiveGateway</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tInputOutputBinding.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tInputOutputBinding_8cpp.html</filename>
-    <includes id="tInputOutputBinding_8h" name="tInputOutputBinding.h" local="yes" import="no" module="no" objc="no">tInputOutputBinding.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tInputOutputBinding.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tInputOutputBinding_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tInputOutputBinding</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tInputOutputSpecification.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tInputOutputSpecification_8cpp.html</filename>
-    <includes id="tInputOutputSpecification_8h" name="tInputOutputSpecification.h" local="yes" import="no" module="no" objc="no">tInputOutputSpecification.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tInputOutputSpecification.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tInputOutputSpecification_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tDataInput_8h" name="tDataInput.h" local="yes" import="no" module="no" objc="no">tDataInput.h</includes>
-    <includes id="tDataOutput_8h" name="tDataOutput.h" local="yes" import="no" module="no" objc="no">tDataOutput.h</includes>
-    <includes id="tInputSet_8h" name="tInputSet.h" local="yes" import="no" module="no" objc="no">tInputSet.h</includes>
-    <includes id="tOutputSet_8h" name="tOutputSet.h" local="yes" import="no" module="no" objc="no">tOutputSet.h</includes>
-    <class kind="class">XML::bpmn::tInputOutputSpecification</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tInputSet.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tInputSet_8cpp.html</filename>
-    <includes id="tInputSet_8h" name="tInputSet.h" local="yes" import="no" module="no" objc="no">tInputSet.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tInputSet.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tInputSet_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tInputSet</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tInterface.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tInterface_8cpp.html</filename>
-    <includes id="tInterface_8h" name="tInterface.h" local="yes" import="no" module="no" objc="no">tInterface.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tInterface.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tInterface_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <includes id="tOperation_8h" name="tOperation.h" local="yes" import="no" module="no" objc="no">tOperation.h</includes>
-    <class kind="class">XML::bpmn::tInterface</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tIntermediateCatchEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tIntermediateCatchEvent_8cpp.html</filename>
-    <includes id="tIntermediateCatchEvent_8h" name="tIntermediateCatchEvent.h" local="yes" import="no" module="no" objc="no">tIntermediateCatchEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tIntermediateCatchEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tIntermediateCatchEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCatchEvent_8h" name="tCatchEvent.h" local="yes" import="no" module="no" objc="no">tCatchEvent.h</includes>
-    <class kind="class">XML::bpmn::tIntermediateCatchEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tIntermediateThrowEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tIntermediateThrowEvent_8cpp.html</filename>
-    <includes id="tIntermediateThrowEvent_8h" name="tIntermediateThrowEvent.h" local="yes" import="no" module="no" objc="no">tIntermediateThrowEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tIntermediateThrowEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tIntermediateThrowEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tThrowEvent_8h" name="tThrowEvent.h" local="yes" import="no" module="no" objc="no">tThrowEvent.h</includes>
-    <class kind="class">XML::bpmn::tIntermediateThrowEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tItemDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tItemDefinition_8cpp.html</filename>
-    <includes id="tItemDefinition_8h" name="tItemDefinition.h" local="yes" import="no" module="no" objc="no">tItemDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tItemDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tItemDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <includes id="tItemKind_8h" name="tItemKind.h" local="yes" import="no" module="no" objc="no">tItemKind.h</includes>
-    <class kind="class">XML::bpmn::tItemDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tItemKind.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tItemKind_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>tItemKind</name>
-      <anchorfile>tItemKind_8h.html</anchorfile>
-      <anchor>af1477e44e051a7055ade69b8c61786c8</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>tLane.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tLane_8cpp.html</filename>
-    <includes id="tLane_8h" name="tLane.h" local="yes" import="no" module="no" objc="no">tLane.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tLane.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tLane_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tLaneSet_8h" name="tLaneSet.h" local="yes" import="no" module="no" objc="no">tLaneSet.h</includes>
-    <class kind="class">XML::bpmn::tLane</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tLaneSet.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tLaneSet_8cpp.html</filename>
-    <includes id="tLaneSet_8h" name="tLaneSet.h" local="yes" import="no" module="no" objc="no">tLaneSet.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tLaneSet.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tLaneSet_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tLane_8h" name="tLane.h" local="yes" import="no" module="no" objc="no">tLane.h</includes>
-    <class kind="class">XML::bpmn::tLaneSet</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tLinkEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tLinkEventDefinition_8cpp.html</filename>
-    <includes id="tLinkEventDefinition_8h" name="tLinkEventDefinition.h" local="yes" import="no" module="no" objc="no">tLinkEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tLinkEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tLinkEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::tLinkEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tLoopCharacteristics.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tLoopCharacteristics_8cpp.html</filename>
-    <includes id="tLoopCharacteristics_8h" name="tLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tLoopCharacteristics.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tLoopCharacteristics.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tLoopCharacteristics_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tLoopCharacteristics</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tManualTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tManualTask_8cpp.html</filename>
-    <includes id="tManualTask_8h" name="tManualTask.h" local="yes" import="no" module="no" objc="no">tManualTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tManualTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tManualTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
-    <class kind="class">XML::bpmn::tManualTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tMessage.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMessage_8cpp.html</filename>
-    <includes id="tMessage_8h" name="tMessage.h" local="yes" import="no" module="no" objc="no">tMessage.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tMessage.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMessage_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <class kind="class">XML::bpmn::tMessage</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tMessageEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMessageEventDefinition_8cpp.html</filename>
-    <includes id="tMessageEventDefinition_8h" name="tMessageEventDefinition.h" local="yes" import="no" module="no" objc="no">tMessageEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tMessageEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMessageEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::tMessageEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tMessageFlow.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMessageFlow_8cpp.html</filename>
-    <includes id="tMessageFlow_8h" name="tMessageFlow.h" local="yes" import="no" module="no" objc="no">tMessageFlow.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tMessageFlow.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMessageFlow_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tMessageFlow</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tMessageFlowAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMessageFlowAssociation_8cpp.html</filename>
-    <includes id="tMessageFlowAssociation_8h" name="tMessageFlowAssociation.h" local="yes" import="no" module="no" objc="no">tMessageFlowAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tMessageFlowAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMessageFlowAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tMessageFlowAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tMonitoring.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMonitoring_8cpp.html</filename>
-    <includes id="tMonitoring_8h" name="tMonitoring.h" local="yes" import="no" module="no" objc="no">tMonitoring.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tMonitoring.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMonitoring_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tMonitoring</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tMultiInstanceFlowCondition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMultiInstanceFlowCondition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>tMultiInstanceFlowCondition</name>
-      <anchorfile>tMultiInstanceFlowCondition_8h.html</anchorfile>
-      <anchor>a6e4a3e96546216cf8bbe556d78fc7cd0</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>tMultiInstanceLoopCharacteristics.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMultiInstanceLoopCharacteristics_8cpp.html</filename>
-    <includes id="tMultiInstanceLoopCharacteristics_8h" name="tMultiInstanceLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tMultiInstanceLoopCharacteristics.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tMultiInstanceLoopCharacteristics.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tMultiInstanceLoopCharacteristics_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tLoopCharacteristics_8h" name="tLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tLoopCharacteristics.h</includes>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-    <includes id="tDataInput_8h" name="tDataInput.h" local="yes" import="no" module="no" objc="no">tDataInput.h</includes>
-    <includes id="tDataOutput_8h" name="tDataOutput.h" local="yes" import="no" module="no" objc="no">tDataOutput.h</includes>
-    <includes id="tComplexBehaviorDefinition_8h" name="tComplexBehaviorDefinition.h" local="yes" import="no" module="no" objc="no">tComplexBehaviorDefinition.h</includes>
-    <includes id="tMultiInstanceFlowCondition_8h" name="tMultiInstanceFlowCondition.h" local="yes" import="no" module="no" objc="no">tMultiInstanceFlowCondition.h</includes>
-    <class kind="class">XML::bpmn::tMultiInstanceLoopCharacteristics</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tOperation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tOperation_8cpp.html</filename>
-    <includes id="tOperation_8h" name="tOperation.h" local="yes" import="no" module="no" objc="no">tOperation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tOperation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tOperation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tOperation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tOutputSet.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tOutputSet_8cpp.html</filename>
-    <includes id="tOutputSet_8h" name="tOutputSet.h" local="yes" import="no" module="no" objc="no">tOutputSet.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tOutputSet.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tOutputSet_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tOutputSet</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tParallelGateway.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tParallelGateway_8cpp.html</filename>
-    <includes id="tParallelGateway_8h" name="tParallelGateway.h" local="yes" import="no" module="no" objc="no">tParallelGateway.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tParallelGateway.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tParallelGateway_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tGateway_8h" name="tGateway.h" local="yes" import="no" module="no" objc="no">tGateway.h</includes>
-    <class kind="class">XML::bpmn::tParallelGateway</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tParticipant.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tParticipant_8cpp.html</filename>
-    <includes id="tParticipant_8h" name="tParticipant.h" local="yes" import="no" module="no" objc="no">tParticipant.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tParticipant.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tParticipant_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tParticipantMultiplicity_8h" name="tParticipantMultiplicity.h" local="yes" import="no" module="no" objc="no">tParticipantMultiplicity.h</includes>
-    <class kind="class">XML::bpmn::tParticipant</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tParticipantAssociation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tParticipantAssociation_8cpp.html</filename>
-    <includes id="tParticipantAssociation_8h" name="tParticipantAssociation.h" local="yes" import="no" module="no" objc="no">tParticipantAssociation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tParticipantAssociation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tParticipantAssociation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tParticipantAssociation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tParticipantMultiplicity.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tParticipantMultiplicity_8cpp.html</filename>
-    <includes id="tParticipantMultiplicity_8h" name="tParticipantMultiplicity.h" local="yes" import="no" module="no" objc="no">tParticipantMultiplicity.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tParticipantMultiplicity.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tParticipantMultiplicity_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tParticipantMultiplicity</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tPartnerEntity.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tPartnerEntity_8cpp.html</filename>
-    <includes id="tPartnerEntity_8h" name="tPartnerEntity.h" local="yes" import="no" module="no" objc="no">tPartnerEntity.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tPartnerEntity.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tPartnerEntity_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <class kind="class">XML::bpmn::tPartnerEntity</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tPartnerRole.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tPartnerRole_8cpp.html</filename>
-    <includes id="tPartnerRole_8h" name="tPartnerRole.h" local="yes" import="no" module="no" objc="no">tPartnerRole.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tPartnerRole.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tPartnerRole_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <class kind="class">XML::bpmn::tPartnerRole</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tPerformer.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tPerformer_8cpp.html</filename>
-    <includes id="tPerformer_8h" name="tPerformer.h" local="yes" import="no" module="no" objc="no">tPerformer.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tPerformer.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tPerformer_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
-    <class kind="class">XML::bpmn::tPerformer</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tPotentialOwner.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tPotentialOwner_8cpp.html</filename>
-    <includes id="tPotentialOwner_8h" name="tPotentialOwner.h" local="yes" import="no" module="no" objc="no">tPotentialOwner.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tPotentialOwner.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tPotentialOwner_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tHumanPerformer_8h" name="tHumanPerformer.h" local="yes" import="no" module="no" objc="no">tHumanPerformer.h</includes>
-    <class kind="class">XML::bpmn::tPotentialOwner</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tProcess.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tProcess_8cpp.html</filename>
-    <includes id="tProcess_8h" name="tProcess.h" local="yes" import="no" module="no" objc="no">tProcess.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tProcess.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tProcess_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCallableElement_8h" name="tCallableElement.h" local="yes" import="no" module="no" objc="no">tCallableElement.h</includes>
-    <includes id="tAuditing_8h" name="tAuditing.h" local="yes" import="no" module="no" objc="no">tAuditing.h</includes>
-    <includes id="tMonitoring_8h" name="tMonitoring.h" local="yes" import="no" module="no" objc="no">tMonitoring.h</includes>
-    <includes id="tProperty_8h" name="tProperty.h" local="yes" import="no" module="no" objc="no">tProperty.h</includes>
-    <includes id="tLaneSet_8h" name="tLaneSet.h" local="yes" import="no" module="no" objc="no">tLaneSet.h</includes>
-    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
-    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
-    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
-    <includes id="tCorrelationSubscription_8h" name="tCorrelationSubscription.h" local="yes" import="no" module="no" objc="no">tCorrelationSubscription.h</includes>
-    <includes id="tProcessType_8h" name="tProcessType.h" local="yes" import="no" module="no" objc="no">tProcessType.h</includes>
-    <class kind="class">XML::bpmn::tProcess</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tProcessType.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tProcessType_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>tProcessType</name>
-      <anchorfile>tProcessType_8h.html</anchorfile>
-      <anchor>a00d8f78f052e6a27b6f510e5af842237</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>tProperty.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tProperty_8cpp.html</filename>
-    <includes id="tProperty_8h" name="tProperty.h" local="yes" import="no" module="no" objc="no">tProperty.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tProperty.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tProperty_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tDataState_8h" name="tDataState.h" local="yes" import="no" module="no" objc="no">tDataState.h</includes>
-    <class kind="class">XML::bpmn::tProperty</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tReceiveTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tReceiveTask_8cpp.html</filename>
-    <includes id="tReceiveTask_8h" name="tReceiveTask.h" local="yes" import="no" module="no" objc="no">tReceiveTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tReceiveTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tReceiveTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
-    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
-    <class kind="class">XML::bpmn::tReceiveTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tRelationship.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tRelationship_8cpp.html</filename>
-    <includes id="tRelationship_8h" name="tRelationship.h" local="yes" import="no" module="no" objc="no">tRelationship.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tRelationship.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tRelationship_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tRelationshipDirection_8h" name="tRelationshipDirection.h" local="yes" import="no" module="no" objc="no">tRelationshipDirection.h</includes>
-    <class kind="class">XML::bpmn::tRelationship</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tRelationshipDirection.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tRelationshipDirection_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>tRelationshipDirection</name>
-      <anchorfile>tRelationshipDirection_8h.html</anchorfile>
-      <anchor>aea663760e41d1dbf59eee406aef590bf</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>tRendering.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tRendering_8cpp.html</filename>
-    <includes id="tRendering_8h" name="tRendering.h" local="yes" import="no" module="no" objc="no">tRendering.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tRendering.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tRendering_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tRendering</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tResource.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tResource_8cpp.html</filename>
-    <includes id="tResource_8h" name="tResource.h" local="yes" import="no" module="no" objc="no">tResource.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tResource.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tResource_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <includes id="tResourceParameter_8h" name="tResourceParameter.h" local="yes" import="no" module="no" objc="no">tResourceParameter.h</includes>
-    <class kind="class">XML::bpmn::tResource</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tResourceAssignmentExpression.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tResourceAssignmentExpression_8cpp.html</filename>
-    <includes id="tResourceAssignmentExpression_8h" name="tResourceAssignmentExpression.h" local="yes" import="no" module="no" objc="no">tResourceAssignmentExpression.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tResourceAssignmentExpression.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tResourceAssignmentExpression_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-    <class kind="class">XML::bpmn::tResourceAssignmentExpression</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tResourceParameter.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tResourceParameter_8cpp.html</filename>
-    <includes id="tResourceParameter_8h" name="tResourceParameter.h" local="yes" import="no" module="no" objc="no">tResourceParameter.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tResourceParameter.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tResourceParameter_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tResourceParameter</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tResourceParameterBinding.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tResourceParameterBinding_8cpp.html</filename>
-    <includes id="tResourceParameterBinding_8h" name="tResourceParameterBinding.h" local="yes" import="no" module="no" objc="no">tResourceParameterBinding.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tResourceParameterBinding.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tResourceParameterBinding_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-    <class kind="class">XML::bpmn::tResourceParameterBinding</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tResourceRole.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tResourceRole_8cpp.html</filename>
-    <includes id="tResourceRole_8h" name="tResourceRole.h" local="yes" import="no" module="no" objc="no">tResourceRole.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tResourceRole.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tResourceRole_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <includes id="tResourceAssignmentExpression_8h" name="tResourceAssignmentExpression.h" local="yes" import="no" module="no" objc="no">tResourceAssignmentExpression.h</includes>
-    <includes id="tResourceParameterBinding_8h" name="tResourceParameterBinding.h" local="yes" import="no" module="no" objc="no">tResourceParameterBinding.h</includes>
-    <class kind="class">XML::bpmn::tResourceRole</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tRootElement.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tRootElement_8cpp.html</filename>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tRootElement.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tRootElement_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tBaseElement_8h" name="tBaseElement.h" local="yes" import="no" module="no" objc="no">tBaseElement.h</includes>
-    <class kind="class">XML::bpmn::tRootElement</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tScript.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tScript_8cpp.html</filename>
-    <includes id="tScript_8h" name="tScript.h" local="yes" import="no" module="no" objc="no">tScript.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tScript.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tScript_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <class kind="class">XML::bpmn::tScript</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tScriptTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tScriptTask_8cpp.html</filename>
-    <includes id="tScriptTask_8h" name="tScriptTask.h" local="yes" import="no" module="no" objc="no">tScriptTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tScriptTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tScriptTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
-    <includes id="tScript_8h" name="tScript.h" local="yes" import="no" module="no" objc="no">tScript.h</includes>
-    <class kind="class">XML::bpmn::tScriptTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tSendTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSendTask_8cpp.html</filename>
-    <includes id="tSendTask_8h" name="tSendTask.h" local="yes" import="no" module="no" objc="no">tSendTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tSendTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSendTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
-    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
-    <class kind="class">XML::bpmn::tSendTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tSequenceFlow.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSequenceFlow_8cpp.html</filename>
-    <includes id="tSequenceFlow_8h" name="tSequenceFlow.h" local="yes" import="no" module="no" objc="no">tSequenceFlow.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tSequenceFlow.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSequenceFlow_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-    <class kind="class">XML::bpmn::tSequenceFlow</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tServiceTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tServiceTask_8cpp.html</filename>
-    <includes id="tServiceTask_8h" name="tServiceTask.h" local="yes" import="no" module="no" objc="no">tServiceTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tServiceTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tServiceTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
-    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
-    <class kind="class">XML::bpmn::tServiceTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tSignal.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSignal_8cpp.html</filename>
-    <includes id="tSignal_8h" name="tSignal.h" local="yes" import="no" module="no" objc="no">tSignal.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tSignal.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSignal_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tRootElement_8h" name="tRootElement.h" local="yes" import="no" module="no" objc="no">tRootElement.h</includes>
-    <class kind="class">XML::bpmn::tSignal</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tSignalEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSignalEventDefinition_8cpp.html</filename>
-    <includes id="tSignalEventDefinition_8h" name="tSignalEventDefinition.h" local="yes" import="no" module="no" objc="no">tSignalEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tSignalEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSignalEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::tSignalEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tStandardLoopCharacteristics.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tStandardLoopCharacteristics_8cpp.html</filename>
-    <includes id="tStandardLoopCharacteristics_8h" name="tStandardLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tStandardLoopCharacteristics.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tStandardLoopCharacteristics.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tStandardLoopCharacteristics_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tLoopCharacteristics_8h" name="tLoopCharacteristics.h" local="yes" import="no" module="no" objc="no">tLoopCharacteristics.h</includes>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-    <class kind="class">XML::bpmn::tStandardLoopCharacteristics</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tStartEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tStartEvent_8cpp.html</filename>
-    <includes id="tStartEvent_8h" name="tStartEvent.h" local="yes" import="no" module="no" objc="no">tStartEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tStartEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tStartEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tCatchEvent_8h" name="tCatchEvent.h" local="yes" import="no" module="no" objc="no">tCatchEvent.h</includes>
-    <class kind="class">XML::bpmn::tStartEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tSubChoreography.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSubChoreography_8cpp.html</filename>
-    <includes id="tSubChoreography_8h" name="tSubChoreography.h" local="yes" import="no" module="no" objc="no">tSubChoreography.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tSubChoreography.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSubChoreography_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tChoreographyActivity_8h" name="tChoreographyActivity.h" local="yes" import="no" module="no" objc="no">tChoreographyActivity.h</includes>
-    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
-    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
-    <class kind="class">XML::bpmn::tSubChoreography</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tSubConversation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSubConversation_8cpp.html</filename>
-    <includes id="tSubConversation_8h" name="tSubConversation.h" local="yes" import="no" module="no" objc="no">tSubConversation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tSubConversation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSubConversation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tConversationNode_8h" name="tConversationNode.h" local="yes" import="no" module="no" objc="no">tConversationNode.h</includes>
-    <class kind="class">XML::bpmn::tSubConversation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tSubProcess.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSubProcess_8cpp.html</filename>
-    <includes id="tSubProcess_8h" name="tSubProcess.h" local="yes" import="no" module="no" objc="no">tSubProcess.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tSubProcess.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tSubProcess_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tActivity_8h" name="tActivity.h" local="yes" import="no" module="no" objc="no">tActivity.h</includes>
-    <includes id="tLaneSet_8h" name="tLaneSet.h" local="yes" import="no" module="no" objc="no">tLaneSet.h</includes>
-    <includes id="tFlowElement_8h" name="tFlowElement.h" local="yes" import="no" module="no" objc="no">tFlowElement.h</includes>
-    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
-    <class kind="class">XML::bpmn::tSubProcess</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tTask_8cpp.html</filename>
-    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tActivity_8h" name="tActivity.h" local="yes" import="no" module="no" objc="no">tActivity.h</includes>
-    <class kind="class">XML::bpmn::tTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tTerminateEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tTerminateEventDefinition_8cpp.html</filename>
-    <includes id="tTerminateEventDefinition_8h" name="tTerminateEventDefinition.h" local="yes" import="no" module="no" objc="no">tTerminateEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tTerminateEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tTerminateEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::tTerminateEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tText.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tText_8cpp.html</filename>
-    <includes id="tText_8h" name="tText.h" local="yes" import="no" module="no" objc="no">tText.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tText.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tText_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <class kind="class">XML::bpmn::tText</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tTextAnnotation.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tTextAnnotation_8cpp.html</filename>
-    <includes id="tTextAnnotation_8h" name="tTextAnnotation.h" local="yes" import="no" module="no" objc="no">tTextAnnotation.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tTextAnnotation.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tTextAnnotation_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tArtifact_8h" name="tArtifact.h" local="yes" import="no" module="no" objc="no">tArtifact.h</includes>
-    <includes id="tText_8h" name="tText.h" local="yes" import="no" module="no" objc="no">tText.h</includes>
-    <class kind="class">XML::bpmn::tTextAnnotation</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tThrowEvent.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tThrowEvent_8cpp.html</filename>
-    <includes id="tThrowEvent_8h" name="tThrowEvent.h" local="yes" import="no" module="no" objc="no">tThrowEvent.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tThrowEvent.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tThrowEvent_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEvent_8h" name="tEvent.h" local="yes" import="no" module="no" objc="no">tEvent.h</includes>
-    <includes id="tDataInput_8h" name="tDataInput.h" local="yes" import="no" module="no" objc="no">tDataInput.h</includes>
-    <includes id="tDataInputAssociation_8h" name="tDataInputAssociation.h" local="yes" import="no" module="no" objc="no">tDataInputAssociation.h</includes>
-    <includes id="tInputSet_8h" name="tInputSet.h" local="yes" import="no" module="no" objc="no">tInputSet.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <class kind="class">XML::bpmn::tThrowEvent</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tTimerEventDefinition.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tTimerEventDefinition_8cpp.html</filename>
-    <includes id="tTimerEventDefinition_8h" name="tTimerEventDefinition.h" local="yes" import="no" module="no" objc="no">tTimerEventDefinition.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tTimerEventDefinition.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tTimerEventDefinition_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tEventDefinition_8h" name="tEventDefinition.h" local="yes" import="no" module="no" objc="no">tEventDefinition.h</includes>
-    <includes id="tExpression_8h" name="tExpression.h" local="yes" import="no" module="no" objc="no">tExpression.h</includes>
-    <class kind="class">XML::bpmn::tTimerEventDefinition</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tTransaction.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tTransaction_8cpp.html</filename>
-    <includes id="tTransaction_8h" name="tTransaction.h" local="yes" import="no" module="no" objc="no">tTransaction.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tTransaction.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tTransaction_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tSubProcess_8h" name="tSubProcess.h" local="yes" import="no" module="no" objc="no">tSubProcess.h</includes>
-    <includes id="tTransactionMethod_8h" name="tTransactionMethod.h" local="yes" import="no" module="no" objc="no">tTransactionMethod.h</includes>
-    <class kind="class">XML::bpmn::tTransaction</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>tTransactionMethod.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tTransactionMethod_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <member kind="typedef">
-      <type>std::string</type>
-      <name>tTransactionMethod</name>
-      <anchorfile>tTransactionMethod_8h.html</anchorfile>
-      <anchor>ade2f8383a56aa100e5d5f25aeb30266b</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>tUserTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tUserTask_8cpp.html</filename>
-    <includes id="tUserTask_8h" name="tUserTask.h" local="yes" import="no" module="no" objc="no">tUserTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>tUserTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>tUserTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tTask_8h" name="tTask.h" local="yes" import="no" module="no" objc="no">tTask.h</includes>
-    <includes id="tRendering_8h" name="tRendering.h" local="yes" import="no" module="no" objc="no">tRendering.h</includes>
-    <includes id="tImplementation_8h" name="tImplementation.h" local="yes" import="no" module="no" objc="no">tImplementation.h</includes>
-    <class kind="class">XML::bpmn::tUserTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>userTask.cpp</name>
-    <path>src/xml/bpmn/</path>
-    <filename>userTask_8cpp.html</filename>
-    <includes id="userTask_8h" name="userTask.h" local="yes" import="no" module="no" objc="no">userTask.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>userTask.h</name>
-    <path>src/xml/bpmn/</path>
-    <filename>userTask_8h.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">../XMLObject.h</includes>
-    <includes id="tUserTask_8h" name="tUserTask.h" local="yes" import="no" module="no" objc="no">tUserTask.h</includes>
-    <class kind="class">XML::bpmn::userTask</class>
-    <namespace>XML</namespace>
-    <namespace>XML::bpmn</namespace>
-  </compound>
-  <compound kind="file">
-    <name>XMLObject.cpp</name>
-    <path>src/xml/</path>
-    <filename>XMLObject_8cpp.html</filename>
-    <includes id="XMLObject_8h" name="XMLObject.h" local="yes" import="no" module="no" objc="no">XMLObject.h</includes>
-    <namespace>XML</namespace>
-  </compound>
-  <compound kind="file">
-    <name>XMLObject.h</name>
-    <path>src/xml/</path>
-    <filename>XMLObject_8h.html</filename>
-    <class kind="struct">XML::Value</class>
-    <class kind="struct">XML::Attribute</class>
-    <class kind="class">XML::XMLObject</class>
-    <namespace>XML</namespace>
   </compound>
   <compound kind="file">
     <name>BPMN20.xsd</name>
@@ -17390,8 +17390,8 @@
     <name>XML</name>
     <filename>namespaceXML.html</filename>
     <namespace>XML::bpmn</namespace>
-    <class kind="struct">XML::Attribute</class>
     <class kind="struct">XML::Value</class>
+    <class kind="struct">XML::Attribute</class>
     <class kind="class">XML::XMLObject</class>
     <member kind="typedef">
       <type>std::string</type>
@@ -17453,7 +17453,7 @@
       <type>std::conditional_t&lt; std::is_const_v&lt; std::remove_reference_t&lt; Self &gt; &gt;, const T, T &gt;</type>
       <name>like_const_t</name>
       <anchorfile>namespaceXML.html</anchorfile>
-      <anchor>a316bea3d0ce71315692200adeef455f4</anchor>
+      <anchor>abd56e34c28de1efd13ad71889099911c</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -17722,6 +17722,677 @@
     <class kind="class">XML::bpmn::tTransaction</class>
     <class kind="class">XML::bpmn::tUserTask</class>
     <class kind="class">XML::bpmn::userTask</class>
+  </compound>
+  <compound kind="dir">
+    <name>build/xml/bpmn</name>
+    <path>build/xml/bpmn/</path>
+    <filename>dir_b62dbaf0fb440c0e42743acff2b717f4.html</filename>
+    <file>adHocSubProcess.cpp</file>
+    <file>adHocSubProcess.h</file>
+    <file>baseElement.cpp</file>
+    <file>baseElement.h</file>
+    <file>baseElementWithMixedContent.cpp</file>
+    <file>baseElementWithMixedContent.h</file>
+    <file>boundaryEvent.cpp</file>
+    <file>boundaryEvent.h</file>
+    <file>Bounds.cpp</file>
+    <file>BPMNDiagram.cpp</file>
+    <file>BPMNEdge.cpp</file>
+    <file>BPMNLabel.cpp</file>
+    <file>BPMNLabelStyle.cpp</file>
+    <file>BPMNPlane.cpp</file>
+    <file>BPMNShape.cpp</file>
+    <file>businessRuleTask.cpp</file>
+    <file>businessRuleTask.h</file>
+    <file>callableElement.cpp</file>
+    <file>callableElement.h</file>
+    <file>callActivity.cpp</file>
+    <file>callActivity.h</file>
+    <file>callChoreography.cpp</file>
+    <file>callChoreography.h</file>
+    <file>callConversation.cpp</file>
+    <file>callConversation.h</file>
+    <file>cancelEventDefinition.cpp</file>
+    <file>cancelEventDefinition.h</file>
+    <file>catchEvent.cpp</file>
+    <file>catchEvent.h</file>
+    <file>categoryValue.cpp</file>
+    <file>categoryValue.h</file>
+    <file>choreographyActivity.cpp</file>
+    <file>choreographyActivity.h</file>
+    <file>choreographyTask.cpp</file>
+    <file>choreographyTask.h</file>
+    <file>compensateEventDefinition.cpp</file>
+    <file>compensateEventDefinition.h</file>
+    <file>complexBehaviorDefinition.cpp</file>
+    <file>complexBehaviorDefinition.h</file>
+    <file>complexGateway.cpp</file>
+    <file>complexGateway.h</file>
+    <file>conditionalEventDefinition.cpp</file>
+    <file>conditionalEventDefinition.h</file>
+    <file>conversationAssociation.cpp</file>
+    <file>conversationAssociation.h</file>
+    <file>conversationLink.cpp</file>
+    <file>conversationLink.h</file>
+    <file>conversationNode.cpp</file>
+    <file>conversationNode.h</file>
+    <file>correlationKey.cpp</file>
+    <file>correlationKey.h</file>
+    <file>correlationProperty.cpp</file>
+    <file>correlationProperty.h</file>
+    <file>correlationPropertyBinding.cpp</file>
+    <file>correlationPropertyBinding.h</file>
+    <file>correlationPropertyRetrievalExpression.cpp</file>
+    <file>correlationPropertyRetrievalExpression.h</file>
+    <file>correlationSubscription.cpp</file>
+    <file>correlationSubscription.h</file>
+    <file>dataAssociation.cpp</file>
+    <file>dataAssociation.h</file>
+    <file>dataInput.cpp</file>
+    <file>dataInput.h</file>
+    <file>dataInputAssociation.cpp</file>
+    <file>dataInputAssociation.h</file>
+    <file>dataObject.cpp</file>
+    <file>dataObject.h</file>
+    <file>dataObjectReference.cpp</file>
+    <file>dataObjectReference.h</file>
+    <file>dataOutput.cpp</file>
+    <file>dataOutput.h</file>
+    <file>dataOutputAssociation.cpp</file>
+    <file>dataOutputAssociation.h</file>
+    <file>dataState.cpp</file>
+    <file>dataState.h</file>
+    <file>dataStore.cpp</file>
+    <file>dataStore.h</file>
+    <file>dataStoreReference.cpp</file>
+    <file>dataStoreReference.h</file>
+    <file>Diagram.cpp</file>
+    <file>DiagramElement.cpp</file>
+    <file>DiagramElement_extension.cpp</file>
+    <file>Edge.cpp</file>
+    <file>endEvent.cpp</file>
+    <file>endEvent.h</file>
+    <file>endPoint.cpp</file>
+    <file>endPoint.h</file>
+    <file>errorEventDefinition.cpp</file>
+    <file>errorEventDefinition.h</file>
+    <file>escalationEventDefinition.cpp</file>
+    <file>escalationEventDefinition.h</file>
+    <file>eventBasedGateway.cpp</file>
+    <file>eventBasedGateway.h</file>
+    <file>eventDefinition.cpp</file>
+    <file>eventDefinition.h</file>
+    <file>exclusiveGateway.cpp</file>
+    <file>exclusiveGateway.h</file>
+    <file>extensionElements.cpp</file>
+    <file>extensionElements.h</file>
+    <file>flowElement.cpp</file>
+    <file>flowElement.h</file>
+    <file>flowNode.cpp</file>
+    <file>flowNode.h</file>
+    <file>Font.cpp</file>
+    <file>formalExpression.cpp</file>
+    <file>formalExpression.h</file>
+    <file>globalBusinessRuleTask.cpp</file>
+    <file>globalBusinessRuleTask.h</file>
+    <file>globalChoreographyTask.cpp</file>
+    <file>globalChoreographyTask.h</file>
+    <file>globalConversation.cpp</file>
+    <file>globalConversation.h</file>
+    <file>globalManualTask.cpp</file>
+    <file>globalManualTask.h</file>
+    <file>globalScriptTask.cpp</file>
+    <file>globalScriptTask.h</file>
+    <file>globalTask.cpp</file>
+    <file>globalTask.h</file>
+    <file>globalUserTask.cpp</file>
+    <file>globalUserTask.h</file>
+    <file>humanPerformer.cpp</file>
+    <file>humanPerformer.h</file>
+    <file>implicitThrowEvent.cpp</file>
+    <file>implicitThrowEvent.h</file>
+    <file>inclusiveGateway.cpp</file>
+    <file>inclusiveGateway.h</file>
+    <file>inputSet.cpp</file>
+    <file>inputSet.h</file>
+    <file>intermediateCatchEvent.cpp</file>
+    <file>intermediateCatchEvent.h</file>
+    <file>intermediateThrowEvent.cpp</file>
+    <file>intermediateThrowEvent.h</file>
+    <file>ioBinding.cpp</file>
+    <file>ioBinding.h</file>
+    <file>ioSpecification.cpp</file>
+    <file>ioSpecification.h</file>
+    <file>itemDefinition.cpp</file>
+    <file>itemDefinition.h</file>
+    <file>Label.cpp</file>
+    <file>LabeledEdge.cpp</file>
+    <file>LabeledShape.cpp</file>
+    <file>laneSet.cpp</file>
+    <file>laneSet.h</file>
+    <file>linkEventDefinition.cpp</file>
+    <file>linkEventDefinition.h</file>
+    <file>loopCharacteristics.cpp</file>
+    <file>loopCharacteristics.h</file>
+    <file>manualTask.cpp</file>
+    <file>manualTask.h</file>
+    <file>messageEventDefinition.cpp</file>
+    <file>messageEventDefinition.h</file>
+    <file>messageFlow.cpp</file>
+    <file>messageFlow.h</file>
+    <file>messageFlowAssociation.cpp</file>
+    <file>messageFlowAssociation.h</file>
+    <file>MessageVisibleKind.h</file>
+    <file>multiInstanceLoopCharacteristics.cpp</file>
+    <file>multiInstanceLoopCharacteristics.h</file>
+    <file>Node.cpp</file>
+    <file>outputSet.cpp</file>
+    <file>outputSet.h</file>
+    <file>parallelGateway.cpp</file>
+    <file>parallelGateway.h</file>
+    <file>participantAssociation.cpp</file>
+    <file>participantAssociation.h</file>
+    <file>ParticipantBandKind.h</file>
+    <file>participantMultiplicity.cpp</file>
+    <file>participantMultiplicity.h</file>
+    <file>partnerEntity.cpp</file>
+    <file>partnerEntity.h</file>
+    <file>partnerRole.cpp</file>
+    <file>partnerRole.h</file>
+    <file>Plane.cpp</file>
+    <file>Point.cpp</file>
+    <file>potentialOwner.cpp</file>
+    <file>potentialOwner.h</file>
+    <file>receiveTask.cpp</file>
+    <file>receiveTask.h</file>
+    <file>resourceAssignmentExpression.cpp</file>
+    <file>resourceAssignmentExpression.h</file>
+    <file>resourceParameter.cpp</file>
+    <file>resourceParameter.h</file>
+    <file>resourceParameterBinding.cpp</file>
+    <file>resourceParameterBinding.h</file>
+    <file>resourceRole.cpp</file>
+    <file>resourceRole.h</file>
+    <file>rootElement.cpp</file>
+    <file>rootElement.h</file>
+    <file>scriptTask.cpp</file>
+    <file>scriptTask.h</file>
+    <file>sendTask.cpp</file>
+    <file>sendTask.h</file>
+    <file>sequenceFlow.cpp</file>
+    <file>sequenceFlow.h</file>
+    <file>serviceTask.cpp</file>
+    <file>serviceTask.h</file>
+    <file>Shape.cpp</file>
+    <file>signalEventDefinition.cpp</file>
+    <file>signalEventDefinition.h</file>
+    <file>standardLoopCharacteristics.cpp</file>
+    <file>standardLoopCharacteristics.h</file>
+    <file>startEvent.cpp</file>
+    <file>startEvent.h</file>
+    <file>Style.cpp</file>
+    <file>subChoreography.cpp</file>
+    <file>subChoreography.h</file>
+    <file>subConversation.cpp</file>
+    <file>subConversation.h</file>
+    <file>subProcess.cpp</file>
+    <file>subProcess.h</file>
+    <file>tActivity.cpp</file>
+    <file>tActivity.h</file>
+    <file>tAdHocOrdering.h</file>
+    <file>tAdHocSubProcess.cpp</file>
+    <file>tAdHocSubProcess.h</file>
+    <file>tArtifact.cpp</file>
+    <file>tArtifact.h</file>
+    <file>tAssignment.cpp</file>
+    <file>tAssignment.h</file>
+    <file>tAssociation.cpp</file>
+    <file>tAssociation.h</file>
+    <file>tAssociationDirection.h</file>
+    <file>tAuditing.cpp</file>
+    <file>tAuditing.h</file>
+    <file>tBaseElement.cpp</file>
+    <file>tBaseElement.h</file>
+    <file>tBaseElementWithMixedContent.cpp</file>
+    <file>tBaseElementWithMixedContent.h</file>
+    <file>tBoundaryEvent.cpp</file>
+    <file>tBoundaryEvent.h</file>
+    <file>tBusinessRuleTask.cpp</file>
+    <file>tBusinessRuleTask.h</file>
+    <file>tCallableElement.cpp</file>
+    <file>tCallableElement.h</file>
+    <file>tCallActivity.cpp</file>
+    <file>tCallActivity.h</file>
+    <file>tCallChoreography.cpp</file>
+    <file>tCallChoreography.h</file>
+    <file>tCallConversation.cpp</file>
+    <file>tCallConversation.h</file>
+    <file>tCancelEventDefinition.cpp</file>
+    <file>tCancelEventDefinition.h</file>
+    <file>tCatchEvent.cpp</file>
+    <file>tCatchEvent.h</file>
+    <file>tCategory.cpp</file>
+    <file>tCategory.h</file>
+    <file>tCategoryValue.cpp</file>
+    <file>tCategoryValue.h</file>
+    <file>tChoreography.cpp</file>
+    <file>tChoreography.h</file>
+    <file>tChoreographyActivity.cpp</file>
+    <file>tChoreographyActivity.h</file>
+    <file>tChoreographyLoopType.h</file>
+    <file>tChoreographyTask.cpp</file>
+    <file>tChoreographyTask.h</file>
+    <file>tCollaboration.cpp</file>
+    <file>tCollaboration.h</file>
+    <file>tCompensateEventDefinition.cpp</file>
+    <file>tCompensateEventDefinition.h</file>
+    <file>tComplexBehaviorDefinition.cpp</file>
+    <file>tComplexBehaviorDefinition.h</file>
+    <file>tComplexGateway.cpp</file>
+    <file>tComplexGateway.h</file>
+    <file>tConditionalEventDefinition.cpp</file>
+    <file>tConditionalEventDefinition.h</file>
+    <file>tConversation.cpp</file>
+    <file>tConversation.h</file>
+    <file>tConversationAssociation.cpp</file>
+    <file>tConversationAssociation.h</file>
+    <file>tConversationLink.cpp</file>
+    <file>tConversationLink.h</file>
+    <file>tConversationNode.cpp</file>
+    <file>tConversationNode.h</file>
+    <file>tCorrelationKey.cpp</file>
+    <file>tCorrelationKey.h</file>
+    <file>tCorrelationProperty.cpp</file>
+    <file>tCorrelationProperty.h</file>
+    <file>tCorrelationPropertyBinding.cpp</file>
+    <file>tCorrelationPropertyBinding.h</file>
+    <file>tCorrelationPropertyRetrievalExpression.cpp</file>
+    <file>tCorrelationPropertyRetrievalExpression.h</file>
+    <file>tCorrelationSubscription.cpp</file>
+    <file>tCorrelationSubscription.h</file>
+    <file>tDataAssociation.cpp</file>
+    <file>tDataAssociation.h</file>
+    <file>tDataInput.cpp</file>
+    <file>tDataInput.h</file>
+    <file>tDataInputAssociation.cpp</file>
+    <file>tDataInputAssociation.h</file>
+    <file>tDataObject.cpp</file>
+    <file>tDataObject.h</file>
+    <file>tDataObjectReference.cpp</file>
+    <file>tDataObjectReference.h</file>
+    <file>tDataOutput.cpp</file>
+    <file>tDataOutput.h</file>
+    <file>tDataOutputAssociation.cpp</file>
+    <file>tDataOutputAssociation.h</file>
+    <file>tDataState.cpp</file>
+    <file>tDataState.h</file>
+    <file>tDataStore.cpp</file>
+    <file>tDataStore.h</file>
+    <file>tDataStoreReference.cpp</file>
+    <file>tDataStoreReference.h</file>
+    <file>tDefinitions.cpp</file>
+    <file>tDefinitions.h</file>
+    <file>tDocumentation.cpp</file>
+    <file>tDocumentation.h</file>
+    <file>tEndEvent.cpp</file>
+    <file>tEndEvent.h</file>
+    <file>tEndPoint.cpp</file>
+    <file>tEndPoint.h</file>
+    <file>terminateEventDefinition.cpp</file>
+    <file>terminateEventDefinition.h</file>
+    <file>tError.cpp</file>
+    <file>tError.h</file>
+    <file>tErrorEventDefinition.cpp</file>
+    <file>tErrorEventDefinition.h</file>
+    <file>tEscalation.cpp</file>
+    <file>tEscalation.h</file>
+    <file>tEscalationEventDefinition.cpp</file>
+    <file>tEscalationEventDefinition.h</file>
+    <file>tEvent.cpp</file>
+    <file>tEvent.h</file>
+    <file>tEventBasedGateway.cpp</file>
+    <file>tEventBasedGateway.h</file>
+    <file>tEventBasedGatewayType.h</file>
+    <file>tEventDefinition.cpp</file>
+    <file>tEventDefinition.h</file>
+    <file>tExclusiveGateway.cpp</file>
+    <file>tExclusiveGateway.h</file>
+    <file>tExpression.cpp</file>
+    <file>tExpression.h</file>
+    <file>textAnnotation.cpp</file>
+    <file>textAnnotation.h</file>
+    <file>tExtension.cpp</file>
+    <file>tExtension.h</file>
+    <file>tExtensionElements.cpp</file>
+    <file>tExtensionElements.h</file>
+    <file>tFlowElement.cpp</file>
+    <file>tFlowElement.h</file>
+    <file>tFlowNode.cpp</file>
+    <file>tFlowNode.h</file>
+    <file>tFormalExpression.cpp</file>
+    <file>tFormalExpression.h</file>
+    <file>tGateway.cpp</file>
+    <file>tGateway.h</file>
+    <file>tGatewayDirection.h</file>
+    <file>tGlobalBusinessRuleTask.cpp</file>
+    <file>tGlobalBusinessRuleTask.h</file>
+    <file>tGlobalChoreographyTask.cpp</file>
+    <file>tGlobalChoreographyTask.h</file>
+    <file>tGlobalConversation.cpp</file>
+    <file>tGlobalConversation.h</file>
+    <file>tGlobalManualTask.cpp</file>
+    <file>tGlobalManualTask.h</file>
+    <file>tGlobalScriptTask.cpp</file>
+    <file>tGlobalScriptTask.h</file>
+    <file>tGlobalTask.cpp</file>
+    <file>tGlobalTask.h</file>
+    <file>tGlobalUserTask.cpp</file>
+    <file>tGlobalUserTask.h</file>
+    <file>tGroup.cpp</file>
+    <file>tGroup.h</file>
+    <file>throwEvent.cpp</file>
+    <file>throwEvent.h</file>
+    <file>tHumanPerformer.cpp</file>
+    <file>tHumanPerformer.h</file>
+    <file>timerEventDefinition.cpp</file>
+    <file>timerEventDefinition.h</file>
+    <file>tImplementation.h</file>
+    <file>tImplicitThrowEvent.cpp</file>
+    <file>tImplicitThrowEvent.h</file>
+    <file>tImport.cpp</file>
+    <file>tImport.h</file>
+    <file>tInclusiveGateway.cpp</file>
+    <file>tInclusiveGateway.h</file>
+    <file>tInputOutputBinding.cpp</file>
+    <file>tInputOutputBinding.h</file>
+    <file>tInputOutputSpecification.cpp</file>
+    <file>tInputOutputSpecification.h</file>
+    <file>tInputSet.cpp</file>
+    <file>tInputSet.h</file>
+    <file>tInterface.cpp</file>
+    <file>tInterface.h</file>
+    <file>tIntermediateCatchEvent.cpp</file>
+    <file>tIntermediateCatchEvent.h</file>
+    <file>tIntermediateThrowEvent.cpp</file>
+    <file>tIntermediateThrowEvent.h</file>
+    <file>tItemDefinition.cpp</file>
+    <file>tItemDefinition.h</file>
+    <file>tItemKind.h</file>
+    <file>tLane.cpp</file>
+    <file>tLane.h</file>
+    <file>tLaneSet.cpp</file>
+    <file>tLaneSet.h</file>
+    <file>tLinkEventDefinition.cpp</file>
+    <file>tLinkEventDefinition.h</file>
+    <file>tLoopCharacteristics.cpp</file>
+    <file>tLoopCharacteristics.h</file>
+    <file>tManualTask.cpp</file>
+    <file>tManualTask.h</file>
+    <file>tMessage.cpp</file>
+    <file>tMessage.h</file>
+    <file>tMessageEventDefinition.cpp</file>
+    <file>tMessageEventDefinition.h</file>
+    <file>tMessageFlow.cpp</file>
+    <file>tMessageFlow.h</file>
+    <file>tMessageFlowAssociation.cpp</file>
+    <file>tMessageFlowAssociation.h</file>
+    <file>tMonitoring.cpp</file>
+    <file>tMonitoring.h</file>
+    <file>tMultiInstanceFlowCondition.h</file>
+    <file>tMultiInstanceLoopCharacteristics.cpp</file>
+    <file>tMultiInstanceLoopCharacteristics.h</file>
+    <file>tOperation.cpp</file>
+    <file>tOperation.h</file>
+    <file>tOutputSet.cpp</file>
+    <file>tOutputSet.h</file>
+    <file>tParallelGateway.cpp</file>
+    <file>tParallelGateway.h</file>
+    <file>tParticipant.cpp</file>
+    <file>tParticipant.h</file>
+    <file>tParticipantAssociation.cpp</file>
+    <file>tParticipantAssociation.h</file>
+    <file>tParticipantMultiplicity.cpp</file>
+    <file>tParticipantMultiplicity.h</file>
+    <file>tPartnerEntity.cpp</file>
+    <file>tPartnerEntity.h</file>
+    <file>tPartnerRole.cpp</file>
+    <file>tPartnerRole.h</file>
+    <file>tPerformer.cpp</file>
+    <file>tPerformer.h</file>
+    <file>tPotentialOwner.cpp</file>
+    <file>tPotentialOwner.h</file>
+    <file>tProcess.cpp</file>
+    <file>tProcess.h</file>
+    <file>tProcessType.h</file>
+    <file>tProperty.cpp</file>
+    <file>tProperty.h</file>
+    <file>tReceiveTask.cpp</file>
+    <file>tReceiveTask.h</file>
+    <file>tRelationship.cpp</file>
+    <file>tRelationship.h</file>
+    <file>tRelationshipDirection.h</file>
+    <file>tRendering.cpp</file>
+    <file>tRendering.h</file>
+    <file>tResource.cpp</file>
+    <file>tResource.h</file>
+    <file>tResourceAssignmentExpression.cpp</file>
+    <file>tResourceAssignmentExpression.h</file>
+    <file>tResourceParameter.cpp</file>
+    <file>tResourceParameter.h</file>
+    <file>tResourceParameterBinding.cpp</file>
+    <file>tResourceParameterBinding.h</file>
+    <file>tResourceRole.cpp</file>
+    <file>tResourceRole.h</file>
+    <file>tRootElement.cpp</file>
+    <file>tRootElement.h</file>
+    <file>tScript.cpp</file>
+    <file>tScript.h</file>
+    <file>tScriptTask.cpp</file>
+    <file>tScriptTask.h</file>
+    <file>tSendTask.cpp</file>
+    <file>tSendTask.h</file>
+    <file>tSequenceFlow.cpp</file>
+    <file>tSequenceFlow.h</file>
+    <file>tServiceTask.cpp</file>
+    <file>tServiceTask.h</file>
+    <file>tSignal.cpp</file>
+    <file>tSignal.h</file>
+    <file>tSignalEventDefinition.cpp</file>
+    <file>tSignalEventDefinition.h</file>
+    <file>tStandardLoopCharacteristics.cpp</file>
+    <file>tStandardLoopCharacteristics.h</file>
+    <file>tStartEvent.cpp</file>
+    <file>tStartEvent.h</file>
+    <file>tSubChoreography.cpp</file>
+    <file>tSubChoreography.h</file>
+    <file>tSubConversation.cpp</file>
+    <file>tSubConversation.h</file>
+    <file>tSubProcess.cpp</file>
+    <file>tSubProcess.h</file>
+    <file>tTask.cpp</file>
+    <file>tTask.h</file>
+    <file>tTerminateEventDefinition.cpp</file>
+    <file>tTerminateEventDefinition.h</file>
+    <file>tText.cpp</file>
+    <file>tText.h</file>
+    <file>tTextAnnotation.cpp</file>
+    <file>tTextAnnotation.h</file>
+    <file>tThrowEvent.cpp</file>
+    <file>tThrowEvent.h</file>
+    <file>tTimerEventDefinition.cpp</file>
+    <file>tTimerEventDefinition.h</file>
+    <file>tTransaction.cpp</file>
+    <file>tTransaction.h</file>
+    <file>tTransactionMethod.h</file>
+    <file>tUserTask.cpp</file>
+    <file>tUserTask.h</file>
+    <file>userTask.cpp</file>
+    <file>userTask.h</file>
+  </compound>
+  <compound kind="dir">
+    <name>build</name>
+    <path>build/</path>
+    <filename>dir_4fef79e7177ba769987a8da36c892c5f.html</filename>
+    <dir>build/xml</dir>
+  </compound>
+  <compound kind="dir">
+    <name>src</name>
+    <path>src/</path>
+    <filename>dir_68267d1309a1af8e8297ef4c3efbcdba.html</filename>
+    <file>AbstractTask.cpp</file>
+    <file>AbstractTask.h</file>
+    <file>Activity.cpp</file>
+    <file>Activity.h</file>
+    <file>AdHocSubProcess.cpp</file>
+    <file>AdHocSubProcess.h</file>
+    <file>BaseElement.cpp</file>
+    <file>BaseElement.h</file>
+    <file>BoundaryEvent.cpp</file>
+    <file>BoundaryEvent.h</file>
+    <file>BusinessRuleTask.cpp</file>
+    <file>BusinessRuleTask.h</file>
+    <file>CallActivity.cpp</file>
+    <file>CallActivity.h</file>
+    <file>CancelBoundaryEvent.cpp</file>
+    <file>CancelBoundaryEvent.h</file>
+    <file>CancelEndEvent.cpp</file>
+    <file>CancelEndEvent.h</file>
+    <file>CatchEvent.cpp</file>
+    <file>CatchEvent.h</file>
+    <file>ChildNode.cpp</file>
+    <file>ChildNode.h</file>
+    <file>CompensateBoundaryEvent.cpp</file>
+    <file>CompensateBoundaryEvent.h</file>
+    <file>CompensateStartEvent.cpp</file>
+    <file>CompensateStartEvent.h</file>
+    <file>CompensateThrowEvent.cpp</file>
+    <file>CompensateThrowEvent.h</file>
+    <file>ComplexGateway.cpp</file>
+    <file>ComplexGateway.h</file>
+    <file>ConditionalBoundaryEvent.cpp</file>
+    <file>ConditionalBoundaryEvent.h</file>
+    <file>ConditionalCatchEvent.cpp</file>
+    <file>ConditionalCatchEvent.h</file>
+    <file>ConditionalStartEvent.cpp</file>
+    <file>ConditionalStartEvent.h</file>
+    <file>DataObject.cpp</file>
+    <file>DataObject.h</file>
+    <file>DataStore.cpp</file>
+    <file>DataStore.h</file>
+    <file>Element.cpp</file>
+    <file>Element.h</file>
+    <file>ErrorBoundaryEvent.cpp</file>
+    <file>ErrorBoundaryEvent.h</file>
+    <file>ErrorEndEvent.cpp</file>
+    <file>ErrorEndEvent.h</file>
+    <file>ErrorStartEvent.cpp</file>
+    <file>ErrorStartEvent.h</file>
+    <file>EscalationBoundaryEvent.cpp</file>
+    <file>EscalationBoundaryEvent.h</file>
+    <file>EscalationStartEvent.cpp</file>
+    <file>EscalationStartEvent.h</file>
+    <file>EscalationThrowEvent.cpp</file>
+    <file>EscalationThrowEvent.h</file>
+    <file>Event.cpp</file>
+    <file>Event.h</file>
+    <file>EventBasedGateway.cpp</file>
+    <file>EventBasedGateway.h</file>
+    <file>EventSubProcess.cpp</file>
+    <file>EventSubProcess.h</file>
+    <file>ExclusiveGateway.cpp</file>
+    <file>ExclusiveGateway.h</file>
+    <file>ExtensionElements.cpp</file>
+    <file>ExtensionElements.h</file>
+    <file>FlowNode.cpp</file>
+    <file>FlowNode.h</file>
+    <file>Gateway.cpp</file>
+    <file>Gateway.h</file>
+    <file>InclusiveGateway.cpp</file>
+    <file>InclusiveGateway.h</file>
+    <file>LinkSourceEvent.cpp</file>
+    <file>LinkSourceEvent.h</file>
+    <file>LinkTargetEvent.cpp</file>
+    <file>LinkTargetEvent.h</file>
+    <file>ManualTask.cpp</file>
+    <file>ManualTask.h</file>
+    <file>MessageBoundaryEvent.cpp</file>
+    <file>MessageBoundaryEvent.h</file>
+    <file>MessageCatchEvent.cpp</file>
+    <file>MessageCatchEvent.h</file>
+    <file>MessageFlow.cpp</file>
+    <file>MessageFlow.h</file>
+    <file>MessageStartEvent.cpp</file>
+    <file>MessageStartEvent.h</file>
+    <file>MessageThrowEvent.cpp</file>
+    <file>MessageThrowEvent.h</file>
+    <file>Model.cpp</file>
+    <file>Model.h</file>
+    <file>Node.cpp</file>
+    <file>Node.h</file>
+    <file>ParallelGateway.cpp</file>
+    <file>ParallelGateway.h</file>
+    <file>Process.cpp</file>
+    <file>Process.h</file>
+    <file>ReceiveTask.cpp</file>
+    <file>ReceiveTask.h</file>
+    <file>Scope.cpp</file>
+    <file>Scope.h</file>
+    <file>ScriptTask.cpp</file>
+    <file>ScriptTask.h</file>
+    <file>SendTask.cpp</file>
+    <file>SendTask.h</file>
+    <file>SequenceFlow.cpp</file>
+    <file>SequenceFlow.h</file>
+    <file>SignalBoundaryEvent.cpp</file>
+    <file>SignalBoundaryEvent.h</file>
+    <file>SignalCatchEvent.cpp</file>
+    <file>SignalCatchEvent.h</file>
+    <file>SignalStartEvent.cpp</file>
+    <file>SignalStartEvent.h</file>
+    <file>SignalThrowEvent.cpp</file>
+    <file>SignalThrowEvent.h</file>
+    <file>SubProcess.cpp</file>
+    <file>SubProcess.h</file>
+    <file>Task.cpp</file>
+    <file>Task.h</file>
+    <file>TerminateEvent.cpp</file>
+    <file>TerminateEvent.h</file>
+    <file>ThrowEvent.cpp</file>
+    <file>ThrowEvent.h</file>
+    <file>TimerBoundaryEvent.cpp</file>
+    <file>TimerBoundaryEvent.h</file>
+    <file>TimerCatchEvent.cpp</file>
+    <file>TimerCatchEvent.h</file>
+    <file>TimerStartEvent.cpp</file>
+    <file>TimerStartEvent.h</file>
+    <file>Transaction.cpp</file>
+    <file>Transaction.h</file>
+    <file>TypedStartEvent.cpp</file>
+    <file>TypedStartEvent.h</file>
+    <file>UntypedEndEvent.cpp</file>
+    <file>UntypedEndEvent.h</file>
+    <file>UntypedStartEvent.cpp</file>
+    <file>UntypedStartEvent.h</file>
+    <file>UserTask.cpp</file>
+    <file>UserTask.h</file>
+  </compound>
+  <compound kind="dir">
+    <name>build/xml</name>
+    <path>build/xml/</path>
+    <filename>dir_b94390fc9e50c2cf9f531053fa54b1b1.html</filename>
+    <dir>build/xml/bpmn</dir>
+    <file>XMLObject.cpp</file>
+    <file>XMLObject.h</file>
+  </compound>
+  <compound kind="dir">
+    <name>xsd</name>
+    <path>xsd/</path>
+    <filename>dir_85a3921c5ab57c43d7ce7a6313e980d9.html</filename>
+    <file>BPMN20.xsd</file>
+    <file>BPMNDI.xsd</file>
+    <file>DC.xsd</file>
+    <file>DI.xsd</file>
+    <file>Semantic.xsd</file>
   </compound>
   <compound kind="page">
     <name>index</name>

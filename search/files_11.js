@@ -4,6 +4,8 @@ var searchData=
   ['untypedendevent_2eh_1',['UntypedEndEvent.h',['../UntypedEndEvent_8h.html',1,'']]],
   ['untypedstartevent_2ecpp_2',['UntypedStartEvent.cpp',['../UntypedStartEvent_8cpp.html',1,'']]],
   ['untypedstartevent_2eh_3',['UntypedStartEvent.h',['../UntypedStartEvent_8h.html',1,'']]],
-  ['usertask_2ecpp_4',['usertask.cpp',['../UserTask_8cpp.html',1,'(Global Namespace)'],['../userTask_8cpp.html',1,'(Global Namespace)']]],
-  ['usertask_2eh_5',['usertask.h',['../UserTask_8h.html',1,'(Global Namespace)'],['../userTask_8h.html',1,'(Global Namespace)']]]
+  ['usertask_2ecpp_4',['UserTask.cpp',['../UserTask_8cpp.html',1,'']]],
+  ['usertask_2ecpp_5',['userTask.cpp',['../userTask_8cpp.html',1,'']]],
+  ['usertask_2eh_6',['UserTask.h',['../UserTask_8h.html',1,'']]],
+  ['usertask_2eh_7',['userTask.h',['../userTask_8h.html',1,'']]]
 ];

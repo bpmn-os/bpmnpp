@@ -7,7 +7,7 @@ var searchData=
   ['resourceparameter_4',['resourceParameter',['../classXML_1_1bpmn_1_1tResource.html#a484bd218b4dc3c610f7d801ef324c6ba',1,'XML::bpmn::tResource']]],
   ['resourceparameterbinding_5',['resourceParameterBinding',['../classXML_1_1bpmn_1_1tResourceRole.html#a92cfdd7c810f1fd3462a565f45cbd87f',1,'XML::bpmn::tResourceRole']]],
   ['resourceref_6',['resourceRef',['../classXML_1_1bpmn_1_1tResourceRole.html#a0d281197be925f997313f8e92e2175d9',1,'XML::bpmn::tResourceRole']]],
-  ['resourcerole_7',['resourcerole',['../classXML_1_1bpmn_1_1tActivity.html#a125eb5e4a05bb006749d3bf98513a097',1,'XML::bpmn::tActivity::resourceRole'],['../classXML_1_1bpmn_1_1tGlobalTask.html#a9bc37bc1e53f2f8f502a400d0eeb7928',1,'XML::bpmn::tGlobalTask::resourceRole'],['../classXML_1_1bpmn_1_1tProcess.html#a834d59278d32c2d7874fbca5f3aea472',1,'XML::bpmn::tProcess::resourceRole']]],
+  ['resourcerole_7',['resourceRole',['../classXML_1_1bpmn_1_1tActivity.html#a125eb5e4a05bb006749d3bf98513a097',1,'XML::bpmn::tActivity::resourceRole'],['../classXML_1_1bpmn_1_1tGlobalTask.html#a9bc37bc1e53f2f8f502a400d0eeb7928',1,'XML::bpmn::tGlobalTask::resourceRole'],['../classXML_1_1bpmn_1_1tProcess.html#a834d59278d32c2d7874fbca5f3aea472',1,'XML::bpmn::tProcess::resourceRole']]],
   ['root_8',['root',['../classBPMN_1_1Model.html#ada5877c7e82c8bf576d7c1c399b5027a',1,'BPMN::Model']]],
   ['rootelement_9',['rootElement',['../classXML_1_1bpmn_1_1tDefinitions.html#a2d5a150896c80b6323dae4c9f052b7a5',1,'XML::bpmn::tDefinitions']]]
 ];

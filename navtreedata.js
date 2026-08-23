@@ -26,11 +26,14 @@ var NAVTREE =
 [
   [ "bpmn++", "index.html", [
     [ "A BPMN parser library, written in C++.", "index.html#autotoc_md1", null ],
-    [ "Dependencies", "index.html#autotoc_md2", null ],
-    [ "Build the library", "index.html#autotoc_md3", null ],
-    [ "Install the library", "index.html#autotoc_md4", null ],
-    [ "Run tests", "index.html#autotoc_md5", null ],
-    [ "Example", "index.html#autotoc_md6", null ],
+    [ "Requirements", "index.html#autotoc_md2", null ],
+    [ "Build", "index.html#autotoc_md3", null ],
+    [ "Tests", "index.html#autotoc_md4", null ],
+    [ "Documentation", "index.html#autotoc_md5", null ],
+    [ "Installation", "index.html#autotoc_md6", [
+      [ "Uninstall", "index.html#autotoc_md7", null ]
+    ] ],
+    [ "Example", "index.html#autotoc_md8", null ],
     [ "Developer documentation", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
@@ -43,24 +46,25 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AbstractTask_8cpp.html",
-"SendTask_8cpp.html",
-"classBPMN_1_1CancelEndEvent.html#a2bf2a0e9b454c55aa5dcb5aa4698697b",
-"classBPMN_1_1ManualTask.html#a2bf2a0e9b454c55aa5dcb5aa4698697b",
-"classBPMN_1_1ReceiveTask.html",
-"classXML_1_1bpmn_1_1boundaryEvent.html#a18b014dbaf9996715836947e409c75fb",
-"classXML_1_1bpmn_1_1flowNode.html",
-"classXML_1_1bpmn_1_1sequenceFlow.html#ae12faf0038f398da42d8e1d1efb37cb3",
-"classXML_1_1bpmn_1_1tCategoryValue.html",
-"classXML_1_1bpmn_1_1tDataInput.html#aa8c5393b112abb5ba6da64ced6f88e2b",
-"classXML_1_1bpmn_1_1tExclusiveGateway.html",
-"classXML_1_1bpmn_1_1tInputSet.html#a18b014dbaf9996715836947e409c75fb",
-"classXML_1_1bpmn_1_1tParticipant.html#a424a5f5fb00ffb12db84d681fbb903e5",
-"classXML_1_1bpmn_1_1tScriptTask.html#a09796464e1fd54b402446338ea011062",
-"correlationKey_8h.html",
-"partnerRole_8cpp_source.html",
-"tCorrelationPropertyRetrievalExpression_8h.html",
-"tMonitoring_8cpp.html"
+"SendTask_8h.html",
+"classBPMN_1_1ChildNode.html#a012c877e858316f449c307a04b074b2d",
+"classBPMN_1_1MessageCatchEvent.html",
+"classBPMN_1_1Scope.html#a3283c9fa3043f504eeb36e574b569494",
+"classXML_1_1bpmn_1_1callActivity.html#a64e57db99c187b71230b38dc67e430b2",
+"classXML_1_1bpmn_1_1globalBusinessRuleTask.html#a18b014dbaf9996715836947e409c75fb",
+"classXML_1_1bpmn_1_1standardLoopCharacteristics.html",
+"classXML_1_1bpmn_1_1tChoreography.html#a69f2a3c346d0f116492027405167dab3",
+"classXML_1_1bpmn_1_1tDataInputAssociation.html#ab4ea73b351fd8e3b096e88170ca352a0",
+"classXML_1_1bpmn_1_1tExpression.html#a1b4ff42940d1e346e97db1504548cd77",
+"classXML_1_1bpmn_1_1tInputSet.html#af8ec9cc62ff52fdb23a779681d937816",
+"classXML_1_1bpmn_1_1tParticipantAssociation.html#a18b014dbaf9996715836947e409c75fb",
+"classXML_1_1bpmn_1_1tSendTask.html#a609a46eba1d8ef4ef7c3db6e837387e0",
+"correlationSubscription_8cpp_source.html",
+"resourceAssignmentExpression_8cpp_source.html",
+"tDataAssociation_8cpp.html",
+"tMultiInstanceLoopCharacteristics_8h_source.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';
