@@ -75,9 +75,7 @@ endif()
 # while configuring. A FetchContent target would not be built until build time, which is too late, so a
 # copy that cannot be resolved is configured and built here in a sub-build of its own.
 set(SCHEMATICPP_VERSION 0.8.0)
-# Names schematic++'s branch while its change is unmerged, which is the convention for a dependency under
-# development. It becomes v${SCHEMATICPP_VERSION} when schematic++ is tagged.
-set(SCHEMATICPP_REF "dependency-management")
+set(SCHEMATICPP_REF "v${SCHEMATICPP_VERSION}")
 find_package(schematicpp ${SCHEMATICPP_VERSION} QUIET)
 
 if(SCHEMATICPP AND EXISTS ${SCHEMATICPP})
