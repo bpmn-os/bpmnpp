@@ -639,6 +639,10 @@ void Model::createFlowReferences(FlowNode* flowNode) {
       else if ( typedStartEvent->parent->represents<SubProcess>() ) {
         throw std::runtime_error("Model: typed start event provided for subprocess '" + typedStartEvent->parent->id + "'");
       }
+      else if ( typedStartEvent->parent->represents<AdHocSubProcess>() ) {
+        // do not add typed start event to adhoc subprocess
+        throw std::runtime_error("Model: start event provided for adhoc subprocess '" + typedStartEvent->parent->id + "'");
+      }
       else if ( typedStartEvent->parent->represents<Process>() &&
         typedStartEvent->represents<CompensateStartEvent>()
       ) {

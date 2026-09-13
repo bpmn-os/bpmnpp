@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.26.4)
 
-project(bpmn++ VERSION 0.1.0 LANGUAGES CXX)
+project(bpmn++ VERSION 0.1.1 LANGUAGES CXX)
 
 # Set the C++ standard
 set(CMAKE_CXX_STANDARD 23)
