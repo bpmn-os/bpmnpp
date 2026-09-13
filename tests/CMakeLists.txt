@@ -8,12 +8,7 @@ FetchContent_Declare(
         GIT_TAG v3.15.2
 )
 
-FetchContent_GetProperties(catch)
-
-if (NOT catch_POPULATED)
-  FetchContent_Populate(catch)
-  add_subdirectory(${catch_SOURCE_DIR} ${catch_BINARY_DIR})
-endif ()
+FetchContent_MakeAvailable(catch)
 
 add_executable(run_tests EXCLUDE_FROM_ALL main.cpp)
 
