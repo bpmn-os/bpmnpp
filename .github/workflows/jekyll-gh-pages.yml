@@ -18,6 +18,9 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write            # peaceiris pushes the built site to the gh-pages branch
+
 jobs:
   deploy:
     runs-on: ubuntu-26.04
