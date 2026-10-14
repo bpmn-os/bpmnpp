@@ -542,7 +542,7 @@ void Model::createChildNodes(Scope* scope) {
   // add boundary events
   for (XML::bpmn::tFlowNode& flowNode: scope->element->getChildren<XML::bpmn::tFlowNode>() ) {
     if ( auto boundaryEvent = flowNode.is<XML::bpmn::tBoundaryEvent>() ) {
-      scope->add(createBoundaryEvent(boundaryEvent,scope));
+      scope->add(createEvent(boundaryEvent,scope));
     }
   }
 
